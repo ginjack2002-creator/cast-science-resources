@@ -902,15 +902,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The computational model shows that setting Nutrition Quality to maximum produces Final Height near the top of the genetic range, while setting it to low produces Final Height well below the genetic range. What does this demonstrate about the nature vs. nurture debate?
 
-A. Nature (genetics) is more important than nurture (environment) for determining height.
-B. Nurture (environment) completely overrides nature (genetics) in determining height.
+A. The model cannot distinguish between genetic and environmental effects.
+B. Nature (genetics) is more important than nurture (environment) for determining height.
 C. Genetics sets a range of possible heights, and environmental factors determine where within that range an individual falls.
-D. The model cannot distinguish between genetic and environmental effects.
+D. Nurture (environment) completely overrides nature (genetics) in determining height.
 
 Correct Answer: C
 
-Feedback: Correct. The model demonstrates that genes establish the boundaries (range) of possible height, but nutrition determines the actual height achieved within that range. Neither factor alone determines the outcome. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates that genes establish the boundaries (range) of possible height, but nutrition determines the actual height achieved within that range. Neither factor alone determines the outcome. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -922,14 +921,13 @@ In the computational model for this lesson, a student draws arrows between compo
 In the generational comparison scenario, the model produces an 8-12 cm height difference using identical genetic components but 1940s versus 2020s nutrition. A student claims this proves 'genetics doesn't matter.' Which model evidence refutes this claim?
 
 A. Both scenarios still produce heights within the genetically defined range, showing genetics sets the boundaries.
-B. The model doesn't include any genetic components.
-C. The nutrition variable had no measurable effect in the model.
-D. The height difference was too small to be significant.
+B. The nutrition variable had no measurable effect in the model.
+C. The height difference was too small to be significant.
+D. The model doesn't include any genetic components.
 
 Correct Answer: A
 
-Feedback: Correct. Even with dramatic nutritional differences, both heights fall within the genetically defined range. Genetics determines the ceiling and floor; nutrition determines the position within those limits. Both matter. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Even with dramatic nutritional differences, both heights fall within the genetically defined range. Genetics determines the ceiling and floor; nutrition determines the position within those limits. Both matter. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -940,15 +938,14 @@ A student runs a simulation of the model. The model shows that when Nutrition Qu
 
 The model reveals a cascade: Nutrition Quality affects Gene Expression Level, which affects Growth Hormone Release, which affects Bone Growth Rate, which determines Final Height. If a child has excellent nutrition but a genetic condition that limits Growth Hormone Release, what does the model predict?
 
-A. The child will reach normal height because nutrition can compensate for hormonal deficiency.
-B. The cascade is interrupted. Even with strong gene expression and nutrition, reduced growth hormone will limit bone growth and final height.
-C. The model predicts the child will be taller than average because nutrition is more important than hormones.
-D. The genetic condition will have no effect because growth plates respond directly to nutrition.
+A. The genetic condition will have no effect because growth plates respond directly to nutrition.
+B. The model predicts the child will be taller than average because nutrition is more important than hormones.
+C. The child will reach normal height because nutrition can compensate for hormonal deficiency.
+D. The cascade is interrupted. Even with strong gene expression and nutrition, reduced growth hormone will limit bone growth and final height.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model's cascade structure shows that each component depends on the one before it. A disruption at any point in the chain (in this case, Growth Hormone Release) limits all downstream outcomes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model's cascade structure shows that each component depends on the one before it. A disruption at any point in the chain (in this case, Growth Hormone Release) limits all downstream outcomes. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -959,15 +956,14 @@ Scientists are studying data related to this system. They collected observations
 
 A public health researcher uses the model to argue for investing in school nutrition programs. Which model scenario provides the strongest evidence for this argument?
 
-A. The Optimal Nutrition scenario, which shows that maximum nutrition produces maximum height.
-B. The Generational Comparison scenario, which demonstrates that improving nutrition quality produces measurable height gains within a single generation.
-C. The Nutritional Deprivation scenario, which shows that poor nutrition has no lasting effects.
-D. The model cannot inform public health policy because it only models individual growth.
+A. The model cannot inform public health policy because it only models individual growth.
+B. The Optimal Nutrition scenario, which shows that maximum nutrition produces maximum height.
+C. The Generational Comparison scenario, which demonstrates that improving nutrition quality produces measurable height gains within a single generation.
+D. The Nutritional Deprivation scenario, which shows that poor nutrition has no lasting effects.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The Generational Comparison scenario directly demonstrates that improving nutrition, not changing genetics, produces significant measurable height gains. This shows a clear return on nutritional investment within one generation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The Generational Comparison scenario directly demonstrates that improving nutrition, not changing genetics, produces significant measurable height gains. This shows a clear return on nutritional investment within one generation. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -979,23 +975,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 The model shows that growth plates fuse in late adolescence, after which no further height increase is possible. What critical implication does this have for the timing of nutrition interventions?
 
 A. Nutrition interventions are equally effective at any age.
-B. Interventions in adulthood are most effective because adults need more nutrients.
-C. The window for nutritional impact on height is limited to childhood and adolescence. Interventions must occur before growth plate fusion to affect final height.
-D. Growth plates can reopen with sufficient nutrition, so timing does not matter.
+B. The window for nutritional impact on height is limited to childhood and adolescence. Interventions must occur before growth plate fusion to affect final height.
+C. Growth plates can reopen with sufficient nutrition, so timing does not matter.
+D. Interventions in adulthood are most effective because adults need more nutrients.
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct. The model demonstrates that growth plates represent a limited window of opportunity. Once they fuse, height is permanently set. This makes childhood and adolescent nutrition critically time-sensitive. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates that growth plates represent a limited window of opportunity. Once they fuse, height is permanently set. This makes childhood and adolescent nutrition critically time-sensitive. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
 Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.2, CCC4)
 Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.2, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.2, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.2, CCC4)
 
 
 ## Resources

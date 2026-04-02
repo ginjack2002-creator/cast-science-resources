@@ -920,107 +920,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI PS4.A (Wave properties and relationships) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: LiDAR Resolution, Camera Detection Accuracy, Sensor Fusion Confidence, Processing Latency, Environmental Degradation, Decision Algorithm Reliability, Safety Margin. Some components are external (LiDAR Resolution, Environmental Degradation) and some are internal (Camera Detection Accuracy, Sensor Fusion Confidence, Processing Latency, Decision Algorithm Reliability, Safety Margin). The student needs to understand what each component represents and how they are organized.
+A self-driving car company reports data from 10 million miles of autonomous driving in California. The car's sensor array includes 8 cameras (visible light), 5 LiDAR units (laser ranging), 6 radar units (radio wave detection), and 12 ultrasonic sensors (close-range detection). The system processes 1.5 terabytes of sensor data per hour, fusing inputs from all sensor types into a unified 3D model of the environment updated 20 times per second. Despite this capability, the system has recorded 147 instances where sensor fusion produced incorrect object classifications, 23 of which required emergency human intervention.
 
 A student's model shows that increasing LiDAR resolution from 100 to 400 points per square meter improves object detection by 25% but increases processing latency from 150ms to 350ms. At 65 mph, what is the safety implication of this trade-off?
 
 A. Higher resolution is always safer because detection is more accurate
 B. The improved detection is offset by increased latency: the vehicle now travels 35 feet instead of 15 feet before responding, meaning the system detects objects better but reacts to them slower, potentially creating a net decrease in safety at highway speeds
-C. Processing latency has no effect on safety if detection accuracy is high
-D. The vehicle should switch to camera-only mode at high speeds
+C. The vehicle should switch to camera-only mode at high speeds
+D. Processing latency has no effect on safety if detection accuracy is high
 
 Correct Answer: B
 
-Feedback: Correct. Better detection is meaningless if the response comes too late. The 200ms increase in latency adds 20 feet of travel before response. Optimal system design must balance detection quality against response time for the given speed envelope. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Better detection is meaningless if the response comes too late. The 200ms increase in latency adds 20 feet of travel before response. Optimal system design must balance detection quality against response time for the given speed envelope. If you chose A, this response overgeneralizes without considering the specific mechanisms and evidence presented. Detection accuracy and response speed are coupled safety factors. The additional 200ms latency means the vehicle travels an extra 20 feet before reacting. At highway speeds, the faster but less detailed system may actually be safer because it responds sooner. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. Detection accuracy and response speed are coupled safety factors. The additional 200ms latency means the vehicle travels an extra 20 feet before reacting. At highway speeds, the faster but less detailed system may actually be safer because it responds sooner. If you chose C, this choice oversimplifies a multi-factor system by focusing on a single variable. Detection accuracy and response speed are coupled safety factors. The additional 200ms latency means the vehicle travels an extra 20 feet before reacting. At highway speeds, the faster but less detailed system may actually be safer because it responds sooner.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI PS4.A (Wave properties and relationships) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when LiDAR Resolution increases, Sensor Fusion Confidence increases; when Environmental Degradation increases, Camera Detection Accuracy decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of LiDAR perception explains how self-driving cars measure distance. The LiDAR emits 128 laser beams rotating 20 times per second, each beam reflecting off objects and returning to the sensor. The time-of-flight measurement (speed of light times half the round-trip time) provides distance accurate to 2 centimeters at 200 meters range. The model reveals that LiDAR creates a point cloud of 2.4 million 3D points per second, but these points are sparse: at 100 meters, the spacing between points is approximately 10 cm, meaning small objects (like a thin pole or a partially occluded pedestrian) may fall between scan lines and be missed entirely.
 
 The model demonstrates that sensor fusion confidence drops sharply when LiDAR and camera disagree about an object's classification. A LiDAR return suggests a large solid object, but the camera classifies it as a plastic bag. How should the decision algorithm handle this conflict?
 
-A. Always trust the camera because it provides richer visual information
-B. The system should apply a conservative safety hierarchy: treat the object as the more dangerous interpretation (solid obstacle) until additional sensor data or time resolves the conflict, because the cost of hitting a solid object far exceeds the cost of briefly avoiding a plastic bag
-C. Average the two sensor readings to create a compromise classification
-D. Ignore both sensors and maintain current speed and direction
+A. The system should apply a conservative safety hierarchy: treat the object as the more dangerous interpretation (solid obstacle) until additional sensor data or time resolves the conflict, because the cost of hitting a solid object far exceeds the cost of briefly avoiding a plastic bag
+B. Ignore both sensors and maintain current speed and direction
+C. Always trust the camera because it provides richer visual information
+D. Average the two sensor readings to create a compromise classification
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Asymmetric risk demands conservative decision-making. Misclassifying a solid object as a bag could be fatal, while briefly treating a bag as a solid object merely causes a momentary slowdown. The cost of being wrong differs dramatically between the two errors. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Asymmetric risk demands conservative decision-making. Misclassifying a solid object as a bag could be fatal, while briefly treating a bag as a solid object merely causes a momentary slowdown. The cost of being wrong differs dramatically between the two errors. If you chose C, this response overgeneralizes without considering the specific mechanisms and evidence presented. When sensors disagree, the system must consider the asymmetric consequences of each possible error. Treating a bag as a rock causes a brief inconvenience; treating a rock as a bag could cause a fatal collision. Conservative classification, defaulting to the more dangerous interpretation, is the safety-rational approach. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. When sensors disagree, the system must consider the asymmetric consequences of each possible error. Treating a bag as a rock causes a brief inconvenience; treating a rock as a bag could cause a fatal collision. Conservative classification, defaulting to the more dangerous interpretation, is the safety-rational approach. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. When sensors disagree, the system must consider the asymmetric consequences of each possible error. Treating a bag as a rock causes a brief inconvenience; treating a rock as a bag could cause a fatal collision. Conservative classification, defaulting to the more dangerous interpretation, is the safety-rational approach.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.B (Develop solutions to engineering problems) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when LiDAR Resolution increases, Sensor Fusion Confidence increases and when Environmental Degradation increases, Camera Detection Accuracy decreases and when Processing Latency increases, Safety Margin decreases. The student changes one variable to see how the whole system responds.
+Engineers analyze a scenario where a self-driving car must classify an ambiguous object on the road ahead. Camera data shows a dark shape, but glare from the setting sun makes color and texture unreliable. LiDAR data shows a 3D point cluster consistent with either a plastic bag (safe to drive over) or a small animal (requiring emergency braking). Radar data shows no metallic signature. The sensor fusion algorithm must assign probabilities to each interpretation and decide whether to brake, swerve, or continue. The model shows that this decision must be made within 150 milliseconds at highway speed, leaving no time for additional sensor sweeps.
 
 A student observes that the model's decision algorithm performs well in scenarios represented in its training data but fails unpredictably in novel situations (e.g., a fallen tree across the road). What fundamental limitation of machine-learning-based decision systems does this reveal?
 
-A. The algorithm needs more processing power to handle novel scenarios
-B. Machine learning systems can only reliably handle situations similar to their training data; truly novel scenarios that fall outside the training distribution expose the system's inability to reason from first principles, unlike human drivers who can improvise
+A. The algorithm should ignore novel scenarios and continue driving normally
+B. The algorithm needs more processing power to handle novel scenarios
 C. All novel scenarios can be solved by adding more training data
-D. The algorithm should ignore novel scenarios and continue driving normally
+D. Machine learning systems can only reliably handle situations similar to their training data; truly novel scenarios that fall outside the training distribution expose the system's inability to reason from first principles, unlike human drivers who can improvise
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This is the 'long tail' problem in autonomous driving. ML systems excel at pattern matching within their training distribution but cannot reason about genuinely novel situations. This limitation is why fully autonomous driving in all conditions remains unsolved. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: This is the 'long tail' problem in autonomous driving. ML systems excel at pattern matching within their training distribution but cannot reason about genuinely novel situations. This limitation is why fully autonomous driving in all conditions remains unsolved. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The fundamental issue is distribution shift: ML systems perform well within their training distribution but degrade unpredictably on novel inputs. Human drivers can reason about unfamiliar situations using general knowledge, but current AI systems lack this ability, creating the 'long tail' of rare but critical edge cases. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The fundamental issue is distribution shift: ML systems perform well within their training distribution but degrade unpredictably on novel inputs. Human drivers can reason about unfamiliar situations using general knowledge, but current AI systems lack this ability, creating the 'long tail' of rare but critical edge cases. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The fundamental issue is distribution shift: ML systems perform well within their training distribution but degrade unpredictably on novel inputs. Human drivers can reason about unfamiliar situations using general knowledge, but current AI systems lack this ability, creating the 'long tail' of rare but critical edge cases.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.A (Wave properties and relationships) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Researchers testing self-driving car perception in adverse conditions document failure modes. In heavy rain, camera images show streaking and refraction that confuse object detection algorithms. LiDAR beams scatter off rain droplets, creating phantom objects (false positives) in the point cloud. Radar penetrates rain effectively but cannot determine object shape. The computational model shows that sensor fusion performance degrades nonlinearly with precipitation intensity: at 10 mm/hour (moderate rain), object detection accuracy drops from 99.5% to 94%; at 50 mm/hour (heavy rain), accuracy drops to 76%, below the safety threshold for autonomous operation.
 
 The model shows that Environmental Degradation (heavy rain) reduces LiDAR range by 40%, camera detection by 60%, but radar by only 5%. What does this demonstrate about the critical role of sensor diversity in the system?
 
-A. The vehicle should only use radar and eliminate LiDAR and cameras
+A. The degradation percentages are too small to affect driving safety
 B. Sensor diversity provides graceful degradation: when weather impairs optical sensors, radar maintains environmental awareness, preventing complete perception failure. No single sensor type is optimal in all conditions, making diversity a safety requirement rather than a luxury
-C. Heavy rain makes autonomous driving completely impossible regardless of sensors
-D. The degradation percentages are too small to affect driving safety
+C. The vehicle should only use radar and eliminate LiDAR and cameras
+D. Heavy rain makes autonomous driving completely impossible regardless of sensors
 
 Correct Answer: B
 
-Feedback: Correct. The asymmetric impact of rain across sensor types demonstrates why diversity is essential. Radar's weather resilience compensates for optical sensor degradation, maintaining minimum perception capability. Eliminating any sensor type would create conditions where the system is blind. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The asymmetric impact of rain across sensor types demonstrates why diversity is essential. Radar's weather resilience compensates for optical sensor degradation, maintaining minimum perception capability. Eliminating any sensor type would create conditions where the system is blind. If you chose C, this response oversimplifies a multi-factor system by focusing on a single variable. Sensor diversity provides resilience through complementary failure modes. Rain severely degrades optical sensors but barely affects radar. Without sensor diversity, a single weather condition could eliminate all perception. The system degrades gracefully rather than catastrophically. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. Sensor diversity provides resilience through complementary failure modes. Rain severely degrades optical sensors but barely affects radar. Without sensor diversity, a single weather condition could eliminate all perception. The system degrades gracefully rather than catastrophically. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Sensor diversity provides resilience through complementary failure modes. Rain severely degrades optical sensors but barely affects radar. Without sensor diversity, a single weather condition could eliminate all perception. The system degrades gracefully rather than catastrophically.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.B (Develop solutions to engineering problems) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (LiDAR Resolution, Environmental Degradation), but they can take action on internal components (Camera Detection Accuracy, Sensor Fusion Confidence, Processing Latency, Decision Algorithm Reliability, Safety Margin). They need to decide which action would be most effective based on what the model shows.
+A regulatory agency evaluates whether self-driving cars should be required to achieve zero accidents before deployment or if a statistical safety threshold is sufficient. Human drivers in California cause 1.13 fatalities per 100 million vehicle miles. Current autonomous systems have achieved 0.4 fatalities per 100 million miles in testing, but the confidence interval is wide due to limited total miles. The computational model shows that proving statistical superiority over human drivers at a 95% confidence level would require approximately 11 billion miles of autonomous driving, taking the current test fleet 400 years to accumulate. The agency must decide what evidence standard is appropriate for deployment.
 
 Based on the autonomous vehicle model, which conclusion about the relationship between safety margin and processing latency is best supported by the simulation data?
 
-A. Safety margin is independent of processing latency at all speeds
-B. Safety margin decreases proportionally with both increasing speed and increasing processing latency, because the distance traveled during processing time is the product of speed and latency. This means safety-critical decisions are fundamentally constrained by computation speed, and faster algorithms directly translate to safer vehicles
-C. Safety margin only depends on the driver's reaction time, not the computer's processing time
+A. Safety margin only depends on the driver's reaction time, not the computer's processing time
+B. Safety margin is independent of processing latency at all speeds
+C. Safety margin decreases proportionally with both increasing speed and increasing processing latency, because the distance traveled during processing time is the product of speed and latency. This means safety-critical decisions are fundamentally constrained by computation speed, and faster algorithms directly translate to safer vehicles
 D. Reducing speed to zero is the only way to ensure an adequate safety margin
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The blind distance (speed x latency) directly determines the minimum safety margin. This mathematical relationship means that improving processing speed has a direct, quantifiable safety benefit that increases with vehicle speed. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The blind distance (speed x latency) directly determines the minimum safety margin. This mathematical relationship means that improving processing speed has a direct, quantifiable safety benefit that increases with vehicle speed. If you chose B, this response overgeneralizes without considering the specific mechanisms and evidence presented. Safety margin = available stopping distance minus blind distance (speed x latency). As speed or latency increases, the blind distance grows and the safety margin shrinks. Faster processing directly and proportionally improves safety at any given speed. If you chose A, this answer oversimplifies a multi-factor system by focusing on a single variable. Safety margin = available stopping distance minus blind distance (speed x latency). As speed or latency increases, the blind distance grows and the safety margin shrinks. Faster processing directly and proportionally improves safety at any given speed. If you chose D, this choice oversimplifies a multi-factor system by focusing on a single variable. Safety margin = available stopping distance minus blind distance (speed x latency). As speed or latency increases, the blind distance grows and the safety margin shrinks. Faster processing directly and proportionally improves safety at any given speed.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.1, CCC4)
+Question 1: B (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-PS4-1, CCC4)
+Question 2: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS4-1, CCC2)
+Question 3: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS4-1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-2, CCC7)
+Question 5: C (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-2, CCC4)
 
+---
 
 ## Resources
 

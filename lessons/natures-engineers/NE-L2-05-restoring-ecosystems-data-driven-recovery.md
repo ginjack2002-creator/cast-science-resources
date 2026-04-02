@@ -200,113 +200,111 @@ Restoration Ecologists design and manage projects that return degraded ecosystem
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-6, HS-LS2-7, HS-ESS3-3, HS-ESS3-4, HS-ETS1-4.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.C.1 (Evaluate how complex interactions maintain ecosystem stability) + CCC4 (Describe a system in terms of its components)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Restoration Investment, Keystone Species Reintroduced, Human Development Pressure, Habitat Quality, Native Species Diversity, Invasive Species Pressure, Water Quality, Recovery Rate, Self-Sustaining Threshold. Some components are external (Restoration Investment, Keystone Species Reintroduced, Human Development Pressure) and some are internal (Habitat Quality, Native Species Diversity, Invasive Species Pressure, Water Quality, Recovery Rate, Self-Sustaining Threshold). The student needs to understand what each component represents and how they are organized.
+Scientists build a 9-component model of ecosystem restoration. The model includes restoration investment, keystone species reintroduced, and human development pressure as external inputs. Internal components include habitat quality, native species diversity, invasive species pressure, water quality, recovery rate, and a self-sustaining threshold.
 
-What is the 'self-sustaining threshold' in the model?
+What does the "self-sustaining threshold" represent in this model?
 
-A. The amount of money needed to start a restoration project
-B. The tipping point where the ecosystem can maintain itself without continued human investment
-C. The maximum number of species an ecosystem can support
-D. The point where all invasive species have been removed
+A. The maximum number of species an ecosystem can hold.
+B. The amount of money needed to start a restoration project.
+C. The tipping point where the ecosystem's internal feedback loops are strong enough to maintain recovery without continued human investment.
+D. The point where all invasive species have been completely eliminated.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! The self-sustaining threshold is the tipping point where the reinforcing feedback loops between habitat quality and biodiversity are strong enough for the ecosystem to maintain itself without ongoing human support. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The self-sustaining threshold is the critical tipping point where the reinforcing feedback loop between habitat quality and native species diversity becomes strong enough to maintain the ecosystem on its own. Below this threshold, removing human support causes collapse. Above it, the ecosystem can sustain itself. If you chose B, the threshold is about ecological function, not funding amounts. It measures whether internal processes are self-reinforcing. If you chose A, the threshold is not a species capacity limit. It is about whether the ecosystem can maintain itself independently. If you chose D, some invasive species may persist even after the threshold is crossed. The threshold means native species and habitat quality sustain each other.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.C.1 (Explain interactions that maintain ecosystem dynamics) + CCC7 (Describe stability and change in a system)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Restoration Investment increases, Habitat Quality increases; when Keystone Species Reintroduced increases, Habitat Quality increases. The student is trying to understand why these relationships are positive or negative.
+The model shows a reinforcing feedback loop between habitat quality and native species diversity. When habitat quality improves, it supports more native species. More native species then FURTHER improve habitat quality through pollination, seed dispersal, nutrient cycling, and soil stabilization.
 
-What did the 'Early Withdrawal' scenario reveal about restoration timing?
+A student claims this feedback loop means the ecosystem will always recover on its own without human help. Why is this claim incorrect?
 
-A. It does not matter when you stop investing because ecosystems always survive
-B. Stopping investment before the self-sustaining threshold is reached causes the ecosystem to collapse back
-C. You should always stop investing as early as possible to save money
-D. Early withdrawal actually helps the ecosystem by forcing it to become independent
+A. Feedback loops always lead to ecosystem collapse.
+B. The feedback loop does not actually exist in real ecosystems.
+C. Native species have no effect on habitat quality.
+D. The reinforcing loop only works once it reaches a certain strength. If the ecosystem is too degraded, the loop is too weak to drive recovery without human investment to jumpstart it.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Yes! The model showed that withdrawing funding before the self-sustaining threshold causes the ecosystem to lose its recovery momentum and collapse back toward a degraded state. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The reinforcing loop is real and powerful, but it needs a minimum starting strength to drive recovery. In a severely degraded ecosystem, habitat quality and native species are both too low for the loop to gain momentum on its own. Human investment (planting, invasive removal, keystone reintroduction) is needed to boost these components to the point where the feedback loop can become self-sustaining. If you chose B, reinforcing feedback loops between biodiversity and habitat quality are well-documented in ecology. If you chose A, reinforcing loops can drive either growth or decline. In this case, it drives recovery once it is strong enough. If you chose C, the model explicitly shows that native species improve habitat quality through multiple mechanisms.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS3.C.1 (Describe how human activities affect ecosystems) + CCC7 (Use stability and change to predict outcomes)
 
-A student runs a simulation of the model. The model shows that when Restoration Investment increases, Habitat Quality increases and when Keystone Species Reintroduced increases, Habitat Quality increases and when Keystone Species Reintroduced increases, Water Quality increases. The student changes one variable to see how the whole system responds.
+Scientists simulate the "Early Withdrawal" scenario. They invest heavily in ecosystem restoration for three years, bringing habitat quality to medium and native species diversity to 25 species. Then they completely stop all investment. Within two years of withdrawal, habitat quality drops back to low, native species decline to 10, and invasive species increase dramatically.
 
-What reinforcing feedback loop did the model reveal between habitat quality and native species diversity?
+Based on the model, why did the ecosystem collapse after investment was withdrawn?
 
-A. Higher habitat quality reduces native species diversity
-B. Better habitat supports more native species, and more native species further improve habitat quality, creating accelerating recovery
-C. Habitat quality and species diversity are not connected in the model
-D. Native species reduce habitat quality over time
+A. The scientists used the wrong type of investment.
+B. The investment was withdrawn before the self-sustaining threshold was reached, meaning the internal feedback loops were too weak to maintain recovery without external support.
+C. The ecosystem had been fully restored and then naturally declined.
+D. Early withdrawal has no effect on restoration success.
 
 Correct Answer: B
 
-Feedback: Correct! The model showed a powerful reinforcing loop: better habitat attracts and supports more native species, and those species (through soil health, pollination, water filtering) further improve habitat quality, creating a virtuous cycle. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows the self-sustaining threshold was not reached during the three years of investment. Habitat quality was only at medium and species diversity at 25. The reinforcing feedback loop was not strong enough to maintain recovery on its own. Without continued human support, invasive species re-established dominance, habitat quality declined, and native species were outcompeted. If you chose C, medium habitat quality and 25 species is not full restoration. The ecosystem was still in the recovery phase when support was removed. If you chose A, the type of investment is not the issue. The problem is that investment was stopped before the system could sustain itself. If you chose D, the data clearly shows dramatic decline after withdrawal.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI LS2.C.1 (Evaluate claims about ecosystem interactions) + CCC7 (Describe stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Two restoration strategies are compared in the model. Strategy A: Plant native vegetation only, with no keystone species reintroduction. After 5 years, habitat quality reaches medium and recovery rate is slow. Strategy B: Plant native vegetation AND reintroduce beavers as a keystone species. After 5 years, habitat quality reaches high and recovery rate is rapid.
 
-Why did the model show that keystone species reintroduction is a 'force multiplier' in ecosystem restoration?
+Why is keystone species reintroduction called a "force multiplier" in the model?
 
-A. Because keystone species are physically the strongest animals
-B. Because keystone species like beavers simultaneously improve multiple components (water quality AND habitat quality), accelerating the entire recovery process
-C. Because keystone species eat invasive species directly
-D. Because keystone species attract tourism funding
+A. Because keystone species are physically the largest animals in the ecosystem.
+B. Because keystone species like beavers simultaneously improve MULTIPLE system components (water quality AND habitat quality), accelerating the reinforcing feedback loop and reaching the self-sustaining threshold faster.
+C. Because keystone species bring tourism funding that pays for restoration.
+D. Because keystone species eat all the invasive species directly.
 
 Correct Answer: B
 
-Feedback: That is right! The model showed that keystone species like beavers act as force multipliers because they simultaneously improve water quality and habitat quality, jumpstarting the reinforcing feedback loop and accelerating overall recovery. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Keystone species are force multipliers because they improve multiple components at once. Beavers build dams that improve water quality (slowing flow, filtering sediment, raising groundwater) AND habitat quality (creating wetlands, ponds, and diverse microhabitats). This dual benefit accelerates the reinforcing feedback loop between habitat quality and native species diversity, helping the ecosystem reach the self-sustaining threshold faster. If you chose A, keystone status is not about physical size. It is about the outsized impact on the ecosystem. Some keystone species are small. If you chose D, while healthy ecosystems naturally resist invasives, beavers do not directly eat invasive species. Their impact is through habitat engineering. If you chose C, tourism funding is not part of the restoration model. The force multiplier effect is ecological, not economic.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS3.C.1 (Design solutions to reduce human impacts on biodiversity) + CCC7 (Use stability and change to predict outcomes)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Restoration Investment, Keystone Species Reintroduced, Human Development Pressure), but they can take action on internal components (Habitat Quality, Native Species Diversity, Invasive Species Pressure, Water Quality, Recovery Rate, Self-Sustaining Threshold). They need to decide which action would be most effective based on what the model shows.
+A conservation group has a limited budget to restore a degraded wetland. They must decide between two approaches. Approach A: Invest heavily for 3 years, then withdraw all funding. Approach B: Invest moderately for 8 years, maintaining support until the self-sustaining threshold is crossed.
 
-What does it mean to restore an ecosystem?
+The model predicts that Approach A reaches medium habitat quality and 25 species before collapsing after withdrawal. Approach B reaches high habitat quality and 45 species, crosses the self-sustaining threshold in Year 6, and maintains itself after funding ends in Year 8.
 
-A. Building a zoo for endangered animals
-B. Helping a damaged ecosystem recover through active human intervention
-C. Paving over damaged land so people can use it
-D. Moving all animals to a different location permanently
+Based on the model, which approach is more cost-effective for long-term restoration?
 
-Correct Answer: B
+A. Approach B, because sustained moderate investment reaches the self-sustaining threshold, producing a permanently self-maintaining ecosystem, while Approach A's intensive but short investment collapses without crossing the threshold.
+B. Both approaches produce identical results because total spending is what matters, not duration.
+C. Approach A, because spending more money faster always produces better results.
+D. Neither approach works because ecosystems cannot be restored.
 
-Feedback: Correct! Ecosystem restoration is the process of helping a degraded, damaged, or destroyed ecosystem recover through active human intervention like planting, monitoring, and reintroducing key species. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+Correct Answer: A
 
+Feedback: Approach B succeeds because it sustains investment long enough for the ecosystem to cross the self-sustaining threshold. After Year 6, the internal feedback loops are strong enough to maintain recovery. Approach A spends heavily but withdraws before the threshold, wasting the entire investment when the system collapses. Duration of support matters more than intensity. If you chose C, the model shows that spending more money for a shorter time actually wastes the investment. The ecosystem needs sustained support, not just large upfront spending. If you chose B, duration and timing of investment matter greatly. Crossing the threshold requires sustained support, regardless of total spending. If you chose D, the model shows Approach B successfully restores the ecosystem to a self-sustaining state.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.C.1, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.C.1, CCC7)
+Question 3: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.C.1, CCC7)
+Question 4: B (Cognitive Level: Argue — SEP 6.1.1, DCI LS2.C.1, CCC7)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS3.C.1, CCC7)
 
+---
 
 ## Lesson Metadata
 

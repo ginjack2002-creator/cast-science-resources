@@ -902,107 +902,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ESS1.B (Orbital mechanics and celestial patterns) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Asteroid Type, Orbital Distance, Mission Cost, Delta-v Requirement, Resource Value, Return on Investment. Some components are external (Asteroid Type, Orbital Distance) and some are internal (Mission Cost, Delta-v Requirement, Resource Value, Return on Investment). The student needs to understand what each component represents and how they are organized.
+NASA's Jet Propulsion Laboratory models a mission to redirect a near-Earth asteroid into lunar orbit for resource extraction. The asteroid, designated 2024 XR7, is a 500-meter M-type (metallic) body estimated to contain 7,500 metric tons of platinum-group metals, 2 million metric tons of iron-nickel alloy, and significant water ice deposits. The mission model calculates that the energy required for orbital transfer depends on the asteroid's current velocity relative to Earth, its mass, and the desired final orbit parameters.
 
 A student's model shows that a near-Earth C-type asteroid water mining mission has a positive ROI of 2.3, while a main-belt M-type platinum mining mission has a negative ROI of -0.7. The platinum asteroid contains 50x more valuable resources. Which analysis best explains why the cheaper target is more profitable?
 
 A. Water is inherently more valuable than platinum
-B. The exponential relationship between delta-v and fuel cost means the much higher delta-v to the main belt increases mission cost far more than the higher resource value compensates for, and water sold as fuel in space avoids Earth return costs entirely
-C. The model underestimates platinum's value
+B. The model underestimates platinum's value
+C. The exponential relationship between delta-v and fuel cost means the much higher delta-v to the main belt increases mission cost far more than the higher resource value compensates for, and water sold as fuel in space avoids Earth return costs entirely
 D. C-type asteroids are always closer than M-type asteroids
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The Tsiolkovsky equation is the key: the main-belt mission requires roughly 3x the delta-v of the NEA mission, but due to exponential fuel scaling, this means roughly 20x the fuel mass and mission cost. The 50x resource advantage cannot overcome the exponential cost penalty. Additionally, water sold in space never needs the expensive Earth return trip. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The Tsiolkovsky equation is the key: the main-belt mission requires roughly 3x the delta-v of the NEA mission, but due to exponential fuel scaling, this means roughly 20x the fuel mass and mission cost. The 50x resource advantage cannot overcome the exponential cost penalty. Additionally, water sold in space never needs the expensive Earth return trip. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. Consider the exponential nature of the rocket equation. Higher delta-v does not just add cost linearly. Tripling delta-v can increase fuel requirements by 20x or more. Now compare this exponential cost increase to the 50x resource value difference. Which grows faster? If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Consider the exponential nature of the rocket equation. Higher delta-v does not just add cost linearly. Tripling delta-v can increase fuel requirements by 20x or more. Now compare this exponential cost increase to the 50x resource value difference. Which grows faster? If you chose D, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Consider the exponential nature of the rocket equation. Higher delta-v does not just add cost linearly. Tripling delta-v can increase fuel requirements by 20x or more. Now compare this exponential cost increase to the 50x resource value difference. Which grows faster?
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ESS1.B (Orbital mechanics and celestial patterns) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when v Requirement increases, Mission Cost increases; when Asteroid Type increases, Resource Value increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of asteroid mining economics compares three extraction approaches: surface mining using autonomous robots, subsurface drilling with microwave-assisted fragmentation, and whole-body capture and processing in lunar orbit. The model tracks five variables: energy cost per ton extracted, equipment mass that must be launched from Earth, processing efficiency in microgravity versus surface gravity, time from launch to first material return, and total resource yield. A student analyzes which variables most strongly influence mission viability.
 
 The model simulation reveals that in-situ resource utilization (ISRU), where mined water is converted to fuel and sold in space, transforms the economics of asteroid mining. Which systems-level explanation best describes why ISRU is transformative?
 
-A. ISRU reduces the asteroid's orbital distance
-B. ISRU breaks the Earth launch cost bottleneck: instead of lifting every kilogram of fuel from Earth at $2,700-$10,000/kg, spacecraft refuel from asteroid-derived fuel in space, where the fuel never had to escape Earth's gravity
+A. ISRU allows spacecraft to travel faster than the speed of light
+B. ISRU reduces the asteroid's orbital distance
 C. ISRU makes platinum more valuable
-D. ISRU allows spacecraft to travel faster than the speed of light
+D. ISRU breaks the Earth launch cost bottleneck: instead of lifting every kilogram of fuel from Earth at $2,700-$10,000/kg, spacecraft refuel from asteroid-derived fuel in space, where the fuel never had to escape Earth's gravity
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. ISRU fundamentally changes the economic equation by eliminating the most expensive step: launching fuel from Earth's deep gravity well. A kilogram of water-derived fuel produced in space never paid the $2,700-$10,000/kg Earth launch tax. This transforms space economics from a single-use to a sustainable model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: ISRU fundamentally changes the economic equation by eliminating the most expensive step: launching fuel from Earth's deep gravity well. A kilogram of water-derived fuel produced in space never paid the $2,700-$10,000/kg Earth launch tax. This transforms space economics from a single-use to a sustainable model. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. Think about what makes space missions so expensive. The single largest cost is launching material from Earth against its gravity. ISRU means fuel produced in space never had to be launched from Earth. How does this change the entire economic model? If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. Think about what makes space missions so expensive. The single largest cost is launching material from Earth against its gravity. ISRU means fuel produced in space never had to be launched from Earth. How does this change the entire economic model? If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Think about what makes space missions so expensive. The single largest cost is launching material from Earth against its gravity. ISRU means fuel produced in space never had to be launched from Earth. How does this change the entire economic model?
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.C (Optimize design solutions) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when v Requirement increases, Mission Cost increases and when Asteroid Type increases, Resource Value increases. The student changes one variable to see how the whole system responds.
+An astrophysics team calculates the delta-v (change in velocity) requirements for reaching three candidate mining asteroids. Asteroid A requires 4.2 km/s delta-v and arrives in 8 months, Asteroid B requires 6.8 km/s and arrives in 14 months, and Asteroid C requires 3.1 km/s and arrives in 18 months but passes through the asteroid belt. The team's model shows that fuel mass increases exponentially with delta-v due to the Tsiolkovsky rocket equation: each additional km/s of delta-v requires exponentially more fuel, which itself adds mass requiring even more fuel.
 
 A student's model tests three mission profiles: (1) water mining at a near-Earth asteroid, (2) platinum mining at a near-Earth asteroid, and (3) water mining in the main belt. Only mission 1 shows positive ROI. Which variable has the greatest influence on profitability?
 
-A. Resource type alone determines profitability
-B. Orbital distance alone determines profitability
-C. The interaction between orbital distance (which drives delta-v and mission cost exponentially) and whether the product can be sold in space (avoiding Earth return costs) together determine profitability
-D. None of the variables significantly affect profitability
+A. Orbital distance alone determines profitability
+B. None of the variables significantly affect profitability
+C. Resource type alone determines profitability
+D. The interaction between orbital distance (which drives delta-v and mission cost exponentially) and whether the product can be sold in space (avoiding Earth return costs) together determine profitability
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. Profitability depends on two interacting factors: mission cost (driven exponentially by delta-v from orbital distance) and revenue model (in-space fuel sales vs. Earth return). Mission 1 succeeds because it minimizes BOTH: low delta-v AND no return trip. The other missions fail on one or both dimensions. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Profitability depends on two interacting factors: mission cost (driven exponentially by delta-v from orbital distance) and revenue model (in-space fuel sales vs. Earth return). Mission 1 succeeds because it minimizes BOTH: low delta-v AND no return trip. The other missions fail on one or both dimensions. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. Compare all three missions. Mission 1 (near + water) is profitable. Mission 2 (near + platinum) is not. Mission 3 (far + water) is not. What is different between 1 and 2? Between 1 and 3? The answer involves the interaction of two variables. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. Compare all three missions. Mission 1 (near + water) is profitable. Mission 2 (near + platinum) is not. Mission 3 (far + water) is not. What is different between 1 and 2? Between 1 and 3? The answer involves the interaction of two variables. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. Compare all three missions. Mission 1 (near + water) is profitable. Mission 2 (near + platinum) is not. Mission 3 (far + water) is not. What is different between 1 and 2? Between 1 and 3? The answer involves the interaction of two variables.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.B (Orbital mechanics and celestial patterns) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A space resources company presents orbital mechanics data to investors. Their analysis shows that mining a single 200-meter asteroid could yield platinum-group metals worth $15-25 billion at current market prices. However, the model also reveals a market feedback effect: introducing that volume of platinum (currently valued for its scarcity) would decrease market prices by 40-60%, reducing the actual revenue to $6-15 billion. The system dynamics show a negative feedback loop between supply increase and price decline that fundamentally limits profitability.
 
 The model shows that a 500-meter M-type asteroid at 2.5 AU contains $5 trillion in platinum group metals, but the mission cost is $8 trillion. A student proposes waiting for the asteroid to pass closer to Earth in its orbit. Based on orbital mechanics, which assessment is most accurate?
 
-A. All asteroids eventually pass close enough to Earth for profitable mining
+A. Waiting will always make missions cheaper because fuel prices decrease over time
 B. Main-belt asteroids have relatively circular orbits that never bring them close to Earth; only near-Earth asteroids (which cross Earth's orbital region) have close approach windows that temporarily reduce delta-v requirements
-C. Waiting will always make missions cheaper because fuel prices decrease over time
-D. Orbital distance is irrelevant to mission cost
+C. Orbital distance is irrelevant to mission cost
+D. All asteroids eventually pass close enough to Earth for profitable mining
 
 Correct Answer: B
 
-Feedback: Correct. Main-belt asteroids orbit between Mars and Jupiter in relatively circular paths that never approach Earth. Their delta-v requirements are fundamentally high regardless of timing. Only NEAs, which have eccentric orbits crossing Earth's orbital region, offer periodic close approaches that reduce delta-v. The student's proposal confuses the two populations. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Main-belt asteroids orbit between Mars and Jupiter in relatively circular paths that never approach Earth. Their delta-v requirements are fundamentally high regardless of timing. Only NEAs, which have eccentric orbits crossing Earth's orbital region, offer periodic close approaches that reduce delta-v. The student's proposal confuses the two populations. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. Consider where main-belt asteroids orbit (between Mars and Jupiter) versus where near-Earth asteroids orbit (crossing Earth's region). A main-belt asteroid's orbit never brings it near Earth. Only asteroids with eccentric, Earth-crossing orbits have periodic close approaches. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Consider where main-belt asteroids orbit (between Mars and Jupiter) versus where near-Earth asteroids orbit (crossing Earth's region). A main-belt asteroid's orbit never brings it near Earth. Only asteroids with eccentric, Earth-crossing orbits have periodic close approaches. If you chose C, this choice dismisses relevant factors that the evidence directly addresses. Consider where main-belt asteroids orbit (between Mars and Jupiter) versus where near-Earth asteroids orbit (crossing Earth's region). A main-belt asteroid's orbit never brings it near Earth. Only asteroids with eccentric, Earth-crossing orbits have periodic close approaches.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.C (Optimize design solutions) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Asteroid Type, Orbital Distance), but they can take action on internal components (Mission Cost, Delta-v Requirement, Resource Value, Return on Investment). They need to decide which action would be most effective based on what the model shows.
+An international space agency consortium evaluates the environmental and technical trade-offs of asteroid mining versus continued terrestrial mining. Their systems model compares lifecycle resource consumption, environmental impact, and technological readiness across both approaches. The model reveals that asteroid mining requires 10-15 years of technology development and initial investment of $50-100 billion, but eliminates terrestrial environmental damage from mining operations. Terrestrial mining is immediately available but produces escalating environmental costs as easily accessible deposits are exhausted and extraction moves to more ecologically sensitive areas.
 
 Based on the complete model analysis, which business strategy is best supported by the evidence for the first generation of asteroid mining companies?
 
-A. Target the most valuable M-type asteroids in the main belt to maximize resource returns
-B. Mine water from accessible near-Earth C-type asteroids and sell it as in-space fuel, building infrastructure and reducing costs for future missions to more distant, resource-rich targets
-C. Wait for technology to improve enough to make any mission profitable
-D. Mine platinum from near-Earth asteroids and return it to Earth for maximum profit
+A. Mine water from accessible near-Earth C-type asteroids and sell it as in-space fuel, building infrastructure and reducing costs for future missions to more distant, resource-rich targets
+B. Target the most valuable M-type asteroids in the main belt to maximize resource returns
+C. Mine platinum from near-Earth asteroids and return it to Earth for maximum profit
+D. Wait for technology to improve enough to make any mission profitable
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that the infrastructure-first strategy is the only profitable path. Water mining at low delta-v targets generates revenue from in-space fuel sales while building the refueling infrastructure that reduces costs for all subsequent missions. This creates a flywheel effect: each successful mission makes the next one cheaper. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that the infrastructure-first strategy is the only profitable path. Water mining at low delta-v targets generates revenue from in-space fuel sales while building the refueling infrastructure that reduces costs for all subsequent missions. This creates a flywheel effect: each successful mission makes the next one cheaper. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The model showed that mission cost (driven by delta-v) and Earth return costs are the two biggest barriers. Which strategy addresses both simultaneously while creating infrastructure that reduces costs for future, more ambitious missions? If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. The model showed that mission cost (driven by delta-v) and Earth return costs are the two biggest barriers. Which strategy addresses both simultaneously while creating infrastructure that reduces costs for future, more ambitious missions? If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. The model showed that mission cost (driven by delta-v) and Earth return costs are the two biggest barriers. Which strategy addresses both simultaneously while creating infrastructure that reduces costs for future, more ambitious missions?
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.4, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.4, CCC4)
+Question 1: C (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ESS1-4, CCC4)
+Question 2: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS1-4, CCC2)
+Question 3: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS1-4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-3, CCC7)
+Question 5: A (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-3, CCC4)
 
+---
 
 ## Resources
 

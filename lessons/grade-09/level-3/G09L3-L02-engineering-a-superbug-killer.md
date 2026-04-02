@@ -945,14 +945,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 In a phage therapy model, a student observes that increasing initial Phage Dosage leads to faster bacterial clearance, but the effect plateaus after a certain dose. Which explanation BEST accounts for this plateau?
 
 A. Phages are self-amplifying, so once enough phages establish successful infections, additional initial phages are redundant because the population grows exponentially from bacterial lysis
-B. Higher doses are always toxic to the patient
-C. The immune system destroys all phages above a certain concentration
-D. Bacteria become instantly resistant when phage concentration is too high
+B. The immune system destroys all phages above a certain concentration
+C. Bacteria become instantly resistant when phage concentration is too high
+D. Higher doses are always toxic to the patient
 
 Correct Answer: A
 
-Feedback: Correct. Because phage therapy is self-amplifying (each lysed bacterium releases 50-200 new phages), the initial dose only needs to be large enough to establish productive infections. Beyond that threshold, the phage population grows exponentially regardless of the starting dose. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Because phage therapy is self-amplifying (each lysed bacterium releases 50-200 new phages), the initial dose only needs to be large enough to establish productive infections. Beyond that threshold, the phage population grows exponentially regardless of the starting dose. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -964,14 +963,13 @@ In the computational model for this lesson, a student draws arrows between compo
 A model simulation shows that when Treatment Timing is delayed from Day 1 to Day 5 of infection, the probability of treatment failure increases dramatically. Which factor MOST directly explains this finding?
 
 A. The patient's immune system becomes too weak to support phage therapy after 5 days
-B. A larger, more genetically diverse bacterial population is more likely to contain pre-existing resistance mutations that natural selection can amplify
-C. Phages lose their effectiveness after being stored for 5 days
-D. The infection has already caused irreversible organ damage by Day 5
+B. The infection has already caused irreversible organ damage by Day 5
+C. A larger, more genetically diverse bacterial population is more likely to contain pre-existing resistance mutations that natural selection can amplify
+D. Phages lose their effectiveness after being stored for 5 days
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. As bacterial populations grow, they accumulate genetic diversity through random mutation. A population of 10 billion bacteria is far more likely to contain individuals with phage-resistant mutations than a population of 10,000. Natural selection rapidly amplifies these resistant mutants under phage pressure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. As bacterial populations grow, they accumulate genetic diversity through random mutation. A population of 10 billion bacteria is far more likely to contain individuals with phage-resistant mutations than a population of 10,000. Natural selection rapidly amplifies these resistant mutants under phage pressure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -982,15 +980,14 @@ A student runs a simulation of the model. The model shows that when Dosage Optim
 
 A researcher observes that bacteria which evolve resistance to a phage by modifying their surface receptors simultaneously become susceptible to an antibiotic they were previously resistant to. This phenomenon is BEST explained by which concept?
 
-A. Genetic linkage, where the resistance and susceptibility genes are on the same chromosome
-B. Evolutionary trade-offs, where the surface receptors used for phage attachment are the same receptors that confer antibiotic resistance, so modifying them costs both functions
-C. Horizontal gene transfer from phage DNA to bacterial DNA
-D. The antibiotic was reformulated to be more effective against the mutant strain
+A. The antibiotic was reformulated to be more effective against the mutant strain
+B. Horizontal gene transfer from phage DNA to bacterial DNA
+C. Genetic linkage, where the resistance and susceptibility genes are on the same chromosome
+D. Evolutionary trade-offs, where the surface receptors used for phage attachment are the same receptors that confer antibiotic resistance, so modifying them costs both functions
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This is phage-antibiotic synergy. Surface receptor proteins often serve multiple functions. When bacteria modify a receptor to block phage attachment, they may lose the efflux pump or structural feature that made them antibiotic-resistant. Evolution forces a trade-off between two survival strategies. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. This is phage-antibiotic synergy. Surface receptor proteins often serve multiple functions. When bacteria modify a receptor to block phage attachment, they may lose the efflux pump or structural feature that made them antibiotic-resistant. Evolution forces a trade-off between two survival strategies. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 4
@@ -1001,15 +998,14 @@ Scientists are studying data related to this system. They collected observations
 
 A phage therapy optimization model includes both Phage Specificity and Healthy Microbiome Impact as components. A student increases Phage Specificity to its maximum value. What is the MOST LIKELY effect on Healthy Microbiome Impact?
 
-A. Healthy Microbiome Impact increases because more specific phages are more potent
-B. Healthy Microbiome Impact decreases because highly specific phages only target the pathogenic strain and leave beneficial bacteria unharmed
-C. There is no relationship between specificity and microbiome impact
-D. Healthy Microbiome Impact remains the same because the microbiome is immune to phages
+A. Healthy Microbiome Impact decreases because highly specific phages only target the pathogenic strain and leave beneficial bacteria unharmed
+B. Healthy Microbiome Impact increases because more specific phages are more potent
+C. Healthy Microbiome Impact remains the same because the microbiome is immune to phages
+D. There is no relationship between specificity and microbiome impact
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Phage Specificity and Healthy Microbiome Impact have a negative relationship. Higher specificity means the phage more precisely distinguishes between pathogenic bacteria and beneficial microbiome species, resulting in less collateral damage to the gut ecosystem. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Phage Specificity and Healthy Microbiome Impact have a negative relationship. Higher specificity means the phage more precisely distinguishes between pathogenic bacteria and beneficial microbiome species, resulting in less collateral damage to the gut ecosystem. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1020,23 +1016,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A clinical team is designing a phage cocktail containing three different phages, each targeting a different surface receptor on the same pathogenic bacterium. What is the PRIMARY advantage of this multi-phage approach over using a single phage type?
 
-A. Three phages kill bacteria three times faster than one phage
+A. Using three phages reduces the immune system's response to the treatment
 B. The probability of simultaneous resistance to all three phages is exponentially lower than resistance to any single phage, making treatment failure far less likely
-C. Different phages target different organs in the body, increasing tissue coverage
-D. Using three phages reduces the immune system's response to the treatment
+C. Three phages kill bacteria three times faster than one phage
+D. Different phages target different organs in the body, increasing tissue coverage
 
 Correct Answer: B
 
-Feedback: Correct. If resistance to one phage occurs at a rate of 1 in 10^6, simultaneous resistance to three independent phages targeting different receptors occurs at approximately 1 in 10^18. This combinatorial principle is the same logic behind HIV combination therapy and makes resistance evolution astronomically unlikely. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. If resistance to one phage occurs at a rate of 1 in 10^6, simultaneous resistance to three independent phages targeting different receptors occurs at approximately 1 in 10^18. This combinatorial principle is the same logic behind HIV combination therapy and makes resistance evolution astronomically unlikely. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
 

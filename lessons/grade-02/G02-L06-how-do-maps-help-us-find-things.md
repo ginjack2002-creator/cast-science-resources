@@ -831,108 +831,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Develop a model to represent shapes of land and water) + DCI ESS2.B (Maps show where things are located) + CCC1 (Identify patterns in observations)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Land Height, Water Location, Map Features. Some components are external (Land Height) and some are internal (Water Location, Map Features). The student needs to understand what each component represents and how they are organized.
+A student looks at a map of California. She sees brown shapes with pointy tops along the eastern side. In the middle, she sees flat green areas. On the western side, she sees a long blue strip along the edge.
 
-What is a landform?
+What do these map features most likely represent?
 
-A. A type of plant that grows on land
-B. A natural shape on Earth's surface, like a mountain, hill, valley, or plain
-C. A building made by people
-D. A weather pattern
+A. Brown pointy shapes are buildings, green areas are parks, and blue is the sky
+B. All the colors are just decorations and do not mean anything
+C. Brown pointy shapes are mountains, green flat areas are valleys or plains, and blue is the Pacific Ocean
+D. Brown means old land, green means new land, and blue means cold land
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! A landform is a natural shape on Earth's surface. Mountains, hills, valleys, and plains are all landforms. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Maps use colors and shapes to represent real features on Earth. Brown pointy shapes represent mountains, green flat areas represent valleys or plains, and blue represents water like the Pacific Ocean. These are standard map symbols. If you chose A, maps do not show buildings as brown pointy shapes. Mountains are the pointy brown features. If you chose B, map colors have specific meanings. They represent real features like land, water, and mountains. If you chose D, map colors show the TYPE of feature (mountain, valley, water), not whether land is old or new.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.2 (Use a model to describe where things are) + DCI ESS2.B (Shapes and kinds of land and water in an area) + CCC1 (Use patterns to describe relationships)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Land Height increases, Water Location decreases; when Land Height increases, Map Features increases. The student is trying to understand why these relationships are positive or negative.
+In a model of how land and water relate, Land Height is an external component. Water Location is an internal component. The model shows a negative relationship between them, meaning water collects where the land is LOW, not where the land is HIGH.
 
-In our model, why does water collect in valleys and low areas?
+A student looks at a map and sees a deep valley between two tall mountains. Based on the model, where would water most likely be found?
 
-A. Because valleys pull water up from underground
-B. Because water flows downhill and collects at the lowest points
-C. Because valleys are always near the ocean
-D. Because water prefers to be in valleys
+A. In the deep valley at the lowest point between the mountains
+B. Water would not be found anywhere on this map
+C. At the very top of the mountains
+D. Floating in the air above the mountains
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct! Water always flows downhill because of gravity. It naturally collects at the lowest points, which is why rivers and lakes are found in valleys and low areas. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows a negative relationship between land height and water location. Water flows downhill and collects at the lowest points. The deep valley between two mountains is the lowest area, so that is where water would collect as a river or lake. If you chose C, water does not stay at the top of mountains. Gravity pulls it downhill. If you chose D, water does not float in the air above mountains. It flows down to low areas. If you chose B, water is found on almost every map. It collects in valleys, rivers, and lakes at low elevations.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.3 (Compare a model to the real world) + DCI ESS2.B (Maps represent the shapes of land and bodies of water) + CCC1 (Describe patterns in land and water features)
 
-A student runs a simulation of the model. The model shows that when Land Height increases, Water Location decreases and when Land Height increases, Map Features increases. The student changes one variable to see how the whole system responds.
+A class builds a model of their school neighborhood using clay. They make tall clay mountains, flat clay plains, and dig out low spots for rivers and a lake. Then they pour water over the mountains to see what happens. The water flows down the mountains and collects in the low spots they dug out.
 
-On a map, you see a blue winding line between two brown shapes. What does the blue line most likely represent?
+What does this model show about where water goes in the real world?
 
-A. A road between two buildings
-B. A river flowing between two mountains
-C. A crack in the map
-D. A blue fence
+A. Water stays exactly where it falls and does not move
+B. Water only flows if people dig channels for it
+C. Water flows downhill because of gravity and collects in the lowest spots like rivers, lakes, and valleys
+D. Water flows uphill toward the mountains
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! Blue on a map means water. A winding blue line between brown shapes (mountains) is a river flowing through a valley. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The clay model shows what happens in nature. Gravity pulls water downhill from high places like mountains to low places like valleys. Water naturally collects in the lowest spots, forming rivers and lakes. If you chose D, water never flows uphill. Gravity always pulls it down to lower ground. If you chose A, water moves constantly when it lands on a slope. It flows downhill until it reaches a flat or low area. If you chose B, water flows naturally because of gravity. Rivers and lakes form without people digging. Nature creates waterways over time.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Analyze observations to describe features) + DCI ESS2.B (Different types of landforms and bodies of water) + CCC1 (Identify patterns in types of land and water)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student compares two maps. Map A shows a flat area with very few blue features. Map B shows an area with tall mountains and many blue winding lines flowing down from the peaks into a big blue area at the bottom.
 
-How is a map different from standing on the ground and looking around?
+Which area likely has more rivers and lakes, and why?
 
-A. A map only shows what is right in front of you
-B. A map shows the whole area from above so you can see everything at once
-C. A map does not show water
-D. Standing on the ground gives you a better view than any map
+A. Map A, because water cannot flow down mountains
+B. Map B, because mountains cause rain water to flow downhill, creating rivers that collect in lakes at the bottom
+C. Both maps have the same amount of water because water is the same everywhere
+D. Map A, because flat areas always have more water
 
 Correct Answer: B
 
-Feedback: Correct! A map gives you a bird's eye view so you can see the whole area at once, including things you could never see from the ground like how a river bends or what is on the other side of a mountain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Mountains cause water to flow downhill, creating rivers and streams that eventually collect in lakes and valleys at the bottom. Map B has more blue features because the mountains create more water flow. If you chose D, flat areas can have water, but the winding blue lines flowing down mountains in Map B show more active water movement. If you chose C, the two maps show very different amounts of water. The landscape affects how much water collects in an area. If you chose A, water absolutely flows down mountains. That is how rivers are created. Gravity pulls water from high places to low places.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.4 (Use a model to represent land and water) + DCI ESS2.B (Understand the shapes and kinds of land and water) + CCC4 (Describe parts of a system and how they relate)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Land Height), but they can take action on internal components (Water Location, Map Features). They need to decide which action would be most effective based on what the model shows.
+A city planner needs to decide where to build a new neighborhood. She looks at a map that shows tall hills, flat plains, and a river that floods every spring. She needs to pick the safest location.
 
-What does a map show?
+Based on what the map shows about land and water, which location would be safest to build?
 
-A. What a place looks like from above, like a bird flying over it
-B. Only buildings and roads
-C. What a place looks like from under the ground
-D. Only oceans and nothing else
+A. Right next to the river where it floods every spring
+B. At the very top of the tallest hill where it is hard to get water
+C. In the middle of the river
+D. On a flat plain that is higher than the river and away from the flood area
 
-Correct Answer: A
+Correct Answer: D
 
-Feedback: That is right! A map shows what a place looks like from above, as if you were a bird flying high over the area. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: A flat plain that is higher than the river provides safe, stable ground away from flooding. Maps help people understand where land and water features are so they can make smart decisions about where to build. If you chose A, building next to a flooding river is dangerous. The map shows this area floods every spring. If you chose B, while hilltops avoid flooding, they are very hard to build on and hard to get water to. This is not the best choice. If you chose C, you cannot build in the middle of a river. That is where the water flows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.2, CCC4)
-Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.2, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1, DCI ESS2.B, CCC1)
+Question 2: A (Cognitive Level: Predict — SEP 2.2, DCI ESS2.B, CCC1)
+Question 3: C (Cognitive Level: Reason + Explain — SEP 2.3, DCI ESS2.B, CCC1)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 4.1, DCI ESS2.B, CCC1)
+Question 5: D (Cognitive Level: Reason + Apply — SEP 2.4, DCI ESS2.B, CCC4)
 
-
+---
 ## Resources
 
 | Resource | Link |

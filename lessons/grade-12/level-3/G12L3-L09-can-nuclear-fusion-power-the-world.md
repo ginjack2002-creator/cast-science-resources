@@ -418,6 +418,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Plasma Temperature → Fusion Reaction Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Plasma Density being active. Without this condition,
+the simulation produces inaccurate results: Plasma Temperature drives Fusion Reaction Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Plasma Temperature → Fusion Reaction Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Plasma Density is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Plasma Density active and observe
+     how Plasma Temperature's effect on Fusion Reaction Rate is now gated
+   • Toggle Plasma Density ON/OFF while Plasma Temperature remains constant
+   • Verify that Fusion Reaction Rate only responds to Plasma Temperature when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Plasma Density → Fusion Reaction Rate
+   • Set condition: IF Plasma Temperature is ON
+   • This ensures Plasma Density's effect on Fusion Reaction Rate
+     is contingent on Plasma Temperature being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Confinement Time → Net Energy Output
+   • Set condition: IF Wall Material Degradation is ON
+   • This ensures Confinement Time's effect on Net Energy Output
+     is contingent on Wall Material Degradation being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -992,15 +1034,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that current best fusion performance (JET tokamak, Q = 0.33 for 5 seconds) achieves the required temperature and density but fails on confinement time. What does this reveal about the primary engineering bottleneck for fusion?
 
-A. We cannot heat plasma to fusion temperatures with current technology
-B. The physics of fusion is wrong and the reaction cannot actually produce net energy
-C. Plasma instabilities that develop on millisecond timescales disrupt confinement, making it the hardest of the three Lawson criterion parameters to achieve and sustain. Maintaining confinement for hundreds of seconds requires real-time suppression of multiple instability modes simultaneously
-D. Confinement is the easiest parameter to achieve and temperature is the real bottleneck
+A. Confinement is the easiest parameter to achieve and temperature is the real bottleneck
+B. We cannot heat plasma to fusion temperatures with current technology
+C. The physics of fusion is wrong and the reaction cannot actually produce net energy
+D. Plasma instabilities that develop on millisecond timescales disrupt confinement, making it the hardest of the three Lawson criterion parameters to achieve and sustain. Maintaining confinement for hundreds of seconds requires real-time suppression of multiple instability modes simultaneously
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model reveals that temperature and density are achievable with current technology, but maintaining stable confinement against multiple plasma instability modes (kink, ballooning, edge-localized modes) for hundreds of seconds remains the primary bottleneck. This requires real-time magnetic field control with millisecond response times and extraordinary precision. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that temperature and density are achievable with current technology, but maintaining stable confinement against multiple plasma instability modes (kink, ballooning, edge-localized modes) for hundreds of seconds remains the primary bottleneck. This requires real-time magnetic field control with millisecond response times and extraordinary precision. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1011,15 +1052,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 ITER is designed to achieve Q = 10 (500 MW fusion from 50 MW heating). The model reveals that achieving Q = 10 is necessary but insufficient for commercial fusion. What additional challenges must be solved between ITER and a power plant on the electrical grid?
 
-A. ITER solves all remaining challenges and commercial fusion is ready for deployment
-B. Commercial fusion requires sustained operation for months (not seconds), tritium self-sufficiency (breeding more tritium than consumed), materials that survive years of neutron bombardment, and electricity generation at competitive cost, none of which ITER is designed to demonstrate
-C. The only remaining challenge is building a larger version of ITER
-D. Commercial fusion requires Q = 10 and nothing more
+A. Commercial fusion requires Q = 10 and nothing more
+B. The only remaining challenge is building a larger version of ITER
+C. Commercial fusion requires sustained operation for months (not seconds), tritium self-sufficiency (breeding more tritium than consumed), materials that survive years of neutron bombardment, and electricity generation at competitive cost, none of which ITER is designed to demonstrate
+D. ITER solves all remaining challenges and commercial fusion is ready for deployment
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. ITER is a physics experiment, not a power plant. Commercial fusion must solve: continuous operation for 11+ months per year (ITER runs in pulses); tritium breeding ratio > 1.0 (ITER does not breed tritium at scale); wall materials that survive 14.1 MeV neutron bombardment for years (ITER will identify the damage but not solve it); and cost-competitive electricity generation. Each is a major unsolved engineering challenge. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Correct. ITER is a physics experiment, not a power plant. Commercial fusion must solve: continuous operation for 11+ months per year (ITER runs in pulses); tritium breeding ratio > 1.0 (ITER does not breed tritium at scale); wall materials that survive 14.1 MeV neutron bombardment for years (ITER will identify the damage but not solve it); and cost-competitive electricity generation. Each is a major unsolved engineering challenge. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 ---
 
 ### Question 3
@@ -1030,15 +1070,14 @@ A student runs a simulation of the model. The model shows that when Magnetic Fie
 
 The model reveals that neutron flux on reactor walls is a 'hidden' challenge because neutrons carry 80% of fusion energy but cannot be confined by magnetic fields. What are the consequences of this for reactor engineering?
 
-A. Neutrons are beneficial because they heat the walls and generate electricity directly
+A. Neutrons from fusion are low-energy and cause negligible damage to materials
 B. 14.1 MeV fusion neutrons cause atomic displacements, helium bubble formation, and nuclear transmutation in wall materials, making them brittle and radioactive. This means inner wall components must be replaced every few years, creating ongoing maintenance costs and generating radioactive waste that, while less dangerous than fission waste, still requires management
 C. Magnetic fields can be strengthened to confine neutrons along with the plasma
-D. Neutrons from fusion are low-energy and cause negligible damage to materials
+D. Neutrons are beneficial because they heat the walls and generate electricity directly
 
 Correct Answer: B
 
-Feedback: Correct. Unlike charged plasma particles, neutrons have no charge and pass through magnetic fields unimpeded. At 14.1 MeV, they are highly energetic and cause severe material damage: displacing atoms from crystal lattices, creating helium bubbles that weaken metal, and transmuting elements. This creates a materials science challenge with no current solution. Inner wall components may need replacement every 2-5 years. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Unlike charged plasma particles, neutrons have no charge and pass through magnetic fields unimpeded. At 14.1 MeV, they are highly energetic and cause severe material damage: displacing atoms from crystal lattices, creating helium bubbles that weaken metal, and transmuting elements. This creates a materials science challenge with no current solution. Inner wall components may need replacement every 2-5 years. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1050,14 +1089,13 @@ Scientists are studying data related to this system. They collected observations
 The model shows that tritium self-sufficiency requires a tritium breeding ratio (TBR) greater than 1.0 from lithium blankets surrounding the plasma. Why must the TBR exceed 1.0 rather than exactly equal 1.0?
 
 A. TBR of exactly 1.0 is sufficient because every tritium atom consumed is replaced
-B. Tritium is radioactive with a 12.3-year half-life and some bred tritium is lost during extraction, processing, and storage. These unavoidable losses mean the reactor must breed more tritium than it consumes to maintain a stable fuel supply
-C. TBR > 1.0 is needed because tritium is used for cooling in addition to fuel
-D. The model shows that TBR of 0.5 is sufficient for commercial operation
+B. The model shows that TBR of 0.5 is sufficient for commercial operation
+C. Tritium is radioactive with a 12.3-year half-life and some bred tritium is lost during extraction, processing, and storage. These unavoidable losses mean the reactor must breed more tritium than it consumes to maintain a stable fuel supply
+D. TBR > 1.0 is needed because tritium is used for cooling in addition to fuel
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Even with perfect blanket coverage, some bred tritium decays before use (half-life 12.3 years), some is lost during the extraction and purification process, and some permeates through materials and escapes. These unavoidable losses mean the TBR must exceed 1.0 (typically estimated at 1.05-1.15) to maintain a net positive tritium inventory over the reactor's lifetime. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Even with perfect blanket coverage, some bred tritium decays before use (half-life 12.3 years), some is lost during the extraction and purification process, and some permeates through materials and escapes. These unavoidable losses mean the TBR must exceed 1.0 (typically estimated at 1.05-1.15) to maintain a net positive tritium inventory over the reactor's lifetime. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1068,24 +1106,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model predicts that high-temperature superconducting (HTS) magnets generating 20+ Tesla could significantly improve fusion feasibility compared to ITER's low-temperature superconducting magnets at 11.8 Tesla. What is the primary advantage of stronger magnetic fields for fusion?
 
-A. Stronger magnets heat the plasma to higher temperatures automatically
-B. Stronger magnetic fields confine plasma more tightly, enabling higher density and better stability in a physically smaller device. This means fusion-relevant conditions can be achieved in a reactor a fraction of ITER's size, dramatically reducing construction cost and accelerating the path to commercial viability
+A. Stronger magnetic fields confine plasma more tightly, enabling higher density and better stability in a physically smaller device. This means fusion-relevant conditions can be achieved in a reactor a fraction of ITER's size, dramatically reducing construction cost and accelerating the path to commercial viability
+B. Stronger magnets heat the plasma to higher temperatures automatically
 C. Stronger magnets eliminate the need for tritium fuel
 D. HTS magnets operate at room temperature and require no cooling
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Magnetic confinement performance scales with the fourth power of magnetic field strength. Doubling the field from 11.8 to 20+ Tesla enables roughly 16x better confinement performance, meaning the same fusion conditions can be achieved in a much smaller, cheaper device. This is why private fusion companies like Commonwealth Fusion Systems are pursuing HTS magnets as a potential shortcut past ITER-scale facilities. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Magnetic confinement performance scales with the fourth power of magnetic field strength. Doubling the field from 11.8 to 20+ Tesla enables roughly 16x better confinement performance, meaning the same fusion conditions can be achieved in a much smaller, cheaper device. This is why private fusion companies like Commonwealth Fusion Systems are pursuing HTS magnets as a potential shortcut past ITER-scale facilities. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.8, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.8, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.8, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.8, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.8, CCC2)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.8, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.8, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.8, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.8, CCC4)
 
 
 ## Resources

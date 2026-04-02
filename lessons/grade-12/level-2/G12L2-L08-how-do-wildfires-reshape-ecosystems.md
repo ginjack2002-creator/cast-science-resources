@@ -381,6 +381,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Fuel Load Accumulation → Fire Intensity relationship as
+unconditional. However, this relationship is scientifically
+contingent on Climate and Weather Conditions being active. Without this condition,
+the simulation produces inaccurate results: Fuel Load Accumulation drives Fire Intensity
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Fuel Load Accumulation → Fire Intensity
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Climate and Weather Conditions is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Climate and Weather Conditions active and observe
+     how Fuel Load Accumulation's effect on Fire Intensity is now gated
+   • Toggle Climate and Weather Conditions ON/OFF while Fuel Load Accumulation remains constant
+   • Verify that Fire Intensity only responds to Fuel Load Accumulation when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Climate and Weather Conditions → Fire Intensity
+   • Set condition: IF Fuel Load Accumulation is ON
+   • This ensures Climate and Weather Conditions's effect on Fire Intensity
+     is contingent on Fuel Load Accumulation being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Soil Health and Seed Bank → Post-Fire Vegetation Recovery
+   • Set condition: IF Ecosystem Resilience is ON
+   • This ensures Soil Health and Seed Bank's effect on Post-Fire Vegetation Recovery
+     is contingent on Ecosystem Resilience being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -954,15 +996,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student compares model outputs for a natural fire regime (moderate fuel, historical climate) versus a fire after 100 years of suppression (maximum fuel, current climate). The suppression-legacy fire shows 10 times greater intensity and severely degraded soil health. What systemic lesson does this comparison illustrate?
 
-A. Fire suppression has no long-term consequences for forest health
-B. Attempting to prevent all disturbance in a disturbance-dependent system does not eliminate the disturbance but transforms it from a manageable, beneficial process into a catastrophic one
-C. Fuel load has no effect on fire intensity
-D. Historical fire regimes were more destructive than modern fires
+A. Historical fire regimes were more destructive than modern fires
+B. Fuel load has no effect on fire intensity
+C. Attempting to prevent all disturbance in a disturbance-dependent system does not eliminate the disturbance but transforms it from a manageable, beneficial process into a catastrophic one
+D. Fire suppression has no long-term consequences for forest health
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This is a fundamental systems lesson: fire-adapted ecosystems require periodic disturbance. Suppressing natural fire does not eliminate fire but guarantees that when fire eventually occurs (as it inevitably will), it will be catastrophically intense due to accumulated fuel, causing far more damage than the natural fires that were prevented. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. This is a fundamental systems lesson: fire-adapted ecosystems require periodic disturbance. Suppressing natural fire does not eliminate fire but guarantees that when fire eventually occurs (as it inevitably will), it will be catastrophically intense due to accumulated fuel, causing far more damage than the natural fires that were prevented. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -973,15 +1014,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that a climate-amplified megafire (maximum fuel + extreme heat, drought, and wind) can sterilize soil to 10+ cm depth and destroy seed banks. A student predicts that the forest will recover naturally within 15 years. What does the model evidence suggest about this prediction?
 
-A. The prediction is accurate because all fires are followed by rapid recovery
+A. The forest will recover faster than 15 years because fire releases nutrients
 B. The prediction is likely wrong because soil sterilization and seed bank destruction remove the biological resources needed for forest recovery, potentially causing permanent type-conversion to shrubland or grassland
-C. The forest will recover faster than 15 years because fire releases nutrients
-D. The soil sterilization only affects the first growing season
+C. The soil sterilization only affects the first growing season
+D. The prediction is accurate because all fires are followed by rapid recovery
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that when fire exceeds ecosystem tolerance thresholds, recovery may be impossible. Sterilized soil lacks mycorrhizal fungi, seed banks are destroyed, and mature seed-producing trees are killed. Without these biological resources, the ecosystem cannot regenerate as forest and may convert permanently to a different vegetation type. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that when fire exceeds ecosystem tolerance thresholds, recovery may be impossible. Sterilized soil lacks mycorrhizal fungi, seed banks are destroyed, and mature seed-producing trees are killed. Without these biological resources, the ecosystem cannot regenerate as forest and may convert permanently to a different vegetation type. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -992,15 +1032,14 @@ A student runs a simulation of the model. The model shows that when Fuel Load Ac
 
 A model shows that healthy forests are carbon sinks, absorbing more CO2 than they release. After a megafire, the model shows the forest becoming a net carbon source for decades. What mechanism drives this reversal?
 
-A. Wildfires absorb CO2 from the atmosphere during combustion
-B. The fire rapidly releases stored carbon through combustion, while killing the living trees that would reabsorb it, and decomposition of dead wood continues releasing carbon for years after the fire
-C. Carbon sinks and sources are unrelated to living biomass
-D. Post-fire vegetation immediately compensates for all carbon lost in the fire
+A. Carbon sinks and sources are unrelated to living biomass
+B. Post-fire vegetation immediately compensates for all carbon lost in the fire
+C. Wildfires absorb CO2 from the atmosphere during combustion
+D. The fire rapidly releases stored carbon through combustion, while killing the living trees that would reabsorb it, and decomposition of dead wood continues releasing carbon for years after the fire
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Megafires release decades of stored carbon in hours through combustion. They also kill the trees that serve as active carbon sinks. Dead trees and roots then decompose over years, continuing to release CO2. Without living trees to reabsorb carbon, the area remains a net source for decades, creating a positive climate feedback. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Correct. Megafires release decades of stored carbon in hours through combustion. They also kill the trees that serve as active carbon sinks. Dead trees and roots then decompose over years, continuing to release CO2. Without living trees to reabsorb carbon, the area remains a net source for decades, creating a positive climate feedback. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 ---
 
 ### Question 4
@@ -1011,15 +1050,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model demonstrates that prescribed burns reduce fuel loads and lower the intensity of subsequent wildfires. A community member opposes prescribed burns because 'setting fires in forests is never safe.' Based on model evidence, how should a fire ecologist respond?
 
-A. Agree that all fire in forests should be prevented
-B. Explain that model evidence shows controlled low-intensity prescribed burns reduce future wildfire intensity by removing accumulated fuel, and that the alternative to managed fire is not no fire but rather unmanaged catastrophic fire
-C. Ignore the community member's concern because science always overrides public opinion
+A. Explain that model evidence shows controlled low-intensity prescribed burns reduce future wildfire intensity by removing accumulated fuel, and that the alternative to managed fire is not no fire but rather unmanaged catastrophic fire
+B. Ignore the community member's concern because science always overrides public opinion
+C. Agree that all fire in forests should be prevented
 D. Recommend clear-cutting the forest instead of prescribed burning
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model provides clear evidence that the choice is not between fire and no fire, but between managed fire (prescribed burns at low intensity) and unmanaged fire (catastrophic wildfire at extreme intensity). Model data showing that fuel reduction through prescribed burns dramatically lowers future fire intensity makes the evidence-based case for proactive fire management. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model provides clear evidence that the choice is not between fire and no fire, but between managed fire (prescribed burns at low intensity) and unmanaged fire (catastrophic wildfire at extreme intensity). Model data showing that fuel reduction through prescribed burns dramatically lowers future fire intensity makes the evidence-based case for proactive fire management. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1030,24 +1068,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on model evidence about fire ecology, climate change, and ecosystem resilience, which fire management strategy would be most effective for long-term forest and community protection?
 
-A. Continue aggressive fire suppression of all fires to protect communities
-B. An integrated approach that uses prescribed burns to reduce fuel in strategic areas, creates defensible space around communities, and allows ecological fire to play its natural role in wilderness areas
-C. Allow all fires to burn without any management or community protection
-D. Remove all forests within 50 miles of communities to eliminate fire risk
+A. Allow all fires to burn without any management or community protection
+B. Continue aggressive fire suppression of all fires to protect communities
+C. Remove all forests within 50 miles of communities to eliminate fire risk
+D. An integrated approach that uses prescribed burns to reduce fuel in strategic areas, creates defensible space around communities, and allows ecological fire to play its natural role in wilderness areas
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that effective fire management requires an integrated strategy: prescribed burns reduce fuel loads and restore natural fire regimes, defensible space protects communities at the wildland-urban interface, and allowing ecological fire in appropriate areas maintains ecosystem health. This approach addresses both human safety and ecological integrity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that effective fire management requires an integrated strategy: prescribed burns reduce fuel loads and restore natural fire regimes, defensible space protects communities at the wildland-urban interface, and allowing ecological fire in appropriate areas maintains ecosystem health. This approach addresses both human safety and ecological integrity. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.2, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.2, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.2, CCC2)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.2, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.2, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.2, CCC2)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.2, CCC4)
 
 
 ## Resources

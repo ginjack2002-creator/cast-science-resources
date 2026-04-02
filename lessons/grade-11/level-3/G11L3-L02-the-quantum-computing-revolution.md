@@ -353,6 +353,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Qubit Count → Quantum Volume relationship as
+unconditional. However, this relationship is scientifically
+contingent on Gate Error Rate being active. Without this condition,
+the simulation produces inaccurate results: Qubit Count drives Quantum Volume
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Qubit Count → Quantum Volume
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Gate Error Rate is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Gate Error Rate active and observe
+     how Qubit Count's effect on Quantum Volume is now gated
+   • Toggle Gate Error Rate ON/OFF while Qubit Count remains constant
+   • Verify that Quantum Volume only responds to Qubit Count when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -919,107 +949,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI PS4.B (Electromagnetic radiation and information) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Qubit Count, Coherence Time, Gate Error Rate, Entanglement Fidelity, Operating Temperature, Circuit Depth, Quantum Volume. Some components are external (Qubit Count, Operating Temperature) and some are internal (Coherence Time, Gate Error Rate, Entanglement Fidelity, Circuit Depth, Quantum Volume). The student needs to understand what each component represents and how they are organized.
+A quantum computing research team demonstrates a 72-qubit processor solving an optimization problem in 200 seconds that would take a classical supercomputer an estimated 10,000 years. However, the quantum processor must operate at 15 millikelvin (colder than outer space) and the qubits maintain coherence for only 100 microseconds before environmental noise introduces errors. The error rate per gate operation is 0.5%, meaning a computation requiring 1,000 gate operations has only a 0.7% probability of producing a correct result without error correction.
 
 A student's quantum computing model shows that increasing qubit count from 50 to 100 doubles the potential computational power but increases the gate error rate from 0.5% to 0.8% per operation. For a 1,000-gate circuit, what is the most accurate analysis of this trade-off?
 
-A. The increased qubit count will always outweigh the higher error rate
-B. At 0.8% error per gate across 1,000 gates, the cumulative error probability approaches certainty, meaning the additional qubits provide no usable computational advantage without improved error correction
-C. The error rate increase is negligible because individual gate errors do not compound
-D. Reducing the circuit to 100 gates would eliminate all errors
+A. Reducing the circuit to 100 gates would eliminate all errors
+B. The error rate increase is negligible because individual gate errors do not compound
+C. At 0.8% error per gate across 1,000 gates, the cumulative error probability approaches certainty, meaning the additional qubits provide no usable computational advantage without improved error correction
+D. The increased qubit count will always outweigh the higher error rate
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Compound error probability across 1,000 gates at 0.8% per gate means the probability of zero errors is approximately (0.992)^1000, which is vanishingly small. More qubits are useless if the computation is drowned in errors. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Compound error probability across 1,000 gates at 0.8% per gate means the probability of zero errors is approximately (0.992)^1000, which is vanishingly small. More qubits are useless if the computation is drowned in errors. If you chose D, this response assumes the model or data is flawed rather than analyzing what the evidence actually shows. Gate errors compound across circuit depth. At 0.8% per gate over 1,000 gates, the probability that the entire circuit executes correctly is (0.992)^1000, which is extremely small. The additional qubits cannot overcome this error accumulation without better error correction. If you chose B, this answer assumes the model or data is flawed rather than analyzing what the evidence actually shows. Gate errors compound across circuit depth. At 0.8% per gate over 1,000 gates, the probability that the entire circuit executes correctly is (0.992)^1000, which is extremely small. The additional qubits cannot overcome this error accumulation without better error correction. If you chose A, this choice assumes the model or data is flawed rather than analyzing what the evidence actually shows. Gate errors compound across circuit depth. At 0.8% per gate over 1,000 gates, the probability that the entire circuit executes correctly is (0.992)^1000, which is extremely small. The additional qubits cannot overcome this error accumulation without better error correction.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI PS4.B (Electromagnetic radiation and information) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Operating Temperature increases, Coherence Time decreases; when Coherence Time increases, Circuit Depth increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of quantum decoherence tracks how environmental interactions cause a qubit to lose its quantum properties. In a perfect vacuum at absolute zero, a qubit could maintain superposition indefinitely. In practice, thermal photons, magnetic field fluctuations, and vibrations from the cooling system all cause decoherence. The model shows that decoherence time sets a hard limit on computation depth: any calculation must complete within the coherence window, or the quantum advantage is lost. Increasing coherence time from 100 to 1,000 microseconds would enable computations 100 times more complex.
 
 The model demonstrates that quantum volume, not raw qubit count, determines actual computational capability. Which combination of improvements would most effectively increase quantum volume?
 
-A. Doubling qubit count while keeping all other parameters the same
-B. Simultaneously improving gate fidelity, coherence time, and qubit connectivity while modestly increasing qubit count
-C. Maximizing qubit count and accepting higher error rates as a necessary trade-off
-D. Reducing operating temperature from 15 millikelvin to 10 millikelvin without any other changes
+A. Simultaneously improving gate fidelity, coherence time, and qubit connectivity while modestly increasing qubit count
+B. Reducing operating temperature from 15 millikelvin to 10 millikelvin without any other changes
+C. Doubling qubit count while keeping all other parameters the same
+D. Maximizing qubit count and accepting higher error rates as a necessary trade-off
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Quantum volume is a holistic metric. Increasing qubit count without improving gate fidelity, coherence, and connectivity produces an unusable system. Balanced improvement across all parameters yields the greatest gain in actual computational capability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Quantum volume is a holistic metric. Increasing qubit count without improving gate fidelity, coherence, and connectivity produces an unusable system. Balanced improvement across all parameters yields the greatest gain in actual computational capability. If you chose C, this response overgeneralizes without considering the specific mechanisms and evidence presented. Quantum volume combines qubit count, gate fidelity, coherence time, and connectivity into a single metric. Improving one dimension alone, especially qubit count, without improving others provides minimal real-world computational gain. If you chose D, this answer assumes the model or data is flawed rather than analyzing what the evidence actually shows. Quantum volume combines qubit count, gate fidelity, coherence time, and connectivity into a single metric. Improving one dimension alone, especially qubit count, without improving others provides minimal real-world computational gain. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. Quantum volume combines qubit count, gate fidelity, coherence time, and connectivity into a single metric. Improving one dimension alone, especially qubit count, without improving others provides minimal real-world computational gain.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.C (Information technologies and signals) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Operating Temperature increases, Coherence Time decreases and when Coherence Time increases, Circuit Depth increases and when Gate Error Rate increases, Quantum Volume decreases. The student changes one variable to see how the whole system responds.
+Engineers compare three quantum computing architectures: superconducting qubits (fast gate operations at 10 nanoseconds, short coherence at 100 microseconds), trapped ion qubits (slower gates at 10 microseconds, longer coherence at 10 seconds), and topological qubits (theoretically very long coherence, but not yet reliably manufactured). A benchmarking model shows that superconducting systems currently lead in total computation speed despite shorter coherence, because their faster gates allow more operations within the coherence window. However, projected improvements in trapped ion systems suggest they may overtake superconducting systems within 5 years.
 
 A simulation shows that a quantum algorithm solves an optimization problem in 10 seconds that would take a classical computer 10,000 years. A student claims this proves quantum computers are universally superior. Which response best evaluates this claim?
 
-A. The claim is correct because the speedup factor is enormous
+A. The claim is correct because all NP-hard problems can be solved faster on quantum computers
 B. The claim is incorrect because the comparison only demonstrates quantum advantage for that specific problem class; quantum computers may offer no speedup for sorting, databases, or many other computational tasks
 C. The claim is incorrect because classical computers will eventually match quantum speed through hardware improvements
-D. The claim is correct because all NP-hard problems can be solved faster on quantum computers
+D. The claim is correct because the speedup factor is enormous
 
 Correct Answer: B
 
-Feedback: Correct. Quantum advantage is problem-specific. Exponential speedups exist for certain problem classes (factoring, certain optimizations, quantum simulation) but not for general-purpose computing. The dramatic speedup in one domain does not generalize. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Quantum advantage is problem-specific. Exponential speedups exist for certain problem classes (factoring, certain optimizations, quantum simulation) but not for general-purpose computing. The dramatic speedup in one domain does not generalize. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Quantum advantage is domain-specific. Some problems have provable quantum speedups, but many do not. Quantum computers are not universally faster; they exploit specific mathematical structures that only some problems possess. If you chose C, this answer assumes the model or data is flawed rather than analyzing what the evidence actually shows. Quantum advantage is domain-specific. Some problems have provable quantum speedups, but many do not. Quantum computers are not universally faster; they exploit specific mathematical structures that only some problems possess. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Quantum advantage is domain-specific. Some problems have provable quantum speedups, but many do not. Quantum computers are not universally faster; they exploit specific mathematical structures that only some problems possess.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.B (Electromagnetic radiation and information) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A cybersecurity analysis models the timeline for quantum computers to break current encryption standards. RSA-2048 encryption, which secures most internet communications, would require a quantum computer with approximately 4,000 logical qubits running Shor's algorithm. With current error rates requiring 1,000 physical qubits per logical qubit, this translates to a 4-million-qubit machine. Current systems have 1,000 physical qubits. The model projects that if qubit counts double every 2 years and error rates improve 10x per decade, encryption-breaking capability arrives between 2035-2045.
 
 In the model, a student notices that entanglement fidelity drops from 99.5% to 97% when the system scales from 20 to 80 qubits. What is the most significant consequence of this degradation for quantum algorithms?
 
-A. The system will consume 2.5% more electricity
+A. The system can still execute all quantum algorithms with minor output adjustments
 B. Algorithms that depend on entanglement to coordinate multi-qubit operations will produce increasingly unreliable results, potentially making the larger system less capable than the smaller one for entanglement-dependent computations
-C. Individual qubit performance improves to compensate for lower fidelity
-D. The system can still execute all quantum algorithms with minor output adjustments
+C. The system will consume 2.5% more electricity
+D. Individual qubit performance improves to compensate for lower fidelity
 
 Correct Answer: B
 
-Feedback: Correct. Many quantum algorithms rely on high-fidelity entanglement. A drop from 99.5% to 97% compounds across operations, and for algorithms requiring extensive entanglement, the larger system may produce worse results than the smaller, higher-fidelity one. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Many quantum algorithms rely on high-fidelity entanglement. A drop from 99.5% to 97% compounds across operations, and for algorithms requiring extensive entanglement, the larger system may produce worse results than the smaller, higher-fidelity one. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. Entanglement fidelity drops compound across multi-qubit operations. For algorithms heavily dependent on entanglement, the error accumulation in the 80-qubit system could make it effectively less capable than the 20-qubit system despite having four times more qubits. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. Entanglement fidelity drops compound across multi-qubit operations. For algorithms heavily dependent on entanglement, the error accumulation in the 80-qubit system could make it effectively less capable than the 20-qubit system despite having four times more qubits. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Entanglement fidelity drops compound across multi-qubit operations. For algorithms heavily dependent on entanglement, the error accumulation in the 80-qubit system could make it effectively less capable than the 20-qubit system despite having four times more qubits.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI PS4.C (Information technologies and signals) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Qubit Count, Operating Temperature), but they can take action on internal components (Coherence Time, Gate Error Rate, Entanglement Fidelity, Circuit Depth, Quantum Volume). They need to decide which action would be most effective based on what the model shows.
+A pharmaceutical company models the potential of quantum computing for drug discovery. Classical computers can accurately simulate molecules up to about 50 atoms, but drug target proteins contain thousands of atoms. A quantum simulator could model protein-drug interactions at the quantum mechanical level, potentially reducing drug development timelines from 12 years to 3 years. However, the model shows that useful molecular simulation requires error-corrected quantum computers with at least 1 million logical qubits, a capability not expected before 2040. The company must decide whether to invest now in quantum algorithm development or wait for hardware maturity.
 
 Based on the quantum computing model, which conclusion about the relationship between coherence time and circuit depth is best supported by the simulation data?
 
-A. Coherence time and circuit depth are independent variables with no relationship
-B. Coherence time sets an absolute ceiling on circuit depth because all gate operations must complete before quantum states decohere, making coherence time the fundamental bottleneck that limits the complexity of solvable problems
-C. Longer circuits always produce more accurate results regardless of coherence time
-D. Circuit depth can exceed coherence time limits by using faster gate operations without any trade-offs
+A. Longer circuits always produce more accurate results regardless of coherence time
+B. Circuit depth can exceed coherence time limits by using faster gate operations without any trade-offs
+C. Coherence time and circuit depth are independent variables with no relationship
+D. Coherence time sets an absolute ceiling on circuit depth because all gate operations must complete before quantum states decohere, making coherence time the fundamental bottleneck that limits the complexity of solvable problems
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Coherence time is the fundamental constraint. Every gate operation takes time, and the total circuit must complete before decoherence destroys the quantum state. This makes coherence time the ultimate limit on computational depth and problem complexity. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Coherence time is the fundamental constraint. Every gate operation takes time, and the total circuit must complete before decoherence destroys the quantum state. This makes coherence time the ultimate limit on computational depth and problem complexity. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. Coherence time acts as a hard deadline. Since each gate operation consumes time, the maximum circuit depth equals coherence time divided by gate time. This ceiling limits which problems quantum computers can solve, making coherence time the foundational constraint. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Coherence time acts as a hard deadline. Since each gate operation consumes time, the maximum circuit depth equals coherence time divided by gate time. This ceiling limits which problems quantum computers can solve, making coherence time the foundational constraint. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. Coherence time acts as a hard deadline. Since each gate operation consumes time, the maximum circuit depth equals coherence time divided by gate time. This ceiling limits which problems quantum computers can solve, making coherence time the foundational constraint.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.3, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.3, CCC4)
+Question 1: C (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-PS4-3, CCC4)
+Question 2: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS4-3, CCC2)
+Question 3: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS4-3, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-PS4-5, CCC7)
+Question 5: D (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-PS4-5, CCC4)
 
+---
 
 ## Resources
 

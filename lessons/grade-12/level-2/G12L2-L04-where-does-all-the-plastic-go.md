@@ -381,6 +381,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Plastic Production Rate → Environmental Plastic Load relationship as
+unconditional. However, this relationship is scientifically
+contingent on Waste Management Capacity being inactive. Without this condition,
+the simulation produces inaccurate results: Plastic Production Rate drives Environmental Plastic Load
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Plastic Production Rate → Environmental Plastic Load
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Waste Management Capacity is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Waste Management Capacity inactive and observe
+     how Plastic Production Rate's effect on Environmental Plastic Load is now gated
+   • Toggle Waste Management Capacity ON/OFF while Plastic Production Rate remains constant
+   • Verify that Environmental Plastic Load only responds to Plastic Production Rate when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Waste Management Capacity → Environmental Plastic Load
+   • Set condition: IF Plastic Production Rate is ON
+   • This ensures Waste Management Capacity's effect on Environmental Plastic Load
+     is contingent on Plastic Production Rate being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Microplastic Concentration → Bioaccumulation in Food Webs
+   • Set condition: IF Marine Ecosystem Health is ON
+   • This ensures Microplastic Concentration's effect on Bioaccumulation in Food Webs
+     is contingent on Marine Ecosystem Health being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -953,15 +995,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's model shows that even after all new plastic input to the ocean stops, microplastic concentration continues increasing for decades. What mechanism best explains this finding?
 
-A. New plastic is secretly being dumped into the ocean by unmonitored sources
-B. Existing macroplastics already in the ocean continue fragmenting into microplastics through UV radiation, wave action, and biological processes
-C. Microplastics are spontaneously generated from dissolved organic matter in seawater
-D. Ocean currents concentrate microplastics in measurement areas, creating an illusion of increase
+A. Microplastics are spontaneously generated from dissolved organic matter in seawater
+B. New plastic is secretly being dumped into the ocean by unmonitored sources
+C. Ocean currents concentrate microplastics in measurement areas, creating an illusion of increase
+D. Existing macroplastics already in the ocean continue fragmenting into microplastics through UV radiation, wave action, and biological processes
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The estimated 150 million metric tons of plastic already in the ocean continuously fragment into smaller pieces through UV degradation, mechanical wave action, and biological processes. This existing stock creates a legacy effect where microplastic concentrations rise even without new input. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The estimated 150 million metric tons of plastic already in the ocean continuously fragment into smaller pieces through UV degradation, mechanical wave action, and biological processes. This existing stock creates a legacy effect where microplastic concentrations rise even without new input. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -972,15 +1013,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student compares three model scenarios: business as usual, recycling improvement only, and system transformation (production reduction + circular economy + producer responsibility). Only the system transformation shows a meaningful decline in environmental plastic. What does this reveal about the plastic pollution problem?
 
-A. Recycling is a waste of resources and should be abandoned entirely
-B. Downstream solutions alone cannot solve a problem driven by exponential upstream production growth; addressing the source is essential
-C. System transformation is too expensive to be practical
-D. Plastic pollution will solve itself naturally over time without any intervention
+A. Downstream solutions alone cannot solve a problem driven by exponential upstream production growth; addressing the source is essential
+B. Plastic pollution will solve itself naturally over time without any intervention
+C. Recycling is a waste of resources and should be abandoned entirely
+D. System transformation is too expensive to be practical
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates that when production grows exponentially, downstream waste management can only slow accumulation, not reverse it. Only reducing production at the source, combined with circular design and recycling, can actually decrease environmental plastic loading. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that when production grows exponentially, downstream waste management can only slow accumulation, not reverse it. Only reducing production at the source, combined with circular design and recycling, can actually decrease environmental plastic loading. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -991,15 +1031,14 @@ A student runs a simulation of the model. The model shows that when Plastic Prod
 
 The model shows that bioaccumulation causes microplastic concentrations in top predators to be orders of magnitude higher than in surrounding water. Which principle of ecology explains this amplification?
 
-A. Energy flows efficiently from lower to higher trophic levels
-B. Biomagnification, where persistent substances that are ingested but not excreted accumulate at each trophic level, reaching highest concentrations in top predators
-C. Top predators preferentially seek out and consume plastic-contaminated prey
-D. Ocean currents deliver microplastics directly to top predator habitats
+A. Biomagnification, where persistent substances that are ingested but not excreted accumulate at each trophic level, reaching highest concentrations in top predators
+B. Ocean currents deliver microplastics directly to top predator habitats
+C. Energy flows efficiently from lower to higher trophic levels
+D. Top predators preferentially seek out and consume plastic-contaminated prey
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Biomagnification occurs because persistent substances like microplastics are consumed at each trophic level but not efficiently excreted. Each predator accumulates the plastics from all the prey it consumes over its lifetime, resulting in exponentially increasing concentrations up the food chain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Biomagnification occurs because persistent substances like microplastics are consumed at each trophic level but not efficiently excreted. Each predator accumulates the plastics from all the prey it consumes over its lifetime, resulting in exponentially increasing concentrations up the food chain. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1010,15 +1049,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student argues that ocean cleanup projects are the solution to marine plastic pollution. Based on model evidence about plastic pathways and accumulation dynamics, what is the most accurate evaluation of this claim?
 
-A. Ocean cleanup is the complete solution because all plastic pollution is in the ocean
+A. Ocean cleanup should be the sole focus because it is more cost-effective than reducing production
 B. Ocean cleanup addresses the symptom but not the cause; without reducing input, cleanup efforts are overwhelmed by the 8-12 million tons entering the ocean annually, and they cannot capture microplastics
 C. Ocean cleanup is unnecessary because plastic naturally biodegrades within a few years
-D. Ocean cleanup should be the sole focus because it is more cost-effective than reducing production
+D. Ocean cleanup is the complete solution because all plastic pollution is in the ocean
 
 Correct Answer: B
 
-Feedback: Correct. Model evidence shows that 8-12 million tons of plastic enter the ocean annually, far exceeding any cleanup capacity. Additionally, cleanup technologies cannot effectively capture microplastics, which are the most harmful form. Without reducing the input, cleanup is necessary but insufficient. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Model evidence shows that 8-12 million tons of plastic enter the ocean annually, far exceeding any cleanup capacity. Additionally, cleanup technologies cannot effectively capture microplastics, which are the most harmful form. Without reducing the input, cleanup is necessary but insufficient. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1030,23 +1068,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 Based on the model's findings about plastic pollution pathways, which policy intervention would most effectively reduce long-term environmental plastic accumulation and human health exposure?
 
 A. Banning plastic straws and bags while allowing production growth to continue
-B. Extended producer responsibility laws that require manufacturers to design for circularity and fund end-of-life management, combined with production caps
-C. Subsidizing plastic production to make recycling more economically attractive
-D. Increasing landfill capacity in coastal areas to prevent ocean leakage
+B. Increasing landfill capacity in coastal areas to prevent ocean leakage
+C. Extended producer responsibility laws that require manufacturers to design for circularity and fund end-of-life management, combined with production caps
+D. Subsidizing plastic production to make recycling more economically attractive
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Extended producer responsibility addresses the root cause by shifting the cost of waste management to producers, incentivizing design for circularity. Combined with production caps, it addresses both the upstream source and downstream management, which the model shows is the only effective combination. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Extended producer responsibility addresses the root cause by shifting the cost of waste management to producers, incentivizing design for circularity. Combined with production caps, it addresses both the upstream source and downstream management, which the model shows is the only effective combination. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC2)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC2)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
 
 
 ## Resources

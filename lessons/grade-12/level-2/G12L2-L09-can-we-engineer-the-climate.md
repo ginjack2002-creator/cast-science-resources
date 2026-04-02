@@ -367,6 +367,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Atmospheric CO2 Concentration → Global Mean Temperature relationship as
+unconditional. However, this relationship is scientifically
+contingent on Solar Radiation Reaching Surface being active. Without this condition,
+the simulation produces inaccurate results: Atmospheric CO2 Concentration drives Global Mean Temperature
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Atmospheric CO2 Concentration → Global Mean Temperature
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Solar Radiation Reaching Surface is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Solar Radiation Reaching Surface active and observe
+     how Atmospheric CO2 Concentration's effect on Global Mean Temperature is now gated
+   • Toggle Solar Radiation Reaching Surface ON/OFF while Atmospheric CO2 Concentration remains constant
+   • Verify that Global Mean Temperature only responds to Atmospheric CO2 Concentration when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Solar Radiation Reaching Surface → Global Mean Temperature
+   • Set condition: IF Atmospheric CO2 Concentration is ON
+   • This ensures Solar Radiation Reaching Surface's effect on Global Mean Temperature
+     is contingent on Atmospheric CO2 Concentration being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -940,15 +976,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's model shows that deploying SRM for 50 years while emissions continue causes Termination Risk to increase every year. What system dynamic creates this escalating risk?
 
-A. SRM aerosols accumulate in the stratosphere, becoming toxic over time
-B. Each year of SRM masks additional CO2 accumulation, so the gap between actual temperature and masked temperature grows larger, making the consequences of stopping SRM progressively more catastrophic
+A. Termination Risk decreases over time as ecosystems adapt to SRM conditions
+B. SRM aerosols accumulate in the stratosphere, becoming toxic over time
 C. SRM technology naturally degrades over time, losing effectiveness
-D. Termination Risk decreases over time as ecosystems adapt to SRM conditions
+D. Each year of SRM masks additional CO2 accumulation, so the gap between actual temperature and masked temperature grows larger, making the consequences of stopping SRM progressively more catastrophic
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. SRM creates a growing temperature debt. Each year that CO2 continues accumulating while warming is masked increases the difference between the temperature Earth would experience without SRM and the temperature being maintained. Stopping SRM would expose this ever-growing temperature gap, making termination shock progressively worse. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. SRM creates a growing temperature debt. Each year that CO2 continues accumulating while warming is masked increases the difference between the temperature Earth would experience without SRM and the temperature being maintained. Stopping SRM would expose this ever-growing temperature gap, making termination shock progressively worse. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -960,14 +995,13 @@ In the computational model for this lesson, a student draws arrows between compo
 A student's model shows that SRM stabilizes global temperature but ocean acidification continues worsening. What does this divergence reveal about the difference between treating symptoms versus causes?
 
 A. The model is flawed because temperature and acidification should always move together
-B. SRM only addresses the temperature symptom of excess CO2 while leaving the chemical cause (atmospheric CO2 dissolving in oceans) completely unaddressed
-C. Ocean acidification is unrelated to atmospheric CO2 and has a separate cause
-D. SRM should increase ocean pH because cooler water absorbs less CO2
+B. SRM should increase ocean pH because cooler water absorbs less CO2
+C. SRM only addresses the temperature symptom of excess CO2 while leaving the chemical cause (atmospheric CO2 dissolving in oceans) completely unaddressed
+D. Ocean acidification is unrelated to atmospheric CO2 and has a separate cause
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This divergence powerfully demonstrates the difference between symptom management and cause treatment. SRM reduces incoming solar radiation (the temperature symptom) but does nothing about atmospheric CO2 (the cause). Since ocean acidification is driven by CO2 absorption, not temperature, it continues unabated. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. This divergence powerfully demonstrates the difference between symptom management and cause treatment. SRM reduces incoming solar radiation (the temperature symptom) but does nothing about atmospheric CO2 (the cause). Since ocean acidification is driven by CO2 absorption, not temperature, it continues unabated. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 3
@@ -978,15 +1012,14 @@ A student runs a simulation of the model. The model shows that when Atmospheric 
 
 A model comparison shows that emission reduction combined with CDR produces the best outcomes with the lowest risk. A student asks why emission reduction alone is not sufficient. Which answer is best supported by the model?
 
-A. Emission reduction has no effect on atmospheric CO2 levels
-B. Even with aggressive emission reduction, the legacy CO2 already in the atmosphere continues driving warming and acidification. CDR can actively draw down this legacy stock, accelerating the return to safer CO2 levels
-C. CDR is easier and cheaper than emission reduction in all scenarios
-D. Emission reduction only affects CO2 while CDR affects all greenhouse gases simultaneously
+A. Emission reduction only affects CO2 while CDR affects all greenhouse gases simultaneously
+B. Emission reduction has no effect on atmospheric CO2 levels
+C. Even with aggressive emission reduction, the legacy CO2 already in the atmosphere continues driving warming and acidification. CDR can actively draw down this legacy stock, accelerating the return to safer CO2 levels
+D. CDR is easier and cheaper than emission reduction in all scenarios
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Emission reduction stops adding new CO2 (addressing flow) but does not remove the approximately 1 trillion tons of excess CO2 already accumulated (the stock). CDR addresses this legacy stock, actively drawing down atmospheric CO2 toward safer levels. The combination addresses both flow and stock. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Emission reduction stops adding new CO2 (addressing flow) but does not remove the approximately 1 trillion tons of excess CO2 already accumulated (the stock). CDR addresses this legacy stock, actively drawing down atmospheric CO2 toward safer levels. The combination addresses both flow and stock. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -997,15 +1030,14 @@ Scientists are studying data related to this system. They collected observations
 
 A model reveals that SRM deployment would reduce monsoon rainfall in South Asia, where 1.5 billion people depend on monsoon agriculture. A wealthy nation proposes SRM to reduce its heat wave deaths. What ethical framework is most relevant for evaluating this decision?
 
-A. Cost-benefit analysis focused exclusively on the deploying nation
-B. Environmental justice, which requires evaluating whether the intervention distributes benefits and harms equitably and whether affected populations have meaningful consent in the decision
-C. Technological determinism, which holds that all available technologies should be deployed regardless of consequences
-D. Free market principles, where whichever nation can afford the technology should deploy it
+A. Environmental justice, which requires evaluating whether the intervention distributes benefits and harms equitably and whether affected populations have meaningful consent in the decision
+B. Technological determinism, which holds that all available technologies should be deployed regardless of consequences
+C. Free market principles, where whichever nation can afford the technology should deploy it
+D. Cost-benefit analysis focused exclusively on the deploying nation
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Environmental justice demands that climate interventions distribute benefits and burdens equitably and that affected populations participate in decisions. SRM that reduces one nation's heat waves while disrupting another's food supply raises fundamental justice questions about who bears the risks of global climate engineering. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Environmental justice demands that climate interventions distribute benefits and burdens equitably and that affected populations participate in decisions. SRM that reduces one nation's heat waves while disrupting another's food supply raises fundamental justice questions about who bears the risks of global climate engineering. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1016,23 +1048,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on model evidence, a climate advisor must recommend a pathway for addressing warming that has reached 1.8 degrees Celsius. Which recommendation is most strongly supported by the combined scientific and ethical evidence?
 
-A. Immediate SRM deployment to prevent crossing 2 degrees, with no emission reduction
+A. No action, because climate engineering technologies are too risky to consider under any circumstances
 B. Aggressive emission reduction as the primary strategy, complemented by moderate CDR deployment, with SRM held in reserve only as an emergency measure with international governance and consent frameworks
-C. No action, because climate engineering technologies are too risky to consider under any circumstances
-D. Maximum CDR deployment to remove all excess CO2 within 5 years while maintaining current emission levels
+C. Maximum CDR deployment to remove all excess CO2 within 5 years while maintaining current emission levels
+D. Immediate SRM deployment to prevent crossing 2 degrees, with no emission reduction
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that emission reduction addresses the root cause with the lowest risk. CDR complements it by drawing down legacy CO2. SRM carries significant risks (termination shock, regional disruption, governance challenges) but may be warranted as an emergency measure if tipping points are imminent, provided international governance ensures equitable decision-making. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that emission reduction addresses the root cause with the lowest risk. CDR complements it by drawing down legacy CO2. SRM carries significant risks (termination shock, regional disruption, governance challenges) but may be warranted as an emergency measure if tipping points are imminent, provided international governance ensures equitable decision-making. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.4, CCC2)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.4, CCC2)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.4, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.4, CCC2)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.4, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.4, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.4, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.4, CCC4)
 
 

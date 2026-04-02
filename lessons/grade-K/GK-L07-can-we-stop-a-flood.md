@@ -732,102 +732,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.B (Natural Hazards) + CCC2 (Cause and Effect)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Rain, Flood Level. Some components are external (Amount of Rain) and some are internal (Flood Level). The student needs to understand what each component represents and how they are organized.
+After a big rainstorm, a kindergarten class looks outside. They see water covering the playground. The swings are in a big puddle, and the sandbox is full of water. The teacher says this is a small flood.
 
-When the Amount of Rain goes UP, what happens to the Flood Level?
+What caused the water to cover the playground?
 
-A. It goes down
-B. It goes up
-C. It stays the same
+A. Too much rain fell and the ground could not soak it all up
+B. Someone turned on a hose and sprayed the playground
+C. The sun melted the playground and turned it into water
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! More rain means the flood level gets higher. That is a positive connection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Too much rain fell too fast, and the ground could not soak it all up. The extra water had nowhere to go, so it spread out and covered the playground. If you chose B, a hose did not cause this flood. The big rainstorm dropped so much water that it covered the ground. If you chose C, the sun does not melt playgrounds into water. The water came from the rain falling from the clouds.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.B (Natural Hazards) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Rain increases, Flood Level increases. The student is trying to understand why these relationships are positive or negative.
+The class builds a model about floods. It has two parts: Amount of Rain and Flood Level. Amount of Rain is how much rain falls. Flood Level is how deep the water gets on the ground. The teacher says the arrow has a plus sign.
 
-What is a barrier?
+Why does the arrow between Amount of Rain and Flood Level have a plus sign?
 
-A. Something that makes more rain
-B. Something that blocks water from going where it should not
-C. A type of cloud
+A. Because more rain means the flood gets deeper
+B. Because rain and floods have nothing to do with each other
+C. Because more rain means the flood gets shallower
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! A barrier blocks or stops water from going where it should not go, like toward homes. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The plus sign means both parts go in the same direction. When Amount of Rain goes up, Flood Level goes up too. More rain means deeper water on the ground. If you chose C, that would be a minus sign, not a plus. More rain makes floods deeper, not shallower. If you chose B, rain and floods ARE connected. Rain is what causes the water to collect on the ground.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.B (Natural Hazards) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Amount of Rain increases, Flood Level increases. The student changes one variable to see how the whole system responds.
+A class watches two videos about rain. In the first video, a light drizzle falls for a few minutes. The ground gets a little wet but there is no flooding. In the second video, a heavy rainstorm pours down for hours. Water covers the streets and yards.
 
-What can people build to protect homes from floods?
+Why did the heavy rainstorm cause flooding but the light drizzle did not?
 
-A. More windows
-B. Walls, sandbags, and levees
-C. Taller roofs
+A. The drizzle was colder, which stopped the flood
+B. The heavy rain dropped much more water than the ground could soak up
+C. The drizzle was actually heavier but looked lighter on video
 
 Correct Answer: B
 
-Feedback: Yes! People build walls, sandbags, and levees to block flood water and keep homes safe. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The heavy rainstorm dropped so much water that the ground could not absorb it all. The extra water had nowhere to go, so it covered the streets. The drizzle dropped only a little water that the ground could easily soak up. If you chose A, temperature did not cause the difference. The amount of rain is what matters. If you chose C, the drizzle was lighter. A drizzle drops much less water than a heavy storm.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.B (Natural Hazards) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Students play a game where they slowly pour water onto a tray of sand. When they pour a little, the sand soaks it up. When they pour more and more, the water starts to cover the sand. When they pour a LOT, the water overflows the tray.
 
-Why is it important to know when a big storm is coming?
+What does this game show about rain and flooding?
 
-A. So we can play outside
-B. So we can prepare and stay safe
-C. So we can water the plants
+A. More water makes the ground drier
+B. Sand always stops water from flooding
+C. A little rain soaks in, but a lot of rain causes flooding
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! Knowing about storms helps people prepare by building barriers, moving to higher ground, and staying safe. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The game shows that the ground can soak up some rain, but when too much rain falls, the water has nowhere to go and it floods. This matches the model: more rain equals more flooding. If you chose B, the sand could only hold so much water. Once it was full, the water overflowed, just like real flooding. If you chose A, more water makes the ground wetter, not drier. That is why flooding happens when there is too much water.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.B (Natural Hazards) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Rain), but they can take action on internal components (Flood Level). They need to decide which action would be most effective based on what the model shows.
+A town near a river hears that a big storm is coming with lots of rain. The town knows from experience that heavy rain makes the river water rise and flood nearby homes. They want to protect the homes.
 
-What is a flood?
+What can the town do to help stop the flood water from reaching the homes?
 
-A. When the sun comes out
-B. When too much water covers the ground
-C. When it snows
+A. Turn off all the lights so the storm goes away
+B. Build walls of sandbags between the river and the homes to block the water
+C. Tell everyone to open their windows so the water can flow through
 
 Correct Answer: B
 
-Feedback: Yes! A flood is when too much water covers land that is usually dry. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Sandbag walls act as barriers that block flood water from reaching homes. People cannot stop the rain, but they CAN build barriers to keep the water away from buildings. If you chose A, turning off lights does not affect a storm. Rain comes from clouds and nothing we do with lights can change that. If you chose C, opening windows would let water INTO the homes, which is the opposite of protecting them.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.2, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.B, CCC2)
+Question 2: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.B, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.B, CCC2)
+Question 4: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.B, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS3.B, CCC2)
 
+---
 
 ## Resources
 

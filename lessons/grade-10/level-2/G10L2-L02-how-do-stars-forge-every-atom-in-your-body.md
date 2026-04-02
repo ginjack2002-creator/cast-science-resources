@@ -908,15 +908,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the stellar nucleosynthesis model, what does the relationship between Gravitational Pressure and Stellar Core Temperature demonstrate about element production?
 
-A. Higher gravitational pressure decreases core temperature, slowing element production
+A. Gravitational pressure has no effect on which elements a star can produce
 B. Gravitational pressure compresses the core, raising temperature to thresholds that ignite successively heavier fusion stages
-C. Gravitational pressure has no effect on which elements a star can produce
-D. All stars reach the same core temperature regardless of their gravitational pressure
+C. All stars reach the same core temperature regardless of their gravitational pressure
+D. Higher gravitational pressure decreases core temperature, slowing element production
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that gravitational pressure is the master variable: it compresses and heats the core, and each new fusion stage (hydrogen, helium, carbon, etc.) requires progressively higher temperature thresholds. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that gravitational pressure is the master variable: it compresses and heats the core, and each new fusion stage (hydrogen, helium, carbon, etc.) requires progressively higher temperature thresholds. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -928,14 +927,13 @@ In the computational model for this lesson, a student draws arrows between compo
 A student compares the model results for a Sun-like star (1 solar mass) and a massive star (20 solar masses). Which comparison correctly describes the model's predictions?
 
 A. The Sun-like star produces elements up to iron and ends as a neutron star
-B. The massive star produces only hydrogen and helium but lives 100 times longer
+B. Both stars produce the same elements but at different rates
 C. The massive star produces elements up to iron and ends in a supernova, while the Sun-like star produces elements up to carbon/oxygen and ends as a white dwarf
-D. Both stars produce the same elements but at different rates
+D. The massive star produces only hydrogen and helium but lives 100 times longer
 
 Correct Answer: C
 
-Feedback: Correct. The model demonstrates that stellar mass determines both the range of elements produced and the star's fate. Massive stars reach iron and explode; Sun-like stars stop at carbon/oxygen and shed their outer layers. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that stellar mass determines both the range of elements produced and the star's fate. Massive stars reach iron and explode; Sun-like stars stop at carbon/oxygen and shed their outer layers. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -947,14 +945,13 @@ A student runs a simulation of the model. The model shows that when Gravitationa
 The model shows that each successive fusion stage in a massive star releases less energy and lasts a shorter time. Why does this pattern inevitably lead to core collapse?
 
 A. The star runs out of gravitational potential energy and stops contracting
-B. Each stage produces less radiation pressure to resist gravity while requiring higher temperatures, accelerating the star toward the iron endpoint where fusion absorbs rather than releases energy
-C. The star loses mass through stellar wind until gravity can no longer hold it together
+B. The star loses mass through stellar wind until gravity can no longer hold it together
+C. Each stage produces less radiation pressure to resist gravity while requiring higher temperatures, accelerating the star toward the iron endpoint where fusion absorbs rather than releases energy
 D. The accumulation of heavy elements makes the star spin faster until it flies apart
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals a countdown: each fusion stage is less efficient and shorter-lived, providing diminishing radiation support against gravity, until iron is reached and fusion can no longer sustain the star. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals a countdown: each fusion stage is less efficient and shorter-lived, providing diminishing radiation support against gravity, until iron is reached and fusion can no longer sustain the star. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -965,15 +962,14 @@ Scientists are studying data related to this system. They collected observations
 
 Based on the model, why are supernova explosions essential for the existence of life on Earth?
 
-A. Supernovae create the heat necessary to warm planets in newly forming solar systems
-B. Supernovae disperse heavy elements (carbon, oxygen, iron, and elements heavier than iron) into space, providing the raw materials for rocky planets and biological molecules
+A. Supernovae produce the dark matter that holds galaxies together
+B. Supernovae create the heat necessary to warm planets in newly forming solar systems
 C. Supernovae create black holes that stabilize the orbits of nearby planets
-D. Supernovae produce the dark matter that holds galaxies together
+D. Supernovae disperse heavy elements (carbon, oxygen, iron, and elements heavier than iron) into space, providing the raw materials for rocky planets and biological molecules
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Without supernovae, heavy elements would remain locked in stellar cores. Supernova explosions both create elements heavier than iron (through the r-process) and scatter all heavy elements into interstellar space for incorporation into new stars and planets. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Without supernovae, heavy elements would remain locked in stellar cores. Supernova explosions both create elements heavier than iron (through the r-process) and scatter all heavy elements into interstellar space for incorporation into new stars and planets. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -984,24 +980,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student claims that the elements in the human body could have come from a single star. Using evidence from the model, which response best evaluates this claim?
 
-A. The claim is correct because one massive star can produce all elements through iron
-B. The claim is incorrect because the human body contains elements heavier than iron, which require supernova nucleosynthesis, and different elements were produced by stars of different masses across multiple stellar generations
-C. The claim is correct because all elements were produced during the Big Bang
-D. The claim is incorrect because human body elements come from chemical reactions on Earth, not from stars
+A. The claim is incorrect because the human body contains elements heavier than iron, which require supernova nucleosynthesis, and different elements were produced by stars of different masses across multiple stellar generations
+B. The claim is incorrect because human body elements come from chemical reactions on Earth, not from stars
+C. The claim is correct because one massive star can produce all elements through iron
+D. The claim is correct because all elements were produced during the Big Bang
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that different mass stars produce different element ranges, and elements heavier than iron require the extreme conditions of supernovae. The atoms in your body represent the contributions of multiple stellar generations. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that different mass stars produce different element ranges, and elements heavier than iron require the extreme conditions of supernovae. The atoms in your body represent the contributions of multiple stellar generations. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.3, CCC4)
 Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.3, CCC5)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.3, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.3, CCC5)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.3, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.3, CCC4)
 
 
 ## Resources

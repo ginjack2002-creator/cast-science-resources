@@ -409,6 +409,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Ocean Temperature → Bleaching Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Water Acidity being active. Without this condition,
+the simulation produces inaccurate results: Ocean Temperature drives Bleaching Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Ocean Temperature → Bleaching Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Water Acidity is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Water Acidity active and observe
+     how Ocean Temperature's effect on Bleaching Rate is now gated
+   • Toggle Water Acidity ON/OFF while Ocean Temperature remains constant
+   • Verify that Bleaching Rate only responds to Ocean Temperature when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Water Acidity → Bleaching Rate
+   • Set condition: IF Ocean Temperature is ON
+   • This ensures Water Acidity's effect on Bleaching Rate
+     is contingent on Ocean Temperature being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -979,15 +1015,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The simulation shows that a 0.5-degree C temperature increase for one season causes bleaching, but coral recovers when temperatures normalize. However, a sustained 1.5-degree C increase causes permanent phase shift. What systems concept explains this difference?
 
-A. Linear response, where greater input always produces proportionally greater output
-B. Threshold dynamics, where the system can absorb stress up to a point but collapses rapidly beyond it
-C. Random variation in coral resilience between the two scenarios
-D. The 1.5-degree scenario lasted longer simply because the temperature was higher
+A. Random variation in coral resilience between the two scenarios
+B. The 1.5-degree scenario lasted longer simply because the temperature was higher
+C. Linear response, where greater input always produces proportionally greater output
+D. Threshold dynamics, where the system can absorb stress up to a point but collapses rapidly beyond it
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This demonstrates threshold dynamics. Below the threshold, the system has enough resilience to recover. Above it, cascading feedback loops activate and the system enters a new stable state (phase shift) that resists reversal. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This demonstrates threshold dynamics. Below the threshold, the system has enough resilience to recover. Above it, cascading feedback loops activate and the system enters a new stable state (phase shift) that resists reversal. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1000,13 +1035,12 @@ The model reveals that three moderate stressors (temperature +1 degree C, acidit
 
 A. The three stressors cancel each other out in some way
 B. Multiple stressors interact synergistically, meaning their combined effect exceeds the sum of their individual effects
-C. Only temperature matters; the other stressors are irrelevant
-D. The model is flawed because individual stressors should produce the same result as combined ones
+C. The model is flawed because individual stressors should produce the same result as combined ones
+D. Only temperature matters; the other stressors are irrelevant
 
 Correct Answer: B
 
-Feedback: Correct. The stressors interact synergistically through coupled feedback loops. Acidification lowers the bleaching threshold, fishing removes algae grazers, and temperature triggers bleaching. Together they push the system past a threshold that no single stressor could reach alone. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The stressors interact synergistically through coupled feedback loops. Acidification lowers the bleaching threshold, fishing removes algae grazers, and temperature triggers bleaching. Together they push the system past a threshold that no single stressor could reach alone. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1017,15 +1051,14 @@ A student runs a simulation of the model. The model shows that when Ocean Temper
 
 After a phase shift to algae dominance, the model shows the reef does not recover even when temperature returns to normal. Which systems thinking concept explains this irreversibility?
 
-A. The model has an error because removing the stressor should restore the system
-B. The algae-dominated state is a stable alternative equilibrium maintained by its own reinforcing feedback loops
-C. Temperature is not actually a factor in reef health
-D. The reef needs more time but will eventually recover on its own
+A. The algae-dominated state is a stable alternative equilibrium maintained by its own reinforcing feedback loops
+B. The model has an error because removing the stressor should restore the system
+C. The reef needs more time but will eventually recover on its own
+D. Temperature is not actually a factor in reef health
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The phase shift creates a new stable state. Algae smother coral settlement surfaces, degraded reef structure cannot support herbivorous fish, and without fish, algae grows unchecked. These self-reinforcing dynamics maintain the algae-dominated state. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The phase shift creates a new stable state. Algae smother coral settlement surfaces, degraded reef structure cannot support herbivorous fish, and without fish, algae grows unchecked. These self-reinforcing dynamics maintain the algae-dominated state. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 4
@@ -1037,14 +1070,13 @@ Scientists are studying data related to this system. They collected observations
 A student's model identifies zooxanthellae density as the most sensitive component in the system. What makes this component a critical leverage point?
 
 A. Zooxanthellae are the most visually obvious component of the reef
-B. Zooxanthellae provide 90% of coral energy, so their loss triggers cascading failure through every connected component in the system
-C. Zooxanthellae are the easiest component to measure in the field
+B. Zooxanthellae are the easiest component to measure in the field
+C. Zooxanthellae provide 90% of coral energy, so their loss triggers cascading failure through every connected component in the system
 D. Zooxanthellae only affect coral color, not reef function
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Because zooxanthellae supply 90% of coral energy, their loss triggers a cascade: coral weakens and dies, reef structure degrades, fish lose habitat, algae overgrows. This single component's failure propagates through the entire coupled system. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Because zooxanthellae supply 90% of coral energy, their loss triggers a cascade: coral weakens and dies, reef structure degrades, fish lose habitat, algae overgrows. This single component's failure propagates through the entire coupled system. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1055,24 +1087,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, which reef restoration strategy would be most effective at preventing phase shift?
 
-A. Adding artificial color to bleached coral to make it look healthy
-B. Targeting multiple leverage points simultaneously: protecting herbivorous fish populations, reducing local acidification sources, and establishing marine temperature monitoring with early warning systems
-C. Focusing exclusively on reducing global CO2 emissions
-D. Relocating all coral to aquariums until ocean conditions improve
+A. Focusing exclusively on reducing global CO2 emissions
+B. Relocating all coral to aquariums until ocean conditions improve
+C. Targeting multiple leverage points simultaneously: protecting herbivorous fish populations, reducing local acidification sources, and establishing marine temperature monitoring with early warning systems
+D. Adding artificial color to bleached coral to make it look healthy
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows that multiple coupled stressors drive collapse, so effective intervention must target multiple leverage points. Protecting fish controls algae, reducing local acidification raises bleaching thresholds, and monitoring enables early response. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that multiple coupled stressors drive collapse, so effective intervention must target multiple leverage points. Protecting fish controls algae, reducing local acidification raises bleaching thresholds, and monitoring enables early response. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC2)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC2)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC2)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
 
 
 ## Resources

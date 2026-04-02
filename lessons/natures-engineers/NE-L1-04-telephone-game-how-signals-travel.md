@@ -166,113 +166,113 @@ Biomedical Engineers design medical devices including brain-computer interfaces 
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-8, MS-PS4-2.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.A.1 (Describe how waves transfer information) + CCC4 (Describe a system in terms of its components)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Signal Strength, Distance Traveled, Noise Level, Message Accuracy. Some components are external (Signal Strength, Distance Traveled, Noise Level) and some are internal (Message Accuracy). The student needs to understand what each component represents and how they are organized.
+Scientists are designing a brain-computer interface that reads electrical signals from the brain and sends commands to a robotic arm. They identify four factors that affect whether the message arrives correctly: how strong the brain signal starts (signal strength), how far the signal must travel (distance), how much electrical interference surrounds the signal (noise level), and how accurately the message arrives (message accuracy).
 
-In the model, which THREE factors affect whether a message arrives accurately?
+Which list correctly sorts these into inputs (factors the scientists can adjust) and outputs (results of those factors)?
 
-A. Color, size, and weight
-B. Signal strength, distance traveled, and noise level
-C. Temperature, time of day, and weather
-D. Speed, direction, and shape
+A. Inputs: Message Accuracy — Outputs: Signal Strength, Distance, Noise Level
+B. Inputs: Distance, Noise Level — Outputs: Signal Strength, Message Accuracy
+C. Inputs: Signal Strength, Message Accuracy — Outputs: Distance, Noise Level
+D. Inputs: Signal Strength, Distance, Noise Level — Output: Message Accuracy
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! The model showed that signal strength, distance, and noise level are the three inputs that determine message accuracy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Signal strength, distance, and noise level are the three conditions that can be measured or adjusted. Message accuracy is the result of how those three inputs interact. It is the output that depends on all three inputs working together. If you chose A, message accuracy is the result. You cannot set accuracy directly. It depends on the three input factors. If you chose C, message accuracy is not an input you control. It is determined by the other three factors. If you chose B, signal strength is also an input that can be adjusted, and message accuracy is an output, not an input.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.D.1 (Describe how the brain processes signals) + CCC2 (Use cause and effect to explain events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Signal Strength increases, Message Accuracy increases; when Distance Traveled increases, Message Accuracy decreases. The student is trying to understand why these relationships are positive or negative.
+A student models how a brain signal travels to a robotic arm. The model shows three relationships: signal strength has a positive effect on message accuracy (stronger signals arrive more accurately), distance has a negative effect on accuracy (longer distance means less accuracy), and noise level has a negative effect on accuracy (more noise means less accuracy).
 
-What did the model show happens when signal strength is high but noise level is also very high?
+The student tests a scenario with HIGH signal strength, SHORT distance, and HIGH noise. The message accuracy is only moderate instead of high.
 
-A. The message always arrives perfectly because signal strength overcomes noise
-B. Message accuracy drops because even strong signals can be ruined by extreme noise
-C. Noise and signal strength cancel each other out
-D. The distance automatically gets shorter
+Which explanation best accounts for this result?
 
-Correct Answer: B
+A. Even a strong signal at short distance can be degraded by high noise, because noise drowns out the signal.
+B. High noise actually improves accuracy by boosting the signal.
+C. Distance is the only factor that matters, so the other factors had no effect.
+D. The signal was too strong and overwhelmed the receiver.
 
-Feedback: Yes! The model showed that extreme noise can degrade even a strong signal. No signal is immune to overwhelming interference. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+Correct Answer: A
 
+Feedback: The model shows that noise has a negative effect on accuracy. Even when signal strength is high and distance is short (both favorable), high noise drowns out part of the signal. All three factors interact, and noise is powerful enough to reduce accuracy even when the other two factors are favorable. If you chose D, there is no mechanism in the model for a signal being "too strong." Stronger signals always help accuracy. If you chose C, the model shows all three factors affect accuracy. Distance is not the only one that matters. If you chose B, noise always reduces accuracy. It interferes with the signal rather than boosting it.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI PS4.A.1 (Describe information transfer through waves) + CCC2 (Use cause and effect to predict outcomes)
 
-A student runs a simulation of the model. The model shows that when Signal Strength increases, Message Accuracy increases and when Distance Traveled increases, Message Accuracy decreases and when Noise Level increases, Message Accuracy decreases. The student changes one variable to see how the whole system responds.
+A research team records message accuracy data for a brain-computer interface at different distances. At 1 centimeter, accuracy is 95%. At 5 centimeters, accuracy is 78%. At 10 centimeters, accuracy is 54%. At 20 centimeters, accuracy is 31%. Signal strength and noise level are held constant throughout.
 
-How is the telephone game similar to the challenges of brain-computer interfaces?
+Based on this pattern, what should the team predict about accuracy at 30 centimeters?
 
-A. They both use telephones
-B. In both cases, signals degrade over distance and are disrupted by noise
-C. They both require electricity
-D. They are not similar at all
+A. Accuracy will stay at 31% because the signal cannot get any weaker.
+B. Accuracy will be around 95% because distance does not matter once the signal is traveling.
+C. Accuracy will increase to 50% because the signal has time to strengthen over longer distances.
+D. Accuracy will continue to decrease, dropping below 31%, because the signal weakens further over greater distance.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! Both the telephone game and BCIs face the same challenge: signals lose accuracy as they travel farther and encounter more noise along the way. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The data shows a clear pattern: accuracy decreases as distance increases. From 1 cm to 20 cm, accuracy dropped steadily from 95% to 31%. The negative relationship between distance and accuracy means that adding even more distance will degrade the signal further. If you chose C, signals do not strengthen over distance. They weaken. The data consistently shows decreasing accuracy with more distance. If you chose B, the data shows distance matters greatly. Accuracy dropped from 95% to 31% as distance increased. If you chose A, there is no evidence the signal has hit a floor. The data shows continuous decline.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI LS1.D.1 (Explain how nervous system processes signals) + CCC4 (Describe interactions within a system)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In a classroom telephone game, students pass a whispered message down a line of 15 people. The original message is "The beaver builds a dam from branches." The final message received is "The bear builds a ham from sandwiches." The teacher explains this is similar to how brain signals degrade in brain-computer interfaces.
 
-Why is reading brain signals so much harder than reading a keyboard press?
+Which explanation best describes HOW the telephone game models signal degradation?
 
-A. Keyboards are more expensive than brain sensors
-B. Brain signals are tiny, must travel through tissue, and are surrounded by billions of other signals creating noise
-C. Brain signals are too fast for computers to read
-D. Brains do not actually produce electrical signals
+A. The message degraded because the first person whispered in a different language.
+B. The students intentionally changed the message because they thought it was funny.
+C. Each person in the chain is like added distance, and the classroom noise acts as interference, so the signal (message) degrades as it passes through more people in a noisy environment.
+D. The telephone game is not related to brain signals because brains use electricity, not sound.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! Brain signals face all three challenges from the model: they are weak (low signal strength), must travel through tissue (distance), and are surrounded by billions of competing neural signals (noise). If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The telephone game directly models two key factors from the signal model. Each person added to the chain is like adding distance, which weakens the signal. The ambient classroom noise is like the noise level in the model, which interferes with the message. Both factors reduce accuracy, just as the model predicts. If you chose B, the degradation was not intentional. Each person genuinely tried to pass the message accurately but could not because of the distance (chain length) and noise. If you chose A, the message started clearly in a shared language. It degraded because of the chain length and noise, not a language barrier. If you chose D, while the physical mechanism differs, the underlying principles are the same. Both involve signals weakening over distance and being disrupted by noise.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI PS4.A.1 (Apply understanding of information transfer) + CCC2 (Use cause and effect to predict outcomes)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Signal Strength, Distance Traveled, Noise Level), but they can take action on internal components (Message Accuracy). They need to decide which action would be most effective based on what the model shows.
+A scientist is designing a brain-computer interface for a patient who is paralyzed. The scientist can adjust two factors: signal strength (by placing electrodes closer to the brain) and noise level (by shielding the electronics from interference). The patient needs at least 80% message accuracy to control a robotic hand.
 
-How does your brain send a message to your hand to pick something up?
+The model shows that with medium signal strength and medium noise, accuracy is 62%. Increasing signal strength to high raises accuracy to 74%. Reducing noise to low raises accuracy to 73%. Doing BOTH raises accuracy to 89%.
 
-A. Your brain yells really loudly
-B. Your brain sends electrical signals through your nerves
-C. Your hand moves on its own without the brain
-D. Your brain sends a letter through the mail
+Based on the model, what is the best strategy for the scientist to achieve the 80% accuracy target?
+
+A. Only increase signal strength, because that alone should be enough.
+B. Improve BOTH signal strength and noise reduction together, because neither change alone reaches the 80% target but combining them does.
+C. Only reduce noise, because noise is the only factor that matters.
+D. Accept 62% accuracy because the model shows the target is impossible.
 
 Correct Answer: B
 
-Feedback: Correct! Your brain sends tiny electrical signals along your nerves to tell your muscles what to do. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The data shows that increasing signal strength alone reaches only 74%, and reducing noise alone reaches only 73%. Neither change by itself achieves the 80% target. But combining both improvements reaches 89%, exceeding the target. The factors work together, and addressing both is necessary. If you chose A, high signal strength alone only reaches 74%, which falls short of the 80% target. If you chose C, low noise alone only reaches 73%, also short of the target. If you chose D, the data clearly shows that combining both improvements reaches 89%, well above the target. The goal is achievable.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.A.1, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.D.1, CCC2)
+Question 3: D (Cognitive Level: Predict — SEP 2.1.4, DCI PS4.A.1, CCC2)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 6.1.1, DCI LS1.D.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI PS4.A.1, CCC2)
 
+---
 
 ## Lesson Metadata
 

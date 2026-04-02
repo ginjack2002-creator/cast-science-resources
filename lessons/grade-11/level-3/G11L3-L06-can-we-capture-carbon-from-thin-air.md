@@ -350,6 +350,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Deployment Scale → Capture Cost relationship as
+unconditional. However, this relationship is scientifically
+contingent on Thermal Energy Requirement being active. Without this condition,
+the simulation produces inaccurate results: Deployment Scale drives Capture Cost
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Deployment Scale → Capture Cost
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Thermal Energy Requirement is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Thermal Energy Requirement active and observe
+     how Deployment Scale's effect on Capture Cost is now gated
+   • Toggle Thermal Energy Requirement ON/OFF while Deployment Scale remains constant
+   • Verify that Capture Cost only responds to Deployment Scale when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -916,107 +946,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.4 + CCC5 (Energy and Matter)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ESS3.D (Sustainability and environmental solutions) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Energy Source Carbon Intensity, Sorbent Efficiency, Thermal Energy Requirement, Net Carbon Removal, Capture Cost, Deployment Scale. Some components are external (Energy Source Carbon Intensity, Deployment Scale) and some are internal (Sorbent Efficiency, Thermal Energy Requirement, Net Carbon Removal, Capture Cost). The student needs to understand what each component represents and how they are organized.
+Engineers at a direct air capture (DAC) facility in the Mojave Desert operate fans that pull ambient air (containing 420 ppm CO2) through chemical sorbent filters. The sorbent bonds with CO2, which is later released by heating the sorbent to 900C. The facility captures 4,000 tons of CO2 per year but consumes 2,500 megawatt-hours of electricity annually to power fans, heating, and compression. Using current California grid electricity (40% fossil fuels), the facility's own energy consumption generates 900 tons of CO2, yielding a net capture of only 3,100 tons.
 
 A student's DAC model shows that switching from natural gas power to 100% renewable energy increases net carbon removal from 600 to 1,000 tonnes per year (per facility) but increases capture cost from $400 to $550 per tonne. What is the most complete analysis of this trade-off?
 
-A. The cost increase makes renewable-powered DAC economically nonviable
-B. The renewable system removes 67% more net CO2 per facility despite costing 38% more per tonne, and the fossil-powered system's lower cost is misleading because it includes 400 tonnes of self-generated emissions that the cost per tonne does not reflect
+A. The renewable system removes 67% more net CO2 per facility despite costing 38% more per tonne, and the fossil-powered system's lower cost is misleading because it includes 400 tonnes of self-generated emissions that the cost per tonne does not reflect
+B. Both systems are equally effective because they use the same capture technology
 C. Cost per tonne is the only metric that matters for evaluating DAC systems
-D. Both systems are equally effective because they use the same capture technology
+D. The cost increase makes renewable-powered DAC economically nonviable
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Cost per tonne alone is misleading without accounting for net removal. The renewable system captures more net CO2 per dollar of total investment because it eliminates the 400 tonnes of self-generated emissions that reduce the fossil system's actual climate impact. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Cost per tonne alone is misleading without accounting for net removal. The renewable system captures more net CO2 per dollar of total investment because it eliminates the 400 tonnes of self-generated emissions that reduce the fossil system's actual climate impact. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. The analysis must compare net removal, not gross capture or cost alone. The fossil system's apparent cost advantage disappears when you account for its 400 tonnes of self-generated emissions. Per net tonne removed, the renewable system is actually more cost-effective. If you chose C, this answer oversimplifies a multi-factor system by focusing on a single variable. The analysis must compare net removal, not gross capture or cost alone. The fossil system's apparent cost advantage disappears when you account for its 400 tonnes of self-generated emissions. Per net tonne removed, the renewable system is actually more cost-effective. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The analysis must compare net removal, not gross capture or cost alone. The fossil system's apparent cost advantage disappears when you account for its 400 tonnes of self-generated emissions. Per net tonne removed, the renewable system is actually more cost-effective.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ESS3.D (Sustainability and environmental solutions) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Energy Source Carbon Intensity increases, Net Carbon Removal decreases; when Sorbent Efficiency increases, Thermal Energy Requirement decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of carbon capture economics tracks the relationship between capture cost, atmospheric CO2 concentration, and energy source. At current CO2 levels (420 ppm), the thermodynamic minimum energy to separate CO2 from air is 20 kJ/mol, but real systems require 250-400 kJ/mol due to engineering inefficiencies. The model shows that capture cost scales inversely with CO2 concentration: capturing CO2 from air (0.04%) costs $400-600/ton, from industrial flue gas (10-15%) costs $40-80/ton, and from cement production exhaust (30%) costs $20-40/ton. A student analyzes why concentration affects cost so dramatically.
 
 The model demonstrates that sorbent efficiency degrades by 2% per cycle over thousands of regeneration cycles. After 500 cycles, what is the cumulative impact on system performance, and what does this imply for operational planning?
 
 A. 2% per cycle is negligible and can be ignored over any number of cycles
-B. After 500 cycles at 2% degradation per cycle, the sorbent has lost substantial capacity, requiring periodic replacement that adds to operational costs and creates secondary waste streams that must be factored into the system's life-cycle carbon footprint
-C. The sorbent improves with use as it becomes more selective for CO2
-D. Degradation stops after the first 100 cycles as the sorbent reaches equilibrium
+B. The sorbent improves with use as it becomes more selective for CO2
+C. Degradation stops after the first 100 cycles as the sorbent reaches equilibrium
+D. After 500 cycles at 2% degradation per cycle, the sorbent has lost substantial capacity, requiring periodic replacement that adds to operational costs and creates secondary waste streams that must be factored into the system's life-cycle carbon footprint
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Cumulative degradation means sorbent replacement is a recurring operational cost. The replacement schedule, disposal/recycling of spent sorbent, and the carbon footprint of manufacturing new sorbent must all be included in the system's true cost and environmental analysis. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Cumulative degradation means sorbent replacement is a recurring operational cost. The replacement schedule, disposal/recycling of spent sorbent, and the carbon footprint of manufacturing new sorbent must all be included in the system's true cost and environmental analysis. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. Sorbent degradation is cumulative and creates a maintenance cycle: periodic replacement adds cost, generates waste, and requires manufacturing new sorbent (with its own carbon footprint). Life-cycle analysis must include these recurring costs. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Sorbent degradation is cumulative and creates a maintenance cycle: periodic replacement adds cost, generates waste, and requires manufacturing new sorbent (with its own carbon footprint). Life-cycle analysis must include these recurring costs. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Sorbent degradation is cumulative and creates a maintenance cycle: periodic replacement adds cost, generates waste, and requires manufacturing new sorbent (with its own carbon footprint). Life-cycle analysis must include these recurring costs.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.C (Optimize design solutions) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Energy Source Carbon Intensity increases, Net Carbon Removal decreases and when Sorbent Efficiency increases, Thermal Energy Requirement decreases and when Deployment Scale increases, Capture Cost decreases. The student changes one variable to see how the whole system responds.
+Researchers compare three carbon capture approaches using lifecycle analysis. Approach 1: DAC with underground geological storage in depleted oil reservoirs. Approach 2: Enhanced weathering, where crushed silicate rocks spread on agricultural land absorb CO2 as they dissolve over decades. Approach 3: Bioenergy with carbon capture and storage (BECCS), where biomass is grown (absorbing CO2), burned for energy, and the emissions are captured and stored underground. The model reveals that Approach 2 has the lowest energy requirement but the slowest rate, while Approach 1 is fastest but most energy-intensive.
 
 A student models the land use required for DAC at gigatonne scale and finds that powering the systems with solar energy would require solar farms covering an area the size of a small state. Another student argues this makes DAC impractical. Which response best evaluates this claim?
 
 A. The claim is correct; DAC should be abandoned due to land requirements
 B. The land use concern is valid and represents a real constraint, but must be compared against the land use of alternative carbon removal strategies (reforestation, BECCS) and evaluated alongside the land impact of unmitigated climate change, which threatens far more land through desertification and sea level rise
-C. Land use is irrelevant because solar panels can be placed on existing buildings
-D. The calculation must be wrong because no technology requires that much land
+C. The calculation must be wrong because no technology requires that much land
+D. Land use is irrelevant because solar panels can be placed on existing buildings
 
 Correct Answer: B
 
-Feedback: Correct. Land use is a legitimate constraint but must be evaluated comparatively. Reforestation for equivalent CO2 removal requires even more land, and unmitigated climate change threatens vastly more land through environmental degradation. No carbon removal option is free of trade-offs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Land use is a legitimate constraint but must be evaluated comparatively. Reforestation for equivalent CO2 removal requires even more land, and unmitigated climate change threatens vastly more land through environmental degradation. No carbon removal option is free of trade-offs. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. The analysis requires comparison: what is the land footprint of alternative approaches? Reforestation for equivalent removal requires 5-10x more land. And unmitigated climate change threatens far more land. DAC's land use is a valid constraint but not a unique disqualification. If you chose D, this answer dismisses relevant factors that the evidence directly addresses. The analysis requires comparison: what is the land footprint of alternative approaches? Reforestation for equivalent removal requires 5-10x more land. And unmitigated climate change threatens far more land. DAC's land use is a valid constraint but not a unique disqualification. If you chose C, this choice assumes the model or data is flawed rather than analyzing what the evidence actually shows. The analysis requires comparison: what is the land footprint of alternative approaches? Reforestation for equivalent removal requires 5-10x more land. And unmitigated climate change threatens far more land. DAC's land use is a valid constraint but not a unique disqualification.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.D (Sustainability and environmental solutions) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A geological survey team assesses storage capacity for captured CO2 in a saline aquifer formation 2 km below a California desert. Core samples and seismic imaging indicate the formation could store 500 million tons of CO2 as a supercritical fluid trapped beneath an impermeable caprock layer. Monitoring wells detect that injected CO2 gradually dissolves into the formation brine (solubility trapping) and reacts with minerals over centuries (mineral trapping), converting gaseous CO2 into stable solid carbonates. The model shows that 95% of injected CO2 will be permanently mineralized within 1,000 years, with less than 0.1% leakage risk if the caprock integrity is maintained.
 
 The model shows that DAC capture cost follows a learning curve: costs decrease by 15% for every doubling of cumulative installed capacity. Current costs are $600/tonne at 0.01 Mt/year capacity. Approximately what cost per tonne would the model predict at 10 Mt/year capacity (roughly 10 doublings)?
 
-A. $600/tonne because costs are fixed by thermodynamics
-B. Approximately $120/tonne, applying the 15% cost reduction across approximately 10 doublings of capacity (0.85^10 x $600)
-C. $0/tonne because enough scale eliminates all costs
-D. $6,000/tonne because costs increase with scale
+A. $0/tonne because enough scale eliminates all costs
+B. $6,000/tonne because costs increase with scale
+C. Approximately $120/tonne, applying the 15% cost reduction across approximately 10 doublings of capacity (0.85^10 x $600)
+D. $600/tonne because costs are fixed by thermodynamics
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Learning curve economics: 0.85^10 = approximately 0.20, so costs would fall to roughly $120/tonne. This is optimistic but grounded in observed learning rates for analogous technologies. However, the thermodynamic minimum sets a floor below which costs cannot fall. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Learning curve economics: 0.85^10 = approximately 0.20, so costs would fall to roughly $120/tonne. This is optimistic but grounded in observed learning rates for analogous technologies. However, the thermodynamic minimum sets a floor below which costs cannot fall. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Learning curve analysis: each doubling reduces cost by 15% (multiply by 0.85). After 10 doublings: $600 x 0.85^10 = approximately $120/tonne. This assumes the historical learning rate holds, though the thermodynamic minimum energy cost sets a permanent floor. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Learning curve analysis: each doubling reduces cost by 15% (multiply by 0.85). After 10 doublings: $600 x 0.85^10 = approximately $120/tonne. This assumes the historical learning rate holds, though the thermodynamic minimum energy cost sets a permanent floor. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. Learning curve analysis: each doubling reduces cost by 15% (multiply by 0.85). After 10 doublings: $600 x 0.85^10 = approximately $120/tonne. This assumes the historical learning rate holds, though the thermodynamic minimum energy cost sets a permanent floor.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.C (Optimize design solutions) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Energy Source Carbon Intensity, Deployment Scale), but they can take action on internal components (Sorbent Efficiency, Thermal Energy Requirement, Net Carbon Removal, Capture Cost). They need to decide which action would be most effective based on what the model shows.
+A national climate strategy team models three pathways to remove 10 gigatons of CO2 per year by 2050 (the amount scientists estimate is needed alongside emissions reductions to limit warming to 1.5C). Pathway 1 relies primarily on DAC technology ($5 trillion/year at current costs). Pathway 2 combines reforestation, soil carbon, and ocean alkalinity enhancement ($500 billion/year but with land-use conflicts). Pathway 3 uses a portfolio approach: 3 Gt from natural solutions, 3 Gt from BECCS, 2 Gt from enhanced weathering, and 2 Gt from DAC ($1.5 trillion/year). The model evaluates each pathway's feasibility, cost trajectory, permanence of storage, and potential for unintended consequences.
 
 Based on the DAC model, which conclusion about the role of direct air capture in climate strategy is best supported by the simulation data?
 
-A. DAC can replace emissions reduction as the primary climate strategy because it removes CO2 directly
-B. DAC is a necessary complement to emissions reduction, not a substitute: the scale, cost, and energy requirements make it capable of addressing residual and historical emissions but incapable of keeping pace with current emission rates without dramatic emissions cuts first
-C. DAC is too expensive to ever play a meaningful role in climate strategy
+A. DAC is a necessary complement to emissions reduction, not a substitute: the scale, cost, and energy requirements make it capable of addressing residual and historical emissions but incapable of keeping pace with current emission rates without dramatic emissions cuts first
+B. DAC is too expensive to ever play a meaningful role in climate strategy
+C. DAC can replace emissions reduction as the primary climate strategy because it removes CO2 directly
 D. DAC should only be deployed after all fossil fuel use has been eliminated
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates that DAC cannot scale fast enough or cheaply enough to offset 37 Gt/year of ongoing emissions. Its role is addressing hard-to-abate sectors and historical emissions after aggressive emissions reduction brings the remaining gap to a manageable scale. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model demonstrates that DAC cannot scale fast enough or cheaply enough to offset 37 Gt/year of ongoing emissions. Its role is addressing hard-to-abate sectors and historical emissions after aggressive emissions reduction brings the remaining gap to a manageable scale. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. The model shows that DAC's current cost and energy requirements make it unable to match the scale of ongoing emissions. It is most valuable as a complement to emissions reduction, addressing residual emissions from hard-to-decarbonize sectors and drawing down historical atmospheric CO2. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. The model shows that DAC's current cost and energy requirements make it unable to match the scale of ongoing emissions. It is most valuable as a complement to emissions reduction, addressing residual emissions from hard-to-decarbonize sectors and drawing down historical atmospheric CO2. If you chose D, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The model shows that DAC's current cost and energy requirements make it unable to match the scale of ongoing emissions. It is most valuable as a complement to emissions reduction, addressing residual emissions from hard-to-decarbonize sectors and drawing down historical atmospheric CO2.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC5)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
+Question 1: A (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ESS3-4, CCC4)
+Question 2: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS3-4, CCC2)
+Question 3: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS3-4, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-3, CCC7)
+Question 5: A (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-3, CCC4)
 
+---
 
 ## Resources
 

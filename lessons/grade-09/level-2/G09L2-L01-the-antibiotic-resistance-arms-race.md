@@ -381,6 +381,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Antibiotic Dosage → Bacterial Population relationship as
+unconditional. However, this relationship is scientifically
+contingent on Resistant Bacteria Percentage being active. Without this condition,
+the simulation produces inaccurate results: Antibiotic Dosage drives Bacterial Population
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Antibiotic Dosage → Bacterial Population
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Resistant Bacteria Percentage is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Resistant Bacteria Percentage active and observe
+     how Antibiotic Dosage's effect on Bacterial Population is now gated
+   • Toggle Resistant Bacteria Percentage ON/OFF while Antibiotic Dosage remains constant
+   • Verify that Bacterial Population only responds to Antibiotic Dosage when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Resistant Bacteria Percentage → Bacterial Population
+   • Set condition: IF Immune Response is ON
+   • This ensures Resistant Bacteria Percentage's effect on Bacterial Population
+     is contingent on Immune Response being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -961,13 +997,12 @@ In the antibiotic resistance model, which scenario produces the most dangerous l
 
 A. No antibiotic treatment at all
 B. Full-course treatment at the prescribed dosage
-C. Sub-therapeutic dosage maintained for the full course duration
-D. A single high dose followed by immediate discontinuation
+C. A single high dose followed by immediate discontinuation
+D. Sub-therapeutic dosage maintained for the full course duration
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. Sub-therapeutic dosage is the most dangerous because it creates enough selective pressure to favor resistant bacteria but is too weak to eliminate them. This provides the ideal environment for evolving resistance over an extended period. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Sub-therapeutic dosage is the most dangerous because it creates enough selective pressure to favor resistant bacteria but is too weak to eliminate them. This provides the ideal environment for evolving resistance over an extended period. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -978,15 +1013,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A computational model shows that Resistant Bacteria Percentage increases exponentially after Treatment Duration is reduced to 50%. Which systems thinking concept best explains this behavior?
 
-A. A balancing feedback loop restoring equilibrium
-B. A reinforcing feedback loop where resistance amplifies itself
-C. A linear cause-and-effect relationship between dosage and resistance
+A. A reinforcing feedback loop where resistance amplifies itself
+B. A linear cause-and-effect relationship between dosage and resistance
+C. A balancing feedback loop restoring equilibrium
 D. Random variation in bacterial population dynamics
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The exponential increase is driven by a reinforcing feedback loop: as resistant bacteria increase, antibiotic effectiveness decreases, allowing even more resistant bacteria to survive and reproduce, further reducing effectiveness. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
-
+Feedback: Correct. The exponential increase is driven by a reinforcing feedback loop: as resistant bacteria increase, antibiotic effectiveness decreases, allowing even more resistant bacteria to survive and reproduce, further reducing effectiveness. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 ---
 
 ### Question 3
@@ -998,14 +1032,13 @@ A student runs a simulation of the model. The model shows that when Antibiotic D
 A student's model predicts that reducing the Immune Response component to low while maintaining full antibiotic treatment results in treatment failure. What does this reveal about the system?
 
 A. Antibiotics are unnecessary if the immune system is functioning
-B. The immune system and antibiotics are redundant systems that perform the same function
-C. Antibiotics alone cannot reliably eliminate infections; the immune system is a critical partner in clearing bacteria
-D. Immune response has no measurable effect on bacterial population dynamics
+B. Antibiotics alone cannot reliably eliminate infections; the immune system is a critical partner in clearing bacteria
+C. Immune response has no measurable effect on bacterial population dynamics
+D. The immune system and antibiotics are redundant systems that perform the same function
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct. The model reveals that antibiotics reduce bacterial populations but rely on the immune system to clear remaining bacteria. Without adequate immune support, even full antibiotic courses may fail to eliminate the infection. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals that antibiotics reduce bacterial populations but rely on the immune system to clear remaining bacteria. Without adequate immune support, even full antibiotic courses may fail to eliminate the infection. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1016,15 +1049,14 @@ Scientists are studying data related to this system. They collected observations
 
 Using evidence from the simulation, a student argues that 'antibiotics create resistant bacteria.' Which response most accurately corrects this misconception?
 
-A. The student is correct; antibiotics directly cause mutations that confer resistance
-B. Antibiotics do not create resistance; they create the selective conditions under which pre-existing resistant bacteria have a survival advantage
-C. Resistance is entirely genetic and has nothing to do with antibiotic use
+A. Resistance is entirely genetic and has nothing to do with antibiotic use
+B. The student is correct; antibiotics directly cause mutations that confer resistance
+C. Antibiotics do not create resistance; they create the selective conditions under which pre-existing resistant bacteria have a survival advantage
 D. Only overuse of antibiotics creates resistance; proper use never contributes to resistance
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This is a critical distinction. Resistance mutations arise randomly regardless of antibiotic presence. Antibiotics create the environmental conditions where those mutations become advantageous, selecting for resistant individuals. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is a critical distinction. Resistance mutations arise randomly regardless of antibiotic presence. Antibiotics create the environmental conditions where those mutations become advantageous, selecting for resistant individuals. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1036,23 +1068,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 Based on the model, which public health intervention would be most effective at slowing the reinforcing feedback loop driving antibiotic resistance?
 
 A. Developing stronger antibiotics that kill bacteria faster
-B. Ensuring patients complete full prescribed courses and eliminating unnecessary prescriptions
+B. Increasing the mutation rate in bacterial populations to introduce harmful mutations
 C. Restricting antibiotics to hospital use only
-D. Increasing the mutation rate in bacterial populations to introduce harmful mutations
+D. Ensuring patients complete full prescribed courses and eliminating unnecessary prescriptions
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that incomplete courses and unnecessary prescriptions are the primary drivers of the reinforcing loop. Completing full courses interrupts the loop by eliminating partially resistant bacteria, and reducing unnecessary prescriptions limits selective pressure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that incomplete courses and unnecessary prescriptions are the primary drivers of the reinforcing loop. Completing full courses interrupts the loop by eliminating partially resistant bacteria, and reducing unnecessary prescriptions limits selective pressure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.2, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.2, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.2, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.2, CCC4)
 
 
 ## Resources

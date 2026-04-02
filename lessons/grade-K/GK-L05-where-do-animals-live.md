@@ -732,102 +732,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC4 (Systems and System Models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Food, Number of Animals. Some components are external (Amount of Food) and some are internal (Number of Animals). The student needs to understand what each component represents and how they are organized.
+A class is learning about habitats. The teacher shows a picture of a pond with ducks, fish, and frogs. She says a habitat is a place where animals find everything they need to stay alive, like food, water, and shelter.
 
 What is a habitat?
 
-A. A type of animal
-B. The place where an animal lives that has what it needs
-C. A kind of food
+A. A place where animals find food, water, and shelter
+B. A type of animal that lives in water
+C. A toy that looks like an animal
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! A habitat is the place where an animal lives. It has the food, water, and shelter the animal needs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A habitat is the place where an animal lives because it has everything the animal needs, including food, water, and shelter. If you chose B, a habitat is not an animal. It is a place, like a pond, forest, or desert. If you chose C, a habitat is not a toy. It is a real place in nature where animals live and find what they need.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC2 (Cause and Effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Food increases, Number of Animals increases. The student is trying to understand why these relationships are positive or negative.
+Students look at two ponds. Pond A has lots of fish, bugs, and plants for animals to eat. Pond B has hardly any food in it. The teacher asks the students to predict which pond has more ducks living there.
 
-When there is MORE food in a habitat, what happens to the Number of Animals?
+Which pond probably has more ducks?
 
-A. It goes down
-B. It stays the same
-C. It goes up
+A. Both ponds have the same number of ducks
+B. Pond B, because ducks like quiet, empty places
+C. Pond A, because there is more food for the ducks to eat
 
 Correct Answer: C
 
-Feedback: Yes! More food means more animals can live there. That is a positive connection. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Pond A has more food, so more ducks can find enough to eat and live there. More food in a habitat supports more animals. If you chose B, ducks need food to survive. A pond with no food cannot support many ducks, even if it is quiet. If you chose A, the ponds are very different. The one with more food can support more animals. They would not have the same number.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Amount of Food increases, Number of Animals increases. The student changes one variable to see how the whole system responds.
+In the class model, an arrow goes from Amount of Food to Number of Animals with a plus sign. Over the summer, a big storm washes away many of the plants in a meadow. There is much less food for the rabbits who live there.
 
-What is a shelter?
+What will most likely happen to the number of rabbits in the meadow?
 
-A. A type of food for animals
-B. A safe place where an animal can hide and rest
-C. The water in a pond
+A. The number of rabbits will go down because there is less food
+B. The number of rabbits will go up because they like storms
+C. The number of rabbits will stay the same because they do not eat plants
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: That is right! A shelter is a safe place where an animal can hide, rest, and stay warm or cool. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The plus sign means both parts go the same direction. When Amount of Food goes down, Number of Animals goes down too. Fewer plants means less food, so fewer rabbits can survive there. If you chose B, storms that destroy food are bad for animals, not good. Less food means fewer animals can live there. If you chose C, rabbits do eat plants. When the plants washed away, the rabbits lost their food source.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A class builds a model of a pond habitat. Amount of Food is the outside part that changes. Number of Animals is the inside part that responds. The arrow between them has a plus sign.
 
-What happens when food runs out in a habitat?
+What does the plus sign on the arrow mean in this model?
 
-A. More animals come
-B. Animals have to leave or there are fewer of them
-C. Nothing changes
+A. When food goes up, the number of animals goes up too
+B. Food and animals are not connected to each other
+C. When food goes up, the number of animals goes down
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! When food runs out, animals have to move to find a new home or fewer animals can survive there. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: The plus sign means both parts go in the same direction. More food means more animals can live there. Less food means fewer animals can survive. If you chose C, that would be a minus sign, not a plus. A plus means they move together in the same direction. If you chose B, the arrow shows they ARE connected. The amount of food directly affects how many animals can live there.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Food), but they can take action on internal components (Number of Animals). They need to decide which action would be most effective based on what the model shows.
+A nature park ranger wants more birds to come live in the park. Right now there are not many berries or seeds for the birds to eat. The ranger remembers that more food means more animals.
 
-Where does a fish live?
+What should the ranger do to bring more birds to the park?
 
-A. In a tree
-B. In the water
-C. In the desert
+A. Play loud music so the birds can hear where the park is
+B. Plant bushes and trees that grow berries and seeds for birds to eat
+C. Build a tall fence around the park
 
 Correct Answer: B
 
-Feedback: Yes! Fish live in the water because that is where they can breathe and find food. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Planting bushes and trees that grow berries and seeds adds more food to the habitat. More food means more birds can live there. If you chose A, loud music would scare birds away, not bring them in. Birds need food, not noise. If you chose C, a fence would not help birds. Birds fly over fences. What they need is more food in the habitat.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.C, CCC4)
+Question 2: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.C, CCC2)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.C, CCC2)
+Question 4: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.C, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS1.C, CCC2)
 
+---
 
 ## Resources
 

@@ -381,6 +381,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Precipitation Rate → Surface Water Availability relationship as
+unconditional. However, this relationship is scientifically
+contingent on Groundwater Level being active. Without this condition,
+the simulation produces inaccurate results: Precipitation Rate drives Surface Water Availability
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Precipitation Rate → Surface Water Availability
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Groundwater Level is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Groundwater Level active and observe
+     how Precipitation Rate's effect on Surface Water Availability is now gated
+   • Toggle Groundwater Level ON/OFF while Precipitation Rate remains constant
+   • Verify that Surface Water Availability only responds to Precipitation Rate when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Population and Agricultural Demand → Groundwater Level
+   • Set condition: IF Precipitation Rate is ON
+   • This ensures Population and Agricultural Demand's effect on Groundwater Level
+     is contingent on Precipitation Rate being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -954,15 +990,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's water system model shows that increasing demand by 30% causes groundwater levels to accelerate their decline non-linearly. What explains this acceleration rather than a proportional increase in depletion rate?
 
-A. The model is incorrectly programmed
-B. As groundwater levels drop, pumping requires more energy and draws from less productive zones, while reduced water tables decrease recharge rates, creating a positive feedback loop that accelerates depletion
-C. Demand increases are always non-linear regardless of the system
+A. As groundwater levels drop, pumping requires more energy and draws from less productive zones, while reduced water tables decrease recharge rates, creating a positive feedback loop that accelerates depletion
+B. Demand increases are always non-linear regardless of the system
+C. The model is incorrectly programmed
 D. Surface water compensates for groundwater loss, hiding the true rate
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Groundwater depletion involves positive feedback. As levels drop, recharge pathways shorten, reducing natural replenishment. Deeper pumping accesses less permeable zones with lower yields. The aquifer's ability to sustain extraction decreases as it depletes, accelerating the decline beyond the proportional increase in demand. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Groundwater depletion involves positive feedback. As levels drop, recharge pathways shorten, reducing natural replenishment. Deeper pumping accesses less permeable zones with lower yields. The aquifer's ability to sustain extraction decreases as it depletes, accelerating the decline beyond the proportional increase in demand. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -973,15 +1008,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that a 20% precipitation decline causes water crisis faster than a 30% demand increase. What does this comparison reveal about the water system?
 
-A. Demand management is irrelevant to water security
-B. Supply-side disruptions are more destabilizing because they simultaneously reduce surface water, groundwater recharge, and ecosystem water, while demand increases affect only extraction rates
+A. The 20% and 30% numbers are not comparable because they measure different things
+B. Demand management is irrelevant to water security
 C. Precipitation has no connection to groundwater levels
-D. The 20% and 30% numbers are not comparable because they measure different things
+D. Supply-side disruptions are more destabilizing because they simultaneously reduce surface water, groundwater recharge, and ecosystem water, while demand increases affect only extraction rates
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Precipitation decline acts as a supply shock that affects every component simultaneously: rivers drop, reservoir storage decreases, groundwater recharge slows, soil moisture falls, and ecosystem water needs go unmet. Demand increases only affect the extraction side, leaving natural recharge intact. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Precipitation decline acts as a supply shock that affects every component simultaneously: rivers drop, reservoir storage decreases, groundwater recharge slows, soil moisture falls, and ecosystem water needs go unmet. Demand increases only affect the extraction side, leaving natural recharge intact. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -993,14 +1027,13 @@ A student runs a simulation of the model. The model shows that when Precipitatio
 A student models a conservation strategy with 40% efficiency improvements and active water recycling. The model shows this can offset 30% demand growth but cannot restore depleted groundwater. What does this finding demonstrate about water system management?
 
 A. Efficiency improvements are useless because they cannot restore groundwater
-B. Efficiency measures are necessary but insufficient in regions where demand already exceeds sustainable supply; structural changes to water allocation are also required
-C. Groundwater depletion is a natural process that should not concern water managers
-D. Recycling produces water of lower quality that cannot substitute for freshwater
+B. Groundwater depletion is a natural process that should not concern water managers
+C. Recycling produces water of lower quality that cannot substitute for freshwater
+D. Efficiency measures are necessary but insufficient in regions where demand already exceeds sustainable supply; structural changes to water allocation are also required
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model reveals that efficiency gains can manage future demand growth but cannot undo historical overextraction. In regions where aquifers are already depleted beyond recovery, conservation must be paired with structural reforms: changing crop types, reducing irrigated acreage, or developing alternative water sources. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals that efficiency gains can manage future demand growth but cannot undo historical overextraction. In regions where aquifers are already depleted beyond recovery, conservation must be paired with structural reforms: changing crop types, reducing irrigated acreage, or developing alternative water sources. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1013,13 +1046,12 @@ The model shows that ignoring ecosystem water requirements to meet human demand 
 
 A. Ecosystems consume water that could otherwise be used by humans
 B. Healthy riparian ecosystems filter water, reduce erosion, maintain water tables, and recharge aquifers; degrading these systems reduces water quality and quantity for everyone
-C. Ecosystem water requirements are always larger than human water needs
-D. Ecosystems transport water from dry regions to wet regions
+C. Ecosystems transport water from dry regions to wet regions
+D. Ecosystem water requirements are always larger than human water needs
 
 Correct Answer: B
 
-Feedback: Correct. Ecosystems provide essential water services: wetlands filter pollutants, riparian vegetation prevents erosion, forest soils enhance infiltration and groundwater recharge, and healthy watersheds regulate flow. Depriving ecosystems of water degrades these services, ultimately reducing the quantity and quality of water available for human use. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Ecosystems provide essential water services: wetlands filter pollutants, riparian vegetation prevents erosion, forest soils enhance infiltration and groundwater recharge, and healthy watersheds regulate flow. Depriving ecosystems of water degrades these services, ultimately reducing the quantity and quality of water available for human use. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1030,24 +1062,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, a water manager must advise a semi-arid agricultural region facing both population growth and climate-driven precipitation decline. Which recommendation is most strongly supported by the model evidence?
 
-A. Continue current groundwater pumping rates and drill deeper wells as levels decline
-B. Implement a comprehensive strategy combining irrigation efficiency improvements, crop transitions to less water-intensive varieties, managed aquifer recharge, and enforceable extraction limits to stabilize groundwater levels
-C. Abandon all agriculture and rely entirely on food imports
-D. Build a single large desalination plant to replace all groundwater use
+A. Build a single large desalination plant to replace all groundwater use
+B. Continue current groundwater pumping rates and drill deeper wells as levels decline
+C. Implement a comprehensive strategy combining irrigation efficiency improvements, crop transitions to less water-intensive varieties, managed aquifer recharge, and enforceable extraction limits to stabilize groundwater levels
+D. Abandon all agriculture and rely entirely on food imports
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows that no single intervention is sufficient. The comprehensive strategy addresses demand (efficiency, crop transitions), supply (managed recharge), and governance (extraction limits). This multi-pronged approach is the only pathway that achieves long-term groundwater stability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that no single intervention is sufficient. The comprehensive strategy addresses demand (efficiency, crop transitions), supply (managed recharge), and governance (extraction limits). This multi-pronged approach is the only pathway that achieves long-term groundwater stability. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.5, CCC2)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.5, CCC2)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.5, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.5, CCC2)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.5, CCC2)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.5, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.5, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.5, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.5, CCC4)
 
 
 ## Resources

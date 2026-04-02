@@ -831,106 +831,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.A.1 (Weathering and erosion processes) + CCC7 (Change happens at different rates)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Water Flow, Erosion Strength, Land Shape Change. Some components are external (Water Flow) and some are internal (Erosion Strength, Land Shape Change). The student needs to understand what each component represents and how they are organized.
+In the erosion model, a student sees that Water Flow has a positive arrow pointing to Erosion Strength. The student runs two simulations. In the first, a gentle stream flows slowly over a dirt hillside. In the second, a powerful flood rushes down the same hillside. The student records how much soil is washed away in each simulation.
 
-In the erosion model, when Water Flow increases, what happens to Erosion Strength?
+Based on the model, which simulation would wash away MORE soil, and why?
 
-A. Erosion Strength decreases because the water spreads out
-B. Erosion Strength increases because faster water can pick up and carry more material
-C. Erosion Strength stays the same
-D. The water stops flowing
+A. The powerful flood, because faster, stronger water has more energy to pick up and carry soil.
+B. Both simulations would wash away the same amount of soil.
+C. The gentle stream, because slow water has more time to pick up soil.
+D. Neither simulation would wash away any soil because water cannot move dirt.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct! Water Flow and Erosion Strength have a positive relationship. Faster, stronger water can pick up more rocks and soil, causing more erosion. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The positive relationship between Water Flow and Erosion Strength means faster, more powerful water creates stronger erosion. A flood has much more energy than a gentle stream and can move far more soil. If you chose C, slow water picks up very little soil because it has less energy. Speed and power are what give water the ability to erode. If you chose B, the model shows that stronger water flow creates stronger erosion, so the flood would wash away much more soil. If you chose D, water is one of the most powerful forces shaping Earth's surface. It carries soil, sand, and even rocks.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.2 (Analyze data about Earth processes) + DCI ESS2.A.1 (Distinguish weathering from erosion) + CCC7 (Stability and change)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Water Flow increases, Erosion Strength increases; when Erosion Strength increases, Land Shape Change increases. The student is trying to understand why these relationships are positive or negative.
+During a field trip, students observe two things happening at a rocky riverbank. First, they see cracks in the rocks where water has frozen and thawed many times, breaking the rock into smaller pieces. Second, they see the river carrying small pieces of broken rock downstream, dropping them on a sandbar far away.
 
-What is the difference between weathering and erosion?
+Which statement BEST describes the TWO processes the students observed?
 
-A. They are the same thing
-B. Weathering breaks rocks apart; erosion carries the broken pieces to a new place
-C. Erosion breaks rocks; weathering carries them away
-D. Weathering only happens in winter; erosion only happens in summer
+A. Both observations show weathering because both happen near water.
+B. Both observations show erosion because water is involved in both.
+C. The cracking is erosion, and the river carrying pieces is weathering.
+D. The cracking is weathering (breaking rock apart), and the river carrying pieces is erosion (moving material to a new place).
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Exactly! Weathering is the breaking apart of rocks by water, ice, wind, or roots. Erosion is when water, wind, or ice picks up the broken pieces and carries them somewhere else. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Weathering is the breaking apart of rock. Erosion is when water, wind, or ice picks up the broken pieces and carries them somewhere else. The students saw both processes happening at the same location. If you chose B, only the carrying of pieces is erosion. The cracking and breaking is a separate process called weathering. If you chose C, this reverses the definitions. Weathering breaks rock apart. Erosion moves the pieces. If you chose A, only the cracking is weathering. The river carrying pieces to a new location is erosion, which is a different process.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships) + DCI ESS2.A.1 (Deposition processes) + CCC7 (Change over time)
 
-A student runs a simulation of the model. The model shows that when Water Flow increases, Erosion Strength increases and when Erosion Strength increases, Land Shape Change increases. The student changes one variable to see how the whole system responds.
+A river flows fast through a narrow mountain valley, carrying lots of sand and mud. When the river reaches a wide, flat plain, it spreads out and slows down. Students notice that a large fan-shaped pile of sand and mud has built up where the river enters the plain.
 
-When water slows down and drops the rocks and soil it was carrying, this is called:
+What BEST explains why the sand and mud pile up where the river slows down?
 
-A. Weathering
-B. Erosion
-C. Deposition
-D. Evaporation
+A. The sand and mud are too heavy for slow water to carry, so they are dropped in a process called deposition.
+B. The sand and mud grow larger when the water slows down.
+C. The sand and mud are attracted to the flat plain like magnets.
+D. Someone dumped the sand and mud there.
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Right! Deposition is when water slows down and drops the material it was carrying. This is how deltas, beaches, and sandbars are formed. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When water slows down, it loses energy and can no longer carry the sediment. The sand and mud settle out and pile up. This process is called deposition, and it creates landforms like deltas and sandbars. If you chose C, sand and mud are not magnetic. They are dropped because the water does not have enough energy to carry them when it slows down. If you chose B, sand and mud do not grow. They pile up because the river keeps dropping more material as it slows. If you chose D, this is a natural process. Rivers deposit sediment where they slow down, building up landforms over time.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine system components) + DCI ESS2.A.1 (Earth surface processes) + CCC4 (System components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The erosion model includes Water Flow, Erosion Strength, Sediment Transport, and Land Shape Change. The teacher explains that the external component is the one that starts the process, and the internal components change as a result.
 
-In the flooding river scenario, Erosion Strength and Land Shape Change were both very high. Why?
+Which component is EXTERNAL in the erosion model?
 
-A. Because floods happen at night
-B. Because powerful flood water has enough energy to pick up large rocks and carve deep channels into the land
-C. Because floods make the land flat
-D. Because Land Shape Change is not connected to Erosion Strength
+A. Erosion Strength, because erosion is the most powerful force.
+B. Water Flow, because it is the starting force that drives erosion, transport, and land change.
+C. Land Shape Change, because the land is what changes at the end.
+D. Sediment Transport, because sediment moves from one place to another.
 
 Correct Answer: B
 
-Feedback: You got it! Flooding rivers have enormous energy. The powerful water picks up large rocks and carves deep channels, causing major changes to the shape of the land. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Water Flow is external because it is the starting input that drives the whole system. How fast and how much water flows determines the erosion strength, sediment transport, and land shape changes. If you chose A, Erosion Strength is internal because it depends on how much water is flowing. Stronger flow means stronger erosion. If you chose C, Land Shape Change is the final output. It changes as a result of all the other processes in the system. If you chose D, Sediment Transport is internal because it depends on erosion strength, which depends on water flow.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS2.A.1 (Predict erosion outcomes) + CCC7 (Predict change at different rates)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Water Flow), but they can take action on internal components (Erosion Strength, Land Shape Change). They need to decide which action would be most effective based on what the model shows.
+Two hills sit next to each other in a rainstorm. Hill A is covered with thick grass and tree roots. Hill B is bare dirt with no plants at all. The model shows: Water Flow (+) -> Erosion Strength (+) -> Land Shape Change. But students also learned that plant roots hold soil in place and reduce erosion.
 
-How do you think the Grand Canyon was formed?
+Based on the model and what students learned about plant roots, which hill will change shape MORE during the rainstorm?
 
-A. People dug it with shovels
-B. Water from a river slowly carved it over millions of years
-C. It was always there since Earth was created
-D. A giant earthquake split the ground open
+A. Neither hill will change because rain is not strong enough to move soil.
+B. Both hills will change the same amount because they get the same rain.
+C. Hill B (bare dirt), because without plant roots to hold the soil, water washes away more dirt and changes the hill's shape more.
+D. Hill A (grass and roots), because plants make the rain stronger.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! The Grand Canyon was carved by the Colorado River over about 6 million years. Water is a powerful force that shapes the land very slowly. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Plant roots hold soil in place and reduce erosion. Hill B has no plants, so the rain washes away soil freely, causing more shape change. Hill A's grass and roots protect the soil from being washed away. If you chose D, plants do not make rain stronger. They actually protect the soil from being eroded by holding it in place with their roots. If you chose B, even though both hills get the same rain, plant roots on Hill A reduce erosion while bare Hill B has no protection. If you chose A, rain absolutely moves soil. Rainstorms cause erosion, and bare dirt hills are especially vulnerable.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC4)
+Question 1: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.A.1, CCC7)
+Question 2: D (Cognitive Level: Identify — SEP 4.1.2, DCI ESS2.A.1, CCC7)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.A.1, CCC7)
+Question 4: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.A.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS2.A.1, CCC7)
+
+---
 
 
 ## Resources

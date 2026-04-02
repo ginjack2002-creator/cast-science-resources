@@ -908,15 +908,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the nitrogen pollution model, Soil Depletion creates a vicious cycle with Fertilizer Application. How does the model represent this feedback?
 
-A. Soil Depletion reduces the need for fertilizer because degraded soil cannot support crops
-B. Intensive farming degrades soil, which holds less nitrogen, requiring more fertilizer application, which further degrades soil structure in a self-reinforcing loop
-C. Soil Depletion and Fertilizer Application are independent variables with no interaction
+A. Intensive farming degrades soil, which holds less nitrogen, requiring more fertilizer application, which further degrades soil structure in a self-reinforcing loop
+B. Soil Depletion and Fertilizer Application are independent variables with no interaction
+C. Soil Depletion reduces the need for fertilizer because degraded soil cannot support crops
 D. Soil Depletion is beneficial because it increases the soil's ability to filter nitrogen
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model reveals a positive feedback loop: intensive farming with high fertilizer use degrades soil organic matter and structure, reducing the soil's capacity to retain nitrogen, which demands even more fertilizer application. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model reveals a positive feedback loop: intensive farming with high fertilizer use degrades soil organic matter and structure, reducing the soil's capacity to retain nitrogen, which demands even more fertilizer application. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -927,15 +926,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model demonstrates a threshold effect in the relationship between Nitrogen Runoff and Algal Bloom Growth. What does this threshold reveal?
 
-A. Any amount of nitrogen runoff immediately causes algal blooms
-B. Below a critical nitrogen concentration, waterways can process excess nutrients; above it, algal growth overwhelms the system's capacity and dead zones form
-C. Algal blooms are caused by temperature, not nitrogen, so the threshold is irrelevant
-D. The threshold represents the point where algal growth becomes beneficial to the ecosystem
+A. The threshold represents the point where algal growth becomes beneficial to the ecosystem
+B. Algal blooms are caused by temperature, not nitrogen, so the threshold is irrelevant
+C. Any amount of nitrogen runoff immediately causes algal blooms
+D. Below a critical nitrogen concentration, waterways can process excess nutrients; above it, algal growth overwhelms the system's capacity and dead zones form
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows a non-linear response: aquatic ecosystems can absorb and process moderate nitrogen loading, but above a critical concentration, the system tips into uncontrollable algal bloom and subsequent oxygen collapse. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows a non-linear response: aquatic ecosystems can absorb and process moderate nitrogen loading, but above a critical concentration, the system tips into uncontrollable algal bloom and subsequent oxygen collapse. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -946,15 +944,14 @@ A student runs a simulation of the model. The model shows that when Fertilizer A
 
 A student compares the 'Conventional Farming' and 'Precision Agriculture' scenarios in the model. The precision agriculture scenario reduces Fertilizer Application by 40% while maintaining crop yields. What does the model show happens to downstream impacts?
 
-A. Downstream impacts remain unchanged because crop uptake absorbs all the saved fertilizer
-B. Nitrogen Runoff, Algal Bloom Growth, and Oxygen Depletion all decrease significantly because less excess nitrogen enters waterways
-C. Downstream impacts worsen because less fertilizer means weaker crops that erode soil faster
-D. Only Water Treatment Cost changes; biological impacts remain the same
+A. Only Water Treatment Cost changes; biological impacts remain the same
+B. Downstream impacts worsen because less fertilizer means weaker crops that erode soil faster
+C. Nitrogen Runoff, Algal Bloom Growth, and Oxygen Depletion all decrease significantly because less excess nitrogen enters waterways
+D. Downstream impacts remain unchanged because crop uptake absorbs all the saved fertilizer
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows that reducing excess fertilizer application directly reduces the cascade: less nitrogen runs off, fewer algal blooms develop, oxygen depletion decreases, and dead zone formation is reduced. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that reducing excess fertilizer application directly reduces the cascade: less nitrogen runs off, fewer algal blooms develop, oxygen depletion decreases, and dead zone formation is reduced. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -965,15 +962,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model reveals that the economic costs of nutrient pollution often exceed the economic gains from the excess fertilizer that caused it. Which model components support this finding?
 
-A. Only Fertilizer Application cost matters because all other costs are externalized
+A. Fertilizer always generates more economic value than it costs, regardless of environmental damage
 B. Water Treatment Cost from removing nitrogen from drinking water, fishery losses from dead zones, and tourism damage collectively exceed the marginal agricultural revenue from excess fertilizer application
-C. The model does not track any economic variables
-D. Fertilizer always generates more economic value than it costs, regardless of environmental damage
+C. Only Fertilizer Application cost matters because all other costs are externalized
+D. The model does not track any economic variables
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that when all costs are accounted for, the marginal revenue from excess fertilizer is dwarfed by Water Treatment Cost, fishery collapse losses, and tourism damage from dead zones. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model demonstrates that when all costs are accounted for, the marginal revenue from excess fertilizer is dwarfed by Water Treatment Cost, fishery collapse losses, and tourism damage from dead zones. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -984,24 +980,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, which approach most effectively breaks the nitrogen pollution cycle?
 
-A. Applying more fertilizer to grow more crops that absorb more nitrogen
-B. Combining precision agriculture (reducing excess application), soil health restoration (increasing nitrogen retention), and buffer zones (intercepting runoff before it reaches waterways)
-C. Banning all fertilizer use immediately and relying on natural soil nitrogen
-D. Building larger water treatment plants downstream to remove all nitrogen
+A. Building larger water treatment plants downstream to remove all nitrogen
+B. Banning all fertilizer use immediately and relying on natural soil nitrogen
+C. Applying more fertilizer to grow more crops that absorb more nitrogen
+D. Combining precision agriculture (reducing excess application), soil health restoration (increasing nitrogen retention), and buffer zones (intercepting runoff before it reaches waterways)
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that breaking the cycle requires addressing multiple points: reducing excess input (precision agriculture), restoring the soil's natural capacity (soil health), and intercepting pollution before it reaches water (buffer zones). If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that breaking the cycle requires addressing multiple points: reducing excess input (precision agriculture), restoring the soil's natural capacity (soil health), and intercepting pollution before it reaches water (buffer zones). If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.4, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.4, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.4, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.4, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.4, CCC2)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.4, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.4, CCC4)
 
 
 ## Resources

@@ -831,106 +831,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Make a claim with evidence) + DCI LS4.D.1 (Environmental changes affect organisms) + CCC2 (Cause and effect of habitat change)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Habitat Change, Food Availability, Animal Population. Some components are external (Habitat Change) and some are internal (Food Availability, Animal Population). The student needs to understand what each component represents and how they are organized.
+A forest in California has a major wildfire that burns down most of the trees and bushes. Before the fire, the forest was home to 200 deer, 50 rabbits, and many birds. Scientists return three months later and find only 80 deer, 15 rabbits, and very few birds. The burned trees have not yet grown back.
 
-In the habitat model, when Habitat Change increases, what happens to Food Availability?
+What BEST explains why the animal populations decreased after the fire?
 
-A. Food Availability increases because new plants grow
-B. Food Availability decreases because the habitat that provided food is damaged or destroyed
-C. Food Availability stays the same
-D. Food Availability is not connected to Habitat Change
+A. The fire destroyed the food, shelter, and habitat that the animals needed to survive, so many could not find what they needed.
+B. The animals decided to hibernate until the trees grow back.
+C. The animals moved away because they do not like the smell of smoke.
+D. Animal populations always decrease in the fall regardless of fires.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct! Habitat Change and Food Availability have a negative relationship. When the habitat changes a lot (like a fire or drought), less food is available for animals. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: When the fire destroyed the forest, it removed the food sources and shelter that the animals depended on. Without enough food and places to hide from predators, many animals could not survive. If you chose C, while some animals may flee smoke, the main problem is the long-term loss of food and shelter, not the smell. If you chose B, deer and rabbits do not hibernate. They need food and shelter every day, and the fire destroyed those resources. If you chose D, the decrease is directly connected to the fire destroying the habitat, not the season.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.D.1 (Habitat change and populations) + CCC2 (Cause and effect in systems)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Habitat Change increases, Food Availability increases; when Food Availability increases, Animal Population increases. The student is trying to understand why these relationships are positive or negative.
+In the habitat model, Habitat Change has a negative arrow pointing to Food Availability. Food Availability has a positive arrow pointing to Animal Population. A student runs the model and increases Habitat Change from low to very high (simulating a major wildfire).
 
-Which animals are MOST at risk when their habitat changes?
+Based on the model, what would happen to Food Availability and Animal Population when Habitat Change increases to very high?
 
-A. Animals that can eat many different foods and live in many places
-B. Animals that eat only one type of food or live in only one type of place
-C. Animals that are very large
-D. Animals that are very fast
+A. Food Availability would decrease, and Animal Population would also decrease.
+B. Food Availability would stay the same, and Animal Population would increase.
+C. Food Availability would increase, and Animal Population would increase.
+D. Food Availability would decrease, but Animal Population would increase.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Exactly! Specialized animals that depend on only one food or one type of habitat are most at risk. If their specific food or home is destroyed, they have no backup plan. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The negative arrow means more habitat change leads to less food. Then the positive arrow means less food leads to fewer animals. Both Food Availability and Animal Population go down when habitat damage is high. If you chose C, the negative relationship between Habitat Change and Food Availability means more change causes less food, not more. If you chose B, the model shows a clear negative connection. Major habitat change reduces food availability. If you chose D, when food decreases, the positive relationship with Animal Population means the population also decreases, not increases.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Make a claim about solutions) + DCI LS4.D.1 (Solutions for habitat change) + CCC2 (Cause and effect of interventions)
 
-A student runs a simulation of the model. The model shows that when Habitat Change increases, Food Availability increases and when Food Availability increases, Animal Population increases. The student changes one variable to see how the whole system responds.
+After a major drought dries up a lake, fish and frogs begin to disappear from the area. A group of students brainstorms four ideas to help the animals: (1) build a new pond near the dried lake, (2) paint the dry lake to look blue, (3) put up a sign asking the rain to come back, and (4) play recordings of water sounds near the lake.
 
-What is one way humans can help animals when their habitat is damaged?
+Which idea would MOST LIKELY help the fish and frogs survive?
 
-A. Do nothing and let nature take its course
-B. Build wildlife corridors so animals can move safely to healthy habitat
-C. Remove all the animals from the wild
-D. Make the habitat change happen faster
+A. Idea 3 (put up a sign), because rain will read the sign and come back.
+B. Idea 4 (play water sounds), because animals will feel better hearing water.
+C. Idea 2 (paint the lake blue), because animals will think it is water.
+D. Idea 1 (build a new pond), because it creates actual water habitat where fish and frogs can live.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Right! Wildlife corridors are safe paths that connect healthy habitats. They help animals move from damaged areas to places with food and shelter. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Building a new pond creates real water habitat with actual water for fish and frogs to live in. This directly addresses the problem by replacing what was lost. If you chose C, paint is not water. Fish and frogs need real water to survive, not the appearance of water. If you chose A, rain is a natural weather event. Signs cannot control when or if it rains. If you chose B, sounds of water do not provide actual water. Fish and frogs need real water habitat, not just sounds.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine system components) + DCI LS4.D.1 (Habitat system components) + CCC4 (System components and interactions)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The habitat model includes Habitat Change, Food Availability, Shelter, and Animal Population. The teacher explains that the external component is the event that starts the changes, and the internal components respond to that event.
 
-In the major change scenario (wildfire), both Food Availability and Animal Population dropped a lot. Why did the population drop?
+Which component is EXTERNAL in the habitat model?
 
-A. The animals moved to a different planet
-B. Without enough food and shelter, many animals cannot survive in the changed habitat
-C. The animals got bored and left
-D. Population is not connected to food
+A. Animal Population, because it is the most important component.
+B. Habitat Change, because it is the outside event (like a fire or drought) that causes everything else to change.
+C. Shelter, because shelters are built on the outside of the land.
+D. Food Availability, because animals need food from outside their bodies.
 
 Correct Answer: B
 
-Feedback: You got it! When a wildfire destroys most of the forest, food and shelter are greatly reduced. Without enough resources, many animals cannot survive, so the population drops. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Habitat Change is external because it is the event (fire, drought, flood) that triggers changes in the system. Food Availability, Shelter, and Animal Population are internal because they change as a result. If you chose D, Food Availability is internal because it changes as a result of habitat change. When habitat is damaged, food decreases. If you chose A, Animal Population is the final output of the system. It depends on food and shelter, making it internal. If you chose C, Shelter is internal because it is affected by the habitat change event. Fire or drought reduces available shelter.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS4.D.1 (Predict habitat change outcomes) + CCC2 (Predict cause and effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Habitat Change), but they can take action on internal components (Food Availability, Animal Population). They need to decide which action would be most effective based on what the model shows.
+Two forests are hit by the same wildfire. Forest A has many different types of animals: some eat berries, some eat insects, some eat seeds, and some eat grass. Forest B has animals that all eat only one type of berry that grows on one type of bush. After the fire, small patches of grass, insects, and seeds survive, but the special berry bushes are completely destroyed.
 
-What do you think a habitat is?
+Based on the model, which forest's animals will MOST LIKELY survive better after the fire, and why?
 
-A. A type of clothing animals wear
-B. The natural home where an animal lives, which provides food, water, and shelter
-C. A cage at the zoo
-D. A type of food animals eat
+A. Neither forest's animals will survive because all fires destroy everything.
+B. Both forests will recover the same way because they had the same fire.
+C. Forest A, because the animals that eat grass, insects, and seeds still have food, even though some food sources were destroyed.
+D. Forest B, because specialized animals are stronger than diverse animals.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! A habitat is the natural place where an animal or plant lives. It provides everything the organism needs: food, water, shelter, and space. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Forest A's diverse animals have multiple food options. Even after the fire, animals that eat grass, insects, or seeds can still find food. Forest B's animals all depend on one berry that was completely destroyed, leaving them with no food. If you chose D, specialization is actually a disadvantage when habitat changes. If the one food source is gone, specialized animals have no alternatives. If you chose B, although the fire was the same, the different types of animals respond differently based on their food options. If you chose A, the scenario states that grass, insects, and seeds survived. Not everything was destroyed.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.4, CCC4)
+Question 1: A (Cognitive Level: Reason — SEP 7.1.1, DCI LS4.D.1, CCC2)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.D.1, CCC2)
+Question 3: D (Cognitive Level: Reason + Evidence — SEP 7.1.1, DCI LS4.D.1, CCC2)
+Question 4: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.D.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS4.D.1, CCC2)
+
+---
 
 
 ## Resources

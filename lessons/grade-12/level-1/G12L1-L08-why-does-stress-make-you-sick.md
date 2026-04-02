@@ -347,6 +347,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Stress Exposure → Cortisol Level relationship as
+unconditional. However, this relationship is scientifically
+contingent on Social Support being inactive. Without this condition,
+the simulation produces inaccurate results: Stress Exposure drives Cortisol Level
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Stress Exposure → Cortisol Level
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Social Support is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Social Support inactive and observe
+     how Stress Exposure's effect on Cortisol Level is now gated
+   • Toggle Social Support ON/OFF while Stress Exposure remains constant
+   • Verify that Cortisol Level only responds to Stress Exposure when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Social Support → Cortisol Level
+   • Set condition: IF Stress Exposure is ON
+   • This ensures Social Support's effect on Cortisol Level
+     is contingent on Stress Exposure being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -919,15 +955,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The stress-immune model includes five components: Stress Exposure, Social Support, Cortisol Level, Immune Function, and Health Outcome. In the 'Chronic Stress Without Support' scenario, which cascade does the model predict?
 
-A. Cortisol drops, Immune Function rises, Health Outcome improves
+A. Immune Function adapts to high cortisol and returns to normal within 48 hours
 B. Continuous Stress Exposure with low Social Support keeps Cortisol Level chronically elevated, progressively declining Immune Function, and deteriorating Health Outcome over weeks
 C. Social Support has no effect on the cascade because stress is too intense
-D. Immune Function adapts to high cortisol and returns to normal within 48 hours
+D. Cortisol drops, Immune Function rises, Health Outcome improves
 
 Correct Answer: B
 
-Feedback: Correct. The model predicts a progressive decline: without social buffering, continuous stress maintains elevated cortisol, which progressively suppresses lymphocyte production, reducing immune capacity and worsening health outcomes over time. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model predicts a progressive decline: without social buffering, continuous stress maintains elevated cortisol, which progressively suppresses lymphocyte production, reducing immune capacity and worsening health outcomes over time. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -938,15 +973,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that Social Support buffers cortisol response. Comparing the 'Chronic Stress Without Support' and 'Chronic Stress With Strong Support' scenarios with identical stress levels, what key difference does the model predict?
 
-A. Social Support eliminates cortisol entirely, producing perfect health even under chronic stress
-B. Strong Social Support reduces HPA axis activation, resulting in lower Cortisol Levels and partially preserved Immune Function, leading to measurably better Health Outcomes despite identical stress exposure
-C. Social Support only affects perceived stress, not actual cortisol or immune markers
-D. Both scenarios produce identical biological outcomes because the stressor is the same
+A. Social Support only affects perceived stress, not actual cortisol or immune markers
+B. Both scenarios produce identical biological outcomes because the stressor is the same
+C. Social Support eliminates cortisol entirely, producing perfect health even under chronic stress
+D. Strong Social Support reduces HPA axis activation, resulting in lower Cortisol Levels and partially preserved Immune Function, leading to measurably better Health Outcomes despite identical stress exposure
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that social support physically reduces cortisol output (not just perceived stress), partially protecting immune function. The same chronic stressor produces measurably different biological outcomes depending on social support. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that social support physically reduces cortisol output (not just perceived stress), partially protecting immune function. The same chronic stressor produces measurably different biological outcomes depending on social support. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -957,15 +991,14 @@ A student runs a simulation of the model. The model shows that when Stress Expos
 
 The stress response evolved as a survival mechanism for short-term threats but becomes destructive when chronically activated. Which model evidence best explains this evolutionary mismatch?
 
-A. The stress response does not actually help with survival in any scenario
-B. Acute cortisol mobilizes energy and briefly enhances immune readiness (adaptive for a 20-minute predator encounter), but the same mechanisms destroy immune function when activated continuously by modern chronic stressors the system was never designed to handle
-C. Evolution has already corrected this mismatch in modern humans
-D. Chronic stress only became possible after the invention of antibiotics
+A. Acute cortisol mobilizes energy and briefly enhances immune readiness (adaptive for a 20-minute predator encounter), but the same mechanisms destroy immune function when activated continuously by modern chronic stressors the system was never designed to handle
+B. Chronic stress only became possible after the invention of antibiotics
+C. The stress response does not actually help with survival in any scenario
+D. Evolution has already corrected this mismatch in modern humans
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows the mismatch: the HPA axis evolved for brief physical threats where cortisol's effects (energy mobilization, temporary immune boost) are adaptive. Modern chronic psychological stressors keep the system activated far beyond its design parameters. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows the mismatch: the HPA axis evolved for brief physical threats where cortisol's effects (energy mobilization, temporary immune boost) are adaptive. Modern chronic psychological stressors keep the system activated far beyond its design parameters. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -977,14 +1010,13 @@ Scientists are studying data related to this system. They collected observations
 A student adds Sleep Quality as a component to the stress-immune model. Based on the known interactions, how does chronic stress-disrupted sleep create a compounding effect?
 
 A. Sleep disruption has no measurable effect on cortisol or immune function
-B. Chronic stress disrupts sleep, and sleep deprivation independently elevates cortisol and suppresses immune function, creating a vicious cycle that compounds stress-immune damage beyond what either factor causes alone
-C. Better sleep during chronic stress would completely eliminate all immune suppression
+B. Better sleep during chronic stress would completely eliminate all immune suppression
+C. Chronic stress disrupts sleep, and sleep deprivation independently elevates cortisol and suppresses immune function, creating a vicious cycle that compounds stress-immune damage beyond what either factor causes alone
 D. Sleep only affects physical recovery, not immune function or hormone levels
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model with added Sleep Quality shows a vicious cycle: stress disrupts sleep, poor sleep independently raises cortisol and suppresses immunity, which worsens stress response, which further disrupts sleep. The combined effect is greater than either alone. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model with added Sleep Quality shows a vicious cycle: stress disrupts sleep, poor sleep independently raises cortisol and suppresses immunity, which worsens stress response, which further disrupts sleep. The combined effect is greater than either alone. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -995,24 +1027,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, which school stress reduction intervention targets the MOST biologically impactful pathway?
 
-A. Posting motivational posters in hallways to improve student attitudes
-B. Creating structured peer support programs that increase Social Support, which the model shows directly reduces HPA axis activation and cortisol output, providing measurable immune protection
-C. Eliminating all homework to completely remove stress from students' lives
-D. Teaching students to ignore stress signals because acknowledging them makes them worse
+A. Creating structured peer support programs that increase Social Support, which the model shows directly reduces HPA axis activation and cortisol output, providing measurable immune protection
+B. Teaching students to ignore stress signals because acknowledging them makes them worse
+C. Posting motivational posters in hallways to improve student attitudes
+D. Eliminating all homework to completely remove stress from students' lives
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model identifies Social Support as the most powerful modifiable variable. Structured peer support programs target the biological mechanism the model shows is most protective: reduced HPA axis activation and lower cortisol output. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model identifies Social Support as the most powerful modifiable variable. Structured peer support programs target the biological mechanism the model shows is most protective: reduced HPA axis activation and lower cortisol output. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.3, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.3, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.3, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.3, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.3, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.3, CCC4)
 
 
 ## Resources

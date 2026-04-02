@@ -364,6 +364,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Bleaching Frequency → Coral Recovery Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Algae Competition being active. Without this condition,
+the simulation produces inaccurate results: Bleaching Frequency drives Coral Recovery Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Bleaching Frequency → Coral Recovery Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Algae Competition is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Algae Competition active and observe
+     how Bleaching Frequency's effect on Coral Recovery Rate is now gated
+   • Toggle Algae Competition ON/OFF while Bleaching Frequency remains constant
+   • Verify that Coral Recovery Rate only responds to Bleaching Frequency when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Algae Competition → Coral Recovery Rate
+   • Set condition: IF Bleaching Frequency is ON
+   • This ensures Algae Competition's effect on Coral Recovery Rate
+     is contingent on Bleaching Frequency being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -929,107 +965,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI LS2.A (Population dynamics and limiting factors) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sea Surface Temperature, Bleaching Frequency, Coral Recovery Rate, Reef Structural Complexity, Marine Biodiversity, Algae Competition. Some components are external (Sea Surface Temperature) and some are internal (Bleaching Frequency, Coral Recovery Rate, Reef Structural Complexity, Marine Biodiversity, Algae Competition). The student needs to understand what each component represents and how they are organized.
+Marine biologists monitoring a reef system in the Pacific track a cascade of ecological changes following a marine heatwave. Water temperatures exceeded 29C for 12 consecutive weeks, causing 67% of coral species to expel their symbiotic zooxanthellae (bleaching). Without these photosynthetic partners, the corals lost their primary energy source. Within 6 months, algae colonized 45% of the bleached coral surfaces, and herbivorous fish populations declined by 30% as their preferred coral habitat degraded. Predatory fish populations showed initial increases (feeding on stressed prey) before declining as the entire food web destabilized.
 
 The model shows bleaching events occurring every 6 years, but full coral recovery requires 10-15 years. What mathematical relationship makes a death spiral inevitable under these conditions?
 
-A. The ratio of bleaching frequency to recovery time is less than 1, allowing gradual improvement
+A. Bleaching frequency has no relationship to long-term reef health
 B. The ratio of stress frequency to recovery time exceeds 1, meaning each bleaching event hits a reef that has not recovered from the previous one, compounding damage
 C. The absolute temperature during bleaching determines recovery time regardless of frequency
-D. Bleaching frequency has no relationship to long-term reef health
+D. The ratio of bleaching frequency to recovery time is less than 1, allowing gradual improvement
 
 Correct Answer: B
 
-Feedback: Correct. When stress frequency exceeds recovery capacity (ratio > 1), damage accumulates with each event. A 6-year bleaching cycle with 10-15-year recovery means each event strikes an increasingly weakened reef. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: When stress frequency exceeds recovery capacity (ratio > 1), damage accumulates with each event. A 6-year bleaching cycle with 10-15-year recovery means each event strikes an increasingly weakened reef. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. The death spiral is mathematically driven by the stress-to-recovery ratio. If bleaching occurs every 6 years but recovery takes 10-15 years, each new event hits a reef that is only 40-60% recovered, creating cumulative damage. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. The death spiral is mathematically driven by the stress-to-recovery ratio. If bleaching occurs every 6 years but recovery takes 10-15 years, each new event hits a reef that is only 40-60% recovered, creating cumulative damage. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. The death spiral is mathematically driven by the stress-to-recovery ratio. If bleaching occurs every 6 years but recovery takes 10-15 years, each new event hits a reef that is only 40-60% recovered, creating cumulative damage.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.2 + CCC3 (Scale, Proportion, and Quantity)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI LS2.A (Population dynamics and limiting factors) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sea Surface Temperature increases, Bleaching Frequency increases; when Bleaching Frequency increases, Coral Recovery Rate decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of coral reef ecosystem dynamics identifies five interconnected feedback loops: (1) coral-zooxanthellae mutualism (positive: healthy coral provides habitat for algae that provide energy), (2) coral-algae competition (negative: when coral weakens, algae overgrow, blocking coral recovery), (3) herbivore-algae grazing (negative: fish eat algae, preventing coral smothering), (4) temperature-bleaching threshold (nonlinear: coral tolerates warming until a critical threshold, then bleaches rapidly), and (5) ocean acidification-calcification (negative: lower pH reduces coral's ability to build skeleton). A student analyzes which loop creates the 'death spiral' once triggered.
 
 A student's model shows that after a phase shift from coral to algae dominance, Reef Structural Complexity and Marine Biodiversity both collapse. Why is this phase shift considered largely irreversible on human timescales?
 
-A. Algae grow so slowly that it takes centuries for them to be replaced
-B. Algae overgrow dead coral surfaces, preventing coral larvae from settling and recolonizing, while the three-dimensional reef structure erodes without living coral to maintain it
-C. Ocean temperatures never decrease, so bleaching conditions are permanent
-D. Marine species that leave degraded reefs can never navigate back to them
+A. Marine species that leave degraded reefs can never navigate back to them
+B. Ocean temperatures never decrease, so bleaching conditions are permanent
+C. Algae grow so slowly that it takes centuries for them to be replaced
+D. Algae overgrow dead coral surfaces, preventing coral larvae from settling and recolonizing, while the three-dimensional reef structure erodes without living coral to maintain it
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Algae act as a biological barrier to coral recolonization, and without living coral to build and maintain reef structure, the three-dimensional habitat erodes, eliminating the niches that supported biodiversity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Algae act as a biological barrier to coral recolonization, and without living coral to build and maintain reef structure, the three-dimensional habitat erodes, eliminating the niches that supported biodiversity. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. Phase shifts are self-reinforcing: algae colonize dead coral surfaces and block new coral settlement, while the limestone reef skeleton erodes without living coral to maintain it. The physical habitat is lost along with its biological community. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Phase shifts are self-reinforcing: algae colonize dead coral surfaces and block new coral settlement, while the limestone reef skeleton erodes without living coral to maintain it. The physical habitat is lost along with its biological community. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Phase shifts are self-reinforcing: algae colonize dead coral surfaces and block new coral settlement, while the limestone reef skeleton erodes without living coral to maintain it. The physical habitat is lost along with its biological community.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.C (Ecosystem dynamics and resilience) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Sea Surface Temperature increases, Bleaching Frequency increases and when Bleaching Frequency increases, Coral Recovery Rate decreases and when Coral Recovery Rate increases, Reef Structural Complexity increases. The student changes one variable to see how the whole system responds.
+A decade of monitoring data from three adjacent reef zones reveals divergent recovery trajectories after a mass bleaching event. Zone A (protected marine reserve, healthy fish populations) recovered 60% coral cover within 5 years. Zone B (moderate fishing pressure, reduced herbivore populations) recovered only 15% coral cover as algae outcompeted recovering coral. Zone C (heavy fishing pressure, severely depleted herbivores) experienced a permanent phase shift to algae-dominated state with no coral recovery after 8 years.
 
 The Great Barrier Reef experienced mass bleaching events in 2016, 2017, 2020, 2022, and 2024. Using the model's framework, which prediction is best supported by this data?
 
-A. The reef is demonstrating natural resilience by surviving multiple events
-B. Bleaching frequency has increased to every 1-2 years, virtually eliminating recovery windows and placing the reef on a trajectory toward widespread phase shift
-C. The reef has already fully shifted to algae dominance
-D. Future bleaching events will be less severe because the most vulnerable corals have already died
+A. Future bleaching events will be less severe because the most vulnerable corals have already died
+B. The reef has already fully shifted to algae dominance
+C. Bleaching frequency has increased to every 1-2 years, virtually eliminating recovery windows and placing the reef on a trajectory toward widespread phase shift
+D. The reef is demonstrating natural resilience by surviving multiple events
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Five mass bleaching events in 8 years gives a frequency of approximately every 1.6 years, far exceeding the 10-15 year recovery requirement, indicating progressive degradation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Five mass bleaching events in 8 years gives a frequency of approximately every 1.6 years, far exceeding the 10-15 year recovery requirement, indicating progressive degradation. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Five mass bleaching events in 8 years represents a bleaching frequency far shorter than the 10-15 years needed for recovery. The model predicts that sustained high-frequency bleaching will drive the reef toward irreversible phase shift. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Five mass bleaching events in 8 years represents a bleaching frequency far shorter than the 10-15 years needed for recovery. The model predicts that sustained high-frequency bleaching will drive the reef toward irreversible phase shift. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Five mass bleaching events in 8 years represents a bleaching frequency far shorter than the 10-15 years needed for recovery. The model predicts that sustained high-frequency bleaching will drive the reef toward irreversible phase shift.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.A (Population dynamics and limiting factors) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Scientists studying reef resilience discover that the system exhibits hysteresis: the environmental conditions required to restore a degraded reef are significantly more favorable than the conditions that caused its degradation. Their model shows that a healthy reef can withstand water temperatures up to 29.5C, but once it shifts to an algae-dominated state, temperatures must drop below 27C for sustained periods to allow coral recolonization. This asymmetry means that returning CO2 emissions to previous levels is insufficient; conditions must improve beyond the original threshold.
 
 A conservation team proposes reducing local stressors (pollution, overfishing) to help a reef survive warming. According to the model, why might this be necessary but insufficient as a standalone strategy?
 
-A. Local stressors have no measurable effect on reef health
-B. Reducing local stressors improves baseline reef resilience and recovery capacity, but cannot prevent bleaching if sea surface temperatures continue rising above thermal stress thresholds
+A. Reducing local stressors improves baseline reef resilience and recovery capacity, but cannot prevent bleaching if sea surface temperatures continue rising above thermal stress thresholds
+B. Local stressors have no measurable effect on reef health
 C. Overfishing actually helps reefs by reducing the number of coral-eating organisms
 D. Pollution makes corals more resistant to temperature changes
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Local stressor reduction improves coral health and recovery speed, but the primary driver of bleaching is thermal stress from global ocean warming, which local management cannot control. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Local stressor reduction improves coral health and recovery speed, but the primary driver of bleaching is thermal stress from global ocean warming, which local management cannot control. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The model shows two scales of threat: local stressors (pollution, overfishing) degrade reef resilience, while global warming drives thermal bleaching. Addressing local stressors helps corals recover faster, but if warming continues, bleaching will still overwhelm recovery capacity. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The model shows two scales of threat: local stressors (pollution, overfishing) degrade reef resilience, while global warming drives thermal bleaching. Addressing local stressors helps corals recover faster, but if warming continues, bleaching will still overwhelm recovery capacity. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. The model shows two scales of threat: local stressors (pollution, overfishing) degrade reef resilience, while global warming drives thermal bleaching. Addressing local stressors helps corals recover faster, but if warming continues, bleaching will still overwhelm recovery capacity.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.2 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI LS2.C (Ecosystem dynamics and resilience) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sea Surface Temperature), but they can take action on internal components (Bleaching Frequency, Coral Recovery Rate, Reef Structural Complexity, Marine Biodiversity, Algae Competition). They need to decide which action would be most effective based on what the model shows.
+A conservation team must allocate $10 million across three reef restoration strategies informed by their systems model. Strategy 1 focuses on local stressor reduction (eliminating overfishing and nutrient pollution) at $3M. Strategy 2 invests in active coral restoration (transplanting heat-resistant coral fragments) at $5M. Strategy 3 funds research into assisted evolution (breeding heat-tolerant coral strains) at $8M. The model predicts that without addressing global warming (the external forcing variable), even the most successful local interventions delay reef decline by only 15-20 years rather than preventing it.
 
 In the model, Algae Competition increases as coral dies. This creates a feedback loop because algae prevent coral recolonization, which allows more algae to grow. What type of feedback is this, and what is its significance?
 
 A. Negative feedback that stabilizes the reef at a healthy equilibrium
-B. Positive feedback that accelerates reef degradation by reinforcing the conditions that caused the initial coral loss
-C. No feedback; algae and coral dynamics are independent of each other
+B. No feedback; algae and coral dynamics are independent of each other
+C. Positive feedback that accelerates reef degradation by reinforcing the conditions that caused the initial coral loss
 D. Negative feedback that eventually reverses the phase shift
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This is a positive (self-reinforcing) feedback loop: coral death enables algae growth, which prevents coral recovery, which leads to more coral death. It accelerates the phase shift. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: This is a positive (self-reinforcing) feedback loop: coral death enables algae growth, which prevents coral recovery, which leads to more coral death. It accelerates the phase shift. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. This is a positive feedback loop: it amplifies change in one direction. As coral dies, algae colonize the space and prevent coral recolonization, ensuring more coral loss and more algae growth. This self-reinforcing cycle drives the phase shift. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. This is a positive feedback loop: it amplifies change in one direction. As coral dies, algae colonize the space and prevent coral recolonization, ensuring more coral loss and more algae growth. This self-reinforcing cycle drives the phase shift. If you chose D, this choice overgeneralizes without considering the specific mechanisms and evidence presented. This is a positive feedback loop: it amplifies change in one direction. As coral dies, algae colonize the space and prevent coral recolonization, ensuring more coral loss and more algae growth. This self-reinforcing cycle drives the phase shift.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.2, CCC3)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.2, CCC2)
+Question 1: B (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-LS2-2, CCC4)
+Question 2: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS2-2, CCC2)
+Question 3: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS2-2, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-LS2-6, CCC7)
+Question 5: C (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-LS2-6, CCC4)
 
+---
 
 ## Resources
 

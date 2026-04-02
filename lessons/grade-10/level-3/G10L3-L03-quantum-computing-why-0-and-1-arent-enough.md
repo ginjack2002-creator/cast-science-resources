@@ -915,15 +915,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the model, a student reduces Cooling Temperature from 15 millikelvin to 100 millikelvin. The model shows Decoherence Rate increasing dramatically, Qubit Coherence Time dropping, and Computational Advantage falling to near zero. Which relationship chain best explains this cascade?
 
-A. Higher temperature increases thermal noise, which accelerates decoherence, which shortens the time window for computation, which prevents completion of useful quantum circuits
-B. Higher temperature directly destroys the qubits physically, requiring replacement
+A. Higher temperature directly destroys the qubits physically, requiring replacement
+B. Cooling temperature only affects energy consumption, not computation quality
 C. The model incorrectly links temperature to computational performance
-D. Cooling temperature only affects energy consumption, not computation quality
+D. Higher temperature increases thermal noise, which accelerates decoherence, which shortens the time window for computation, which prevents completion of useful quantum circuits
 
-Correct Answer: A
+Correct Answer: D
 
-Feedback: Correct. The model reveals a clear causal cascade: temperature increase leads to more thermal photons/phonons, which interact with qubits faster (higher decoherence rate), which shortens coherence time, which limits circuit depth, which eliminates computational advantage. Each link is a direct physical mechanism. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals a clear causal cascade: temperature increase leads to more thermal photons/phonons, which interact with qubits faster (higher decoherence rate), which shortens coherence time, which limits circuit depth, which eliminates computational advantage. Each link is a direct physical mechanism. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -934,15 +933,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that reducing Error Rate from 0.5% to 0.01% causes a dramatic nonlinear increase in Quantum Volume and Computational Advantage. What best explains this threshold behavior?
 
-A. The relationship between error rate and performance is always linear, so the dramatic change must be a model error
+A. Lower error rates allow the computer to run at higher clock speeds
 B. Below a critical error threshold, error correction becomes efficient enough that correction gains outpace errors introduced by the correction process itself, unlocking exponentially deeper circuits
-C. Lower error rates allow the computer to run at higher clock speeds
+C. The relationship between error rate and performance is always linear, so the dramatic change must be a model error
 D. The improvement is due to needing fewer physical qubits, not related to error rates
 
 Correct Answer: B
 
-Feedback: Correct. This is the fault-tolerance threshold. Above it, error correction consumes more resources than it saves. Below it, correction gains exceed correction costs, creating a virtuous cycle where logical qubit quality improves with more physical qubits. This threshold behavior is a fundamental feature of quantum error correction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This is the fault-tolerance threshold. Above it, error correction consumes more resources than it saves. Below it, correction gains exceed correction costs, creating a virtuous cycle where logical qubit quality improves with more physical qubits. This threshold behavior is a fundamental feature of quantum error correction. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -954,14 +952,13 @@ A student runs a simulation of the model. The model shows that when Cooling Temp
 A 1,000 physical qubit processor uses a surface code requiring 1,000 physical qubits per logical qubit at current error rates. How many error-corrected logical qubits are available for actual computation?
 
 A. 1,000 logical qubits (each physical qubit becomes one logical qubit)
-B. 500 logical qubits (half for error correction, half for computation)
-C. Approximately 1 logical qubit, with all remaining physical qubits dedicated to error correction
-D. Zero logical qubits because 1,000 is below the minimum threshold
+B. Approximately 1 logical qubit, with all remaining physical qubits dedicated to error correction
+C. Zero logical qubits because 1,000 is below the minimum threshold
+D. 500 logical qubits (half for error correction, half for computation)
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct. At a 1,000:1 overhead ratio, 1,000 physical qubits yield approximately 1 error-corrected logical qubit. This reveals why current quantum computers are called NISQ (Noisy Intermediate-Scale Quantum) — they lack enough physical qubits for meaningful error correction. Millions of physical qubits are needed for thousands of logical qubits. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. At a 1,000:1 overhead ratio, 1,000 physical qubits yield approximately 1 error-corrected logical qubit. This reveals why current quantum computers are called NISQ (Noisy Intermediate-Scale Quantum) — they lack enough physical qubits for meaningful error correction. Millions of physical qubits are needed for thousands of logical qubits. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -972,15 +969,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model classifies Cooling Temperature and Classical Overhead as external variables. A student proposes reclassifying Qubit Coherence Time as external. What is the strongest argument against this reclassification?
 
-A. External variables must always represent temperature or energy
-B. Qubit Coherence Time is determined by the interaction between cooling temperature, material quality, and electromagnetic shielding — it is an emergent property of multiple factors, not a directly set parameter
-C. Models cannot have more than two external variables
-D. Coherence Time is too difficult to measure to be classified as anything
+A. Qubit Coherence Time is determined by the interaction between cooling temperature, material quality, and electromagnetic shielding — it is an emergent property of multiple factors, not a directly set parameter
+B. External variables must always represent temperature or energy
+C. Coherence Time is too difficult to measure to be classified as anything
+D. Models cannot have more than two external variables
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. External variables represent direct engineering inputs that operators set. Qubit Coherence Time emerges from the combination of cooling temperature, material properties, shielding quality, and other physical factors. It cannot be directly dialed to a value — it is a consequence of other conditions. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. External variables represent direct engineering inputs that operators set. Qubit Coherence Time emerges from the combination of cooling temperature, material properties, shielding quality, and other physical factors. It cannot be directly dialed to a value — it is a consequence of other conditions. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -992,23 +988,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 Based on model evidence, a student concludes that quantum computing will never be practical because current error rates are too high. Using the model's scenario comparisons, what is the best evaluation of this conclusion?
 
 A. The conclusion is correct — the model proves quantum computing is impossible
-B. The conclusion extrapolates current limitations into permanent barriers, ignoring the model's near-perfect qubits scenario that shows dramatic improvement with achievable error rate reductions
-C. The conclusion is correct because the model shows no path from current to near-perfect qubits
+B. The conclusion is correct because the model shows no path from current to near-perfect qubits
+C. The conclusion extrapolates current limitations into permanent barriers, ignoring the model's near-perfect qubits scenario that shows dramatic improvement with achievable error rate reductions
 D. Error rates are irrelevant to quantum computing practicality
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows two distinct regimes: current technology (limited advantage) and near-perfect qubits (transformative advantage). The gap between them is large but represents an engineering challenge, not a physical impossibility. Extrapolating current limitations as permanent ignores historical patterns of technology improvement. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows two distinct regimes: current technology (limited advantage) and near-perfect qubits (transformative advantage). The gap between them is large but represents an engineering challenge, not a physical impossibility. Extrapolating current limitations as permanent ignores historical patterns of technology improvement. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.3, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.3, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.3, CCC2)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.3, CCC2)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.3, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.3, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.3, CCC2)
 
 
 ## Resources

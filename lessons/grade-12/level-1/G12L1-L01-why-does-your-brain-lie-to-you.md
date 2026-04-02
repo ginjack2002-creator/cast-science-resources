@@ -347,6 +347,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Sensory Input → Bias Strength relationship as
+unconditional. However, this relationship is scientifically
+contingent on Prior Experience being active. Without this condition,
+the simulation produces inaccurate results: Sensory Input drives Bias Strength
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Sensory Input → Bias Strength
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Prior Experience is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Prior Experience active and observe
+     how Sensory Input's effect on Bias Strength is now gated
+   • Toggle Prior Experience ON/OFF while Sensory Input remains constant
+   • Verify that Bias Strength only responds to Sensory Input when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Prior Experience → Bias Strength
+   • Set condition: IF Sensory Input is OFF
+   • This ensures Prior Experience's effect on Bias Strength
+     is contingent on Sensory Input being inactive
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -919,15 +955,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the cognitive bias model, what happens to Decision Accuracy when Sensory Input is weak and Prior Experience is very strong?
 
-A. Decision Accuracy increases because strong prior experience compensates for weak sensory data
-B. Decision Accuracy decreases because the brain fills in gaps with expectations rather than evidence, increasing Bias Strength
+A. Decision Accuracy improves only if Cognitive Load is also high
+B. Decision Accuracy increases because strong prior experience compensates for weak sensory data
 C. Decision Accuracy remains unchanged because Sensory Input and Prior Experience are independent variables
-D. Decision Accuracy improves only if Cognitive Load is also high
+D. Decision Accuracy decreases because the brain fills in gaps with expectations rather than evidence, increasing Bias Strength
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that when sensory input is ambiguous and prior experience is strong, the brain fills in gaps with what it expects to see, dramatically increasing Bias Strength and reducing Decision Accuracy. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that when sensory input is ambiguous and prior experience is strong, the brain fills in gaps with what it expects to see, dramatically increasing Bias Strength and reducing Decision Accuracy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -939,14 +974,13 @@ In the computational model for this lesson, a student draws arrows between compo
 A hospital finds that diagnostic errors increase during long shifts. Based on the cognitive bias model, which mechanism best explains this pattern?
 
 A. Doctors become physically unable to see symptoms after working many hours
-B. Increased Cognitive Load from fatigue causes the brain to rely more heavily on heuristic shortcuts, amplifying anchoring and confirmation biases
-C. Patients who arrive during long shifts tend to have more unusual conditions
-D. Diagnostic protocols are only designed to work during short shifts
+B. Patients who arrive during long shifts tend to have more unusual conditions
+C. Diagnostic protocols are only designed to work during short shifts
+D. Increased Cognitive Load from fatigue causes the brain to rely more heavily on heuristic shortcuts, amplifying anchoring and confirmation biases
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that high Cognitive Load (from fatigue, stress, multitasking) forces the brain to shift from careful, analytical processing to faster heuristic shortcuts, amplifying all biases including anchoring and confirmation bias. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that high Cognitive Load (from fatigue, stress, multitasking) forces the brain to shift from careful, analytical processing to faster heuristic shortcuts, amplifying all biases including anchoring and confirmation bias. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -958,14 +992,13 @@ A student runs a simulation of the model. The model shows that when Sensory Inpu
 A student adds Metacognition as a component to the cognitive bias model. Based on the model's predictions, how would Metacognition interact with Bias Strength?
 
 A. Metacognition would completely eliminate all cognitive biases
-B. Metacognition would act as a moderating variable that reduces but never eliminates the impact of biases on decisions
-C. Metacognition would increase Bias Strength by making people more aware of their beliefs
+B. Metacognition would increase Bias Strength by making people more aware of their beliefs
+C. Metacognition would act as a moderating variable that reduces but never eliminates the impact of biases on decisions
 D. Metacognition would only affect Decision Accuracy if Cognitive Load is zero
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model predicts that metacognition (awareness of one's own thinking) acts as a moderating variable that can reduce but never fully eliminate bias, since biases are built into the brain's fundamental processing architecture. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model predicts that metacognition (awareness of one's own thinking) acts as a moderating variable that can reduce but never fully eliminate bias, since biases are built into the brain's fundamental processing architecture. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -976,15 +1009,14 @@ Scientists are studying data related to this system. They collected observations
 
 Which scenario from the cognitive bias model would produce the HIGHEST Decision Accuracy?
 
-A. High Sensory Input clarity, low Prior Experience, low Cognitive Load
-B. Low Sensory Input clarity, high Prior Experience, high Cognitive Load
-C. Medium Sensory Input clarity, maximum Prior Experience, low Cognitive Load
-D. Low Sensory Input clarity, low Prior Experience, high Cognitive Load
+A. Medium Sensory Input clarity, maximum Prior Experience, low Cognitive Load
+B. High Sensory Input clarity, low Prior Experience, low Cognitive Load
+C. Low Sensory Input clarity, low Prior Experience, high Cognitive Load
+D. Low Sensory Input clarity, high Prior Experience, high Cognitive Load
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. The model predicts highest Decision Accuracy when sensory data is clear (reducing reliance on expectations), prior beliefs are weak (reducing confirmation bias), and cognitive load is low (allowing analytical rather than heuristic processing). If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model predicts highest Decision Accuracy when sensory data is clear (reducing reliance on expectations), prior beliefs are weak (reducing confirmation bias), and cognitive load is low (allowing analytical rather than heuristic processing). If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -995,24 +1027,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model shows that cognitive biases are 'features' of neural processing rather than 'flaws.' Which evidence from the model best supports this claim?
 
-A. Biases only appear in people with brain injuries, suggesting they are abnormal
-B. Heuristic shortcuts produce correct decisions approximately 95% of the time, failing only in specific predictable situations involving ambiguous input or high cognitive load
-C. Biases are randomly distributed and unpredictable, suggesting they serve no function
+A. Heuristic shortcuts produce correct decisions approximately 95% of the time, failing only in specific predictable situations involving ambiguous input or high cognitive load
+B. Biases are randomly distributed and unpredictable, suggesting they serve no function
+C. Biases only appear in people with brain injuries, suggesting they are abnormal
 D. Biases disappear entirely when a person is aware of them
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model reveals that heuristics evolved because they produce fast, accurate-enough decisions the vast majority of the time. They only fail systematically in specific conditions (ambiguous input, high load, strong priors), indicating they are adaptive features optimized for speed over perfect accuracy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Correct. The model reveals that heuristics evolved because they produce fast, accurate-enough decisions the vast majority of the time. They only fail systematically in specific conditions (ambiguous input, high load, strong priors), indicating they are adaptive features optimized for speed over perfect accuracy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC1)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC1)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
 
 ## Resources

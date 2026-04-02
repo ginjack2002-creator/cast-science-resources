@@ -915,15 +915,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that reducing the Temperature Differential from 24 degrees to 15 degrees Celsius causes Power Output to drop by more than 50%, even though the temperature change is only about 35%. What physical relationship explains this nonlinear response?
 
-A. The model has a calculation error for small temperature differentials
+A. Temperature differential has a linear relationship with power output
 B. Carnot efficiency is proportional to the temperature differential relative to the absolute temperature, so a 35% reduction in differential reduces maximum efficiency by a similar fraction — but the net power output drops more because the fixed energy cost of pumping becomes a larger fraction of the reduced output
-C. Temperature differential has a linear relationship with power output
+C. The model has a calculation error for small temperature differentials
 D. The deep water pump automatically shuts down at lower differentials
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a compounding effect: reduced differential lowers both the Carnot efficiency ceiling and the thermal energy available per unit of water. Meanwhile, pumping costs (which are roughly fixed) consume a larger percentage of the reduced output. Net power drops faster than the differential reduction because of this double squeeze on efficiency. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals a compounding effect: reduced differential lowers both the Carnot efficiency ceiling and the thermal energy available per unit of water. Meanwhile, pumping costs (which are roughly fixed) consume a larger percentage of the reduced output. Net power drops faster than the differential reduction because of this double squeeze on efficiency. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -935,14 +934,13 @@ In the computational model for this lesson, a student draws arrows between compo
 The model includes Environmental Impact as an internal variable that increases with Fluid Flow Rate. A student argues this trade-off makes OTEC environmentally harmful. What evidence from the model provides a more nuanced evaluation?
 
 A. The model shows zero environmental impact at all flow rates
-B. Environmental Impact has both negative effects (ecosystem disruption from temperature changes) and potential positive effects (nutrient-rich deep water upwelling enhances marine productivity) — the net effect depends on flow rate, location, and management practices
-C. OTEC has no environmental impact because it uses natural ocean water
-D. The model does not address environmental impact
+B. The model does not address environmental impact
+C. Environmental Impact has both negative effects (ecosystem disruption from temperature changes) and potential positive effects (nutrient-rich deep water upwelling enhances marine productivity) — the net effect depends on flow rate, location, and management practices
+D. OTEC has no environmental impact because it uses natural ocean water
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model captures a genuine duality: cold, nutrient-rich deep water brought to the surface can fertilize marine ecosystems and enhance fisheries (positive), but it also changes local temperature patterns and disrupts existing ecosystem structure (negative). Responsible OTEC design must manage this trade-off through careful siting and discharge management. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model captures a genuine duality: cold, nutrient-rich deep water brought to the surface can fertilize marine ecosystems and enhance fisheries (positive), but it also changes local temperature patterns and disrupts existing ecosystem structure (negative). Responsible OTEC design must manage this trade-off through careful siting and discharge management. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -954,14 +952,13 @@ A student runs a simulation of the model. The model shows that when Temperature 
 The model classifies Surface Water Temperature and Deep Water Temperature as external variables. Why is Temperature Differential classified as internal even though it is simply the mathematical difference between them?
 
 A. All mathematical relationships between variables must be internal
-B. Temperature Differential is an emergent system property — it depends on both external temperatures and on local conditions like mixing, seasonal variation, and the OTEC system's own cold water discharge, making it more than a simple subtraction of two inputs
-C. Temperature Differential cannot be calculated, only measured empirically
-D. The classification is incorrect and should be changed
+B. The classification is incorrect and should be changed
+C. Temperature Differential is an emergent system property — it depends on both external temperatures and on local conditions like mixing, seasonal variation, and the OTEC system's own cold water discharge, making it more than a simple subtraction of two inputs
+D. Temperature Differential cannot be calculated, only measured empirically
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. While Temperature Differential appears to be a simple calculation, in practice it is affected by the system's own operation. Cold water discharged near the surface can reduce the local surface temperature, decreasing the effective differential. This feedback makes it an emergent property rather than a pure input. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. While Temperature Differential appears to be a simple calculation, in practice it is affected by the system's own operation. Cold water discharged near the surface can reduce the local surface temperature, decreasing the effective differential. This feedback makes it an emergent property rather than a pure input. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -972,15 +969,14 @@ Scientists are studying data related to this system. They collected observations
 
 The maximum scale scenario shows that increasing Fluid Flow Rate 10x increases Power Output approximately 10x but increases Infrastructure Cost by 15x and Environmental Impact by 12x. What does this disproportionate scaling reveal?
 
-A. OTEC scales perfectly and should be built as large as possible
-B. Diminishing returns at scale — each additional unit of power becomes progressively more expensive and environmentally impactful because larger pipes, pumps, and platforms have disproportionately higher costs and ecological footprints
-C. The model incorrectly overestimates the cost of larger systems
+A. Diminishing returns at scale — each additional unit of power becomes progressively more expensive and environmentally impactful because larger pipes, pumps, and platforms have disproportionately higher costs and ecological footprints
+B. The model incorrectly overestimates the cost of larger systems
+C. OTEC scales perfectly and should be built as large as possible
 D. Infrastructure Cost and Environmental Impact are unrelated to Fluid Flow Rate
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model reveals that power output scales approximately linearly with flow rate, but costs and impacts scale superlinearly (faster than linear). This means there is an economically optimal facility size beyond which each additional megawatt costs more and causes more harm per unit of energy — a critical insight for OTEC deployment planning. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals that power output scales approximately linearly with flow rate, but costs and impacts scale superlinearly (faster than linear). This means there is an economically optimal facility size beyond which each additional megawatt costs more and causes more harm per unit of energy — a critical insight for OTEC deployment planning. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -991,24 +987,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 An island nation currently pays $0.40/kWh for diesel electricity. The model predicts OTEC could deliver power at $0.15-0.25/kWh. A student argues OTEC is clearly the better option. What important variable from the model should temper this conclusion?
 
-A. The model proves diesel is always cheaper than OTEC
-B. Infrastructure Cost — the massive upfront capital investment for the offshore platform, deep-water pipes, and submarine power cables requires billions of dollars and decades of operation to recover, creating financial risk even when per-kWh costs are lower
-C. OTEC produces electricity of lower quality than diesel generators
-D. The diesel price will decrease to below OTEC cost in the future
+A. OTEC produces electricity of lower quality than diesel generators
+B. The diesel price will decrease to below OTEC cost in the future
+C. The model proves diesel is always cheaper than OTEC
+D. Infrastructure Cost — the massive upfront capital investment for the offshore platform, deep-water pipes, and submarine power cables requires billions of dollars and decades of operation to recover, creating financial risk even when per-kWh costs are lower
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. While operating cost per kWh favors OTEC, the model shows that Infrastructure Cost is enormous — $25,000-$50,000 per installed kilowatt, orders of magnitude higher than diesel generators. The island must finance billions in upfront construction costs and operate for decades to achieve the per-kWh savings. This capital barrier, not operating cost, is typically the limiting factor. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. While operating cost per kWh favors OTEC, the model shows that Infrastructure Cost is enormous — $25,000-$50,000 per installed kilowatt, orders of magnitude higher than diesel generators. The island must finance billions in upfront construction costs and operate for decades to achieve the per-kWh savings. This capital barrier, not operating cost, is typically the limiting factor. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.2, CCC2)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.2, CCC3)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.2, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.2, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.2, CCC3)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.2, CCC4)
 
 
 ## Resources

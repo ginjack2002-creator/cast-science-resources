@@ -353,6 +353,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Nanoparticle Size → Tumor Accumulation relationship as
+unconditional. However, this relationship is scientifically
+contingent on Immune Clearance Rate being active. Without this condition,
+the simulation produces inaccurate results: Nanoparticle Size drives Tumor Accumulation
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Nanoparticle Size → Tumor Accumulation
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Immune Clearance Rate is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Immune Clearance Rate active and observe
+     how Nanoparticle Size's effect on Tumor Accumulation is now gated
+   • Toggle Immune Clearance Rate ON/OFF while Nanoparticle Size remains constant
+   • Verify that Tumor Accumulation only responds to Nanoparticle Size when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -920,107 +950,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI LS1.A (Feedback mechanisms maintain homeostasis) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Nanoparticle Size, Surface PEGylation, Targeting Ligand Density, Immune Clearance Rate, Tumor Accumulation, Drug Release Rate, Off-Target Toxicity. Some components are external (Nanoparticle Size, Surface PEGylation) and some are internal (Targeting Ligand Density, Immune Clearance Rate, Tumor Accumulation, Drug Release Rate, Off-Target Toxicity). The student needs to understand what each component represents and how they are organized.
+A nanotechnology research team develops a drug delivery nanoparticle measuring 80 nanometers in diameter (800 times smaller than a red blood cell). The nanoparticle consists of a lipid bilayer shell encapsulating a chemotherapy drug, with antibodies on its surface that bind specifically to a protein (HER2) overexpressed on breast cancer cells. In cell culture experiments, the targeted nanoparticles deliver 15 times more drug to cancer cells than free drug, while reducing exposure to healthy cells by 90%. However, in mouse models, only 2% of injected nanoparticles actually reach the tumor, with the rest captured by the liver and spleen.
 
 A student's model shows that increasing PEGylation density from 5% to 20% surface coverage extends circulation half-life from 2 to 12 hours but reduces cellular uptake at the tumor by 40%. What does this reveal about the design trade-off?
 
-A. Higher PEGylation is always better because longer circulation is the only goal
+A. The reduced uptake is caused by the nanoparticle becoming too large
 B. The stealth effect of PEG that evades immune cells also reduces the nanoparticle's ability to interact with and enter target tumor cells, creating a fundamental tension between surviving the journey and completing the delivery
 C. PEGylation has no effect on tumor cell interactions
-D. The reduced uptake is caused by the nanoparticle becoming too large
+D. Higher PEGylation is always better because longer circulation is the only goal
 
 Correct Answer: B
 
-Feedback: Correct. The same PEG layer that protects nanoparticles from immune clearance also hinders their interaction with target cells. This 'PEG dilemma' is a central design challenge: stealth for the journey versus accessibility at the destination. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The same PEG layer that protects nanoparticles from immune clearance also hinders their interaction with target cells. This 'PEG dilemma' is a central design challenge: stealth for the journey versus accessibility at the destination. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. This is the 'PEG dilemma': the stealth coating that enables immune evasion also prevents interaction with target cells. The nanoparticle must evade immune cells during transit but engage target cells at the tumor. These requirements are fundamentally in tension. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. This is the 'PEG dilemma': the stealth coating that enables immune evasion also prevents interaction with target cells. The nanoparticle must evade immune cells during transit but engage target cells at the tumor. These requirements are fundamentally in tension. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. This is the 'PEG dilemma': the stealth coating that enables immune evasion also prevents interaction with target cells. The nanoparticle must evade immune cells during transit but engage target cells at the tumor. These requirements are fundamentally in tension.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.3 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI LS1.A (Feedback mechanisms maintain homeostasis) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Surface PEGylation increases, Immune Clearance Rate decreases; when Immune Clearance Rate increases, Tumor Accumulation decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of nanoparticle pharmacokinetics tracks the journey from injection to target cell. After intravenous injection, nanoparticles encounter three major barriers: (1) opsonization, where blood proteins coat the nanoparticle surface, marking it for immune cell capture, (2) vascular escape, where particles must exit blood vessels through gaps in the vessel wall to reach tissue, and (3) tumor penetration, where particles must navigate the dense extracellular matrix surrounding tumor cells. The model shows that each barrier eliminates 80-95% of remaining particles, explaining the low 2% delivery efficiency observed in animal studies.
 
 The model shows that adding targeting ligands increases tumor cell binding by 300% but also increases liver accumulation by 150% because liver cells express low levels of the same receptor. What does this demonstrate about the specificity challenge?
 
 A. Targeting ligands should never be used because they increase off-target accumulation
-B. Active targeting improves tumor delivery but is limited by the fact that target receptors are rarely exclusive to tumor cells. Low-level expression on healthy cells creates off-target binding that concentrates the drug in the liver, potentially causing hepatotoxicity
-C. The 300% improvement in tumor binding outweighs all other considerations
-D. Liver accumulation is beneficial because it helps clear the drug from the body
+B. Liver accumulation is beneficial because it helps clear the drug from the body
+C. Active targeting improves tumor delivery but is limited by the fact that target receptors are rarely exclusive to tumor cells. Low-level expression on healthy cells creates off-target binding that concentrates the drug in the liver, potentially causing hepatotoxicity
+D. The 300% improvement in tumor binding outweighs all other considerations
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The specificity challenge arises because few receptors are truly unique to tumor cells. Any receptor expressed (even at low levels) on healthy cells will capture targeting nanoparticles, concentrating drug in unintended organs and potentially causing toxicity. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The specificity challenge arises because few receptors are truly unique to tumor cells. Any receptor expressed (even at low levels) on healthy cells will capture targeting nanoparticles, concentrating drug in unintended organs and potentially causing toxicity. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. Targeting ligands improve tumor delivery but expose a specificity limitation: target receptors are rarely tumor-exclusive. Low-level expression on healthy cells, especially in the liver (which filters all blood), creates significant off-target accumulation. The therapeutic index must account for this. If you chose D, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Targeting ligands improve tumor delivery but expose a specificity limitation: target receptors are rarely tumor-exclusive. Low-level expression on healthy cells, especially in the liver (which filters all blood), creates significant off-target accumulation. The therapeutic index must account for this. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. Targeting ligands improve tumor delivery but expose a specificity limitation: target receptors are rarely tumor-exclusive. Low-level expression on healthy cells, especially in the liver (which filters all blood), creates significant off-target accumulation. The therapeutic index must account for this.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.B (Electromagnetic forces) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Surface PEGylation increases, Immune Clearance Rate decreases and when Immune Clearance Rate increases, Tumor Accumulation decreases and when Nanoparticle Size increases, Tumor Accumulation increases. The student changes one variable to see how the whole system responds.
+Scientists compare three nanoparticle designs for drug delivery to brain tumors. Design A uses a 100 nm lipid nanoparticle that cannot cross the blood-brain barrier (BBB). Design B uses a 30 nm gold nanoparticle coated with transferrin protein, which exploits the brain's iron transport system to cross the BBB via receptor-mediated transcytosis, achieving 0.5% brain delivery. Design C uses focused ultrasound to temporarily open the BBB in the tumor region, allowing standard nanoparticles to enter, achieving 5% delivery but with a 48-hour window where the brain is vulnerable to infections and toxins.
 
 A student models nanoparticle size optimization and finds that 100 nm particles have the best balance of EPR-mediated tumor accumulation and immune evasion. Particles of 20 nm accumulate well but are cleared by the kidneys; 200 nm particles avoid kidney clearance but are captured more efficiently by liver macrophages. What principle does this size optimization demonstrate?
 
 A. All nanoparticle sizes perform equally well in the body
-B. Nanoparticle size must navigate between two biological barriers: renal filtration (removing particles that are too small) and phagocytic clearance (removing particles that are too large), creating a narrow optimal size window determined by the body's filtration and immune architecture
+B. Size optimization is unnecessary because targeting ligands compensate for any size
 C. Larger particles are always better because they carry more drug
-D. Size optimization is unnecessary because targeting ligands compensate for any size
+D. Nanoparticle size must navigate between two biological barriers: renal filtration (removing particles that are too small) and phagocytic clearance (removing particles that are too large), creating a narrow optimal size window determined by the body's filtration and immune architecture
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The body imposes size-dependent barriers: kidneys clear small particles, liver macrophages clear large particles. The optimal size window (~60-120 nm) avoids both barriers while exploiting the EPR effect for tumor accumulation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The body imposes size-dependent barriers: kidneys clear small particles, liver macrophages clear large particles. The optimal size window (~60-120 nm) avoids both barriers while exploiting the EPR effect for tumor accumulation. If you chose A, this response overgeneralizes without considering the specific mechanisms and evidence presented. The body's filtration systems create a size window: too small (<30 nm) and kidneys clear them; too large (>200 nm) and macrophages capture them more efficiently. The optimal range (~60-120 nm) threads between these biological barriers while maximizing tumor accumulation via the EPR effect. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The body's filtration systems create a size window: too small (<30 nm) and kidneys clear them; too large (>200 nm) and macrophages capture them more efficiently. The optimal range (~60-120 nm) threads between these biological barriers while maximizing tumor accumulation via the EPR effect. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. The body's filtration systems create a size window: too small (<30 nm) and kidneys clear them; too large (>200 nm) and macrophages capture them more efficiently. The optimal range (~60-120 nm) threads between these biological barriers while maximizing tumor accumulation via the EPR effect.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.A (Feedback mechanisms maintain homeostasis) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A pharmacology team studies how nanoparticle size affects distribution in the body. Experiments with fluorescent nanoparticles of different diameters show distinct biodistribution patterns: particles smaller than 10 nm are rapidly cleared by the kidneys (half-life: 45 minutes), particles between 10-100 nm circulate for hours and accumulate preferentially in tumors through the enhanced permeability and retention (EPR) effect, and particles larger than 200 nm are captured by the liver and spleen within minutes. The computational model reveals an optimal size window of 50-100 nm that balances long circulation time with the ability to exit blood vessels at tumor sites.
 
 The model reveals that drug release rate must be tuned to a specific window: too fast and the drug is lost during circulation before reaching the tumor; too slow and therapeutic concentrations are never achieved at the target. A student proposes using the fastest possible release rate. Why is this approach counterproductive?
 
-A. Fast release increases the drug's potency at the tumor
-B. With fast release, most of the drug payload leaks out during the hours of circulation before the nanoparticle reaches the tumor, resulting in systemic drug exposure (conventional chemotherapy's side effect profile) rather than targeted delivery
-C. Release rate has no effect on therapeutic outcomes
-D. Fast release makes nanoparticles easier for the immune system to detect
+A. With fast release, most of the drug payload leaks out during the hours of circulation before the nanoparticle reaches the tumor, resulting in systemic drug exposure (conventional chemotherapy's side effect profile) rather than targeted delivery
+B. Release rate has no effect on therapeutic outcomes
+C. Fast release makes nanoparticles easier for the immune system to detect
+D. Fast release increases the drug's potency at the tumor
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. If the drug releases during transit, the nanoparticle delivers free drug throughout the body rather than concentrated drug at the tumor. This negates the entire advantage of targeted delivery and reverts to the side-effect profile of conventional chemotherapy. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: If the drug releases during transit, the nanoparticle delivers free drug throughout the body rather than concentrated drug at the tumor. This negates the entire advantage of targeted delivery and reverts to the side-effect profile of conventional chemotherapy. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Premature drug release defeats the purpose of nanoparticle delivery. If the drug leaks out during the hours of bloodstream circulation, it distributes systemically, just like conventional chemotherapy. The nanoparticle must retain its payload until it reaches the tumor. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Premature drug release defeats the purpose of nanoparticle delivery. If the drug leaks out during the hours of bloodstream circulation, it distributes systemically, just like conventional chemotherapy. The nanoparticle must retain its payload until it reaches the tumor. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Premature drug release defeats the purpose of nanoparticle delivery. If the drug leaks out during the hours of bloodstream circulation, it distributes systemically, just like conventional chemotherapy. The nanoparticle must retain its payload until it reaches the tumor.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI PS2.B (Electromagnetic forces) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Nanoparticle Size, Surface PEGylation), but they can take action on internal components (Targeting Ligand Density, Immune Clearance Rate, Tumor Accumulation, Drug Release Rate, Off-Target Toxicity). They need to decide which action would be most effective based on what the model shows.
+A pharmaceutical company evaluates whether to pursue nanoparticle-based cancer therapy or conventional chemotherapy for a new drug. The nanoparticle formulation reduces side effects by 70% and increases tumor drug concentration by 8-fold, but manufacturing costs are 20 times higher than the free drug formulation, and the nanoparticle's shelf life is 6 months versus 5 years for the conventional formulation. The systems model compares total healthcare costs (including hospitalization from side effects), patient quality of life, treatment efficacy, and manufacturing scalability across both approaches over a 10-year market projection.
 
 Based on the nanoparticle drug delivery model, which conclusion about the 0.7% tumor delivery rate is best supported by the simulation data?
 
-A. The 0.7% rate proves that nanoparticle drug delivery is a failed technology
-B. Despite the low percentage, the 0.7% delivery rate still represents a significant improvement over conventional chemotherapy because nanoparticles concentrate drug at the tumor while reducing exposure to healthy tissues. However, the model demonstrates that each biological barrier (opsonization, liver clearance, EPR variability, cellular uptake) multiplicatively reduces delivery, and meaningful improvement requires addressing multiple barriers simultaneously rather than optimizing any single parameter
-C. The 0.7% rate will naturally improve to 50% with continued use
+A. Despite the low percentage, the 0.7% delivery rate still represents a significant improvement over conventional chemotherapy because nanoparticles concentrate drug at the tumor while reducing exposure to healthy tissues. However, the model demonstrates that each biological barrier (opsonization, liver clearance, EPR variability, cellular uptake) multiplicatively reduces delivery, and meaningful improvement requires addressing multiple barriers simultaneously rather than optimizing any single parameter
+B. The 0.7% rate will naturally improve to 50% with continued use
+C. The 0.7% rate proves that nanoparticle drug delivery is a failed technology
 D. Tumor delivery percentage is irrelevant to therapeutic efficacy
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The barriers are multiplicative: if each of 5 barriers removes 50% of particles, only 0.5^5 = 3% survive. Improving one barrier from 50% to 25% loss yields only a modest gain. Meaningful improvement requires addressing multiple barriers simultaneously. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The barriers are multiplicative: if each of 5 barriers removes 50% of particles, only 0.5^5 = 3% survive. Improving one barrier from 50% to 25% loss yields only a modest gain. Meaningful improvement requires addressing multiple barriers simultaneously. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. The delivery barriers are multiplicative, not additive. Each biological obstacle removes a fraction of particles, and the fractions compound. This means optimizing a single barrier provides limited benefit; only simultaneous improvement across multiple barriers can substantially increase tumor delivery. If you chose B, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The delivery barriers are multiplicative, not additive. Each biological obstacle removes a fraction of particles, and the fractions compound. This means optimizing a single barrier provides limited benefit; only simultaneous improvement across multiple barriers can substantially increase tumor delivery. If you chose D, this choice dismisses relevant factors that the evidence directly addresses. The delivery barriers are multiplicative, not additive. Each biological obstacle removes a fraction of particles, and the fractions compound. This means optimizing a single barrier provides limited benefit; only simultaneous improvement across multiple barriers can substantially increase tumor delivery.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.3, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.3, CCC2)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.3, CCC4)
+Question 1: B (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-LS1-3, CCC4)
+Question 2: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS1-3, CCC2)
+Question 3: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS1-3, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-PS2-4, CCC7)
+Question 5: A (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-PS2-4, CCC4)
 
+---
 
 ## Resources
 

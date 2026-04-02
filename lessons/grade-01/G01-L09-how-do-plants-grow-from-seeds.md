@@ -738,63 +738,77 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (Organisms have basic needs) + CCC2 (Cause and effect: identify events)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Water Amount, Plant Growth. Some components are external (Water Amount) and some are internal (Plant Growth). The student needs to understand what each component represents and how they are organized.
+A student holds a tiny seed in her hand. Her teacher tells her that something very special is hiding inside the seed. The student looks closely but cannot see through the hard seed coat.
 
-What is it called when a baby plant first pushes out of the seed?
+What is inside a seed?
 
-A. Swimming
-B. Sprouting
-C. Sleeping
+A. A tiny baby plant
+B. Nothing, it is empty
+C. Just dirt
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! When the baby plant first pokes out of the seed, we call it sprouting. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Inside every seed is a tiny baby plant waiting to grow. The seed also has a bit of stored food to help the baby plant get started. If you chose B, seeds are not empty. Inside is a tiny baby plant that is ready to grow when it gets water and sunlight. If you chose C, seeds do not have dirt inside. They contain a tiny baby plant and a small amount of food.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (All organisms have basic needs for growth) + CCC2 (Cause and effect: simple tests show cause)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Water Amount increases, Plant Growth increases. The student is trying to understand why these relationships are positive or negative.
+A student plants a seed in a cup of soil. Her teacher says the seed needs certain things to wake up and start growing. The student wonders what the seed needs to sprout.
 
-When water amount goes UP, what happens to plant growth?
+What do seeds need to start growing?
 
-A. Plant growth goes down
-B. Plant growth stays the same
-C. Plant growth goes up
+A. Water and sunlight
+B. Music and paint
+C. Candy and toys
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: That is right! When plants get the right amount of water, they grow taller and healthier. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Seeds need water and sunlight to start growing. Water helps the baby plant inside push through the seed coat. If you chose C, seeds cannot use candy or toys. They need natural things like water, sunlight, and soil to grow. If you chose B, seeds do not need music or paint. They need water, sunlight, and soil to sprout and grow.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS1.A.1 (Organisms need resources to grow) + CCC2 (Cause and effect: identify cause and effect)
 
-A student runs a simulation of the model. The model shows that when Water Amount increases, Plant Growth increases. The student changes one variable to see how the whole system responds.
+A student planted two seeds in cups of soil. She watered one seed every day but never watered the other seed. After two weeks, one seed sprouted and grew into a small plant. The other seed looked the same as when she planted it.
 
-What is the correct order of plant growth?
+What happens if you never water a seed?
 
-A. Flower, seed, sprout, big plant
-B. Seed, sprout, small plant, big plant
-C. Big plant, small plant, seed, sprout
+A. It turns into a rock
+B. It does not grow at all
+C. It grows really fast
 
 Correct Answer: B
 
-Feedback: Yes! A plant starts as a seed, then sprouts, grows into a small plant, and becomes a big plant. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Without water, a seed will not grow. Seeds need water to wake up and start sprouting. If you chose C, without water, a seed cannot grow at all. Water is what activates the baby plant inside the seed. If you chose A, seeds do not turn into rocks. They simply stay the same because they need water to begin growing.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (All organisms have basic needs) + CCC1 (Patterns: observe and describe patterns)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student watches a time-lapse video of a seed growing. First the seed cracks open. Then a tiny root pushes down into the soil. Next, a small green stem pushes up through the dirt. The teacher says this is called sprouting.
+
+What is it called when a baby plant first pushes out of the seed?
+
+A. Swimming
+B. Sleeping
+C. Sprouting
+
+Correct Answer: C
+
+Feedback: Sprouting is when the baby plant inside the seed first pushes up through the soil. It is the beginning of plant growth. If you chose A, swimming is moving through water. When a plant pushes out of a seed, it is called sprouting. If you chose B, sleeping is the opposite of what happens during sprouting. Sprouting means the seed is waking up and starting to grow.
+---
+
+### Question 5
+
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS1.A.1 (Organisms need resources) + CCC2 (Cause and effect: design simple tests)
+
+A student planted two seeds in cups of soil. She watered one seed every day and never watered the other. After three weeks, the watered seed grew into a tall plant with green leaves. The other seed stayed the same and did not grow at all.
 
 You planted two seeds. You watered one every day and never watered the other. What will happen?
 
@@ -804,37 +818,18 @@ C. The dry seed will grow faster
 
 Correct Answer: B
 
-Feedback: Yes! The watered seed will sprout and grow. The dry seed will stay the same because it needs water to grow. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 5
-
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
-
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Water Amount), but they can take action on internal components (Plant Growth). They need to decide which action would be most effective based on what the model shows.
-
-What is inside a seed?
-
-A. Nothing, it is empty
-B. A tiny baby plant
-C. Just dirt
-
-Correct Answer: B
-
-Feedback: Yes! Inside every seed is a tiny baby plant waiting to grow. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The watered seed will sprout and grow because it has the water it needs. The dry seed will stay the same because seeds need water to grow. If you chose A, they will not grow the same. The seed that gets water will grow, but the dry seed will not because it is missing something it needs. If you chose C, the dry seed will not grow at all. Without water, the baby plant inside the seed cannot start growing.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
+Question 1: A (Cognitive Level: Identify)
+Question 2: A (Cognitive Level: Identify)
+Question 3: B (Cognitive Level: Reason)
+Question 4: C (Cognitive Level: Reason)
+Question 5: B (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

@@ -347,6 +347,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Antibiotic Exposure → Resistance Gene Frequency relationship as
+unconditional. However, this relationship is scientifically
+contingent on Mutation Rate being active. Without this condition,
+the simulation produces inaccurate results: Antibiotic Exposure drives Resistance Gene Frequency
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Antibiotic Exposure → Resistance Gene Frequency
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Mutation Rate is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Mutation Rate active and observe
+     how Antibiotic Exposure's effect on Resistance Gene Frequency is now gated
+   • Toggle Mutation Rate ON/OFF while Antibiotic Exposure remains constant
+   • Verify that Resistance Gene Frequency only responds to Antibiotic Exposure when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -920,15 +950,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the resistance model, a patient completes the full 10-day antibiotic course at the correct dose. What does the model predict about Resistance Gene Frequency compared to an incomplete course?
 
-A. Resistance Gene Frequency will be identical regardless of course completion
-B. Full course completion eliminates nearly all bacteria before resistant mutants can establish, keeping Resistance Gene Frequency low, while incomplete courses allow resistant survivors to multiply
-C. Full course completion increases Resistance Gene Frequency because longer exposure means more mutations
-D. Course duration does not affect bacterial population dynamics
+A. Course duration does not affect bacterial population dynamics
+B. Full course completion increases Resistance Gene Frequency because longer exposure means more mutations
+C. Resistance Gene Frequency will be identical regardless of course completion
+D. Full course completion eliminates nearly all bacteria before resistant mutants can establish, keeping Resistance Gene Frequency low, while incomplete courses allow resistant survivors to multiply
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that completing the full course eliminates bacteria before resistant variants can establish a population. Stopping early removes the competition for resistant bacteria, allowing them to multiply and dominate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that completing the full course eliminates bacteria before resistant variants can establish a population. Stopping early removes the competition for resistant bacteria, allowing them to multiply and dominate. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -939,15 +968,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model includes Mutation Rate as a component. Bacteria reproduce every 20-30 minutes, generating millions of mutations daily. Why does this reproductive speed make resistance evolution practically inevitable?
 
-A. Fast reproduction means each individual bacterium becomes resistant more quickly
+A. Reproduction speed has no relationship to the probability of beneficial mutations
 B. Rapid reproduction generates enormous genetic variation in very short time frames, making it statistically likely that pre-existing resistance mutations will be present before antibiotic exposure even begins
-C. Reproduction speed has no relationship to the probability of beneficial mutations
-D. Bacteria only mutate when exposed to antibiotics, so reproduction speed is irrelevant
+C. Bacteria only mutate when exposed to antibiotics, so reproduction speed is irrelevant
+D. Fast reproduction means each individual bacterium becomes resistant more quickly
 
 Correct Answer: B
 
-Feedback: Correct. With reproduction every 20-30 minutes, a single bacterium can produce billions of offspring in hours. With random mutations occurring at each division, the probability of pre-existing resistance mutations in any large population approaches certainty. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. With reproduction every 20-30 minutes, a single bacterium can produce billions of offspring in hours. With random mutations occurring at each division, the probability of pre-existing resistance mutations in any large population approaches certainty. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -958,15 +986,14 @@ A student runs a simulation of the model. The model shows that when Antibiotic E
 
 Based on the model, which of the three main misuse behaviors (incomplete courses, prescribing for viral infections, agricultural overuse) drives resistance evolution FASTEST, and why?
 
-A. Prescribing for viral infections, because viruses and bacteria share resistance genes
-B. Agricultural overuse, because it exposes trillions of bacteria to constant sub-therapeutic selective pressure across massive populations, maximizing the probability and speed of resistance evolution
+A. Agricultural overuse, because it exposes trillions of bacteria to constant sub-therapeutic selective pressure across massive populations, maximizing the probability and speed of resistance evolution
+B. Prescribing for viral infections, because viruses and bacteria share resistance genes
 C. Incomplete courses, because they are the only behavior that actually affects bacteria
 D. All three behaviors have exactly identical effects on resistance evolution rates
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model predicts that agricultural overuse is the most dangerous because it combines the largest bacterial population sizes with constant sub-therapeutic selective pressure across continuous time periods, creating optimal conditions for resistance evolution. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model predicts that agricultural overuse is the most dangerous because it combines the largest bacterial population sizes with constant sub-therapeutic selective pressure across continuous time periods, creating optimal conditions for resistance evolution. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -977,15 +1004,14 @@ Scientists are studying data related to this system. They collected observations
 
 Horizontal gene transfer allows resistance genes to move between bacterial species. How does including this mechanism in the model change predictions about the spread of resistance?
 
-A. It has no effect because resistance genes can only be passed from parent to offspring
+A. It slows resistance spread because gene transfer between species is always unsuccessful
 B. It transforms resistance from an individual-patient problem to a community-level threat, because resistance evolving in harmless environmental bacteria can transfer to deadly human pathogens
-C. It slows resistance spread because gene transfer between species is always unsuccessful
+C. It has no effect because resistance genes can only be passed from parent to offspring
 D. It only matters in laboratory settings, not in natural environments
 
 Correct Answer: B
 
-Feedback: Correct. Horizontal gene transfer means resistance is not contained within a single species. Genes can jump from harmless soil bacteria to dangerous pathogens, making resistance a population-level and community-level threat. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Horizontal gene transfer means resistance is not contained within a single species. Genes can jump from harmless soil bacteria to dangerous pathogens, making resistance a population-level and community-level threat. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -996,24 +1022,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model demonstrates that antibiotic resistance follows all four factors of evolution by natural selection. Which correctly matches each factor to the resistance scenario?
 
-A. 1) Bacteria multiply rapidly, 2) Random mutations create variation, 3) Antibiotics create competition for survival, 4) Resistant bacteria survive and reproduce preferentially
-B. 1) Bacteria choose to become resistant, 2) Resistance is learned behavior, 3) All bacteria respond identically, 4) Antibiotics cause mutations
-C. 1) Bacteria reproduce slowly, 2) All bacteria are genetically identical, 3) Resources are unlimited, 4) Survival is random
-D. 1) Bacteria evolve intentionally, 2) Mutations are directed toward resistance, 3) Only strong antibiotics create selection, 4) Resistance disappears when antibiotics are removed
+A. 1) Bacteria choose to become resistant, 2) Resistance is learned behavior, 3) All bacteria respond identically, 4) Antibiotics cause mutations
+B. 1) Bacteria evolve intentionally, 2) Mutations are directed toward resistance, 3) Only strong antibiotics create selection, 4) Resistance disappears when antibiotics are removed
+C. 1) Bacteria multiply rapidly, 2) Random mutations create variation, 3) Antibiotics create competition for survival, 4) Resistant bacteria survive and reproduce preferentially
+D. 1) Bacteria reproduce slowly, 2) All bacteria are genetically identical, 3) Resources are unlimited, 4) Survival is random
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Correct. This correctly maps the four factors: (1) population growth potential (rapid reproduction), (2) heritable variation (random mutations), (3) competition for limited resources (antibiotic selective pressure), and (4) differential survival (resistant bacteria proliferate). If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Correct. This correctly maps the four factors: (1) population growth potential (rapid reproduction), (2) heritable variation (random mutations), (3) competition for limited resources (antibiotic selective pressure), and (4) differential survival (resistant bacteria proliferate). If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.2, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.2, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.2, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.2, CCC4)
-Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.2, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.2, CCC4)
 
 
 ## Resources

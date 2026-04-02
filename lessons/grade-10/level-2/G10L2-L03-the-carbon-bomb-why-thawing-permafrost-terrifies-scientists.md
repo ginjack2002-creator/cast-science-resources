@@ -908,15 +908,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the permafrost carbon feedback model, which sequence correctly describes the positive feedback loop that drives accelerating warming?
 
-A. Atmospheric CO2 rises -> Permafrost Temperature increases -> Microbial Decomposition releases greenhouse gases -> Atmospheric CO2 rises further
-B. Ocean Absorption increases -> Permafrost Temperature drops -> Vegetation Growth expands -> Atmospheric CO2 drops
-C. Vegetation Growth increases -> Methane Release Rate decreases -> Permafrost Temperature decreases -> Feedback Amplification stops
-D. Atmospheric CO2 rises -> Ocean Absorption increases -> Permafrost Temperature decreases -> Methane Release Rate stops
+A. Ocean Absorption increases -> Permafrost Temperature drops -> Vegetation Growth expands -> Atmospheric CO2 drops
+B. Atmospheric CO2 rises -> Permafrost Temperature increases -> Microbial Decomposition releases greenhouse gases -> Atmospheric CO2 rises further
+C. Atmospheric CO2 rises -> Ocean Absorption increases -> Permafrost Temperature decreases -> Methane Release Rate stops
+D. Vegetation Growth increases -> Methane Release Rate decreases -> Permafrost Temperature decreases -> Feedback Amplification stops
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. The model demonstrates a self-amplifying cycle: rising CO2 warms the atmosphere, thawing permafrost, activating microbes that release more greenhouse gases, further increasing atmospheric CO2. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model demonstrates a self-amplifying cycle: rising CO2 warms the atmosphere, thawing permafrost, activating microbes that release more greenhouse gases, further increasing atmospheric CO2. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -927,15 +926,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model includes Ocean Absorption and Vegetation Growth as components. What role do these play in the permafrost feedback system?
 
-A. They amplify the positive feedback loop, making warming faster
-B. They act as negative feedbacks that slow the warming cycle but cannot stop it if the tipping point is crossed
+A. They act as negative feedbacks that slow the warming cycle but cannot stop it if the tipping point is crossed
+B. They completely offset all carbon released from thawing permafrost
 C. They have no measurable effect on the permafrost carbon cycle
-D. They completely offset all carbon released from thawing permafrost
+D. They amplify the positive feedback loop, making warming faster
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that Ocean Absorption and Vegetation Growth provide negative feedback (slowing the cycle), but the volume of carbon stored in permafrost vastly exceeds what these sinks can absorb, especially after the tipping point. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that Ocean Absorption and Vegetation Growth provide negative feedback (slowing the cycle), but the volume of carbon stored in permafrost vastly exceeds what these sinks can absorb, especially after the tipping point. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -946,15 +944,14 @@ A student runs a simulation of the model. The model shows that when Atmospheric 
 
 A student runs the model with Atmospheric CO2 increasing at current rates and observes Feedback Amplification becoming self-sustaining. What does 'self-sustaining' mean in this context?
 
-A. Human emissions are the only driver of further warming
-B. Permafrost carbon release would continue even if all human CO2 emissions stopped immediately
-C. The feedback will reverse naturally within a few decades
+A. The feedback will reverse naturally within a few decades
+B. Human emissions are the only driver of further warming
+C. Permafrost carbon release would continue even if all human CO2 emissions stopped immediately
 D. Vegetation Growth will eventually absorb all released carbon
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Once the feedback becomes self-sustaining, the system generates enough warming from its own carbon releases to continue thawing more permafrost, independent of human emissions. This is what makes the tipping point so dangerous. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Once the feedback becomes self-sustaining, the system generates enough warming from its own carbon releases to continue thawing more permafrost, independent of human emissions. This is what makes the tipping point so dangerous. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -965,15 +962,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model compares the 1,500 billion tons of carbon in permafrost to the approximately 900 billion tons currently in the atmosphere. Why does this comparison alarm climate scientists?
 
-A. Because permafrost carbon is less harmful than atmospheric carbon
-B. Because releasing even a fraction of permafrost carbon could nearly double atmospheric CO2, overwhelming natural sinks and accelerating warming beyond current projections
-C. Because all of the permafrost carbon will be released within one year of thawing
-D. Because permafrost carbon is composed of a different isotope that traps less heat
+A. Because all of the permafrost carbon will be released within one year of thawing
+B. Because permafrost carbon is composed of a different isotope that traps less heat
+C. Because releasing even a fraction of permafrost carbon could nearly double atmospheric CO2, overwhelming natural sinks and accelerating warming beyond current projections
+D. Because permafrost carbon is less harmful than atmospheric carbon
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. With nearly twice as much carbon stored in permafrost as exists in the entire atmosphere, even partial release represents an enormous addition to atmospheric greenhouse gases that current climate models may underestimate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. With nearly twice as much carbon stored in permafrost as exists in the entire atmosphere, even partial release represents an enormous addition to atmospheric greenhouse gases that current climate models may underestimate. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -984,24 +980,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, which intervention strategy would be most effective at preventing the permafrost feedback from reaching the tipping point?
 
-A. Increasing Ocean Absorption by fertilizing the oceans with iron
-B. Reducing Atmospheric CO2 emissions rapidly enough to keep Permafrost Temperature below thawing thresholds before the feedback becomes self-sustaining
-C. Planting trees on top of permafrost to shade it from the sun
-D. Pumping cold water underground to refreeze thawed permafrost
+A. Planting trees on top of permafrost to shade it from the sun
+B. Increasing Ocean Absorption by fertilizing the oceans with iron
+C. Pumping cold water underground to refreeze thawed permafrost
+D. Reducing Atmospheric CO2 emissions rapidly enough to keep Permafrost Temperature below thawing thresholds before the feedback becomes self-sustaining
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that the only realistic prevention strategy is reducing global emissions fast enough to limit warming before permafrost thaw crosses the self-sustaining threshold. Once crossed, no practical intervention can reverse the feedback. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that the only realistic prevention strategy is reducing global emissions fast enough to limit warming before permafrost thaw crosses the self-sustaining threshold. Once crossed, no practical intervention can reverse the feedback. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.6, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.6, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.6, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.6, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.6, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.6, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.6, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.6, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.6, CCC4)
 
 
 ## Resources

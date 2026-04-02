@@ -915,15 +915,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that in heavy rain, LIDAR performance drops 60%, camera drops 40%, but radar drops only 10%. Despite these individual degradations, Sensor Fusion Accuracy drops by only 25%. What system property explains this resilience?
 
-A. The model underestimates the impact of rain on sensor performance
-B. Sensor fusion creates redundancy — the algorithm dynamically reweights sensors, relying more heavily on radar when LIDAR and cameras are degraded, maintaining combined accuracy above any single degraded sensor
-C. The 25% drop is unacceptable and means the system should shut down immediately
-D. Rain does not actually affect autonomous vehicle performance in real systems
+A. Sensor fusion creates redundancy — the algorithm dynamically reweights sensors, relying more heavily on radar when LIDAR and cameras are degraded, maintaining combined accuracy above any single degraded sensor
+B. The model underestimates the impact of rain on sensor performance
+C. Rain does not actually affect autonomous vehicle performance in real systems
+D. The 25% drop is unacceptable and means the system should shut down immediately
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates the core value of sensor fusion: when individual sensors degrade at different rates due to environmental conditions, the fusion algorithm shifts weighting toward the most reliable sensor. This built-in redundancy maintains system-level performance above any single sensor's degraded level. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates the core value of sensor fusion: when individual sensors degrade at different rates due to environmental conditions, the fusion algorithm shifts weighting toward the most reliable sensor. This built-in redundancy maintains system-level performance above any single sensor's degraded level. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -934,15 +933,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the edge case scenario, the model shows Obstacle Classification confidence dropping below 50% for a novel object. The system responds by expanding Safety Margin and reducing speed. What decision-making principle does this represent?
 
-A. The system is malfunctioning because confidence should always be above 90%
-B. Conservative fallback — when uncertainty is high, the system increases caution by trading efficiency for safety, buying more time to classify the object or allowing the human to take control
-C. The system ignores unclassified objects to maintain traffic flow
-D. Speed reduction is the only response the system has to any anomaly
+A. The system ignores unclassified objects to maintain traffic flow
+B. Speed reduction is the only response the system has to any anomaly
+C. The system is malfunctioning because confidence should always be above 90%
+D. Conservative fallback — when uncertainty is high, the system increases caution by trading efficiency for safety, buying more time to classify the object or allowing the human to take control
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates a fundamental safety principle: when the perception system has low confidence, the decision system compensates by increasing safety margins. This buys time for additional sensor data, allows the object to be observed from closer range, and provides the option for human takeover. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates a fundamental safety principle: when the perception system has low confidence, the decision system compensates by increasing safety margins. This buys time for additional sensor data, allows the object to be observed from closer range, and provides the option for human takeover. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -954,14 +952,13 @@ A student runs a simulation of the model. The model shows that when LIDAR Pulse 
 The model classifies LIDAR Pulse Frequency and Weather Interference as external variables. Why is Weather Interference classified as external even though it directly affects sensor performance?
 
 A. External variables must always be environmental conditions
-B. Weather Interference is a condition the autonomous system encounters but cannot control or change — it is an input from the environment, not a property of the engineering system being modeled
-C. Weather interference is too unpredictable to be modeled as an internal variable
+B. Weather interference is too unpredictable to be modeled as an internal variable
+C. Weather Interference is a condition the autonomous system encounters but cannot control or change — it is an input from the environment, not a property of the engineering system being modeled
 D. The classification is incorrect and should be changed
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. External variables represent conditions imposed on the system from outside. The autonomous vehicle cannot change the weather — it can only respond to it. Weather Interference is an environmental input that affects system performance but is not controlled by the system. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. External variables represent conditions imposed on the system from outside. The autonomous vehicle cannot change the weather — it can only respond to it. Weather Interference is an environmental input that affects system performance but is not controlled by the system. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -972,15 +969,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model predicts that Decision Latency increases from 150 ms in clear conditions to 350 ms in the edge case scenario. What system interaction causes this increase?
 
-A. The processors slow down in unusual situations
+A. Decision Latency is constant and does not change between scenarios
 B. Low Obstacle Classification confidence triggers additional processing cycles — the system runs more analysis algorithms, cross-references additional data sources, and may request human verification, all adding time before a decision is made
-C. Decision Latency is constant and does not change between scenarios
+C. The processors slow down in unusual situations
 D. The increase is caused by physical distance to the obstacle, not processing time
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals an important trade-off: when the system encounters an ambiguous object, it spends more time trying to classify it correctly before deciding on an action. This is the speed-accuracy trade-off — taking longer to decide increases accuracy but also increases the distance traveled before responding. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model reveals an important trade-off: when the system encounters an ambiguous object, it spends more time trying to classify it correctly before deciding on an action. This is the speed-accuracy trade-off — taking longer to decide increases accuracy but also increases the distance traveled before responding. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -991,24 +987,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student argues that autonomous vehicles should not be deployed until they can handle 100% of edge cases correctly. Based on the model, what is the most scientifically valid evaluation of this standard?
 
-A. The standard is achievable within 5 years with current technology trajectories
-B. The 100% standard is mathematically impossible — the set of possible edge cases is effectively infinite, and the model shows that the system's strength lies in safe fallback responses (slowing, stopping, human handoff) when it encounters situations beyond its classification ability
-C. Edge cases are rare enough that they can be ignored
-D. Human drivers handle 100% of edge cases correctly, so autonomous vehicles should too
+A. Human drivers handle 100% of edge cases correctly, so autonomous vehicles should too
+B. Edge cases are rare enough that they can be ignored
+C. The standard is achievable within 5 years with current technology trajectories
+D. The 100% standard is mathematically impossible — the set of possible edge cases is effectively infinite, and the model shows that the system's strength lies in safe fallback responses (slowing, stopping, human handoff) when it encounters situations beyond its classification ability
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The real world presents an effectively infinite set of possible situations. No system — human or autonomous — handles all of them correctly. The model shows that the engineering solution is not perfect classification but safe degradation: when confidence is low, the system increases caution and can hand control to a human driver. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The real world presents an effectively infinite set of possible situations. No system — human or autonomous — handles all of them correctly. The model shows that the engineering solution is not perfect classification but safe degradation: when confidence is low, the system increases caution and can hand control to a human driver. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.2, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.2, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.2, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.2, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.2, CCC2)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.2, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.2, CCC4)
 
 
 ## Resources

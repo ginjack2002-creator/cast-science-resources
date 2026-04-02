@@ -347,6 +347,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Atmospheric Pressure → Crop Viability relationship as
+unconditional. However, this relationship is scientifically
+contingent on Radiation Exposure being inactive. Without this condition,
+the simulation produces inaccurate results: Atmospheric Pressure drives Crop Viability
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Atmospheric Pressure → Crop Viability
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Radiation Exposure is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Radiation Exposure inactive and observe
+     how Atmospheric Pressure's effect on Crop Viability is now gated
+   • Toggle Radiation Exposure ON/OFF while Atmospheric Pressure remains constant
+   • Verify that Crop Viability only responds to Atmospheric Pressure when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -920,14 +950,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 In a Mars habitat model, a student simulates a slow atmospheric pressure leak that reduces habitat pressure by 20% over three days. The model shows Crop Viability dropping before any other system reaches critical levels. Why do crops fail first?
 
 A. Crops are more sensitive to pressure changes than humans because plants require higher pressure for liquid water transport and gas exchange through stomata
-B. Crops fail first because they are planted outside the habitat
+B. Crops fail because lower pressure increases radiation inside the habitat
 C. Pressure changes only affect plants, not humans or equipment
-D. Crops fail because lower pressure increases radiation inside the habitat
+D. Crops fail first because they are planted outside the habitat
 
 Correct Answer: A
 
-Feedback: Correct. Plants rely on adequate atmospheric pressure for transpiration, water transport through xylem, and gas exchange through stomata. As pressure drops, water begins to boil at lower temperatures, disrupting plant physiology before the pressure becomes immediately lethal to humans who can don emergency pressure suits. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Plants rely on adequate atmospheric pressure for transpiration, water transport through xylem, and gas exchange through stomata. As pressure drops, water begins to boil at lower temperatures, disrupting plant physiology before the pressure becomes immediately lethal to humans who can don emergency pressure suits. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -938,15 +967,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student compares the 'Pressure Breach' and 'Water Crisis' scenarios in their Mars habitat model. Which conclusion is best supported by the model evidence?
 
-A. Both scenarios produce identical outcomes because pressure and water are the same variable
+A. Neither scenario is truly dangerous because backup systems would prevent any failure
 B. Pressure breach is more immediately lethal (minutes to hours) while water crisis is more strategically threatening (weeks to months), demonstrating that 'most critical' depends on timescale
-C. Water crisis is always more dangerous than pressure breach
-D. Neither scenario is truly dangerous because backup systems would prevent any failure
+C. Both scenarios produce identical outcomes because pressure and water are the same variable
+D. Water crisis is always more dangerous than pressure breach
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that different failure modes operate on different timescales. A pressure breach can kill within minutes, making it the most time-critical threat. A water crisis develops over weeks but threatens long-term survival by limiting food production and life support. The 'most critical' factor depends on whether you are evaluating immediate or sustained survival. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that different failure modes operate on different timescales. A pressure breach can kill within minutes, making it the most time-critical threat. A water crisis develops over weeks but threatens long-term survival by limiting food production and life support. The 'most critical' factor depends on whether you are evaluating immediate or sustained survival. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -957,15 +985,14 @@ A student runs a simulation of the model. The model shows that when Atmospheric 
 
 A student's Mars habitat model has four external components (Pressure, Radiation, Water, Temperature) all affecting one internal component (Crop Viability). What does this model structure reveal about system vulnerability?
 
-A. The system is robust because it has many inputs supporting one output
-B. The system is fragile because Crop Viability is a single point of failure that depends on ALL four external factors being within acceptable ranges simultaneously
-C. The system is efficient because only one component needs to be monitored
-D. The model structure shows that only one external factor needs to be controlled at a time
+A. The system is fragile because Crop Viability is a single point of failure that depends on ALL four external factors being within acceptable ranges simultaneously
+B. The system is robust because it has many inputs supporting one output
+C. The model structure shows that only one external factor needs to be controlled at a time
+D. The system is efficient because only one component needs to be monitored
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model structure reveals that Crop Viability acts as a single point of failure with four independent failure pathways. Since ANY one of the four external factors dropping below its threshold can destroy crops, the system has no redundancy at this critical node. This explains why Mars colonization requires near-perfect engineering across all systems simultaneously. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
-
+Feedback: Correct. The model structure reveals that Crop Viability acts as a single point of failure with four independent failure pathways. Since ANY one of the four external factors dropping below its threshold can destroy crops, the system has no redundancy at this critical node. This explains why Mars colonization requires near-perfect engineering across all systems simultaneously. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 ---
 
 ### Question 4
@@ -977,14 +1004,13 @@ Scientists are studying data related to this system. They collected observations
 After running all scenarios, a student concludes: 'Mars colonization is fundamentally different from any engineering challenge on Earth.' Which model evidence best supports this conclusion?
 
 A. Earth engineering projects are always more complex than Mars projects
-B. On Earth, the natural environment provides baseline life support (breathable air, moderate pressure, liquid water, tolerable temperatures); on Mars, every survival requirement must be artificially maintained with zero backup from the environment
-C. Mars projects cost more money than Earth projects
+B. Mars projects cost more money than Earth projects
+C. On Earth, the natural environment provides baseline life support (breathable air, moderate pressure, liquid water, tolerable temperatures); on Mars, every survival requirement must be artificially maintained with zero backup from the environment
 D. Mars has different gravity, which is the only significant engineering challenge
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates that Earth engineering can rely on baseline environmental support. If a building's climate control fails on Earth, occupants can open a window. On Mars, failure of any life support system means death because the external environment provides nothing humans need. This zero-backup condition makes Mars engineering fundamentally different in kind, not just degree. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that Earth engineering can rely on baseline environmental support. If a building's climate control fails on Earth, occupants can open a window. On Mars, failure of any life support system means death because the external environment provides nothing humans need. This zero-backup condition makes Mars engineering fundamentally different in kind, not just degree. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -995,24 +1021,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student adds Energy Production as a new component to their Mars model and discovers that ALL other systems depend on it. What does this reveal about the system's interdependencies?
 
-A. Energy is a luxury component that improves comfort but is not essential for survival
-B. Energy production is a foundational dependency because maintaining pressure, temperature, water extraction, and radiation shielding all require continuous power, making energy failure equivalent to simultaneous failure of all other systems
-C. Energy only affects crop viability and has no impact on other components
-D. Adding more components always makes models less accurate
+A. Energy only affects crop viability and has no impact on other components
+B. Adding more components always makes models less accurate
+C. Energy is a luxury component that improves comfort but is not essential for survival
+D. Energy production is a foundational dependency because maintaining pressure, temperature, water extraction, and radiation shielding all require continuous power, making energy failure equivalent to simultaneous failure of all other systems
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The extended model reveals that energy production is a 'master dependency' because every other survival system requires continuous power. Pressure pumps, heating systems, water extraction equipment, and radiation shielding all consume energy. An energy failure cascades immediately into failure of all dependent systems, making it arguably the most critical component. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The extended model reveals that energy production is a 'master dependency' because every other survival system requires continuous power. Pressure pumps, heating systems, water extraction equipment, and radiation shielding all consume energy. An energy failure cascades immediately into failure of all dependent systems, making it arguably the most critical component. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Answer Key
 
 Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.2, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.2, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.2, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.2, CCC4)
 
 
 ## Resources

@@ -833,108 +833,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1 (Construct an argument with evidence) + DCI PS1.B (Heating or cooling can cause changes that are reversible) + CCC2 (Identify cause and effect relationships)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Surrounding Temperature, Melting Speed, Ice Size. Some components are external (Surrounding Temperature) and some are internal (Melting Speed, Ice Size). The student needs to understand what each component represents and how they are organized.
+A student places three identical ice cubes in different spots: one on a sunny sidewalk, one on a shady bench, and one inside a cool refrigerator. After 30 minutes, the sidewalk ice cube is completely melted, the shady bench ice cube is mostly melted, and the refrigerator ice cube has barely changed.
 
-Two ice cubes of the same size are placed outside. One is in the shade and one is in direct sunlight. Which melts first?
+What caused the difference in how fast the ice cubes melted?
 
-A. The one in the shade
-B. They melt at exactly the same speed
-C. The one in direct sunlight
-D. Neither one melts
+A. The ice cubes on the sidewalk and bench were smaller to begin with
+B. The ice cubes were made of different kinds of water
+C. The surrounding temperature was different in each spot, and warmer temperatures cause ice to melt faster
+D. The shapes of the ice cubes changed, which made some melt faster
 
 Correct Answer: C
 
-Feedback: Correct! The ice cube in direct sunlight melts first because it receives more heat energy from the sun, making it melt faster. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: All three ice cubes were identical, so the only difference was the surrounding temperature. The sunny sidewalk was warmest, so that ice melted fastest. The refrigerator was coolest, so that ice barely melted. Warmer surroundings transfer more heat to the ice. If you chose B, the student used identical ice cubes made from the same water. The difference was location, not the ice itself. If you chose D, the ice cubes all started the same shape. Their shape changed BECAUSE of melting, not the other way around. If you chose A, the experiment stated the ice cubes were identical, meaning the same size.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Use a model to represent relationships) + DCI PS1.B (Some changes are reversible) + CCC2 (Describe cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Surrounding Temperature increases, Melting Speed increases; when Melting Speed increases, Ice Size decreases. The student is trying to understand why these relationships are positive or negative.
+In a model of ice melting, Surrounding Temperature is an external component. Melting Speed is an internal component. The model shows a positive relationship: when the surrounding temperature goes up, the melting speed goes up too. Ice Size is another internal component with a negative relationship to Melting Speed: when melting speed goes up, ice size goes down.
 
-What is a reversible change?
+A student puts an ice cube in a warm oven. Based on the model, what happens?
 
-A. A change that can never happen again
-B. A change that can be undone, like melting and freezing
-C. A change that only happens once
-D. A change that makes things disappear
+A. Melting speed stays the same as room temperature because the oven does not matter
+B. Melting speed is slow because ovens are dark inside
+C. The ice cube gets bigger in the oven
+D. Melting speed is very fast because the oven temperature is very high, and the ice size shrinks quickly
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Yes! A reversible change is one that can be undone. Melting ice into water and freezing water back into ice is a reversible change because you can go back and forth. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: The model shows positive relationship between temperature and melting speed. A warm oven has a very high surrounding temperature, so melting speed is very fast. Then the negative relationship kicks in: fast melting means ice size decreases quickly. If you chose B, darkness does not affect melting. Temperature is what matters, and an oven is very warm. If you chose C, ice cannot get bigger when it melts. The negative relationship means more melting equals smaller ice. If you chose A, the model shows temperature directly affects melting speed. A hot oven melts ice much faster than room temperature.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.2 (Use evidence to support a claim) + DCI PS1.B (Changes caused by heating can be reversed by cooling) + CCC7 (Describe how things change or stay the same)
 
-A student runs a simulation of the model. The model shows that when Surrounding Temperature increases, Melting Speed increases and when Melting Speed increases, Ice Size decreases. The student changes one variable to see how the whole system responds.
+A student takes an ice cube out of the freezer and lets it melt into a cup of water. Then she puts the cup of water back into the freezer. The next day, the water has frozen back into ice.
 
-In our model, what is the relationship between Surrounding Temperature and Melting Speed?
+What does this demonstrate about the change from ice to water?
 
-A. Negative: higher temperature means slower melting
-B. Positive: higher temperature means faster melting
-C. No relationship: temperature does not matter
-D. Temperature only affects big ice cubes
+A. This proves that melting is a reversible change because the water can be frozen back into ice
+B. This proves that melting cannot be undone
+C. The ice in the freezer is completely different from the original ice cube
+D. The freezer created new water to make the ice
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct! It is a positive relationship. When the surrounding temperature goes up, the melting speed goes up too. Warmer surroundings transfer more heat to the ice. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Melting is a reversible change. Ice can melt into water (by heating), and water can freeze back into ice (by cooling). The same water goes back and forth between solid and liquid form. If you chose C, the frozen water is the same water that was in the original ice cube. It just changed form and then changed back. If you chose B, the experiment shows the opposite. The student DID undo the melting by freezing the water again. If you chose D, the freezer did not create new water. It cooled the existing water until it froze back into ice.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Analyze data from observations) + DCI PS1.B (Heating and cooling cause changes in matter) + CCC2 (Cause and effect can be used to predict)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A class tested how fast ice melts at different temperatures. At 50 degrees Fahrenheit, the ice cube took 60 minutes to melt completely. At 70 degrees, it took 30 minutes. At 90 degrees, it took only 10 minutes.
 
-Which of these is NOT a reversible change?
+Based on this data, about how long would it take an ice cube to melt at 100 degrees?
 
-A. Melting ice into water
-B. Freezing water into ice
-C. Baking a cookie from dough
-D. Melting a popsicle
+A. The ice cube would never melt at 100 degrees
+B. About 30 minutes, because all temperatures melt ice the same way
+C. About 90 minutes, because higher temperatures slow down melting
+D. Less than 10 minutes, because the pattern shows higher temperatures melt ice faster
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: That is right! Baking a cookie is NOT reversible. You cannot un-bake a cookie back into flour, sugar, and eggs. Melting and freezing are reversible, but baking is not. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The data shows a clear pattern: as temperature goes up, melting time goes down. At 50 degrees it took 60 minutes, at 70 it took 30, at 90 it took 10. Following this pattern, 100 degrees would melt ice even faster than 90 degrees, so it would take less than 10 minutes. If you chose C, the data shows the opposite. Higher temperatures make ice melt faster, not slower. If you chose B, the data clearly shows different melting times at different temperatures (60 min, 30 min, 10 min). If you chose A, ice definitely melts at 100 degrees. It would melt very quickly because of the high temperature.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.3 (Argue that some changes are reversible and some are not) + DCI PS1.B (Reversible and irreversible changes) + CCC7 (Describe change and stability in a system)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Surrounding Temperature), but they can take action on internal components (Melting Speed, Ice Size). They need to decide which action would be most effective based on what the model shows.
+A student makes a chart of changes. She writes: melting ice into water, freezing juice into a popsicle, baking cookie dough into cookies, and boiling an egg. She wants to sort them into two groups: changes that can be undone and changes that cannot be undone.
 
-What happens to an ice cube when you take it out of the freezer?
+Which grouping is correct?
 
-A. It stays frozen forever
-B. It starts to melt and turn into water
-C. It gets colder
-D. It grows bigger
+A. All four changes can be undone
+B. Can be undone: melting ice, freezing juice. Cannot be undone: baking cookies, boiling an egg.
+C. None of these changes can be undone
+D. Can be undone: melting ice, baking cookies. Cannot be undone: freezing juice, boiling an egg.
 
 Correct Answer: B
 
-Feedback: That is right! When you take ice out of the freezer, the warm air around it starts to melt the ice, turning it from a solid into liquid water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Melting ice and freezing juice are reversible, meaning they can be undone. Ice can refreeze, and a popsicle can melt back to juice. But baking cookies and boiling eggs are irreversible. You cannot un-bake a cookie or un-boil an egg. The heat changed them permanently. If you chose D, baking cookies CANNOT be undone. You cannot turn a baked cookie back into raw dough. Cookies belong in the cannot-be-undone group. If you chose A, baking and boiling cause permanent changes to the ingredients. Those changes cannot be reversed. If you chose C, melting and freezing absolutely can be undone. Ice melts to water and water freezes back to ice.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.4, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.4, CCC4)
+Question 1: C (Cognitive Level: Reason + Evidence — SEP 7.1, DCI PS1.B, CCC2)
+Question 2: D (Cognitive Level: Predict — SEP 2.1, DCI PS1.B, CCC2)
+Question 3: A (Cognitive Level: Reason + Explain — SEP 7.2, DCI PS1.B, CCC7)
+Question 4: D (Cognitive Level: Predict + Evidence — SEP 4.1, DCI PS1.B, CCC2)
+Question 5: B (Cognitive Level: Reason + Apply — SEP 7.3, DCI PS1.B, CCC7)
 
-
+---
 ## Resources
 
 | Resource | Link |

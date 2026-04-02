@@ -392,6 +392,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Population Demand → Water Availability relationship as
+unconditional. However, this relationship is scientifically
+contingent on Wastewater Recycling being active. Without this condition,
+the simulation produces inaccurate results: Population Demand drives Water Availability
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Population Demand → Water Availability
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Wastewater Recycling is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Wastewater Recycling active and observe
+     how Population Demand's effect on Water Availability is now gated
+   • Toggle Wastewater Recycling ON/OFF while Population Demand remains constant
+   • Verify that Water Availability only responds to Population Demand when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Wastewater Recycling → Water Availability
+   • Set condition: IF Population Demand is OFF
+   • This ensures Wastewater Recycling's effect on Water Availability
+     is contingent on Population Demand being inactive
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -964,14 +1000,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 The model shows that increasing energy production to meet growing demand causes water availability to decline. What system dynamic explains this?
 
 A. Energy production and water availability are unrelated variables in the model
-B. Power generation (especially thermal and nuclear) requires enormous quantities of cooling water, creating direct competition between energy and water systems
-C. Energy production evaporates all nearby water sources
-D. The model is showing random fluctuations, not a causal relationship
+B. Energy production evaporates all nearby water sources
+C. The model is showing random fluctuations, not a causal relationship
+D. Power generation (especially thermal and nuclear) requires enormous quantities of cooling water, creating direct competition between energy and water systems
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Thermal power plants are among the largest industrial water consumers, using water for cooling. Increasing energy output directly increases water withdrawal, creating resource competition between the energy and water systems. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Thermal power plants are among the largest industrial water consumers, using water for cooling. Increasing energy output directly increases water withdrawal, creating resource competition between the energy and water systems. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -990,7 +1025,6 @@ D. Energy and food systems are immune to population pressure
 Correct Answer: B
 
 Feedback: Correct. This illustrates the concept of a limiting factor or bottleneck. The system's carrying capacity is determined by its weakest link. Even if energy and food are abundant, water scarcity limits the population that can be sustained. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 3
@@ -1001,15 +1035,14 @@ A student runs a simulation of the model. The model shows that when Population D
 
 The model demonstrates that a drought reduces water availability by 40%, which then reduces both energy production AND agricultural output. What systems concept does this illustrate?
 
-A. Isolated impact, where drought only affects water supply
-B. Cascading failure through coupled systems, where a shock to one resource propagates through interconnected systems
-C. Resilience, where the system absorbs the shock without any downstream effects
-D. The drought scenario is unrealistic and does not reflect real resource dynamics
+A. Cascading failure through coupled systems, where a shock to one resource propagates through interconnected systems
+B. Isolated impact, where drought only affects water supply
+C. The drought scenario is unrealistic and does not reflect real resource dynamics
+D. Resilience, where the system absorbs the shock without any downstream effects
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This demonstrates cascading failure in coupled systems. Because energy production needs cooling water and agriculture needs irrigation water, a water shock propagates through all connected systems, amplifying the original disruption. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This demonstrates cascading failure in coupled systems. Because energy production needs cooling water and agriculture needs irrigation water, a water shock propagates through all connected systems, amplifying the original disruption. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1020,15 +1053,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student's model shows that increasing wastewater recycling to 90% partially decouples the water-energy-food nexus. What does 'decoupling' mean in this context?
 
-A. The three resources become completely independent of each other
-B. Recycling reduces the competition between systems by creating an alternative water supply that does not require drawing from the same finite source
-C. Decoupling means the model stops working correctly
+A. Decoupling means the model stops working correctly
+B. The three resources become completely independent of each other
+C. Recycling reduces the competition between systems by creating an alternative water supply that does not require drawing from the same finite source
 D. Wastewater recycling has no effect on resource interdependence
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Decoupling reduces the strength of competition between systems. Recycled water provides an alternative supply that reduces the demand on shared freshwater sources, allowing energy and agriculture to draw from different pools. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Decoupling reduces the strength of competition between systems. Recycled water provides an alternative supply that reduces the demand on shared freshwater sources, allowing energy and agriculture to draw from different pools. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1039,24 +1071,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, why is siloed resource planning (managing water, energy, and food independently) likely to fail as populations grow?
 
-A. Siloed planning works well at any population scale
-B. Each siloed solution optimizes one resource but creates unintended trade-offs that worsen the others, and population growth amplifies all competition simultaneously
-C. Siloed planning fails only because of poor communication between agencies
-D. Population growth does not affect resource planning approaches
+A. Population growth does not affect resource planning approaches
+B. Siloed planning fails only because of poor communication between agencies
+C. Siloed planning works well at any population scale
+D. Each siloed solution optimizes one resource but creates unintended trade-offs that worsen the others, and population growth amplifies all competition simultaneously
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Siloed optimization creates a whack-a-mole dynamic: solving water scarcity with desalination strains energy, expanding energy strains water, expanding agriculture strains both. Population growth multiplies all demands simultaneously, making integrated planning essential. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Siloed optimization creates a whack-a-mole dynamic: solving water scarcity with desalination strains energy, expanding energy strains water, expanding agriculture strains both. Population growth multiplies all demands simultaneously, making integrated planning essential. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC2)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC2)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC5)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC5)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC5)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC5)
 
 
 ## Resources

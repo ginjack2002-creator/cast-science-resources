@@ -900,107 +900,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI LS1.A (Structure and function of organisms) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Vaccination Rate, Antigen Exposure, Antibody Production, Memory Cell Population, Herd Immunity Level, Disease Transmission Rate. Some components are external (Vaccination Rate, Antigen Exposure) and some are internal (Antibody Production, Memory Cell Population, Herd Immunity Level, Disease Transmission Rate). The student needs to understand what each component represents and how they are organized.
+A biomedical research team studies the immune response of three patient groups after vaccination. Group A received the vaccine and showed strong antibody production within 14 days. Group B received the vaccine but had a suppressed immune response due to immunodeficiency. Group C received no vaccine but was exposed to the pathogen naturally. Researchers tracked T-cell populations, antibody concentrations, and memory cell formation over 12 months to compare how the immune system learns through different pathways.
 
 A student's model shows that when vaccination rate crosses the herd immunity threshold, disease transmission drops sharply rather than gradually. Which explanation best accounts for this threshold behavior?
 
-A. The vaccine becomes more effective at higher coverage levels
+A. People change their behavior when they know most of the population is vaccinated
 B. Below the threshold, transmission chains can connect susceptible individuals across the population; at the threshold, immune individuals fragment these chains into disconnected clusters that cannot sustain spread
 C. The pathogen mutates to become less infectious at high vaccination rates
-D. People change their behavior when they know most of the population is vaccinated
+D. The vaccine becomes more effective at higher coverage levels
 
 Correct Answer: B
 
-Feedback: Correct. Herd immunity operates as a percolation threshold: when enough nodes (people) are immune, the network of susceptible individuals becomes fragmented into small, disconnected clusters. The pathogen can no longer find a continuous path through the population, and transmission collapses. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Herd immunity operates as a percolation threshold: when enough nodes (people) are immune, the network of susceptible individuals becomes fragmented into small, disconnected clusters. The pathogen can no longer find a continuous path through the population, and transmission collapses. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Think of the population as a network. Each immune person removes a node from the transmission network. At some point, the network fractures into small disconnected groups. This is a sudden transition, not a gradual decline. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. Think of the population as a network. Each immune person removes a node from the transmission network. At some point, the network fractures into small disconnected groups. This is a sudden transition, not a gradual decline. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Think of the population as a network. Each immune person removes a node from the transmission network. At some point, the network fractures into small disconnected groups. This is a sudden transition, not a gradual decline.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI LS1.A (Structure and function of organisms) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Antigen Exposure increases, Antibody Production increases; when Antibody Production increases, Memory Cell Population increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of the adaptive immune system shows a hierarchical feedback loop: antigen detection triggers antigen-presenting cells, which activate helper T-cells, which stimulate B-cell proliferation and antibody production. The model demonstrates that each cycle of antigen exposure produces a faster and stronger response, with memory cells reducing response time from 14 days (primary response) to 2-3 days (secondary response). A student analyzes why the secondary response is so much faster.
 
 The model simulates an outbreak in a population with 85% vaccination coverage for a disease with R0 = 5 (herd immunity threshold = 80%). Despite being above the threshold, a small outbreak occurs. Which explanation is most consistent with the model?
 
-A. The model is incorrect because outbreaks should be impossible above the herd immunity threshold
-B. Clustering of unvaccinated individuals in geographic or social groups can create local pockets of susceptibility that sustain limited transmission even when overall coverage exceeds the threshold
-C. The vaccine failed in all affected individuals simultaneously
-D. The pathogen's R0 increased spontaneously during the simulation
+A. Clustering of unvaccinated individuals in geographic or social groups can create local pockets of susceptibility that sustain limited transmission even when overall coverage exceeds the threshold
+B. The vaccine failed in all affected individuals simultaneously
+C. The pathogen's R0 increased spontaneously during the simulation
+D. The model is incorrect because outbreaks should be impossible above the herd immunity threshold
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Herd immunity thresholds assume uniform mixing. When unvaccinated individuals cluster together (by geography, community, or belief system), local susceptibility can exceed the threshold even when the overall population average is above it. This is why spatially uniform coverage matters. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Herd immunity thresholds assume uniform mixing. When unvaccinated individuals cluster together (by geography, community, or belief system), local susceptibility can exceed the threshold even when the overall population average is above it. This is why spatially uniform coverage matters. If you chose D, this response assumes the model or data is flawed rather than analyzing what the evidence actually shows. The overall percentage is above the threshold, but herd immunity assumes uniform distribution. Consider what happens if unvaccinated individuals are concentrated in the same school, neighborhood, or community rather than evenly spread across the population. If you chose B, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The overall percentage is above the threshold, but herd immunity assumes uniform distribution. Consider what happens if unvaccinated individuals are concentrated in the same school, neighborhood, or community rather than evenly spread across the population. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. The overall percentage is above the threshold, but herd immunity assumes uniform distribution. Consider what happens if unvaccinated individuals are concentrated in the same school, neighborhood, or community rather than evenly spread across the population.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.A (Cell division and differentiation) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Antigen Exposure increases, Antibody Production increases and when Antibody Production increases, Memory Cell Population increases and when Vaccination Rate increases, Herd Immunity Level increases. The student changes one variable to see how the whole system responds.
+During a flu season, a school nurse tracks illness patterns. In a class of 30 students, 12 received flu vaccines in October. By January, 15 of the 18 unvaccinated students contracted influenza, while only 2 of the 12 vaccinated students became ill, and their symptoms were milder and resolved 3 days faster. A computational model predicts that the vaccinated students' memory B-cells recognized the virus within 48 hours of exposure, while unvaccinated students required 10-14 days to mount a primary immune response.
 
 A model comparison shows that the individual immune response simulation takes 14 days to reach peak antibody production on first exposure but only 2 days on second exposure. Which cellular mechanism accounts for this 7-fold speed increase?
 
-A. The pathogen is weaker on second exposure
-B. Memory B cells bypass the initial antigen recognition and clonal expansion phases, immediately differentiating into antibody-producing plasma cells
-C. The innate immune system handles the second infection entirely without adaptive immunity
+A. The innate immune system handles the second infection entirely without adaptive immunity
+B. The pathogen is weaker on second exposure
+C. Memory B cells bypass the initial antigen recognition and clonal expansion phases, immediately differentiating into antibody-producing plasma cells
 D. Antibodies from the first exposure remain in the blood permanently
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. During the primary response, naive B cells must encounter the antigen, become activated, undergo clonal expansion, and differentiate into plasma cells. Memory B cells skip these early steps, having already been selected and expanded. They can begin producing antibodies almost immediately. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: During the primary response, naive B cells must encounter the antigen, become activated, undergo clonal expansion, and differentiate into plasma cells. Memory B cells skip these early steps, having already been selected and expanded. They can begin producing antibodies almost immediately. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. Consider what steps are required during the first immune response that can be skipped during the second. Memory cells exist precisely to accelerate this process. What steps do they eliminate? If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. Consider what steps are required during the first immune response that can be skipped during the second. Memory cells exist precisely to accelerate this process. What steps do they eliminate? If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. Consider what steps are required during the first immune response that can be skipped during the second. Memory cells exist precisely to accelerate this process. What steps do they eliminate?
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.A (Structure and function of organisms) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Researchers studying autoimmune disorders discover that in certain patients, the immune system's self-tolerance mechanism fails. Normally, T-cells that react to the body's own proteins are eliminated during development in the thymus (negative selection). In autoimmune patients, some self-reactive T-cells escape this selection process and attack healthy tissue. A systems model shows the balance between immune activation (fighting pathogens) and immune regulation (preventing self-attack) as a stability threshold that can be disrupted.
 
 A pandemic response team uses the model to plan a vaccination rollout with limited supply. For a disease with R0 = 4.5 and a 6-month timeline, which prioritization strategy would the model evidence best support?
 
-A. Vaccinate the youngest populations first because they have the longest remaining lifespan
-B. Distribute vaccines randomly through a lottery system for fairness
-C. Prioritize high-transmission groups (healthcare workers, essential workers, densely housed populations) first to reduce Re below 1 as quickly as possible with limited supply
-D. Vaccinate only the elderly because they have the highest mortality risk
+A. Distribute vaccines randomly through a lottery system for fairness
+B. Vaccinate the youngest populations first because they have the longest remaining lifespan
+C. Vaccinate only the elderly because they have the highest mortality risk
+D. Prioritize high-transmission groups (healthcare workers, essential workers, densely housed populations) first to reduce Re below 1 as quickly as possible with limited supply
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model shows that reducing Re below 1 is the critical objective for stopping exponential growth. Vaccinating high-transmission individuals first has the largest impact on Re per dose administered, slowing spread most efficiently while supply is limited. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that reducing Re below 1 is the critical objective for stopping exponential growth. Vaccinating high-transmission individuals first has the largest impact on Re per dose administered, slowing spread most efficiently while supply is limited. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The model tracks transmission dynamics, not just individual protection. With limited supply, the strategic question is: which vaccinations reduce the most transmission per dose? Consider who drives the most spread in the population. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. The model tracks transmission dynamics, not just individual protection. With limited supply, the strategic question is: which vaccinations reduce the most transmission per dose? Consider who drives the most spread in the population. If you chose C, this choice oversimplifies a multi-factor system by focusing on a single variable. The model tracks transmission dynamics, not just individual protection. With limited supply, the strategic question is: which vaccinations reduce the most transmission per dose? Consider who drives the most spread in the population.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI LS1.A (Cell division and differentiation) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Vaccination Rate, Antigen Exposure), but they can take action on internal components (Antibody Production, Memory Cell Population, Herd Immunity Level, Disease Transmission Rate). They need to decide which action would be most effective based on what the model shows.
+A pharmaceutical company is designing a new vaccine delivery system. Their computational model compares three approaches: a single high-dose injection, a two-dose regimen spaced 21 days apart, and a three-dose regimen with gradually increasing doses over 6 weeks. The model tracks peak antibody levels, memory cell formation, and long-term immunity (measured at 6 months and 12 months). Results show that the three-dose regimen produces 40% more memory cells and 60% longer-lasting immunity than the single dose, despite using the same total antigen quantity.
 
 A student observes that their model produces different outcomes for the same 85% vaccination rate depending on whether the disease has R0 = 3 or R0 = 12. For R0 = 3, the outbreak is contained; for R0 = 12, it spreads widely. Which analysis best explains this difference?
 
 A. The vaccine is less effective against diseases with higher R0
-B. 85% coverage exceeds the herd immunity threshold for R0 = 3 (threshold = 67%) but falls far short of the threshold for R0 = 12 (threshold = 92%), so the same coverage produces opposite outcomes
-C. Diseases with higher R0 mutate faster and evade the vaccine
+B. Diseases with higher R0 mutate faster and evade the vaccine
+C. 85% coverage exceeds the herd immunity threshold for R0 = 3 (threshold = 67%) but falls far short of the threshold for R0 = 12 (threshold = 92%), so the same coverage produces opposite outcomes
 D. The model assigns random outcomes when coverage is between 80% and 90%
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The herd immunity threshold depends directly on R0 (formula: 1 - 1/R0). At 85% coverage, R0 = 3 requires only 67% (covered), but R0 = 12 requires 92% (not covered). The same population-level immunity can be sufficient or inadequate depending on the pathogen's transmissibility. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
-
+Feedback: The herd immunity threshold depends directly on R0 (formula: 1 - 1/R0). At 85% coverage, R0 = 3 requires only 67% (covered), but R0 = 12 requires 92% (not covered). The same population-level immunity can be sufficient or inadequate depending on the pathogen's transmissibility. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. Calculate the herd immunity threshold for each R0 using 1 - (1/R0). For R0 = 3: 1 - (1/3) = 0.67 or 67%. For R0 = 12: 1 - (1/12) = 0.92 or 92%. Now compare each threshold to the 85% coverage. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Calculate the herd immunity threshold for each R0 using 1 - (1/R0). For R0 = 3: 1 - (1/3) = 0.67 or 67%. For R0 = 12: 1 - (1/12) = 0.92 or 92%. Now compare each threshold to the 85% coverage. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. Calculate the herd immunity threshold for each R0 using 1 - (1/R0). For R0 = 3: 1 - (1/3) = 0.67 or 67%. For R0 = 12: 1 - (1/12) = 0.92 or 92%. Now compare each threshold to the 85% coverage.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
+Question 1: B (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-LS1-2, CCC4)
+Question 2: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS1-2, CCC2)
+Question 3: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS1-2, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-LS1-4, CCC7)
+Question 5: C (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-LS1-4, CCC4)
 
+---
 
 ## Resources
 

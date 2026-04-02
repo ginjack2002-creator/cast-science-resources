@@ -732,102 +732,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.D (Weather and Climate) + CCC5 (Energy and Matter)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Number of Clouds, Amount of Sunshine. Some components are external (Number of Clouds) and some are internal (Amount of Sunshine). The student needs to understand what each component represents and how they are organized.
+A class looks outside the window. Today the sky is full of big, gray clouds. The teacher asks the students to describe the weather. One student says it looks like it might rain. Another says it is not very bright outside.
 
-When there are MORE clouds, what happens to the Amount of Sunshine?
+Why is it not very bright outside today?
 
-A. It goes up
-B. It goes down
-C. It stays the same
+A. The sun went away and is not in the sky
+B. The clouds are blocking the sunlight from reaching the ground
+C. It is nighttime even though it looks like daytime
 
 Correct Answer: B
 
-Feedback: Yes! More clouds means less sunshine. The clouds block the sunlight. That is a negative connection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The clouds block the sunlight from reaching the ground, which makes it dimmer and darker outside. The sun is still there, but the clouds are in the way. If you chose A, the sun is still in the sky behind the clouds. It did not go away. We just cannot see it because the clouds are covering it. If you chose C, it is still daytime. It just looks darker because the thick clouds are blocking the sunlight.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.D (Weather and Climate) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Number of Clouds increases, Amount of Sunshine decreases. The student is trying to understand why these relationships are positive or negative.
+The class builds a weather model with two parts: Number of Clouds and Amount of Sunshine. Number of Clouds is how many clouds cover the sky. Amount of Sunshine is how much sunlight reaches the ground. The teacher says the arrow between them has a minus sign.
 
-What kind of connection do Number of Clouds and Amount of Sunshine have?
+What does the minus sign mean in this weather model?
 
-A. Positive: they go the same way
-B. Negative: one goes up, the other goes down
-C. They are not connected
+A. When clouds go up, sunshine goes down
+B. When clouds go up, sunshine goes up too
+C. Clouds and sunshine are not connected
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! It is a negative connection. When clouds go up, sunshine goes down. They go in opposite directions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The minus sign means the two parts go in opposite directions. When Number of Clouds goes up, Amount of Sunshine goes down because the clouds block the sunlight. If you chose B, that would be a plus sign, not a minus sign. A minus means they go in opposite directions. If you chose C, the arrow shows they ARE connected. More clouds means less sunshine.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.1 + CCC1 (Patterns)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.D (Weather and Climate) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Number of Clouds increases, Amount of Sunshine decreases. The student changes one variable to see how the whole system responds.
+A class tracks the weather for five days. On Monday, there are no clouds and it is very sunny. On Tuesday, a few clouds appear and it is mostly sunny. On Wednesday, lots of clouds fill the sky and it is quite dim. On Thursday, the sky is completely covered with clouds and it starts raining.
 
-What is a pattern?
+What pattern do you notice about clouds and sunshine?
 
-A. Something that happens only once
-B. Something that happens the same way again and again
-C. A type of cloud
+A. More clouds means more sunshine
+B. The number of clouds does not change how sunny it is
+C. More clouds means less sunshine
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! A pattern is something that happens the same way again and again, like sunny weeks in summer. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The pattern shows that as the number of clouds went up each day, the amount of sunshine went down. Clouds block sunlight, so more clouds means less sunshine. If you chose A, the opposite happened. Each day had more clouds and less sunshine, not more sunshine. If you chose B, the chart clearly shows they are connected. When clouds increased, sunshine decreased every day.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.D (Weather and Climate) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The weather model shows that when Number of Clouds goes up, Amount of Sunshine goes down (minus sign). One morning, a student looks outside and sees that ALL the clouds are gone. The sky is completely clear and blue.
 
-Why is it dimmer and cooler when the sky is full of clouds?
+What will the Amount of Sunshine be on this clear day?
 
-A. The sun turned off
-B. The clouds block the sunlight
-C. The ground is wet
+A. The same as a cloudy day
+B. Very high, because nothing is blocking the sunlight
+C. Very low, because clouds bring the sunshine
 
 Correct Answer: B
 
-Feedback: Yes! Clouds block the sunlight like a big blanket in the sky, making it dimmer and cooler below. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: With no clouds in the sky, nothing is blocking the sun. That means the Amount of Sunshine will be very high. The minus relationship tells us that when clouds go down, sunshine goes up. If you chose C, clouds do not bring sunshine. Clouds actually block it. Fewer clouds means MORE sunshine. If you chose A, a clear day and a cloudy day are very different. With no clouds blocking the sun, there is much more sunshine.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.D (Weather and Climate) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Number of Clouds), but they can take action on internal components (Amount of Sunshine). They need to decide which action would be most effective based on what the model shows.
+A class is planning an outdoor picnic for Friday. The weather report says big clouds will be moving in on Friday morning. The students know from their model that more clouds means less sunshine.
 
-What is the weather like when the sun is shining and there are no clouds?
+Based on the model, what should the students expect on Friday?
 
-A. Rainy
-B. Sunny
-C. Snowy
+A. The weather will be exactly the same as today
+B. A dimmer, cooler day because clouds will block the sunlight
+C. A bright, sunny day perfect for the picnic
 
 Correct Answer: B
 
-Feedback: Yes! When the sun is shining with no clouds, the weather is sunny. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that more clouds means less sunshine. When big clouds move in, they will block the sun, making it dimmer and cooler than a clear day. If you chose C, the weather report says clouds are coming. More clouds means less sunshine, so it will not be bright and sunny. If you chose A, the weather changes from day to day. The report says clouds are coming Friday, so it will be different from a clear day.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC1)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.D, CCC5)
+Question 2: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.D, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.D, CCC2)
+Question 4: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.D, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS2.D, CCC2)
 
+---
 
 ## Resources
 

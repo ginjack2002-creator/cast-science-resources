@@ -926,7 +926,6 @@ D. Immune response has no effect on Functional Lifespan
 Correct Answer: B
 
 Feedback: Correct. The model reveals that for many implant types, immune rejection — not mechanical failure — is the life-limiting variable. Chronic inflammation creates fibrous capsules that block nutrient transport, prevent tissue integration, and progressively impair device function. Solving biocompatibility extends lifespan more than improving mechanical durability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
 ---
 
 ### Question 2
@@ -937,15 +936,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the model, Biocompatible Material and Molecular Surface Chemistry are both classified as external variables. A student argues that Immune Response Rate should also be external because doctors can prescribe immunosuppressive drugs. What is the best evaluation?
 
-A. The student is correct — any variable that can be influenced is external
-B. Immune Response Rate emerges from the interaction between the material, its surface chemistry, and the patient's individual immune system — while drugs can modulate it, it is fundamentally a system response to the implant rather than a directly set parameter
-C. Immune Response Rate cannot be measured, so it cannot be classified
-D. Immunosuppressive drugs eliminate immune response entirely, making it irrelevant
+A. Immune Response Rate emerges from the interaction between the material, its surface chemistry, and the patient's individual immune system — while drugs can modulate it, it is fundamentally a system response to the implant rather than a directly set parameter
+B. Immunosuppressive drugs eliminate immune response entirely, making it irrelevant
+C. The student is correct — any variable that can be influenced is external
+D. Immune Response Rate cannot be measured, so it cannot be classified
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. External variables are direct engineering inputs set before implantation. Immune Response Rate emerges from the interaction between the chosen material, its surface modification, and the patient's unique biology. While drugs can modulate this response, it remains a system output — the model correctly captures this distinction. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. External variables are direct engineering inputs set before implantation. Immune Response Rate emerges from the interaction between the chosen material, its surface modification, and the patient's unique biology. While drugs can modulate this response, it remains a system output — the model correctly captures this distinction. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -957,14 +955,13 @@ A student runs a simulation of the model. The model shows that when Molecular Su
 The model predicts that a pyrolytic carbon heart valve has excellent Structural Durability (30+ year fatigue life) but triggers moderate immune activation, while a new polymer valve has low immune response but only 8-year Structural Durability. Which model concept best describes this comparison?
 
 A. The polymer is always superior because immune response is more important
-B. Functional Lifespan is limited by whichever variable fails first — the carbon valve's lifespan is limited by immune response, the polymer valve's by mechanical wear — demonstrating that different materials face different life-limiting constraints
-C. Both materials will have identical Functional Lifespans
+B. Both materials will have identical Functional Lifespans
+C. Functional Lifespan is limited by whichever variable fails first — the carbon valve's lifespan is limited by immune response, the polymer valve's by mechanical wear — demonstrating that different materials face different life-limiting constraints
 D. Material choice has no effect on Functional Lifespan in the model
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates the 'weakest link' principle: Functional Lifespan is determined by whichever variable reaches its failure threshold first. Each material trades strength in one area for weakness in another. The optimal material would excel in both, but no current material achieves that. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates the 'weakest link' principle: Functional Lifespan is determined by whichever variable reaches its failure threshold first. Each material trades strength in one area for weakness in another. The optimal material would excel in both, but no current material achieves that. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -975,15 +972,14 @@ Scientists are studying data related to this system. They collected observations
 
 The immune rejection cascade scenario shows the following chain: high Immune Response Rate reduces Blood Flow Integration, which reduces Nutrient Transport, which reduces Cell Attachment Rate, which reduces Functional Lifespan. What type of systemic pattern is this?
 
-A. A negative feedback loop that self-corrects
-B. A feedforward degradation cascade where immune activation triggers sequential failures across multiple dependent variables, with each failure worsening the next
+A. A positive feedback loop where the last variable feeds back to the first
+B. A negative feedback loop that self-corrects
 C. A random correlation with no causal mechanism
-D. A positive feedback loop where the last variable feeds back to the first
+D. A feedforward degradation cascade where immune activation triggers sequential failures across multiple dependent variables, with each failure worsening the next
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This is a feedforward cascade: immune activation causes inflammation, inflammation reduces blood vessel formation around the implant, reduced blood flow starves cells of nutrients, and nutrient-deprived cells cannot attach and integrate. Each step directly causes the next in a unidirectional chain of degradation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is a feedforward cascade: immune activation causes inflammation, inflammation reduces blood vessel formation around the implant, reduced blood flow starves cells of nutrients, and nutrient-deprived cells cannot attach and integrate. Each step directly causes the next in a unidirectional chain of degradation. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -994,24 +990,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A team proposes incorporating living kidney cells into a synthetic filtration membrane to create a bioartificial kidney. Based on the model, what new challenge does adding living cells introduce that a purely synthetic device does not face?
 
-A. Living cells make the device heavier, which is the only concern
-B. Living cells require continuous Nutrient Transport and oxygen supply, are vulnerable to immune attack as foreign biological material, and can die if Blood Flow Integration is insufficient — adding biological complexity to the engineering challenge
-C. Living cells eliminate all biocompatibility concerns because they are biological
-D. Adding living cells has no significant effect on any model variable
+A. Living cells eliminate all biocompatibility concerns because they are biological
+B. Adding living cells has no significant effect on any model variable
+C. Living cells make the device heavier, which is the only concern
+D. Living cells require continuous Nutrient Transport and oxygen supply, are vulnerable to immune attack as foreign biological material, and can die if Blood Flow Integration is insufficient — adding biological complexity to the engineering challenge
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Living cells transform the engineering challenge: they require vascularization for nutrients and oxygen (diffusion limits cells to within 200 micrometers of a blood vessel), they may trigger immune responses if they come from a different individual, and they can die from insufficient blood flow. The device must now sustain living tissue in addition to performing mechanical filtration. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Living cells transform the engineering challenge: they require vascularization for nutrients and oxygen (diffusion limits cells to within 200 micrometers of a blood vessel), they may trigger immune responses if they come from a different individual, and they can die from insufficient blood flow. The device must now sustain living tissue in addition to performing mechanical filtration. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.6, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.6, CCC2)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.6, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.6, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.6, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.6, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.6, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.6, CCC4)
 
 
 ## Resources

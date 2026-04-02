@@ -919,15 +919,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that even with maximum DNA Recovery Quality and Gene Editing Accuracy, Population Viability remains low until hundreds of genetically distinct individuals are created. What bottleneck does this reveal?
 
-A. DNA technology is not advanced enough for de-extinction
-B. The genetic diversity bottleneck — each ancient specimen provides only one genome's worth of variation, and creating a viable population requires many distinct genomes to prevent inbreeding depression, regardless of how accurately individual genomes are reconstructed
-C. Population Viability is unrelated to genetic diversity in the model
-D. Creating one individual is sufficient because it can reproduce asexually
+A. Creating one individual is sufficient because it can reproduce asexually
+B. Population Viability is unrelated to genetic diversity in the model
+C. The genetic diversity bottleneck — each ancient specimen provides only one genome's worth of variation, and creating a viable population requires many distinct genomes to prevent inbreeding depression, regardless of how accurately individual genomes are reconstructed
+D. DNA technology is not advanced enough for de-extinction
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals that technological perfection in reconstructing one genome does not solve the population-level challenge. Each ancient specimen provides unique genetic variation, and few well-preserved specimens exist. Without enough distinct genomes, the founding population lacks the diversity needed for long-term viability, regardless of the quality of individual reconstructions. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that technological perfection in reconstructing one genome does not solve the population-level challenge. Each ancient specimen provides unique genetic variation, and few well-preserved specimens exist. Without enough distinct genomes, the founding population lacks the diversity needed for long-term viability, regardless of the quality of individual reconstructions. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -940,13 +939,12 @@ The ecological mismatch scenario shows viable de-extinct individuals but low Eco
 
 A. Healthy individuals always integrate successfully into any ecosystem
 B. De-extinction is not just a genetics problem but an integrated ecological challenge — a genetically viable organism that lacks an ecological niche, appropriate habitat, and established species relationships cannot sustain itself in the wild
-C. The model incorrectly separates genetics from ecology
-D. Ecological factors are irrelevant to de-extinction success
+C. Ecological factors are irrelevant to de-extinction success
+D. The model incorrectly separates genetics from ecology
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates the cascade structure of de-extinction: solving technology (DNA + gene editing) is necessary but insufficient. Without solving ecology (habitat + niche + species interactions), the animals are confined to managed care — expensive zoo exhibits rather than self-sustaining wild populations. All ten variables must reach viable levels simultaneously. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates the cascade structure of de-extinction: solving technology (DNA + gene editing) is necessary but insufficient. Without solving ecology (habitat + niche + species interactions), the animals are confined to managed care — expensive zoo exhibits rather than self-sustaining wild populations. All ten variables must reach viable levels simultaneously. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -958,14 +956,13 @@ A student runs a simulation of the model. The model shows that when DNA Recovery
 The model classifies Ethical Threshold as an external variable alongside DNA Recovery Quality and Gene Editing Accuracy. Why is an ethical variable included in a scientific model?
 
 A. Ethics is not relevant to science and should be removed from the model
-B. Ethical and societal considerations directly affect funding, regulatory approval, and public support — which determine whether a technically viable project actually proceeds and receives the resources needed for success
-C. The model includes Ethical Threshold only as a placeholder with no functional connections
-D. All external variables in scientific models must include ethical considerations
+B. All external variables in scientific models must include ethical considerations
+C. Ethical and societal considerations directly affect funding, regulatory approval, and public support — which determine whether a technically viable project actually proceeds and receives the resources needed for success
+D. The model includes Ethical Threshold only as a placeholder with no functional connections
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model recognizes that scientific projects exist within societal contexts. High ethical concerns can reduce funding, increase regulatory barriers, and erode public support — all of which constrain the project's ability to achieve the scale needed for population viability. Ethics is not separate from feasibility; it is a determining factor. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
-
+Feedback: Correct. The model recognizes that scientific projects exist within societal contexts. High ethical concerns can reduce funding, increase regulatory barriers, and erode public support — all of which constrain the project's ability to achieve the scale needed for population viability. Ethics is not separate from feasibility; it is a determining factor. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 ---
 
 ### Question 4
@@ -976,15 +973,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model includes Disease Resistance as a variable showing that de-extinct mammoths would face modern pathogens their immune systems never evolved to fight. Which analogy from history best illustrates this vulnerability?
 
-A. The domestication of cats, which adapted easily to human environments
-B. The introduction of European diseases to Indigenous populations in the Americas — populations without evolutionary exposure to specific pathogens suffered catastrophic mortality because their immune systems lacked evolved defenses
+A. Modern humans traveling to Mars, who would face only known Earth pathogens
+B. The domestication of cats, which adapted easily to human environments
 C. The extinction of dinosaurs from asteroid impact, which is unrelated to disease
-D. Modern humans traveling to Mars, who would face only known Earth pathogens
+D. The introduction of European diseases to Indigenous populations in the Americas — populations without evolutionary exposure to specific pathogens suffered catastrophic mortality because their immune systems lacked evolved defenses
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This is a direct parallel: populations without evolutionary exposure to specific pathogens are highly vulnerable. Mammoths have been absent for 4,000 years, during which bacteria, viruses, and parasites have continued evolving. The de-extinct mammoth's immune system would have no evolved defense against these modern pathogens, creating a serious survival challenge. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is a direct parallel: populations without evolutionary exposure to specific pathogens are highly vulnerable. Mammoths have been absent for 4,000 years, during which bacteria, viruses, and parasites have continued evolving. The de-extinct mammoth's immune system would have no evolved defense against these modern pathogens, creating a serious survival challenge. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -995,24 +991,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 After running all three scenarios, a student argues that de-extinction should proceed because the technology is nearly viable, even though ecological barriers remain unsolved. Using model evidence, what is the strongest counterargument?
 
-A. The technology is not actually viable, so the argument fails on its first premise
-B. The model shows that Population Viability, Ecological Integration, and Habitat Availability must ALL reach viable levels for a self-sustaining wild population — technology alone produces managed zoo specimens, not species restoration, and the ecological barriers require habitat-scale interventions that may take decades or centuries
-C. There are no counterarguments to proceeding with de-extinction
-D. The ecological barriers will resolve themselves once the technology is perfected
+A. The model shows that Population Viability, Ecological Integration, and Habitat Availability must ALL reach viable levels for a self-sustaining wild population — technology alone produces managed zoo specimens, not species restoration, and the ecological barriers require habitat-scale interventions that may take decades or centuries
+B. There are no counterarguments to proceeding with de-extinction
+C. The ecological barriers will resolve themselves once the technology is perfected
+D. The technology is not actually viable, so the argument fails on its first premise
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates that de-extinction success requires ALL ten variables at viable levels simultaneously. Technology addresses 2-3 variables (DNA, gene editing, surrogate pregnancy). The remaining 7 ecological, population, and ethical variables require separate, potentially more difficult solutions. Proceeding on technology alone creates expensive captive animals, not restored species. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that de-extinction success requires ALL ten variables at viable levels simultaneously. Technology addresses 2-3 variables (DNA, gene editing, surrogate pregnancy). The remaining 7 ecological, population, and ethical variables require separate, potentially more difficult solutions. Proceeding on technology alone creates expensive captive animals, not restored species. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.4, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.4, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.4, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.4, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.4, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.4, CCC2)
 
 
 ## Resources

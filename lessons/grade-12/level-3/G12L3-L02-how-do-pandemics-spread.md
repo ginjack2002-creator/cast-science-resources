@@ -418,6 +418,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Viral Transmissibility → Cumulative Mortality relationship as
+unconditional. However, this relationship is scientifically
+contingent on Contact Rate being active. Without this condition,
+the simulation produces inaccurate results: Viral Transmissibility drives Cumulative Mortality
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Viral Transmissibility → Cumulative Mortality
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Contact Rate is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Contact Rate active and observe
+     how Viral Transmissibility's effect on Cumulative Mortality is now gated
+   • Toggle Contact Rate ON/OFF while Viral Transmissibility remains constant
+   • Verify that Cumulative Mortality only responds to Viral Transmissibility when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -992,15 +1022,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's model shows that implementing social distancing (reducing Contact Rate by 50%) when R0 = 3 reduces the effective reproduction number to 1.5 but does not stop exponential growth. Which additional intervention does the model suggest is needed?
 
-A. Only a complete lockdown with zero contact can stop the pandemic
+A. Increasing hospital capacity is more important than reducing transmission
 B. A combination of additional interventions (testing, quarantine, and eventually vaccination) must work together with social distancing to push the effective R0 below 1
-C. Social distancing should be abandoned since it does not eliminate spread entirely
-D. Increasing hospital capacity is more important than reducing transmission
+C. Only a complete lockdown with zero contact can stop the pandemic
+D. Social distancing should be abandoned since it does not eliminate spread entirely
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that no single intervention is sufficient when R0 is high. Social distancing reduces R0 from 3 to 1.5, but further reduction below 1 requires layered interventions: testing and quarantine remove infectious individuals from the transmission chain, masks reduce per-contact transmission probability, and vaccination reduces the susceptible population. These interventions are multiplicative, not additive. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model demonstrates that no single intervention is sufficient when R0 is high. Social distancing reduces R0 from 3 to 1.5, but further reduction below 1 requires layered interventions: testing and quarantine remove infectious individuals from the transmission chain, masks reduce per-contact transmission probability, and vaccination reduces the susceptible population. These interventions are multiplicative, not additive. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -1012,14 +1041,13 @@ In the computational model for this lesson, a student draws arrows between compo
 The model reveals that intervening 2 weeks after the first case prevents significantly more deaths than intervening 6 weeks later with identical measures. A student claims this is because 'the virus gets weaker over time.' What is the correct systems-level explanation?
 
 A. Early intervention prevents more deaths because exponential growth means each day of delay doubles or triples the infected population, making the same intervention far less effective against a larger epidemic
-B. The virus evolves to become less deadly over the 4-week delay period
+B. Early interventions are more effective because the government has more funding available at the start of a pandemic
 C. Healthcare workers are more motivated to help during the early phase of a pandemic
-D. Early interventions are more effective because the government has more funding available at the start of a pandemic
+D. The virus evolves to become less deadly over the 4-week delay period
 
 Correct Answer: A
 
-Feedback: Correct. With exponential growth and a doubling time of a few days, a 4-week delay means the infected population is orders of magnitude larger. Social distancing that could have contained 1,000 cases at week 2 now faces 100,000+ cases at week 6. The intervention is identical, but the epidemic it must contain has grown exponentially, making it far less effective at reducing total mortality. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. With exponential growth and a doubling time of a few days, a 4-week delay means the infected population is orders of magnitude larger. Social distancing that could have contained 1,000 cases at week 2 now faces 100,000+ cases at week 6. The intervention is identical, but the epidemic it must contain has grown exponentially, making it far less effective at reducing total mortality. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 3
@@ -1030,15 +1058,14 @@ A student runs a simulation of the model. The model shows that when Viral Transm
 
 A variant emerges at week 20 that partially evades existing immunity, raising the effective R0 from 0.8 (below threshold) back to 1.4 in a population that was approaching herd immunity. What does this reveal about herd immunity as a concept?
 
-A. Herd immunity is a myth because it can never be achieved
-B. Herd immunity is a moving target: variants that increase transmissibility or evade immunity raise the threshold and can reset the susceptible population, enabling new waves
-C. The concept of herd immunity only applies to bacterial diseases, not viral diseases
-D. The variant will quickly die out because most of the population is already immune
+A. Herd immunity is a moving target: variants that increase transmissibility or evade immunity raise the threshold and can reset the susceptible population, enabling new waves
+B. The variant will quickly die out because most of the population is already immune
+C. Herd immunity is a myth because it can never be achieved
+D. The concept of herd immunity only applies to bacterial diseases, not viral diseases
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Herd immunity is not a fixed threshold but depends on the effective R0, which changes when variants alter transmissibility or immune evasion. A variant that partially escapes existing immunity effectively increases the susceptible population, while increased transmissibility raises the herd immunity threshold. This explains why pandemics can have multiple waves even with high vaccination rates. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Herd immunity is not a fixed threshold but depends on the effective R0, which changes when variants alter transmissibility or immune evasion. A variant that partially escapes existing immunity effectively increases the susceptible population, while increased transmissibility raises the herd immunity threshold. This explains why pandemics can have multiple waves even with high vaccination rates. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1050,14 +1077,13 @@ Scientists are studying data related to this system. They collected observations
 Adding a 'Misinformation Spread Rate' component to the model reveals that it reduces both Vaccination Coverage Rate and Quarantine Compliance. Through which mechanism does misinformation most significantly increase Cumulative Mortality in the model?
 
 A. Misinformation directly increases the virus's biological transmissibility
-B. Misinformation reduces the effectiveness of every behavioral intervention simultaneously by undermining the public trust required for compliance, creating a systemic multiplier effect on mortality
-C. People who believe misinformation have weaker immune systems due to stress
-D. Misinformation only affects vaccination rates, not any other intervention
+B. People who believe misinformation have weaker immune systems due to stress
+C. Misinformation only affects vaccination rates, not any other intervention
+D. Misinformation reduces the effectiveness of every behavioral intervention simultaneously by undermining the public trust required for compliance, creating a systemic multiplier effect on mortality
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Misinformation acts as a systemic amplifier because it simultaneously reduces compliance with multiple interventions: vaccination, quarantine, masking, and social distancing. By eroding trust in public health authorities, it undermines the behavioral changes that all non-pharmaceutical interventions depend on, creating a multiplicative effect on transmission that no single medical countermeasure can overcome. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Misinformation acts as a systemic amplifier because it simultaneously reduces compliance with multiple interventions: vaccination, quarantine, masking, and social distancing. By eroding trust in public health authorities, it undermines the behavioral changes that all non-pharmaceutical interventions depend on, creating a multiplicative effect on transmission that no single medical countermeasure can overcome. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1068,24 +1094,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model shows that Economic Impact Index and Cumulative Mortality have a complex, non-linear relationship: both zero intervention and maximum intervention produce poor economic outcomes. What systems concept explains this pattern?
 
-A. Diminishing returns, where each additional intervention costs more but saves fewer lives
-B. An optimization trade-off where moderate, well-timed interventions minimize combined health and economic damage, because uncontrolled spread devastates the economy through illness and death while excessive restrictions devastate it through shutdown
-C. Economic factors are independent of pandemic dynamics and should not be included in the model
-D. Maximum intervention always produces the best economic outcome because healthy workers are productive workers
+A. Economic factors are independent of pandemic dynamics and should not be included in the model
+B. Maximum intervention always produces the best economic outcome because healthy workers are productive workers
+C. An optimization trade-off where moderate, well-timed interventions minimize combined health and economic damage, because uncontrolled spread devastates the economy through illness and death while excessive restrictions devastate it through shutdown
+D. Diminishing returns, where each additional intervention costs more but saves fewer lives
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This is an optimization problem with competing pressures. No intervention allows uncontrolled spread that causes mass illness, death, healthcare collapse, and economic devastation through workforce loss. Maximum sustained restriction prevents spread but causes economic devastation through business closure and unemployment. The model reveals that moderate, well-timed interventions minimize the combined health-economic damage curve. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is an optimization problem with competing pressures. No intervention allows uncontrolled spread that causes mass illness, death, healthcare collapse, and economic devastation through workforce loss. Maximum sustained restriction prevents spread but causes economic devastation through business closure and unemployment. The model reveals that moderate, well-timed interventions minimize the combined health-economic damage curve. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.8, CCC4)
 Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.8, CCC2)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.8, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.8, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.8, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.8, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.8, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.8, CCC4)
 
 
 ## Resources

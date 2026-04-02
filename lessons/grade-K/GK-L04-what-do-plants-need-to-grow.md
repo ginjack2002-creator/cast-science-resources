@@ -732,102 +732,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC2 (Cause and Effect)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Water, Plant Growth. Some components are external (Amount of Water) and some are internal (Plant Growth). The student needs to understand what each component represents and how they are organized.
+A class plants two bean seeds in cups of soil. They put both cups by the window so they get sunshine. They water one cup every day. They do not water the other cup at all. After two weeks, they check both plants.
 
-When a plant gets MORE water, what happens to Plant Growth?
+What will the students most likely see after two weeks?
 
-A. It grows less
-B. It grows more
-C. It does not change
+A. The unwatered plant is taller because it worked harder to find water
+B. The watered plant is tall and green, but the unwatered plant is small and brown
+C. Both plants look the same because they got the same sunshine
 
 Correct Answer: B
 
-Feedback: Yes! More water helps the plant grow bigger and taller. Water carries nutrients through the plant. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Plants need water to grow. The watered plant got what it needed, so it grew tall and green. The unwatered plant did not get water, so it wilted and turned brown. If you chose C, sunshine alone is not enough. Plants need both water AND sunshine. Without water, a plant cannot grow well. If you chose A, plants cannot work harder to find water in a cup. Without water, they dry out and stop growing.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Water increases, Plant Growth increases. The student is trying to understand why these relationships are positive or negative.
+The class builds a model about plant growth. It has two parts: Amount of Water and Plant Growth. Amount of Water is how much water the plant gets. Plant Growth is how tall and healthy the plant becomes. The teacher says one part is the outside part that people control.
 
-What are nutrients?
+Why is Amount of Water the outside part of the model?
 
-A. Bugs that live in the soil
-B. Good things in water and soil that help plants grow
-C. The color of the leaves
+A. Because water comes from inside the plant
+B. Because the plant chooses how much water it drinks
+C. Because WE choose how much water to give the plant
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! Nutrients are good things in water and soil. They are like food for the plant. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Amount of Water is the outside part because people decide how much water to give the plant. We control it by watering the plant a little or a lot. If you chose B, the plant does not choose how much water it gets. People give it water, or rain falls on it. If you chose A, water does not come from inside the plant. It comes from the soil through the roots.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Amount of Water increases, Plant Growth increases. The student changes one variable to see how the whole system responds.
+A student waters three plants differently. Plant 1 gets a little water. Plant 2 gets a medium amount of water. Plant 3 gets a lot of water. After one week, Plant 1 is short, Plant 2 is medium, and Plant 3 is the tallest.
 
-How does water get from the soil to the top of the plant?
+What does this tell us about water and plant growth?
 
-A. It jumps up
-B. The roots suck it up like a straw
-C. Someone pours it on the leaves
+A. More water helps plants grow taller
+B. Water does not affect how plants grow
+C. Less water makes plants grow taller
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! The roots suck up water from the soil and send it all through the plant, like a straw. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The pattern shows that more water led to taller plants. Water carries nutrients and helps the plant make food, so more water supports more growth. If you chose B, water clearly did affect the plants. The plant with the most water grew the tallest. If you chose C, the opposite happened. The plant with the least water was the shortest, not the tallest.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The class model has an arrow from Amount of Water to Plant Growth with a plus sign. The plus sign means when one part goes up, the other goes up too. A student asks what happens if we stop watering the plant completely.
 
-In our model, Amount of Water is the outside part. Why?
+According to the model, what happens if Amount of Water goes all the way down to zero?
 
-A. Because the plant decides how much water it gets
-B. Because WE decide how much water to give the plant
-C. Because water is always the same
+A. Plant Growth goes up because the plant does not need water
+B. Plant Growth stays the same because only sunshine matters
+C. Plant Growth goes down because the plant cannot grow without water
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! WE decide how much water to give the plant, so Amount of Water is the outside part of our model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The plus sign means both parts go in the same direction. If Amount of Water goes down to zero, Plant Growth goes down too. Without water, the plant cannot survive. If you chose A, plants absolutely need water. Without it, they wilt, turn brown, and stop growing. If you chose B, the model shows that water and growth are connected. When water changes, growth changes too.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.C (Organization for Matter and Energy Flow in Organisms) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Water), but they can take action on internal components (Plant Growth). They need to decide which action would be most effective based on what the model shows.
+A student's plant at home is droopy and the soil is very dry. The student's mom says the plant looks like it needs something. The student remembers what they learned in class about what plants need.
 
-What do plants need to grow?
+What should the student do to help the droopy plant?
 
-A. Toys
-B. Water and sunlight
-C. Candy
+A. Talk to the plant so it feels better
+B. Give the plant more water because dry soil means it needs a drink
+C. Put the plant in a dark closet so it can rest
 
 Correct Answer: B
 
-Feedback: Yes! Plants need water and sunlight to grow big and healthy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The soil is dry, which means the plant has not been getting enough water. Giving it water will help it perk up and start growing again. Water is essential for plant health. If you chose C, putting a plant in a dark closet takes away sunshine, which would hurt it more. Plants need light to make food. If you chose A, talking to a plant does not give it what it needs. The dry soil tells us the plant needs water.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.C, CCC2)
+Question 2: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.C, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.C, CCC2)
+Question 4: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.C, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS1.C, CCC2)
 
+---
 
 ## Resources
 

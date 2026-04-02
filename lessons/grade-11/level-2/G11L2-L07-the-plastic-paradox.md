@@ -927,66 +927,63 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ESS3.D (Sustainability and environmental solutions) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Plastic Production and Disposal Rate, UV and Mechanical Fragmentation, Ocean Gyre Concentration, Microplastic Ingestion Rate, Trophic-Level Toxin Concentration, Marine Ecosystem Health. Some components are external (Plastic Production and Disposal Rate) and some are internal (UV and Mechanical Fragmentation, Ocean Gyre Concentration, Microplastic Ingestion Rate, Trophic-Level Toxin Concentration, Marine Ecosystem Health). The student needs to understand what each component represents and how they are organized.
+Marine researchers tracking plastic pollution estimate that 11 million metric tons of plastic enter the oceans annually. A comprehensive lifecycle analysis reveals a paradox: plastic has lower production-phase carbon emissions than alternatives (glass is 5x heavier to transport, aluminum requires 3x more energy to produce, paper generates 4x more wastewater). However, plastic's post-consumer impact is catastrophic because it persists for 450-1,000 years, fragmenting into microplastics that enter food webs at every trophic level.
 
 The model shows that even after reducing plastic input by 50%, Marine Ecosystem Health takes decades to improve. Which characteristic of microplastic pollution best explains this delay?
 
-A. Ocean cleanup technology is too slow to remove accumulated plastic
-B. Existing microplastics persist for centuries because they do not biodegrade, and ocean gyres trap them in permanent accumulation zones with no natural flushing mechanism
-C. Marine organisms prefer eating microplastics over natural food
-D. Reducing production causes economic disruption that harms coastal communities
+A. Existing microplastics persist for centuries because they do not biodegrade, and ocean gyres trap them in permanent accumulation zones with no natural flushing mechanism
+B. Marine organisms prefer eating microplastics over natural food
+C. Reducing production causes economic disruption that harms coastal communities
+D. Ocean cleanup technology is too slow to remove accumulated plastic
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The lag exists because microplastics already in the ocean persist essentially forever and gyres have no mechanism to flush accumulated debris. Even with reduced input, the existing stock continues contaminating food webs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The lag exists because microplastics already in the ocean persist essentially forever and gyres have no mechanism to flush accumulated debris. Even with reduced input, the existing stock continues contaminating food webs. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. The delay is caused by the persistence of existing contamination. Microplastics already in the ocean do not degrade, and gyre circulation traps them indefinitely. Reducing input prevents additional contamination but does not remove what is already there. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. The delay is caused by the persistence of existing contamination. Microplastics already in the ocean do not degrade, and gyre circulation traps them indefinitely. Reducing input prevents additional contamination but does not remove what is already there. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. The delay is caused by the persistence of existing contamination. Microplastics already in the ocean do not degrade, and gyre circulation traps them indefinitely. Reducing input prevents additional contamination but does not remove what is already there.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ESS3.D (Sustainability and environmental solutions) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Plastic Production increases, UV and Mechanical Fragmentation increases; when UV and Mechanical Fragmentation increases, Ocean Gyre Concentration increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of ocean plastic dynamics tracks the journey of a plastic bottle from disposal to environmental impact. The model identifies four phases: macro-waste (0-5 years, visible pollution and wildlife entanglement), fragmentation (5-50 years, UV and wave action break plastic into millimeter-scale pieces), microplastic dispersal (50-200 years, particles enter water column and sediment), and chemical leaching (ongoing, additives like BPA and phthalates release into surrounding water). Each phase creates different ecological impacts through different mechanisms.
 
 The model demonstrates that toxin concentrations increase by factors of 10-100 at each trophic level through biomagnification. If zooplankton contain microplastic-associated toxins at 1 part per billion, what concentration might be found in a fourth-level predator?
 
-A. 4 parts per billion (additive increase)
-B. 1,000 to 1,000,000 parts per billion (multiplicative increase across three trophic level jumps)
-C. 1 part per billion (concentration stays constant)
-D. Less than 1 part per billion (organisms metabolize toxins)
+A. 1 part per billion (concentration stays constant)
+B. 4 parts per billion (additive increase)
+C. Less than 1 part per billion (organisms metabolize toxins)
+D. 1,000 to 1,000,000 parts per billion (multiplicative increase across three trophic level jumps)
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. With 10-100x magnification at each trophic level, three jumps from zooplankton to a 4th-level predator could concentrate toxins by 10^3 to 10^6, reaching parts per million or higher. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: With 10-100x magnification at each trophic level, three jumps from zooplankton to a 4th-level predator could concentrate toxins by 10^3 to 10^6, reaching parts per million or higher. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. Biomagnification is multiplicative, not additive. With 10-100x concentration increase at each trophic level, three jumps produce 10^3 to 10^6 increase (1,000 to 1,000,000x). Starting at 1 ppb, a 4th-level predator could contain 1-1,000 ppm. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. Biomagnification is multiplicative, not additive. With 10-100x concentration increase at each trophic level, three jumps produce 10^3 to 10^6 increase (1,000 to 1,000,000x). Starting at 1 ppb, a 4th-level predator could contain 1-1,000 ppm. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Biomagnification is multiplicative, not additive. With 10-100x concentration increase at each trophic level, three jumps produce 10^3 to 10^6 increase (1,000 to 1,000,000x). Starting at 1 ppb, a 4th-level predator could contain 1-1,000 ppm.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.C (Ecosystem dynamics and resilience) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Plastic Production increases, UV and Mechanical Fragmentation increases and when UV and Mechanical Fragmentation increases, Ocean Gyre Concentration increases and when Ocean Gyre Concentration increases, Microplastic Ingestion Rate increases. The student changes one variable to see how the whole system responds.
+Scientists analyzing marine sediment cores from the deep Pacific find microplastic concentrations that increase exponentially from the 1950s to present. At current deposition rates, the plastic layer being laid down in ocean sediments may become a permanent geological marker of human civilization. The computational model shows that even if all plastic production stopped today, the 150 million tons already in the oceans would continue fragmenting and redistributing for centuries, meaning current ocean microplastic levels represent a long-term commitment, not a reversible condition.
 
 The model compares source reduction versus ocean cleanup at reducing gyre plastic concentration. Why does source reduction vastly outperform cleanup in the model?
 
-A. Cleanup technology does not exist for ocean environments
-B. Fragmentation produces trillions of particles too small to capture, and the inflow rate of 11 million tons per year overwhelms the removal capacity of current cleanup systems at approximately 10,000 tons per year
-C. Source reduction is cheaper but less effective per ton removed
-D. Cleanup operations accidentally harm more marine life than plastic does
+A. Cleanup operations accidentally harm more marine life than plastic does
+B. Source reduction is cheaper but less effective per ton removed
+C. Fragmentation produces trillions of particles too small to capture, and the inflow rate of 11 million tons per year overwhelms the removal capacity of current cleanup systems at approximately 10,000 tons per year
+D. Cleanup technology does not exist for ocean environments
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The math is decisive: inflow exceeds cleanup capacity by roughly 1,000:1, and fragmentation creates particles too small for collection. Prevention outperforms remediation by orders of magnitude. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The math is decisive: inflow exceeds cleanup capacity by roughly 1,000:1, and fragmentation creates particles too small for collection. Prevention outperforms remediation by orders of magnitude. If you chose D, this response dismisses relevant factors that the evidence directly addresses. Source reduction outperforms cleanup because of scale: 11 million tons enter annually versus ~10,000 tons that can be removed. Additionally, fragmentation creates trillions of particles below the size threshold for collection technology, making cleanup of existing microplastics physically impossible. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Source reduction outperforms cleanup because of scale: 11 million tons enter annually versus ~10,000 tons that can be removed. Additionally, fragmentation creates trillions of particles below the size threshold for collection technology, making cleanup of existing microplastics physically impossible. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Source reduction outperforms cleanup because of scale: 11 million tons enter annually versus ~10,000 tons that can be removed. Additionally, fragmentation creates trillions of particles below the size threshold for collection technology, making cleanup of existing microplastics physically impossible.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.D (Sustainability and environmental solutions) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A toxicology study reveals that microplastics act as vectors for persistent organic pollutants (POPs), concentrating hydrophobic chemicals on their surfaces at levels 100-1,000 times higher than surrounding water. When marine organisms ingest microplastics, these concentrated chemicals are released in their digestive systems. The computational model of bioaccumulation shows that chemical concentration increases 10-fold at each trophic level: zooplankton accumulate 10x, small fish 100x, predatory fish 1,000x, and marine mammals 10,000x the ambient water concentration.
 
 Microplastics have been found in human blood, placental tissue, and deep-sea sediments. What does this global distribution pattern reveal about the plastic pollution system?
 
@@ -997,37 +994,36 @@ D. This distribution pattern is normal for all synthetic materials
 
 Correct Answer: B
 
-Feedback: Correct. The ubiquity of microplastics across environments and inside human bodies demonstrates that contamination has reached a scale where prevention is the only viable primary strategy, since cleanup of this diffuse, global pollution is impractical. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The ubiquity of microplastics across environments and inside human bodies demonstrates that contamination has reached a scale where prevention is the only viable primary strategy, since cleanup of this diffuse, global pollution is impractical. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. Finding microplastics in blood, placentas, Arctic ice, and the deepest ocean trenches reveals that contamination is already globally systemic. This distribution makes remediation practically impossible and underscores that prevention (reducing plastic entering the environment) must be the primary response. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. Finding microplastics in blood, placentas, Arctic ice, and the deepest ocean trenches reveals that contamination is already globally systemic. This distribution makes remediation practically impossible and underscores that prevention (reducing plastic entering the environment) must be the primary response. If you chose D, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Finding microplastics in blood, placentas, Arctic ice, and the deepest ocean trenches reveals that contamination is already globally systemic. This distribution makes remediation practically impossible and underscores that prevention (reducing plastic entering the environment) must be the primary response.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI LS2.C (Ecosystem dynamics and resilience) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Plastic Production and Disposal Rate), but they can take action on internal components (UV and Mechanical Fragmentation, Ocean Gyre Concentration, Microplastic Ingestion Rate, Trophic-Level Toxin Concentration, Marine Ecosystem Health). They need to decide which action would be most effective based on what the model shows.
+A municipal waste management agency evaluates three strategies to reduce plastic pollution entering the ocean from their jurisdiction. Strategy 1 bans single-use plastics (reducing plastic waste generation by 30%). Strategy 2 invests in advanced recycling infrastructure (recovering 65% of plastic waste vs. current 9%). Strategy 3 implements extended producer responsibility requiring manufacturers to fund end-of-life plastic management. Their systems model reveals that Strategy 1 reduces ocean input most immediately, but Strategy 3 creates the strongest long-term incentive for manufacturers to redesign products for recyclability, fundamentally shifting the system dynamics.
 
 A policy analyst proposes banning single-use plastics as the primary solution. Using the model, evaluate the likely effectiveness of this approach.
 
-A. Banning single-use plastics would solve the problem completely within 5 years
+A. Bans would increase ocean pollution by forcing consumers to use heavier, more harmful materials
 B. Single-use bans address a significant source of ocean plastic but are insufficient alone because existing ocean contamination persists, industrial and textile microplastics contribute substantially, and alternative materials must be verified as genuinely less harmful
-C. Single-use plastic bans are ineffective because all plastic pollution comes from industrial sources
-D. Bans would increase ocean pollution by forcing consumers to use heavier, more harmful materials
+C. Banning single-use plastics would solve the problem completely within 5 years
+D. Single-use plastic bans are ineffective because all plastic pollution comes from industrial sources
 
 Correct Answer: B
 
-Feedback: Correct. Single-use bans address a major input pathway but are one component of a comprehensive strategy. Existing contamination persists, other sources (microfibers, industrial pellets, tire wear) continue, and replacement materials need life-cycle assessment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Single-use bans address a major input pathway but are one component of a comprehensive strategy. Existing contamination persists, other sources (microfibers, industrial pellets, tire wear) continue, and replacement materials need life-cycle assessment. If you chose C, this response oversimplifies a multi-factor system by focusing on a single variable. Single-use plastic bans address an important source but the model shows the problem requires a systems approach: existing ocean contamination persists for centuries, other sources (microfibers from textiles, tire wear, industrial pellets) contribute significantly, and replacement materials must be assessed for their own environmental impacts. If you chose D, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Single-use plastic bans address an important source but the model shows the problem requires a systems approach: existing ocean contamination persists for centuries, other sources (microfibers from textiles, tire wear, industrial pellets) contribute significantly, and replacement materials must be assessed for their own environmental impacts. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Single-use plastic bans address an important source but the model shows the problem requires a systems approach: existing ocean contamination persists for centuries, other sources (microfibers from textiles, tire wear, industrial pellets) contribute significantly, and replacement materials must be assessed for their own environmental impacts.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
+Question 1: A (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ESS3-4, CCC4)
+Question 2: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS3-4, CCC2)
+Question 3: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS3-4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-LS2-6, CCC7)
+Question 5: B (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-LS2-6, CCC4)
 
+---
 
 ## Resources
 

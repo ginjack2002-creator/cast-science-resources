@@ -833,106 +833,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.2 (Analyze and interpret data) + DCI LS3.A.1 (Traits inherited from parents) + CCC1 (Patterns in inherited traits)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Parent Traits, Genetic Variation, Offspring Appearance. Some components are external (Parent Traits) and some are internal (Genetic Variation, Offspring Appearance). The student needs to understand what each component represents and how they are organized.
+A class observes a litter of six puppies born to the same mother and father. The mother dog has brown fur and floppy ears. The father dog has black fur and pointy ears. Of the six puppies, two have brown fur with floppy ears, one has black fur with pointy ears, two have brown fur with pointy ears, and one has black fur with floppy ears.
 
-In the model, when Parent Traits are very different from each other, what happens to Genetic Variation in the offspring?
+What does this observation BEST show about inherited traits?
 
-A. Genetic Variation decreases because different traits cancel out
-B. Genetic Variation increases because there are more possible trait combinations
-C. Genetic Variation stays the same no matter what
-D. The offspring will have no traits at all
+A. Each puppy gets a different mix of traits from both parents, which is why siblings can look different from each other.
+B. Only the mother's traits are passed to the puppies.
+C. The puppies' traits came from the food the mother ate.
+D. The puppies chose which traits they wanted before being born.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct! When parents are very different, there are more possible combinations of traits, which creates more genetic variation in the offspring. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The puppies show different combinations of the parents' traits. Some got mom's brown fur, some got dad's black fur, some got floppy ears, and some got pointy ears. Each puppy received a unique mix. If you chose D, animals cannot choose their traits. Traits are passed from parents to offspring through genes. If you chose B, the data shows some puppies have the father's black fur and pointy ears, so both parents contribute traits. If you chose C, food does not determine inherited traits like fur color and ear shape. These come from the parents' genes.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.1 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.A.1 (Trait variation in offspring) + CCC1 (Patterns of similarity and difference)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Parent Traits increases, Genetic Variation increases; when Genetic Variation increases, Offspring Appearance increases. The student is trying to understand why these relationships are positive or negative.
+In the trait model, a student sees that Parent Trait Differences has a positive arrow pointing to Genetic Variation. The student runs two simulations. In the first, both parents look very similar (same fur color, same ear shape). In the second, the parents look very different (different fur color, different ear shape, different body size).
 
-What is the difference between an inherited trait and a trait caused by the environment?
+Based on the model, which simulation would produce MORE genetic variation in the offspring?
 
-A. There is no difference
-B. Inherited traits come from parents through genes; environmental traits are caused by surroundings like food and sunlight
-C. Environmental traits are passed to babies; inherited traits are not
-D. Inherited traits can be chosen; environmental traits cannot
+A. Neither simulation would produce any variation because all siblings look the same.
+B. Both simulations would produce the same amount of variation.
+C. The first simulation with similar parents, because matching traits create more options.
+D. The second simulation with different parents, because more parent differences create more possible trait combinations in offspring.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Exactly! Inherited traits (like eye color) come from your parents through genes. Environmental traits (like a scar or learned skills) are caused by your surroundings. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The positive relationship means more parent differences lead to more variation. When parents have many different traits, there are more possible combinations for the offspring, creating more variety. If you chose C, similar parents have fewer different traits to mix, so offspring tend to look more alike, not more varied. If you chose B, the model shows a positive relationship between parent differences and variation, so more differences produce more variation, not the same. If you chose A, siblings from the same parents often look different because each gets a unique combination of traits.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.2 (Analyze data about trait variation) + DCI LS3.B.1 (Environmental vs inherited traits) + CCC1 (Distinguish patterns)
 
-A student runs a simulation of the model. The model shows that when Parent Traits increases, Genetic Variation increases and when Genetic Variation increases, Offspring Appearance increases. The student changes one variable to see how the whole system responds.
+Two identical twin cats are born with the same white fur. One twin lives indoors and keeps its pure white fur. The other twin lives outdoors and its fur becomes slightly yellowish from sun exposure over time. A student says, "The outdoor cat changed its genes to make yellow fur."
 
-Why is variation in a group of animals important?
+What is WRONG with the student's explanation?
 
-A. It is not important at all
-B. It makes the group look prettier
-C. It helps the species survive changes in the environment because different individuals may be better suited to new conditions
-D. It confuses predators so they cannot count the animals
+A. The indoor cat is the one whose fur really changed.
+B. Both cats should have turned yellow because they are twins.
+C. The sun did not change the cat's genes. The yellowish fur is an environmental effect, not an inherited change. The cat's kittens would still be born white.
+D. Nothing is wrong. The sun changed the cat's genes.
 
 Correct Answer: C
 
-Feedback: You got it! Variation is important because when the environment changes, some animals with certain traits may be better at surviving. Variation gives a species a better chance of surviving change. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The sun changed the appearance of the fur but not the cat's genes. This is an environmental effect. If the outdoor cat had kittens, they would still be born with white fur because genes did not change. If you chose D, sunlight can change how things look (like tanning human skin) but does not change genes. The cat's DNA still codes for white fur. If you chose A, the indoor cat kept its original white fur. It was the outdoor cat that changed due to its environment. If you chose B, they started the same, but different environments caused different appearances. The outdoor sun exposure affected only the outdoor cat.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.A.1 (Trait inheritance system) + CCC4 (System components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The trait model includes Parent Traits, Genetic Variation, and Offspring Appearance. The teacher asks students to identify which component is external (the starting input) and which are internal (results that change).
 
-In the trait model, which component is EXTERNAL?
+Which component is EXTERNAL in the trait model?
 
-A. Genetic Variation
-B. Offspring Appearance
-C. Parent Traits
-D. Environment
+A. Genetic Variation, because genes are inside the body.
+B. Parent Traits, because they are the starting input that determines what traits the offspring can inherit.
+C. Offspring Appearance, because you can see it from the outside.
+D. Environment, because it comes from outside the animal.
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Right! Parent Traits is external because it is the starting condition. The parents' traits are set before reproduction. Genetic Variation and Offspring Appearance are internal results. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Parent Traits is external because it is the starting condition. The parents' traits are set before reproduction begins, and they determine what traits are possible in the offspring. If you chose A, Genetic Variation is internal because it results from how the parents' traits mix. It changes based on the parent input. If you chose C, "External" in a model means the starting input, not something visible from outside. Offspring Appearance is an internal result. If you chose D, while environment affects traits, the model's external component is Parent Traits because they drive the system.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict outcomes) + DCI LS3.A.1 (Predict trait variation) + CCC1 (Use patterns to predict)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Parent Traits), but they can take action on internal components (Genetic Variation, Offspring Appearance). They need to decide which action would be most effective based on what the model shows.
+A farmer has two flocks of chickens. Flock A has a rooster and hens that all have the same brown feathers and the same body size. Flock B has a rooster with black feathers and large body, and hens with white feathers and small bodies. Both flocks will have baby chicks this spring. The trait model shows: Parent Trait Differences (+) -> Genetic Variation (+) -> Offspring Appearance Variety.
 
-Why do you think puppies from the same litter can have different fur colors?
+Based on the model, which flock's chicks will MOST LIKELY show more variety in how they look?
 
-A. Someone painted them different colors
-B. Each puppy gets a different mix of traits from the mom and dad
-C. Puppies choose their own fur color
-D. All puppies from the same litter look exactly the same
+A. Neither flock will have any variety because all chickens look the same.
+B. Both flocks will produce identical chicks.
+C. Flock B, because the parents have more different traits, which creates more possible combinations in the chicks.
+D. Flock A, because similar parents produce more variety.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Great thinking! Each puppy gets a unique combination of traits from both parents. That is why siblings can look different from each other. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Flock B's parents have more differences (black vs white feathers, large vs small body). The model shows more parent differences lead to more genetic variation and more variety in offspring appearance. If you chose D, similar parents (like Flock A) have fewer trait differences to mix, so their chicks will look more alike, not more varied. If you chose B, the two flocks have different parents with different levels of trait differences, so their chicks will not be identical. If you chose A, chickens can look very different from each other. Flock B's different parents will produce chicks with varied feather colors and body sizes.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC2)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
+Question 1: A (Cognitive Level: Reason — SEP 4.1.2, DCI LS3.A.1, CCC1)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.A.1, CCC1)
+Question 3: C (Cognitive Level: Reason + Evidence — SEP 4.1.2, DCI LS3.B.1, CCC1)
+Question 4: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.A.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS3.A.1, CCC1)
+
+---
 
 
 ## Resources

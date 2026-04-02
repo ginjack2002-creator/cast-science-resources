@@ -381,6 +381,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Global Population → Crop Yield Per Hectare relationship as
+unconditional. However, this relationship is scientifically
+contingent on Soil Health Index being active. Without this condition,
+the simulation produces inaccurate results: Global Population drives Crop Yield Per Hectare
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Global Population → Crop Yield Per Hectare
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Soil Health Index is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Soil Health Index active and observe
+     how Global Population's effect on Crop Yield Per Hectare is now gated
+   • Toggle Soil Health Index ON/OFF while Global Population remains constant
+   • Verify that Crop Yield Per Hectare only responds to Global Population when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -954,15 +984,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A food system model shows that industrial intensification increases yields by 30% in 5 years but decreases soil health index by 40% over 30 years. A student concludes that intensification is the best strategy because it produces more food. What critical flaw exists in this reasoning?
 
-A. The student is considering only the short-term output without accounting for the long-term decline in the system's productive capacity
-B. The student should focus on water use rather than soil health
+A. The student should focus on water use rather than soil health
+B. The student is considering only the short-term output without accounting for the long-term decline in the system's productive capacity
 C. The 5-year data is unreliable compared to the 30-year data
 D. Soil health is unrelated to crop yield in modern agriculture
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. The student commits a temporal scale error by evaluating a long-term system using short-term data. The 30-year trajectory shows that the initial yield gains are unsustainable because they come at the cost of the soil health that ultimately determines productive capacity. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The student commits a temporal scale error by evaluating a long-term system using short-term data. The 30-year trajectory shows that the initial yield gains are unsustainable because they come at the cost of the soil health that ultimately determines productive capacity. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -981,7 +1010,6 @@ D. Population growth slows in water-scarce regions
 Correct Answer: A
 
 Feedback: Correct. If aquifers are depleted to the point where pumping is no longer economical while cultivable land still exists but cannot be farmed without irrigation, this directly demonstrates that water, not land, is the binding constraint on production capacity. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 3
@@ -992,15 +1020,14 @@ A student runs a simulation of the model. The model shows that when Global Popul
 
 The model demonstrates that sustainable intensification can theoretically feed 10 billion people on current agricultural land. Why does the word 'theoretically' represent an important qualification?
 
-A. Because the model uses inaccurate data about crop yields
-B. Because achieving this outcome requires fundamental transformation of farming practices, food distribution systems, and political-economic structures that face significant implementation barriers
+A. Because sustainable farming always produces less food than industrial farming
+B. Because the model uses inaccurate data about crop yields
 C. Because 10 billion people is an unrealistically high population projection
-D. Because sustainable farming always produces less food than industrial farming
+D. Because achieving this outcome requires fundamental transformation of farming practices, food distribution systems, and political-economic structures that face significant implementation barriers
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows biophysical feasibility, but real-world implementation requires transforming subsidies, supply chains, dietary patterns, trade policies, and land ownership structures. The gap between what is technically possible and what is politically achievable is the central challenge. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows biophysical feasibility, but real-world implementation requires transforming subsidies, supply chains, dietary patterns, trade policies, and land ownership structures. The gap between what is technically possible and what is politically achievable is the central challenge. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1011,15 +1038,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student's model shows that combining waste reduction, soil regeneration, and biodiversity protection produces better long-term food security than any single intervention alone. Which systems concept does this demonstrate?
 
-A. Negative feedback loops always dominate positive feedback loops
-B. Interventions at multiple leverage points simultaneously produce synergistic effects greater than the sum of individual actions
-C. Complex systems are too unpredictable to model accurately
-D. Single interventions are always more cost-effective than combined approaches
+A. Complex systems are too unpredictable to model accurately
+B. Single interventions are always more cost-effective than combined approaches
+C. Interventions at multiple leverage points simultaneously produce synergistic effects greater than the sum of individual actions
+D. Negative feedback loops always dominate positive feedback loops
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This demonstrates synergy in complex systems. Waste reduction frees resources, healthy soil sustains yields, and biodiversity provides ecosystem services. These interventions reinforce each other, producing combined benefits that exceed what any single intervention could achieve alone. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. This demonstrates synergy in complex systems. Waste reduction frees resources, healthy soil sustains yields, and biodiversity provides ecosystem services. These interventions reinforce each other, producing combined benefits that exceed what any single intervention could achieve alone. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1030,23 +1056,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the food system model, a policy advisor must choose where to invest limited resources. Which model finding provides the strongest evidence for prioritizing food waste reduction over agricultural land expansion?
 
-A. Land expansion produces immediate results while waste reduction takes decades to implement
+A. Agricultural land expansion has no environmental consequences in most regions
 B. Waste reduction provides equivalent food availability gains without the environmental costs of deforestation, habitat loss, and soil degradation that come with land expansion
 C. Food waste only occurs in developed countries and is irrelevant globally
-D. Agricultural land expansion has no environmental consequences in most regions
+D. Land expansion produces immediate results while waste reduction takes decades to implement
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that reducing waste by 50% is equivalent to expanding farmland by 25%, but without deforestation, biodiversity loss, increased water demand, or soil degradation. The same food availability outcome with dramatically lower environmental cost makes waste reduction the superior investment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that reducing waste by 50% is equivalent to expanding farmland by 25%, but without deforestation, biodiversity loss, increased water demand, or soil degradation. The same food availability outcome with dramatically lower environmental cost makes waste reduction the superior investment. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC2)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC2)
 Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
 
 

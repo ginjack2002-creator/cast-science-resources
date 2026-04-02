@@ -915,15 +915,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's computational model shows that reducing Energy Generation by 40% causes Atmosphere Control to drop to critical levels within 2 days, but Food Production does not reach critical levels for 30 days. What does this difference reveal about crisis management priorities?
 
-A. Food Production is not important during a crisis
-B. Atmosphere Control has a shorter time-to-critical because breathable air cannot be stored in large quantities, while food reserves provide a buffer
+A. Energy Generation does not actually affect Atmosphere Control
+B. Food Production is not important during a crisis
 C. The model must contain an error because all systems should fail at the same rate
-D. Energy Generation does not actually affect Atmosphere Control
+D. Atmosphere Control has a shorter time-to-critical because breathable air cannot be stored in large quantities, while food reserves provide a buffer
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Different systems have different buffer capacities. Atmosphere composition changes within hours to days without active management, while stored food can sustain crew for weeks. This time-to-critical difference directly informs triage priorities during energy crises. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Different systems have different buffer capacities. Atmosphere composition changes within hours to days without active management, while stored food can sustain crew for weeks. This time-to-critical difference directly informs triage priorities during energy crises. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -935,14 +934,13 @@ In the computational model for this lesson, a student draws arrows between compo
 In the Mars habitat model, Energy Generation is classified as an external (input) variable while Temperature Regulation is classified as internal. What is the best justification for this distinction?
 
 A. External variables are always more important than internal variables
-B. Energy Generation represents a resource that engineers directly control, while Temperature Regulation is a system response that depends on energy availability and environmental conditions
+B. The classification is arbitrary and could be reversed without affecting the model
 C. Internal variables cannot be measured, only estimated
-D. The classification is arbitrary and could be reversed without affecting the model
+D. Energy Generation represents a resource that engineers directly control, while Temperature Regulation is a system response that depends on energy availability and environmental conditions
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. In computational modeling, external (input) variables represent quantities that operators set or control directly. Internal variables emerge from the interactions between inputs and system dynamics. Energy Generation is set by the power system design; Temperature Regulation responds to available energy and Mars surface conditions. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. In computational modeling, external (input) variables represent quantities that operators set or control directly. Internal variables emerge from the interactions between inputs and system dynamics. Energy Generation is set by the power system design; Temperature Regulation responds to available energy and Mars surface conditions. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -954,14 +952,13 @@ A student runs a simulation of the model. The model shows that when Energy Gener
 The model predicts that during a 45-day dust storm, crew psychological well-being degrades, which causes maintenance quality to decline, which causes additional system failures. This pattern is best described as:
 
 A. A linear cause-and-effect chain with no feedback
-B. A positive feedback loop where declining well-being and system failures reinforce each other
-C. A negative feedback loop that stabilizes the system at a lower performance level
-D. An artifact of the model that would not occur in a real habitat
+B. An artifact of the model that would not occur in a real habitat
+C. A positive feedback loop where declining well-being and system failures reinforce each other
+D. A negative feedback loop that stabilizes the system at a lower performance level
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This is a positive (amplifying) feedback loop: psychological stress reduces maintenance quality, which causes more system failures, which increases stress further. Without intervention, the loop spirals toward increasingly dangerous conditions. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This is a positive (amplifying) feedback loop: psychological stress reduces maintenance quality, which causes more system failures, which increases stress further. Without intervention, the loop spirals toward increasingly dangerous conditions. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -972,15 +969,14 @@ Scientists are studying data related to this system. They collected observations
 
 A team redesigns the habitat to use nuclear power instead of solar as the primary energy source. According to the model's systems logic, which prediction is best supported?
 
-A. All other variables remain unchanged because only the energy source is different
+A. Psychological well-being automatically improves because nuclear energy is more powerful
 B. The dust storm crisis scenario becomes far less severe because nuclear power is unaffected by atmospheric dust, eliminating the primary trigger for cascading failures
-C. Nuclear power eliminates the need for systems redundancy entirely
-D. Psychological well-being automatically improves because nuclear energy is more powerful
+C. All other variables remain unchanged because only the energy source is different
+D. Nuclear power eliminates the need for systems redundancy entirely
 
 Correct Answer: B
 
-Feedback: Correct. The dust storm crisis in the model is triggered by reduced solar energy generation. Nuclear power operates independently of atmospheric conditions, so the primary cascade trigger is eliminated. However, nuclear introduces different risks (radiation, mechanical failure) that would need to be modeled separately. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The dust storm crisis in the model is triggered by reduced solar energy generation. Nuclear power operates independently of atmospheric conditions, so the primary cascade trigger is eliminated. However, nuclear introduces different risks (radiation, mechanical failure) that would need to be modeled separately. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -991,24 +987,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A model limitation is that it uses nine components to represent a habitat that would actually contain hundreds of subsystems. How does this simplification most likely affect the model's predictions?
 
-A. The model cannot provide any useful predictions because it is too simplified
-B. The model accurately captures overall system behavior and cascade dynamics but may miss specific failure modes or unexpected interactions between subsystems not represented
+A. The model accurately captures overall system behavior and cascade dynamics but may miss specific failure modes or unexpected interactions between subsystems not represented
+B. The model cannot provide any useful predictions because it is too simplified
 C. Simplification makes the model more accurate because complexity introduces errors
 D. The model overestimates system resilience because it includes too many redundant components
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Model simplification is a standard scientific practice that captures essential dynamics while sacrificing detail. The nine-component model reveals fundamental interdependencies and cascade patterns but cannot predict every specific failure pathway that hundreds of subsystems might produce. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Model simplification is a standard scientific practice that captures essential dynamics while sacrificing detail. The nine-component model reveals fundamental interdependencies and cascade patterns but cannot predict every specific failure pathway that hundreds of subsystems might produce. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.4, CCC2)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.4, CCC5)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.4, CCC2)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.4, CCC2)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.4, CCC5)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.4, CCC2)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.4, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.4, CCC4)
 
 
 ## Resources

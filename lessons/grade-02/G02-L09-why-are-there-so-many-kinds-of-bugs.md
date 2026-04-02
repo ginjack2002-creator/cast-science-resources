@@ -833,108 +833,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Make observations to compare diversity) + DCI LS4.D (Different habitats support different life) + CCC1 (Identify patterns in observations)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Habitat Type, Body Features, Survival Success. Some components are external (Habitat Type) and some are internal (Body Features, Survival Success). The student needs to understand what each component represents and how they are organized.
+A student visits two habitats. In a sunny garden, she sees butterflies with colorful wings, ladybugs with spotted shells, and bees with fuzzy bodies. At a pond, she sees water beetles with flat paddle legs, dragonflies with long thin bodies, and water striders with wide-spread legs that walk on the water surface.
 
-A water beetle has flat, paddle-shaped legs. Why does it have this body feature?
+What pattern does the student notice about insects in different habitats?
 
-A. Because it chose to have paddle legs
-B. Because paddle-shaped legs help it swim in its pond habitat
-C. Because all insects have paddle-shaped legs
-D. Because it needs to fly between flowers
+A. All insects look exactly the same no matter where they live
+B. Pond insects are better than garden insects
+C. Insects in different habitats have different body features that help them survive in their specific habitat
+D. Only garden insects have interesting body features
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! The water beetle's flat, paddle-shaped legs are an adaptation that helps it swim in its pond habitat. Its body features match the challenges of living in water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Each habitat has insects with body features suited to that place. Garden insects have wings for flying to flowers and colors for camouflage among plants. Pond insects have features for living in or on water, like paddle legs and water-walking feet. Different habitats need different features. If you chose A, the student clearly saw very different features in each habitat. Butterflies have wings while water beetles have paddle legs. If you chose D, both habitats had insects with interesting features. Paddle legs and water-walking abilities are just as interesting as colorful wings. If you chose B, neither group is better. Both are well-suited to their own habitat.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Develop a model to represent relationships) + DCI LS4.D (Diversity of life in different habitats) + CCC4 (Describe how parts of a system work together)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Habitat Type increases, Body Features increases; when Body Features increases, Survival Success increases. The student is trying to understand why these relationships are positive or negative.
+In a model of insect diversity, Habitat Type is an external component. Body Features is an internal component. The model shows a positive relationship: when the habitat type changes, the body features that help insects survive also change.
 
-What is diversity?
+A student changes the habitat in the model from "garden" to "desert." Based on the model, what would happen to the body features?
 
-A. When all living things look the same
-B. Having many different kinds of living things with lots of variety
-C. When animals live alone
-D. A type of insect
+A. The body features would change to match the desert, like thicker shells to hold in water and pale colors to blend with sand
+B. The body features would stay the same as garden insects because habitat does not matter
+C. The insects would disappear because nothing lives in deserts
+D. Desert insects would have the same colorful wings as garden butterflies
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Diversity means having many different kinds of living things with lots of variety. Earth has incredible diversity, with over a million different insect species alone. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows a positive relationship between habitat type and body features. When the habitat changes to desert, the body features change too. Desert insects need thick shells to prevent water loss and pale colors to blend with sand, very different from garden insects. If you chose B, the model specifically shows that habitat type DOES change body features. That is the positive relationship. If you chose D, colorful wings help in gardens with flowers, not in deserts with sand. Desert insects need different features for a different habitat. If you chose C, many insects live in deserts. They have special features like thick shells and nocturnal habits that help them survive the heat and dryness.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.2 (Use observations to describe patterns in diversity) + DCI LS4.D (Organisms have different features suited to habitats) + CCC6 (Relate the structure of an object to its function)
 
-A student runs a simulation of the model. The model shows that when Habitat Type increases, Body Features increases and when Body Features increases, Survival Success increases. The student changes one variable to see how the whole system responds.
+A water beetle has flat, paddle-shaped back legs. A grasshopper has long, powerful back legs with big muscles. Both are insects with six legs, but their back legs look very different.
 
-In our model, what happens when you change the Habitat Type from garden to pond?
+Why do these two insects have such different back legs?
 
-A. The Body Features stay exactly the same
-B. The Body Features change because pond insects need different features than garden insects
-C. The insects disappear
-D. Nothing changes at all
+A. The grasshopper chose to have long legs because it wanted to jump
+B. The paddle legs help the beetle swim in water, and the long muscular legs help the grasshopper jump in fields, so each leg shape matches its habitat
+C. All insects should have the same legs, so one of them is wrong
+D. The water beetle's legs are broken and do not work properly
 
 Correct Answer: B
 
-Feedback: Correct! Different habitats need different body features. Garden insects need wings and camouflage, while pond insects need swimming legs and waterproof bodies. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Each insect's leg shape matches the challenge of its habitat. Flat paddle legs push through water like oars, perfect for a pond habitat. Long muscular legs launch the grasshopper into the air, perfect for escaping predators in a grassy field. Structure matches function. If you chose D, the water beetle's legs work perfectly for swimming. Paddle shape is an adaptation, not a defect. If you chose C, different habitats require different body features. There is no single "correct" leg shape for all insects. If you chose A, insects do not choose their features. Their body parts are adaptations that developed over many generations to match their habitat.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1 (Construct an explanation about diversity) + DCI LS4.D (Different life in different habitats) + CCC4 (Describe interactions between parts of a system)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student wonders why there are over one million different species of insects on Earth. Her teacher explains that Earth has many different habitats: gardens, ponds, forests, deserts, caves, treetops, underground, and many more. Each habitat has different challenges.
 
-Why is it important for an insect's body features to match its habitat?
+Why does having many different habitats lead to many different kinds of insects?
 
-A. It is not important at all
-B. So the insect looks pretty
-C. Because matching features help the insect find food, escape danger, and survive
-D. Because insects with the wrong features grow bigger
+A. Because there is only one type of habitat on Earth
+B. Because each different habitat needs insects with different body features to survive there, so over time many different kinds evolved
+C. Because insects all look the same in every habitat
+D. Because insects like to travel to many places
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: That is right! When body features match the habitat, the insect can find food, hide from predators, and survive. A butterfly's wings help it fly to flowers in a garden, and a beetle's paddle legs help it swim in a pond. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Diversity of habitats leads to diversity of life. Each habitat has different challenges (water, heat, cold, predators), so insects in each place need different features. Over time, this led to over one million different insect species, each specialized for its own habitat. If you chose D, while insects do move around, the reason for so many kinds is that different habitats require different features, not just that insects travel. If you chose C, the whole lesson shows that insects look very different depending on their habitat. A butterfly looks nothing like a water beetle. If you chose A, Earth has countless different habitats. That is exactly why there are so many different insects.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.2 (Use a model to predict outcomes) + DCI LS4.D (Diversity of life across habitats) + CCC4 (Describe how system components interact)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Habitat Type), but they can take action on internal components (Body Features, Survival Success). They need to decide which action would be most effective based on what the model shows.
+In the insect diversity model, Habitat Type affects Body Features (positive relationship), and Body Features affect Survival Success (positive relationship). A student runs the model and puts a butterfly (wings, light body, long tongue for nectar) into a pond habitat instead of its garden habitat.
 
-Why do you think there are so many different kinds of insects?
+Based on the model, what would happen to the butterfly's survival success?
 
-A. Because there is only one kind of place to live
-B. Because there are many different places to live and each needs different insects
-C. Because all insects look the same
-D. Because insects choose to look different for fun
+A. Survival success would be the same as in a garden
+B. The butterfly would instantly grow paddle legs to survive in the pond
+C. Survival success would be high because butterflies can live anywhere
+D. Survival success would be very low because the butterfly's body features do not match the pond habitat, so it cannot swim, find food, or survive in water
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: That is right! There are many different habitats on Earth, and each habitat needs insects with different body features to survive there. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that body features must match the habitat for survival success. A butterfly's wings, light body, and nectar tongue are perfect for a garden but useless in a pond. It cannot swim, it cannot find nectar flowers in water, and it would drown. Mismatched features mean low survival. If you chose C, butterflies cannot live anywhere. They are specialized for flying habitats with flowers, not water habitats. If you chose A, survival depends on whether features match the habitat. A pond is very different from a garden, so survival would not be the same. If you chose B, animals cannot instantly change their body features. Adaptations develop over many generations, not in one moment.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 4.1, DCI LS4.D, CCC1)
+Question 2: A (Cognitive Level: Predict — SEP 2.1, DCI LS4.D, CCC4)
+Question 3: B (Cognitive Level: Reason + Explain — SEP 4.2, DCI LS4.D, CCC6)
+Question 4: B (Cognitive Level: Reason — SEP 6.1, DCI LS4.D, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.2, DCI LS4.D, CCC4)
 
-
+---
 ## Resources
 
 | Resource | Link |

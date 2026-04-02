@@ -831,106 +831,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Construct an argument with evidence) + DCI LS2.A.1 (Interdependent relationships in ecosystems) + CCC2 (Cause and effect of pollination)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Pollinator Visits, Pollination Success, Fruit Production. Some components are external (Pollinator Visits) and some are internal (Pollination Success, Fruit Production). The student needs to understand what each component represents and how they are organized.
+A farmer grows apple trees in an orchard. Every spring, hundreds of bees visit the apple blossoms, flying from flower to flower drinking nectar. The farmer notices that the trees visited by the most bees always produce the most apples in the fall. Trees on the edge of the orchard, which get fewer bee visits, produce fewer apples.
 
-In the pollination model, when Pollinator Visits increase, what happens to Pollination Success?
+What BEST explains why trees with more bee visits produce more apples?
 
-A. Pollination Success decreases because the bees get tired
-B. Pollination Success increases because more flowers receive pollen
-C. Pollination Success stays the same
-D. Pollination Success disappears
+A. Bees bring water to the trees to help the apples grow.
+B. More bee visits mean more pollen is carried between flowers, which allows more flowers to become pollinated and grow into apples.
+C. The bees eat insects that would have eaten the apples.
+D. Bees make the apples grow bigger by fanning them with their wings.
 
 Correct Answer: B
 
-Feedback: Correct! Pollinator Visits and Pollination Success have a positive relationship. More bee visits means more flowers receive pollen and can start making seeds. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: When bees visit flowers, sticky pollen attaches to their fuzzy bodies and gets carried to other flowers. More visits mean more flowers are pollinated, and pollinated flowers can grow into fruit. If you chose D, bees do not help apples grow by fanning. Their role is carrying pollen between flowers to enable pollination. If you chose A, bees drink nectar from flowers. They do not carry water to trees. If you chose C, while some insects eat crops, the main role of bees is pollination, not pest control. The connection is between bee visits and pollen transfer.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.A.1 (Plant-pollinator interdependence) + CCC2 (Cause and effect in systems)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Pollinator Visits increases, Pollination Success increases; when Pollination Success increases, Fruit Production increases. The student is trying to understand why these relationships are positive or negative.
+In the pollination model, Pollinator Visits has a positive arrow to Pollination Success, and Pollination Success has a positive arrow to Fruit Production. A student runs the model with zero pollinator visits to see what happens.
 
-What does interdependence mean in the relationship between bees and flowers?
+Based on the model, what would happen to Fruit Production when Pollinator Visits drops to zero?
 
-A. Bees and flowers have nothing to do with each other
-B. Only bees need flowers, but flowers do not need bees
-C. Bees and flowers need each other to survive: bees need nectar for food, and flowers need bees to spread pollen
-D. Only flowers need bees, but bees do not need flowers
+A. Fruit Production would drop to very low or zero because no pollen is carried between flowers.
+B. Fruit Production would stay normal because plants do not need pollinators.
+C. Fruit Production would increase because the flowers would not be disturbed.
+D. Fruit Production would double because the bees are not eating the fruit.
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Exactly! Interdependence means they BOTH need each other. Bees need flower nectar for food, and flowers need bees to carry pollen so they can make seeds and fruit. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: With zero pollinator visits, no pollen moves between flowers. Without pollination, flowers cannot develop into fruit. The positive chain means zero input leads to zero output. If you chose B, most flowering plants need pollinators to transfer pollen. Without pollination, they cannot make fruit or seeds. If you chose C, bees visiting flowers does not disturb them. Bees help by carrying pollen, which is essential for fruit production. If you chose D, bees do not eat fruit. They drink nectar and carry pollen. Without their visits, fruit production drops, not increases.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Construct argument about interdependence) + DCI LS2.A.1 (Mutually beneficial relationships) + CCC2 (Cause and effect of interdependence)
 
-A student runs a simulation of the model. The model shows that when Pollinator Visits increases, Pollination Success increases and when Pollination Success increases, Fruit Production increases. The student changes one variable to see how the whole system responds.
+A student says, "Bees need flowers, but flowers do not need bees." The teacher asks the class to think about what would happen if either bees or flowers disappeared. Students discuss that bees get nectar (food) from flowers, and flowers get their pollen carried to other flowers by bees.
 
-In the 'No Pollinators' scenario, what happened to Fruit Production?
+Which response BEST corrects the student's statement?
 
-A. Fruit Production stayed normal
-B. Fruit Production increased
-C. Fruit Production dropped to very low or zero because no pollen was being moved between flowers
-D. Fruit Production doubled
+A. Neither bees nor flowers need each other. They just happen to be in the same place.
+B. The student is correct. Flowers can make fruit without any help from bees.
+C. Bees and flowers are interdependent, meaning they BOTH need each other. Bees need flower nectar for food, and flowers need bees to carry pollen so they can make seeds and fruit.
+D. Only flowers need bees. Bees do not get anything from flowers.
 
 Correct Answer: C
 
-Feedback: You got it! With no pollinators visiting, no pollen moves between flowers. Without pollination, plants cannot make fruit or seeds, so Fruit Production drops to near zero. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Interdependence means both organisms need each other. Bees depend on flowers for nectar (food), and flowers depend on bees to carry pollen for reproduction. If either disappeared, the other would suffer. If you chose B, most flowering plants cannot make fruit without pollination. They need bees or other pollinators to transfer pollen. If you chose D, this is backwards. Bees absolutely need flowers for nectar, which is their main food source. If you chose A, bees and flowers have a deep, essential relationship. It is not a coincidence that bees visit flowers.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine system components) + DCI LS2.A.1 (Pollination system) + CCC4 (System components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The pollination model includes Pollinator Visits, Pollination Success, Seed Production, and Fruit Production. The teacher asks which component is external (the starting input) and which are internal (results).
 
-About what percentage of food crops depend on pollinators like bees?
+Which component is EXTERNAL in the pollination model?
 
-A. About 10%
-B. About 25%
-C. About 50%
-D. About 75%
+A. Seed Production, because seeds are planted outside in the ground.
+B. Fruit Production, because we can see the fruit outside the plant.
+C. Pollination Success, because it is the most important part.
+D. Pollinator Visits, because it is the starting input that drives the entire system.
 
 Correct Answer: D
 
-Feedback: Right! About 75% of food crops depend on pollinators. That includes apples, strawberries, almonds, chocolate, and many more foods we eat every day. If you chose A, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Pollinator Visits is external because it is the starting input. The number of bee visits determines Pollination Success, which determines Seed and Fruit Production. If you chose C, Pollination Success is internal because it depends on how many pollinators visit. It changes as a result. If you chose B, Fruit Production is the final output of the system. It depends on all the other components, so it is internal. If you chose A, Seed Production is internal because it results from successful pollination, which depends on pollinator visits.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS2.A.1 (Predict ecosystem outcomes) + CCC2 (Predict cause and effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Pollinator Visits), but they can take action on internal components (Pollination Success, Fruit Production). They need to decide which action would be most effective based on what the model shows.
+A strawberry farmer has two fields side by side. Field A is next to a meadow full of wildflowers where many bees live. Field B is next to a parking lot with no flowers and very few bees. Both fields have the same type of strawberry plants, the same soil, and the same amount of water and sunlight. The model shows: Pollinator Visits (+) -> Pollination Success (+) -> Fruit Production.
 
-Why do you think bees visit flowers?
+Based on the model, which field will MOST LIKELY produce more strawberries, and why?
 
-A. Bees like to smell the flowers
-B. Bees drink a sugary liquid called nectar from inside the flowers
-C. Bees are lost and looking for their hive
-D. Bees want to sting the flowers
+A. Field B, because fewer bees means less pollen is removed from the flowers.
+B. Field B, because the parking lot blocks wind that would damage the plants.
+C. Field A, because more bees from the nearby meadow will visit the strawberry flowers, increasing pollination and fruit production.
+D. Both fields will produce the same amount because they have the same soil and water.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! Bees visit flowers to drink nectar, a sweet liquid that flowers make. While drinking, pollen sticks to the bee's fuzzy body. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Field A is near a meadow with many bees, so it will get more pollinator visits. The model shows more visits lead to more pollination and more fruit. Field B has few bees nearby, so fewer flowers will be pollinated. If you chose B, wind protection from a parking lot does not compensate for the lack of pollinators. Strawberry plants need bees to produce fruit. If you chose D, even though soil, water, and sunlight are the same, pollinator access is different. More bees means more fruit. If you chose A, bees do not remove pollen harmfully. They carry pollen between flowers, which is essential for fruit production.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
-Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
+Question 1: B (Cognitive Level: Reason — SEP 7.1.1, DCI LS2.A.1, CCC2)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.A.1, CCC2)
+Question 3: C (Cognitive Level: Reason + Evidence — SEP 7.1.1, DCI LS2.A.1, CCC2)
+Question 4: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.A.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS2.A.1, CCC2)
+
+---
 
 
 ## Resources

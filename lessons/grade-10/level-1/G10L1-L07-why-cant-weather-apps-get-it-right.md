@@ -902,15 +902,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the Butterfly Effect Test scenario, two model runs with Solar Radiation differing by only 0.1% produce nearly identical 3-day forecasts but completely different 10-day forecasts. What mathematical property of the atmosphere does this demonstrate?
 
-A. The atmosphere follows random, unpredictable behavior at all timescales.
-B. Deterministic chaos, where the system follows precise physical laws but small initial differences grow exponentially, making long-range prediction impossible.
-C. Measurement instruments are too imprecise for useful forecasting.
-D. The model is flawed because a 0.1% change should not affect the forecast.
+A. Deterministic chaos, where the system follows precise physical laws but small initial differences grow exponentially, making long-range prediction impossible.
+B. Measurement instruments are too imprecise for useful forecasting.
+C. The model is flawed because a 0.1% change should not affect the forecast.
+D. The atmosphere follows random, unpredictable behavior at all timescales.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This demonstrates deterministic chaos: the system obeys exact physical laws (it is not random), but infinitesimal differences in starting conditions amplify exponentially, producing divergent outcomes after several days. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This demonstrates deterministic chaos: the system obeys exact physical laws (it is not random), but infinitesimal differences in starting conditions amplify exponentially, producing divergent outcomes after several days. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -922,14 +921,13 @@ In the computational model for this lesson, a student draws arrows between compo
 The model shows that Storm Probability increases when high Moisture Content coincides with strong Solar Radiation. A student asks why deserts have strong solar radiation but few thunderstorms. Which model component explains this?
 
 A. Wind Speed, because deserts have too much wind for storms to form.
-B. Moisture Content, because storms require simultaneous presence of multiple ingredients, and deserts lack sufficient atmospheric moisture despite having strong solar heating.
-C. Air Temperature, because deserts are too hot for storms.
+B. Air Temperature, because deserts are too hot for storms.
+C. Moisture Content, because storms require simultaneous presence of multiple ingredients, and deserts lack sufficient atmospheric moisture despite having strong solar heating.
 D. Solar Radiation Input, which is actually weaker in deserts than other regions.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates that storm formation requires MULTIPLE ingredients simultaneously. Deserts have strong heating but lack moisture. Without sufficient moisture, atmospheric instability alone cannot produce storms. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that storm formation requires MULTIPLE ingredients simultaneously. Deserts have strong heating but lack moisture. Without sufficient moisture, atmospheric instability alone cannot produce storms. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -940,15 +938,14 @@ A student runs a simulation of the model. The model shows that when Solar Radiat
 
 Based on the model's forecast accuracy decay curve (95% at 1 day, 80% at 5 days, 50% at 10 days), a technology company claims its new AI system will produce accurate 30-day forecasts. What does the model's chaos theory framework predict about this claim?
 
-A. AI could achieve this because it can process data faster than traditional models.
+A. AI would only need slightly more data to achieve 30-day accuracy.
 B. The claim violates the fundamental predictability limit of chaotic atmospheric systems. No technology can extend useful forecasts beyond approximately 2-3 weeks.
-C. AI would only need slightly more data to achieve 30-day accuracy.
-D. The model cannot evaluate this claim because it doesn't include AI.
+C. The model cannot evaluate this claim because it doesn't include AI.
+D. AI could achieve this because it can process data faster than traditional models.
 
 Correct Answer: B
 
-Feedback: Correct. The theoretical predictability limit for the atmosphere (~2-3 weeks) is a mathematical property of the chaotic equations, not a technology limitation. No computational advancement can overcome this fundamental boundary. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The theoretical predictability limit for the atmosphere (~2-3 weeks) is a mathematical property of the chaotic equations, not a technology limitation. No computational advancement can overcome this fundamental boundary. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -960,14 +957,13 @@ Scientists are studying data related to this system. They collected observations
 The model demonstrates that all five atmospheric variables (solar radiation, temperature, moisture, wind, storm probability) interact with each other. Why does this interconnection make weather prediction particularly challenging?
 
 A. It means only one variable needs to be measured accurately for a good forecast.
-B. Each variable's error feeds into every other variable's calculation, causing errors to compound and propagate through the entire system simultaneously.
+B. Only temperature and moisture interact; the other variables are independent.
 C. The interactions cancel each other out, making the system simpler than it appears.
-D. Only temperature and moisture interact; the other variables are independent.
+D. Each variable's error feeds into every other variable's calculation, causing errors to compound and propagate through the entire system simultaneously.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. In an interconnected system, measurement errors in ANY variable propagate to ALL other variables through their interactions. This error propagation compounds exponentially in a chaotic system. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. In an interconnected system, measurement errors in ANY variable propagate to ALL other variables through their interactions. This error propagation compounds exponentially in a chaotic system. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -979,23 +975,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 A school principal wants to know if it will rain during an outdoor event in 14 days. Based on the model's findings about forecast accuracy, which recommendation is most scientifically sound?
 
 A. Check the 14-day forecast now and plan accordingly.
-B. 14-day forecasts are unreliable. Plan for both scenarios now, and check 3-5 day forecasts closer to the event for a more accurate prediction.
-C. Weather 14 days out is completely random, so there is no useful information available.
-D. The model shows that 14-day rain predictions are 90% accurate, so trust the current forecast.
+B. The model shows that 14-day rain predictions are 90% accurate, so trust the current forecast.
+C. 14-day forecasts are unreliable. Plan for both scenarios now, and check 3-5 day forecasts closer to the event for a more accurate prediction.
+D. Weather 14 days out is completely random, so there is no useful information available.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows 14-day forecasts are near the predictability limit and barely better than climatological averages. The scientifically sound approach is flexible planning now with decision-making based on more accurate 3-5 day forecasts. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows 14-day forecasts are near the predictability limit and barely better than climatological averages. The scientifically sound approach is flexible planning now with decision-making based on more accurate 3-5 day forecasts. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.5, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.5, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.5, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.5, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.5, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.5, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.5, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.5, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.5, CCC4)
 
 
 ## Resources

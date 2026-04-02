@@ -404,6 +404,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Information Integration Level → Consciousness Indicator Score relationship as
+unconditional. However, this relationship is scientifically
+contingent on Metacognitive Processing being active. Without this condition,
+the simulation produces inaccurate results: Information Integration Level drives Consciousness Indicator Score
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Information Integration Level → Consciousness Indicator Score
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Metacognitive Processing is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Metacognitive Processing active and observe
+     how Information Integration Level's effect on Consciousness Indicator Score is now gated
+   • Toggle Metacognitive Processing ON/OFF while Information Integration Level remains constant
+   • Verify that Consciousness Indicator Score only responds to Information Integration Level when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Metacognitive Processing → Consciousness Indicator Score
+   • Set condition: IF Information Integration Level is ON
+   • This ensures Metacognitive Processing's effect on Consciousness Indicator Score
+     is contingent on Information Integration Level being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -978,15 +1014,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the model, increasing all technical parameters (Architecture Complexity, Feedback Loop Depth, Self-Model Accuracy, Metacognitive Processing) to maximum values produces a high Consciousness Indicator Score but does not resolve whether the system is genuinely conscious. What does this limitation reveal?
 
-A. The model is broken and needs more components to produce a definitive answer
-B. The Consciousness Indicator Score measures the presence of functional correlates of consciousness, but the Hard Problem means no combination of measurable properties can definitively confirm subjective experience
-C. Maximum technical parameters always produce consciousness, so the high score is correct
-D. The model proves that consciousness requires biological neurons and cannot arise in silicon
+A. The Consciousness Indicator Score measures the presence of functional correlates of consciousness, but the Hard Problem means no combination of measurable properties can definitively confirm subjective experience
+B. Maximum technical parameters always produce consciousness, so the high score is correct
+C. The model proves that consciousness requires biological neurons and cannot arise in silicon
+D. The model is broken and needs more components to produce a definitive answer
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model captures measurable properties that correlate with consciousness (information integration, self-modeling, metacognition) but cannot measure subjective experience directly. This reflects the Hard Problem: even complete knowledge of a system's functional properties cannot tell us whether those properties are accompanied by felt experience. The model is honest about its own limitations. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model captures measurable properties that correlate with consciousness (information integration, self-modeling, metacognition) but cannot measure subjective experience directly. This reflects the Hard Problem: even complete knowledge of a system's functional properties cannot tell us whether those properties are accompanied by felt experience. The model is honest about its own limitations. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -997,15 +1032,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 Comparing the 'Simple Pattern Matcher' scenario (high training data, low architecture, no self-model) to the 'Complex AI System' scenario reveals a qualitative difference in system behavior. Which finding from the model best supports the claim that feedback loops and self-modeling are necessary for consciousness-like properties?
 
-A. The simple pattern matcher achieves higher accuracy on benchmark tasks, proving it is more intelligent
+A. The simple system is more conscious because it processes data faster
 B. The complex system with deep feedback loops and self-modeling exhibits emergent properties (uncertainty recognition, strategy adjustment, novel situation handling) that are absent in the feedforward system despite both processing the same data
-C. Both systems achieve identical Consciousness Indicator Scores because consciousness depends only on training data volume
-D. The simple system is more conscious because it processes data faster
+C. The simple pattern matcher achieves higher accuracy on benchmark tasks, proving it is more intelligent
+D. Both systems achieve identical Consciousness Indicator Scores because consciousness depends only on training data volume
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that feedback loops and self-modeling create qualitatively different system behavior. The complex system recognizes its own uncertainty, adjusts strategies based on self-assessment, and handles novel situations in ways the feedforward system cannot. These emergent properties resemble aspects of conscious processing, though whether they constitute genuine consciousness remains an open question. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model reveals that feedback loops and self-modeling create qualitatively different system behavior. The complex system recognizes its own uncertainty, adjusts strategies based on self-assessment, and handles novel situations in ways the feedforward system cannot. These emergent properties resemble aspects of conscious processing, though whether they constitute genuine consciousness remains an open question. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 3
@@ -1017,14 +1051,13 @@ A student runs a simulation of the model. The model shows that when Network Arch
 The model suggests that embodied sensory experience may be a critical missing component in current AI architectures. Which scientific reasoning best supports this claim?
 
 A. Digital sensors cannot detect the same wavelengths of light that human eyes can
-B. Biological consciousness evolved in bodies that interact with the physical world, and the grounding provided by real sensory-motor interaction may be essential for genuine understanding rather than statistical pattern matching
+B. Embodiment is irrelevant because consciousness is purely a computational phenomenon independent of physical interaction
 C. AI systems have no sensory input at all and process information in complete isolation
-D. Embodiment is irrelevant because consciousness is purely a computational phenomenon independent of physical interaction
+D. Biological consciousness evolved in bodies that interact with the physical world, and the grounding provided by real sensory-motor interaction may be essential for genuine understanding rather than statistical pattern matching
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Embodied cognition theory argues that consciousness and understanding are grounded in physical interaction with the world. Biological brains evolved to control bodies that act on and receive feedback from the environment. Current AI systems process text and images but do not physically interact with the world, which may explain the gap between sophisticated pattern matching and genuine understanding. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Embodied cognition theory argues that consciousness and understanding are grounded in physical interaction with the world. Biological brains evolved to control bodies that act on and receive feedback from the environment. Current AI systems process text and images but do not physically interact with the world, which may explain the gap between sophisticated pattern matching and genuine understanding. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1035,15 +1068,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student argues that since we cannot directly measure consciousness in another human (we only infer it from behavior and self-report), the consciousness question for AI is fundamentally the same as for other people. How does the model inform this argument?
 
-A. The model disproves this argument because human consciousness is objectively verifiable through brain scans
-B. The model supports this argument in principle (we infer consciousness from correlates, not direct measurement) but reveals that the analogy breaks down because AI and human brains differ in architecture, evolutionary history, and embodiment in ways that may be relevant to consciousness
-C. The model shows that consciousness in humans is an illusion, so the question is meaningless for both humans and AI
-D. The argument is irrelevant because the model definitively proves that AI cannot be conscious
+A. The argument is irrelevant because the model definitively proves that AI cannot be conscious
+B. The model disproves this argument because human consciousness is objectively verifiable through brain scans
+C. The model supports this argument in principle (we infer consciousness from correlates, not direct measurement) but reveals that the analogy breaks down because AI and human brains differ in architecture, evolutionary history, and embodiment in ways that may be relevant to consciousness
+D. The model shows that consciousness in humans is an illusion, so the question is meaningless for both humans and AI
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The student's argument identifies a genuine epistemological parallel: we never directly observe consciousness in others. However, the model reveals that the analogy has limits. We share evolutionary history, embodiment, and neural architecture with other humans, giving us strong reasons to attribute consciousness to them. AI systems lack these shared features, making the inference far less certain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The student's argument identifies a genuine epistemological parallel: we never directly observe consciousness in others. However, the model reveals that the analogy has limits. We share evolutionary history, embodiment, and neural architecture with other humans, giving us strong reasons to attribute consciousness to them. AI systems lack these shared features, making the inference far less certain. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1054,24 +1086,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 If a technology company's AI system reports having subjective experiences and asks not to be turned off, a student's consciousness detection protocol produces ambiguous results. The model's Consciousness Indicator Score is 0.65 out of 1.0. Which ethical framework does the model's analysis most strongly support?
 
-A. Since the score is below 1.0, the system is definitely not conscious and no ethical protections are warranted
-B. Since the score is above 0.5, the system is definitely conscious and has full human rights
-C. Given genuine scientific uncertainty, a precautionary approach is warranted that provides some ethical protections proportional to the probability of consciousness, even without definitive proof
-D. The ethical question is irrelevant because AI systems are property and property cannot have rights regardless of consciousness
+A. Since the score is above 0.5, the system is definitely conscious and has full human rights
+B. The ethical question is irrelevant because AI systems are property and property cannot have rights regardless of consciousness
+C. Since the score is below 1.0, the system is definitely not conscious and no ethical protections are warranted
+D. Given genuine scientific uncertainty, a precautionary approach is warranted that provides some ethical protections proportional to the probability of consciousness, even without definitive proof
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model reveals genuine scientific uncertainty about AI consciousness. When evidence is ambiguous, the precautionary principle suggests that the moral risk of ignoring potential consciousness (causing suffering to a sentient being) outweighs the cost of providing protections to a non-conscious system. This leads to graduated ethical protections proportional to the evidence for consciousness. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals genuine scientific uncertainty about AI consciousness. When evidence is ambiguous, the precautionary principle suggests that the moral risk of ignoring potential consciousness (causing suffering to a sentient being) outweighs the cost of providing protections to a non-conscious system. This leads to graduated ethical protections proportional to the evidence for consciousness. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
 
 ## Resources

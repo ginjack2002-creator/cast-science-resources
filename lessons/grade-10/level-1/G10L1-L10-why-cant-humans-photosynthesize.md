@@ -333,6 +333,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Sunlight Intensity → Glucose Production Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Chlorophyll Concentration being active. Without this condition,
+the simulation produces inaccurate results: Sunlight Intensity drives Glucose Production Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Sunlight Intensity → Glucose Production Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Chlorophyll Concentration is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Chlorophyll Concentration active and observe
+     how Sunlight Intensity's effect on Glucose Production Rate is now gated
+   • Toggle Chlorophyll Concentration ON/OFF while Sunlight Intensity remains constant
+   • Verify that Glucose Production Rate only responds to Sunlight Intensity when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Chlorophyll Concentration → Glucose Production Rate
+   • Set condition: IF Sunlight Intensity is ON
+   • This ensures Chlorophyll Concentration's effect on Glucose Production Rate
+     is contingent on Sunlight Intensity being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -903,15 +939,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that a photosynthetic human with 1.7 m^2 of surface area would produce approximately 60-100 kcal/day, while needing 2,000 kcal/day. What is the fundamental constraint the model identifies as making photosynthetic humans impossible?
 
-A. Human skin cannot contain chlorophyll molecules.
-B. The surface-area-to-volume ratio: a human's energy needs (proportional to volume) vastly exceed light-capture capacity (proportional to surface area).
+A. Cellular respiration prevents photosynthesis from occurring in the same organism.
+B. Human skin cannot contain chlorophyll molecules.
 C. Sunlight does not contain enough energy to power any organism.
-D. Cellular respiration prevents photosynthesis from occurring in the same organism.
+D. The surface-area-to-volume ratio: a human's energy needs (proportional to volume) vastly exceed light-capture capacity (proportional to surface area).
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model identifies the surface-area-to-volume ratio as the fundamental constraint. A human's metabolic demands scale with body volume, but light capture scales with surface area. The geometry makes photosynthetic humans mathematically impossible. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model identifies the surface-area-to-volume ratio as the fundamental constraint. A human's metabolic demands scale with body volume, but light capture scales with surface area. The geometry makes photosynthetic humans mathematically impossible. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -922,15 +957,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the Scaling Problem scenario, the model shows that single-celled organisms can fully meet energy needs through photosynthesis, but organisms at human scale cannot. At what approximate body size does the model predict photosynthesis becomes insufficient?
 
-A. At approximately 1 meter in length.
-B. At approximately 10 cm in length.
-C. At approximately millimeter scale for organisms with human-like metabolic rates.
-D. Photosynthesis is sufficient at all body sizes if enough chlorophyll is present.
+A. Photosynthesis is sufficient at all body sizes if enough chlorophyll is present.
+B. At approximately 1 meter in length.
+C. At approximately 10 cm in length.
+D. At approximately millimeter scale for organisms with human-like metabolic rates.
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model shows that for organisms with high metabolic rates like animals, the crossover point where respiration exceeds photosynthetic capacity occurs at roughly millimeter scale. Plants succeed because they are metabolically slow. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that for organisms with high metabolic rates like animals, the crossover point where respiration exceeds photosynthetic capacity occurs at roughly millimeter scale. Plants succeed because they are metabolically slow. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -941,15 +975,14 @@ A student runs a simulation of the model. The model shows that when Sunlight Int
 
 The model demonstrates that Sunlight Intensity has a positive effect on Glucose Production Rate, but only up to a saturation point. What biological mechanism explains this saturation?
 
-A. Excess light damages chlorophyll, reducing photosynthetic capacity.
-B. The photosynthetic reaction centers have a maximum processing rate. Beyond saturation, additional light photons cannot be utilized because the enzyme machinery is already operating at full capacity.
-C. Plants close their stomata in bright light, preventing CO2 entry.
-D. High light intensity converts glucose back into CO2 through reverse photosynthesis.
+A. High light intensity converts glucose back into CO2 through reverse photosynthesis.
+B. Excess light damages chlorophyll, reducing photosynthetic capacity.
+C. The photosynthetic reaction centers have a maximum processing rate. Beyond saturation, additional light photons cannot be utilized because the enzyme machinery is already operating at full capacity.
+D. Plants close their stomata in bright light, preventing CO2 entry.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reflects that photosynthetic enzymes (particularly in the Calvin cycle) have maximum reaction rates. Beyond light saturation, the bottleneck shifts from light availability to enzyme processing capacity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reflects that photosynthetic enzymes (particularly in the Calvin cycle) have maximum reaction rates. Beyond light saturation, the bottleneck shifts from light availability to enzyme processing capacity. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -960,15 +993,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student examines the model and observes that photosynthesis (6CO2 + 6H2O -> C6H12O6 + 6O2) and cellular respiration (C6H12O6 + 6O2 -> 6CO2 + 6H2O) are chemically opposite. Based on the model, what role does this complementary relationship play in Earth's systems?
 
-A. The reactions cancel each other out and have no net effect on Earth's atmosphere.
-B. Together they cycle carbon between the atmosphere and biosphere, maintaining atmospheric CO2 balance when not disrupted by external inputs like fossil fuel burning.
+A. Together they cycle carbon between the atmosphere and biosphere, maintaining atmospheric CO2 balance when not disrupted by external inputs like fossil fuel burning.
+B. The complementary relationship means organisms that photosynthesize do not need to respire.
 C. They demonstrate that photosynthesis is a more important process than respiration.
-D. The complementary relationship means organisms that photosynthesize do not need to respire.
+D. The reactions cancel each other out and have no net effect on Earth's atmosphere.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows these mirror reactions form the biological carbon cycle. Photosynthesis fixes atmospheric CO2; respiration returns it. This cycle has maintained CO2 balance for hundreds of millions of years until fossil fuel burning disrupted it. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows these mirror reactions form the biological carbon cycle. Photosynthesis fixes atmospheric CO2; respiration returns it. This cycle has maintained CO2 balance for hundreds of millions of years until fossil fuel burning disrupted it. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -979,23 +1011,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on model evidence, a biotech company proposes engineering algae that achieve 10% photosynthetic efficiency (compared to the natural 1-2%) for biofuel production. Which model insight best evaluates whether this is scientifically plausible?
 
-A. The model shows 10% is impossible because photosynthesis has already been evolutionarily optimized.
+A. The model does not provide information relevant to bioengineering efficiency.
 B. The model identifies specific energy loss steps (wrong wavelengths, heat loss, photorespiration) that could theoretically be improved. While the theoretical maximum is about 11%, achieving 10% in practice would require overcoming multiple biological constraints.
-C. The model proves that any efficiency above 2% violates the laws of thermodynamics.
-D. The model does not provide information relevant to bioengineering efficiency.
+C. The model shows 10% is impossible because photosynthesis has already been evolutionarily optimized.
+D. The model proves that any efficiency above 2% violates the laws of thermodynamics.
 
 Correct Answer: B
 
-Feedback: Correct. The model identifies where energy is lost at each step. Since the theoretical maximum (~11%) exceeds the proposed 10%, the goal is not thermodynamically impossible but would require addressing multiple specific bottlenecks identified by the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model identifies where energy is lost at each step. Since the theoretical maximum (~11%) exceeds the proposed 10%, the goal is not thermodynamically impossible but would require addressing multiple specific bottlenecks identified by the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.7, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.7, CCC5)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.7, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.7, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.7, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.7, CCC5)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.7, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.7, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.7, CCC4)
 
 

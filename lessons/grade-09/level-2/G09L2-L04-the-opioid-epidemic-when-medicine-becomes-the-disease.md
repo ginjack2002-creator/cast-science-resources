@@ -409,6 +409,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Prescription Rate → Tolerance relationship as
+unconditional. However, this relationship is scientifically
+contingent on Dopamine Sensitivity being active. Without this condition,
+the simulation produces inaccurate results: Prescription Rate drives Tolerance
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Prescription Rate → Tolerance
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Dopamine Sensitivity is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Dopamine Sensitivity active and observe
+     how Prescription Rate's effect on Tolerance is now gated
+   • Toggle Dopamine Sensitivity ON/OFF while Prescription Rate remains constant
+   • Verify that Tolerance only responds to Prescription Rate when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -979,15 +1009,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The opioid model contains multiple reinforcing feedback loops. Which of the following correctly describes the tolerance-dose escalation loop?
 
-A. Higher doses cause tolerance, which reduces pain, which eliminates the need for opioids
-B. Tolerance reduces opioid effectiveness, requiring higher doses, which accelerates further tolerance development, creating a spiral of escalation
-C. Tolerance protects patients from addiction by making them less sensitive to opioids
-D. Higher doses reduce tolerance, allowing patients to return to lower doses over time
+A. Higher doses reduce tolerance, allowing patients to return to lower doses over time
+B. Higher doses cause tolerance, which reduces pain, which eliminates the need for opioids
+C. Tolerance reduces opioid effectiveness, requiring higher doses, which accelerates further tolerance development, creating a spiral of escalation
+D. Tolerance protects patients from addiction by making them less sensitive to opioids
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The tolerance loop is a classic reinforcing cycle: opioid exposure reduces receptor sensitivity (tolerance), requiring higher doses for the same effect, which drives faster receptor adaptation, demanding even higher doses. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The tolerance loop is a classic reinforcing cycle: opioid exposure reduces receptor sensitivity (tolerance), requiring higher doses for the same effect, which drives faster receptor adaptation, demanding even higher doses. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -998,15 +1027,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model identifies a threshold in the system where a patient transitions from manageable pain treatment to physiological dependence. What makes this threshold so significant?
 
-A. It is the point where the patient decides to become addicted
-B. It marks the transition from reversible receptor adaptation to structural brain changes that make normal function impossible without the drug
+A. It marks the transition from reversible receptor adaptation to structural brain changes that make normal function impossible without the drug
+B. It is the point where the patient decides to become addicted
 C. It is an arbitrary line that has no biological basis
 D. It only applies to patients who misuse their prescriptions
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The dependence threshold represents a shift from temporary receptor changes (which reverse when the drug is removed) to structural neurological adaptations. Past this point, the brain has physically reorganized to require opioids for normal function. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The dependence threshold represents a shift from temporary receptor changes (which reverse when the drug is removed) to structural neurological adaptations. Past this point, the brain has physically reorganized to require opioids for normal function. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1025,7 +1053,6 @@ D. Only the social network loop matters; the brain-level loops are insignificant
 Correct Answer: B
 
 Feedback: Correct. The three loops operate at neurochemical, physiological, and social scales. Addressing only one level (e.g., reducing prescriptions) does not break the other loops (existing dependence, community supply). Effective intervention must target all three simultaneously. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 4
@@ -1037,14 +1064,13 @@ Scientists are studying data related to this system. They collected observations
 Based on model evidence, which intervention strategy would be most effective at addressing the opioid epidemic?
 
 A. Criminalizing all opioid use to deter patients from seeking prescriptions
-B. A combined approach targeting prescription practices, medication-assisted treatment for dependent patients, and community-level supply reduction
-C. Relying solely on education campaigns to inform patients about addiction risks
+B. Relying solely on education campaigns to inform patients about addiction risks
+C. A combined approach targeting prescription practices, medication-assisted treatment for dependent patients, and community-level supply reduction
 D. Developing more potent opioids that require smaller doses
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows three coupled feedback loops operating at different scales. Effective intervention must simultaneously address prescribing (prevention), dependence (treatment with medication-assisted therapy), and social spread (community supply reduction). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model shows three coupled feedback loops operating at different scales. Effective intervention must simultaneously address prescribing (prevention), dependence (treatment with medication-assisted therapy), and social spread (community supply reduction). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1056,23 +1082,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 A student argues that 'addiction is a choice, not a disease.' How does the computational model challenge this claim?
 
 A. The model supports the claim because patients choose to take the first dose
-B. The model shows that once dopamine receptor downregulation crosses the dependence threshold, brain chemistry is physically altered in ways that override voluntary decision-making
+B. The model cannot address whether addiction is a choice or a disease
 C. The model shows that willpower is the primary variable determining addiction outcomes
-D. The model cannot address whether addiction is a choice or a disease
+D. The model shows that once dopamine receptor downregulation crosses the dependence threshold, brain chemistry is physically altered in ways that override voluntary decision-making
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates that past the dependence threshold, tolerance and receptor downregulation physically restructure brain reward pathways. The compulsive drug-seeking behavior is driven by altered neurochemistry, not character or willpower. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates that past the dependence threshold, tolerance and receptor downregulation physically restructure brain reward pathways. The compulsive drug-seeking behavior is driven by altered neurochemistry, not character or willpower. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
 
 ## Resources

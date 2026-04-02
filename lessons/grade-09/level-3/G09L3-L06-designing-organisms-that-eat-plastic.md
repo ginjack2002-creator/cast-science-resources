@@ -390,6 +390,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Substrate Concentration → Degradation Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Enzyme Activity Level being active. Without this condition,
+the simulation produces inaccurate results: Substrate Concentration drives Degradation Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Substrate Concentration → Degradation Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Enzyme Activity Level is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Enzyme Activity Level active and observe
+     how Substrate Concentration's effect on Degradation Rate is now gated
+   • Toggle Enzyme Activity Level ON/OFF while Substrate Concentration remains constant
+   • Verify that Degradation Rate only responds to Substrate Concentration when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Enzyme Activity Level → Degradation Rate
+   • Set condition: IF Organism Growth Rate is ON
+   • This ensures Enzyme Activity Level's effect on Degradation Rate
+     is contingent on Organism Growth Rate being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -962,15 +998,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's model shows that maximizing Enzyme Activity Level increases Degradation Rate in the lab but actually DECREASES overall environmental remediation effectiveness when Metabolic Pathway Efficiency is low. Which explanation BEST accounts for this counterintuitive result?
 
-A. High enzyme activity breaks plastic into intermediate compounds faster than the metabolic pathway can process them, leading to accumulation of toxic byproducts that may be more harmful than the original plastic
+A. The model is incorrect because higher enzyme activity should always produce better outcomes
 B. Enzyme activity and degradation rate are always positively correlated
-C. The model is incorrect because higher enzyme activity should always produce better outcomes
+C. High enzyme activity breaks plastic into intermediate compounds faster than the metabolic pathway can process them, leading to accumulation of toxic byproducts that may be more harmful than the original plastic
 D. Environmental conditions reduce enzyme activity to zero
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Correct. This is a rate-mismatch problem. When the first enzyme in a pathway works faster than downstream enzymes, intermediates accumulate. If those intermediates are toxic (as terephthalic acid can be), the fast first step actually worsens the pollution problem. The system must be optimized holistically, not component by component. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is a rate-mismatch problem. When the first enzyme in a pathway works faster than downstream enzymes, intermediates accumulate. If those intermediates are toxic (as terephthalic acid can be), the fast first step actually worsens the pollution problem. The system must be optimized holistically, not component by component. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -981,15 +1016,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A simulation comparing lab conditions versus ocean deployment shows that Degradation Rate drops by 90% when the organism is moved to ocean conditions. The student identifies Environmental Temperature as the primary factor. Which additional factor would create the SECOND largest performance reduction?
 
-A. Substrate Concentration, because ocean plastic is dispersed across vast areas rather than concentrated in a beaker, reducing the frequency of enzyme-plastic contact
-B. The color of the ocean water
+A. The color of the ocean water
+B. Substrate Concentration, because ocean plastic is dispersed across vast areas rather than concentrated in a beaker, reducing the frequency of enzyme-plastic contact
 C. The depth of the ocean floor
 D. The presence of fish in the ocean
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. In a lab, plastic substrate can be concentrated in a small volume, ensuring frequent enzyme-substrate contact. In the ocean, plastic is distributed across millions of square kilometers at very low density, meaning the engineered organisms rarely encounter plastic particles. Enzyme kinetics depend on substrate availability. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. In a lab, plastic substrate can be concentrated in a small volume, ensuring frequent enzyme-substrate contact. In the ocean, plastic is distributed across millions of square kilometers at very low density, meaning the engineered organisms rarely encounter plastic particles. Enzyme kinetics depend on substrate availability. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1001,14 +1035,13 @@ A student runs a simulation of the model. The model shows that when Substrate Co
 The containment-effectiveness paradox states that maximizing Containment Level reduces ecological risk but also limits Degradation Rate. A student proposes using an organism with an engineered 'kill switch' that causes cell death if a specific chemical is absent. What does this design achieve?
 
 A. It eliminates all ecological risk while maintaining maximum degradation capacity
-B. It provides a recall mechanism so the organism can be stopped by withdrawing the chemical, but limits the organism's range to areas where the chemical is actively supplied
-C. Kill switches make the organism more dangerous because it could evolve to ignore the switch
-D. Kill switches have no practical function in environmental applications
+B. Kill switches make the organism more dangerous because it could evolve to ignore the switch
+C. Kill switches have no practical function in environmental applications
+D. It provides a recall mechanism so the organism can be stopped by withdrawing the chemical, but limits the organism's range to areas where the chemical is actively supplied
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. A kill switch dependent on an externally supplied chemical (auxotrophy) means the organism can only survive where that chemical is provided. This limits its geographic spread but also limits its reach to areas where the plastic is. The paradox remains: containment and effectiveness are fundamentally opposed for dispersed pollutants. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. A kill switch dependent on an externally supplied chemical (auxotrophy) means the organism can only survive where that chemical is provided. This limits its geographic spread but also limits its reach to areas where the plastic is. The paradox remains: containment and effectiveness are fundamentally opposed for dispersed pollutants. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1019,15 +1052,14 @@ Scientists are studying data related to this system. They collected observations
 
 A research team compares three organism designs for ocean plastic cleanup: Design A has high Enzyme Activity but low pH Tolerance, Design B has moderate Enzyme Activity with broad pH Tolerance, and Design C has the highest Enzyme Activity but requires warm temperatures (50 degrees C). For deployment across diverse ocean environments, which design is MOST viable and why?
 
-A. Design C, because maximum enzyme activity always produces the best results
-B. Design A, because pH variation in the ocean is minimal
-C. Design B, because moderate activity across a broad range of environmental conditions produces more total degradation than high activity that only functions in narrow conditions
-D. All three designs would perform identically in the ocean
+A. Design A, because pH variation in the ocean is minimal
+B. All three designs would perform identically in the ocean
+C. Design C, because maximum enzyme activity always produces the best results
+D. Design B, because moderate activity across a broad range of environmental conditions produces more total degradation than high activity that only functions in narrow conditions
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. This is a robustness versus peak performance trade-off. Design B's moderate enzyme activity across broad conditions means it functions in more ocean environments (varying pH zones, coastal versus deep water) than designs that achieve higher peak activity but only in narrow conditions. Total real-world degradation depends on operating range, not just peak capacity. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is a robustness versus peak performance trade-off. Design B's moderate enzyme activity across broad conditions means it functions in more ocean environments (varying pH zones, coastal versus deep water) than designs that achieve higher peak activity but only in narrow conditions. Total real-world degradation depends on operating range, not just peak capacity. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1038,24 +1070,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 After analyzing the model, a student concludes that engineering a single organism to solve ocean plastic pollution is insufficient and proposes a multi-organism system instead. Which argument BEST supports this systems-level approach?
 
-A. Using multiple organisms is always better than using one
-B. Different organisms could be optimized for different plastic types (PET, polyethylene, polystyrene), different environmental conditions (warm vs. cold, shallow vs. deep), and different stages of degradation (initial breakdown vs. intermediate processing), creating a more complete and resilient remediation system
+A. Different organisms could be optimized for different plastic types (PET, polyethylene, polystyrene), different environmental conditions (warm vs. cold, shallow vs. deep), and different stages of degradation (initial breakdown vs. intermediate processing), creating a more complete and resilient remediation system
+B. Regulatory agencies require multiple organisms for any environmental release
 C. Multiple organisms would compete with each other and reduce effectiveness
-D. Regulatory agencies require multiple organisms for any environmental release
+D. Using multiple organisms is always better than using one
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Ocean plastic pollution involves multiple polymer types distributed across diverse environmental conditions. No single organism can be optimized for all plastic types, all temperatures, all pH levels, and all stages of degradation. A consortium approach mirrors natural ecosystem division of labor, where different species specialize in different functions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Ocean plastic pollution involves multiple polymer types distributed across diverse environmental conditions. No single organism can be optimized for all plastic types, all temperatures, all pH levels, and all stages of degradation. A consortium approach mirrors natural ecosystem division of labor, where different species specialize in different functions. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.5, CCC4)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.5, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.5, CCC2)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.5, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.5, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.5, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.5, CCC2)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.5, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.5, CCC4)
 
 
 ## Resources

@@ -347,6 +347,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Off-Target Mutation Rate → Therapeutic Outcome relationship as
+unconditional. However, this relationship is scientifically
+contingent on Editing Efficiency being active. Without this condition,
+the simulation produces inaccurate results: Off-Target Mutation Rate drives Therapeutic Outcome
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Off-Target Mutation Rate → Therapeutic Outcome
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Editing Efficiency is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Editing Efficiency active and observe
+     how Off-Target Mutation Rate's effect on Therapeutic Outcome is now gated
+   • Toggle Editing Efficiency ON/OFF while Off-Target Mutation Rate remains constant
+   • Verify that Therapeutic Outcome only responds to Off-Target Mutation Rate when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Editing Efficiency → Therapeutic Outcome
+   • Set condition: IF Off-Target Mutation Rate is ON
+   • This ensures Editing Efficiency's effect on Therapeutic Outcome
+     is contingent on Off-Target Mutation Rate being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -920,14 +956,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 A scientist designs a guide RNA with 99.5% specificity to edit embryonic cells. The human genome has 3.2 billion base pairs. What does the model predict about off-target effects?
 
 A. 99.5% specificity means virtually zero off-target effects
-B. With 3.2 billion base pairs, even 0.5% non-specificity means up to 16 million potential off-target binding sites, creating significant risk especially in germline editing where errors are inherited
-C. Off-target effects only occur when specificity is below 50%
-D. The number of base pairs does not affect off-target calculations
+B. The number of base pairs does not affect off-target calculations
+C. With 3.2 billion base pairs, even 0.5% non-specificity means up to 16 million potential off-target binding sites, creating significant risk especially in germline editing where errors are inherited
+D. Off-target effects only occur when specificity is below 50%
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals that 'nearly perfect' specificity is misleading when applied to a 3.2 billion base pair genome. Even 0.5% non-specificity creates millions of potential off-target sites, which is especially dangerous in germline editing. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals that 'nearly perfect' specificity is misleading when applied to a 3.2 billion base pair genome. Even 0.5% non-specificity creates millions of potential off-target sites, which is especially dangerous in germline editing. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -938,15 +973,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model predicts high Therapeutic Outcome for single-gene disorders like sickle cell disease. Which combination of model components explains this prediction?
 
-A. Low Guide RNA Specificity and high Off-Target Mutation Rate produce good outcomes for simple diseases
-B. High Guide RNA Specificity targeting a single well-characterized gene location produces high Editing Efficiency with low Off-Target Mutation Rate, yielding strong Therapeutic Outcome
+A. Single-gene disorders are easier because they do not require any DNA cutting
+B. Low Guide RNA Specificity and high Off-Target Mutation Rate produce good outcomes for simple diseases
 C. Therapeutic Outcome is independent of Guide RNA Specificity and depends only on the disease type
-D. Single-gene disorders are easier because they do not require any DNA cutting
+D. High Guide RNA Specificity targeting a single well-characterized gene location produces high Editing Efficiency with low Off-Target Mutation Rate, yielding strong Therapeutic Outcome
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that single-gene disorders are ideal CRISPR targets because: (1) guide RNA can be highly specific to one known target, (2) only one gene needs editing, keeping off-target risk low, and (3) editing efficiency is maximized with a single, well-characterized target. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that single-gene disorders are ideal CRISPR targets because: (1) guide RNA can be highly specific to one known target, (2) only one gene needs editing, keeping off-target risk low, and (3) editing efficiency is maximized with a single, well-characterized target. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -957,15 +991,14 @@ A student runs a simulation of the model. The model shows that when Guide RNA Sp
 
 A student models the scenario of editing 5 genes simultaneously for a complex trait. How does the model predict Off-Target Mutation Rate will change compared to single-gene editing?
 
-A. Off-Target Mutation Rate decreases because multiple guide RNAs provide cross-checking accuracy
-B. Off-Target Mutation Rate increases multiplicatively because each additional guide RNA introduces its own set of potential off-target binding sites across the genome
-C. Off-Target Mutation Rate stays constant regardless of how many genes are targeted
-D. Off-Target Mutation Rate doubles with each additional gene, following a linear pattern
+A. Off-Target Mutation Rate increases multiplicatively because each additional guide RNA introduces its own set of potential off-target binding sites across the genome
+B. Off-Target Mutation Rate doubles with each additional gene, following a linear pattern
+C. Off-Target Mutation Rate decreases because multiple guide RNAs provide cross-checking accuracy
+D. Off-Target Mutation Rate stays constant regardless of how many genes are targeted
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that each additional guide RNA introduces its own set of off-target risks, and these risks multiply rather than simply adding together, making multi-gene editing exponentially more dangerous. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that each additional guide RNA introduces its own set of off-target risks, and these risks multiply rather than simply adding together, making multi-gene editing exponentially more dangerous. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -976,15 +1009,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model distinguishes between 'therapeutic' and 'enhancement' uses of gene editing. Which ethical criterion from the model best separates these categories?
 
-A. Cost of the procedure determines whether it is therapeutic or enhancement
+A. The distinction is purely subjective with no scientific basis
 B. Therapeutic editing corrects a known disease-causing mutation to restore normal function, while enhancement alters genes to exceed typical human variation for traits like height or intelligence
-C. Any gene edit performed on an adult is therapeutic while any edit on an embryo is enhancement
-D. The distinction is purely subjective with no scientific basis
+C. Cost of the procedure determines whether it is therapeutic or enhancement
+D. Any gene edit performed on an adult is therapeutic while any edit on an embryo is enhancement
 
 Correct Answer: B
 
-Feedback: Correct. The model supports a science-based distinction: therapeutic editing targets known pathogenic variants to restore normal protein function, while enhancement seeks to modify traits within or beyond normal human variation, which involves polygenic complexity and greater uncertainty. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model supports a science-based distinction: therapeutic editing targets known pathogenic variants to restore normal protein function, while enhancement seeks to modify traits within or beyond normal human variation, which involves polygenic complexity and greater uncertainty. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -995,24 +1027,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model's predictions about germline editing, which concern is MOST scientifically justified?
 
-A. Germline editing is too expensive to ever become widely available
-B. Germline edits are permanent and heritable, meaning off-target errors cannot be undone and will propagate through all future generations of that lineage without the consent of those affected
+A. Germline editing always produces beneficial mutations in subsequent generations
+B. Germline editing is too expensive to ever become widely available
 C. Germline editing only works in non-human organisms
-D. Germline editing always produces beneficial mutations in subsequent generations
+D. Germline edits are permanent and heritable, meaning off-target errors cannot be undone and will propagate through all future generations of that lineage without the consent of those affected
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model's most powerful insight about germline editing is irreversibility: any off-target error is not just permanent in the individual but inherited by ALL descendants, affecting people who never consented to the modification. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model's most powerful insight about germline editing is irreversibility: any off-target error is not just permanent in the individual but inherited by ALL descendants, affecting people who never consented to the modification. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
 
 ## Resources

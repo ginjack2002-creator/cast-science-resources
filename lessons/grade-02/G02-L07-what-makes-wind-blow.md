@@ -831,108 +831,105 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.3 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 8.1 (Obtain information to answer a question) + DCI ESS2.C (Water is found on Earth as solid and liquid) + CCC2 (Identify cause and effect relationships)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sun Heating, Air Movement, Wind Strength. Some components are external (Sun Heating) and some are internal (Air Movement, Wind Strength). The student needs to understand what each component represents and how they are organized.
+On a hot summer day at the beach, a family notices a cool breeze blowing from the ocean toward the hot sand. The sand feels very hot under their feet, but the ocean water feels cool. The breeze keeps blowing from the cool water toward the hot sand all afternoon.
 
-What causes wind?
+What is most likely causing this breeze?
 
-A. The moon pulls on the air
-B. The sun heats the ground unevenly, warm air rises, and cool air rushes in
-C. Clouds push the air down
-D. Trees blow the air around with their branches
+A. The breeze blows from the sand toward the water
+B. The ocean is blowing air out of the water
+C. The hot sand heats the air above it, the warm air rises, and cooler air from over the ocean rushes in to take its place
+D. Someone turned on a giant fan at the beach
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! The sun heats the ground unevenly. Warm air rises because it is lighter, and cooler air rushes in to take its place. That rushing air is wind. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The sun heats the sand much faster than the water. The hot air above the sand rises because warm air is lighter. Then cooler air from over the ocean rushes in to fill the space, creating a breeze from the water toward the sand. If you chose B, the ocean does not blow air. The breeze happens because of temperature differences between the hot sand and cool water. If you chose D, there are no giant fans at the beach. The sun creates natural wind through uneven heating. If you chose A, the breeze blows FROM the cool water TOWARD the hot sand, not the other way around. Cool air rushes toward where warm air is rising.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Use a model to describe relationships) + DCI ESS2.C (Water on Earth) + CCC2 (Describe cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sun Heating increases, Air Movement increases; when Air Movement increases, Wind Strength increases. The student is trying to understand why these relationships are positive or negative.
+In a model of wind, Sun Heating is an external component. Air Movement is an internal component. The model shows a positive relationship between them, meaning more sun heating causes more air movement. Air Movement then has a positive relationship with Wind Strength, meaning more air movement means stronger wind.
 
-In our model, what is the relationship between Sun Heating and Air Movement?
+On a cloudy day, the sun is mostly blocked. Based on the model, what would happen to wind strength?
 
-A. Negative: more sun heating means less air movement
-B. No relationship at all
-C. Positive: more sun heating means more air movement
-D. The sun does not affect air movement
+A. Wind strength would decrease because less sun heating means less air movement, which means weaker wind
+B. Wind strength would increase because clouds are made of wind
+C. Wind strength would increase because clouds push the wind
+D. Wind strength would stay the same because clouds do not affect wind
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Correct! It is a positive relationship. More sun heating warms the ground more, which makes the air above it rise faster, causing more air movement and stronger wind. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The model shows a chain of positive relationships: Sun Heating leads to Air Movement leads to Wind Strength. When sun heating goes down (blocked by clouds), air movement goes down, and then wind strength also goes down. Less heat at the start means less wind at the end. If you chose C, clouds do not push wind. They block sunlight, which reduces the heating that creates wind. If you chose D, clouds affect wind by blocking the sun. Less sun means less uneven heating, which means less air movement and weaker wind. If you chose B, clouds are made of tiny water drops, not wind. Wind and clouds are different things.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Analyze data from observations) + DCI ESS2.C (Water exists on Earth in different forms) + CCC2 (Use cause and effect to explain)
 
-A student runs a simulation of the model. The model shows that when Sun Heating increases, Air Movement increases and when Air Movement increases, Wind Strength increases. The student changes one variable to see how the whole system responds.
+A class recorded wind observations for four days:
 
-At the beach on a hot day, the sand gets very hot but the water stays cool. What happens?
+Monday (hot, sunny): Strong wind, flag straight out. Tuesday (partly cloudy, warm): Medium wind, flag waving gently. Wednesday (cloudy, cool): Very little wind, flag hanging down. Thursday (hot, sunny): Strong wind, flag straight out.
 
-A. The wind blows from the hot sand toward the cool water
-B. A breeze blows from the cool water toward the hot sand
-C. There is no wind at the beach
-D. The water gets as hot as the sand
+What pattern connects the weather to the wind strength?
+
+A. Wind is always the same no matter what the weather is
+B. Wind is stronger on hot, sunny days and weaker on cool, cloudy days because more sun heating creates more air movement
+C. Wind is stronger on cloudy days and weaker on sunny days
+D. Wind happens only on Mondays and Thursdays
 
 Correct Answer: B
 
-Feedback: That is right! The air above the hot sand rises, and cooler air from over the water rushes in to replace it. This creates a breeze that blows from the water toward the sand. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The data shows a clear pattern. On hot sunny days (Monday and Thursday), the wind was strong. On the cool cloudy day (Wednesday), there was very little wind. More sun heating creates bigger temperature differences, which causes more air movement and stronger wind. If you chose A, the data clearly shows wind changed each day based on the weather. If you chose C, the data shows the opposite. Sunny days had strong wind and the cloudy day had weak wind. If you chose D, the days of the week do not cause wind. The weather conditions (sun and temperature) caused the differences.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1 (Construct an explanation from evidence) + DCI ESS2.C (Where water is found on Earth) + CCC4 (Describe how parts of a system interact)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student holds a pinwheel in front of a sunny window and it does not spin. Then the teacher opens the window on a cold winter day. Immediately, the pinwheel starts spinning quickly. The student can feel cold air rushing in from outside.
 
-Why is there very little wind on a cool, cloudy day?
+Why did the pinwheel start spinning when the window opened?
 
-A. Because clouds block the wind from forming
-B. Because without strong sun, there is little temperature difference to move the air
-C. Because the air is too heavy to move on cloudy days
-D. Because wind only happens at night
+A. Wind from outside just happened to blow at that exact moment by accident
+B. The pinwheel was broken before and the window fixed it
+C. The warm air inside and cold air outside created a temperature difference, so the cold air rushed in to replace the rising warm air, spinning the pinwheel
+D. The window pushed the pinwheel with its frame
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! Without strong sun heating, the ground stays cool and the temperature is more even everywhere. Without big temperature differences, there is very little air movement and weak wind. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When the window opened, the warm indoor air and cold outdoor air met. Warm air rises and cold air rushes in to take its place, creating air movement. This moving air spun the pinwheel. It is the same process that creates wind outside, caused by temperature differences. If you chose D, the window frame did not touch the pinwheel. The air movement caused the spinning. If you chose B, the pinwheel was not broken. It simply had no air movement to spin it when the window was closed. If you chose A, this was not a coincidence. The temperature difference between inside and outside directly caused the air to move.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.2 (Use a model to predict) + DCI ESS2.C (Water exists on Earth in different states) + CCC4 (Describe components of a system and their interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sun Heating), but they can take action on internal components (Air Movement, Wind Strength). They need to decide which action would be most effective based on what the model shows.
+A student uses the wind model to think about a parking lot and a grassy park next to each other on a hot day. The dark parking lot gets much hotter than the green grassy park. The model shows that uneven heating causes air movement, and air movement causes wind.
 
-Can you see wind?
+Based on the model, which direction would a breeze blow between the parking lot and the park?
 
-A. Yes, wind is blue
-B. Yes, wind looks like white lines
-C. No, but you can feel it and see what it does
-D. No, and wind does not do anything
+A. There would be no breeze because parking lots and parks are too close together
+B. From the hot parking lot toward the cool park, because hot air pushes cool air away
+C. Straight up into the sky from both places equally
+D. From the cool park toward the hot parking lot, because the hot air above the parking lot rises and the cooler park air rushes in to replace it
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: That is right! You cannot see wind because air is invisible, but you can feel it on your skin and see what it does, like blowing leaves and waving flags. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The dark parking lot heats the air above it. That warm air rises, leaving a space. Cooler air from over the grassy park rushes in to fill that space, creating a breeze from the park toward the parking lot. This is the same process that creates sea breezes at the beach. If you chose B, hot air does not push. Hot air rises UP, and then cooler air rushes IN from the side to replace it. The breeze blows toward the hot area, not away from it. If you chose A, even small temperature differences between nearby areas can create breezes. You can sometimes feel this in real life. If you chose C, while warm air does rise, it rises more above the hotter surface (parking lot), which pulls in cooler air from the park. The air movement is not equal from both places.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.3, CCC2)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.3, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.3, CCC4)
+Question 1: C (Cognitive Level: Reason + Explain — SEP 8.1, DCI ESS2.C, CCC2)
+Question 2: A (Cognitive Level: Predict — SEP 2.1, DCI ESS2.C, CCC2)
+Question 3: B (Cognitive Level: Reason + Evidence — SEP 4.1, DCI ESS2.C, CCC2)
+Question 4: C (Cognitive Level: Reason + Explain — SEP 6.1, DCI ESS2.C, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.2, DCI ESS2.C, CCC4)
 
-
+---
 ## Resources
 
 | Resource | Link |

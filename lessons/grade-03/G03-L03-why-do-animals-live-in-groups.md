@@ -831,106 +831,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Construct an argument with evidence) + DCI LS2.D.1 (Animals form groups for survival) + CCC2 (Cause and effect of group living)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Group Size, Predator Detection, Survival Rate. Some components are external (Group Size) and some are internal (Predator Detection, Survival Rate). The student needs to understand what each component represents and how they are organized.
+Scientists watched a group of 40 meerkats in the African desert. They noticed that while most meerkats searched for food on the ground, two or three meerkats always stood on their back legs on top of rocks, watching the sky for hawks and eagles. When a lookout spotted a predator, it made a loud chirping call, and every meerkat quickly ran into an underground tunnel.
 
-In the model, when Group Size increases, what happens to Predator Detection?
+Which argument BEST explains why meerkats take turns being lookouts?
 
-A. Predator Detection decreases because the group is too noisy
-B. Predator Detection stays the same no matter the group size
-C. Predator Detection increases because more eyes are watching for danger
-D. Predator Detection disappears in large groups
+A. The lookout meerkats are not hungry, so they have nothing else to do.
+B. Having lookouts means the group detects predators faster, giving every meerkat more time to escape to safety.
+C. Hawks and eagles are afraid of meerkats standing on rocks.
+D. The lookout meerkats enjoy standing on rocks more than eating.
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct! Group Size and Predator Detection have a positive relationship. More animals in the group means more eyes watching, so predators are spotted faster. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Having dedicated lookouts means danger is spotted sooner. The warning call gives the whole group time to escape, which increases survival for everyone. If you chose A, meerkats are always hungry in the desert. They take turns as lookouts so the group stays safe, not because they are not hungry. If you chose D, standing lookout is a job that protects the group, not a fun activity. Each meerkat takes a turn so everyone gets to eat. If you chose C, hawks and eagles are not afraid of standing meerkats. The lookouts help by giving an early warning so the group can hide.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.D.1 (Group behavior and survival) + CCC2 (Cause and effect in systems)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Group Size increases, Predator Detection increases; when Predator Detection increases, Survival Rate increases. The student is trying to understand why these relationships are positive or negative.
+In the animal group model, a student sees that Group Size has a positive arrow pointing to Predator Detection. The student also sees that Predator Detection has a positive arrow pointing to Survival Rate. The student increases Group Size from 5 to 30 and runs the model.
 
-A herd of 30 antelope spots a lion faster than one antelope standing alone. What is the BEST explanation?
+Based on the model, what would MOST LIKELY happen when Group Size increases from 5 to 30?
 
-A. The herd is louder and scares the lion away
-B. With 30 animals watching in different directions, the lion is spotted sooner
-C. Antelope can only see when they are in a group
-D. The lion is afraid of large numbers
+A. Predator Detection would increase, and then Survival Rate would also increase.
+B. Nothing would change because Group Size does not affect the other components.
+C. Predator Detection would decrease because the group is too noisy.
+D. Survival Rate would decrease because there are too many animals competing for food.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: You got it! With 30 animals watching in different directions, there is a much better chance that at least one will spot the lion early and warn the others. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows two positive relationships in a chain. More animals means more eyes watching (higher Predator Detection), which means predators are spotted sooner (higher Survival Rate). If you chose C, more animals means more eyes watching in different directions, which improves detection, not worsens it. If you chose D, the model tracks predator detection and survival, not food competition. The positive relationships mean both go up. If you chose B, the arrows in the model show clear connections. Group Size directly affects Predator Detection, which affects Survival Rate.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Construct an argument with evidence) + DCI LS2.D.1 (Group survival advantages) + CCC2 (Cause and effect)
 
-A student runs a simulation of the model. The model shows that when Group Size increases, Predator Detection increases and when Predator Detection increases, Survival Rate increases. The student changes one variable to see how the whole system responds.
+A scientist studied two groups of antelope on the African savanna. Group A had 30 antelope, and Group B had only 5 antelope. Over one month, a lion attacked each group three times. In Group A (30 antelope), the lion was spotted early every time and caught zero antelope. In Group B (5 antelope), the lion surprised them twice and caught 2 antelope.
 
-What does 'safety in numbers' mean for animal groups?
+What does this data BEST support about the phrase "safety in numbers"?
 
-A. Animals in groups can count higher than animals alone
-B. Being in a bigger group makes each individual animal safer because predators are detected faster and each animal is less likely to be caught
-C. Groups of animals are never attacked by predators
-D. Numbers are safe but letters are dangerous
+A. Group size does not affect whether a predator catches its prey.
+B. Smaller groups are actually safer because they can hide better.
+C. Larger groups detect predators earlier because more eyes are watching, and each individual has a smaller chance of being caught.
+D. Larger groups are louder and scare predators away with noise.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Exactly! Safety in numbers means that a bigger group detects predators faster AND each individual has a smaller chance of being the one caught. Both factors help animals survive. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The data shows Group A (30 animals) always spotted the lion early and lost zero members. Group B (5 animals) was surprised twice and lost 2 members. More eyes watching means earlier detection and better survival. If you chose D, the data does not mention noise scaring the lion. The key difference was detection time, with the larger group spotting the lion earlier. If you chose B, the data clearly shows the smaller group was worse off, losing 2 members while the larger group lost none. If you chose A, the data directly shows that group size made a difference. The larger group survived every attack.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.D.1 (Group behavior system) + CCC4 (Describe system components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In the animal group model, students learn about external and internal components. The model includes Group Size, Predator Detection, Warning Signals, and Survival Rate. The teacher explains that the external component is the one students set at the beginning, and the internal components change as a result.
 
-Which component in the animal group model is EXTERNAL?
+Which component is EXTERNAL in the animal group model?
 
-A. Predator Detection
-B. Survival Rate
-C. Group Size
-D. Warning Signals
+A. Predator Detection, because predators come from outside the group.
+B. Warning Signals, because the sounds travel outside the group.
+C. Survival Rate, because it is the most important result.
+D. Group Size, because it is the starting condition that students set before running the model.
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Right! Group Size is external because it is the starting condition we set. Predator Detection and Survival Rate are internal components that change in response to Group Size. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Group Size is external because students set it at the start. Predator Detection, Warning Signals, and Survival Rate are all internal because they change as a result of Group Size. If you chose A, Predator Detection is internal because it changes based on how many animals are watching. It is a result of Group Size. If you chose B, Warning Signals are internal because they happen when a predator is detected. They are a result of the system working, not a starting input. If you chose C, Survival Rate is the final output of the system. It changes based on the other components, so it is internal.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS2.D.1 (Predict group behavior outcomes) + CCC2 (Predict cause and effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Group Size), but they can take action on internal components (Predator Detection, Survival Rate). They need to decide which action would be most effective based on what the model shows.
+A park ranger is planning how to protect a group of endangered prairie dogs from coyotes. The current colony has 10 prairie dogs. The ranger's model shows that Group Size positively affects Predator Detection, and Predator Detection positively affects Survival Rate. The ranger has two options: (1) Add 20 more prairie dogs from another colony to increase the group to 30, or (2) Keep the group at 10 and build a fence around the colony.
 
-Why do you think zebras live together in large herds instead of living alone?
+Based on the model, which option would MOST LIKELY increase the colony's survival through the Predator Detection pathway?
 
-A. Zebras like to play games together
-B. Living in a group helps protect them from predators
-C. Zebras cannot find food by themselves
-D. Zebras are afraid of the dark
+A. Option 1 (add prairie dogs), because a group of 30 has more eyes watching for coyotes, which increases detection and survival.
+B. Option 2 (fence), because prairie dogs do not benefit from larger groups.
+C. Option 2 (fence), because fences keep all predators out permanently.
+D. Neither option would help because coyotes are too fast.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Great thinking! One of the biggest reasons animals live in groups is that it helps them stay safe from predators. More eyes watching means danger is spotted faster. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that increasing Group Size increases Predator Detection, which increases Survival Rate. Adding 20 prairie dogs to reach 30 means more lookouts, faster detection, and higher survival through the model's pathway. If you chose C, a fence might help, but the question asks about the Predator Detection pathway in the model. The model shows Group Size drives detection, not fences. If you chose D, the model shows a clear pathway where larger groups detect predators better, regardless of how fast coyotes are. If you chose B, the model directly shows that prairie dogs benefit from larger groups through better predator detection.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
+Question 1: B (Cognitive Level: Reason — SEP 7.1.1, DCI LS2.D.1, CCC2)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.D.1, CCC2)
+Question 3: C (Cognitive Level: Reason + Evidence — SEP 7.1.1, DCI LS2.D.1, CCC2)
+Question 4: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.D.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS2.D.1, CCC2)
+
+---
 
 
 ## Resources

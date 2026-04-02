@@ -373,6 +373,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Wildlife-Human Contact Rate → Zoonotic Spillover Probability relationship as
+unconditional. However, this relationship is scientifically
+contingent on Viral Mutation Rate being active. Without this condition,
+the simulation produces inaccurate results: Wildlife-Human Contact Rate drives Zoonotic Spillover Probability
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Wildlife-Human Contact Rate → Zoonotic Spillover Probability
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Viral Mutation Rate is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Viral Mutation Rate active and observe
+     how Wildlife-Human Contact Rate's effect on Zoonotic Spillover Probability is now gated
+   • Toggle Viral Mutation Rate ON/OFF while Wildlife-Human Contact Rate remains constant
+   • Verify that Zoonotic Spillover Probability only responds to Wildlife-Human Contact Rate when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Population Density → Intervention Speed
+   • Set condition: IF Surveillance Detection Speed is ON
+   • This ensures Population Density's effect on Intervention Speed
+     is contingent on Surveillance Detection Speed being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Surveillance Detection Speed → Intervention Speed
+   • Set condition: IF Population Density is OFF
+   • This ensures Surveillance Detection Speed's effect on Intervention Speed
+     is contingent on Population Density being inactive
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -945,15 +987,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A pandemic prediction model shows that reducing Surveillance Detection Speed from 28 days to 7 days decreases total predicted infections by 95%. Which systems-level principle explains why this relatively modest intervention has such a disproportionately large effect?
 
-A. Earlier detection allows containment during the exponential growth phase when case numbers are still small enough to trace and isolate
-B. Faster detection automatically cures infected patients
-C. Surveillance somehow reduces the mutation rate of the virus
-D. The 95% reduction is coincidental and does not reflect a causal relationship
+A. The 95% reduction is coincidental and does not reflect a causal relationship
+B. Earlier detection allows containment during the exponential growth phase when case numbers are still small enough to trace and isolate
+C. Faster detection automatically cures infected patients
+D. Surveillance somehow reduces the mutation rate of the virus
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. During exponential growth, case counts double at regular intervals. At 7 days, there may be dozens of cases that can be individually traced and isolated. By 28 days, those dozens have become thousands or millions, making containment impossible. Early intervention operates during the period when each individual case still matters. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. During exponential growth, case counts double at regular intervals. At 7 days, there may be dozens of cases that can be individually traced and isolated. By 28 days, those dozens have become thousands or millions, making containment impossible. Early intervention operates during the period when each individual case still matters. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -964,15 +1005,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model identifies a geographic region as a 'pandemic hotspot' based on four overlapping risk factors. Which combination of factors represents the MOST scientifically valid set of hotspot indicators?
 
-A. High wildlife diversity, rapid deforestation, dense human population, and limited healthcare infrastructure
-B. Cold climate, low population density, advanced hospitals, and strict border controls
-C. High altitude, oceanic climate, rural population, and abundant wildlife veterinarians
-D. Urban development, low wildlife diversity, high vaccination rates, and minimal travel
+A. Cold climate, low population density, advanced hospitals, and strict border controls
+B. High altitude, oceanic climate, rural population, and abundant wildlife veterinarians
+C. Urban development, low wildlife diversity, high vaccination rates, and minimal travel
+D. High wildlife diversity, rapid deforestation, dense human population, and limited healthcare infrastructure
 
-Correct Answer: A
+Correct Answer: D
 
-Feedback: Correct. Pandemic hotspots occur where high wildlife diversity (more potential reservoir species) overlaps with rapid deforestation (increasing human-wildlife contact), dense human populations (enabling human-to-human transmission), and limited healthcare (delayed detection and response). These factors collectively maximize spillover probability and minimize containment capacity. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Pandemic hotspots occur where high wildlife diversity (more potential reservoir species) overlaps with rapid deforestation (increasing human-wildlife contact), dense human populations (enabling human-to-human transmission), and limited healthcare (delayed detection and response). These factors collectively maximize spillover probability and minimize containment capacity. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -983,15 +1023,14 @@ A student runs a simulation of the model. The model shows that when Human Contac
 
 A model simulation shows that a virus with a Viral Mutation Rate 10x higher than average produces successful zoonotic spillover events 3x more frequently. However, only 1 in 50 spillover events leads to sustained human-to-human transmission. What does this reveal about pandemic emergence?
 
-A. Most pandemics are caused by viruses with low mutation rates
-B. Spillover events are necessary but not sufficient for pandemic emergence; the virus must also acquire mutations enabling efficient human-to-human transmission, which is a rare additional evolutionary step
+A. Spillover events are necessary but not sufficient for pandemic emergence; the virus must also acquire mutations enabling efficient human-to-human transmission, which is a rare additional evolutionary step
+B. If spillover occurs 50 times, a pandemic is guaranteed
 C. Mutation rate has no relationship to pandemic risk
-D. If spillover occurs 50 times, a pandemic is guaranteed
+D. Most pandemics are caused by viruses with low mutation rates
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Spillover is the first barrier, but sustained human-to-human transmission requires additional adaptations (receptor binding optimization, airborne transmission capability, immune evasion). Most spillover events are evolutionary dead ends. Pandemic emergence requires crossing multiple biological barriers, each with its own probability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Spillover is the first barrier, but sustained human-to-human transmission requires additional adaptations (receptor binding optimization, airborne transmission capability, immune evasion). Most spillover events are evolutionary dead ends. Pandemic emergence requires crossing multiple biological barriers, each with its own probability. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1002,15 +1041,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student compares two intervention strategies in the pandemic model: (1) reducing Wildlife-Human Contact Rate by 50% and (2) improving Surveillance Detection Speed by 50%. The model shows Strategy 2 prevents more pandemics. Which analysis BEST explains this result?
 
-A. Reducing contact is irrelevant to pandemic prevention
-B. Contact reduction prevents spillover events but has diminishing returns because some level of human-wildlife interaction is unavoidable; surveillance improvement is effective against ALL spillover events regardless of how they occur
-C. Surveillance is always cheaper than habitat protection
+A. Surveillance is always cheaper than habitat protection
+B. Reducing contact is irrelevant to pandemic prevention
+C. Contact reduction prevents spillover events but has diminishing returns because some level of human-wildlife interaction is unavoidable; surveillance improvement is effective against ALL spillover events regardless of how they occur
 D. Contact reduction increases mutation rate, which cancels out the benefit
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Reducing contact rate decreases the frequency of spillover opportunities but cannot eliminate them entirely because human-wildlife interaction is unavoidable in agriculture, conservation, and daily life. Improved surveillance operates downstream, catching and containing spillover events regardless of their source, making it a more robust intervention point. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Reducing contact rate decreases the frequency of spillover opportunities but cannot eliminate them entirely because human-wildlife interaction is unavoidable in agriculture, conservation, and daily life. Improved surveillance operates downstream, catching and containing spillover events regardless of their source, making it a more robust intervention point. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1021,24 +1059,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A pandemic prediction model shows that two scenarios with identical Zoonotic Spillover Probability produce vastly different outcomes: Scenario A results in 50 total cases while Scenario B results in 5 million cases. Which pair of variable differences MOST PLAUSIBLY explains the divergent outcomes?
 
-A. Scenario B had higher Viral Mutation Rate and lower Immune Naivety
-B. Scenario B had higher Population Density and Travel Connectivity combined with slower Surveillance Detection Speed
+A. Scenario B involved a different animal reservoir species
+B. Scenario B had higher Viral Mutation Rate and lower Immune Naivety
 C. Scenario B occurred in a warmer climate with more rainfall
-D. Scenario B involved a different animal reservoir species
+D. Scenario B had higher Population Density and Travel Connectivity combined with slower Surveillance Detection Speed
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Once spillover occurs, the trajectory depends on spread and detection variables. High Population Density provides more potential contacts, Travel Connectivity exports cases to other regions before containment, and slow Surveillance delays the response. Together, these variables determine whether a spillover becomes a contained cluster or a global pandemic. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Once spillover occurs, the trajectory depends on spread and detection variables. High Population Density provides more potential contacts, Travel Connectivity exports cases to other regions before containment, and slow Surveillance delays the response. Together, these variables determine whether a spillover becomes a contained cluster or a global pandemic. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
 
 
 ## Resources

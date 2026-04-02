@@ -330,6 +330,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Nicotine Concentration → Lung Cell Health relationship as
+unconditional. However, this relationship is scientifically
+contingent on Inflammation Response being active. Without this condition,
+the simulation produces inaccurate results: Nicotine Concentration drives Lung Cell Health
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Nicotine Concentration → Lung Cell Health
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Inflammation Response is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Inflammation Response active and observe
+     how Nicotine Concentration's effect on Lung Cell Health is now gated
+   • Toggle Inflammation Response ON/OFF while Nicotine Concentration remains constant
+   • Verify that Lung Cell Health only responds to Nicotine Concentration when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -901,14 +931,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 In a computational model of vaping damage, a student observes that Inflammation Response increases steadily over time even when Nicotine Concentration remains constant. Which mechanism best explains this model behavior?
 
 A. The model contains an error because inflammation should remain constant if chemical input is constant
-B. Chronic inflammation creates a destructive feedback loop where the immune response itself damages healthy cells, triggering additional inflammation
-C. The body gradually becomes more allergic to nicotine over time
+B. The body gradually becomes more allergic to nicotine over time
+C. Chronic inflammation creates a destructive feedback loop where the immune response itself damages healthy cells, triggering additional inflammation
 D. Inflammation increases because the lungs are successfully healing and need more immune activity
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Chronic inflammation produces a self-reinforcing cycle. The immune molecules (reactive oxygen species, cytokines) released to fight damage also destroy healthy neighboring cells, which triggers more inflammation to address the new damage. This destructive feedback loop escalates even at constant exposure levels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Chronic inflammation produces a self-reinforcing cycle. The immune molecules (reactive oxygen species, cytokines) released to fight damage also destroy healthy neighboring cells, which triggers more inflammation to address the new damage. This destructive feedback loop escalates even at constant exposure levels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -919,15 +948,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model predicts that a person who quits vaping after 6 months recovers most lung cell health, while a person who quits after 3 years shows only partial recovery. What concept does this comparison best demonstrate?
 
-A. Lung cells regenerate at a constant rate regardless of damage severity
-B. Some cellular damage is reversible while prolonged exposure causes irreversible damage through permanent scar tissue formation
-C. The body develops immunity to chemical damage over longer exposure periods
-D. Recovery rate depends entirely on age, not duration of exposure
+A. The body develops immunity to chemical damage over longer exposure periods
+B. Lung cells regenerate at a constant rate regardless of damage severity
+C. Recovery rate depends entirely on age, not duration of exposure
+D. Some cellular damage is reversible while prolonged exposure causes irreversible damage through permanent scar tissue formation
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Short-term damage primarily involves repairable cellular injury. However, prolonged chronic inflammation leads to fibrosis (scarring), where functional lung tissue is permanently replaced by non-functional scar tissue that cannot regenerate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Short-term damage primarily involves repairable cellular injury. However, prolonged chronic inflammation leads to fibrosis (scarring), where functional lung tissue is permanently replaced by non-functional scar tissue that cannot regenerate. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -938,15 +966,14 @@ A student runs a simulation of the model. The model shows that when Nicotine Con
 
 Using the hierarchical organization framework, which sequence correctly traces the impact of vaping chemicals from the smallest to largest scale of biological organization?
 
-A. Whole lung function decreases → alveolar cells are damaged → molecules in aerosol enter airways
-B. Chemical molecules damage epithelial cells → damaged cells impair alveolar gas exchange → reduced gas exchange decreases whole lung function
+A. Chemical molecules damage epithelial cells → damaged cells impair alveolar gas exchange → reduced gas exchange decreases whole lung function
+B. Nicotine enters the brain → the brain signals lungs to stop working → lung cells die
 C. The respiratory system fails → individual cells die → chemical reactions are disrupted
-D. Nicotine enters the brain → the brain signals lungs to stop working → lung cells die
+D. Whole lung function decreases → alveolar cells are damaged → molecules in aerosol enter airways
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This sequence follows the hierarchical cascade from molecular level (chemical interaction with cells) to cellular level (epithelial damage) to tissue level (alveolar function) to organ level (whole lung function). Damage at smaller scales propagates upward through the hierarchy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This sequence follows the hierarchical cascade from molecular level (chemical interaction with cells) to cellular level (epithelial damage) to tissue level (alveolar function) to organ level (whole lung function). Damage at smaller scales propagates upward through the hierarchy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -957,15 +984,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student's model shows that the 'Occasional Use' scenario still produces measurable decreases in Lung Cell Health, even though the person has no symptoms. What is the most important implication of this finding for public health messaging?
 
-A. Occasional use is completely safe because the damage is too small to matter
+A. Occasional use is only harmful if combined with cigarette smoking
 B. Any level of vaping causes some degree of cellular damage, and the absence of symptoms does not indicate the absence of harm
-C. The model must be inaccurate because people with no symptoms cannot have any cellular damage
-D. Occasional use is only harmful if combined with cigarette smoking
+C. Occasional use is completely safe because the damage is too small to matter
+D. The model must be inaccurate because people with no symptoms cannot have any cellular damage
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that even low-level exposure causes measurable biological changes at the cellular level. Symptoms are a lagging indicator that appear only after substantial cumulative damage. Absence of symptoms is not evidence of absence of harm. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that even low-level exposure causes measurable biological changes at the cellular level. Symptoms are a lagging indicator that appear only after substantial cumulative damage. Absence of symptoms is not evidence of absence of harm. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -976,22 +1002,21 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A public health team uses model data to design an anti-vaping campaign. Which approach best applies the scientific evidence from the vaping damage model?
 
-A. Show graphic images of diseased lungs with the message 'Vaping kills' to scare teens into quitting
+A. Tell teens that vaping is illegal and they will be punished if caught
 B. Present the dose-response data showing cumulative cellular damage over time, with visualizations of how the inflammation-damage feedback loop escalates even after exposure stops
-C. Tell teens that vaping is illegal and they will be punished if caught
+C. Show graphic images of diseased lungs with the message 'Vaping kills' to scare teens into quitting
 D. Claim that one puff of a vape causes immediate lung cancer
 
 Correct Answer: B
 
-Feedback: Correct. Evidence-based science communication uses accurate data to inform decision-making. The model provides compelling data about cumulative damage, feedback loops, and the gap between symptoms and actual cellular harm. Presenting this evidence accurately is more credible and effective than fear tactics or exaggeration. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Evidence-based science communication uses accurate data to inform decision-making. The model provides compelling data about cumulative damage, feedback loops, and the gap between symptoms and actual cellular harm. Presenting this evidence accurately is more credible and effective than fear tactics or exaggeration. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC3)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC3)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 

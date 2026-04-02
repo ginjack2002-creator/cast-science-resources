@@ -740,81 +740,9 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.B.2 (Objects can be seen when light is available) + CCC2 (Cause and effect: simple tests)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Material Type, Light Passing Through. Some components are external (Material Type) and some are internal (Light Passing Through). The student needs to understand what each component represents and how they are organized.
-
-What does the word transparent mean?
-
-A. You cannot see through it
-B. You can see through it clearly
-C. It is very dark
-
-Correct Answer: B
-
-Feedback: Yes! Transparent means light passes through and you can see clearly, like a window. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 2
-
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.3 + CCC4 (Systems and System Models)
-
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Material Type increases, Light Passing Through increases. The student is trying to understand why these relationships are positive or negative.
-
-Wax paper lets some light through but things look blurry. What is wax paper?
-
-A. Transparent
-B. Opaque
-C. Translucent
-
-Correct Answer: C
-
-Feedback: That is right! Translucent means some light gets through but things look blurry. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 3
-
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.3 + CCC4 (Systems and System Models)
-
-A student runs a simulation of the model. The model shows that when Material Type increases, Light Passing Through increases. The student changes one variable to see how the whole system responds.
-
-A piece of cardboard blocks ALL the light. What is cardboard?
-
-A. Transparent
-B. Opaque
-C. Translucent
-
-Correct Answer: B
-
-Feedback: Yes! Opaque means no light gets through at all. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 4
-
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.3 + CCC4 (Systems and System Models)
-
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
-
-When the material is more clear, what happens to the light passing through?
-
-A. Less light gets through
-B. No light gets through
-C. More light gets through
-
-Correct Answer: C
-
-Feedback: That is right! Clearer materials let more light pass through. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
----
-
-### Question 5
-
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.3 + CCC4 (Systems and System Models)
-
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Material Type), but they can take action on internal components (Light Passing Through). They need to decide which action would be most effective based on what the model shows.
+A student shines a flashlight at different objects in the classroom. First, she shines the light at a window. She notices she can see the wall on the other side of the window.
 
 Can you see through a window?
 
@@ -824,19 +752,86 @@ C. Only at night
 
 Correct Answer: A
 
-Feedback: Yes! Windows are clear, so light goes right through them. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
+Feedback: Windows are clear, so light goes right through them and you can see the other side. If you chose B, windows are made of clear glass that lets light pass through, so you can see through them. If you chose C, you can see through a window during the day and at night. The glass is always clear.
+---
 
+### Question 2
+
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.B.2 (Objects in the path of light cast shadows) + CCC2 (Cause and effect: identify events)
+
+A student shines a flashlight on a thick book. He looks behind the book to see if any light came through. He cannot see any light on the other side of the book.
+
+What happens when you shine a light on a book?
+
+A. The light is blocked by the book
+B. The light goes through the book
+C. The book disappears
+
+Correct Answer: A
+
+Feedback: A book is solid and thick, so it blocks the light. No light can pass through it. If you chose B, a book is made of thick paper that stops light. Light cannot travel through a book. If you chose C, a book does not disappear when light shines on it. The book stays where it is and blocks the light.
+---
+
+### Question 3
+
+CAST Alignment: SEP 3.1.1 (Plan an investigation to produce data) + DCI PS4.B.2 (Objects can be seen when light illuminates them) + CCC2 (Cause and effect: simple tests show cause)
+
+A teacher puts three objects in front of a flashlight: a brick wall, a clear water bottle, and a wooden door. She asks the students to predict which one they can see through.
+
+Which one can you see through?
+
+A. A wooden door
+B. A brick wall
+C. A clear water bottle
+
+Correct Answer: C
+
+Feedback: A clear water bottle lets light pass through so you can see what is inside and behind it. If you chose B, a brick wall is solid and thick. It blocks all the light, so you cannot see through it. If you chose A, a wooden door is solid and blocks all the light. You cannot see through wood.
+---
+
+### Question 4
+
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.B.2 (Objects in the path of light) + CCC2 (Cause and effect: identify cause and effect)
+
+A student is studying different materials. She learned that some materials let light through (transparent), some let a little light through (translucent), and some block all light (opaque). She shines a flashlight at a piece of wax paper and sees blurry light on the other side.
+
+Wax paper lets some light through but things look blurry. What is wax paper?
+
+A. Translucent
+B. Transparent
+C. Opaque
+
+Correct Answer: A
+
+Feedback: Translucent means some light gets through but things look blurry. Wax paper is translucent. If you chose B, transparent means you can see clearly through it, like a window. Wax paper makes things look blurry, not clear. If you chose C, opaque means no light gets through at all, like a wall. Wax paper does let some light through.
+---
+
+### Question 5
+
+CAST Alignment: SEP 3.1.1 (Plan an investigation to produce data) + DCI PS4.B.2 (Objects can be seen when light is available to illuminate them) + CCC2 (Cause and effect: design simple tests)
+
+A student tested three materials: clear plastic wrap, wax paper, and cardboard. She shone a flashlight through each one. The clear wrap let all the light through. The wax paper let some light through. The cardboard blocked all the light. She wanted to understand the pattern.
+
+When the material is more clear, what happens to the light passing through?
+
+A. No light gets through
+B. More light gets through
+C. Less light gets through
+
+Correct Answer: B
+
+Feedback: Clearer materials let more light pass through. That is why you can see through a window but not through a wall. If you chose C, clearer materials let more light through, not less. A clear window lets more light through than frosted glass. If you chose A, clear materials do let light through. Only opaque materials block all the light.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.3, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.3, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.3, CCC4)
-Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.3, CCC4)
+Question 1: A (Cognitive Level: Identify)
+Question 2: A (Cognitive Level: Identify)
+Question 3: C (Cognitive Level: Reason)
+Question 4: A (Cognitive Level: Reason)
+Question 5: B (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

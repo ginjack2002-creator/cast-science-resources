@@ -347,6 +347,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Wind Speed → Fire Intensity relationship as
+unconditional. However, this relationship is scientifically
+contingent on Fuel Load being active. Without this condition,
+the simulation produces inaccurate results: Wind Speed drives Fire Intensity
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Wind Speed → Fire Intensity
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Fuel Load is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Fuel Load active and observe
+     how Wind Speed's effect on Fire Intensity is now gated
+   • Toggle Fuel Load ON/OFF while Wind Speed remains constant
+   • Verify that Fire Intensity only responds to Wind Speed when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -916,15 +946,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In a student's wildfire model, the 'Healthy Fire Cycle' scenario shows that low-intensity fire actually REDUCES Fuel Load and stabilizes the system. The 'Catastrophic Fire' scenario shows that high-intensity fire INCREASES conditions for future catastrophic fire. What fundamental difference in system behavior do these two scenarios demonstrate?
 
-A. Both scenarios produce identical outcomes because all fire is the same
-B. Low-intensity fire acts as a stabilizing negative feedback (reducing fuel prevents future fire escalation), while high-intensity fire creates a destabilizing positive feedback (destroying vegetation leads to drier conditions and more combustible fuel for the next fire)
+A. Low-intensity fire acts as a stabilizing negative feedback (reducing fuel prevents future fire escalation), while high-intensity fire creates a destabilizing positive feedback (destroying vegetation leads to drier conditions and more combustible fuel for the next fire)
+B. Both scenarios produce identical outcomes because all fire is the same
 C. The model shows that fire intensity has no relationship to ecosystem recovery
 D. Catastrophic fire is actually better for the ecosystem than low-intensity fire
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model reveals two fundamentally different system behaviors depending on fire intensity. Low-intensity fire is a stabilizing force: it removes fuel, which reduces the potential energy for future fires, creating a negative feedback loop that maintains ecosystem health. High-intensity fire is destabilizing: it destroys vegetation, dries soil, and creates conditions that make the next fire equally or more catastrophic, creating a positive feedback loop. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals two fundamentally different system behaviors depending on fire intensity. Low-intensity fire is a stabilizing force: it removes fuel, which reduces the potential energy for future fires, creating a negative feedback loop that maintains ecosystem health. High-intensity fire is destabilizing: it destroys vegetation, dries soil, and creates conditions that make the next fire equally or more catastrophic, creating a positive feedback loop. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -943,7 +972,6 @@ D. By increasing Soil Moisture through continuous irrigation of all forests
 Correct Answer: B
 
 Feedback: Correct. The model identifies Fuel Load as the most practical intervention point. While Wind Speed is uncontrollable and Soil Moisture cannot be artificially maintained at forest scale, Fuel Load can be directly reduced through prescribed burns and mechanical thinning. Reducing fuel before a wildfire occurs prevents high-intensity fire, which prevents the downstream cascade of soil drying, vegetation destruction, and further fuel accumulation. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 3
@@ -954,15 +982,14 @@ A student runs a simulation of the model. The model shows that when Wind Speed i
 
 A student's model shows that after 80 years of fire suppression, fuel loads are 5-10 times higher than natural levels. A forest manager proposes continuing suppression but investing more in firefighting technology. Using model evidence, evaluate this proposal.
 
-A. This is the best approach because firefighting technology is always improving
+A. The model shows that fire suppression has been successful and should continue
 B. This approach treats the symptom (active fire) without addressing the cause (excessive fuel accumulation); the model shows that suppression has created the problem, and continuing it will make fuel loads even more extreme, guaranteeing increasingly catastrophic fires that eventually overwhelm any firefighting capability
 C. Firefighting budgets should be unlimited because fire is always bad
-D. The model shows that fire suppression has been successful and should continue
+D. This is the best approach because firefighting technology is always improving
 
 Correct Answer: B
 
-Feedback: Correct. The model clearly demonstrates that fire suppression created the current crisis by allowing fuel to accumulate to unprecedented levels. Continuing suppression while investing in firefighting is analogous to buying bigger mops while leaving a broken pipe unfixed. The fuel continues to accumulate, making each future fire more extreme. The model shows that prevention (prescribed burns, fuel management) is fundamentally more effective than reaction (firefighting). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model clearly demonstrates that fire suppression created the current crisis by allowing fuel to accumulate to unprecedented levels. Continuing suppression while investing in firefighting is analogous to buying bigger mops while leaving a broken pipe unfixed. The fuel continues to accumulate, making each future fire more extreme. The model shows that prevention (prescribed burns, fuel management) is fundamentally more effective than reaction (firefighting). If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -974,14 +1001,13 @@ Scientists are studying data related to this system. They collected observations
 A student adds Carbon Release as a component to their model. They discover that wildfire releases massive amounts of stored CO2, which contributes to climate change, which creates hotter/drier conditions, which makes future fires worse. What does this reveal about the wildfire-climate relationship?
 
 A. Carbon release from wildfires is negligible compared to human emissions
-B. Wildfire and climate change form a nested positive feedback loop: fire releases carbon that accelerates climate change, which creates conditions for worse fires, creating a self-reinforcing cycle that operates at a larger scale than the vegetation-soil-fuel loop alone
+B. Wildfire carbon release actually helps cool the atmosphere by blocking sunlight with smoke
 C. Climate change has no connection to wildfire behavior
-D. Wildfire carbon release actually helps cool the atmosphere by blocking sunlight with smoke
+D. Wildfire and climate change form a nested positive feedback loop: fire releases carbon that accelerates climate change, which creates conditions for worse fires, creating a self-reinforcing cycle that operates at a larger scale than the vegetation-soil-fuel loop alone
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The extended model reveals a feedback loop operating at a larger scale than the original vegetation-soil-fuel cycle. Wildfire releases decades of stored carbon as CO2 in days. This CO2 contributes to atmospheric greenhouse gas concentration, which accelerates climate warming, which creates hotter and drier conditions, which makes future fires more intense and carbon-releasing. This creates a planetary-scale positive feedback loop. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The extended model reveals a feedback loop operating at a larger scale than the original vegetation-soil-fuel cycle. Wildfire releases decades of stored carbon as CO2 in days. This CO2 contributes to atmospheric greenhouse gas concentration, which accelerates climate warming, which creates hotter and drier conditions, which makes future fires more intense and carbon-releasing. This creates a planetary-scale positive feedback loop. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -992,24 +1018,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student's community wildfire resilience plan proposes prescribed burns, defensible space requirements, fire-resistant building codes, and post-fire restoration. Their model shows this comprehensive approach reduces catastrophic fire risk by 70%. Why does the model predict that addressing the feedback loop at multiple points is more effective than targeting a single intervention?
 
-A. Multiple interventions always produce exactly additive results
-B. Targeting multiple points in the feedback loop reduces the probability that the cycle can self-sustain, because even if one intervention is imperfect, the others provide redundancy that prevents the system from reaching conditions for catastrophic fire
-C. The model is wrong because a single intervention should be sufficient
-D. Multiple interventions are only necessary in areas with high wind speeds
+A. Multiple interventions are only necessary in areas with high wind speeds
+B. Multiple interventions always produce exactly additive results
+C. Targeting multiple points in the feedback loop reduces the probability that the cycle can self-sustain, because even if one intervention is imperfect, the others provide redundancy that prevents the system from reaching conditions for catastrophic fire
+D. The model is wrong because a single intervention should be sufficient
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows that addressing the feedback loop at multiple points creates a resilient defense system. Prescribed burns reduce fuel (breaking the fuel-to-intensity link), defensible space protects structures even if fire occurs, building codes ensure structures survive moderate shaking, and post-fire restoration prevents the recovery-failure pathway. Each intervention reduces the probability of the next link in the chain activating, and together they prevent the feedback loop from completing its cycle. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that addressing the feedback loop at multiple points creates a resilient defense system. Prescribed burns reduce fuel (breaking the fuel-to-intensity link), defensible space protects structures even if fire occurs, building codes ensure structures survive moderate shaking, and post-fire restoration prevents the recovery-failure pathway. Each intervention reduces the probability of the next link in the chain activating, and together they prevent the feedback loop from completing its cycle. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.3, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.3, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.3, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.3, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.3, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.3, CCC4)
 
 
 ## Resources

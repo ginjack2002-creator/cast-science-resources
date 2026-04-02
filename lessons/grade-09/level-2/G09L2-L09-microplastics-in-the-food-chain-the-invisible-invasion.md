@@ -395,6 +395,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Plastic Input Rate → Microplastic Concentration relationship as
+unconditional. However, this relationship is scientifically
+contingent on Decomposition Rate being inactive. Without this condition,
+the simulation produces inaccurate results: Plastic Input Rate drives Microplastic Concentration
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Plastic Input Rate → Microplastic Concentration
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Decomposition Rate is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Decomposition Rate inactive and observe
+     how Plastic Input Rate's effect on Microplastic Concentration is now gated
+   • Toggle Decomposition Rate ON/OFF while Plastic Input Rate remains constant
+   • Verify that Microplastic Concentration only responds to Plastic Input Rate when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Decomposition Rate → Microplastic Concentration
+   • Set condition: IF Plastic Input Rate is ON
+   • This ensures Decomposition Rate's effect on Microplastic Concentration
+     is contingent on Plastic Input Rate being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Bioaccumulation → Trophic Transfer
+   • Set condition: IF Marine Organism Health is ON
+   • This ensures Bioaccumulation's effect on Trophic Transfer
+     is contingent on Marine Organism Health being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -965,15 +1007,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The simulation projects microplastic concentration 50 years forward under current input rates with near-zero decomposition. The model shows concentration increasing linearly, not exponentially. What does this linear pattern reveal about the accumulation dynamics?
 
-A. The linear pattern means the problem is not serious
+A. Linear growth indicates the model is incorrect
 B. Unlike systems with reinforcing feedback, microplastic accumulation is driven by constant input against near-zero removal, creating steady linear growth rather than accelerating growth
 C. The concentration should decrease over time as organisms filter plastics from the environment
-D. Linear growth indicates the model is incorrect
+D. The linear pattern means the problem is not serious
 
 Correct Answer: B
 
-Feedback: Correct. Microplastic accumulation is a stock-flow problem: constant input with negligible output produces linear growth. There is no reinforcing feedback accelerating the input, but the absence of any meaningful removal mechanism means concentrations rise relentlessly. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Microplastic accumulation is a stock-flow problem: constant input with negligible output produces linear growth. There is no reinforcing feedback accelerating the input, but the absence of any meaningful removal mechanism means concentrations rise relentlessly. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -985,14 +1026,13 @@ In the computational model for this lesson, a student draws arrows between compo
 A student's model tracks microplastic concentration through four trophic levels: water, plankton, small fish, and tuna. The concentration increases by roughly 10x at each level. What mechanism drives this amplification?
 
 A. Each organism manufactures new plastic internally
-B. Each predator consumes many prey organisms, inheriting and concentrating the accumulated plastic from all of them, while excreting very little
+B. The amplification is an artifact of the model and does not occur in real food chains
 C. Higher trophic levels are exposed to different, more concentrated sources of plastic
-D. The amplification is an artifact of the model and does not occur in real food chains
+D. Each predator consumes many prey organisms, inheriting and concentrating the accumulated plastic from all of them, while excreting very little
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Biomagnification occurs because each predator consumes many prey items, inheriting the plastic load from each one. Since plastic is not metabolized or excreted efficiently, it accumulates in the predator at the combined concentration of all its prey. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Biomagnification occurs because each predator consumes many prey items, inheriting the plastic load from each one. Since plastic is not metabolized or excreted efficiently, it accumulates in the predator at the combined concentration of all its prey. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -1003,15 +1043,14 @@ A student runs a simulation of the model. The model shows that when Plastic Inpu
 
 The model shows that reducing plastic input by 50% today causes ocean concentrations to continue rising (just more slowly) rather than declining. What does this reveal about the timescale mismatch in this system?
 
-A. Reducing plastic input is pointless because concentrations will keep rising regardless
-B. Even with reduced input, the existing stock of persistent plastic continues to accumulate because decomposition is negligible; the system has enormous inertia due to the timescale mismatch between input (years) and decomposition (centuries)
-C. The model shows that concentrations should drop immediately after reducing input
-D. The 50% reduction was not enough to matter
+A. The 50% reduction was not enough to matter
+B. Reducing plastic input is pointless because concentrations will keep rising regardless
+C. Even with reduced input, the existing stock of persistent plastic continues to accumulate because decomposition is negligible; the system has enormous inertia due to the timescale mismatch between input (years) and decomposition (centuries)
+D. The model shows that concentrations should drop immediately after reducing input
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The timescale mismatch is the core problem. Plastic enters the system in years but takes centuries to degrade. Even halving input means new plastic continues to add to the existing stock, which barely decomposes. Concentrations only stabilize when input equals the negligible decomposition rate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The timescale mismatch is the core problem. Plastic enters the system in years but takes centuries to degrade. Even halving input means new plastic continues to add to the existing stock, which barely decomposes. Concentrations only stabilize when input equals the negligible decomposition rate. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1022,15 +1061,14 @@ Scientists are studying data related to this system. They collected observations
 
 Based on the model, which intervention point in the plastic pathway would produce the greatest reduction in human microplastic exposure?
 
-A. Removing microplastics from individual fish before consumption
-B. Reducing plastic input at the source before it enters the environment, because it prevents accumulation at every subsequent stage of the pathway
-C. Developing bacteria that can eat plastic in the deep ocean
-D. Filtering microplastics from the air inside homes
+A. Filtering microplastics from the air inside homes
+B. Developing bacteria that can eat plastic in the deep ocean
+C. Reducing plastic input at the source before it enters the environment, because it prevents accumulation at every subsequent stage of the pathway
+D. Removing microplastics from individual fish before consumption
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Source reduction is the highest-leverage intervention because it prevents plastic from entering the accumulation pathway at all. Every unit of plastic prevented at the source avoids amplification through bioaccumulation and biomagnification at every subsequent trophic level. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Source reduction is the highest-leverage intervention because it prevents plastic from entering the accumulation pathway at all. Every unit of plastic prevented at the source avoids amplification through bioaccumulation and biomagnification at every subsequent trophic level. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1041,24 +1079,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student argues that 'the plastic problem will eventually solve itself because organisms will evolve to digest plastic.' Based on the model's timescale analysis, what is the flaw in this reasoning?
 
-A. The reasoning is correct; evolution will solve the problem within a few decades
-B. Evolutionary adaptation operates on timescales of thousands to millions of years, while microplastic accumulation is causing measurable ecological harm on timescales of decades, creating a dangerous mismatch
-C. Some organisms already efficiently digest plastic, so the problem is already being solved
+A. Evolutionary adaptation operates on timescales of thousands to millions of years, while microplastic accumulation is causing measurable ecological harm on timescales of decades, creating a dangerous mismatch
+B. Some organisms already efficiently digest plastic, so the problem is already being solved
+C. The reasoning is correct; evolution will solve the problem within a few decades
 D. Evolution cannot act on plastic because plastic is not a biological substance
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The timescale mismatch is critical. Even if plastic-digesting enzymes evolve (some primitive examples exist), the evolutionary timescale is vastly longer than the decades over which accumulation is causing ecological damage. Relying on evolution means accepting centuries of harm. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The timescale mismatch is critical. Even if plastic-digesting enzymes evolve (some primitive examples exist), the evolutionary timescale is vastly longer than the decades over which accumulation is causing ecological damage. Relying on evolution means accepting centuries of harm. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC1)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC2)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC2)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC2)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC2)
 
 
 ## Resources

@@ -170,113 +170,109 @@ Biomechanical Engineers study how animals move and use those ideas to design bet
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-LS1-1, 3-5-ETS1-1, 3-5-ETS1-3.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.A.1 (Identify structures that support survival) + CCC6 (Identify structure and function relationships)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Tail Shape, Body Size, Swimming Speed, Energy Used. Some components are external (Tail Shape, Body Size) and some are internal (Swimming Speed, Energy Used). The student needs to understand what each component represents and how they are organized.
+An engineering team is building a swimming robot inspired by beavers. They make a list of design factors: tail shape, body size, swimming speed, and energy used. They want to sort these into inputs (things the engineers choose) and outputs (things that result from those choices).
 
-What is biomimicry?
+Which list correctly sorts the components of the swimming robot system?
 
-A. Training animals to do human jobs
-B. Designing human technology by copying ideas from nature
-C. Building houses for animals in the wild
-D. Taking photographs of animals
+A. Inputs: Tail Shape, Body Size — Outputs: Swimming Speed, Energy Used
+B. Inputs: Swimming Speed, Energy Used — Outputs: Tail Shape, Body Size
+C. Inputs: Energy Used, Body Size — Outputs: Tail Shape, Swimming Speed
+D. Inputs: Tail Shape, Swimming Speed — Outputs: Body Size, Energy Used
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct! Biomimicry is the practice of designing human technology by copying ideas and strategies found in nature. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Tail shape and body size are design choices that the engineers control. These are the inputs. Swimming speed and energy used are the results of those design choices. They are the outputs that the model predicts based on the inputs. If you chose B, you reversed the inputs and outputs. Engineers choose the shape and size, and those choices determine speed and energy use. If you chose D, swimming speed is an output that results from the design. Engineers cannot directly set the speed without choosing a shape and size first. If you chose C, energy used is an output that depends on the design choices, not an input the engineers set directly.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.A.1 (Describe how structures function) + CCC6 (Explain how shape determines function)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Tail Shape increases, Swimming Speed decreases; when Body Size increases, Swimming Speed decreases. The student is trying to understand why these relationships are positive or negative.
+A student uses a model to test three different tail shapes for a swimming robot: flat (like a beaver), round, and pointed. With a medium-sized body, the student records that the flat tail gives the highest swimming speed, the round tail gives medium speed, and the pointed tail gives the lowest speed.
 
-In the model, what happened when you changed the tail shape from flat (beaver) to round?
+Which explanation best describes WHY the flat tail produces the highest speed?
 
-A. Swimming speed increased and energy use decreased
-B. Swimming speed decreased because a round tail pushes less water
-C. Nothing changed at all
-D. The robot could not swim at all
+A. The flat tail is the heaviest, and heavier tails make the robot sink faster through the water.
+B. The flat tail pushes the most water backward with each stroke, creating the most forward thrust.
+C. The flat tail is the smallest, so it creates the least water resistance.
+D. The flat tail looks the most like a real beaver, so the water moves aside for it.
 
 Correct Answer: B
 
-Feedback: Yes! A flat tail pushes more water and creates more swimming speed. Changing to a round tail decreased speed because it pushes less water. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: A flat tail works like a paddle. Its wide, flat surface pushes a large volume of water backward with each stroke. Newton's Third Law tells us that pushing water backward creates an equal force pushing the robot forward. A bigger push means more speed. If you chose A, weight and sinking are not how tails create swimming speed. A tail generates speed by pushing water, not by being heavy. If you chose D, water does not move aside for something because it looks like a beaver. The shape physically interacts with the water to create thrust. If you chose C, a flat tail actually has a larger surface area than a pointed tail. Its advantage is in pushing water, not in being small.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.A.1 (Define criteria and constraints of a design) + CCC2 (Use cause and effect to explain outcomes)
 
-A student runs a simulation of the model. The model shows that when Tail Shape increases, Swimming Speed decreases and when Body Size increases, Swimming Speed decreases and when Body Size increases, Energy Used increases. The student changes one variable to see how the whole system responds.
+A student tests how body size affects a swimming robot with a flat tail. The student records these results: a small body uses low energy, a medium body uses medium energy, and a large body uses high energy. The student also notices that the larger body moves more slowly.
 
-What tradeoff did the model reveal about body size?
+Based on these results, what is the tradeoff of making the robot body larger?
 
-A. Bigger bodies are always better in every way
-B. Smaller bodies are always better in every way
-C. A bigger body gives more power but uses more energy
-D. Body size has no effect on swimming
+A. A larger body uses less energy but swims more slowly.
+B. A larger body uses more energy but swims faster because bigger means more powerful.
+C. A larger body uses more energy AND swims more slowly because the bigger body creates more water resistance.
+D. There is no tradeoff because bigger is always better in every way.
 
 Correct Answer: C
 
-Feedback: Correct! The model showed that bigger bodies provide more power but also use more energy. This is a classic engineering tradeoff. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The data shows that a larger body both uses more energy and swims more slowly. This happens because a bigger body has more surface area dragging through the water, creating more resistance. It takes more energy to push that larger body, and the resistance slows it down. If you chose A, the data shows a larger body uses MORE energy, not less. If you chose B, the data shows a larger body actually swims MORE SLOWLY. While a bigger body might have more raw power, the increased water resistance outweighs it. If you chose D, the data clearly shows tradeoffs. Bigger means more energy used and slower speed. Tradeoffs are a fundamental part of engineering design.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI ETS1.B.1 (Use data to evaluate designs) + CCC6 (Explain how design shapes function)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Two students are debating how to design the best swimming robot. Student A says they should use a pointed tail because it looks more streamlined. Student B says they should copy the beaver's flat tail because evolution has already tested that design. The model data shows: flat tail = high speed and medium energy, round tail = medium speed and low energy, pointed tail = low speed and low energy.
 
-Why do engineers study animal shapes instead of inventing designs from scratch?
+Which student's argument is best supported by the model data?
 
-A. Because animals tell engineers what to build
-B. Because millions of years of evolution have already tested and refined these designs
-C. Because it is easier to copy than to think
-D. Because the government requires it
+A. Neither student, because the round tail is the best compromise.
+B. Student A, because the pointed tail uses the least energy, making it the most efficient.
+C. Both students are equally correct because the model cannot determine which tail is best.
+D. Student B, because the flat tail produces the highest speed, and the beaver's design has been tested by millions of years of evolution.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: That is right! Nature has been testing designs through evolution for millions of years. Animals alive today have shapes and features that have been refined over a very long time. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that the flat tail produces the highest speed. Student B correctly argues that evolution has refined the beaver's flat tail over millions of years for efficient swimming. While the pointed tail uses slightly less energy, it produces much less speed. The flat tail is the proven design for swimming performance. If you chose B, low energy alone does not make a design best. The pointed tail has low energy but also the lowest speed. A robot that barely moves is not a useful swimming robot. If you chose A, the question asks whose argument is best supported, and the flat tail data clearly supports Student B's claim about swimming performance. If you chose C, the model data clearly shows the flat tail is the best swimmer, directly supporting Student B.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ETS1.C.1 (Use iterative testing to improve designs) + CCC2 (Use cause and effect to predict outcomes)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Tail Shape, Body Size), but they can take action on internal components (Swimming Speed, Energy Used). They need to decide which action would be most effective based on what the model shows.
+An engineer is designing a swimming robot for ocean research. The robot needs to swim fast to keep up with dolphins but also needs to carry heavy equipment. The model shows that a flat tail gives the best speed but a larger body increases energy use and decreases speed.
 
-What does it mean to copy an idea from nature to solve a problem?
+Based on the model, what should the engineer predict about this design challenge?
 
-A. Taking an animal home as a pet
-B. Using a design found in nature to build something useful
-C. Drawing a picture of an animal
-D. Planting a garden
+A. The engineer faces a tradeoff: the large body needed to carry equipment will slow down the robot and use more energy, even with the best tail shape.
+B. The engineer should remove the tail entirely because body size is the only factor that matters.
+C. The engineer can make the robot big with a flat tail and it will swim fast with low energy use.
+D. The engineer should make the robot as small as possible because small robots are always faster.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Using designs found in nature to build useful things is called biomimicry. Engineers study animals and plants to get ideas for better technology. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model predicts a tradeoff. A flat tail maximizes speed, but the large body needed to carry equipment will increase water resistance and energy use. The engineer cannot have maximum speed AND a large equipment-carrying body. This is a real engineering challenge that requires balancing competing goals. If you chose C, the model shows that larger bodies use more energy and swim slower, even with a flat tail. You cannot avoid the tradeoff. If you chose B, the tail shape is critical for generating swimming speed. Removing it would eliminate the main source of thrust. If you chose D, the robot needs to carry heavy equipment, so making it tiny is not practical. The engineer must find a balance between size and speed.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.A.1, CCC6)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.A.1, CCC6)
+Question 3: C (Cognitive Level: Reason + Evidence — SEP 2.1.2, DCI ETS1.A.1, CCC2)
+Question 4: D (Cognitive Level: Argue — SEP 6.1.1, DCI ETS1.B.1, CCC6)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ETS1.C.1, CCC2)
 
+---
 
 ## Lesson Metadata
 

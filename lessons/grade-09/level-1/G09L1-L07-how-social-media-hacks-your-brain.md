@@ -918,15 +918,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In a student's computational model, reducing Notification Frequency from HIGH to LOW decreases Dopamine Release, which decreases Screen Time, which decreases Social Comparison, which stabilizes Self-Esteem. What does this model output demonstrate about the system?
 
-A. Self-esteem is determined entirely by genetics and cannot be influenced by external factors
+A. The model proves that social media has no negative effects
 B. Controlling the entry point of the feedback loop (notifications) can disrupt the entire chain, because each downstream component depends on the one before it
 C. Reducing notifications has no effect on dopamine because dopamine is released regardless of external stimuli
-D. The model proves that social media has no negative effects
+D. Self-esteem is determined entirely by genetics and cannot be influenced by external factors
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that the feedback loop has a controllable entry point. By reducing notification frequency, the initial dopamine trigger is diminished, which reduces the behavioral response (screen time), which reduces the psychological exposure (social comparison), which stabilizes the outcome (self-esteem). Intervening early in the chain disrupts all downstream effects. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates that the feedback loop has a controllable entry point. By reducing notification frequency, the initial dopamine trigger is diminished, which reduces the behavioral response (screen time), which reduces the psychological exposure (social comparison), which stabilizes the outcome (self-esteem). Intervening early in the chain disrupts all downstream effects. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -937,15 +936,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model shows that during the 'High Notifications' scenario, Screen Time continues to increase even after the student reports wanting to stop. The model predicts this behavior because:
 
-A. The phone physically prevents the user from putting it down
-B. The positive feedback loop has become self-sustaining: dopamine-driven habits bypass conscious decision-making because neuroplasticity has physically rewired the brain's neural pathways to automate phone-checking behavior
-C. The student does not actually want to stop and is lying about their intentions
-D. Notification frequency has no relationship to screen time in the model
+A. Notification frequency has no relationship to screen time in the model
+B. The student does not actually want to stop and is lying about their intentions
+C. The phone physically prevents the user from putting it down
+D. The positive feedback loop has become self-sustaining: dopamine-driven habits bypass conscious decision-making because neuroplasticity has physically rewired the brain's neural pathways to automate phone-checking behavior
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model illustrates how a positive feedback loop becomes self-sustaining through neuroplasticity. Repeated dopamine-driven phone-checking physically strengthens the neural pathways associated with this behavior, eventually making it automatic and habitual. At this point, the behavior continues even when the conscious mind wants to stop, because the habit pathway bypasses deliberate decision-making. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model illustrates how a positive feedback loop becomes self-sustaining through neuroplasticity. Repeated dopamine-driven phone-checking physically strengthens the neural pathways associated with this behavior, eventually making it automatic and habitual. At this point, the behavior continues even when the conscious mind wants to stop, because the habit pathway bypasses deliberate decision-making. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -956,15 +954,14 @@ A student runs a simulation of the model. The model shows that when Notification
 
 Two students compare their models. Student A's model only includes Notifications → Dopamine → Screen Time. Student B's model adds Social Comparison → Self-Esteem, with low Self-Esteem feeding back to increase Screen Time (seeking validation). Which model better captures the addictive nature of social media?
 
-A. Student A's model is better because simpler models are always more accurate
-B. Student B's model is more complete because it includes the self-reinforcing loop where decreased self-esteem drives users to seek MORE online validation, creating the positive feedback cycle that makes the system truly addictive
-C. Both models are equally valid because they contain the same core mechanism
-D. Neither model is useful because addiction cannot be modeled computationally
+A. Student B's model is more complete because it includes the self-reinforcing loop where decreased self-esteem drives users to seek MORE online validation, creating the positive feedback cycle that makes the system truly addictive
+B. Both models are equally valid because they contain the same core mechanism
+C. Neither model is useful because addiction cannot be modeled computationally
+D. Student A's model is better because simpler models are always more accurate
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Student B's model captures the critical self-reinforcing loop: social comparison erodes self-esteem, and low self-esteem drives users to seek validation online (more likes, followers, comments), which increases screen time and exposure to more comparison content. This positive feedback loop is what makes the system self-sustaining and difficult to escape. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Student B's model captures the critical self-reinforcing loop: social comparison erodes self-esteem, and low self-esteem drives users to seek validation online (more likes, followers, comments), which increases screen time and exposure to more comparison content. This positive feedback loop is what makes the system self-sustaining and difficult to escape. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -976,14 +973,13 @@ Scientists are studying data related to this system. They collected observations
 A student designs a digital wellness app that detects when a user has been scrolling for 30 minutes and suggests they message a real friend instead. Which neuroscience principle from the model does this intervention apply?
 
 A. Eliminating dopamine from the brain entirely
-B. Habit replacement theory: the intervention redirects the social connection need from passive scrolling (which triggers comparison) to active social engagement (which satisfies the underlying need without the harmful comparison cycle)
-C. Forcing the user to stop using their phone completely
+B. Forcing the user to stop using their phone completely
+C. Habit replacement theory: the intervention redirects the social connection need from passive scrolling (which triggers comparison) to active social engagement (which satisfies the underlying need without the harmful comparison cycle)
 D. Increasing notification frequency to overwhelm the dopamine system
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Neuroscience shows that habits cannot simply be deleted; they must be replaced with alternative behaviors that satisfy the same underlying need. The need for social connection can be met through direct messaging (without the comparison content of feeds). This redirects the behavior without fighting the fundamental human drive for social interaction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Neuroscience shows that habits cannot simply be deleted; they must be replaced with alternative behaviors that satisfy the same underlying need. The need for social connection can be met through direct messaging (without the comparison content of feeds). This redirects the behavior without fighting the fundamental human drive for social interaction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -996,21 +992,20 @@ After studying the model, a student argues: 'Social media companies are doing th
 
 A. The analogy is completely wrong because social media is nothing like tobacco
 B. The analogy is supported by model evidence: both industries engineer products to exploit biological vulnerabilities (dopamine pathways / nicotine receptors), both use research to maximize addictive potential, and both have internal data showing harm to users that they continued to suppress
-C. The analogy fails because social media is free while tobacco costs money
-D. The analogy is exaggerated because social media has no documented negative health effects
+C. The analogy is exaggerated because social media has no documented negative health effects
+D. The analogy fails because social media is free while tobacco costs money
 
 Correct Answer: B
 
-Feedback: Correct. The model supports this analogy on multiple levels: both industries target biological vulnerabilities (the dopamine reward system for social media, nicotine receptors for tobacco), both use behavioral research to maximize engagement/addiction, and both have demonstrated awareness of harm to users (Facebook's internal research showing Instagram's effect on teen mental health mirrors tobacco companies' suppressed cancer research). The mechanism of exploitation is remarkably parallel. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model supports this analogy on multiple levels: both industries target biological vulnerabilities (the dopamine reward system for social media, nicotine receptors for tobacco), both use behavioral research to maximize engagement/addiction, and both have demonstrated awareness of harm to users (Facebook's internal research showing Instagram's effect on teen mental health mirrors tobacco companies' suppressed cancer research). The mechanism of exploitation is remarkably parallel. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC2)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC2)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC2)
 
 

@@ -181,113 +181,111 @@ Wetland Ecologists study how wetland ecosystems function and design restoration 
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-LS2-1, 5-ESS2-1, 3-5-ETS1-3.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.A.1 (Describe how Earth's systems interact) + CCC4 (Describe a system in terms of its components)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Beaver Population, Tree Availability, Rainfall, Dam Size, Water Level, Wetland Area, Biodiversity. Some components are external (Beaver Population, Tree Availability, Rainfall) and some are internal (Dam Size, Water Level, Wetland Area, Biodiversity). The student needs to understand what each component represents and how they are organized.
+Scientists build a 7-component model of how beavers create an ecosystem. The model includes: beaver population, tree availability, rainfall, dam size, water level, wetland area, and biodiversity. Some components are external inputs that the scientists set, and others are internal outputs that the model calculates based on the cascade chain.
 
-In the 7-component model, what is the correct cascade chain from beaver activity to biodiversity?
+Which list correctly identifies ALL the external inputs?
 
-A. Beavers create biodiversity directly without any steps in between
-B. Beavers + Trees build Dam, Dam raises Water Level, Water creates Wetland Area, Wetland supports Biodiversity
-C. Rainfall creates beavers, beavers create trees, trees create water
-D. Biodiversity creates beavers, which then create dams
+A. Rainfall is the only external input
+B. Dam Size, Water Level, Wetland Area, and Biodiversity
+C. Beaver Population, Tree Availability, and Rainfall
+D. Beaver Population and Dam Size
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! The model showed the full cascade chain: Beavers + Trees build a Dam, the Dam raises the Water Level, higher Water creates Wetland Area, and Wetland Area supports Biodiversity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Beaver population, tree availability, and rainfall are all external inputs that exist independently of the system. They are the starting conditions. Dam size, water level, wetland area, and biodiversity are all internal outputs calculated from how the inputs cascade through the system. If you chose D, dam size is an internal output that depends on beavers and trees. It is not set directly. If you chose B, all four of these are internal outputs that result from the cascade. None of them are set directly by scientists. If you chose A, rainfall is one external input, but beaver population and tree availability are also external inputs that the scientists can set.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.B.1 (Describe how matter cycles through ecosystems) + CCC4 (Describe components and interactions)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Beaver Population increases, Dam Size increases; when Tree Availability increases, Dam Size increases. The student is trying to understand why these relationships are positive or negative.
+A student traces the cascade chain in the beaver ecosystem model. The chain goes: Beaver Population + Tree Availability determine Dam Size. Dam Size determines Water Level. Water Level determines Wetland Area. Wetland Area determines Biodiversity.
 
-What did the model show happens during a drought year when beavers and trees are present?
+The student removes the beavers from the model (sets beaver population to zero) but keeps trees and rainfall unchanged. After running the model, the student observes that biodiversity eventually drops to very low levels.
 
-A. The ecosystem collapses completely because there is no rain
-B. Beaver dams can buffer against drought by storing water, but they cannot create water from nothing
-C. Drought has no effect on beaver ecosystems
-D. Beavers leave the area immediately when drought begins
+Why did biodiversity drop even though trees and rainfall were unchanged?
 
-Correct Answer: B
+A. Without beavers, no dam is built, so water level drops, wetland area shrinks, and biodiversity declines because each step in the cascade depends on the one before it.
+B. Biodiversity dropped because the trees died without beavers to water them.
+C. Rainfall alone always reduces biodiversity in wetland ecosystems.
+D. The trees and rainfall directly feed biodiversity, but they need time to take effect.
 
-Feedback: Yes! The model showed that beaver dams store water and can buffer against moderate drought, but they cannot create water. Extreme drought still weakens the system. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+Correct Answer: A
 
+Feedback: The cascade chain means each step depends on the previous one. Without beavers, there are no workers to build the dam (even with trees present). Without a dam, water level drops because nothing holds the stream back. Without high water, the wetland area shrinks. Without a wetland, the species that lived there leave or die. The whole chain collapses from the top. If you chose D, trees and rainfall do not directly feed biodiversity in this model. They feed into earlier parts of the cascade (dam size and water level). If you chose B, beavers do not water trees. Trees get water from rainfall. The issue is that without beavers, no dam is built. If you chose C, rainfall has a positive effect on water level. It helps the system, not hurts it. The problem is the missing dam.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS2.A.1 (Describe interactions between Earth's systems) + CCC2 (Use cause and effect to predict outcomes)
 
-A student runs a simulation of the model. The model shows that when Beaver Population increases, Dam Size increases and when Tree Availability increases, Dam Size increases and when Dam Size increases, Water Level increases. The student changes one variable to see how the whole system responds.
+A drought year hits the beaver watershed. Rainfall drops to very low levels. Beavers are present and trees are available. The model shows that the dam stays intact because beavers maintain it, but the water level behind the dam drops because less rain is feeding the pond.
 
-According to the model, why does removing beavers affect the ENTIRE ecosystem, not just the pond?
+Based on the model, what should a scientist predict about the wetland area and biodiversity during the drought?
 
-A. Because beavers eat everything in the ecosystem
-B. Because every component in the cascade depends on the one before it, so removing the first link collapses all downstream components
-C. Because other animals are afraid of living without beavers
-D. The model showed that removing beavers only affects the pond, not other parts
+A. Biodiversity will increase because drought brings in new species.
+B. Wetland area and biodiversity will stay the same because the dam is still there.
+C. Wetland area will increase because the dry ground absorbs water from the dam.
+D. Wetland area will shrink and biodiversity will decline because lower water level means less wetland, even with the dam maintaining some water storage.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! The cascade means each component depends on the previous one. Remove beavers and dam size drops, water level drops, wetland area shrinks, and biodiversity crashes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The model shows that water level determines wetland area, and wetland area determines biodiversity. Even though the dam stores some water, reduced rainfall means less total water entering the system. The water level drops, the wetland area shrinks, and fewer species can be supported. The dam helps buffer the effects but cannot create water from nothing. If you chose B, the dam being present does not prevent the effects of less water. Less rain means less water in the system overall. If you chose C, dry ground does not pull water from the dam. The dam holds water back, but the total volume is lower during drought. If you chose A, drought generally reduces biodiversity because it stresses the ecosystem and dries up habitat.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI ESS2.A.1 (Explain how systems interact) + CCC7 (Describe stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A logging company proposes cutting trees along a beaver stream. They argue that removing trees will not affect the ecosystem because the beavers will still be present and rainfall will continue. The model data shows that when tree availability drops to zero, dam size drops to zero even with high beaver population and normal rainfall.
 
-What did the deforestation scenario reveal about the relationship between trees and the beaver ecosystem?
+Which evidence from the model best refutes the logging company's argument?
 
-A. Trees are not important because beavers can use other materials
-B. Without trees, beavers cannot build or maintain dams, breaking the entire cascade even if beaver population is high
-C. Deforestation helps beavers by giving them more open space
-D. Trees only matter for the appearance of the ecosystem
+A. Beavers will migrate to find new trees, so the local ecosystem is not affected.
+B. The model does not include trees, so it cannot address this question.
+C. The model shows that trees are a required input for dam size. With zero trees, dam size drops to zero, which breaks the cascade and collapses the entire downstream chain of water level, wetland area, and biodiversity.
+D. Rainfall alone can maintain the dam even without trees.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! The deforestation scenario showed that trees are an essential input. Even a large beaver population cannot maintain the ecosystem cascade without building materials. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model clearly shows that tree availability is a required input for dam size. Even with many beavers and normal rainfall, zero trees means no building material for the dam. Without the dam, water level drops, wetlands shrink, and biodiversity declines. The entire cascade fails. This directly contradicts the logging company's claim. If you chose D, rainfall feeds water level directly but cannot build or maintain the dam. Trees are the essential building material. If you chose A, the question is about the impact on this particular ecosystem. Migration does not protect the local wetland. If you chose B, trees are explicitly included in the 7-component model as an external input.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS2.B.1 (Describe matter cycling in ecosystems) + CCC7 (Use stability and change to predict outcomes)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Beaver Population, Tree Availability, Rainfall), but they can take action on internal components (Dam Size, Water Level, Wetland Area, Biodiversity). They need to decide which action would be most effective based on what the model shows.
+A conservation group wants to restore a degraded stream that once had beavers. They have two restoration options. Option 1: Reintroduce beavers to a stream section that still has dense forest along the banks. Option 2: Reintroduce beavers to a stream section where all nearby trees were cleared for farming.
 
-What is a cascade effect in nature?
+Based on the 7-component model, which option will most likely produce a thriving wetland ecosystem, and why?
 
-A. When water flows down a waterfall
-B. When a change in one part of a system triggers changes in many other parts
-C. When animals migrate in a long line
-D. When trees grow taller each year
+A. Neither option will work because restored ecosystems never function as well as natural ones.
+B. Option 1, because the model shows that BOTH beaver population and tree availability must be present for dam building to succeed and for the cascade to produce wetland habitat and biodiversity.
+C. Both options are equally effective because beavers are the only input that matters.
+D. Option 2, because beavers are ecosystem engineers and can build from anything.
 
 Correct Answer: B
 
-Feedback: Correct! A cascade effect is when a change in one part of a system triggers a chain of changes in many other connected parts, like dominoes falling. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The 7-component model shows that dam size depends on both beaver population and tree availability. Option 1 provides both inputs: beavers and trees. This allows dam building, which raises water level, creates wetland area, and supports biodiversity. Option 2 has beavers but no trees, so dams cannot be built and the cascade cannot get started. If you chose D, the model specifically shows that beavers need trees as building material. They cannot build dams from anything available. If you chose C, the model shows that both beavers and trees are required inputs. Beavers without trees cannot build. If you chose A, restored ecosystems with proper inputs can function effectively. The model shows that when both inputs are present, the cascade produces a thriving wetland.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.A.1, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.B.1, CCC4)
+Question 3: D (Cognitive Level: Predict — SEP 2.1.4, DCI ESS2.A.1, CCC2)
+Question 4: C (Cognitive Level: Argue — SEP 6.1.1, DCI ESS2.A.1, CCC7)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS2.B.1, CCC7)
 
+---
 
 ## Lesson Metadata
 

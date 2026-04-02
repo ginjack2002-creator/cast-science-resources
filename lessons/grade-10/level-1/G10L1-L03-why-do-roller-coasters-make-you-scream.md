@@ -904,14 +904,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 Using the computational model, a student tests a 50-meter first hill. The model predicts the coaster reaches 31.3 m/s at the bottom (ignoring friction). The student then changes the coaster mass from 5,000 kg to 15,000 kg and runs the simulation again. What velocity does the model predict at the bottom?
 
 A. 10.4 m/s, because the heavier coaster has more inertia.
-B. 31.3 m/s, because velocity at the bottom is independent of mass.
-C. 93.9 m/s, because more mass means more kinetic energy.
-D. The model cannot predict this without knowing the track shape.
+B. The model cannot predict this without knowing the track shape.
+C. 31.3 m/s, because velocity at the bottom is independent of mass.
+D. 93.9 m/s, because more mass means more kinetic energy.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model confirms v = sqrt(2gh). Since mass cancels from the equation, the heavier coaster reaches exactly the same speed. This validates Galileo's principle within the computational model. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model confirms v = sqrt(2gh). Since mass cancels from the equation, the heavier coaster reaches exactly the same speed. This validates Galileo's principle within the computational model. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -922,15 +921,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that a coaster traveling at 30 m/s through a loop with a 10-meter radius produces approximately 9.2 G-forces at the bottom. An engineer wants to reduce this to 4 G. Which model adjustment would achieve this?
 
-A. Increase the loop radius to reduce centripetal acceleration while maintaining the same speed.
-B. Decrease the coaster mass to reduce the force on riders.
-C. Increase the height of the preceding hill to give the coaster more energy.
-D. Add friction before the loop to increase the G-force.
+A. Increase the height of the preceding hill to give the coaster more energy.
+B. Increase the loop radius to reduce centripetal acceleration while maintaining the same speed.
+C. Add friction before the loop to increase the G-force.
+D. Decrease the coaster mass to reduce the force on riders.
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. G-force at the bottom of a loop depends on v^2/r. Increasing the radius (r) while maintaining the same velocity decreases centripetal acceleration and thus the G-force experienced by riders. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. G-force at the bottom of a loop depends on v^2/r. Increasing the radius (r) while maintaining the same velocity decreases centripetal acceleration and thus the G-force experienced by riders. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 3
@@ -941,15 +939,14 @@ A student runs a simulation of the model. The model shows that when Track Height
 
 A student runs the model with a 60-meter first hill and finds the coaster reaches 34 m/s at the bottom. With 10% energy lost to friction, what is the maximum height of the second hill the model would allow?
 
-A. 60 meters, because some energy is recovered during the climb.
-B. 54 meters, because 10% of the original potential energy has been lost to friction.
+A. 54 meters, because 10% of the original potential energy has been lost to friction.
+B. 60 meters, because some energy is recovered during the climb.
 C. 30 meters, because friction removes half the energy.
 D. The second hill can be any height as long as the track shape provides enough momentum.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. With 10% energy loss, only 90% of the original PE remains. Since PE = mgh, the maximum height = 0.90 x 60 m = 54 m. The model correctly reflects conservation of energy minus friction losses. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. With 10% energy loss, only 90% of the original PE remains. Since PE = mgh, the maximum height = 0.90 x 60 m = 54 m. The model correctly reflects conservation of energy minus friction losses. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -961,14 +958,13 @@ Scientists are studying data related to this system. They collected observations
 The model predicts that riders experience approximately 0 G (weightlessness) at the top of a parabolic hill when v^2/r = g. What does this finding reveal about the physics of 'airtime' on a roller coaster?
 
 A. Gravity temporarily stops acting on riders at the top of hills.
-B. The track curves away from the rider at exactly the rate that gravity would pull them, so no normal force is needed from the seat.
-C. Wind resistance lifts the riders out of their seats at high speeds.
-D. The coaster's kinetic energy is converted entirely to gravitational potential energy at the hill crest.
+B. Wind resistance lifts the riders out of their seats at high speeds.
+C. The coaster's kinetic energy is converted entirely to gravitational potential energy at the hill crest.
+D. The track curves away from the rider at exactly the rate that gravity would pull them, so no normal force is needed from the seat.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. At 0 G, the centripetal acceleration needed to follow the track exactly equals gravitational acceleration. The rider is essentially in free fall while following the track curve, so no seat force is felt. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. At 0 G, the centripetal acceleration needed to follow the track exactly equals gravitational acceleration. The rider is essentially in free fall while following the track curve, so no seat force is felt. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -980,23 +976,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 Based on model evidence, a student argues that the coaster's energy is not truly 'conserved' because it slows down and eventually stops. Which response best addresses this argument using the model?
 
 A. The student is correct. Energy conservation is only an approximation that doesn't apply to real systems.
-B. Energy IS conserved. The mechanical energy converts to thermal energy through friction, so total energy remains constant even though the coaster's speed decreases.
-C. The model shows that gravity gradually removes energy from the system over time.
-D. The brakes at the end create new energy that replaces what was lost to friction.
+B. The model shows that gravity gradually removes energy from the system over time.
+C. The brakes at the end create new energy that replaces what was lost to friction.
+D. Energy IS conserved. The mechanical energy converts to thermal energy through friction, so total energy remains constant even though the coaster's speed decreases.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The law of conservation of energy holds perfectly. Friction converts kinetic energy to thermal energy (heat in wheels, rails, and air). Total energy is constant; only the useful mechanical energy decreases. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Correct. The law of conservation of energy holds perfectly. Friction converts kinetic energy to thermal energy (heat in wheels, rails, and air). Total energy is constant; only the useful mechanical energy decreases. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.1, CCC4)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.1, CCC5)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.1, CCC2)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.1, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.1, CCC5)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.1, CCC2)
 
 
 ## Resources

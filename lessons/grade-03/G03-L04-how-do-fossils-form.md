@@ -831,106 +831,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.2 (Analyze and interpret data) + DCI LS4.A.1 (Fossils as evidence of past organisms) + CCC7 (Stability and change over time)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Burial Depth, Pressure, Fossilization. Some components are external (Burial Depth) and some are internal (Pressure, Fossilization). The student needs to understand what each component represents and how they are organized.
+A paleontologist discovers a fossil of a fish skeleton inside a layer of rock on top of a dry, desert mountain. There is no water anywhere nearby today. The desert is hot and dry, with only cactus plants growing. The fish fossil is very well preserved and shows every bone clearly.
 
-In the fossil model, when Burial Depth increases, what happens to Pressure?
+What can this fossil BEST tell us about this location in the past?
 
-A. Pressure decreases because there is more space underground
-B. Pressure increases because more layers of sediment pile on top
-C. Pressure stays the same no matter how deep the burial
-D. Pressure has nothing to do with burial
+A. Someone carried the fish to the mountain and left it there.
+B. This area was once covered by water, like a lake or ocean, when the fish was alive millions of years ago.
+C. Fish can live in deserts if they try hard enough.
+D. The fossil formed yesterday because it looks so clear.
 
 Correct Answer: B
 
-Feedback: Correct! Burial Depth and Pressure have a positive relationship. The deeper the remains are buried, the more sediment layers press down on top, creating more pressure. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: A fish fossil on a dry mountain is evidence that this area was once underwater. Environments change over millions of years, and fossils give us clues about what an area used to be like. If you chose C, fish cannot live in deserts. The fish lived there when the area had water. The environment changed over millions of years. If you chose A, fossils form naturally over millions of years inside rock layers. People do not place them. If you chose D, fossils take millions of years to form, not one day. Good preservation means conditions were right for fossilization long ago.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.A.1 (Fossil formation processes) + CCC7 (Change happens over different time scales)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Burial Depth increases, Pressure increases; when Pressure increases, Fossilization increases. The student is trying to understand why these relationships are positive or negative.
+In the fossil formation model, students see that Burial Depth has a positive arrow pointing to Pressure, and Pressure has a positive arrow pointing to Mineral Replacement. A student runs the model and increases Burial Depth from shallow to deep.
 
-What is the correct order for how a fossil forms?
+Based on the model, what happens when Burial Depth increases?
 
-A. Animal dies, fossil appears the next day, scientist digs it up
-B. Animal dies, remains get buried by sediment, pressure builds, minerals replace bones over millions of years
-C. Rocks turn into animals, then back into rocks
-D. Scientists make fossils in a laboratory
+A. Pressure increases because more sediment layers pile on top, and Mineral Replacement also increases.
+B. Mineral Replacement stops because it is too dark underground.
+C. Pressure decreases because there is more room underground.
+D. Pressure stays the same no matter how deep the burial.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Exactly! First the animal dies, then its remains get buried by sediment layers. Over millions of years, pressure builds and minerals slowly replace the bones, turning them into rock. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows two positive relationships in a chain. Deeper burial means more layers pressing down (more pressure), and more pressure means minerals replace bones more completely. If you chose C, more depth means more layers on top, which means more weight pressing down, not less pressure. If you chose D, the positive arrow shows pressure changes with burial depth. Deeper burial always creates more pressure. If you chose B, mineral replacement does not need light. It happens when water carrying minerals seeps through the sediment over millions of years.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.2 (Analyze data from fossils) + DCI LS4.A.1 (Organisms and environments of the past) + CCC7 (Stability and change)
 
-A student runs a simulation of the model. The model shows that when Burial Depth increases, Pressure increases and when Pressure increases, Fossilization increases. The student changes one variable to see how the whole system responds.
+Scientists compared two fossil dig sites. Site A had fossils buried under 200 feet of sediment layers. The fossils were very hard and completely turned to rock. Site B had fossils buried under only 20 feet of sediment. These fossils were softer and still had some original bone material mixed with rock.
 
-A scientist who studies fossils to learn about ancient life is called a:
+Based on this data, why were the fossils at Site A more completely fossilized than the fossils at Site B?
 
-A. Meteorologist
-B. Paleontologist
-C. Veterinarian
-D. Astronaut
+A. The type of animal does not matter for fossil quality.
+B. Deeper burial at Site A created more pressure and more mineral replacement, producing harder, more complete fossils.
+C. Site B fossils were placed there recently by people.
+D. Site A fossils are older, so scientists polished them more.
 
 Correct Answer: B
 
-Feedback: Right! A paleontologist is a scientist who studies fossils to learn about life on Earth millions of years ago. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: More sediment layers means more pressure pushing down on the fossils. More pressure drives more mineral replacement, which turns bone into rock more completely. Site A had 200 feet of sediment versus only 20 feet at Site B. If you chose D, scientists do not polish fossils to make them harder. The depth of burial and millions of years of pressure are what make fossils more complete. If you chose C, both sites contain real fossils that formed naturally. The difference is depth, not human placement. If you chose A, the question compares burial depth, not animal type. Deeper burial is the cause of better fossilization.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.A.1 (Fossil formation system) + CCC4 (System components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The fossil formation model includes these components: Burial Depth, Pressure, Mineral Replacement, and Fossil Quality. The teacher explains that the model has an external component (something that starts the process) and internal components (things that change as a result).
 
-Why did the shallow burial scenario produce a weaker fossil than the deep burial scenario?
+Which component is EXTERNAL in the fossil formation model?
 
-A. Shallow burials happen too fast
-B. Shallow burial means less pressure and less mineral replacement, so fossilization is less complete
-C. Deep burials are closer to the sun
-D. Shallow burials use different minerals
+A. Fossil Quality, because it is the final result scientists care about.
+B. Pressure, because it is the strongest force in the model.
+C. Burial Depth, because it is the starting condition that determines how much sediment covers the remains.
+D. Mineral Replacement, because minerals come from outside the fossil.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: You got it! Shallow burial means fewer sediment layers, less pressure, and less mineral replacement. The deeper the burial, the more completely the remains turn into a fossil. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Burial Depth is external because it is the initial condition that starts the process. How deep the remains are buried determines the pressure, which determines the mineral replacement, which determines the fossil quality. If you chose B, Pressure is internal because it changes based on burial depth. More depth causes more pressure. If you chose A, Fossil Quality is the final output of the system. It depends on all the other components, so it is internal. If you chose D, while minerals do come from groundwater, Mineral Replacement is an internal process that depends on how much pressure is applied.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS4.A.1 (Predict fossilization outcomes) + CCC7 (Predict change over time)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Burial Depth), but they can take action on internal components (Pressure, Fossilization). They need to decide which action would be most effective based on what the model shows.
+A class uses the fossil model to test two scenarios. In Scenario 1, a dinosaur bone is buried under a thin layer of sand near a river, where it stays close to the surface. In Scenario 2, the same type of bone sinks into a deep lake and is buried under hundreds of feet of mud and sediment over millions of years. The model shows: Burial Depth (+) -> Pressure (+) -> Mineral Replacement (+) -> Fossil Quality.
 
-What do you think a fossil is?
+Based on the model, which scenario will MOST LIKELY produce a better fossil, and why?
 
-A. A living animal found underground
-B. The preserved remains of an animal or plant from long ago, usually found in rock
-C. A type of rock that looks like an animal
-D. A toy dinosaur bone
+A. Scenario 1, because being near a river keeps the bone wet and preserved.
+B. Both scenarios produce identical fossils because all bones turn to rock the same way.
+C. Neither scenario produces a fossil because fossilization is impossible.
+D. Scenario 2, because deep burial creates more pressure, which drives more mineral replacement and produces a higher-quality fossil.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: That is right! A fossil is the preserved remains or traces of an animal or plant that lived long ago. Most fossils are found in rock. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that deeper burial leads to more pressure, more mineral replacement, and better fossil quality. Scenario 2 has hundreds of feet of sediment compared to a thin layer in Scenario 1. If you chose A, being near a river might actually expose the bone to erosion, washing it away. Deep burial protects the bone and provides the pressure needed for fossilization. If you chose B, burial depth matters. The model clearly shows that deeper burial produces better fossils because of more pressure and mineral replacement. If you chose C, fossilization is a real process that has produced millions of fossils over Earth's history.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC4)
+Question 1: B (Cognitive Level: Reason — SEP 4.1.2, DCI LS4.A.1, CCC7)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.A.1, CCC7)
+Question 3: B (Cognitive Level: Reason + Evidence — SEP 4.1.2, DCI LS4.A.1, CCC7)
+Question 4: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.A.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS4.A.1, CCC7)
+
+---
 
 
 ## Resources

@@ -311,6 +311,37 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+TEACH YOUR MODEL A RULE!
+
+Look at your model. Right now, when Earth Event (slow) is ON, Rock Type
+goes way up — even when it shouldn't!
+
+In the real world, Earth Event (slow) only changes Rock Type when
+Earth Event (fast) is happening. Let's teach your model this rule!
+
+Task A: ADD THE RULE
+   • Click on the arrow from Earth Event (slow) to Rock Type
+   • Click "Conditions" in the toolbar
+   • Set: IF Earth Event (fast) is ON
+   • Click "Save Conditions"
+
+Task B: TEST IT
+   • Run your simulation again
+   • Does it make more sense now?
+   • Try turning Earth Event (fast) ON and OFF — see what changes!
+
+Task C: ADD ANOTHER RULE
+   • Click on the arrow from Earth Event (fast) to Rock Type
+   • Click "Conditions"
+   • Set: IF Earth Event (slow) is ON
+   • Click "Save Conditions"
+
+Now your model is SMARTER! It knows the rules of the real world.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -831,108 +862,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 8.1 (Obtain information from multiple sources) + DCI ESS1.C (Some events happen quickly, some happen slowly) + CCC7 (Describe how things change or stay the same over time)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Earth Event, Rock Type, Rock Layer Pattern. Some components are external (Earth Event) and some are internal (Rock Type, Rock Layer Pattern). The student needs to understand what each component represents and how they are organized.
+A student reads about two Earth events. Event 1: A volcano erupts and hot lava flows down the mountainside. In just a few hours, the lava cools and hardens into new rock. Event 2: A river flows over rocks for thousands of years, slowly wearing them down into smooth, round pebbles.
 
-Which rock layer is the oldest in a stack of rock layers?
+What is the main difference between these two events?
 
-A. The top layer
-B. The middle layer
-C. The bottom layer
-D. They are all the same age
+A. Both events happen at the same speed
+B. Event 1 creates rocks but Event 2 destroys them
+C. Event 1 happens very fast (hours) while Event 2 happens very slowly (thousands of years), but both change rocks
+D. Only Event 1 is a real Earth event
 
 Correct Answer: C
 
-Feedback: Correct! The bottom layer is the oldest because it formed first. Each new layer settles on top, so the top layer is the newest. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Both events change Earth's surface and rocks, but at very different speeds. A volcanic eruption creates new rock in hours (a fast event), while a river smoothing rocks takes thousands of years (a slow event). If you chose B, Event 2 does not destroy rocks. It slowly changes their shape from rough to smooth. Both events create or change rocks. If you chose A, the events happen at very different speeds. Hours versus thousands of years is a huge difference. If you chose D, both are real Earth events. Rivers shaping rocks is a slow Earth event that scientists study, just like volcanoes.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Analyze observations to describe events) + DCI ESS1.C (Earth events provide evidence of change) + CCC7 (Identify stability and change)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Earth Event (slow) increases, Rock Type increases; when Earth Event (fast) increases, Rock Type increases. The student is trying to understand why these relationships are positive or negative.
+A scientist cuts open a hillside and sees five layers of rock stacked on top of each other. The bottom layer is the darkest and oldest. Each layer above it is a little lighter and newer. The very top layer is the lightest and newest.
 
-A scientist finds smooth, round rocks at the bottom of a valley. What Earth event most likely shaped these rocks?
+Which layer formed first, and how do scientists know?
 
-A. A fast volcanic eruption
-B. A slow-flowing river over many years
-C. An earthquake
-D. A lightning strike
+A. The bottom layer formed first because new layers settle on top of older ones, like stacking pages in a book
+B. The top layer formed first because it is closest to the sky
+C. They all formed at the same time
+D. The middle layer formed first because it is in the center
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Smooth, round rocks are shaped by water flowing over them for a very long time. A river slowly wears down the rough edges, making rocks smooth and round. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Rock layers build up from the bottom over time. The oldest layer was deposited first, and each new layer settled on top. Reading layers from bottom to top is like reading a timeline from past to present. If you chose B, the top layer is the newest, not the oldest. It was the last one deposited on top of all the others. If you chose C, the layers formed at different times. That is why they look different. Each one represents a different period in Earth's history. If you chose D, the middle layer is not first or last. It formed after the bottom layers but before the top layers.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 8.2 (Use information to provide evidence) + DCI ESS1.C (Evidence that Earth events can occur quickly or slowly) + CCC1 (Identify patterns in evidence)
 
-A student runs a simulation of the model. The model shows that when Earth Event (slow) increases, Rock Type increases and when Earth Event (fast) increases, Rock Type increases. The student changes one variable to see how the whole system responds.
+A student examines three different rocks. Rock A is rough, full of holes, and dark gray, like it cooled from something very hot. Rock B is smooth, round, and light-colored, with tiny layers inside it. Rock C has thin, flat layers with tiny shells pressed inside.
 
-What is the difference between a fast Earth event and a slow Earth event?
+Which rock most likely formed from a fast Earth event, and which formed from a slow one?
 
-A. There is no difference
-B. Fast events like volcanoes happen in minutes, while slow events like erosion take thousands of years
-C. Slow events are louder than fast events
-D. Fast events only happen at night
+A. Rock C formed from a fast event because it has shells inside
+B. All three rocks formed the same way
+C. Rock B formed from a volcano and Rock A formed from a river
+D. Rock A formed from a fast event (volcano), and Rocks B and C formed from slow events (river and sediment settling)
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! Fast Earth events like volcanic eruptions happen in minutes or hours. Slow Earth events like erosion and sediment building up take thousands or millions of years. Both leave evidence in rocks. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Rock A is rough with holes, which happens when lava cools quickly with gas bubbles inside, a fast volcanic event. Rock B is smooth and round from slow water erosion. Rock C has flat layers with shells, which form when sediment settles slowly in water over a long time. If you chose B, the three rocks look very different because they formed from different events. If you chose C, smooth round rocks come from slow water erosion, not volcanoes. Rough holey rocks come from fast cooling lava. If you chose A, shells in rock layers are evidence of slow sediment settling in water, not a fast event. The shells were trapped slowly as layers built up.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Use a model to represent relationships) + DCI ESS1.C (Different Earth events produce different evidence) + CCC4 (Describe parts of a system and how they interact)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In a model of how rocks tell stories, Earth Event is an external component. Rock Type is an internal component. The model shows that different types of Earth events (fast or slow) create different types of rocks. A student adds a new Earth event to the model: a huge sandstorm that blows sand into a lake, where the sand settles to the bottom in layers over many years.
 
-What is sediment?
+Based on the model, what type of rock would this slow event most likely create?
 
-A. Hot melted rock from a volcano
-B. A type of plant that grows on rocks
-C. Tiny pieces of rock, sand, and soil that settle in layers
-D. Water that is very dirty
+A. Rough volcanic rock with holes
+B. A shiny crystal that formed in seconds
+C. No rock at all because sand cannot become rock
+D. A layered rock made of pressed-together sand, similar to sandstone
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: That is right! Sediment is made up of tiny pieces of rock, sand, and soil. When sediment settles in layers and gets pressed together over millions of years, it becomes sedimentary rock. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that slow events create rocks that show evidence of the slow process. Sand blowing into a lake and settling in layers over many years would create a layered rock made of compressed sand, which is sandstone. If you chose A, volcanic rock comes from fast, hot events, not slow sand settling. If you chose B, shiny crystals that form quickly are from fast events. This slow sand settling would create layered rock. If you chose C, sand absolutely can become rock. When sand layers get pressed together over millions of years, they harden into sandstone, a real type of rock.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1 (Construct an explanation using evidence) + DCI ESS1.C (Earth events can be identified through evidence in rocks) + CCC7 (Describe change over time using evidence)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Earth Event), but they can take action on internal components (Rock Type, Rock Layer Pattern). They need to decide which action would be most effective based on what the model shows.
+A scientist studies a cliff with many rock layers. Near the bottom, she finds layers of smooth sandstone with ancient fish fossils. In the middle, she finds a thick dark layer of volcanic ash. Near the top, she finds layers of sandy soil with plant fossils.
 
-Are all rocks the same?
+What story do these rock layers tell about what happened in this place over time?
 
-A. Yes, all rocks are exactly alike
-B. No, there are many different kinds of rocks that look and feel different
-C. Yes, rocks are just gray and hard
-D. No, but there are only two kinds of rocks
+A. The top layer formed first and the bottom layer formed last
+B. First this place was underwater with fish (bottom layer), then a volcano erupted and covered everything in ash (middle layer), then the water dried up and plants grew on dry land (top layer)
+C. Nothing happened here, the rocks have always been the same
+D. The layers are in random order and do not tell a story
 
 Correct Answer: B
 
-Feedback: That is right! Rocks come in many different types. Some are smooth, some are rough, some are sparkly, and some have layers. Each type formed in a different way. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Rock layers are read from bottom (oldest) to top (newest), like pages in a book. The bottom fish fossils show water was here first. The middle ash layer shows a volcano erupted. The top plant fossils show the area became dry land with plants. Each layer records a different chapter in this place's history. If you chose C, the different layers with different fossils clearly show this place changed many times over millions of years. If you chose D, rock layers are always in chronological order, bottom to top. They tell a clear story of what happened over time. If you chose A, the bottom layer is always oldest (formed first) and the top layer is newest (formed last). New layers settle on top of old ones.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.1, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 8.1, DCI ESS1.C, CCC7)
+Question 2: A (Cognitive Level: Reason — SEP 4.1, DCI ESS1.C, CCC7)
+Question 3: D (Cognitive Level: Reason + Evidence — SEP 8.2, DCI ESS1.C, CCC1)
+Question 4: D (Cognitive Level: Predict — SEP 2.1, DCI ESS1.C, CCC4)
+Question 5: B (Cognitive Level: Reason + Explain — SEP 6.1, DCI ESS1.C, CCC7)
 
-
+---
 ## Resources
 
 | Resource | Link |

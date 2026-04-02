@@ -1,0 +1,950 @@
+# Lesson: The Mushroom Network Under Your Feet
+
+## Header Information
+
+| Field | Value |
+|-------|-------|
+| **Lesson ID** | G05L1-L07 |
+| **Grade** | 5th |
+| **Lesson Name** | The Mushroom Network Under Your Feet |
+| **Status** | Template |
+
+---
+
+## Platform
+
+### Title
+**The Mushroom Network Under Your Feet — Trees Share Food and Warnings Through Underground Internet**
+
+### Overview
+Students model the Wood Wide Web — the underground fungal network that connects trees in a forest, allowing them to share nutrients and chemical warnings. By building a cause-and-effect model showing how organic matter and soil moisture drive fungal network activity, which in turn enables nutrient transfer between trees, students discover that a forest is not a collection of individual trees but a connected, communicating community. This recent scientific discovery combines wonder, counter-intuitive thinking, and genuine matter-cycling science.
+
+### Cover Image
+[Dramatic split image: Above ground — a sunlit forest with tall trees. Below the soil line — a glowing, intricate web of golden fungal threads connecting all the roots, like fiber optic cables. Diverse students peer into the ground through a "window" in the earth, amazed.]
+
+### Grade
+5th
+
+### NGSS Standard
+**5-LS2-1**: Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment.
+
+### Learning Objectives
+- Identify mycorrhizal fungi as active participants in ecosystem matter cycling
+- Model how organic matter and moisture drive fungal network health
+- Explain how the fungal network enables nutrient transfer between trees
+- Predict what happens to forest health when the fungal network is disrupted
+
+### Component List (Starting Model: 4 Components)
+
+| Component | Type | What It Represents |
+|-----------|------|-------------------|
+| Leaf Litter / Organic Matter | External | Dead leaves and organic material that feeds the fungal network — trees produce this constantly |
+| Soil Moisture | External | Water content in the soil that enables fungal survival and growth |
+| Mycorrhizal Fungal Network Activity | Internal | How active the underground fungal threads are — connecting and processing nutrients |
+| Nutrient Transfer Between Trees | Internal | How much food and chemical signals are moving between connected trees |
+
+### Research for Lesson
+- https://www.bbc.com/future/article/20140515-plants-have-a-hidden-internet
+- https://www.nationalgeographic.com/environment/article/the-wood-wide-web
+- https://www.nature.com/articles/35015734
+
+---
+
+## Step 1: LOCATE — Build the Underground Network System
+
+### Text Editor
+
+```
+THE MUSHROOM NETWORK UNDER YOUR FEET
+
+Here's something that sounds fake but is completely real:
+
+Trees talk to each other.
+
+Not with sound. Not with signals you can see. Through an underground
+internet made of mushroom threads — thinner than a human hair — that
+connects almost every tree in a forest.
+
+Scientists call it the mycorrhizal network. The internet calls it the
+"Wood Wide Web."
+
+And through this network, trees can:
+• Share food (sugar and nutrients) with neighbors
+• Send chemical warnings about insect attacks
+• Support weaker trees until they grow strong enough
+• Recognize their own offspring and give them priority nutrients
+
+A forest isn't a collection of individual trees. It's one connected community.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Task A: CHOOSE YOUR COMPONENTS
+• Look at the component panel on the RIGHT side of your screen
+• Find the EXTERNAL components (things we can't control):
+  ○ Click "Leaf Litter / Organic Matter" — trees drop this constantly
+  ○ Click "Soil Moisture" — rainfall controls this
+• Find the INTERNAL components (things that change because of other things):
+  ○ Click "Mycorrhizal Fungal Network Activity" — how active the network is
+  ○ Click "Nutrient Transfer Between Trees" — what the network enables
+
+Task B: ADD TO YOUR MODEL
+• Click the PLUS (+) button to add each component to your canvas
+
+Task C: SORT YOUR COMPONENTS
+• Which come from the environment? Which change based on conditions?
+• Sort before your teacher continues in the video
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Underground. Right now. Beneath every forest on Earth. A network
+that makes the internet look new.
+```
+
+### Video Script
+
+```
+"I need you to think about the forest differently.
+
+When you look at trees — individual trees standing in the ground —
+you think you're seeing separate organisms, right? That tree is one
+thing. That tree is another.
+
+Wrong.
+
+Almost every tree in a healthy forest is physically connected to its
+neighbors through an underground network of fungal threads. Threads
+thinner than a human hair, stretching for miles, weaving through the
+soil and connecting into the root systems of hundreds of trees.
+
+And through those threads? Trees share nutrients. They pass sugar to
+struggling neighbors. They send chemical alarm signals when insects
+attack. Mother trees — the biggest, oldest trees — preferentially
+send food to their offspring.
+
+This is real. Scientists have proven it. And the network is run by
+fungi — the same kingdom as mushrooms.
+
+The mushrooms you see above ground? Those are just the tips of a
+massive underground organism. The real action happens below.
+
+Today you're going to model how this network stays healthy — and
+what happens when it's disrupted.
+
+Look at your component panel.
+
+Leaf Litter and Organic Matter — external. Trees constantly drop
+leaves and dead material, which feeds the fungi.
+
+Soil Moisture — also external. Fungi need moisture to grow and
+transport nutrients through their threads.
+
+Mycorrhizal Fungal Network Activity — internal. How active and healthy
+the network is depends on its food and water supply.
+
+Nutrient Transfer Between Trees — internal. This is what the network
+enables. More active network = more sharing between trees.
+
+Sort your components. Add them. Let's model the forest's internet.
+
+Now it's your turn to ModelIt!"
+```
+
+### Image
+[Screenshot showing 4 components sorted: Leaf Litter/Organic Matter and Soil Moisture (External), Mycorrhizal Fungal Network Activity and Nutrient Transfer Between Trees (Internal)]
+
+### Graph
+[Empty graph panel — no simulation yet]
+
+---
+
+## Step 2: ESTABLISH — Connect the Underground Network
+
+### Text Editor
+
+```
+WIRING THE WOOD WIDE WEB
+
+The fungal network needs food and water to function. When it functions,
+trees share. When it shuts down, trees are isolated. Let's map this.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Task A: OPEN CONNECTION MODE
+• Click the "Connect" icon in the TOP LEFT corner
+
+Task B: DRAW YOUR RELATIONSHIPS
+• Leaf Litter / Organic Matter → Mycorrhizal Fungal Network Activity
+• Soil Moisture → Mycorrhizal Fungal Network Activity
+• Mycorrhizal Fungal Network Activity → Nutrient Transfer Between Trees
+
+Task C: SET POSITIVE OR NEGATIVE
+  ○ Leaf Litter / Organic Matter → Fungal Network Activity = POSITIVE (+)
+    More organic matter = MORE food for fungi = more network growth
+    (Fungi break down organic matter to get carbon and energy)
+
+  ○ Soil Moisture → Fungal Network Activity = POSITIVE (+)
+    Wetter soil = MORE fungal thread growth
+    (Fungi need moisture to grow and move nutrients through their threads)
+
+  ○ Fungal Network Activity → Nutrient Transfer = POSITIVE (+)
+    More active network = MORE nutrients flowing between trees
+    (Active fungal threads are the literal pipes that move nutrients)
+
+Task D: CHECK YOUR MODEL
+• 3 arrows, all positive
+• The chain: Food + Water → Active Network → Trees Share
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+All positive relationships. When conditions are right for fungi,
+trees thrive collectively. When conditions fail, trees get isolated.
+```
+
+### Video Script
+
+```
+"The Wood Wide Web needs two things to function: food and water.
+Let's wire those connections.
+
+Click the Connect icon.
+
+First: Leaf Litter and Organic Matter to Mycorrhizal Fungal Network Activity.
+
+Fungi are decomposers — they break down dead organic material.
+Those fallen leaves? The fungi eat them. More leaf litter = more
+food for the fungal network = more growth and activity.
+
+More organic matter = more network activity. POSITIVE. Plus sign.
+
+Second: Soil Moisture to Mycorrhizal Fungal Network Activity.
+
+Fungal threads — called hyphae — grow through moisture. They move
+nutrients dissolved in water. Dry soil? The threads can't grow or
+transport effectively. Wet soil? They can spread for miles.
+
+More moisture = more network activity. POSITIVE again.
+
+Third: Mycorrhizal Fungal Network Activity to Nutrient Transfer Between Trees.
+
+This is the payoff. Active fungal threads connect tree root systems.
+Nutrients — sugar, nitrogen, phosphorus — flow through those threads
+from trees that have surplus to trees that need more.
+
+More active network = more nutrient transfer. Positive.
+
+Three relationships. All positive. All building toward a connected,
+collaborative forest community.
+
+Here's what I want you to remember: this system evolved over millions
+of years. Trees aren't just competing for light and water. They're
+COOPERATING underground through these fungal partners.
+
+The most connected trees — usually the biggest, oldest ones — are
+the hubs of the network. Scientists call them 'mother trees.'
+When a mother tree dies, dozens of other trees can be affected.
+
+Now let's see what happens when we remove the moisture.
+
+Now it's your turn to ModelIt!"
+```
+
+### Image
+[Screenshot showing connected model: Leaf Litter +→ Fungal Network ←+ Soil Moisture, Fungal Network +→ Nutrient Transfer]
+
+---
+
+## Step 3: VISUALIZE & EVALUATE — Run the Forest Network
+
+### Text Editor
+
+```
+THE WOOD WIDE WEB — LIVE
+
+Your model connects organic matter and moisture through the fungal
+network to nutrient transfer. Let's run it and observe what holds
+the forest community together.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Task A: RUN THE SIMULATION
+• Click "Play" in the TOP LEFT
+• Watch all four component lines
+
+Task B: OBSERVE A HEALTHY FOREST
+• Let it run for about 30 time steps
+• With normal organic matter and moisture, watch Fungal Network Activity
+• Watch Nutrient Transfer — are trees connected and sharing?
+
+Task C: SIMULATE DROUGHT (SOIL MOISTURE LOSS)
+• Lock Soil Moisture to LOW (10%)
+• Watch Fungal Network Activity — do the fungal threads retreat?
+• Watch Nutrient Transfer — are trees becoming isolated?
+• This is what happens in severe drought: the forest's internet goes offline
+
+Task D: SIMULATE DEFORESTATION AFTERMATH
+• Lock Leaf Litter to ZERO (cleared land, no trees dropping leaves)
+• Even with moisture, what happens to fungal activity?
+• What happens to Nutrient Transfer?
+
+Task E: RESTORE CONDITIONS
+• Unlock both. Watch how the network recovers
+• How long does it take? Is recovery instant?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+REFLECTION QUESTIONS:
+• Why might a cleared forest take many years to recover even after replanting?
+• How does drought affect the entire forest community, not just individual trees?
+• What does this network tell you about how forests are "more than the sum of their parts"?
+```
+
+### Video Script
+
+```
+"Your forest internet is online. Let's run it.
+
+Click Play. With healthy organic matter from fallen leaves and
+adequate soil moisture, watch Fungal Network Activity. It's high —
+the threads are growing and spreading through the soil.
+
+And Nutrient Transfer? Also high. Trees with extra sugar and minerals
+are sending them to trees that need more. The community is thriving.
+
+Now let's simulate a drought.
+
+Lock Soil Moisture to 10%. Almost no moisture in the soil.
+
+Watch Fungal Network Activity start to drop. The fungal threads
+are retreating — they can't survive in dry soil. They pull back
+toward the roots they're attached to, stopping their spread.
+
+Nutrient Transfer? Collapsing. The pipes are shutting down.
+Each tree is becoming isolated — cut off from its community.
+
+This is what happens in severe drought in forests. Trees don't
+just suffer from lack of water in their own roots — they lose
+their entire support network. Weaker trees, young trees, trees
+in shade — they were being supported by the network. Now they're on their own.
+
+Now restore moisture but remove all organic matter — simulate a
+clear-cut forest where the trees are gone and no leaves are falling.
+
+Watch the fungal network starve. Even with moisture, without the
+organic matter to feed on, the fungi can't sustain their network.
+
+This is why replanting a cleared forest isn't just about planting
+trees. The underground network has to rebuild too — and that
+takes decades.
+
+Unlock everything. Watch the recovery. It's slower to come back
+than it was to collapse. Nature is resilient, but not instantaneous.
+
+Now it's your turn to ModelIt!"
+```
+
+### Graph
+[Screenshot showing simulation: Soil Moisture drops → Fungal Network Activity falls → Nutrient Transfer Between Trees collapses toward zero]
+
+---
+
+## Step 4: REVISE & EXTEND — Play, Research, Expand
+
+### Text Editor
+
+```
+SET THE CONDITIONS — MAKE YOUR MODEL SMARTER
+
+Your model works, but something isn't quite right. When Leaf Litter / Organic Matter
+is at 100%, Fungal Network Activity shoots up — even when it shouldn't!
+
+In the real world, Leaf Litter / Organic Matter only affects Fungal Network Activity when Soil Moisture
+is active. Without Soil Moisture, Leaf Litter / Organic Matter alone can't change Fungal Network Activity.
+Let's teach your model this rule.
+
+Task A: FIND THE PROBLEM
+   • Run your simulation and watch Fungal Network Activity
+   • Notice how Leaf Litter / Organic Matter pushes Fungal Network Activity up even when
+     Soil Moisture is OFF — that's not right!
+
+Task B: ADD THE RULE
+   • Click on the arrow from Leaf Litter / Organic Matter to Fungal Network Activity
+   • In the toolbar that pops up, click "Conditions"
+   • A panel opens. Set: IF Soil Moisture is ON
+   • Click "Save Conditions"
+   • This tells the model: "Leaf Litter / Organic Matter only affects Fungal Network Activity
+     when Soil Moisture is active"
+
+Task C: TEST YOUR SMARTER MODEL
+   • Re-run the simulation
+   • Try different combinations of Leaf Litter / Organic Matter and Soil Moisture
+   • Does the model match the real world now?
+
+Task D: ADD ANOTHER RULE
+   • Click on the arrow from Soil Moisture to Fungal Network Activity
+   • Click "Conditions"
+   • Set: IF Leaf Litter / Organic Matter is ON
+   • Click "Save Conditions"
+   • Soil Moisture only affects Fungal Network Activity when
+     Leaf Litter / Organic Matter is active
+
+Your model is SMARTER now — it knows the rules!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
+THE NETWORK IS MORE COMPLEX THAN YOUR MODEL
+
+Your model captures the basics: organic matter and moisture power
+the network, which enables sharing. But the real Wood Wide Web is
+even more remarkable.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PLAY TIME CHALLENGES:
+
+1. FIND THE MINIMUM
+   • What's the lowest Soil Moisture level where the network still functions?
+   • What's the minimum Organic Matter level to keep fungal activity going?
+   • At what point does the forest "community" break down?
+
+2. MOTHER TREE SIMULATION
+   • Imagine locking Nutrient Transfer to HIGH even when other conditions drop
+   • This would simulate a "mother tree" pumping nutrients even under stress
+   • What happens to the system overall?
+
+3. WHAT'S MISSING?
+   The real network includes much more:
+
+   • Tree Species Diversity — some tree species share networks better than others
+   • Chemical Signaling — trees send pest-warning chemicals through the network
+   • Human Disturbance — pesticides, compacted soil, and logging damage the network
+   • pH of Soil — acidic soil (from acid rain) disrupts fungal growth
+   • Carbon Trading — trees give fungi sugar; fungi give trees water and nutrients (it's a deal!)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+RESEARCH DIRECTIONS:
+
+📚 IN YOUR TEXTBOOK:
+   • What is symbiosis? How does it relate to the tree-fungi relationship?
+   • What is a decomposer and how do fungi serve as decomposers?
+   • How does matter flow through ecosystems?
+
+🔍 QUESTIONS TO INVESTIGATE:
+   • Who discovered the Wood Wide Web? (Look up Dr. Suzanne Simard)
+   • What is the difference between mycorrhizal fungi and regular decomposer fungi?
+   • How do trees recognize their own offspring in the network?
+   • What happens to a forest's mycorrhizal network after a wildfire?
+
+🌐 RELIABLE SOURCES:
+   • BBC Future: bbc.com/future
+   • National Geographic: nationalgeographic.com
+   • Nature journal (academic): nature.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ADD TO YOUR MODEL:
+   • Add "Soil pH" as an External component — it affects Fungal Network Activity
+     (higher acidity = less fungal activity, so this is a NEGATIVE relationship)
+   • This models how acid rain affects forest health
+   • Run it. Does adding acid to the soil affect nutrient sharing?
+```
+
+### Video Script
+
+```
+"Your model shows how organic matter and moisture drive the underground
+network that keeps forests connected. But the real Wood Wide Web is
+even more mind-bending.
+
+The scientist who discovered this network — Dr. Suzanne Simard,
+a Canadian forest ecologist — spent years getting laughed at. In
+the 1990s, the idea that trees communicated and shared resources
+was too weird for mainstream science to accept.
+
+Then she proved it. She injected radioactive carbon into one tree
+and traced it moving through the fungal network into neighboring
+trees. The carbon traveled. The trees were sharing. The network was real.
+
+Now here's the part that might surprise you most: it's not a charity.
+It's a deal.
+
+Trees give fungi sugar — the glucose they make from photosynthesis.
+Fungi give trees water and nutrients — especially phosphorus and
+nitrogen that trees can't easily get on their own. Both sides benefit.
+Scientists call this mutualism — mutual benefit.
+
+And fungi are incredibly selective about their partners. Different tree
+species connect to different fungi. Some species share resources freely.
+Others are more selfish. The network isn't perfectly equal.
+
+Here's your extension: add Soil pH as an external component.
+
+Acid rain — caused by air pollution — makes soil acidic. Acidic soil
+damages mycorrhizal fungi. When pH goes too low, fungal network
+activity drops.
+
+Connect Soil pH to Fungal Network Activity as a POSITIVE relationship
+— higher pH (less acidic) = healthier network. Or frame it as acidity
+being NEGATIVE.
+
+Run it. What happens to Nutrient Transfer when acid rain damages the network?
+
+This is exactly how acid rain threatened European and North American
+forests in the 1970s and 80s — it killed the underground network.
+
+What does YOUR expanded forest model reveal?
+
+Now it's your turn to ModelIt!"
+```
+
+### Activity Network
+[Screenshot showing expanded model with Soil pH added as external component with positive relationship to Fungal Network Activity]
+
+---
+
+## Fun Fact (Career Connection)
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🍄 CAREER CONNECTION: MYCOLOGIST / FOREST ECOLOGIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mycologists study fungi — everything from the edible mushrooms on your
+pizza to the microscopic mycorrhizal threads holding forests together.
+They're discovering new species, unlocking medical applications of fungi,
+and learning how the Wood Wide Web functions as forests face climate stress.
+
+Forest Ecologists study the systems that make forests work — including
+the underground networks you modeled today. Dr. Suzanne Simard, the
+scientist who proved the Wood Wide Web exists, is one of the most
+celebrated ecologists of the 21st century. Her research changed how
+forestry companies manage logging practices and how conservation efforts
+protect "mother trees" as network hubs.
+
+💰 SALARY: $55,000 - $90,000 per year
+
+The model you built today — organic matter and moisture → fungal network →
+nutrient transfer — is the framework forest ecologists use to assess
+forest health and predict how forests will respond to climate change.
+You're doing real ecological modeling.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+---
+
+## TPT Materials
+
+### PowerPoint Slides
+
+```
+SLIDE 1: TITLE
+Background: Forest above, glowing fungal network below soil line
+Title: "The Mushroom Network Under Your Feet"
+Subtitle: "Trees talk to each other. Through mushrooms. Underground."
+
+SLIDE 2: THE MYSTERY
+Image: Two trees side by side, appearing separate, with hidden underground connection glowing
+Text: "What if these trees aren't actually separate? What if they're one community?"
+
+SLIDE 3: DR. SUZANNE SIMARD
+Photo of Dr. Simard in a forest, holding soil sample
+Text: "In the 1990s, she proved trees share resources. Scientists laughed. Then she proved it."
+Caption: "The 'Wood Wide Web' was born."
+
+SLIDE 4: DRIVING QUESTION
+"How do the conditions underground control how much trees can share and support each other?"
+Icons: Leaf → Mushroom Thread → Tree 1 → Tree 2
+
+SLIDE 5: ACTIVITY 1 — LOCATE
+Screenshot of ModelIt component panel
+Bullet points: External vs Internal components
+
+SLIDE 6: OUR COMPONENTS
+Visual cards for each:
+• Leaf Litter / Organic Matter (external) — food for the fungi
+• Soil Moisture (external) — survival requirement for fungal threads
+• Mycorrhizal Fungal Network Activity (internal) — how active the network is
+• Nutrient Transfer Between Trees (internal) — what the active network enables
+
+SLIDE 7: ACTIVITY 2 — ESTABLISH
+Screenshot of Connect icon
+Text: "The deal: trees give fungi sugar; fungi give trees nutrients"
+
+SLIDE 8: THE UNDERGROUND NETWORK CHAIN
+Animated diagram: Organic Matter +→ Fungal Network ←+ Moisture → Nutrient Transfer
+Caption: "All positive — when conditions are right, the whole community benefits"
+
+SLIDE 9: ACTIVITY 3 — VISUALIZE
+Split simulation graph: Network thriving (high moisture) vs. collapsing (drought)
+Text: "Drought doesn't just hurt individual trees. It isolates them."
+
+SLIDE 10: DROUGHT EFFECTS ON THE NETWORK
+Labeled graph: Soil Moisture drops → Fungal Network drops → Nutrient Transfer collapses
+Caption: "The forest's internet goes offline"
+
+SLIDE 11: ACTIVITY 4 — EXTEND
+Infographic: Tree-fungi mutualism diagram — sugar flows one way, nutrients flow the other
+Text: "It's not charity. It's a deal. Both sides benefit."
+
+SLIDE 12: WHAT HUMANS DO TO THE NETWORK
+Before/After photos: Healthy forest floor vs. compacted soil after logging equipment
+Text: "Logging roads, pesticides, and clear-cutting destroy the network that took decades to form"
+
+SLIDE 13: THE MOTHER TREE CONCEPT
+Diagram: Oldest largest tree at center of network, connected to dozens of smaller trees
+Caption: "Mother trees are network hubs — their loss affects dozens of neighbors"
+
+SLIDE 14: CAREER CONNECTION
+Photo: Scientist examining soil samples in forest setting
+Text: "Mycologist / Forest Ecologist: $55,000 - $90,000/year"
+Caption: "They study and protect the underground communities holding forests together."
+
+SLIDE 15: EXIT TICKET
+Questions:
+1. What two inputs drive mycorrhizal fungal network activity?
+2. Why does drought affect the entire forest community, not just individual trees?
+3. What is ONE human activity that could damage the Wood Wide Web?
+```
+
+### Teacher Guide
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TEACHER GUIDE: The Mushroom Network Under Your Feet
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LESSON PURPOSE:
+This lesson uses the genuinely surprising discovery of the mycorrhizal
+network to make matter cycling viscerally real. The "Wood Wide Web"
+framing resonates deeply with students who understand networks and
+internet analogies. Dr. Suzanne Simard's story also provides a
+powerful example of a scientist who persisted when the establishment
+rejected her findings.
+
+NGSS ALIGNMENT:
+5-LS2-1: Develop a model to describe the movement of matter among
+plants, animals, decomposers, and the environment.
+
+PACING GUIDE:
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
+• Total: 40-45 minutes (or split across 2 days)
+
+PRE-LESSON PREP:
+□ Test ModelIt access on student devices
+□ Optional: Show clip from "Fantastic Fungi" documentary (2019)
+□ Review vocabulary: fungi, mycorrhizal, mutualism, decomposer
+□ Consider showing a piece of mushroom to illustrate that the
+  mushroom "cap" is just the tip of a massive underground organism
+
+COMMON MISCONCEPTIONS:
+• "Mushrooms are plants" → Fungi are their own kingdom — neither
+  plant nor animal, with unique properties
+• "Fungi just decompose things" → Mycorrhizal fungi are partners to
+  living trees, not just decomposers
+• "Trees compete and don't cooperate" → The Wood Wide Web shows
+  both competition AND cooperation happen simultaneously in forests
+
+FACILITATION TIPS:
+• Step 1: The "trees talk to each other" opening creates immediate
+  engagement. Ask students "What do you think they 'say'?" before revealing.
+• Step 2: The "mutualism deal" framing helps students understand
+  why fungi cooperate — it's not altruistic, it's mutually beneficial.
+• Step 3: The drought scenario is emotionally compelling — make sure
+  students understand it's not just individual trees suffering but the
+  entire community losing its connection.
+• Step 4: Dr. Suzanne Simard's story is a great role model moment —
+  a woman scientist whose counterintuitive discovery changed a field.
+
+DISCUSSION PROMPTS:
+• "If trees cooperate underground, does that change how you think about
+  forests? Are trees individuals or community members?"
+• "Why might a forest take decades to recover from logging even if
+  you plant new trees right away?"
+• "What does the tree-fungi relationship teach us about cooperation vs.
+  competition in nature?"
+• "How is the mycorrhizal network similar to and different from the internet?"
+
+EXTENSION CONNECTIONS:
+• Matter cycling → Fungi as decomposers AND as network builders
+• Human impact → Logging practices and their effect on the underground network
+• Symbiosis → Different types of mutually beneficial relationships in nature
+
+ASSESSMENT:
+• Can student explain how organic matter and moisture affect the fungal network?
+• Does student correctly identify all positive relationships in the model?
+• Did student connect the drought simulation to real forest ecology consequences?
+
+DIFFERENTIATION:
+Support: Provide a diagram of the mutualism relationship with arrows labeled
+Challenge: Research how different tree species participate differently in networks; model this
+ELL: Use the "internet analogy" — compare to actual internet infrastructure they know
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Activity Pack
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STUDENT ACTIVITY PACK: The Mushroom Network Under Your Feet
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NAME: _________________________ DATE: _____________
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRE-ASSESSMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Do you think trees in a forest compete with each other, cooperate
+   with each other, or both? Explain your thinking:
+
+   _________________________________________________________
+
+   _________________________________________________________
+
+2. What do you think fungi (mushrooms) do in an ecosystem?
+
+   _________________________________________________________
+
+3. If scientists discovered that trees could "share" food with each
+   other underground, what would have to be doing the sharing?
+
+   _________________________________________________________
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VOCABULARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Match the term to the definition:
+
+___ Mycorrhizal     A. A relationship where both organisms benefit
+___ Mutualism       B. Tiny thread-like structures that form fungal networks
+___ Hyphae          C. Related to fungi that form partnerships with plant roots
+___ Nutrient        D. Substances that living things need to grow and survive
+___ Symbiosis       E. A long-term relationship between different species
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MODEL PLANNING SPACE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Before you build in ModelIt, sort your components here:
+
+EXTERNAL (inputs from the environment):
+_______________ _______________
+
+INTERNAL (responds to conditions):
+_______________ _______________
+
+Draw arrows showing relationships. Label each + or −.
+
+THE DEAL: Trees give fungi ________________
+          Fungi give trees ________________
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SIMULATION OBSERVATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DROUGHT scenario (Soil Moisture set to LOW):
+• Fungal Network Activity: went UP / went DOWN
+• Nutrient Transfer Between Trees: went UP / went DOWN
+
+DEFORESTATION scenario (Leaf Litter set to ZERO):
+• Fungal Network Activity: went UP / went DOWN
+• Nutrient Transfer Between Trees: went UP / went DOWN
+
+Which is MORE damaging to the network — drought or no organic matter?
+Explain: ____________________________________________________
+
+When I restored both conditions, the network recovered:
+Immediately / Slowly / Not at all (circle one)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RESEARCH & EXTEND
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The scientist who discovered the Wood Wide Web was Dr. ____________
+
+What did she prove? ________________________________________
+
+One surprising thing trees can do through the network:
+_________________________________________________________
+
+NEW COMPONENT I want to add: _____________________________
+
+Is it EXTERNAL or INTERNAL? (circle one)
+
+It affects: _________________ in a (+ / −) way
+
+After adding it, my simulation showed:
+_________________________________________________________
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST-ASSESSMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Why is a forest with a healthy mycorrhizal network more resilient
+   than a forest without one?
+
+   _________________________________________________________
+
+   _________________________________________________________
+
+2. When a drought hits a forest, which of the following best
+   explains what happens to the trees?
+   (Circle the best answer)
+
+   A. Individual trees dry out but are otherwise unaffected
+   B. Trees lose water AND lose their connection to the community network
+   C. The fungal network grows more to compensate for drought
+   D. Trees stop photosynthesizing but continue to share nutrients
+
+3. A logging company wants to replant a forest after cutting it down.
+   They plant the same number of trees. A forest ecologist says
+   "It will take 50 years to fully recover." Why?
+
+   _________________________________________________________
+
+   _________________________________________________________
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+---
+
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-LS2-1.
+
+---
+
+### Question 1
+
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.A.1 (Interdependent relationships in ecosystems) + CCC4 (Describe a system in terms of its components)
+
+A student is building a model of how trees share nutrients through underground fungal networks. She identifies four components: leaf litter/organic matter, soil moisture, mycorrhizal fungal network activity, and nutrient transfer between trees. She needs to sort them into external components (inputs from outside the system) and internal components (things that change within the system).
+
+Which list correctly sorts the components of the mycorrhizal network system?
+
+A. External: Nutrient Transfer, Soil Moisture — Internal: Leaf Litter/Organic Matter, Fungal Network Activity
+B. External: Leaf Litter/Organic Matter, Fungal Network Activity — Internal: Soil Moisture, Nutrient Transfer
+C. External: Leaf Litter/Organic Matter, Soil Moisture — Internal: Mycorrhizal Fungal Network Activity, Nutrient Transfer Between Trees
+D. External: Fungal Network Activity, Nutrient Transfer — Internal: Leaf Litter/Organic Matter, Soil Moisture
+
+Correct Answer: C
+
+Feedback: Leaf litter is constantly produced by trees falling to the ground, and soil moisture depends on rainfall, so both are inputs from outside the system that the network cannot control (external). Fungal network activity and nutrient transfer between trees change based on conditions within the system, making them internal. If you chose B, fungal network activity is not an outside input. It changes based on how much food and moisture are available in the soil. If you chose A, nutrient transfer is the output of the system, not an outside input. Soil moisture comes from rainfall, making it external. If you chose D, fungal network activity and nutrient transfer both respond to conditions within the system. They are not external inputs.
+---
+
+### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.B.1 (Cycles of matter and energy transfer in ecosystems) + CCC4 (Describe components and interactions)
+
+In a mycorrhizal network model, a student draws an arrow from Soil Moisture to Mycorrhizal Fungal Network Activity and labels it as a positive relationship. This means that when soil moisture increases, fungal network activity also increases. A classmate disagrees and says too much water should drown the fungi.
+
+Which explanation best supports why the relationship between Soil Moisture and Mycorrhizal Fungal Network Activity is positive?
+
+A. When soil moisture decreases, fungi work harder to find water, so their activity increases.
+B. When soil moisture increases, tree roots grow faster, replacing the need for fungi.
+C. When soil moisture increases, fungal threads have the water they need to grow and transport nutrients, so their activity increases.
+D. When soil moisture increases, fungi drown and their activity decreases.
+
+Correct Answer: C
+
+Feedback: A positive relationship means when one component goes up, the other also goes up. Fungi are living organisms that need water to survive, grow their thread-like hyphae, and transport nutrients between trees. More moisture means the fungal network can function better. If you chose D, at normal levels, more moisture helps fungi thrive. Drowning describes an extreme event, not the normal relationship in the model. If you chose A, this describes a negative relationship, not a positive one. In reality, fungi slow down and die in dry conditions rather than working harder. If you chose B, tree roots and fungi work together in a partnership. More moisture helps both, but tree roots cannot replace what the fungal network does.
+---
+
+### Question 3
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.A.1 (Interdependent relationships in ecosystems) + CCC4 (Describe interactions within a system)
+
+A student builds a model of the mycorrhizal network. The model shows that when leaf litter/organic matter increases, fungal network activity increases (a positive relationship). It also shows that when fungal network activity increases, nutrient transfer between trees increases (a positive relationship). The student wants to test what happens during severe drought, so she sets soil moisture to 10%.
+
+Based on the model, what would most likely happen when soil moisture drops to very low levels?
+
+A. Nutrient transfer between trees would stay the same because trees have stored nutrients.
+B. Trees would start sharing nutrients through their branches instead of through the fungi.
+C. Fungal network activity would increase because fungi prefer dry conditions.
+D. Fungal network activity would drop and nutrient transfer would collapse, isolating trees from each other.
+
+Correct Answer: D
+
+Feedback: The model shows that soil moisture has a positive relationship with fungal network activity. When soil moisture drops to near zero, fungi cannot survive. Their threads dry out and stop functioning. Then, because fungal network activity has a positive relationship with nutrient transfer, nutrient transfer also collapses. Each tree becomes isolated. If you chose C, fungi need moisture to survive. They do not prefer dry conditions. Drought is devastating to the fungal network. If you chose A, nutrient transfer depends on active fungi to transport nutrients between trees. Without functioning fungi, transfer stops regardless of stored nutrients. If you chose B, the model does not show any alternative pathway for nutrient sharing. Trees depend on the fungal network for underground nutrient exchange.
+---
+
+### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.A.1 (Interdependent relationships in ecosystems) + CCC4 (Describe components and interactions)
+
+Scientists studied two forest areas over the same decade. Forest A was an old-growth forest with thick leaf litter, moist soil, and trees of many different ages. When researchers tested the soil, they found an extensive fungal network connecting most trees, and even shaded young seedlings were growing well. Forest B was a recently replanted area where all old trees had been removed five years earlier. The soil was thin, dry, and had almost no fungal network. Young trees in Forest B grew slowly and many died.
+
+Which observation best supports the idea that the fungal network is critical for forest health?
+
+A. Both forests had trees, which proves that the fungal network has no effect on tree growth.
+B. Forest A had thick leaf litter feeding an active fungal network that connected and supported trees, while Forest B lacked organic matter and had no fungal network, leaving young trees isolated and struggling.
+C. Forest A had old trees and Forest B had young trees, which means older trees grow faster.
+D. Forest A had moist soil and Forest B had dry soil, which means water is the only factor that matters.
+
+Correct Answer: B
+
+Feedback: Comparing the two forests shows the role of the fungal network. Forest A had abundant organic matter feeding a healthy fungal network, enabling nutrient sharing that supported even shaded seedlings. Forest B lost its fungal network when the old trees were removed, and without that underground support system, young trees struggled. If you chose C, the age of the trees is not the main factor. The key difference is the presence or absence of the fungal network that connects and supports trees. If you chose D, while moisture matters, the question asks about the fungal network specifically. Forest B lacked both moisture and the fungal network, and the network is what enables nutrient sharing between trees. If you chose A, the fact that both forests have trees but very different growth outcomes is exactly what shows the fungal network matters.
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI LS2.A.1 (Interdependent relationships in ecosystems) + CCC4 (Describe system components and interactions)
+
+A national park wants to restore a section of forest that was cleared by a wildfire two years ago. Park scientists are studying the mycorrhizal network model. The model shows that leaf litter/organic matter has a positive relationship with fungal network activity, soil moisture has a positive relationship with fungal network activity, and fungal network activity has a positive relationship with nutrient transfer between trees. The scientists know they cannot control rainfall. But they can add a new action to the system.
+
+Based on the model, which action would most likely help the fungal network recover fastest?
+
+A. Spread wood chips, dead leaves, and compost on the soil to provide organic matter for the fungal network.
+B. Plant only one species of tree so they do not compete with each other.
+C. Build a fence around the area to keep animals out.
+D. Wait for the rain to return so the soil moisture naturally increases.
+
+Correct Answer: A
+
+Feedback: Leaf litter and organic matter have a positive relationship with fungal network activity. By spreading wood chips, dead leaves, and compost, the scientists directly provide food for the fungal network. This gives the fungi the energy they need to regrow their threads and reconnect trees. If you chose B, planting only one species would actually reduce the diversity of the fungal network. Many fungi specialize in connecting different tree species. If you chose C, building a fence does not address any component in the model. The fungi need organic matter and moisture, not protection from animals. If you chose D, rainfall is an external force the scientists said they cannot control. Waiting for rain means relying on an outside force instead of taking direct action on something inside the system.
+---
+
+### Answer Key
+
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.A.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.B.1, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.A.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.A.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS2.A.1, CCC4)
+
+---
+
+## Resources
+
+| Resource | Link |
+|----------|------|
+| Activity Pack (PDF) | [To be created] |
+| Teacher Guide (PDF) | [To be created] |
+| PPT Presentation | [To be created] |
+| Platform Link | [ModelIt lesson link] |
+
+---
+
+## Lesson Metadata
+
+| Field | Value |
+|-------|-------|
+| Created | February 2026 |
+| Author | Alexandria's Design |
+| Template Version | 1.0 |
+| Platform | ModelIt (formerly Cell Collective) |
+| Estimated Time | 40-45 minutes |
+| Can Split Across | 2 class periods |

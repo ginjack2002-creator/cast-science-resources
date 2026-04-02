@@ -722,81 +722,9 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC6 (Structure and Function)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (Organisms use external parts to survive) + CCC6 (Structure and function: shape relates to function)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Body Part Size, Ability to Get Food. Some components are external (Body Part Size) and some are internal (Ability to Get Food). The student needs to understand what each component represents and how they are organized.
-
-What does structure mean in science?
-
-A. The color of an animal
-B. A body part that has a special shape
-C. How fast an animal can run
-
-Correct Answer: B
-
-Feedback: Yes! Structure means a body part with a special shape, like claws, wings, or a beak. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 2
-
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
-
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that components affect each other through positive and negative relationships. The student is trying to understand why these relationships are positive or negative.
-
-What does function mean?
-
-A. The job that a body part does
-B. How big an animal is
-C. Where an animal lives
-
-Correct Answer: A
-
-Feedback: That is right! Function means the job a body part does, like grabbing, flying, or eating. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 3
-
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
-
-A student runs a simulation of the model. The model shows that components interact through cause-and-effect chains. The student changes one variable to see how the whole system responds.
-
-When body part size goes UP for a bird's beak, what happens to its ability to get food from deep flowers?
-
-A. It gets worse at getting food
-B. Nothing changes
-C. It gets better at getting food
-
-Correct Answer: C
-
-Feedback: Yes! A longer beak can reach deeper into flowers to get nectar. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
----
-
-### Question 4
-
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
-
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
-
-An eagle has a hooked beak and a hummingbird has a long thin beak. Why are they different?
-
-A. Because eagles are bigger
-B. Because they eat different kinds of food
-C. Because they live in different colors
-
-Correct Answer: B
-
-Feedback: Yes! The shape of the beak matches the kind of food the bird eats. Hooked beaks tear meat. Long thin beaks sip nectar. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 5
-
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
-
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Body Part Size), but they can take action on internal components (Ability to Get Food). They need to decide which action would be most effective based on what the model shows.
+A student watches a bird eating seeds at a bird feeder. The bird picks up seeds one at a time using a special body part on its face. The student wonders which part the bird uses to eat.
 
 What does a bird use to eat?
 
@@ -806,19 +734,86 @@ C. Its tail
 
 Correct Answer: B
 
-Feedback: Yes! A bird uses its beak to pick up and eat food. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+Feedback: A bird uses its beak to pick up, crack, and eat food. The beak is shaped perfectly for eating. If you chose A, wings are used for flying, not eating. The beak is the body part birds use to grab food. If you chose C, the tail helps a bird balance and steer when flying. It is not used for eating.
+---
 
+### Question 2
+
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (External parts help organisms survive) + CCC6 (Structure and function: shape of parts)
+
+A student watches fish in an aquarium. She sees the fish moving their side parts back and forth to swim through the water. She wonders why fish have these body parts.
+
+Why do fish have fins?
+
+A. To help them dig
+B. To help them fly
+C. To help them swim
+
+Correct Answer: C
+
+Feedback: Fish use their fins to push water and swim. Fins are shaped perfectly for moving through water. If you chose B, fish do not fly. Fins are designed for swimming through water, not flying through air. If you chose A, fish do not dig. Fins help fish move through water smoothly and change direction.
+---
+
+### Question 3
+
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS1.A.1 (Use external parts to help survive) + CCC6 (Structure and function: shape determines function)
+
+A student looks at pictures of two birds. One bird has a very long, thin beak. The other bird has a short, strong beak. The student wonders what kind of food the bird with the long beak eats.
+
+A bird has a very long beak. What kind of food do you think it eats?
+
+A. Big pieces of meat
+B. Hard nuts
+C. Food deep inside flowers
+
+Correct Answer: C
+
+Feedback: A long, thin beak can reach deep inside flowers to sip nectar. The shape of the beak matches the job it does. If you chose B, hard nuts need a short, strong beak that can crack shells. A long, thin beak would not be good for cracking hard things. If you chose A, big pieces of meat need a hooked, sharp beak for tearing. A long, thin beak is shaped for reaching into flowers.
+---
+
+### Question 4
+
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (External structures for survival) + CCC6 (Structure and function: name and describe)
+
+A student learns two new science words. Her teacher says that structure means the shape of a body part, and function means the job that body part does. For example, a bird's beak has a special shape (structure) that helps it eat food (function).
+
+What does structure mean in science?
+
+A. A body part that has a special shape
+B. How fast an animal can run
+C. The color of an animal
+
+Correct Answer: A
+
+Feedback: Structure means a body part with a special shape, like claws, wings, or a beak. The shape helps the body part do its job. If you chose C, color is not what structure means. Structure is about the shape and form of a body part. If you chose B, speed is not what structure means. Structure refers to the shape of a body part, not how fast an animal moves.
+---
+
+### Question 5
+
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS1.A.1 (External parts help organisms survive and grow) + CCC6 (Structure and function: shape relates to function)
+
+A student looks at two birds. An eagle has a hooked beak that is sharp and strong. A hummingbird has a long, thin beak that can fit inside flowers. The student wonders why their beaks are so different.
+
+An eagle has a hooked beak and a hummingbird has a long thin beak. Why are they different?
+
+A. Because they eat different kinds of food
+B. Because eagles are bigger
+C. Because they live in different colors
+
+Correct Answer: A
+
+Feedback: The shape of a beak matches the kind of food the bird eats. Hooked beaks tear meat. Long thin beaks sip nectar. If you chose B, being bigger is not the reason for different beak shapes. The beak shape matches the type of food the bird needs to eat. If you chose C, colors do not determine beak shape. The beak shape is related to the type of food the bird eats, not where it lives or its color.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC6)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
+Question 1: B (Cognitive Level: Identify)
+Question 2: C (Cognitive Level: Identify)
+Question 3: C (Cognitive Level: Reason)
+Question 4: A (Cognitive Level: Reason)
+Question 5: A (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

@@ -918,15 +918,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In a student's earthquake model, the same magnitude earthquake produces dramatically different outcomes in two simulated cities: City A (on bedrock, modern codes) shows minimal damage, while City B (on clay, older buildings) shows widespread destruction. Which model principle best explains this divergence?
 
-A. Earthquake magnitude is the only factor that determines destruction
-B. Local conditions (ground amplification and building vulnerability) act as multipliers that can transform the same seismic input into vastly different outcomes, demonstrating that magnitude alone is a poor predictor of damage
+A. The model is flawed because all locations should experience the same shaking from the same earthquake
+B. Earthquake magnitude is the only factor that determines destruction
 C. City B must have been closer to the epicenter than City A
-D. The model is flawed because all locations should experience the same shaking from the same earthquake
+D. Local conditions (ground amplification and building vulnerability) act as multipliers that can transform the same seismic input into vastly different outcomes, demonstrating that magnitude alone is a poor predictor of damage
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates that earthquake magnitude describes energy released at the source, but destruction is determined by how local conditions modify that energy. Ground amplification multiplies seismic wave intensity (2-10x on soft soil), and building vulnerability determines whether structures survive or collapse under the modified shaking. These local factors can be more important than the earthquake itself. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that earthquake magnitude describes energy released at the source, but destruction is determined by how local conditions modify that energy. Ground amplification multiplies seismic wave intensity (2-10x on soft soil), and building vulnerability determines whether structures survive or collapse under the modified shaking. These local factors can be more important than the earthquake itself. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -937,15 +936,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model includes a causal chain: Tectonic Stress → Fault Slip → Seismic Wave Energy → Ground Amplification → Building Vulnerability. At which point in this chain can humans most effectively intervene to reduce earthquake damage?
 
-A. Reducing tectonic stress through drilling into fault zones
-B. At the Ground Amplification and Building Vulnerability stages, through soil remediation, seismic building codes, and retrofitting existing structures
-C. Preventing fault slip by injecting concrete into fault lines
+A. Preventing fault slip by injecting concrete into fault lines
+B. Reducing tectonic stress through drilling into fault zones
+C. At the Ground Amplification and Building Vulnerability stages, through soil remediation, seismic building codes, and retrofitting existing structures
 D. Reducing seismic wave energy by building walls around cities
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows that tectonic stress, fault slip, and seismic wave generation are geological processes beyond human control. However, Ground Amplification can be partially addressed through soil stabilization and foundation engineering, and Building Vulnerability can be directly addressed through seismic building codes, retrofitting, and appropriate land-use planning. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that tectonic stress, fault slip, and seismic wave generation are geological processes beyond human control. However, Ground Amplification can be partially addressed through soil stabilization and foundation engineering, and Building Vulnerability can be directly addressed through seismic building codes, retrofitting, and appropriate land-use planning. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -956,15 +954,14 @@ A student runs a simulation of the model. The model shows that when Tectonic Str
 
 A student extends their model by adding Infrastructure Interdependency as a component. They find that earthquake damage cascades beyond structural collapse: gas lines rupture causing fires, broken water mains prevent firefighting, and downed power lines block roads. What systems thinking concept does this demonstrate?
 
-A. Infrastructure systems are independent and do not affect each other
-B. Cascading failures occur when the failure of one interconnected system triggers failures in other dependent systems, amplifying total damage far beyond direct seismic effects
+A. Cascading failures occur when the failure of one interconnected system triggers failures in other dependent systems, amplifying total damage far beyond direct seismic effects
+B. Infrastructure systems are independent and do not affect each other
 C. Infrastructure damage only occurs during earthquakes above magnitude 8.0
 D. Modern infrastructure is earthquake-proof and does not fail during seismic events
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Infrastructure interdependency creates cascading failure pathways: seismic damage to gas infrastructure causes fires, damage to water infrastructure prevents firefighting, damage to electrical infrastructure blocks communication and access, and damage to transportation infrastructure prevents emergency response. Total damage from cascading failures often exceeds direct seismic damage. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Infrastructure interdependency creates cascading failure pathways: seismic damage to gas infrastructure causes fires, damage to water infrastructure prevents firefighting, damage to electrical infrastructure blocks communication and access, and damage to transportation infrastructure prevents emergency response. Total damage from cascading failures often exceeds direct seismic damage. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -975,15 +972,14 @@ Scientists are studying data related to this system. They collected observations
 
 A city council is reviewing seismic risk. The model shows that neighborhoods on soft soil with older construction face 5-10x higher risk than neighborhoods on bedrock with modern buildings. Historically, low-income communities disproportionately occupy the high-risk zones. What does this model evidence reveal about the intersection of geology and social equity?
 
-A. Earthquake risk is purely a geological phenomenon with no social dimension
-B. Earthquake vulnerability is shaped by socioeconomic factors because lower-income communities historically settle on cheaper land (often soft soil) and occupy older, unreinforced buildings, meaning seismic risk maps and poverty maps frequently overlap
-C. All neighborhoods face identical earthquake risk regardless of geology or construction
-D. Wealthy neighborhoods should be prioritized for seismic retrofitting because their buildings are more valuable
+A. Earthquake vulnerability is shaped by socioeconomic factors because lower-income communities historically settle on cheaper land (often soft soil) and occupy older, unreinforced buildings, meaning seismic risk maps and poverty maps frequently overlap
+B. Wealthy neighborhoods should be prioritized for seismic retrofitting because their buildings are more valuable
+C. Earthquake risk is purely a geological phenomenon with no social dimension
+D. All neighborhoods face identical earthquake risk regardless of geology or construction
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model reveals that earthquake risk is not just geological but deeply socioeconomic. The cheapest land in earthquake-prone cities is often on soft soil (former lakebeds, landfill, river deltas), and lower-income communities disproportionately live in older buildings without seismic engineering. Equitable earthquake preparedness requires prioritizing the most vulnerable communities, not just the most valuable properties. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model reveals that earthquake risk is not just geological but deeply socioeconomic. The cheapest land in earthquake-prone cities is often on soft soil (former lakebeds, landfill, river deltas), and lower-income communities disproportionately live in older buildings without seismic engineering. Equitable earthquake preparedness requires prioritizing the most vulnerable communities, not just the most valuable properties. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -996,21 +992,20 @@ A student notes that the San Andreas Fault has not produced a major earthquake s
 
 A. Faults become safer over time as they settle into stable positions
 B. Tectonic stress accumulates continuously during quiet periods; the longer the interval since the last major earthquake, the more stored energy is available for release, meaning the next earthquake is likely to be larger
-C. The absence of earthquakes means the fault has become inactive and poses no future risk
-D. Long quiet periods indicate that the tectonic plates have stopped moving
+C. Long quiet periods indicate that the tectonic plates have stopped moving
+D. The absence of earthquakes means the fault has become inactive and poses no future risk
 
 Correct Answer: B
 
-Feedback: Correct. The model clearly shows that tectonic stress accumulates continuously because plate motion never stops. A long quiet period means more stress has built up without release. The San Andreas Fault's 5-meter slip deficit represents an enormous amount of stored elastic energy that will eventually be released, potentially in a single catastrophic event. Silence is not safety; it is energy storage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model clearly shows that tectonic stress accumulates continuously because plate motion never stops. A long quiet period means more stress has built up without release. The San Andreas Fault's 5-meter slip deficit represents an enormous amount of stored elastic energy that will eventually be released, potentially in a single catastrophic event. Silence is not safety; it is energy storage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC5)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC5)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC4)
 
 

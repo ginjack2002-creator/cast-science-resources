@@ -413,6 +413,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the CO2 Emissions → Global Temperature relationship as
+unconditional. However, this relationship is scientifically
+contingent on Albedo Effect being active. Without this condition,
+the simulation produces inaccurate results: CO2 Emissions drives Global Temperature
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: CO2 Emissions → Global Temperature
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Albedo Effect is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Albedo Effect active and observe
+     how CO2 Emissions's effect on Global Temperature is now gated
+   • Toggle Albedo Effect ON/OFF while CO2 Emissions remains constant
+   • Verify that Global Temperature only responds to CO2 Emissions when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -993,15 +1023,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's climate model shows that reducing CO2 emissions to zero after crossing the ice-albedo tipping point does not restore ice cover within 200 years. What does this demonstrate?
 
-A. The model contains an error because reducing emissions should reverse warming
-B. The reinforcing feedback loop has become self-sustaining, driving continued warming independent of emissions
+A. The ice-albedo effect is a balancing feedback loop that requires time to respond
+B. The model contains an error because reducing emissions should reverse warming
 C. CO2 emissions have no effect on ice cover
-D. The ice-albedo effect is a balancing feedback loop that requires time to respond
+D. The reinforcing feedback loop has become self-sustaining, driving continued warming independent of emissions
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Once the tipping point is crossed, the ice-albedo reinforcing loop sustains itself: less ice means more absorption, more warming, and still less ice. Eliminating the original trigger (emissions) does not break the loop. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Once the tipping point is crossed, the ice-albedo reinforcing loop sustains itself: less ice means more absorption, more warming, and still less ice. Eliminating the original trigger (emissions) does not break the loop. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1012,15 +1041,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The simulation reveals that the climate system has multiple reinforcing feedback loops (ice-albedo, permafrost methane, ocean heat absorption). How do these coupled loops affect system behavior compared to a system with only one feedback loop?
 
-A. Multiple loops cancel each other out, creating stability
-B. Multiple loops create cascading tipping points where crossing one threshold triggers others
-C. Each loop operates independently with no interaction
-D. Multiple loops slow the overall rate of change by distributing energy
+A. Multiple loops create cascading tipping points where crossing one threshold triggers others
+B. Multiple loops slow the overall rate of change by distributing energy
+C. Multiple loops cancel each other out, creating stability
+D. Each loop operates independently with no interaction
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Coupled reinforcing loops create cascading tipping points. Crossing the ice-albedo threshold can trigger permafrost thaw, which releases methane, causing more warming that accelerates ice loss further. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Coupled reinforcing loops create cascading tipping points. Crossing the ice-albedo threshold can trigger permafrost thaw, which releases methane, causing more warming that accelerates ice loss further. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1031,15 +1059,14 @@ A student runs a simulation of the model. The model shows that when CO2 Emission
 
 A model comparison shows that the same CO2 emission level produces stable conditions in one scenario but runaway warming in another. What variable most likely differs between the two scenarios?
 
-A. The color of the sky in the simulation
-B. Whether the system's initial temperature is above or below the tipping point threshold
-C. The number of components in the model
-D. The speed at which the simulation runs
+A. The speed at which the simulation runs
+B. The color of the sky in the simulation
+C. Whether the system's initial temperature is above or below the tipping point threshold
+D. The number of components in the model
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Threshold dynamics mean that the same input can produce dramatically different outcomes depending on the system's starting state. Below the threshold, the system absorbs the change; above it, reinforcing feedback loops activate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Threshold dynamics mean that the same input can produce dramatically different outcomes depending on the system's starting state. Below the threshold, the system absorbs the change; above it, reinforcing feedback loops activate. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1050,15 +1077,14 @@ Scientists are studying data related to this system. They collected observations
 
 Ocean heat absorption has been described as 'masking' the true rate of global warming. Based on the model, why is this masking effect dangerous rather than protective?
 
-A. Oceans are cooling the planet permanently, so there is no danger
+A. Ocean heat absorption has no significant effect on climate modeling
 B. The absorbed heat will eventually be released, and the delay creates a false sense of security while committed warming accumulates
 C. Ocean absorption reduces CO2 levels in the atmosphere directly
-D. Ocean heat absorption has no significant effect on climate modeling
+D. Oceans are cooling the planet permanently, so there is no danger
 
 Correct Answer: B
 
-Feedback: Correct. Ocean heat absorption creates a dangerous time delay. The warming is committed but not yet felt. When oceans reach absorption capacity, surface temperatures will rise to reflect all accumulated excess heat, revealing the true extent of warming. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Ocean heat absorption creates a dangerous time delay. The warming is committed but not yet felt. When oceans reach absorption capacity, surface temperatures will rise to reflect all accumulated excess heat, revealing the true extent of warming. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1070,23 +1096,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 Based on simulation evidence, which statement best describes the relationship between CO2 emissions and climate tipping points?
 
 A. Reducing emissions always prevents tipping points from being crossed
-B. Tipping points exist at specific temperature thresholds, and the current trajectory may cross multiple thresholds even with moderate emission reductions
-C. Tipping points are theoretical constructs with no basis in climate data
+B. Tipping points are theoretical constructs with no basis in climate data
+C. Tipping points exist at specific temperature thresholds, and the current trajectory may cross multiple thresholds even with moderate emission reductions
 D. Only complete elimination of all emissions can prevent any climate change
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows that tipping points occur at specific thresholds (estimated at 1.5-2.0 degrees C above pre-industrial). Moderate reductions may slow the approach but not prevent crossing if the trajectory is already aimed at these thresholds. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that tipping points occur at specific thresholds (estimated at 1.5-2.0 degrees C above pre-industrial). Moderate reductions may slow the approach but not prevent crossing if the trajectory is already aimed at these thresholds. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.5, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.5, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.5, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.5, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.5, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.5, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.5, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.5, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.5, CCC4)
 
 
 ## Resources

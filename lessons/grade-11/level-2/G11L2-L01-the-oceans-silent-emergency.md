@@ -929,107 +929,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.6 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ESS2.D (Climate change and feedback mechanisms) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Atmospheric CO2 Concentration, Ocean CO2 Absorption Rate, Seawater pH, Carbonate Ion Availability, Shell-Building Organism Survival, Marine Food Web Stability. Some components are external (Atmospheric CO2 Concentration) and some are internal (Ocean CO2 Absorption Rate, Seawater pH, Carbonate Ion Availability, Shell-Building Organism Survival, Marine Food Web Stability). The student needs to understand what each component represents and how they are organized.
+Marine scientists monitor a 500-km stretch of California's Pacific coastline where three ocean systems converge: warm surface currents, cold deep-water upwelling, and coastal freshwater runoff from rivers. Their instrumentation network measures dissolved oxygen levels at multiple depths, revealing a pattern of expanding hypoxic zones (dissolved oxygen below 2 mg/L) that have grown by 40% over the past two decades. Simultaneously, surface water pH has decreased from 8.15 to 8.05, representing a 26% increase in acidity.
 
 A student's model shows that as Atmospheric CO2 rises from 420 ppm to 900 ppm, Seawater pH drops from 8.1 to 7.7 and Shell-Building Organism Survival declines sharply. Which best explains the mechanism connecting these variables?
 
-A. Higher CO2 warms the water, which directly kills shell-building organisms through heat stress
-B. Higher CO2 leads to more carbonic acid, which lowers pH and reduces carbonate ion availability needed for calcification
-C. Higher CO2 increases oxygen levels, which makes shells dissolve faster
-D. Higher CO2 causes algal blooms that outcompete shell-building organisms for sunlight
+A. Higher CO2 causes algal blooms that outcompete shell-building organisms for sunlight
+B. Higher CO2 increases oxygen levels, which makes shells dissolve faster
+C. Higher CO2 leads to more carbonic acid, which lowers pH and reduces carbonate ion availability needed for calcification
+D. Higher CO2 warms the water, which directly kills shell-building organisms through heat stress
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The causal chain is: more atmospheric CO2 increases dissolved CO2 in seawater, forming carbonic acid that lowers pH and binds carbonate ions into bicarbonate, reducing the carbonate available for calcification. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The causal chain is: more atmospheric CO2 increases dissolved CO2 in seawater, forming carbonic acid that lowers pH and binds carbonate ions into bicarbonate, reducing the carbonate available for calcification. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. The mechanism is chemical: CO2 dissolves to form carbonic acid, lowering pH. As pH drops, hydrogen ions react with carbonate ions to form bicarbonate, depleting the carbonate that shell-building organisms need. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. The mechanism is chemical: CO2 dissolves to form carbonic acid, lowering pH. As pH drops, hydrogen ions react with carbonate ions to form bicarbonate, depleting the carbonate that shell-building organisms need. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. The mechanism is chemical: CO2 dissolves to form carbonic acid, lowering pH. As pH drops, hydrogen ions react with carbonate ions to form bicarbonate, depleting the carbonate that shell-building organisms need.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.6 + CCC7 (Stability and Change)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ESS2.D (Climate change and feedback mechanisms) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Atmospheric CO2 increases, Ocean CO2 Absorption Rate increases; when Ocean CO2 Absorption Rate increases, Seawater pH decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of ocean acidification tracks the relationship between atmospheric CO2 concentration, ocean CO2 absorption, carbonate chemistry, and marine organism calcification rates. The model shows that as atmospheric CO2 increases from 280 ppm (pre-industrial) to 420 ppm (current), the ocean absorbs approximately 30% of emissions. This absorption decreases surface water pH and reduces carbonate ion availability, which shell-building organisms need. When carbonate saturation drops below a critical threshold, shells begin dissolving faster than organisms can build them.
 
 A researcher compares two model scenarios: one where CO2 stabilizes at 450 ppm and another where CO2 reaches 900 ppm. In the 450 ppm scenario, Marine Food Web Stability remains relatively intact. What does this comparison most strongly support?
 
-A. Ocean acidification is entirely reversible once CO2 emissions stop
-B. Marine food webs are unaffected by pH changes below 0.3 units
-C. Aggressive CO2 mitigation can prevent the cascading ecosystem collapse seen in high-emission scenarios
+A. Aggressive CO2 mitigation can prevent the cascading ecosystem collapse seen in high-emission scenarios
+B. Ocean acidification is entirely reversible once CO2 emissions stop
+C. Marine food webs are unaffected by pH changes below 0.3 units
 D. Shell-building organisms can adapt to any pH change given enough time
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Correct. The comparison shows that limiting CO2 prevents pH from crossing tipping points that trigger cascading food web collapse, supporting the case for aggressive mitigation. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The comparison shows that limiting CO2 prevents pH from crossing tipping points that trigger cascading food web collapse, supporting the case for aggressive mitigation. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The comparison demonstrates that stabilizing CO2 at lower levels prevents the pH decline from reaching tipping points where shell-building organisms fail and food web collapse cascades upward. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. The comparison demonstrates that stabilizing CO2 at lower levels prevents the pH decline from reaching tipping points where shell-building organisms fail and food web collapse cascades upward. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. The comparison demonstrates that stabilizing CO2 at lower levels prevents the pH decline from reaching tipping points where shell-building organisms fail and food web collapse cascades upward.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.6 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.C (Ecosystem dynamics and resilience) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Atmospheric CO2 increases, Ocean CO2 Absorption Rate increases and when Ocean CO2 Absorption Rate increases, Seawater pH decreases and when Seawater pH increases, Carbonate Ion Availability increases. The student changes one variable to see how the whole system responds.
+Researchers conduct a 5-year mesocosm experiment simulating future ocean conditions. Three sealed ocean environments are maintained at different CO2 levels: current (420 ppm), mid-century projection (560 ppm), and end-of-century projection (800 ppm). At 560 ppm, coral growth rates decline by 35% and pteropod (sea butterfly) shell thickness decreases by 28%. At 800 ppm, coral growth ceases entirely and pteropod shells show visible dissolution. Phytoplankton populations shift from calcifying species to non-calcifying species, fundamentally altering the base of the food web.
 
 A student claims that ocean acidification is less urgent than atmospheric warming because the pH change is 'only 0.1 units.' Which evidence from the model best refutes this claim?
 
-A. The ocean's volume is much larger than the atmosphere
-B. A 0.1 pH drop represents a 26% increase in acidity on the logarithmic scale, and carbonate depletion drops exponentially as pH decreases further
-C. Fish populations have not yet shown decline in response to pH changes
-D. Ocean temperatures are rising faster than ocean pH is changing
+A. A 0.1 pH drop represents a 26% increase in acidity on the logarithmic scale, and carbonate depletion drops exponentially as pH decreases further
+B. Ocean temperatures are rising faster than ocean pH is changing
+C. The ocean's volume is much larger than the atmosphere
+D. Fish populations have not yet shown decline in response to pH changes
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The logarithmic nature of pH means 0.1 units is a 26% acidity increase, and the model shows carbonate depletion accelerates nonlinearly, creating tipping points well before pH drops a full unit. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The logarithmic nature of pH means 0.1 units is a 26% acidity increase, and the model shows carbonate depletion accelerates nonlinearly, creating tipping points well before pH drops a full unit. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. The 0.1 pH decrease actually represents a ~26% increase in hydrogen ion concentration because pH is logarithmic. Additionally, carbonate depletion is nonlinear and accelerates as pH drops, meaning small further decreases can trigger dramatic ecosystem effects. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. The 0.1 pH decrease actually represents a ~26% increase in hydrogen ion concentration because pH is logarithmic. Additionally, carbonate depletion is nonlinear and accelerates as pH drops, meaning small further decreases can trigger dramatic ecosystem effects. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. The 0.1 pH decrease actually represents a ~26% increase in hydrogen ion concentration because pH is logarithmic. Additionally, carbonate depletion is nonlinear and accelerates as pH drops, meaning small further decreases can trigger dramatic ecosystem effects.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.6 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.D (Climate change and feedback mechanisms) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+An oceanographic survey reveals that the California Current System is experiencing compound stress. Warming surface waters (+1.8C over 40 years) are strengthening ocean stratification, reducing nutrient mixing from deep water. Simultaneously, increased CO2 absorption is lowering pH in the already naturally acidic upwelling zones. The computational model shows these two stressors interact multiplicatively: the combined effect on marine ecosystems is 3-4 times greater than the sum of each stressor acting alone, because organisms already stressed by warming have reduced capacity to cope with acidification.
 
 In the ocean acidification model, which of the following represents a positive feedback loop that could make acidification self-reinforcing?
 
-A. Increased CO2 absorption leads to decreased ocean temperature, slowing further absorption
-B. Dying marine organisms release stored carbon, which increases atmospheric CO2, which drives further acidification
-C. Lower pH causes more carbonate to form, strengthening shells
-D. Reduced marine life leads to less oxygen consumption, stabilizing ocean chemistry
+A. Lower pH causes more carbonate to form, strengthening shells
+B. Increased CO2 absorption leads to decreased ocean temperature, slowing further absorption
+C. Reduced marine life leads to less oxygen consumption, stabilizing ocean chemistry
+D. Dying marine organisms release stored carbon, which increases atmospheric CO2, which drives further acidification
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. When marine organisms die and decompose, they release stored carbon. This adds CO2 to the system, further lowering pH in a self-reinforcing positive feedback loop. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When marine organisms die and decompose, they release stored carbon. This adds CO2 to the system, further lowering pH in a self-reinforcing positive feedback loop. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. A positive feedback loop amplifies the original change. Dying organisms release stored carbon as CO2, which increases acidification, which kills more organisms, reinforcing the cycle. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. A positive feedback loop amplifies the original change. Dying organisms release stored carbon as CO2, which increases acidification, which kills more organisms, reinforcing the cycle. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. A positive feedback loop amplifies the original change. Dying organisms release stored carbon as CO2, which increases acidification, which kills more organisms, reinforcing the cycle.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.6 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI LS2.C (Ecosystem dynamics and resilience) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Atmospheric CO2 Concentration), but they can take action on internal components (Ocean CO2 Absorption Rate, Seawater pH, Carbonate Ion Availability, Shell-Building Organism Survival, Marine Food Web Stability). They need to decide which action would be most effective based on what the model shows.
+A fisheries management agency models the cascade effects of ocean acidification on the California coastal economy. The model traces impacts from chemistry (decreased pH) to biology (reduced shellfish recruitment by 50-80%) to economics (projected loss of $800 million in annual shellfish harvest within 30 years). The agency must evaluate three response strategies: (1) local water chemistry modification using alkalinity enhancement, (2) selective breeding of acid-resistant shellfish strains, and (3) transitioning fishing communities to alternative marine resources.
 
 An ocean monitoring station detects that local pH has dropped below the aragonite undersaturation threshold. What does a systems-level analysis predict will happen next?
 
-A. Shell-building organisms will adapt by switching to alternative shell materials within one generation
+A. The pH will self-correct through increased biological activity
 B. Aragonite shells will begin dissolving faster than organisms can build them, threatening pteropods, corals, and the food webs they support
-C. The pH will self-correct through increased biological activity
+C. Shell-building organisms will adapt by switching to alternative shell materials within one generation
 D. Only organisms deeper than 200 meters will be affected
 
 Correct Answer: B
 
-Feedback: Correct. Below the aragonite undersaturation threshold, seawater becomes corrosive to aragonite shells. Shell dissolution exceeds formation, threatening calcifiers and cascading through dependent food webs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Below the aragonite undersaturation threshold, seawater becomes corrosive to aragonite shells. Shell dissolution exceeds formation, threatening calcifiers and cascading through dependent food webs. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. When water drops below the aragonite undersaturation point, it becomes corrosive to aragonite (a form of CaCO3). Shells dissolve faster than they can be built, threatening organisms like pteropods that form the base of many marine food chains. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. When water drops below the aragonite undersaturation point, it becomes corrosive to aragonite (a form of CaCO3). Shells dissolve faster than they can be built, threatening organisms like pteropods that form the base of many marine food chains. If you chose D, this choice oversimplifies a multi-factor system by focusing on a single variable. When water drops below the aragonite undersaturation point, it becomes corrosive to aragonite (a form of CaCO3). Shells dissolve faster than they can be built, threatening organisms like pteropods that form the base of many marine food chains.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.6, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.6, CCC7)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.6, CCC2)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.6, CCC4)
+Question 1: C (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ESS2-6, CCC4)
+Question 2: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS2-6, CCC2)
+Question 3: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS2-6, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-LS2-6, CCC7)
+Question 5: B (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-LS2-6, CCC4)
 
+---
 
 ## Resources
 

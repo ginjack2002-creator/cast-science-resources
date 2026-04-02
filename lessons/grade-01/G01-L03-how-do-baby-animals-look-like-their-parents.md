@@ -736,103 +736,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS3.A.1 (Young organisms are similar to parents) + CCC1 (Patterns: similarities and differences)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Parent Traits, Baby Traits. Some components are external (Parent Traits) and some are internal (Baby Traits). The student needs to understand what each component represents and how they are organized.
+A student visits a farm and sees a mother cat with orange fur. The mother cat has four kittens. The student looks at the kittens closely and notices their fur color.
 
-What does inherited mean?
+A mother cat has orange fur. What color will her kittens probably be?
 
-A. Something you buy at a store
-B. Something you get from your parents
-C. Something you find outside
+A. Orange or similar
+B. Green
+C. Any random color
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Inherited means a feature passed from parents to their babies. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
-
+Feedback: Baby animals usually look a lot like their parents. Kittens get their fur color from their mom and dad. If you chose B, cats do not have green fur. Baby animals get their features from their parents, so kittens will look similar to them. If you chose C, baby animals do not get random colors. Their features come from their parents, so the kittens will likely have colors similar to the mother.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS3.A.1 (Young organisms are like but not exactly like their parents) + CCC1 (Patterns: observe and describe)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Parent Traits increases, Baby Traits increases. The student is trying to understand why these relationships are positive or negative.
+A student looks at photos of a dog family. The mother and father dogs have spots, and so do the puppies. But some puppies have more spots, and some have fewer spots. No two puppies look exactly the same.
 
-A parent dog has spots. What will the puppies probably look like?
+Do baby animals look exactly the same as their parents?
 
-A. They will have stripes
-B. They will have similar spots
-C. They will have no pattern at all
+A. No, they look a little different
+B. They look nothing alike
+C. Yes, they are exact copies
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: That is right! Puppies inherit traits like spots from their parents. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Baby animals look similar to their parents, but not exactly the same. Each baby is a little bit unique. If you chose C, babies are similar but never exact copies. There are always small differences that make each baby special. If you chose B, baby animals do look a lot like their parents. They share many features, just with small differences.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS3.A.1 (Individuals have traits inherited from parents) + CCC1 (Patterns: similarities)
 
-A student runs a simulation of the model. The model shows that when Parent Traits increases, Baby Traits increases. The student changes one variable to see how the whole system responds.
+A student looks at a puppy and its dad. The puppy has floppy ears, and the dad also has floppy ears. The student's friend asks where the puppy got its floppy ears.
 
-Two kittens from the same parents look a little different from each other. Why?
+A puppy has floppy ears like its dad. Why?
 
-A. One kitten is broken
-B. Babies are similar but never exact copies
-C. They are not really from the same parents
+A. All dogs have floppy ears
+B. The puppy got them from its dad
+C. The puppy chose floppy ears
 
 Correct Answer: B
 
-Feedback: Yes! Even babies from the same parents are a little different. Each one is unique. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The puppy inherited floppy ears from its parent. Baby animals get features like ear shape from their parents. If you chose C, puppies cannot choose their body parts. They are born with features passed from their parents. If you chose A, not all dogs have floppy ears. Some have pointy ears. This puppy has floppy ears because its dad has floppy ears.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS3.A.1 (Young organisms resemble parents) + CCC1 (Patterns: observe and describe patterns)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student is learning about how baby animals are similar to their parents. Her teacher explains that scientists use a special word for features that are passed from parents to babies, like fur color, eye color, and ear shape.
 
-Can a baby animal choose what color its fur will be?
+What does inherited mean?
 
-A. Yes, it picks its favorite color
-B. No, traits come from parents
-C. Yes, if it tries really hard
+A. Something you buy at a store
+B. Something you find outside
+C. Something you get from your parents
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! Animals cannot choose their traits. They inherit them from their parents. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Inherited means a feature that is passed from parents to their babies, like eye color or fur pattern. If you chose A, inherited traits are not bought at a store. They are features that parents pass to their babies before they are born. If you chose B, inherited traits are not things you find outside. They are features in your body that came from your parents.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS3.A.1 (Young organisms are like but not exactly like parents) + CCC1 (Patterns: similarities and differences)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Parent Traits), but they can take action on internal components (Baby Traits). They need to decide which action would be most effective based on what the model shows.
+Two kittens were born from the same mother and father. One kitten has a white patch on its nose and the other kitten does not. Both kittens have the same fur color as their parents, but they are not identical to each other.
 
-A mother cat has orange fur. What color will her kittens probably be?
+Two kittens from the same parents look a little different from each other. Why?
 
-A. Green
-B. Orange or similar
-C. Any random color
+A. Babies are similar but never exact copies
+B. They are not really from the same parents
+C. One kitten is broken
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Baby animals usually look a lot like their parents. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
-
+Feedback: Even babies from the same parents are a little different. Parent traits mix together in new ways, so each baby is unique. If you chose C, the kitten is not broken. It is perfectly normal for babies from the same parents to look a little different from each other. If you chose B, the kittens are from the same parents. It is normal for siblings to look similar but not exactly the same.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
+Question 1: A (Cognitive Level: Identify)
+Question 2: A (Cognitive Level: Identify)
+Question 3: B (Cognitive Level: Reason)
+Question 4: C (Cognitive Level: Reason)
+Question 5: A (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

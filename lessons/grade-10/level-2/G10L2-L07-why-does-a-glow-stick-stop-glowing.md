@@ -339,6 +339,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Temperature → Reaction Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Product Buildup being active. Without this condition,
+the simulation produces inaccurate results: Temperature drives Reaction Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Temperature → Reaction Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Product Buildup is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Product Buildup active and observe
+     how Temperature's effect on Reaction Rate is now gated
+   • Toggle Product Buildup ON/OFF while Temperature remains constant
+   • Verify that Reaction Rate only responds to Temperature when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -908,15 +938,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the glow stick model, Temperature is identified as the master controller. Why does the model assign this role to Temperature?
 
-A. Because Temperature is the only variable in the model
+A. Because Temperature is the only component students can observe without instruments
 B. Because Temperature directly determines Reaction Rate, which cascades to affect Light Output, Chemical Concentration depletion, and glow duration
 C. Because Temperature determines the color of the glow stick
-D. Because Temperature is the only component students can observe without instruments
+D. Because Temperature is the only variable in the model
 
 Correct Answer: B
 
-Feedback: Correct. The model shows Temperature as the upstream driver that sets the pace of the entire system: higher temperature increases Reaction Rate, which increases Light Output but also accelerates Chemical Concentration depletion. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows Temperature as the upstream driver that sets the pace of the entire system: higher temperature increases Reaction Rate, which increases Light Output but also accelerates Chemical Concentration depletion. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -928,14 +957,13 @@ In the computational model for this lesson, a student draws arrows between compo
 The model reveals a fundamental trade-off between brightness and duration. A student asks: 'Does a hot glow stick produce more total light than a cold one?' What does the model show?
 
 A. The hot glow stick produces significantly more total light because heat creates additional chemical energy
-B. Total light output is roughly constant regardless of temperature because the same amount of chemical energy is converted to light; temperature only affects the rate of conversion
-C. The cold glow stick produces more total light because less energy is wasted as heat
-D. Total light output depends entirely on the color of the fluorescent dye, not temperature
+B. Total light output depends entirely on the color of the fluorescent dye, not temperature
+C. Total light output is roughly constant regardless of temperature because the same amount of chemical energy is converted to light; temperature only affects the rate of conversion
+D. The cold glow stick produces more total light because less energy is wasted as heat
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates conservation of energy: the same chemical fuel produces approximately the same total light output, just distributed differently over time. Temperature controls the rate, not the total energy conversion. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates conservation of energy: the same chemical fuel produces approximately the same total light output, just distributed differently over time. Temperature controls the rate, not the total energy conversion. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -946,15 +974,14 @@ A student runs a simulation of the model. The model shows that when Temperature 
 
 In the model, Product Buildup creates a negative feedback loop. What effect does this have on the reaction over time?
 
-A. Product Buildup accelerates the reaction, making the glow stick brighter over time
-B. Product Buildup dilutes remaining reactants and shifts the system toward equilibrium, progressively slowing the reaction and dimming the glow
+A. Product Buildup dilutes remaining reactants and shifts the system toward equilibrium, progressively slowing the reaction and dimming the glow
+B. Product Buildup accelerates the reaction, making the glow stick brighter over time
 C. Product Buildup has no effect on reaction rate because products do not interact with reactants
 D. Product Buildup causes the glow stick to switch colors as different products accumulate
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that as products (phenol and CO2) accumulate, they dilute the remaining reactants, reducing collision frequency and pushing the system toward equilibrium, which explains the gradual dimming of glow sticks. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that as products (phenol and CO2) accumulate, they dilute the remaining reactants, reducing collision frequency and pushing the system toward equilibrium, which explains the gradual dimming of glow sticks. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -965,15 +992,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student runs the model at three temperatures and observes that the glow stick at high temperature emits the same total light as the one at low temperature, just over a shorter period. Which chemical principle does this observation illustrate?
 
-A. Le Chatelier's principle of chemical equilibrium shifts
-B. Conservation of energy: the total chemical energy in the reactants is fixed and temperature only affects the rate of its conversion to light
-C. The law of definite proportions in chemical compounds
-D. Hess's law of constant heat summation
+A. The law of definite proportions in chemical compounds
+B. Hess's law of constant heat summation
+C. Le Chatelier's principle of chemical equilibrium shifts
+D. Conservation of energy: the total chemical energy in the reactants is fixed and temperature only affects the rate of its conversion to light
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This observation perfectly illustrates conservation of energy: the total energy stored in the chemical reactants is fixed at the time of activation. Temperature controls how quickly that energy is converted, not how much is available. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This observation perfectly illustrates conservation of energy: the total energy stored in the chemical reactants is fixed at the time of activation. Temperature controls how quickly that energy is converted, not how much is available. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -984,24 +1010,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, a glow stick manufacturer wants to maximize the duration of glow for a 12-hour emergency light. Which combination of conditions does the model recommend?
 
-A. High initial chemical concentration and high temperature to maximize brightness
-B. High initial chemical concentration with moderate-to-low temperature to slow the reaction rate while maintaining adequate brightness over the longest possible duration
-C. Low chemical concentration and high temperature to produce the most efficient light
-D. Add a catalyst to speed up the reaction so it finishes faster
+A. High initial chemical concentration with moderate-to-low temperature to slow the reaction rate while maintaining adequate brightness over the longest possible duration
+B. High initial chemical concentration and high temperature to maximize brightness
+C. Add a catalyst to speed up the reaction so it finishes faster
+D. Low chemical concentration and high temperature to produce the most efficient light
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that maximizing duration requires more reactant fuel (high concentration) combined with conditions that slow consumption (moderate-to-low temperature), producing adequate light over a longer period. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that maximizing duration requires more reactant fuel (high concentration) combined with conditions that slow consumption (moderate-to-low temperature), producing adequate light over a longer period. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.4, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.4, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.4, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.4, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.4, CCC4)
 
 
 ## Resources

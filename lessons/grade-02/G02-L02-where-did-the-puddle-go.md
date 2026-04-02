@@ -833,108 +833,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1 (Construct an argument with evidence) + DCI PS1.B (Heating or cooling can cause changes that are reversible) + CCC2 (Identify cause and effect relationships)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sun Heat, Evaporation Speed, Puddle Size. Some components are external (Sun Heat) and some are internal (Evaporation Speed, Puddle Size). The student needs to understand what each component represents and how they are organized.
+After recess on a hot, sunny day, a second grader notices that the puddle on the playground is much smaller than it was in the morning. By the end of the school day, the puddle is gone completely. The student wonders where the water went.
 
-What is evaporation?
+What most likely happened to the puddle water?
 
-A. When water freezes into ice
-B. When liquid water heats up and turns into water vapor
-C. When water falls from the sky as rain
-D. When water gets dirty
+A. The water soaked into the center of the Earth
+B. The water disappeared and no longer exists anywhere
+C. Other students drank all of the puddle water
+D. The sun's heat caused the water to evaporate and turn into invisible water vapor in the air
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Yes! Evaporation is when liquid water heats up and turns into an invisible gas called water vapor. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When the sun heats water, the water gains enough energy to turn into an invisible gas called water vapor. This process is called evaporation. The water did not disappear, it just changed form and went into the air. If you chose A, while some water does soak into the ground, the main reason puddles shrink on sunny days is evaporation from the sun's heat. If you chose B, water does not disappear. It changes from liquid to an invisible gas called water vapor. The water is still in the air around us. If you chose C, no one drinks puddle water. The sun's heat caused the water to evaporate.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.2 (Use evidence to support a claim) + DCI PS1.B (Heating causes changes in matter) + CCC2 (Describe cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sun Heat increases, Evaporation Speed increases; when Evaporation Speed increases, Puddle Size decreases. The student is trying to understand why these relationships are positive or negative.
+A class does an experiment. They put two identical bowls of water outside. Bowl A is placed in bright sunshine. Bowl B is placed under a shady tree. After three hours, they measure the water in each bowl. Bowl A has much less water than Bowl B.
 
-What is condensation?
+Which claim does this evidence best support?
 
-A. When water vapor cools down and turns back into liquid drops
-B. When water turns into ice
-C. When water gets very hot
-D. When water goes underground
+A. More sunlight and heat causes water to evaporate faster
+B. The water in Bowl A leaked out through a crack
+C. Shade makes water evaporate faster
+D. The bowls were different sizes, so one lost more water
 
 Correct Answer: A
 
-Feedback: Correct! Condensation is when water vapor cools down and turns back into tiny drops of liquid water, like on a cold glass. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The only difference between the two bowls was the amount of sunlight. Bowl A got more sun and heat, so its water evaporated faster. This is evidence that heat from the sun causes evaporation. If you chose C, the shady bowl kept MORE water, which means shade slowed down evaporation, not sped it up. If you chose D, the experiment used two identical bowls, so bowl size was the same. The only difference was sunlight. If you chose B, nothing in the experiment suggests a crack. The water evaporated because of the sun's heat.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Develop a model to represent a system) + DCI PS1.B (Changes caused by heating can be reversed) + CCC2 (Use cause and effect to explain events)
 
-A student runs a simulation of the model. The model shows that when Sun Heat increases, Evaporation Speed increases and when Evaporation Speed increases, Puddle Size decreases. The student changes one variable to see how the whole system responds.
+In a model of puddle evaporation, Sun Heat is an external component that we cannot control. Evaporation Speed is an internal component that changes based on how much sun heat there is. The model shows a positive relationship between Sun Heat and Evaporation Speed, meaning more sun heat causes faster evaporation.
 
-Why does a puddle dry up faster on a hot sunny day than on a cloudy day?
+A student wants to predict what happens on a cloudy day with very little sun heat. Based on the model, what would happen?
 
-A. Because the ground eats the water
-B. Because more sun heat makes water evaporate faster
-C. Because the puddle is scared of the sun
-D. Because clouds add more water to the puddle
+A. Evaporation Speed would stay the same no matter what the sun does
+B. The puddle would freeze because there is no sun
+C. Evaporation Speed would be slow because there is less sun heat to warm the water
+D. Evaporation Speed would be fast because clouds trap heat
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! More heat from the sun gives the water more energy to evaporate. Hot sunny days speed up evaporation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The model shows a positive relationship between Sun Heat and Evaporation Speed. When sun heat goes down, evaporation speed also goes down. Less heat means the water changes to vapor more slowly. If you chose D, clouds actually block sunlight from reaching the puddle, so there is less heat, not more trapped heat. If you chose B, cloudy days are not cold enough to freeze water. The puddle would still evaporate, just more slowly. If you chose A, the model shows that sun heat directly affects evaporation speed. They are connected.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.3 (Use evidence to argue that changes can be reversed) + DCI PS1.B (Some changes caused by heating or cooling can be reversed) + CCC2 (Cause and effect can be used to predict outcomes)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student places a cold glass of lemonade on the table on a warm day. After a few minutes, tiny water drops appear on the outside of the glass. The student wipes the drops off, but more drops keep forming. The student says, "The glass is leaking." Her teacher asks her to think again.
 
-Is evaporation a reversible change?
+What is really happening on the outside of the glass?
 
-A. No, once water evaporates it is gone forever
-B. Yes, water vapor can cool down and turn back into liquid water
-C. No, water can only go one direction
-D. Yes, but only in winter
+A. The glass is sweating because it is nervous
+B. Water vapor in the warm air is cooling down on the cold glass and turning back into liquid water drops
+C. The lemonade is leaking through the glass
+D. Someone is spraying water on the glass
 
 Correct Answer: B
 
-Feedback: Correct! Evaporation is reversible. Water can turn from liquid to gas (evaporation) and back from gas to liquid (condensation) over and over again. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: This is condensation, the reverse of evaporation. Water vapor in the warm air touches the cold glass and cools down enough to turn back into tiny liquid water drops. The water is coming FROM the air, not from inside the glass. If you chose C, glass does not let liquid pass through it. The drops are on the outside of the glass, not leaking from inside. If you chose A, glasses do not sweat. The water drops come from water vapor in the air condensing on the cold surface. If you chose D, nobody is spraying water. The drops form because warm air touches the cold glass and the water vapor condenses.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.4 (Argue from evidence that heating and cooling changes are reversible) + DCI PS1.B (Heating and cooling can cause reversible changes) + CCC4 (Describe parts of a system and how they interact)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sun Heat), but they can take action on internal components (Evaporation Speed, Puddle Size). They need to decide which action would be most effective based on what the model shows.
+A student watches water go through these steps: First, the sun heats a puddle and the water evaporates into the air as invisible water vapor. Then, the water vapor rises and cools high in the sky. The cooled water vapor turns back into tiny water drops that form a cloud. Later, the water falls back down as rain and makes a new puddle.
 
-What happens to a puddle on a sunny day?
+What does this sequence tell us about changes to water?
 
-A. It gets bigger
-B. It gets smaller and dries up
-C. It turns into ice
-D. It stays the same size all day
+A. Water can only change one time and then it stops
+B. The changes are not reversible because the rain makes a new puddle in a different spot
+C. Heating and cooling cause reversible changes, so water can go from liquid to gas and back to liquid over and over
+D. The water in the rain is different water from the puddle
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! On a sunny day, the sun heats the water and the puddle gets smaller and dries up. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Water goes from liquid to gas (evaporation from heating) and back from gas to liquid (condensation from cooling). This cycle can repeat over and over, which makes it a reversible change. If you chose A, water can change back and forth many times. It does not stop after one change. If you chose B, even though the new puddle is in a different spot, the water still went from liquid to gas and back to liquid. The location does not matter, the change is still reversible. If you chose D, it is the same water molecules. They just changed form from liquid to gas and back to liquid again.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.4, CCC4)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.4, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 7.1, DCI PS1.B, CCC2)
+Question 2: A (Cognitive Level: Reason + Evidence — SEP 7.2, DCI PS1.B, CCC2)
+Question 3: C (Cognitive Level: Predict — SEP 2.1, DCI PS1.B, CCC2)
+Question 4: B (Cognitive Level: Reason + Explain — SEP 7.3, DCI PS1.B, CCC2)
+Question 5: C (Cognitive Level: Reason + Apply — SEP 7.4, DCI PS1.B, CCC4)
 
-
+---
 ## Resources
 
 | Resource | Link |

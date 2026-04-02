@@ -347,6 +347,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Mutation Type → Protein Structure Change relationship as
+unconditional. However, this relationship is scientifically
+contingent on Gene Location being active. Without this condition,
+the simulation produces inaccurate results: Mutation Type drives Protein Structure Change
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Mutation Type → Protein Structure Change
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Gene Location is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Gene Location active and observe
+     how Mutation Type's effect on Protein Structure Change is now gated
+   • Toggle Gene Location ON/OFF while Mutation Type remains constant
+   • Verify that Protein Structure Change only responds to Mutation Type when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Gene Location → Protein Structure Change
+   • Set condition: IF Mutation Type is ON
+   • This ensures Gene Location's effect on Protein Structure Change
+     is contingent on Mutation Type being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -921,14 +957,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 The mutation model predicts that a synonymous (silent) point mutation in a coding region will produce zero Phenotypic Impact. Which mechanism explains this prediction?
 
 A. Silent mutations are repaired by DNA polymerase before they can have any effect
-B. The genetic code's redundancy means multiple codons specify the same amino acid, so the DNA changes but the protein sequence and structure remain identical
+B. All point mutations are silent and never cause phenotypic changes
 C. Silent mutations only occur in non-essential genes
-D. All point mutations are silent and never cause phenotypic changes
+D. The genetic code's redundancy means multiple codons specify the same amino acid, so the DNA changes but the protein sequence and structure remain identical
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The genetic code has 64 codons for only 20 amino acids. This redundancy means about 25% of point mutations change the DNA but not the amino acid, producing identical protein with zero phenotypic effect. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The genetic code has 64 codons for only 20 amino acids. This redundancy means about 25% of point mutations change the DNA but not the amino acid, producing identical protein with zero phenotypic effect. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -939,15 +974,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 Using the model, compare a missense mutation at position 6 of a 147-amino-acid protein versus the same type of mutation at position 140. Why might the model predict dramatically different Phenotypic Impact?
 
-A. The model predicts identical impact because both are missense mutations in the same protein
-B. Phenotypic Impact depends on whether the affected position is structurally or functionally critical; position 6 in hemoglobin affects surface chemistry critical for preventing polymerization, while position 140 may be in a region tolerant of substitution
+A. Only mutations in the first 10 amino acids of any protein can cause disease
+B. The model predicts identical impact because both are missense mutations in the same protein
 C. Later positions in a protein are always more important than earlier ones
-D. Only mutations in the first 10 amino acids of any protein can cause disease
+D. Phenotypic Impact depends on whether the affected position is structurally or functionally critical; position 6 in hemoglobin affects surface chemistry critical for preventing polymerization, while position 140 may be in a region tolerant of substitution
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that location within the protein matters as much as mutation type. The same type of mutation at a critical functional site versus a tolerant surface region produces vastly different structural changes and phenotypic outcomes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that location within the protein matters as much as mutation type. The same type of mutation at a critical functional site versus a tolerant surface region produces vastly different structural changes and phenotypic outcomes. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -959,14 +993,13 @@ A student runs a simulation of the model. The model shows that when Mutation Typ
 The model compares a frameshift mutation (single base insertion at position 10) versus a missense mutation at position 450 of a 500-amino-acid protein. Why does the model predict the frameshift is more damaging?
 
 A. Insertions are always more damaging than substitutions regardless of location
-B. The early frameshift changes the reading frame for 490 downstream amino acids (98% of the protein), producing a completely nonfunctional protein, while the missense at position 450 changes only one amino acid near the protein's end
-C. Position 10 is always more important than position 450 in every protein
+B. Position 10 is always more important than position 450 in every protein
+C. The early frameshift changes the reading frame for 490 downstream amino acids (98% of the protein), producing a completely nonfunctional protein, while the missense at position 450 changes only one amino acid near the protein's end
 D. The model predicts the missense mutation is actually more damaging because it occurs later in the gene
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The early frameshift scrambles nearly the entire protein (490 of 500 amino acids), guaranteeing complete loss of structure and function. The late missense changes only one amino acid, and its impact depends on that position's functional importance. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The early frameshift scrambles nearly the entire protein (490 of 500 amino acids), guaranteeing complete loss of structure and function. The late missense changes only one amino acid, and its impact depends on that position's functional importance. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 4
@@ -977,15 +1010,14 @@ Scientists are studying data related to this system. They collected observations
 
 The sickle cell mutation provides heterozygote advantage in malaria-endemic regions. How does the model explain why the same mutation can be simultaneously harmful, neutral, and beneficial?
 
-A. The mutation changes effect based on the weather and climate conditions
-B. In homozygotes (two copies), severe sickling causes disease; in heterozygotes (one copy), enough normal hemoglobin prevents disease while sickle hemoglobin makes red blood cells inhospitable to the malaria parasite, creating a context-dependent phenotype
-C. The model cannot account for a mutation being both harmful and beneficial
-D. The mutation is beneficial in all people regardless of genotype or environment
+A. In homozygotes (two copies), severe sickling causes disease; in heterozygotes (one copy), enough normal hemoglobin prevents disease while sickle hemoglobin makes red blood cells inhospitable to the malaria parasite, creating a context-dependent phenotype
+B. The mutation changes effect based on the weather and climate conditions
+C. The mutation is beneficial in all people regardless of genotype or environment
+D. The model cannot account for a mutation being both harmful and beneficial
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Gene dosage and environmental context determine phenotype. Homozygotes (HbSS) have severe disease. Heterozygotes (HbAS) produce enough normal hemoglobin to avoid sickling while gaining malaria resistance. This is heterozygote advantage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Gene dosage and environmental context determine phenotype. Homozygotes (HbSS) have severe disease. Heterozygotes (HbAS) produce enough normal hemoglobin to avoid sickling while gaining malaria resistance. This is heterozygote advantage. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1004,15 +1036,14 @@ D. Neutral mutations are actively selected for by natural selection because they
 Correct Answer: B
 
 Feedback: Correct. The model shows that neutral mutations are the primary source of standing genetic variation. This accumulated variation provides the raw material for natural selection to act upon when environmental conditions change, enabling adaptation. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.2, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.2, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.2, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.2, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.2, CCC4)
 
 

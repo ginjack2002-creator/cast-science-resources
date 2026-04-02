@@ -348,6 +348,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Energy Input → Capture Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Carbon Credit Value being active. Without this condition,
+the simulation produces inaccurate results: Energy Input drives Capture Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Energy Input → Capture Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Carbon Credit Value is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Carbon Credit Value active and observe
+     how Energy Input's effect on Capture Rate is now gated
+   • Toggle Carbon Credit Value ON/OFF while Energy Input remains constant
+   • Verify that Capture Rate only responds to Energy Input when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -921,13 +951,12 @@ The model shows that switching from fossil-powered to renewable-powered energy i
 
 A. Capture Rate increases because renewable energy is more powerful
 B. The gross capture remains the same, but the process emissions drop to near zero, so net removal equals gross capture
-C. Carbon Credit Value increases when the facility uses renewables
-D. Sorbent Efficiency improves when powered by renewable energy
+C. Sorbent Efficiency improves when powered by renewable energy
+D. Carbon Credit Value increases when the facility uses renewables
 
 Correct Answer: B
 
-Feedback: Correct. The facility's capture technology performs the same regardless of energy source. What changes is the emissions from energy generation: fossil fuel produces CO2 that offsets capture, while renewables produce zero operational CO2. Net removal = gross capture minus process emissions. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The facility's capture technology performs the same regardless of energy source. What changes is the emissions from energy generation: fossil fuel produces CO2 that offsets capture, while renewables produce zero operational CO2. Net removal = gross capture minus process emissions. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -940,13 +969,12 @@ A student's model predicts that scaling capture from 4,000 tons/year to 1 billio
 
 A. 1% of global energy is trivial and easily allocated to carbon capture
 B. The energy requirement demonstrates that climate-scale capture competes with other critical energy demands and requires massive expansion of clean energy infrastructure specifically dedicated to capture
-C. The energy calculation proves carbon capture is physically impossible
-D. The model overestimates energy requirements by a factor of 100
+C. The model overestimates energy requirements by a factor of 100
+D. The energy calculation proves carbon capture is physically impossible
 
 Correct Answer: B
 
-Feedback: Correct. Dedicating 1% of global energy to carbon capture is a massive infrastructure investment — equivalent to the entire energy output of a major industrial nation. This energy must come from clean sources (or the capture is self-defeating), requiring purpose-built renewable capacity beyond what is needed to decarbonize existing energy demand. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Dedicating 1% of global energy to carbon capture is a massive infrastructure investment — equivalent to the entire energy output of a major industrial nation. This energy must come from clean sources (or the capture is self-defeating), requiring purpose-built renewable capacity beyond what is needed to decarbonize existing energy demand. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -957,15 +985,14 @@ A student runs a simulation of the model. The model shows that when Energy Input
 
 In the model, CO2 Concentration is classified as an external variable even though it changes with global emissions over time. What is the best justification for this classification?
 
-A. External variables never change in any model
-B. From the perspective of a single capture facility, atmospheric CO2 concentration is an environmental condition that the facility encounters but cannot meaningfully alter — it is set by global-scale processes beyond the facility's control
-C. CO2 concentration is the easiest variable to measure, so it must be external
+A. From the perspective of a single capture facility, atmospheric CO2 concentration is an environmental condition that the facility encounters but cannot meaningfully alter — it is set by global-scale processes beyond the facility's control
+B. CO2 concentration is the easiest variable to measure, so it must be external
+C. External variables never change in any model
 D. The classification is arbitrary and has no scientific basis
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. External variables represent conditions that affect the modeled system but are not significantly changed by it. A single capture facility removing 4,000 tons from an atmosphere containing 3.3 trillion tons has negligible effect on global concentration — it is a boundary condition, not a dependent variable. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. External variables represent conditions that affect the modeled system but are not significantly changed by it. A single capture facility removing 4,000 tons from an atmosphere containing 3.3 trillion tons has negligible effect on global concentration — it is a boundary condition, not a dependent variable. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -977,14 +1004,13 @@ Scientists are studying data related to this system. They collected observations
 The model includes both Sorbent Efficiency and Regeneration Cost as separate variables. A student argues they should be combined into one variable. What is the strongest argument for keeping them separate?
 
 A. Combining variables always makes models less accurate
-B. They respond to different physical factors: Sorbent Efficiency is determined by chemistry and contact time, while Regeneration Cost depends on thermal energy prices, sorbent cycle life, and maintenance — they can change independently based on different innovations
-C. They are already combined in real carbon capture facilities
+B. They are already combined in real carbon capture facilities
+C. They respond to different physical factors: Sorbent Efficiency is determined by chemistry and contact time, while Regeneration Cost depends on thermal energy prices, sorbent cycle life, and maintenance — they can change independently based on different innovations
 D. The model needs a minimum number of variables to be valid
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. A breakthrough in sorbent chemistry (higher CO2 affinity) could increase Sorbent Efficiency without changing Regeneration Cost. Conversely, cheaper renewable heat could reduce Regeneration Cost without affecting Sorbent Efficiency. Keeping them separate reveals which innovations most impact overall economic viability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. A breakthrough in sorbent chemistry (higher CO2 affinity) could increase Sorbent Efficiency without changing Regeneration Cost. Conversely, cheaper renewable heat could reduce Regeneration Cost without affecting Sorbent Efficiency. Keeping them separate reveals which innovations most impact overall economic viability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -996,23 +1022,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 Based on the model's three scenarios, a student concludes that carbon capture should be deployed only after all fossil fuel emissions are eliminated. Using model evidence, what is the strongest counterargument?
 
 A. There is no counterargument — the student is correct that capture should wait
-B. Some emission sources (aviation, cement, steel) cannot be fully eliminated with current technology, and the 1.5 trillion tons of legacy CO2 already in the atmosphere will continue causing warming even if all new emissions stop — capture is needed for both residual and legacy emissions
+B. The model does not address this question
 C. Carbon capture is cheaper than emission reduction in all sectors
-D. The model does not address this question
+D. Some emission sources (aviation, cement, steel) cannot be fully eliminated with current technology, and the 1.5 trillion tons of legacy CO2 already in the atmosphere will continue causing warming even if all new emissions stop — capture is needed for both residual and legacy emissions
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model reveals that capture and emission reduction serve different functions. Emission reduction prevents new CO2 from entering the atmosphere. Capture addresses hard-to-abate sectors (where elimination is technically impossible) and removes legacy CO2 that will otherwise cause warming for centuries. Both are necessary simultaneously. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals that capture and emission reduction serve different functions. Emission reduction prevents new CO2 from entering the atmosphere. Capture addresses hard-to-abate sectors (where elimination is technically impossible) and removes legacy CO2 that will otherwise cause warming for centuries. Both are necessary simultaneously. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.6, CCC5)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.6, CCC5)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.6, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.6, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.6, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.6, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.6, CCC4)
 
 
 ## Resources

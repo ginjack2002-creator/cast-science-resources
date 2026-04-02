@@ -909,14 +909,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 In the extinction dynamics model, what happens when Environmental Change Rate exceeds Adaptation Speed?
 
 A. Species automatically develop mutations to cope with the change
-B. Extinction Pressure increases because organisms cannot evolve traits matching new conditions fast enough, leading to population collapse
-C. Species Diversity increases as new ecological niches are created
-D. Niche Competition decreases as resources become more abundant
+B. Species Diversity increases as new ecological niches are created
+C. Niche Competition decreases as resources become more abundant
+D. Extinction Pressure increases because organisms cannot evolve traits matching new conditions fast enough, leading to population collapse
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates that when environmental conditions change faster than populations can adapt, Extinction Pressure overwhelms Species Diversity and populations decline toward extinction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model demonstrates that when environmental conditions change faster than populations can adapt, Extinction Pressure overwhelms Species Diversity and populations decline toward extinction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -927,15 +926,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model reveals that during the asteroid impact scenario, Survival Advantage shifts dramatically. Which combination of traits does the model show as most important for surviving a mass extinction?
 
-A. Large body size, specialized diet, and high metabolic rate
+A. Aquatic lifestyle, cold-blooded metabolism, and long lifespan
 B. Small body size, generalist diet, ability to enter torpor, and rapid reproduction
-C. Aquatic lifestyle, cold-blooded metabolism, and long lifespan
+C. Large body size, specialized diet, and high metabolic rate
 D. Bright coloration, territorial behavior, and complex social structures
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that mass extinction reverses the competitive hierarchy: traits advantageous in stable environments (large size, specialization) become liabilities, while small size, dietary flexibility, and torpor become critical survival advantages. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that mass extinction reverses the competitive hierarchy: traits advantageous in stable environments (large size, specialization) become liabilities, while small size, dietary flexibility, and torpor become critical survival advantages. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -946,15 +944,14 @@ A student runs a simulation of the model. The model shows that when Environmenta
 
 In the model, the 'Gradual Climate Change' scenario shows a different extinction pattern than the 'Catastrophic Impact' scenario. What is the key difference?
 
-A. Gradual change causes no extinctions while catastrophic change causes total extinction
-B. Gradual change allows Adaptation Speed to keep pace with Environmental Change Rate, enabling species turnover rather than mass extinction, while catastrophic change overwhelms all adaptation
+A. Gradual change only affects plants while catastrophic change only affects animals
+B. Gradual change causes no extinctions while catastrophic change causes total extinction
 C. Both scenarios produce identical extinction outcomes regardless of rate
-D. Gradual change only affects plants while catastrophic change only affects animals
+D. Gradual change allows Adaptation Speed to keep pace with Environmental Change Rate, enabling species turnover rather than mass extinction, while catastrophic change overwhelms all adaptation
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that when environmental change is gradual, populations can evolve and species can be replaced through normal turnover. Catastrophic change overwhelms adaptation entirely, causing mass extinction. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that when environmental change is gradual, populations can evolve and species can be replaced through normal turnover. Catastrophic change overwhelms adaptation entirely, causing mass extinction. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -965,15 +962,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model demonstrates that Population Recovery after mass extinction follows a predictable pattern. Which sequence does the model show?
 
-A. All species recover simultaneously and return to pre-extinction diversity immediately
-B. Opportunistic generalist species colonize first, followed by gradual specialization and adaptive radiation into empty niches over millions of years
+A. Opportunistic generalist species colonize first, followed by gradual specialization and adaptive radiation into empty niches over millions of years
+B. Recovery occurs only when a new asteroid impact creates fresh ecological opportunities
 C. The exact same species that went extinct re-evolve from remaining populations
-D. Recovery occurs only when a new asteroid impact creates fresh ecological opportunities
+D. All species recover simultaneously and return to pre-extinction diversity immediately
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows recovery beginning with generalist 'weedy' species, followed by increasing specialization as populations diversify to exploit available ecological niches through adaptive radiation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows recovery beginning with generalist 'weedy' species, followed by increasing specialization as populations diversify to exploit available ecological niches through adaptive radiation. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -984,24 +980,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student uses the model to argue that the current human-caused biodiversity loss is comparable to past mass extinctions. Which model evidence most strongly supports this argument?
 
-A. The model shows that any species going extinct qualifies as a mass extinction
-B. The model demonstrates that when Environmental Change Rate exceeds Adaptation Speed across multiple ecosystems simultaneously, the result mirrors mass extinction dynamics regardless of the cause of the change
-C. The model proves that humans are more destructive than asteroid impacts
+A. The model proves that humans are more destructive than asteroid impacts
+B. The model shows that any species going extinct qualifies as a mass extinction
+C. The model demonstrates that when Environmental Change Rate exceeds Adaptation Speed across multiple ecosystems simultaneously, the result mirrors mass extinction dynamics regardless of the cause of the change
 D. The model shows that only natural disasters can cause mass extinctions
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals that mass extinction dynamics depend on the rate and scale of environmental change relative to adaptation capacity, not on the specific cause. Human activities that rapidly change environments across the globe produce the same systemic pressures. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that mass extinction dynamics depend on the rate and scale of environmental change relative to adaptation capacity, not on the specific cause. Human activities that rapidly change environments across the globe produce the same systemic pressures. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC1)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC1)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC2)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC1)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC1)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC2)
 
 
 ## Resources

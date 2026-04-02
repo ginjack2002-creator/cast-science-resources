@@ -418,6 +418,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Disturbance Severity → Soil Development Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Pioneer Species Establishment being active. Without this condition,
+the simulation produces inaccurate results: Disturbance Severity drives Soil Development Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Disturbance Severity → Soil Development Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Pioneer Species Establishment is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Pioneer Species Establishment active and observe
+     how Disturbance Severity's effect on Soil Development Rate is now gated
+   • Toggle Pioneer Species Establishment ON/OFF while Disturbance Severity remains constant
+   • Verify that Soil Development Rate only responds to Disturbance Severity when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Climate Suitability → Recovery Completeness Index
+   • Set condition: IF Invasive Species Pressure is ON
+   • This ensures Climate Suitability's effect on Recovery Completeness Index
+     is contingent on Invasive Species Pressure being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -992,15 +1028,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that recovery timeline differs by 10-50x between scenarios with intact soil versus scenarios starting from bare rock. What makes soil the critical bottleneck in ecosystem recovery?
 
-A. Soil is only important for aesthetics and does not affect plant growth
-B. Soil provides the physical substrate for root anchorage, water retention, nutrient cycling, and microbial communities that plants require for establishment. Building soil from bare rock through weathering and biological processes takes centuries, while colonizing intact soil takes years to decades
+A. Soil provides the physical substrate for root anchorage, water retention, nutrient cycling, and microbial communities that plants require for establishment. Building soil from bare rock through weathering and biological processes takes centuries, while colonizing intact soil takes years to decades
+B. Soil is only important for aesthetics and does not affect plant growth
 C. Plants can grow on bare rock just as easily as on soil if enough rain falls
 D. Soil only matters for agricultural crops, not for natural ecosystems
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Soil is not just dirt. It is a complex biological system containing microbial communities that cycle nutrients, mycorrhizal fungi that extend root networks, organic matter that retains water, and physical structure that anchors roots. Building this from bare rock requires centuries of weathering, organic matter accumulation, and microbial colonization. With intact soil, plant establishment can begin immediately. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Soil is not just dirt. It is a complex biological system containing microbial communities that cycle nutrients, mycorrhizal fungi that extend root networks, organic matter that retains water, and physical structure that anchors roots. Building this from bare rock requires centuries of weathering, organic matter accumulation, and microbial colonization. With intact soil, plant establishment can begin immediately. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -1011,15 +1046,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The 'Climate-Shifted Recovery' scenario shows the Recovery Completeness Index stabilizing at approximately 40% relative to the original ecosystem. The model indicates this is not a failure of recovery but rather a successful recovery to a different stable state. What concept does this illustrate?
 
-A. Ecosystems always return to their original state given enough time
-B. When climate conditions have shifted beyond the tolerance of the original species, the ecosystem recovers to an alternative stable state that matches the new climate rather than the historical ecosystem, representing a climate-driven regime shift
-C. A 40% recovery score means 60% of species have gone extinct globally
-D. The model is broken because recovery should always reach 100%
+A. The model is broken because recovery should always reach 100%
+B. Ecosystems always return to their original state given enough time
+C. When climate conditions have shifted beyond the tolerance of the original species, the ecosystem recovers to an alternative stable state that matches the new climate rather than the historical ecosystem, representing a climate-driven regime shift
+D. A 40% recovery score means 60% of species have gone extinct globally
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The 40% Recovery Completeness Index (measured against the original ecosystem) reflects a climate-driven regime shift. The ecosystem IS recovering successfully, but to a state suited to the new climate conditions. If the original conifers require cooler, wetter conditions than now exist, the recovering ecosystem will be composed of species adapted to the warmer, drier climate. This is a functioning ecosystem, just not the original one. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The 40% Recovery Completeness Index (measured against the original ecosystem) reflects a climate-driven regime shift. The ecosystem IS recovering successfully, but to a state suited to the new climate conditions. If the original conifers require cooler, wetter conditions than now exist, the recovering ecosystem will be composed of species adapted to the warmer, drier climate. This is a functioning ecosystem, just not the original one. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1030,15 +1064,14 @@ A student runs a simulation of the model. The model shows that when Disturbance 
 
 The model reveals that Invasive Species Pressure has its greatest impact during early succession when the disturbed ecosystem has open space, available nutrients, and reduced competition. Which management implication follows directly from this finding?
 
-A. Invasive species management is unnecessary because native species always outcompete invasives eventually
-B. Early aggressive invasive species control during the first 1-5 years post-disturbance is critical because once invasives establish and modify the successional trajectory, their effects become self-reinforcing and increasingly difficult to reverse
+A. Early aggressive invasive species control during the first 1-5 years post-disturbance is critical because once invasives establish and modify the successional trajectory, their effects become self-reinforcing and increasingly difficult to reverse
+B. Invasive species management is only effective after the ecosystem has fully recovered
 C. Invasive species should be encouraged because they speed up recovery
-D. Invasive species management is only effective after the ecosystem has fully recovered
+D. Invasive species management is unnecessary because native species always outcompete invasives eventually
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows a vulnerability window during early succession. Invasive species that establish during this window can modify soil chemistry, outcompete native seedlings, and alter the successional trajectory permanently. Early intervention (within the first few years) prevents establishment before self-reinforcing feedbacks lock in the invasive-dominated state. Waiting until invasives are established makes management orders of magnitude more difficult. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows a vulnerability window during early succession. Invasive species that establish during this window can modify soil chemistry, outcompete native seedlings, and alter the successional trajectory permanently. Early intervention (within the first few years) prevents establishment before self-reinforcing feedbacks lock in the invasive-dominated state. Waiting until invasives are established makes management orders of magnitude more difficult. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1049,15 +1082,14 @@ Scientists are studying data related to this system. They collected observations
 
 Adding 'Mycorrhizal Network Recovery' to the model reveals that tree seedlings in areas with surviving mycorrhizal fungi grow 50-80% faster than seedlings in areas without. What does this reveal about the role of belowground networks in ecosystem recovery?
 
-A. Mycorrhizal fungi are parasites that steal nutrients from tree seedlings
+A. Tree growth rate has no relationship to mycorrhizal presence
 B. Belowground fungal networks are critical infrastructure for ecosystem recovery because they extend root absorption area, facilitate nutrient and water transfer between plants, and provide chemical communication pathways that established trees use to support seedlings
 C. Mycorrhizal networks only exist in tropical forests and are irrelevant in temperate ecosystems
-D. Tree growth rate has no relationship to mycorrhizal presence
+D. Mycorrhizal fungi are parasites that steal nutrients from tree seedlings
 
 Correct Answer: B
 
-Feedback: Correct. Mycorrhizal networks are belowground infrastructure that takes decades to fully develop. They extend root absorption area by orders of magnitude, transfer nutrients and water between connected plants (including from established trees to seedlings), and transmit chemical signals about pests and drought. Areas where these networks survive disturbance recover dramatically faster because seedlings immediately connect to existing infrastructure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Mycorrhizal networks are belowground infrastructure that takes decades to fully develop. They extend root absorption area by orders of magnitude, transfer nutrients and water between connected plants (including from established trees to seedlings), and transmit chemical signals about pests and drought. Areas where these networks survive disturbance recover dramatically faster because seedlings immediately connect to existing infrastructure. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1068,24 +1100,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A restoration ecology team uses the model to design a restoration plan for a severely burned Sierra Nevada forest where climate projections indicate 1.5 degrees C warming and 15% less precipitation by 2050. The model suggests planting species adapted to future conditions rather than the original conifer species. This 'assisted migration' strategy is controversial. Which model evidence most strongly supports this approach?
 
-A. The model shows that any tree species will grow on any site regardless of climate
-B. The model predicts that planting original species in a climate they can no longer tolerate will result in establishment failure and wasted resources, while species adapted to the projected climate will establish successfully and provide ecosystem services decades sooner than waiting for natural migration
+A. The model shows that climate change will reverse itself within 20 years, making the original species viable again
+B. The model shows that any tree species will grow on any site regardless of climate
 C. Assisted migration is supported because moving species is always harmless to receiving ecosystems
-D. The model shows that climate change will reverse itself within 20 years, making the original species viable again
+D. The model predicts that planting original species in a climate they can no longer tolerate will result in establishment failure and wasted resources, while species adapted to the projected climate will establish successfully and provide ecosystem services decades sooner than waiting for natural migration
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model reveals that planting species mismatched to future climate conditions results in high mortality and failed restoration. Species adapted to the projected warmer, drier conditions establish successfully and provide ecosystem services (carbon sequestration, habitat, erosion control) decades sooner than waiting for natural range shifts. The trade-off is not recreating the past versus accepting change; it is functional recovery versus failed restoration. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that planting species mismatched to future climate conditions results in high mortality and failed restoration. Species adapted to the projected warmer, drier conditions establish successfully and provide ecosystem services (carbon sequestration, habitat, erosion control) decades sooner than waiting for natural range shifts. The trade-off is not recreating the past versus accepting change; it is functional recovery versus failed restoration. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
 
 
 ## Resources

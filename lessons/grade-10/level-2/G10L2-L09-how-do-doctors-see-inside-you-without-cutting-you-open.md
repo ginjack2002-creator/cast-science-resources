@@ -909,15 +909,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the MRI physics model, Magnetic Field Strength is identified as a primary driver of image quality. What specific relationship does the model demonstrate?
 
-A. Higher field strength reduces Image Resolution because stronger magnets distort the image
+A. Lower field strength produces better images because weaker magnets create less interference
 B. Higher field strength increases both Image Resolution and Tissue Contrast by improving the signal-to-noise ratio of detected signals
 C. Magnetic Field Strength affects only scan time, not image quality
-D. Lower field strength produces better images because weaker magnets create less interference
+D. Higher field strength reduces Image Resolution because stronger magnets distort the image
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that stronger magnetic fields align more hydrogen nuclei, producing stronger signals relative to background noise. This improved signal-to-noise ratio directly enhances both spatial resolution and tissue contrast. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that stronger magnetic fields align more hydrogen nuclei, producing stronger signals relative to background noise. This improved signal-to-noise ratio directly enhances both spatial resolution and tissue contrast. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -928,15 +927,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model reveals a critical vulnerability in MRI systems related to Coil Temperature. What happens if the superconducting coils warm above their critical temperature?
 
-A. The image quality improves because warmer coils produce stronger magnetic fields
-B. A 'quench' occurs: the coils lose superconductivity, resistance appears, enormous currents generate heat that explosively boils the liquid helium, and the magnetic field collapses
+A. Nothing happens because modern MRI coils work at any temperature
+B. The image quality improves because warmer coils produce stronger magnetic fields
 C. The coils gradually reduce their magnetic field output over several hours
-D. Nothing happens because modern MRI coils work at any temperature
+D. A 'quench' occurs: the coils lose superconductivity, resistance appears, enormous currents generate heat that explosively boils the liquid helium, and the magnetic field collapses
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model identifies the quench as the most catastrophic failure mode in MRI: loss of superconductivity causes the enormous stored current to generate extreme heat, explosively vaporizing liquid helium and destroying the magnetic field. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Correct. The model identifies the quench as the most catastrophic failure mode in MRI: loss of superconductivity causes the enormous stored current to generate extreme heat, explosively vaporizing liquid helium and destroying the magnetic field. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 ---
 
 ### Question 3
@@ -947,15 +945,14 @@ A student runs a simulation of the model. The model shows that when Magnetic Fie
 
 A student compares 1.5T and 7T MRI scenarios in the model. The 7T scanner produces dramatically better Image Resolution but the model also shows significant increases in Patient Safety concerns. Why?
 
-A. 7T magnets are physically larger and patients feel claustrophobic
-B. Stronger magnetic fields create greater forces on metallic implants, increase radiofrequency energy absorption in tissue (SAR), and produce louder gradient noise, all posing elevated safety risks
-C. 7T scanners take longer, and patients become bored during the scan
-D. 7T scanners require patients to hold their breath for the entire scan duration
+A. Stronger magnetic fields create greater forces on metallic implants, increase radiofrequency energy absorption in tissue (SAR), and produce louder gradient noise, all posing elevated safety risks
+B. 7T scanners take longer, and patients become bored during the scan
+C. 7T scanners require patients to hold their breath for the entire scan duration
+D. 7T magnets are physically larger and patients feel claustrophobic
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that higher field strength amplifies multiple safety concerns: greater forces on any ferromagnetic materials near the scanner, increased specific absorption rate (SAR) heating of tissue, and louder acoustic noise from gradient coils. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that higher field strength amplifies multiple safety concerns: greater forces on any ferromagnetic materials near the scanner, increased specific absorption rate (SAR) heating of tissue, and louder acoustic noise from gradient coils. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -967,14 +964,13 @@ Scientists are studying data related to this system. They collected observations
 The model shows that Diagnostic Accuracy depends on the combination of Image Resolution, Tissue Contrast, and radiologist expertise. Why does the model indicate that the most powerful MRI machine is not always the best clinical choice?
 
 A. Because more powerful machines always produce worse images
-B. Because 1.5T provides sufficient Diagnostic Accuracy for most clinical diagnoses while presenting fewer Patient Safety challenges and lower Energy Consumption, making it the optimal trade-off
+B. Because all MRI machines produce identical images regardless of field strength
 C. Because radiologists cannot interpret images from machines above 3T
-D. Because all MRI machines produce identical images regardless of field strength
+D. Because 1.5T provides sufficient Diagnostic Accuracy for most clinical diagnoses while presenting fewer Patient Safety challenges and lower Energy Consumption, making it the optimal trade-off
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates that clinical decision-making must balance image quality against safety, cost, and energy. For most diagnoses, 1.5T provides adequate accuracy with lower risk, making it the practical optimum. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that clinical decision-making must balance image quality against safety, cost, and energy. For most diagnoses, 1.5T provides adequate accuracy with lower risk, making it the practical optimum. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -985,24 +981,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, why is MRI particularly superior to CT or X-ray for imaging soft tissue structures like the brain, muscles, and ligaments?
 
-A. Because MRI uses stronger radiation that penetrates soft tissue more deeply
-B. Because different soft tissues have distinct hydrogen content and relaxation times, creating excellent contrast on MRI, while X-rays and CT primarily differentiate tissues based on density differences that are minimal between soft tissues
-C. Because soft tissues are transparent to magnetic fields and invisible to X-rays
-D. Because MRI scans are faster than CT scans for soft tissue imaging
+A. Because MRI scans are faster than CT scans for soft tissue imaging
+B. Because soft tissues are transparent to magnetic fields and invisible to X-rays
+C. Because different soft tissues have distinct hydrogen content and relaxation times, creating excellent contrast on MRI, while X-rays and CT primarily differentiate tissues based on density differences that are minimal between soft tissues
+D. Because MRI uses stronger radiation that penetrates soft tissue more deeply
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model explains that MRI's tissue contrast mechanism (hydrogen relaxation times) varies significantly between soft tissues, while X-ray/CT contrast (density-based attenuation) shows minimal differences between soft tissue types. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model explains that MRI's tissue contrast mechanism (hydrogen relaxation times) varies significantly between soft tissues, while X-ray/CT contrast (density-based attenuation) shows minimal differences between soft tissue types. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.4, CCC6)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.4, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.4, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.4, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.4, CCC6)
 
 
 ## Resources

@@ -367,6 +367,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Sea Surface Temperature → Coral-Zooxanthellae Symbiosis relationship as
+unconditional. However, this relationship is scientifically
+contingent on Algae Overgrowth being active. Without this condition,
+the simulation produces inaccurate results: Sea Surface Temperature drives Coral-Zooxanthellae Symbiosis
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Sea Surface Temperature → Coral-Zooxanthellae Symbiosis
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Algae Overgrowth is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Algae Overgrowth active and observe
+     how Sea Surface Temperature's effect on Coral-Zooxanthellae Symbiosis is now gated
+   • Toggle Algae Overgrowth ON/OFF while Sea Surface Temperature remains constant
+   • Verify that Coral-Zooxanthellae Symbiosis only responds to Sea Surface Temperature when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -940,15 +970,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's reef model shows that a single bleaching event requires 10-15 years of stable conditions for full coral recovery, but bleaching events are now occurring every 2-3 years. What conclusion is best supported by this data?
 
-A. Corals are adapting to tolerate more frequent bleaching, so the frequency is not a concern
+A. Recovery time is determined solely by water temperature and is unrelated to bleaching frequency
 B. The recovery deficit created by increasing bleaching frequency will cause cumulative coral decline even without any increase in bleaching severity
-C. The model must be inaccurate because natural systems always achieve equilibrium
-D. Recovery time is determined solely by water temperature and is unrelated to bleaching frequency
+C. Corals are adapting to tolerate more frequent bleaching, so the frequency is not a concern
+D. The model must be inaccurate because natural systems always achieve equilibrium
 
 Correct Answer: B
 
-Feedback: Correct. When disturbance frequency exceeds recovery time, the system experiences cumulative decline. Each bleaching event further weakens coral before it has recovered from the previous one, creating a ratchet effect that drives progressive reef degradation. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. When disturbance frequency exceeds recovery time, the system experiences cumulative decline. Each bleaching event further weakens coral before it has recovered from the previous one, creating a ratchet effect that drives progressive reef degradation. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -959,15 +988,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student compares two model scenarios: one with warming only and one with warming plus acidification. Both show coral decline, but the combined scenario shows decline at a significantly lower temperature threshold. What does this demonstrate?
 
-A. Acidification and warming are independent stressors with no interaction
+A. Acidification is always more damaging than warming in isolation
 B. Multiple simultaneous stressors produce compounding effects that lower the threshold for ecosystem collapse
-C. Acidification is always more damaging than warming in isolation
+C. Acidification and warming are independent stressors with no interaction
 D. The model is flawed because real ecosystems experience only one stressor at a time
 
 Correct Answer: B
 
-Feedback: Correct. The lower threshold under combined stress demonstrates a synergistic effect. Acidification weakens coral skeletons while warming disrupts the symbiosis, and the combined stress exceeds the sum of individual effects, pushing the system past tipping points at lower levels of each individual stressor. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The lower threshold under combined stress demonstrates a synergistic effect. Acidification weakens coral skeletons while warming disrupts the symbiosis, and the combined stress exceeds the sum of individual effects, pushing the system past tipping points at lower levels of each individual stressor. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -979,14 +1007,13 @@ A student runs a simulation of the model. The model shows that when Ocean pH Lev
 In a reef model, maintaining high herbivore fish populations significantly increases reef resilience to bleaching. Which systems thinking concept does this illustrate?
 
 A. Removing a component has no effect if other components compensate
-B. Local management of one system component can buffer the system against external stressors by maintaining critical ecological functions
-C. Only global interventions can affect reef outcomes because climate is a global system
-D. Herbivore populations are independent of reef health and can be managed separately
+B. Only global interventions can affect reef outcomes because climate is a global system
+C. Herbivore populations are independent of reef health and can be managed separately
+D. Local management of one system component can buffer the system against external stressors by maintaining critical ecological functions
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Protecting herbivore fish populations is a local management action that maintains the ecological function of algae control, giving reefs more time to recover between bleaching events. This demonstrates how managing controllable local variables can buffer a system against uncontrollable global stressors. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Protecting herbivore fish populations is a local management action that maintains the ecological function of algae control, giving reefs more time to recover between bleaching events. This demonstrates how managing controllable local variables can buffer a system against uncontrollable global stressors. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -997,15 +1024,14 @@ Scientists are studying data related to this system. They collected observations
 
 A reef ecologist presents model evidence showing that once coral cover drops below 10%, positive feedback loops make recovery nearly impossible without major intervention. Which set of feedback loops most accurately describes why?
 
-A. More dead coral provides substrate for algae, algae smother coral larvae, reduced reef structure drives away herbivorous fish, and fewer herbivores allow more algae growth
-B. Increased water clarity from fewer organisms causes UV damage to remaining coral
-C. Reduced reef size increases wave exposure, which improves water circulation and coral health
-D. Lower coral cover attracts more predatory fish that consume the remaining coral polyps
+A. Lower coral cover attracts more predatory fish that consume the remaining coral polyps
+B. Reduced reef size increases wave exposure, which improves water circulation and coral health
+C. More dead coral provides substrate for algae, algae smother coral larvae, reduced reef structure drives away herbivorous fish, and fewer herbivores allow more algae growth
+D. Increased water clarity from fewer organisms causes UV damage to remaining coral
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Correct. This describes a set of interconnected positive feedback loops that reinforce algae dominance: dead coral becomes algae substrate, algae block coral recruitment, degraded structure loses herbivore habitat, and reduced herbivory allows more algae growth. Each loop reinforces the others. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. This describes a set of interconnected positive feedback loops that reinforce algae dominance: dead coral becomes algae substrate, algae block coral recruitment, degraded structure loses herbivore habitat, and reduced herbivory allows more algae growth. Each loop reinforces the others. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1016,24 +1042,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on coral reef model evidence, which conservation strategy would be most effective for maximizing reef survival over the next 50 years?
 
-A. Focusing exclusively on local pollution reduction while ignoring global CO2 emissions
-B. A multi-scale approach combining local herbivore protection and pollution reduction with global emission reductions to slow warming and acidification
+A. A multi-scale approach combining local herbivore protection and pollution reduction with global emission reductions to slow warming and acidification
+B. Allowing natural selection to produce heat-resistant coral strains without any human intervention
 C. Relocating all coral to deeper, cooler waters where they are protected from surface warming
-D. Allowing natural selection to produce heat-resistant coral strains without any human intervention
+D. Focusing exclusively on local pollution reduction while ignoring global CO2 emissions
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that local management (herbivore protection, pollution reduction) buys time by increasing resilience, but long-term reef survival ultimately requires addressing global stressors (warming and acidification) through emission reductions. Neither local nor global action alone is sufficient. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that local management (herbivore protection, pollution reduction) buys time by increasing resilience, but long-term reef survival ultimately requires addressing global stressors (warming and acidification) through emission reductions. Neither local nor global action alone is sufficient. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
-Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
 
 
 ## Resources

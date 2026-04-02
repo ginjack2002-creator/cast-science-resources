@@ -960,15 +960,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's coupled climate-ecosystem model shows that Forest Carbon Sequestration increases initially as Atmospheric CO2 rises (due to CO2 fertilization), but then sharply decreases after Global Temperature exceeds 2.5 degrees C above pre-industrial levels. Which phenomenon BEST explains this reversal?
 
-A. CO2 fertilization saturates at a fixed concentration level
-B. Above 2.5 degrees C, widespread forest die-off from heat stress, drought, and wildfire converts forests from carbon sinks to carbon sources, flipping a negative feedback into a positive feedback that accelerates warming
-C. Forest growth always decreases linearly with temperature
-D. CO2 fertilization does not exist and the initial increase was a model error
+A. Above 2.5 degrees C, widespread forest die-off from heat stress, drought, and wildfire converts forests from carbon sinks to carbon sources, flipping a negative feedback into a positive feedback that accelerates warming
+B. CO2 fertilization does not exist and the initial increase was a model error
+C. CO2 fertilization saturates at a fixed concentration level
+D. Forest growth always decreases linearly with temperature
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This is a critical tipping point in the carbon cycle. Below 2.5 degrees C, forests partially counteract warming by absorbing CO2 (negative feedback). Above this threshold, forests die back and release stored carbon (positive feedback). This flip from sink to source accelerates the very warming that caused it, exemplifying nonlinear system behavior. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. This is a critical tipping point in the carbon cycle. Below 2.5 degrees C, forests partially counteract warming by absorbing CO2 (negative feedback). Above this threshold, forests die back and release stored carbon (positive feedback). This flip from sink to source accelerates the very warming that caused it, exemplifying nonlinear system behavior. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -979,15 +978,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model reveals that Permafrost Methane Release becomes self-sustaining above a specific Global Temperature threshold. A student identifies this as a tipping point. Which characteristic of the permafrost system MOST directly makes this self-sustaining?
 
-A. Methane is heavier than CO2 and sinks to ground level
-B. Released methane is a powerful greenhouse gas (80x CO2 over 20 years) that causes additional warming, which thaws more permafrost, releasing more methane, creating a positive feedback loop that continues regardless of human emission reductions
-C. Permafrost methane is released all at once in a single event
+A. Permafrost methane is released all at once in a single event
+B. Methane is heavier than CO2 and sinks to ground level
+C. Released methane is a powerful greenhouse gas (80x CO2 over 20 years) that causes additional warming, which thaws more permafrost, releasing more methane, creating a positive feedback loop that continues regardless of human emission reductions
 D. Methane in permafrost is replenished by underground geological processes
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The permafrost-methane feedback is a classic positive feedback tipping point. Once warming triggers sufficient methane release, the warming from that methane thaws additional permafrost, releasing more methane. Beyond the tipping point, this cycle generates enough warming to sustain itself regardless of whether human emissions continue. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The permafrost-methane feedback is a classic positive feedback tipping point. Once warming triggers sufficient methane release, the warming from that methane thaws additional permafrost, releasing more methane. Beyond the tipping point, this cycle generates enough warming to sustain itself regardless of whether human emissions continue. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -998,15 +996,14 @@ A student runs a simulation of the model. The model shows that when Atmospheric 
 
 A student compares the Paris Agreement scenario (1.5-2.0 degrees C warming) with the Business-As-Usual scenario (3-4 degrees C warming) in the model. Sea Level Rise projections differ by a factor of 4 between the scenarios even though temperature differs by only a factor of 2. Which property of the climate system explains this disproportionate response?
 
-A. Sea level rise is directly proportional to temperature change
-B. Nonlinear ice sheet dynamics: above critical temperature thresholds, ice sheet collapse accelerates dramatically through feedback mechanisms (marine ice cliff instability, albedo loss) that do not operate below those thresholds
-C. The ocean in the higher scenario contains four times more water
-D. Measurement uncertainty accounts for the entire difference
+A. Measurement uncertainty accounts for the entire difference
+B. The ocean in the higher scenario contains four times more water
+C. Sea level rise is directly proportional to temperature change
+D. Nonlinear ice sheet dynamics: above critical temperature thresholds, ice sheet collapse accelerates dramatically through feedback mechanisms (marine ice cliff instability, albedo loss) that do not operate below those thresholds
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Ice sheet loss is not linear. Below certain thresholds, ice sheets lose mass gradually from surface melting. Above those thresholds, catastrophic processes activate: marine ice cliffs become unstable and collapse, exposed dark surfaces absorb more heat, and warm water undercuts ice shelves. These nonlinear processes produce disproportionately large sea level rise at higher temperatures. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Ice sheet loss is not linear. Below certain thresholds, ice sheets lose mass gradually from surface melting. Above those thresholds, catastrophic processes activate: marine ice cliffs become unstable and collapse, exposed dark surfaces absorb more heat, and warm water undercuts ice shelves. These nonlinear processes produce disproportionately large sea level rise at higher temperatures. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1017,15 +1014,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model shows that Societal Adaptation Capacity is the most unevenly distributed component globally. A student uses this finding to argue that climate change is fundamentally a justice issue, not just an environmental one. Which evidence from the model MOST STRONGLY supports this argument?
 
-A. All countries experience identical climate impacts
-B. Nations that have contributed the least to Atmospheric CO2 (e.g., sub-Saharan Africa, Pacific island nations) face the most severe physical impacts (extreme heat, sea level rise, crop failure) while having the fewest economic and institutional resources to adapt
+A. Societal Adaptation Capacity is unrelated to climate outcomes
+B. All countries experience identical climate impacts
 C. Wealthy nations experience worse climate impacts than poor nations
-D. Societal Adaptation Capacity is unrelated to climate outcomes
+D. Nations that have contributed the least to Atmospheric CO2 (e.g., sub-Saharan Africa, Pacific island nations) face the most severe physical impacts (extreme heat, sea level rise, crop failure) while having the fewest economic and institutional resources to adapt
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates a fundamental asymmetry: the nations that industrialized and generated most historical emissions have the wealth and infrastructure to adapt, while nations that contributed minimally to the problem face disproportionate impacts with minimal resources. This mismatch between contribution and consequence is the core of climate justice. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates a fundamental asymmetry: the nations that industrialized and generated most historical emissions have the wealth and infrastructure to adapt, while nations that contributed minimally to the problem face disproportionate impacts with minimal resources. This mismatch between contribution and consequence is the core of climate justice. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1036,23 +1032,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student proposes two climate intervention strategies and uses the model to evaluate them: Strategy A reduces Atmospheric CO2 emissions by 50% immediately; Strategy B invests in maximizing Societal Adaptation Capacity while maintaining current emission levels. The model shows that Strategy A produces better long-term outcomes. Which systems-level principle EXPLAINS why emission reduction outperforms adaptation alone?
 
-A. Adaptation is always inferior to mitigation
+A. The model is biased toward emission reduction strategies
 B. Adaptation addresses symptoms while emission reduction addresses the root cause; once positive feedback tipping points are crossed, adaptation capacity cannot compensate for self-reinforcing warming regardless of investment, making early emission reduction mathematically necessary to stay below irreversible thresholds
 C. Emission reduction is cheaper than adaptation
-D. The model is biased toward emission reduction strategies
+D. Adaptation is always inferior to mitigation
 
 Correct Answer: B
 
-Feedback: Correct. This is the fundamental asymmetry between mitigation and adaptation. Adaptation has limits: no amount of adaptation can sustain agriculture, coastal cities, or ecosystems under 4+ degrees of warming with self-reinforcing feedbacks. Emission reduction operates upstream, preventing the tipping point crossings that would overwhelm any adaptation strategy. Both are necessary, but emission reduction is the only intervention that prevents irreversible system state changes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is the fundamental asymmetry between mitigation and adaptation. Adaptation has limits: no amount of adaptation can sustain agriculture, coastal cities, or ecosystems under 4+ degrees of warming with self-reinforcing feedbacks. Emission reduction operates upstream, preventing the tipping point crossings that would overwhelm any adaptation strategy. Both are necessary, but emission reduction is the only intervention that prevents irreversible system state changes. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.5, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.5, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.5, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.5, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.5, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.5, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.5, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.5, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.5, CCC4)
 
 

@@ -381,6 +381,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Pollution Source Density → Pollution Exposure Level relationship as
+unconditional. However, this relationship is scientifically
+contingent on Regulatory Enforcement Level being active. Without this condition,
+the simulation produces inaccurate results: Pollution Source Density drives Pollution Exposure Level
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Pollution Source Density → Pollution Exposure Level
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Regulatory Enforcement Level is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Regulatory Enforcement Level active and observe
+     how Pollution Source Density's effect on Pollution Exposure Level is now gated
+   • Toggle Regulatory Enforcement Level ON/OFF while Pollution Source Density remains constant
+   • Verify that Pollution Exposure Level only responds to Pollution Source Density when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -954,15 +984,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's model shows that environmental inequity is maintained by feedback loops: pollution reduces health, poor health reduces economic opportunity, reduced income limits political power, and less political power allows more pollution. What type of system dynamic does this represent?
 
-A. A negative feedback loop that self-corrects over time
-B. A positive feedback loop (reinforcing cycle) that perpetuates and deepens inequity without external intervention
-C. A simple linear cause-and-effect relationship
+A. A positive feedback loop (reinforcing cycle) that perpetuates and deepens inequity without external intervention
+B. A simple linear cause-and-effect relationship
+C. A negative feedback loop that self-corrects over time
 D. A random process with no systematic pattern
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This is a positive (reinforcing) feedback loop where each consequence becomes a cause of further degradation. Pollution degrades health, which reduces income, which reduces political power, which allows more pollution. The cycle self-reinforces, deepening inequity over time without external intervention to break the loop. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This is a positive (reinforcing) feedback loop where each consequence becomes a cause of further degradation. Pollution degrades health, which reduces income, which reduces political power, which allows more pollution. The cycle self-reinforces, deepening inequity over time without external intervention to break the loop. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -973,15 +1002,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model shows that equalizing regulatory enforcement across all communities reduces ongoing violations but does not significantly reduce pollution exposure disparities. What does this reveal about the limitations of enforcement-only approaches?
 
-A. Enforcement is completely ineffective and should be abandoned
+A. Pollution exposure is determined entirely by individual behavior, not facility location
 B. Equal enforcement addresses ongoing violations but does not relocate existing pollution sources, clean up historical contamination, or change the underlying power dynamics that created the inequity
 C. Enforcement is the only intervention needed to achieve environmental justice
-D. Pollution exposure is determined entirely by individual behavior, not facility location
+D. Enforcement is completely ineffective and should be abandoned
 
 Correct Answer: B
 
-Feedback: Correct. Equal enforcement is necessary but insufficient. It can reduce ongoing violations but cannot undo the physical reality of concentrated pollution sources, accumulated contamination in soil and water, or the structural power imbalances that allowed the concentration in the first place. Comprehensive justice requires addressing all these layers. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Equal enforcement is necessary but insufficient. It can reduce ongoing violations but cannot undo the physical reality of concentrated pollution sources, accumulated contamination in soil and water, or the structural power imbalances that allowed the concentration in the first place. Comprehensive justice requires addressing all these layers. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -993,14 +1021,13 @@ A student runs a simulation of the model. The model shows that when Pollution So
 The model identifies community political power as the strongest leverage point for reducing environmental inequity. What mechanism makes empowered communities more effective at improving their environmental conditions?
 
 A. Empowered communities can physically remove pollution sources by force
-B. Communities with genuine decision-making authority can prevent new pollution siting, demand enforcement of existing regulations, influence zoning policy, and hold polluters accountable, breaking the feedback loop at its most effective point
-C. Political power allows communities to ignore environmental regulations
-D. Empowered communities can relocate to less polluted areas
+B. Empowered communities can relocate to less polluted areas
+C. Communities with genuine decision-making authority can prevent new pollution siting, demand enforcement of existing regulations, influence zoning policy, and hold polluters accountable, breaking the feedback loop at its most effective point
+D. Political power allows communities to ignore environmental regulations
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Community political power is the most effective leverage point because it addresses the root cause of environmental inequity: unequal decision-making authority. When communities have genuine power over facility siting, zoning, and enforcement, they can prevent new pollution, demand accountability, and break the reinforcing cycle that perpetuates inequity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Community political power is the most effective leverage point because it addresses the root cause of environmental inequity: unequal decision-making authority. When communities have genuine power over facility siting, zoning, and enforcement, they can prevent new pollution, demand accountability, and break the reinforcing cycle that perpetuates inequity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1011,15 +1038,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student's model shows that comprehensive intervention (pollution reduction + equal enforcement + community empowerment + green infrastructure) produces dramatically larger improvements than any single intervention. What systems principle explains this finding?
 
-A. Adding more interventions always produces linearly additive results
-B. Multiple interventions targeting different feedback loops simultaneously produce synergistic effects because they break reinforcing cycles at multiple points, preventing any single loop from maintaining the status quo
-C. Comprehensive interventions are always more expensive and therefore more effective
-D. The model is biased toward showing positive results for comprehensive approaches
+A. Multiple interventions targeting different feedback loops simultaneously produce synergistic effects because they break reinforcing cycles at multiple points, preventing any single loop from maintaining the status quo
+B. Adding more interventions always produces linearly additive results
+C. The model is biased toward showing positive results for comprehensive approaches
+D. Comprehensive interventions are always more expensive and therefore more effective
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Environmental inequity is maintained by multiple interconnected feedback loops. A single intervention breaks one loop but the others can maintain the status quo. Comprehensive interventions break multiple loops simultaneously, producing synergistic effects where the combined impact exceeds the sum of individual interventions because no remaining loop can sustain the inequity. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Environmental inequity is maintained by multiple interconnected feedback loops. A single intervention breaks one loop but the others can maintain the status quo. Comprehensive interventions break multiple loops simultaneously, producing synergistic effects where the combined impact exceeds the sum of individual interventions because no remaining loop can sustain the inequity. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1030,24 +1056,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on model evidence, a city council must allocate $50 million for environmental justice improvements in an overburdened community. Which allocation strategy is most strongly supported by the model's findings about systemic drivers?
 
-A. Spend all $50 million on air quality monitoring equipment to document pollution levels
-B. Distribute funds across pollution source reduction, community health infrastructure, green space development, community organizing support, and environmental legal resources, addressing multiple feedback loops simultaneously
-C. Use all funds for a single large park, which will solve environmental justice concerns
-D. Return the money to the general fund because environmental inequity cannot be addressed through investment
+A. Return the money to the general fund because environmental inequity cannot be addressed through investment
+B. Use all funds for a single large park, which will solve environmental justice concerns
+C. Spend all $50 million on air quality monitoring equipment to document pollution levels
+D. Distribute funds across pollution source reduction, community health infrastructure, green space development, community organizing support, and environmental legal resources, addressing multiple feedback loops simultaneously
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that comprehensive approaches targeting multiple feedback loops produce the largest improvements. Distributing investment across pollution reduction (addressing the environmental burden), health infrastructure (addressing health impacts), green space (providing environmental benefits), and community empowerment (breaking the power imbalance) creates synergistic effects that no single investment can match. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that comprehensive approaches targeting multiple feedback loops produce the largest improvements. Distributing investment across pollution reduction (addressing the environmental burden), health infrastructure (addressing health impacts), green space (providing environmental benefits), and community empowerment (breaking the power imbalance) creates synergistic effects that no single investment can match. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.3, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.3, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.3, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.3, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.3, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.3, CCC4)
 
 
 ## Resources

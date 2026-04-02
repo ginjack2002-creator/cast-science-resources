@@ -336,6 +336,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Fertilizer Input → Crop Yield per Hectare relationship as
+unconditional. However, this relationship is scientifically
+contingent on Soil Health Index being active. Without this condition,
+the simulation produces inaccurate results: Fertilizer Input drives Crop Yield per Hectare
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Fertilizer Input → Crop Yield per Hectare
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Soil Health Index is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Soil Health Index active and observe
+     how Fertilizer Input's effect on Crop Yield per Hectare is now gated
+   • Toggle Soil Health Index ON/OFF while Fertilizer Input remains constant
+   • Verify that Crop Yield per Hectare only responds to Fertilizer Input when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -901,107 +931,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI LS2.A (Carrying capacity and resource availability) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Arable Land Area, Fertilizer Input, Water Availability, Crop Yield per Hectare, Soil Health Index, Total Food Production. Some components are external (Arable Land Area, Fertilizer Input, Water Availability) and some are internal (Crop Yield per Hectare, Soil Health Index, Total Food Production). The student needs to understand what each component represents and how they are organized.
+A research station in California's Central Valley monitors agricultural output across three farming operations. Farm A uses conventional high-input methods with maximum synthetic fertilizer, Farm B uses sustainable intensification with precision agriculture and cover crops, and Farm C uses traditional methods with no external inputs. Over a 10-year period, researchers measure crop yield per hectare, soil organic matter content, water quality in adjacent streams, and total caloric output per unit of resource input.
 
 A student's 30-year simulation shows that the Green Revolution strategy (maximum fertilizer and water) produces higher yields than sustainable intensification for the first 15 years, but then yields crash while the sustainable approach maintains steady output. Which conclusion is best supported by this model data?
 
-A. The Green Revolution strategy is superior because it feeds more people during the critical near-term period
-B. The model is unreliable because real-world yields have not yet shown this crash pattern globally
+A. The model is unreliable because real-world yields have not yet shown this crash pattern globally
+B. The Green Revolution strategy is superior because it feeds more people during the critical near-term period
 C. Short-term yield maximization creates a soil degradation debt that accumulates invisibly until the system collapses, making the sustainable approach more productive over the full 30-year period
 D. Both strategies produce the same total food over 30 years, just distributed differently across time
 
 Correct Answer: C
 
-Feedback: Correct. The simulation reveals a time-delayed feedback: soil degradation accumulates beneath rising yields until a tipping point is reached. The sustainable strategy avoids this crash by maintaining the resource base, producing more total food across the full period. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The simulation reveals a time-delayed feedback: soil degradation accumulates beneath rising yields until a tipping point is reached. The sustainable strategy avoids this crash by maintaining the resource base, producing more total food across the full period. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. Compare total food produced over the entire 30-year period, not just the peak year. The Green Revolution strategy borrows from future productivity. When the soil debt comes due, the crash erases the early gains. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Compare total food produced over the entire 30-year period, not just the peak year. The Green Revolution strategy borrows from future productivity. When the soil debt comes due, the crash erases the early gains. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. Compare total food produced over the entire 30-year period, not just the peak year. The Green Revolution strategy borrows from future productivity. When the soil debt comes due, the crash erases the early gains.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI LS2.A (Carrying capacity and resource availability) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Fertilizer Input increases, Crop Yield per Hectare increases; when Fertilizer Input increases, Soil Health Index decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of global food systems maps the flow of calories from production to human consumption. The model tracks six pathways: direct human consumption (37%), animal feed conversion (36%), food waste before retail (8%), retail and consumer waste (10%), biofuel diversion (5%), and industrial non-food use (4%). A student is analyzing why 735 million people remain chronically hungry despite global production of 6,000 calories per person per day.
 
 The model shows that converting 30% of forest to farmland increases total food production by only 18%, not 30%. Which factor best explains why the production increase is less than proportional to the land increase?
 
 A. Newly converted forest land has lower soil fertility, less established irrigation, and higher erosion rates than existing optimized farmland
-B. The model incorrectly assumes that new farmland produces no food
-C. Farmers on new land use less fertilizer because they are unfamiliar with the soil
+B. Farmers on new land use less fertilizer because they are unfamiliar with the soil
+C. The model incorrectly assumes that new farmland produces no food
 D. Global food demand decreased during the simulation period
 
 Correct Answer: A
 
-Feedback: Correct. Forest soils, once cleared, lose organic matter rapidly, lack irrigation infrastructure, and are prone to erosion. New farmland is inherently less productive than established agricultural land, and deforestation disrupts local water cycles that previously supported the ecosystem. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Forest soils, once cleared, lose organic matter rapidly, lack irrigation infrastructure, and are prone to erosion. New farmland is inherently less productive than established agricultural land, and deforestation disrupts local water cycles that previously supported the ecosystem. If you chose C, this response assumes the model or data is flawed rather than analyzing what the evidence actually shows. Think about what makes existing farmland productive: decades of soil management, irrigation systems, local climate adapted to open land. Newly cleared forest has none of these advantages and faces additional challenges like rapid topsoil loss. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Think about what makes existing farmland productive: decades of soil management, irrigation systems, local climate adapted to open land. Newly cleared forest has none of these advantages and faces additional challenges like rapid topsoil loss. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. Think about what makes existing farmland productive: decades of soil management, irrigation systems, local climate adapted to open land. Newly cleared forest has none of these advantages and faces additional challenges like rapid topsoil loss.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.C (Human impacts on Earth systems) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Fertilizer Input increases, Crop Yield per Hectare increases and when Fertilizer Input increases, Soil Health Index decreases and when Soil Health Index increases, Crop Yield per Hectare increases. The student changes one variable to see how the whole system responds.
+An agricultural scientist runs a long-term soil health experiment. She applies identical amounts of synthetic nitrogen fertilizer to three test plots over 5 years and measures soil microbial diversity, organic carbon content, and pH annually. The results show microbial diversity declining by 12% per year, organic carbon decreasing from 3.2% to 1.8%, and pH dropping from 6.5 to 5.2. Meanwhile, crop yields rose for the first 3 years but have plateaued and begun declining in year 5.
 
 A student proposes reducing food waste by 50% as an alternative to increasing production. Based on the model, which assessment of this proposal is most accurate?
 
-A. Waste reduction is irrelevant because the problem is production, not distribution
+A. Waste reduction would only affect wealthy nations and have no impact on global food security
 B. Reducing waste by 50% would effectively increase food availability by the equivalent of farming millions of additional hectares, without any environmental cost from land conversion or intensification
-C. Waste reduction would only affect wealthy nations and have no impact on global food security
+C. Waste reduction is irrelevant because the problem is production, not distribution
 D. The model shows waste reduction is impossible because spoilage is a natural and unavoidable process
 
 Correct Answer: B
 
-Feedback: Correct. Since roughly one-third of all food produced is wasted, a 50% reduction in waste would free up massive amounts of food without any additional environmental burden. This is the most resource-efficient strategy for closing the food gap. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Since roughly one-third of all food produced is wasted, a 50% reduction in waste would free up massive amounts of food without any additional environmental burden. This is the most resource-efficient strategy for closing the food gap. If you chose C, this response dismisses relevant factors that the evidence directly addresses. Consider that approximately one-third of global food production is wasted. Recovering even half of that waste means more food is available without planting a single additional hectare or applying any additional fertilizer. If you chose A, this answer oversimplifies a multi-factor system by focusing on a single variable. Consider that approximately one-third of global food production is wasted. Recovering even half of that waste means more food is available without planting a single additional hectare or applying any additional fertilizer. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. Consider that approximately one-third of global food production is wasted. Recovering even half of that waste means more food is available without planting a single additional hectare or applying any additional fertilizer.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.A (Carrying capacity and resource availability) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A country of 50 million people is developing a 20-year food security plan. Their current agricultural system produces 3,200 calories per person per day, but population projections show growth to 72 million by 2045. The planning commission's computational model shows that the carrying capacity depends on diet composition: a meat-heavy diet supports 45 million, a mixed diet supports 68 million, and a primarily plant-based diet supports 95 million people on the same agricultural land.
 
 The simulation reveals that water availability is the first resource to become limiting in the Green Revolution scenario. Which systems-level explanation accounts for water becoming the bottleneck before soil degradation or land availability?
 
-A. Water is the only resource that cannot be manufactured or substituted with technology
+A. Water limitations are an artifact of the model and do not reflect real-world agricultural constraints
 B. Maximum fertilizer use increases crop water demand while simultaneously depleting aquifers and degrading watershed ecosystems, creating a self-reinforcing scarcity cycle
 C. Climate change is the only factor affecting water availability in the model
-D. Water limitations are an artifact of the model and do not reflect real-world agricultural constraints
+D. Water is the only resource that cannot be manufactured or substituted with technology
 
 Correct Answer: B
 
-Feedback: Correct. Intensive agriculture creates a water scarcity feedback loop: higher fertilizer increases crop water demand, irrigation depletes aquifers faster than they recharge, and agricultural runoff degrades the watersheds that supply fresh water. The water crisis is both driven by and amplified by intensification. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Intensive agriculture creates a water scarcity feedback loop: higher fertilizer increases crop water demand, irrigation depletes aquifers faster than they recharge, and agricultural runoff degrades the watersheds that supply fresh water. The water crisis is both driven by and amplified by intensification. If you chose D, this response dismisses relevant factors that the evidence directly addresses. Consider how intensive farming affects water from multiple directions simultaneously. High-yield crops need more water, irrigation draws down aquifers, and chemical runoff pollutes water sources. These effects compound each other. If you chose C, this answer oversimplifies a multi-factor system by focusing on a single variable. Consider how intensive farming affects water from multiple directions simultaneously. High-yield crops need more water, irrigation draws down aquifers, and chemical runoff pollutes water sources. These effects compound each other. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Consider how intensive farming affects water from multiple directions simultaneously. High-yield crops need more water, irrigation draws down aquifers, and chemical runoff pollutes water sources. These effects compound each other.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ESS3.C (Human impacts on Earth systems) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Arable Land Area, Fertilizer Input, Water Availability), but they can take action on internal components (Crop Yield per Hectare, Soil Health Index, Total Food Production). They need to decide which action would be most effective based on what the model shows.
+An international development team uses a systems model to evaluate three strategies for reducing hunger in a food-insecure region: Strategy 1 converts remaining forest to farmland (increasing arable land by 30%), Strategy 2 implements precision agriculture on existing farmland (increasing yield per hectare by 40%), and Strategy 3 reduces post-harvest food waste by investing in cold chain infrastructure (recovering 25% of currently wasted calories). The model tracks both caloric output and environmental sustainability metrics over 25 years.
 
 Based on the complete model analysis, which policy recommendation is best supported by the simulation evidence for feeding 10 billion people by 2058?
 
-A. Maximize chemical inputs on existing farmland to push yields as high as possible in the short term
-B. A combined strategy of sustainable intensification, 50% waste reduction, and dietary shifts away from resource-intensive animal agriculture
-C. Convert all remaining forests to farmland to ensure maximum food production capacity
-D. Maintain current agricultural practices and rely on future technological breakthroughs to close the gap
+A. Convert all remaining forests to farmland to ensure maximum food production capacity
+B. Maximize chemical inputs on existing farmland to push yields as high as possible in the short term
+C. Maintain current agricultural practices and rely on future technological breakthroughs to close the gap
+D. A combined strategy of sustainable intensification, 50% waste reduction, and dietary shifts away from resource-intensive animal agriculture
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that no single strategy is sufficient. Sustainable intensification maintains yields without soil degradation, waste reduction frees existing food without environmental cost, and dietary shifts dramatically reduce the land and water needed per calorie. The combined approach is the only one that closes the gap sustainably. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that no single strategy is sufficient. Sustainable intensification maintains yields without soil degradation, waste reduction frees existing food without environmental cost, and dietary shifts dramatically reduce the land and water needed per calorie. The combined approach is the only one that closes the gap sustainably. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. Review the model results for each individual strategy. None of them alone feeds 10 billion people sustainably for 30 years. The question is which combination of strategies addresses production, distribution, and demand simultaneously. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Review the model results for each individual strategy. None of them alone feeds 10 billion people sustainably for 30 years. The question is which combination of strategies addresses production, distribution, and demand simultaneously. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Review the model results for each individual strategy. None of them alone feeds 10 billion people sustainably for 30 years. The question is which combination of strategies addresses production, distribution, and demand simultaneously.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC4)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
+Question 1: C (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-LS2-1, CCC4)
+Question 2: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS2-1, CCC2)
+Question 3: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS2-1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ESS3-3, CCC7)
+Question 5: D (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ESS3-3, CCC4)
 
+---
 
 ## Resources
 

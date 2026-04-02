@@ -353,6 +353,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Network Depth → Overfitting Risk relationship as
+unconditional. However, this relationship is scientifically
+contingent on Training Data Quality being inactive. Without this condition,
+the simulation produces inaccurate results: Network Depth drives Overfitting Risk
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Network Depth → Overfitting Risk
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Training Data Quality is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Training Data Quality inactive and observe
+     how Network Depth's effect on Overfitting Risk is now gated
+   • Toggle Training Data Quality ON/OFF while Network Depth remains constant
+   • Verify that Overfitting Risk only responds to Network Depth when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Training Data Quality → Overfitting Risk
+   • Set condition: IF Network Depth is ON
+   • This ensures Training Data Quality's effect on Overfitting Risk
+     is contingent on Network Depth being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -921,107 +957,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ETS1.1 + CCC1 (Patterns)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ETS1.A (Define and delimit engineering problems) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Training Data Volume, Training Data Quality, Network Depth, Learning Rate, Prediction Accuracy, Overfitting Risk, Computational Cost. Some components are external (Training Data Volume, Training Data Quality, Network Depth, Learning Rate) and some are internal (Prediction Accuracy, Overfitting Risk, Computational Cost). The student needs to understand what each component represents and how they are organized.
+A machine learning research team trains a neural network to classify chest X-rays for pneumonia detection. The network has 12 hidden layers with 25 million parameters (weights and biases) trained on 400,000 labeled images. On a test set of 50,000 images, the network achieves 94.5% accuracy, exceeding the average radiologist's 91% accuracy. However, analysis reveals that the network partially learned to associate the presence of specific hospital equipment markers in the image (rather than lung pathology) with positive diagnoses, because sicker patients were more often imaged using portable equipment that leaves characteristic artifacts.
 
 A student's neural network model shows that increasing network depth from 5 to 20 layers improves pattern recognition accuracy from 75% to 92% but increases overfitting risk from 10% to 45%. What is the most scientifically sound interpretation of this trade-off?
 
-A. Deeper networks are always better because accuracy is the only metric that matters
-B. The depth-accuracy relationship exhibits diminishing returns that are offset by accelerating overfitting risk, suggesting that optimal network design requires balancing representational power against generalization ability
-C. The overfitting can be ignored if the training accuracy is high enough
-D. Reducing depth to 1 layer would eliminate overfitting while maintaining accuracy
+A. The overfitting can be ignored if the training accuracy is high enough
+B. Deeper networks are always better because accuracy is the only metric that matters
+C. Reducing depth to 1 layer would eliminate overfitting while maintaining accuracy
+D. The depth-accuracy relationship exhibits diminishing returns that are offset by accelerating overfitting risk, suggesting that optimal network design requires balancing representational power against generalization ability
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model reveals a nonlinear trade-off: accuracy gains diminish with depth while overfitting risk accelerates. Optimal design requires finding the depth that maximizes the gap between genuine pattern learning and memorization. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model reveals a nonlinear trade-off: accuracy gains diminish with depth while overfitting risk accelerates. Optimal design requires finding the depth that maximizes the gap between genuine pattern learning and memorization. If you chose B, this response overgeneralizes without considering the specific mechanisms and evidence presented. The data shows diminishing accuracy returns (75% to 92%) against accelerating overfitting risk (10% to 45%). Optimal network design must balance the representational power of deeper networks against their tendency to memorize rather than generalize. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. The data shows diminishing accuracy returns (75% to 92%) against accelerating overfitting risk (10% to 45%). Optimal network design must balance the representational power of deeper networks against their tendency to memorize rather than generalize. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. The data shows diminishing accuracy returns (75% to 92%) against accelerating overfitting risk (10% to 45%). Optimal network design must balance the representational power of deeper networks against their tendency to memorize rather than generalize.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ETS1.A (Define and delimit engineering problems) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Training Data Quality increases, Prediction Accuracy increases; when Network Depth increases, Overfitting Risk increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of neural network learning tracks the weight adjustment process during training. Each training example is propagated forward through the network, generating a prediction. The error between prediction and correct answer is calculated, then backpropagation distributes responsibility for the error across all weights. The model shows that early training layers learn simple features (edges, textures), middle layers learn combinations of features (shapes, patterns), and deep layers learn abstract concepts (object identity, context). Learning follows a power law: initial improvements are rapid, but each subsequent improvement requires exponentially more training data.
 
 In the model, a student trains two identical networks on the same task, one with a diverse, representative dataset and one with a dataset that overrepresents one demographic group. Both achieve 90% overall accuracy. Why does the second network pose a fairness problem despite equal overall accuracy?
 
-A. Overall accuracy masks performance disparities across subgroups; the biased network likely performs well on the overrepresented group and poorly on underrepresented groups
-B. Both networks are equally fair because they have the same overall accuracy
-C. The second network will naturally correct its bias through continued training
-D. Demographic composition of training data does not affect neural network outputs
+A. Demographic composition of training data does not affect neural network outputs
+B. The second network will naturally correct its bias through continued training
+C. Overall accuracy masks performance disparities across subgroups; the biased network likely performs well on the overrepresented group and poorly on underrepresented groups
+D. Both networks are equally fair because they have the same overall accuracy
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Correct. Aggregate accuracy can hide severe disparities. A model trained on biased data may achieve 98% accuracy on the overrepresented group and 60% on others, averaging to 90% overall but performing unacceptably for underrepresented populations. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Aggregate accuracy can hide severe disparities. A model trained on biased data may achieve 98% accuracy on the overrepresented group and 60% on others, averaging to 90% overall but performing unacceptably for underrepresented populations. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. Overall accuracy is a misleading metric when data is biased. The biased network likely achieves high accuracy on the overrepresented group and much lower accuracy on underrepresented groups, creating discriminatory performance that is hidden by the aggregate number. If you chose B, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Overall accuracy is a misleading metric when data is biased. The biased network likely achieves high accuracy on the overrepresented group and much lower accuracy on underrepresented groups, creating discriminatory performance that is hidden by the aggregate number. If you chose A, this choice dismisses relevant factors that the evidence directly addresses. Overall accuracy is a misleading metric when data is biased. The biased network likely achieves high accuracy on the overrepresented group and much lower accuracy on underrepresented groups, creating discriminatory performance that is hidden by the aggregate number.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ETS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.B (Use computer simulations to model solutions) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Training Data Quality increases, Prediction Accuracy increases and when Network Depth increases, Overfitting Risk increases and when Training Data Volume increases, Computational Cost increases. The student changes one variable to see how the whole system responds.
+Researchers investigate why a neural network trained to predict criminal recidivism produces racially biased outcomes despite race not being included as an input variable. Analysis reveals that proxy variables (zip code, employment history, prior arrests) correlate strongly with race due to systemic inequalities, allowing the network to effectively reconstruct racial information from these proxies. The model shows that removing individual proxy variables has minimal effect because the network finds alternative correlational pathways, suggesting that bias is embedded in the data's structural relationships rather than any single feature.
 
 The model demonstrates that reducing the learning rate from 0.01 to 0.001 increases training time by 10x but reduces the loss function value by 30%. A student proposes using the higher learning rate to save time. What critical factor does this proposal overlook?
 
-A. Training time is the only relevant cost metric
+A. The 10x time increase can be eliminated by using fewer training examples
 B. The higher learning rate may cause the optimization to settle in a suboptimal local minimum or oscillate, while the lower rate's 30% better loss translates to meaningfully better real-world performance that justifies the computational investment
 C. Learning rate has no effect on final model quality
-D. The 10x time increase can be eliminated by using fewer training examples
+D. Training time is the only relevant cost metric
 
 Correct Answer: B
 
-Feedback: Correct. The 30% improvement in loss function represents meaningfully better pattern learning. The higher learning rate saves time but risks suboptimal convergence. The trade-off between training cost and model quality must be evaluated against the application's requirements. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The 30% improvement in loss function represents meaningfully better pattern learning. The higher learning rate saves time but risks suboptimal convergence. The trade-off between training cost and model quality must be evaluated against the application's requirements. If you chose D, this response oversimplifies a multi-factor system by focusing on a single variable. A higher learning rate often settles in suboptimal solutions because it overshoots better minima. The 30% loss improvement from the lower rate represents substantially better learning quality. For high-stakes applications, the 10x time investment may be essential. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. A higher learning rate often settles in suboptimal solutions because it overshoots better minima. The 30% loss improvement from the lower rate represents substantially better learning quality. For high-stakes applications, the 10x time investment may be essential. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. A higher learning rate often settles in suboptimal solutions because it overshoots better minima. The 30% loss improvement from the lower rate represents substantially better learning quality. For high-stakes applications, the 10x time investment may be essential.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ETS1.1 + CCC3 (Scale, Proportion, and Quantity)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ETS1.A (Define and delimit engineering problems) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+An AI safety team tests the robustness of a self-driving car's neural network by adding imperceptible perturbations to input images. Adding carefully calculated noise (invisible to the human eye, changing pixel values by less than 1%) causes the network to misclassify a stop sign as a speed limit sign with 99.7% confidence. This adversarial vulnerability reveals that the network relies on statistical pixel patterns rather than semantic understanding of the objects it classifies. The model demonstrates a fundamental gap between the network's pattern matching capability and genuine visual comprehension.
 
 A student observes that their model's computational cost scales quadratically with the number of parameters but performance improvements scale logarithmically. What does this relationship predict about the long-term sustainability of the 'scale everything up' approach to AI?
 
-A. Scaling will always produce proportional improvements in performance
-B. The widening gap between exponentially growing costs and diminishing performance returns suggests that scaling alone will eventually become economically and environmentally unsustainable, necessitating fundamental algorithmic breakthroughs
-C. Hardware improvements will always keep pace with scaling demands
-D. The logarithmic performance curve indicates that AI has reached its maximum capability
+A. The widening gap between exponentially growing costs and diminishing performance returns suggests that scaling alone will eventually become economically and environmentally unsustainable, necessitating fundamental algorithmic breakthroughs
+B. The logarithmic performance curve indicates that AI has reached its maximum capability
+C. Scaling will always produce proportional improvements in performance
+D. Hardware improvements will always keep pace with scaling demands
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. When costs grow quadratically but returns grow logarithmically, each increment of improvement becomes dramatically more expensive. This divergence predicts that pure scaling will hit economic and environmental limits, requiring new approaches. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When costs grow quadratically but returns grow logarithmically, each increment of improvement becomes dramatically more expensive. This divergence predicts that pure scaling will hit economic and environmental limits, requiring new approaches. If you chose C, this response overgeneralizes without considering the specific mechanisms and evidence presented. The divergence between quadratic cost growth and logarithmic performance improvement means each additional unit of capability costs far more than the last. This trajectory is unsustainable and implies that continued AI progress will require algorithmic innovations, not just bigger models. If you chose D, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The divergence between quadratic cost growth and logarithmic performance improvement means each additional unit of capability costs far more than the last. This trajectory is unsustainable and implies that continued AI progress will require algorithmic innovations, not just bigger models. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. The divergence between quadratic cost growth and logarithmic performance improvement means each additional unit of capability costs far more than the last. This trajectory is unsustainable and implies that continued AI progress will require algorithmic innovations, not just bigger models.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ETS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.B (Use computer simulations to model solutions) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Training Data Volume, Training Data Quality, Network Depth, Learning Rate), but they can take action on internal components (Prediction Accuracy, Overfitting Risk, Computational Cost). They need to decide which action would be most effective based on what the model shows.
+A company deploying an AI hiring system must decide between two neural network architectures. Model A is a deep network (20 layers, 50 million parameters) that achieves 92% accuracy in predicting job performance but operates as a 'black box' with no interpretable reasoning. Model B is a shallower network (5 layers, 2 million parameters) that achieves 85% accuracy but can provide feature importance scores showing which resume factors most influenced each decision. Legal counsel advises that employment discrimination law may require the ability to explain hiring decisions. The systems analysis asks which model better serves the organization's needs when considering both performance and accountability.
 
 Based on the neural network model, which conclusion about the relationship between training data volume and model generalization is best supported by the simulation?
 
-A. More training data always produces better generalization without any diminishing returns
-B. Training data volume improves generalization with diminishing returns, and beyond a threshold, additional data quality and diversity matter more than volume because the model has already captured the primary patterns in the data distribution
-C. Training data volume has no effect on generalization; only network architecture matters
-D. Generalization decreases with more training data because the network becomes confused
+A. Training data volume has no effect on generalization; only network architecture matters
+B. More training data always produces better generalization without any diminishing returns
+C. Generalization decreases with more training data because the network becomes confused
+D. Training data volume improves generalization with diminishing returns, and beyond a threshold, additional data quality and diversity matter more than volume because the model has already captured the primary patterns in the data distribution
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows diminishing returns from data volume. After the network captures the distribution's primary patterns, additional identical data provides little benefit. Data quality and diversity, ensuring all subgroups and edge cases are represented, become more important than raw volume. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The model shows diminishing returns from data volume. After the network captures the distribution's primary patterns, additional identical data provides little benefit. Data quality and diversity, ensuring all subgroups and edge cases are represented, become more important than raw volume. If you chose B, this response overgeneralizes without considering the specific mechanisms and evidence presented. Data volume helps generalization but with diminishing returns. Once the primary patterns are learned, adding more data of the same type provides minimal benefit. At that point, data quality and diversity, covering edge cases and underrepresented scenarios, become the limiting factors. If you chose A, this answer oversimplifies a multi-factor system by focusing on a single variable. Data volume helps generalization but with diminishing returns. Once the primary patterns are learned, adding more data of the same type provides minimal benefit. At that point, data quality and diversity, covering edge cases and underrepresented scenarios, become the limiting factors. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Data volume helps generalization but with diminishing returns. Once the primary patterns are learned, adding more data of the same type provides minimal benefit. At that point, data quality and diversity, covering edge cases and underrepresented scenarios, become the limiting factors.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ETS1.1, CCC1)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI ETS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ETS1.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ETS1.1, CCC3)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ETS1.1, CCC4)
+Question 1: D (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ETS1-1, CCC4)
+Question 2: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ETS1-1, CCC2)
+Question 3: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ETS1-1, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-4, CCC7)
+Question 5: D (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-4, CCC4)
 
+---
 
 ## Resources
 

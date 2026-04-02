@@ -738,103 +738,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.1 (Analyze data to identify patterns) + DCI ESS1.B.1 (Seasonal patterns of sunrise and sunset) + CCC1 (Patterns: observe and describe)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Daylight, Temperature. Some components are external (Amount of Daylight) and some are internal (Temperature). The student needs to understand what each component represents and how they are organized.
-
-Why is it hotter in summer than in winter?
-
-A. The sun is on fire more in summer
-B. Summer has more hours of daylight
-C. People turn on the heat in summer
-
-Correct Answer: B
-
-Feedback: Yes! In summer, the sun shines for more hours, warming the Earth more. That is why it is hotter. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 2
-
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.2 + CCC4 (Systems and System Models)
-
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Daylight increases, Temperature increases. The student is trying to understand why these relationships are positive or negative.
-
-When the amount of daylight goes UP, what happens to temperature?
-
-A. Temperature goes down
-B. Temperature stays the same
-C. Temperature goes up
-
-Correct Answer: C
-
-Feedback: That is right! More daylight means more sun warming the Earth, so the temperature goes up. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 3
-
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.2 + CCC4 (Systems and System Models)
-
-A student runs a simulation of the model. The model shows that when Amount of Daylight increases, Temperature increases. The student changes one variable to see how the whole system responds.
-
-Which season has the LEAST daylight?
-
-A. Summer
-B. Spring
-C. Winter
-
-Correct Answer: C
-
-Feedback: Yes! Winter has the fewest hours of daylight, which is why it is the coldest season. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 4
-
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.2 + CCC1 (Patterns)
-
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
-
-What is a pattern that the seasons follow?
-
-A. Spring, winter, fall, summer
-B. Spring, summer, fall, winter
-C. Summer, summer, winter, winter
-
-Correct Answer: B
-
-Feedback: That is right! The seasons always go in the order: spring, summer, fall, winter. This pattern repeats every year. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 5
-
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.2 + CCC4 (Systems and System Models)
-
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Daylight), but they can take action on internal components (Temperature). They need to decide which action would be most effective based on what the model shows.
+A student keeps a chart of the weather for each season. In summer, she writes that it is very hot and sunny. In winter, she writes that it is cold and dark early. She wonders which season is the hottest.
 
 Which season is usually the hottest?
 
 A. Winter
-B. Fall
-C. Summer
+B. Summer
+C. Fall
+
+Correct Answer: B
+
+Feedback: Summer is usually the hottest season because the sun shines for the most hours each day. If you chose A, winter is the coldest season, not the hottest. Winter has the fewest hours of sunlight. If you chose C, fall is cooler than summer. The days get shorter in fall, so it starts to cool down.
+---
+
+### Question 2
+
+CAST Alignment: SEP 4.1.1 (Analyze data to identify patterns) + DCI ESS1.B.1 (Seasonal patterns) + CCC1 (Patterns: identify patterns in nature)
+
+A student looks at a poster of the four seasons. Each season has a picture showing what the weather and plants look like. The poster shows they come in the same order every year.
+
+What are the four seasons?
+
+A. Spring, summer, fall, winter
+B. Hot, cold, warm, cool
+C. Morning, noon, evening, night
+
+Correct Answer: A
+
+Feedback: The four seasons are spring, summer, fall, and winter. They repeat in the same order every year. If you chose C, morning, noon, evening, and night are times of day, not seasons. If you chose B, hot, cold, warm, and cool are temperatures, not the names of the seasons.
+---
+
+### Question 3
+
+CAST Alignment: SEP 4.1.1 (Analyze data from observations) + DCI ESS1.B.1 (Seasonal patterns of daylight) + CCC2 (Cause and effect: identify events)
+
+A student notices that in winter, it gets dark very early. She finishes school and it is already getting dark outside. In summer, it stays light until bedtime. She wonders why winter has less daylight.
+
+In winter, the sun goes down early. What does that mean?
+
+A. The sun is broken
+B. There is less daylight
+C. There is more daylight
+
+Correct Answer: B
+
+Feedback: In winter, the sun is out for fewer hours, so there is less daylight. That is why winter days feel short. If you chose C, when the sun goes down early, there are fewer hours of light, not more. More daylight happens in summer. If you chose A, the sun is not broken. The Earth's position changes throughout the year, which changes how many hours of sunlight we get.
+---
+
+### Question 4
+
+CAST Alignment: SEP 4.1.1 (Analyze data to identify patterns) + DCI ESS1.B.1 (Seasonal patterns of daylight and temperature) + CCC2 (Cause and effect: simple tests show cause)
+
+A student made a chart showing the seasons and temperature. In spring, it is warm. In summer, it is hot. In fall, it cools down. In winter, it is cold. Then spring comes again and it warms up. Her teacher asks why summer is hotter than winter.
+
+Why is it hotter in summer than in winter?
+
+A. People turn on the heat in summer
+B. The sun is on fire more in summer
+C. Summer has more hours of daylight
 
 Correct Answer: C
 
-Feedback: Yes! Summer is usually the hottest season because the sun shines the longest. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+Feedback: Summer has more hours of daylight, so the sun warms the Earth for a longer time each day. More sunshine means higher temperatures. If you chose B, the sun does not change how much it burns. The difference is how many hours of sunlight reach your part of the Earth. If you chose A, people do not turn on heat in summer. The sun shining for more hours is what makes summer warmer.
+---
 
+### Question 5
+
+CAST Alignment: SEP 4.1.1 (Analyze data to identify patterns) + DCI ESS1.B.1 (Seasonal patterns can be observed and predicted) + CCC1 (Patterns: use patterns to make predictions)
+
+A student learns that when daylight goes up, the temperature also goes up. When daylight goes down, the temperature goes down too. She wants to know which season has the least daylight.
+
+Which season has the LEAST daylight?
+
+A. Winter
+B. Summer
+C. Spring
+
+Correct Answer: A
+
+Feedback: Winter has the fewest hours of daylight, which is why it is the coldest season. If you chose B, summer has the most daylight, not the least. That is why summer is the warmest season. If you chose C, spring is in between. It has more daylight than winter but less than summer.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.2, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.2, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.2, CCC1)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.2, CCC4)
+Question 1: B (Cognitive Level: Identify)
+Question 2: A (Cognitive Level: Identify)
+Question 3: B (Cognitive Level: Reason)
+Question 4: C (Cognitive Level: Reason)
+Question 5: A (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

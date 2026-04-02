@@ -738,103 +738,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.1 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 4.1.1 (Analyze data to identify patterns) + DCI ESS1.A.1 (Patterns of sun, moon, stars can be observed) + CCC1 (Patterns: observe and describe)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Earth's Position, Amount of Sunlight. Some components are external (Earth's Position) and some are internal (Amount of Sunlight). The student needs to understand what each component represents and how they are organized.
+A student looks outside in the morning and sees bright sunlight. Then at night, she looks outside and it is dark. She wonders why it gets dark every night.
 
-What causes day and night?
+Why does it get dark at night?
 
-A. The moon blocking the sun
-B. The Earth spinning
-C. The sun moving around the Earth
+A. Our side of Earth turns away from the sun
+B. Someone turns off the lights
+C. The sun turns off
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! The Earth spins (rotates), and that is what causes day and night. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The Earth spins, and when our side faces away from the sun, it gets dark. This is what causes nighttime. If you chose C, the sun does not turn off. It shines all the time. Our side of the Earth just turns away from it. If you chose B, no one turns off the lights. Night happens because the Earth spins and our part faces away from the sun.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.1 (Analyze data to identify patterns) + DCI ESS1.A.1 (Patterns of the sun) + CCC1 (Patterns: describe patterns)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when s Position increases, Amount of Sunlight increases. The student is trying to understand why these relationships are positive or negative.
+A student asks her dad where the sun goes at night. Her dad says the sun does not actually go anywhere. It stays in the same place all the time. Something else is moving.
 
-When your side of Earth faces the sun, what is it?
+Does the sun go away at night?
 
-A. Nighttime
-B. Daytime
-C. Winter
+A. Yes, the sun sleeps at night
+B. No, the sun stays in the same place
+C. Yes, the sun disappears
 
 Correct Answer: B
 
-Feedback: That is right! When your side of Earth faces the sun, the sun shines on you and it is daytime. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The sun stays in the same place all the time. The Earth moves, not the sun. We just cannot see the sun when our side faces away. If you chose C, the sun never disappears. It is always shining. The Earth rotates so that our side sometimes faces away from it. If you chose A, the sun does not sleep. It shines all the time. It looks like it goes away because the Earth spins.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.1 (Analyze data to identify patterns) + DCI ESS1.A.1 (Patterns of motion of the sun) + CCC1 (Patterns: identify patterns in nature)
 
-A student runs a simulation of the model. The model shows that when s Position increases, Amount of Sunlight increases. The student changes one variable to see how the whole system responds.
+A student spins a globe in the classroom. Her teacher says the Earth does the same thing. It spins around once every 24 hours. When your side faces the sun, it is daytime. When it faces away, it is nighttime.
 
-How long does it take the Earth to spin around one time?
+What does rotate mean?
 
-A. About 1 hour
-B. About 24 hours (one day)
-C. About 1 year
+A. To stand very still
+B. To spin around
+C. To jump up and down
 
 Correct Answer: B
 
-Feedback: Yes! The Earth takes about 24 hours to make one full spin. That is why we have one day and one night every 24 hours. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Rotate means to spin around, like a top. The Earth rotates once every 24 hours, giving us day and night. If you chose C, jumping up and down is not rotating. Rotating means spinning around in a circle, like a top. If you chose A, standing still is the opposite of rotating. Rotating means spinning around.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.1 (Analyze data from observations) + DCI ESS1.A.1 (Patterns can be observed and predicted) + CCC1 (Patterns: use patterns to predict)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student keeps a journal for a week. Every day she writes down when it gets light and when it gets dark. She notices it happens at about the same time each day. Light, then dark, then light, then dark.
 
-When Earth's position faces the sun, the amount of sunlight goes ___.
+Day and night happen over and over. What is something that repeats called?
 
-A. Down
-B. Up
-C. It does not change
+A. A surprise
+B. A pattern
+C. A secret
 
 Correct Answer: B
 
-Feedback: That is right! Facing the sun means lots of sunlight. That is daytime. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Something that repeats the same way is called a pattern. Day and night follow a predictable pattern. If you chose A, a surprise is something unexpected. Day and night are not a surprise because they happen the same way every day. If you chose C, a secret is something hidden. Day and night are not a secret. They are a pattern everyone can observe.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.1 (Analyze data to identify patterns) + DCI ESS1.A.1 (Observable patterns of the sun) + CCC2 (Cause and effect: identify events and effects)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Earth's Position), but they can take action on internal components (Amount of Sunlight). They need to decide which action would be most effective based on what the model shows.
+A student is studying a model of the Earth and sun. The model shows that when one side of the Earth faces the sun, that side gets bright sunlight. The student turns the model so that side faces away from the sun.
 
-Why does it get dark at night?
+When your side of Earth faces the sun, what is it?
 
-A. The sun turns off
-B. Someone turns off the lights
-C. Our side of Earth turns away from the sun
+A. Winter
+B. Nighttime
+C. Daytime
 
 Correct Answer: C
 
-Feedback: Yes! The Earth spins, and when our side faces away from the sun, it gets dark. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When your side of Earth faces the sun, the sun shines on you and it is daytime. You get bright sunlight. If you chose B, nighttime is when your side of Earth faces away from the sun, not toward it. If you chose A, winter is a season, not a time of day. When your side faces the sun, it is daytime.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.1, CCC2)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.1, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.1, CCC4)
+Question 1: A (Cognitive Level: Identify)
+Question 2: B (Cognitive Level: Identify)
+Question 3: B (Cognitive Level: Reason)
+Question 4: B (Cognitive Level: Reason)
+Question 5: C (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

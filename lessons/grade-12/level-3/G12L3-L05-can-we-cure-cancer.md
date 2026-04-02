@@ -992,15 +992,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that sequential introduction of mutations (oncogene activation, then tumor suppressor loss, then checkpoint failure) produces a tipping point where tumor growth potential increases dramatically. At which step does the model indicate the cell becomes truly dangerous?
 
-A. At the first oncogene activation, when growth signals increase
-B. At tumor suppressor loss, because remaining checkpoints and immune surveillance still partially compensate for oncogene activation, but loss of both accelerator control and braking creates uncontrolled proliferation that overwhelms downstream defenses
+A. At tumor suppressor loss, because remaining checkpoints and immune surveillance still partially compensate for oncogene activation, but loss of both accelerator control and braking creates uncontrolled proliferation that overwhelms downstream defenses
+B. At checkpoint failure, because this is always the first mutation to occur
 C. Only after all ten components are mutated simultaneously
-D. At checkpoint failure, because this is always the first mutation to occur
+D. At the first oncogene activation, when growth signals increase
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model reveals a critical transition at the combination of oncogene activation AND tumor suppressor loss. A single oncogene activation is partially compensated by intact tumor suppressors and checkpoints. But when both the accelerator is stuck on (oncogene) and the brakes are disabled (tumor suppressor), the cell gains a proliferative advantage that overwhelms remaining checkpoint and immune defenses. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals a critical transition at the combination of oncogene activation AND tumor suppressor loss. A single oncogene activation is partially compensated by intact tumor suppressors and checkpoints. But when both the accelerator is stuck on (oncogene) and the brakes are disabled (tumor suppressor), the cell gains a proliferative advantage that overwhelms remaining checkpoint and immune defenses. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1011,15 +1010,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the 'Immune Escape' scenario, the model shows that a tumor with high PD-L1 expression and an immunosuppressive microenvironment defeats even a robust immune system. What does this reveal about the tumor microenvironment?
 
-A. The tumor microenvironment is irrelevant because cancer is determined entirely by genetics
+A. Immune systems always defeat tumors if given enough time
 B. The tumor microenvironment functions as an active defense system that recruits immunosuppressive cells, secretes inhibitory molecules, and expresses checkpoint ligands to create a local fortress that neutralizes immune attack regardless of immune system strength
 C. The microenvironment only affects blood supply, not immune function
-D. Immune systems always defeat tumors if given enough time
+D. The tumor microenvironment is irrelevant because cancer is determined entirely by genetics
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that the tumor microenvironment is not passive tissue but an actively engineered fortress. Tumors recruit regulatory T cells that suppress immune responses, secrete immunosuppressive cytokines (like TGF-beta and IL-10), and express checkpoint ligands (PD-L1) that deactivate attacking immune cells. This local immunosuppression can defeat even a strong systemic immune response. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that the tumor microenvironment is not passive tissue but an actively engineered fortress. Tumors recruit regulatory T cells that suppress immune responses, secrete immunosuppressive cytokines (like TGF-beta and IL-10), and express checkpoint ligands (PD-L1) that deactivate attacking immune cells. This local immunosuppression can defeat even a strong systemic immune response. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1031,14 +1029,13 @@ A student runs a simulation of the model. The model shows that when Mutation Rat
 The model predicts that checkpoint inhibitor therapy is most effective in patients with high PD-L1 expression AND a strong but suppressed immune system. Why would a patient with a weak immune system respond poorly to checkpoint inhibitors?
 
 A. Checkpoint inhibitors are toxic to patients with weak immune systems
-B. Checkpoint inhibitors release the brakes on existing T cells but do not create new ones. A patient with few tumor-recognizing T cells has nothing to 'unleash' even when the brakes are removed
-C. Weak immune systems cannot metabolize the checkpoint inhibitor drug
-D. Checkpoint inhibitors only work in patients under 50 years old
+B. Checkpoint inhibitors only work in patients under 50 years old
+C. Checkpoint inhibitors release the brakes on existing T cells but do not create new ones. A patient with few tumor-recognizing T cells has nothing to 'unleash' even when the brakes are removed
+D. Weak immune systems cannot metabolize the checkpoint inhibitor drug
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Checkpoint inhibitors work by removing the PD-1/PD-L1 brake on T cells that already recognize the tumor. If a patient has few T cells capable of recognizing tumor antigens (weak immune system), removing the brake has little effect because there are insufficient immune effectors to mount an anti-tumor response. The therapy reactivates existing capability rather than creating new capability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Checkpoint inhibitors work by removing the PD-1/PD-L1 brake on T cells that already recognize the tumor. If a patient has few T cells capable of recognizing tumor antigens (weak immune system), removing the brake has little effect because there are insufficient immune effectors to mount an anti-tumor response. The therapy reactivates existing capability rather than creating new capability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1049,15 +1046,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model reveals that treatment resistance in cancer follows evolutionary principles analogous to antibiotic resistance in bacteria. Which model finding best demonstrates this?
 
-A. Cancer cells communicate with each other to coordinate resistance strategies
-B. Within a genetically diverse tumor, subclones carrying pre-existing resistance mutations survive treatment and proliferate to repopulate the tumor, just as resistant bacteria survive antibiotics through natural selection
-C. Cancer cells become resistant because they learn from previous treatments
-D. All cancer cells become resistant simultaneously through a single mutation
+A. All cancer cells become resistant simultaneously through a single mutation
+B. Cancer cells become resistant because they learn from previous treatments
+C. Cancer cells communicate with each other to coordinate resistance strategies
+D. Within a genetically diverse tumor, subclones carrying pre-existing resistance mutations survive treatment and proliferate to repopulate the tumor, just as resistant bacteria survive antibiotics through natural selection
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Tumors are genetically heterogeneous populations. When treatment eliminates sensitive cells, rare resistant subclones (which may have pre-existed or emerged through new mutations) survive, proliferate, and repopulate the tumor with a resistant population. This is natural selection operating on cancer cell populations, identical in principle to antibiotic resistance in bacteria. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Tumors are genetically heterogeneous populations. When treatment eliminates sensitive cells, rare resistant subclones (which may have pre-existed or emerged through new mutations) survive, proliferate, and repopulate the tumor with a resistant population. This is natural selection operating on cancer cell populations, identical in principle to antibiotic resistance in bacteria. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1068,24 +1064,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model's findings, why do oncologists increasingly favor combination therapies that attack multiple cancer vulnerabilities simultaneously rather than sequential single-agent approaches?
 
-A. Combination therapies are cheaper to administer than sequential treatments
-B. A cancer cell is unlikely to carry resistance mutations against multiple unrelated therapeutic mechanisms simultaneously, so attacking several vulnerabilities at once reduces the probability of resistant subclones surviving and repopulating the tumor
-C. Single agents never work at all against any cancer
-D. Combination therapies have fewer side effects than single agents
+A. Combination therapies have fewer side effects than single agents
+B. Single agents never work at all against any cancer
+C. Combination therapies are cheaper to administer than sequential treatments
+D. A cancer cell is unlikely to carry resistance mutations against multiple unrelated therapeutic mechanisms simultaneously, so attacking several vulnerabilities at once reduces the probability of resistant subclones surviving and repopulating the tumor
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. If a tumor contains rare cells resistant to drug A and other rare cells resistant to drug B, the probability that a cell is simultaneously resistant to both A and B is the product of the individual probabilities (very low). By attacking multiple vulnerabilities at once, combination therapy makes evolutionary escape far less likely, similar to why HIV and TB are treated with multi-drug regimens. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. If a tumor contains rare cells resistant to drug A and other rare cells resistant to drug B, the probability that a cell is simultaneously resistant to both A and B is the product of the individual probabilities (very low). By attacking multiple vulnerabilities at once, combination therapy makes evolutionary escape far less likely, similar to why HIV and TB are treated with multi-drug regimens. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
 
 
 ## Resources

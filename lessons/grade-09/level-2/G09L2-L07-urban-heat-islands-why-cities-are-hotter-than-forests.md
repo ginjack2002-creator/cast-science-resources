@@ -392,6 +392,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Impervious Surface → Ambient Temperature relationship as
+unconditional. However, this relationship is scientifically
+contingent on Green Space being active. Without this condition,
+the simulation produces inaccurate results: Impervious Surface drives Ambient Temperature
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Impervious Surface → Ambient Temperature
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Green Space is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Green Space active and observe
+     how Impervious Surface's effect on Ambient Temperature is now gated
+   • Toggle Green Space ON/OFF while Impervious Surface remains constant
+   • Verify that Ambient Temperature only responds to Impervious Surface when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Green Space → Ambient Temperature
+   • Set condition: IF Impervious Surface is ON
+   • This ensures Green Space's effect on Ambient Temperature
+     is contingent on Impervious Surface being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -962,15 +998,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model reveals a reinforcing feedback loop involving air conditioning. Which of the following correctly describes this loop?
 
-A. Higher temperatures drive more AC use, which cools the city, reducing temperatures
-B. Higher temperatures drive more AC use, which pumps waste heat outdoors, raising temperatures further, which drives even more AC use
-C. AC use reduces energy consumption by making buildings more efficient
+A. Higher temperatures drive more AC use, which pumps waste heat outdoors, raising temperatures further, which drives even more AC use
+B. AC use reduces energy consumption by making buildings more efficient
+C. Higher temperatures drive more AC use, which cools the city, reducing temperatures
 D. The AC loop is a balancing feedback that stabilizes urban temperatures
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This is a reinforcing loop: heat drives AC demand, AC waste heat warms outdoor air, warmer air drives more AC demand. This loop amplifies temperatures, especially during heat waves when the effect is most concentrated. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is a reinforcing loop: heat drives AC demand, AC waste heat warms outdoor air, warmer air drives more AC demand. This loop amplifies temperatures, especially during heat waves when the effect is most concentrated. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -981,15 +1016,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The simulation comparing two neighborhoods shows a 10-degree F temperature difference between a high-green-space neighborhood and a high-concrete neighborhood during a heat wave. The model also shows different health outcomes. What structural factor explains both the temperature AND health disparities?
 
-A. Random weather variation between neighborhoods
+A. People in hotter neighborhoods simply prefer warmer temperatures
 B. Historical investment patterns that concentrated green space in wealthy neighborhoods and impervious surfaces in low-income communities, creating both heat exposure and health vulnerability disparities
-C. People in hotter neighborhoods simply prefer warmer temperatures
+C. Random weather variation between neighborhoods
 D. The two neighborhoods are in different climate zones
 
 Correct Answer: B
 
-Feedback: Correct. The temperature disparity is structural, rooted in historical investment patterns including redlining. Low-income communities received less green infrastructure and more industrial/commercial development, creating heat islands that compound health vulnerabilities. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The temperature disparity is structural, rooted in historical investment patterns including redlining. Low-income communities received less green infrastructure and more industrial/commercial development, creating heat islands that compound health vulnerabilities. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1000,15 +1034,14 @@ A student runs a simulation of the model. The model shows that when Impervious S
 
 A student's model shows that a regional heat wave of +5 degrees C produces +8 degrees C in the urban core but only +5.5 degrees C in suburban areas. What does this amplification effect demonstrate?
 
-A. The model is inaccurate because all areas should experience the same temperature increase
-B. The urban heat island acts as an amplifier, taking a regional temperature increase and magnifying it through heat-absorbing surfaces, reduced vegetation, and reinforcing AC feedback
+A. The urban core has a different climate than surrounding areas
+B. The model is inaccurate because all areas should experience the same temperature increase
 C. Suburban areas are immune to heat waves
-D. The urban core has a different climate than surrounding areas
+D. The urban heat island acts as an amplifier, taking a regional temperature increase and magnifying it through heat-absorbing surfaces, reduced vegetation, and reinforcing AC feedback
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Urban areas amplify regional heat events because their existing heat island infrastructure (dark surfaces, minimal vegetation, waste heat) adds to the regional increase. The AC reinforcing loop further amplifies temperatures during extreme heat. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Urban areas amplify regional heat events because their existing heat island infrastructure (dark surfaces, minimal vegetation, waste heat) adds to the regional increase. The AC reinforcing loop further amplifies temperatures during extreme heat. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1019,15 +1052,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model identifies green infrastructure as an intervention that 'breaks the reinforcing loop.' How does increasing green space from 10% to 40% break this loop?
 
-A. Green space has no effect on the AC feedback loop
-B. Vegetation provides passive cooling through evapotranspiration and shade, reducing ambient temperatures, which reduces AC demand, which reduces waste heat output, interrupting the reinforcing cycle
-C. Green space only improves aesthetics, not temperatures
+A. Green space only improves aesthetics, not temperatures
+B. Green space has no effect on the AC feedback loop
+C. Vegetation provides passive cooling through evapotranspiration and shade, reducing ambient temperatures, which reduces AC demand, which reduces waste heat output, interrupting the reinforcing cycle
 D. Increasing green space increases humidity, which makes heat feel worse
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Green infrastructure interrupts the reinforcing loop at its source. By cooling the environment passively through evapotranspiration and shade, it reduces the temperature trigger that drives AC use, thereby reducing the waste heat that amplifies outdoor temperatures. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Green infrastructure interrupts the reinforcing loop at its source. By cooling the environment passively through evapotranspiration and shade, it reduces the temperature trigger that drives AC use, thereby reducing the waste heat that amplifies outdoor temperatures. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1038,23 +1070,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, a city has limited budget for cooling interventions. Which approach best reflects systems thinking and environmental justice principles?
 
-A. Distribute cooling investments equally across all neighborhoods regardless of current conditions
+A. Wait until new cooling technologies are developed before investing
 B. Invest cooling interventions first in the most heat-vulnerable neighborhoods, where the reinforcing loop is strongest and health risks are highest
-C. Focus investments on the wealthiest neighborhoods because they generate the most tax revenue
-D. Wait until new cooling technologies are developed before investing
+C. Distribute cooling investments equally across all neighborhoods regardless of current conditions
+D. Focus investments on the wealthiest neighborhoods because they generate the most tax revenue
 
 Correct Answer: B
 
-Feedback: Correct. Systems thinking shows the reinforcing loop is strongest where green space is lowest and impervious surface is highest. Environmental justice demands that the most vulnerable communities, who bear the greatest heat burden, receive priority investment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Systems thinking shows the reinforcing loop is strongest where green space is lowest and impervious surface is highest. Environmental justice demands that the most vulnerable communities, who bear the greatest heat burden, receive priority investment. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC6)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC6)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
 
 

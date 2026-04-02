@@ -732,102 +732,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.C (Human Impacts on Earth Systems) + CCC2 (Cause and Effect)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Trash, Pollution Level. Some components are external (Amount of Trash) and some are internal (Pollution Level). The student needs to understand what each component represents and how they are organized.
+A class takes a walk around their school. They see candy wrappers on the ground, plastic bottles near the creek, and old bags stuck in the bushes. The teacher says all this trash is hurting the Earth.
 
-When the Amount of Trash goes UP, what happens to Pollution Level?
+How does trash on the ground hurt the Earth?
 
-A. It goes down
-B. It stays the same
-C. It goes up
+A. Trash makes the Earth prettier and more colorful
+B. Trash does not do anything to the Earth
+C. Trash makes the land dirty and can hurt animals and water
 
 Correct Answer: C
 
-Feedback: Yes! More trash means more pollution. The Earth gets dirtier when people throw away more garbage. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Trash on the ground makes the land dirty. Animals can eat trash and get sick. Trash near water can make the water dirty and unsafe. Pollution from trash hurts the whole environment. If you chose A, trash does not make the Earth prettier. It makes it dirty and harmful to animals and plants. If you chose B, trash definitely hurts the Earth. It pollutes the land, water, and air, and can harm animals who mistake it for food.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.C (Human Impacts on Earth Systems) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Trash increases, Pollution Level increases. The student is trying to understand why these relationships are positive or negative.
+The class builds a model about trash and the Earth. It has two parts: Amount of Trash and Pollution Level. Amount of Trash is how much garbage people throw away. Pollution Level is how dirty the land, water, and air become.
 
-What does REDUCE mean?
+Which part of the model do people control?
 
-A. To use MORE of something
-B. To use LESS of something so we make less trash
-C. To throw things away
+A. Amount of Trash, because people choose how much they throw away
+B. Pollution Level, because people choose how dirty the Earth is
+C. Neither part, because trash just appears on its own
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Reduce means to use less so we make less trash in the first place. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: People control how much trash they make and throw away. That is why Amount of Trash is the outside part of the model. Pollution Level is what happens as a result of all that trash. If you chose B, people do not directly choose pollution. Pollution happens because of the trash people throw away. If you chose C, trash does not appear on its own. People create trash when they throw things away instead of reusing or recycling them.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.C (Human Impacts on Earth Systems) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Amount of Trash increases, Pollution Level increases. The student changes one variable to see how the whole system responds.
+The model shows an arrow from Amount of Trash to Pollution Level with a plus sign. A school starts a recycling program. Students put paper, plastic, and cans in recycling bins instead of the trash can. After a few weeks, there are fewer bags of trash going to the dump.
 
-How can reusing things help the Earth?
+What happens to the Pollution Level when the school makes less trash?
 
-A. It makes more trash
-B. Every item reused is one less item in the trash
-C. It does not help
+A. Pollution Level goes up because recycling creates more pollution
+B. Pollution Level goes down because less trash means less pollution
+C. Pollution Level stays the same because trash and pollution are not related
 
 Correct Answer: B
 
-Feedback: Yes! When we reuse something instead of throwing it away, that is one less piece of trash hurting the Earth. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The plus sign means both parts go in the same direction. When Amount of Trash goes down (because of recycling), Pollution Level goes down too. Less garbage means a cleaner Earth. If you chose A, recycling reduces pollution, it does not create more. Recycling turns old things into new things instead of sending them to a dump. If you chose C, the model shows they ARE connected. Less trash leads to less pollution.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.C (Human Impacts on Earth Systems) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student learns about the three R's: Reduce (use less), Reuse (use again), and Recycle (turn old into new). All three of these actions help lower the Amount of Trash in the model.
 
-What are the three R's that help the Earth?
+Why do the three R's help the Earth?
 
-A. Run, Rest, Read
-B. Reduce, Reuse, Recycle
-C. Rain, Rivers, Rocks
+A. They help people make LESS trash, which lowers pollution
+B. They make people create MORE trash so it can be studied
+C. They have nothing to do with trash or pollution
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Reduce, Reuse, Recycle are the three R's. They help us make less trash and keep the Earth clean. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Reduce, Reuse, and Recycle all help people create less trash. And the model shows that less trash means less pollution. So the three R's protect the Earth by lowering pollution. If you chose B, the three R's are about making LESS trash, not more. Reduce means use less, reuse means use again, and recycle means turn old into new. If you chose C, the three R's are all about trash. They are the main ways people can cut down on waste and help the Earth.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.C (Human Impacts on Earth Systems) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Trash), but they can take action on internal components (Pollution Level). They need to decide which action would be most effective based on what the model shows.
+A class drinks juice boxes every day at snack time. They throw the empty boxes in the trash. That is 20 juice boxes in the trash every single day. A student has an idea to help make less trash.
 
-What happens when people throw trash on the ground?
+Which idea would help the class reduce their trash the most?
 
-A. It makes the Earth cleaner
-B. It makes the Earth dirty
-C. Nothing happens
+A. Throw the juice boxes on the ground instead of in the trash can
+B. Bring reusable water bottles instead of using juice boxes every day
+C. Use even more juice boxes so the recycling truck comes more often
 
 Correct Answer: B
 
-Feedback: Yes! Throwing trash on the ground makes the Earth dirty and can hurt animals. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Reusable water bottles can be washed and used every day. This means zero juice boxes in the trash. That is reducing trash, which lowers pollution. If you chose A, throwing trash on the ground makes pollution even worse. It does not help the Earth at all. If you chose C, using more juice boxes creates MORE trash, not less. The goal is to reduce trash, which means using less.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.3, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.3, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.C, CCC2)
+Question 2: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.C, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.C, CCC2)
+Question 4: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.C, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS3.C, CCC2)
 
+---
 
 ## Resources
 

@@ -910,14 +910,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 In the wireless communication model, what is the fundamental trade-off that the relationship between Signal Frequency and Wave Penetration reveals?
 
 A. Higher frequencies penetrate materials better but carry less data
-B. Higher frequencies carry more data but penetrate materials less effectively, requiring more infrastructure to compensate
-C. Signal frequency has no measurable effect on wave penetration in the model
-D. Lower frequencies require more tower density because they carry less data per tower
+B. Signal frequency has no measurable effect on wave penetration in the model
+C. Lower frequencies require more tower density because they carry less data per tower
+D. Higher frequencies carry more data but penetrate materials less effectively, requiring more infrastructure to compensate
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates the core physics trade-off: Data Transfer Rate increases with frequency but Wave Penetration decreases, forcing engineers to dramatically increase Tower Density to maintain coverage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model demonstrates the core physics trade-off: Data Transfer Rate increases with frequency but Wave Penetration decreases, forcing engineers to dramatically increase Tower Density to maintain coverage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -928,15 +927,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student compares the 4G scenario (700 MHz) to the 5G millimeter wave scenario (39 GHz) in the model. Tower Density must increase dramatically for 5G. What does the model show as the primary reason?
 
-A. 5G towers are physically smaller and cannot transmit as much power
-B. Each 5G millimeter wave cell covers only 200-300 meters versus 2-5 kilometers for 4G because higher-frequency signals are absorbed more rapidly by the atmosphere and obstacles
-C. 5G towers are more expensive, so more small towers are needed to reduce cost
+A. Each 5G millimeter wave cell covers only 200-300 meters versus 2-5 kilometers for 4G because higher-frequency signals are absorbed more rapidly by the atmosphere and obstacles
+B. 5G towers are more expensive, so more small towers are needed to reduce cost
+C. 5G towers are physically smaller and cannot transmit as much power
 D. 4G towers broadcast in all directions while 5G towers can only broadcast in one direction
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that millimeter wave signals attenuate so rapidly that each cell covers a fraction of the area of a 4G cell, requiring a massive increase in the number of transmitters to provide continuous coverage. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that millimeter wave signals attenuate so rapidly that each cell covers a fraction of the area of a 4G cell, requiring a massive increase in the number of transmitters to provide continuous coverage. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -947,15 +945,14 @@ A student runs a simulation of the model. The model shows that when Signal Frequ
 
 The model shows that increasing Tower Density to compensate for poor Wave Penetration creates a secondary problem. What is it?
 
-A. More towers reduce the total network capacity by splitting the available bandwidth
-B. Interference Level increases as more closely spaced towers produce overlapping signals, requiring beamforming and MIMO to manage
-C. More towers consume less total energy because each tower is smaller
-D. Tower Density has no effect on any other variable in the model
+A. Interference Level increases as more closely spaced towers produce overlapping signals, requiring beamforming and MIMO to manage
+B. More towers consume less total energy because each tower is smaller
+C. Tower Density has no effect on any other variable in the model
+D. More towers reduce the total network capacity by splitting the available bandwidth
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model reveals a cascade: more towers create more signal overlap and interference, which degrades network quality. Engineers must deploy beamforming and MIMO technology to direct signals precisely and manage interference. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals a cascade: more towers create more signal overlap and interference, which degrades network quality. Engineers must deploy beamforming and MIMO technology to direct signals precisely and manage interference. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -974,7 +971,6 @@ D. Because millimeter waves are dangerous to human health at high power levels
 Correct Answer: B
 
 Feedback: Correct. The model demonstrates that no single frequency band can optimize both coverage and capacity. The layered approach uses each band's strengths: low-band for reach, mid-band for balance, and millimeter wave for dense, high-speed areas. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 5
@@ -986,23 +982,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 A student claims that 5G is simply 'better 4G' with no fundamental physics differences. Using evidence from the model, which response best evaluates this claim?
 
 A. The claim is correct because both use electromagnetic waves for communication
-B. The claim is incorrect because 5G operates at fundamentally different frequencies that introduce new physics trade-offs: millimeter waves behave qualitatively differently than sub-6 GHz signals regarding penetration, absorption, and infrastructure requirements
-C. The claim is correct because tower density is the same for both technologies
+B. The claim is correct because tower density is the same for both technologies
+C. The claim is incorrect because 5G operates at fundamentally different frequencies that introduce new physics trade-offs: millimeter waves behave qualitatively differently than sub-6 GHz signals regarding penetration, absorption, and infrastructure requirements
 D. The claim is incorrect because 5G uses sound waves instead of electromagnetic waves
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. While both use electromagnetic waves, the model shows that millimeter wave frequencies introduce qualitatively different behavior: near-total absorption by obstacles, atmospheric attenuation by rain, and coverage areas orders of magnitude smaller. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. While both use electromagnetic waves, the model shows that millimeter wave frequencies introduce qualitatively different behavior: near-total absorption by obstacles, atmospheric attenuation by rain, and coverage areas orders of magnitude smaller. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.2, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.2, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.2, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.2, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.2, CCC4)
 
 
 ## Resources

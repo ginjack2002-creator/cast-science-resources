@@ -418,6 +418,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Arousal State → Thalamo-Cortical Loop Activity relationship as
+unconditional. However, this relationship is scientifically
+contingent on Sensory Cortex Activation being active. Without this condition,
+the simulation produces inaccurate results: Arousal State drives Thalamo-Cortical Loop Activity
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Arousal State → Thalamo-Cortical Loop Activity
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Sensory Cortex Activation is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Sensory Cortex Activation active and observe
+     how Arousal State's effect on Thalamo-Cortical Loop Activity is now gated
+   • Toggle Sensory Cortex Activation ON/OFF while Arousal State remains constant
+   • Verify that Thalamo-Cortical Loop Activity only responds to Arousal State when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Sensory Cortex Activation → Thalamo-Cortical Loop Activity
+   • Set condition: IF Arousal State is ON
+   • This ensures Sensory Cortex Activation's effect on Thalamo-Cortical Loop Activity
+     is contingent on Arousal State being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Default Mode Network Activity → Conscious Experience Index
+   • Set condition: IF Information Integration (Phi) is ON
+   • This ensures Default Mode Network Activity's effect on Conscious Experience Index
+     is contingent on Information Integration (Phi) being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -992,15 +1034,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that reducing Arousal State to minimal and disrupting Thalamo-Cortical Loop Activity (simulating anesthesia) eliminates the Conscious Experience Index even though Sensory Cortex Activation remains partially active. What does this dissociation reveal?
 
-A. Sensory cortex activation is irrelevant to consciousness
-B. Consciousness requires the recurrent thalamo-cortical loops that process and integrate sensory information, not just the initial sensory activation. Anesthesia disrupts the feedback pathways that bring information into awareness while leaving feedforward sensory processing partially intact
-C. Anesthesia destroys sensory cortex neurons permanently
-D. The Conscious Experience Index is not a valid measure because it should only reflect sensory activation
+A. Anesthesia destroys sensory cortex neurons permanently
+B. Sensory cortex activation is irrelevant to consciousness
+C. The Conscious Experience Index is not a valid measure because it should only reflect sensory activation
+D. Consciousness requires the recurrent thalamo-cortical loops that process and integrate sensory information, not just the initial sensory activation. Anesthesia disrupts the feedback pathways that bring information into awareness while leaving feedforward sensory processing partially intact
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This model finding directly demonstrates that sensory processing and conscious experience are dissociable. The thalamo-cortical loops provide the recurrent feedback processing that integrates sensory information into the global workspace. Anesthesia specifically disrupts these feedback pathways while leaving feedforward sensory responses partially intact, proving that consciousness requires more than sensory activation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This model finding directly demonstrates that sensory processing and conscious experience are dissociable. The thalamo-cortical loops provide the recurrent feedback processing that integrates sensory information into the global workspace. Anesthesia specifically disrupts these feedback pathways while leaving feedforward sensory responses partially intact, proving that consciousness requires more than sensory activation. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -1019,7 +1060,6 @@ D. Gamma Synchrony is at maximum during sleep, producing consciousness without c
 Correct Answer: B
 
 Feedback: Correct. The model reveals that the brain can generate conscious experience internally through the default mode network, which produces self-referential, narrative, and imagistic content. This internally generated content enters the global workspace through the same prefrontal integration pathways that normally process external sensory information, explaining why dreams feel subjectively real despite having no external source. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 3
@@ -1030,15 +1070,14 @@ A student runs a simulation of the model. The model shows that when Cortical Loo
 
 A student uses the model to compare IIT predictions (consciousness proportional to phi/information integration) with global workspace predictions (consciousness requires global broadcasting). The model reveals a case where these theories make different predictions. In a system with high phi but no global broadcasting, what do the theories predict?
 
-A. Both theories predict no consciousness because the system lacks both properties
-B. IIT predicts consciousness (high phi = high integrated information) while global workspace theory predicts no consciousness (no broadcasting to all systems), highlighting the unresolved theoretical disagreement about what consciousness fundamentally requires
+A. IIT predicts consciousness (high phi = high integrated information) while global workspace theory predicts no consciousness (no broadcasting to all systems), highlighting the unresolved theoretical disagreement about what consciousness fundamentally requires
+B. Neither theory is relevant because consciousness cannot be predicted by any theory
 C. Both theories predict consciousness because high phi automatically causes global broadcasting
-D. Neither theory is relevant because consciousness cannot be predicted by any theory
+D. Both theories predict no consciousness because the system lacks both properties
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This reveals a genuine theoretical disagreement. IIT locates consciousness in information integration (phi), predicting that any system with high phi is conscious regardless of architecture. Global workspace theory locates consciousness in global broadcasting, predicting that only systems that broadcast information widely across cortical networks are conscious. The model cannot resolve this disagreement because the two theories define consciousness differently. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This reveals a genuine theoretical disagreement. IIT locates consciousness in information integration (phi), predicting that any system with high phi is conscious regardless of architecture. Global workspace theory locates consciousness in global broadcasting, predicting that only systems that broadcast information widely across cortical networks are conscious. The model cannot resolve this disagreement because the two theories define consciousness differently. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1049,15 +1088,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model reveals that Information Integration (Phi) increases nonlinearly with neural connectivity: doubling the number of connections more than doubles phi. What does this suggest about the relationship between brain complexity and consciousness?
 
-A. Brain size is the only determinant of consciousness, so larger brains are always more conscious
-B. Consciousness may be an emergent property that arises nonlinearly from connectivity, meaning there could be a critical threshold of neural complexity above which qualitatively new properties appear that were not present in simpler systems
-C. Neural connectivity has no relationship to consciousness
-D. Simple systems always have more consciousness than complex systems
+A. Simple systems always have more consciousness than complex systems
+B. Brain size is the only determinant of consciousness, so larger brains are always more conscious
+C. Consciousness may be an emergent property that arises nonlinearly from connectivity, meaning there could be a critical threshold of neural complexity above which qualitatively new properties appear that were not present in simpler systems
+D. Neural connectivity has no relationship to consciousness
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The nonlinear relationship between connectivity and phi suggests that consciousness may emerge as a qualitatively new property above a critical complexity threshold. Below the threshold, information processing occurs without integration into conscious experience. Above it, the system generates properties (unified experience, self-awareness) that cannot be predicted from its individual components. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The nonlinear relationship between connectivity and phi suggests that consciousness may emerge as a qualitatively new property above a critical complexity threshold. Below the threshold, information processing occurs without integration into conscious experience. Above it, the system generates properties (unified experience, self-awareness) that cannot be predicted from its individual components. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1068,24 +1106,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 For a brain-injured patient who appears vegetative but may have covert consciousness, the model identifies specific neural signatures that would distinguish vegetative state (arousal without content) from minimally conscious state (some content). Which combination of measurements would be most informative?
 
-A. Body temperature and blood pressure measurements
-B. Intact thalamo-cortical loop responses to commands (fMRI), detectable gamma synchrony during stimulation (EEG), and prefrontal activation during mental imagery tasks, as these specifically probe the neural components the model identifies as necessary for consciousness
-C. Only checking whether the patient's eyes are open, since eye-opening indicates consciousness
-D. Measuring the patient's reflexes, since reflexes require consciousness
+A. Only checking whether the patient's eyes are open, since eye-opening indicates consciousness
+B. Body temperature and blood pressure measurements
+C. Measuring the patient's reflexes, since reflexes require consciousness
+D. Intact thalamo-cortical loop responses to commands (fMRI), detectable gamma synchrony during stimulation (EEG), and prefrontal activation during mental imagery tasks, as these specifically probe the neural components the model identifies as necessary for consciousness
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model identifies thalamo-cortical loops, gamma synchrony, and prefrontal integration as necessary neural components of consciousness. Testing for these specifically distinguishes unconscious reflexive responses from genuine conscious processing. fMRI mental imagery tasks (e.g., 'imagine playing tennis') probe for volitional neural activity that requires consciousness, while EEG gamma synchrony tests for the binding mechanism associated with conscious perception. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model identifies thalamo-cortical loops, gamma synchrony, and prefrontal integration as necessary neural components of consciousness. Testing for these specifically distinguishes unconscious reflexive responses from genuine conscious processing. fMRI mental imagery tasks (e.g., 'imagine playing tennis') probe for volitional neural activity that requires consciousness, while EEG gamma synchrony tests for the binding mechanism associated with conscious perception. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
 
 ## Resources

@@ -311,6 +311,31 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+TEACH YOUR MODEL A RULE!
+
+Look at your model. Right now, when Wind Interaction is ON, Travel Distance
+goes way up — even when it shouldn't!
+
+In the real world, Wind Interaction only changes Travel Distance when
+Seed Shape (fluffy/winged) is happening. Let's teach your model this rule!
+
+Task A: ADD THE RULE
+   • Click on the arrow from Wind Interaction to Travel Distance
+   • Click "Conditions" in the toolbar
+   • Set: IF Seed Shape (fluffy/winged) is ON
+   • Click "Save Conditions"
+
+Task B: TEST IT
+   • Run your simulation again
+   • Does it make more sense now?
+   • Try turning Seed Shape (fluffy/winged) ON and OFF — see what changes!
+
+Now your model is SMARTER! It knows the rules of the real world.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -832,108 +857,105 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Develop a simple model) + DCI LS2.A (Plants depend on animals for seed dispersal) + CCC4 (Describe how parts of a system work together)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Seed Shape, Wind Interaction, Travel Distance. Some components are external (Seed Shape, Wind Interaction) and some are internal (Travel Distance). The student needs to understand what each component represents and how they are organized.
+A student builds a model to show how seeds travel. In the model, Seed Shape is an external component because nature gives each seed its shape. Travel Distance is an internal component that changes based on the seed shape and wind. The model shows that fluffy or winged seed shapes have a positive relationship with travel distance, meaning fluffier seeds travel farther.
 
-What is seed dispersal?
+A new seed is added to the model. It is very heavy and round, like a marble. Based on the model, how far will this seed travel in the wind?
 
-A. When seeds stay under the parent plant
-B. When seeds move away from the parent plant to a new place
-C. When seeds get eaten and are gone forever
-D. When plants grow taller
+A. It will fly higher than any other seed
+B. The same distance as a fluffy seed, because all seeds travel the same
+C. Very far, because heavy seeds catch more wind
+D. Not far at all, because the heavy round shape does not catch the wind
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Yes! Seed dispersal is when seeds move away from the parent plant to a new place where they can grow. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows a positive relationship between fluffy or winged shape and travel distance. A heavy round seed is the opposite of fluffy, so it will not catch the wind and will fall straight to the ground near the parent plant. If you chose C, heavy seeds cannot catch the wind. They are too heavy for the air to carry them. If you chose B, the whole point of the model is that different seed shapes travel different distances. They do not all travel the same. If you chose A, heavy round seeds cannot fly at all. They drop straight down because of their weight.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.2 (Use a model to represent how something works) + DCI LS2.A (Animals help disperse seeds and pollinate plants) + CCC6 (Relate structure to function)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Wind Interaction increases, Travel Distance increases. The student is trying to understand why these relationships are positive or negative.
+A squirrel picks up an acorn and buries it in the ground far from the oak tree. The squirrel forgets where it buried the acorn. In the spring, a new oak tree starts growing in that spot.
 
-A dandelion seed has a fluffy top. An acorn is heavy and round. Which one will travel farther in the wind?
+How did the squirrel help with seed dispersal?
 
-A. The acorn because it is bigger
-B. They will travel the same distance
-C. The dandelion seed because its fluffy shape catches the wind
-D. Neither one can travel in the wind
+A. The squirrel hurt the oak tree by taking its acorn
+B. The squirrel ate the acorn and it disappeared forever
+C. The squirrel carried the seed away from the parent tree and buried it in a new place where it could grow
+D. The squirrel planted the acorn on purpose because it wanted to grow a tree
 
 Correct Answer: C
 
-Feedback: Correct! The dandelion seed's fluffy top catches the wind like a parachute, helping it float far away. The heavy acorn cannot float and just drops to the ground. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Animals like squirrels help with seed dispersal by carrying seeds to new locations. Even though the squirrel did not mean to plant a tree, burying the acorn far from the parent tree gave it a place to grow without competing with the parent. If you chose B, the squirrel buried the acorn, it did not eat it. The acorn was still whole and able to grow. If you chose D, squirrels do not plan to grow trees. They bury acorns to eat later but sometimes forget. The tree-planting is accidental. If you chose A, losing one acorn does not hurt the oak tree. Oak trees make hundreds of acorns. The squirrel actually helped the tree species by spreading its seeds.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Analyze data from observations) + DCI LS2.A (Plants depend on dispersal for survival) + CCC6 (Relate the shape of an object to its function)
 
-A student runs a simulation of the model. The model shows that when Wind Interaction increases, Travel Distance increases. The student changes one variable to see how the whole system responds.
+A class tested three different seed types in front of a fan. They recorded how far each seed traveled:
 
-What is an adaptation?
+Dandelion seed (fluffy top): traveled 8 feet. Maple seed (wing shape): traveled 5 feet. Acorn (heavy, round): traveled 0 feet, it fell straight down.
 
-A. A toy for plants to play with
-B. A body part or feature that helps a living thing survive
-C. A type of soil
-D. A kind of weather
+What pattern does this data show about seed shape and travel distance?
+
+A. The fan was broken for the acorn test
+B. Seeds with fluffy or winged shapes travel farther in wind than heavy round seeds
+C. All seeds travel the same distance in wind
+D. Heavier seeds travel farther than light seeds
 
 Correct Answer: B
 
-Feedback: That is right! An adaptation is a body part or feature that helps a living thing survive. Fluffy tops on seeds and wings on maple seeds are adaptations for wind travel. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The data shows a clear pattern. Seeds with features that catch the air (fluffy dandelion, winged maple) traveled much farther than the heavy round acorn. The shape of the seed determines how well it catches the wind. If you chose D, the data shows the opposite. The heaviest seed (acorn) traveled zero feet while the lightest seed (dandelion) traveled the farthest. If you chose C, the data clearly shows different distances for different seeds: 8 feet, 5 feet, and 0 feet. They did not travel the same. If you chose A, the fan worked for all three tests. The acorn did not travel because it is too heavy for the wind to carry.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.3 (Compare models to the real world) + DCI LS2.A (Seed dispersal helps plants survive) + CCC4 (Describe how parts of a system interact)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In a seed dispersal model, Wind Interaction is an external component. When wind is strong, fluffy seeds travel very far (positive relationship). A student wants to test what happens when there is NO wind.
 
-In our model, what happened to Travel Distance when the Seed Shape was fluffy and there was wind?
+What would the model predict happens to fluffy seeds with no wind?
 
-A. Travel Distance was very short
-B. Travel Distance was very far
-C. Travel Distance did not change at all
-D. The seed could not move
+A. Without wind, the seeds would grow right where they are
+B. Fluffy seeds would still travel far because their shape makes them fly on their own
+C. Fluffy seeds would travel even farther without wind
+D. Fluffy seeds would not travel far because they need wind to carry them, even though their shape can catch air
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! When the Seed Shape was fluffy and there was wind, Travel Distance was far. The fluffy shape catches the air and helps the seed float a long way. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The model shows that both seed shape AND wind work together to move seeds. A fluffy shape catches the air, but without wind blowing, there is no air movement to carry the seed. Both components need to work together. If you chose B, fluffy seeds cannot fly on their own. They need moving air (wind) to carry them. Without wind, even a fluffy seed drops near the parent plant. If you chose C, no wind means no movement of air. Seeds need wind to travel, so no wind means shorter distance, not longer. If you chose A, the question asks about travel, not growing. Seeds do not grow instantly where they land.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1 (Construct an explanation using observations) + DCI LS2.A (Dispersal helps plants find space and resources) + CCC4 (Describe why components of a system are important)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Seed Shape, Wind Interaction), but they can take action on internal components (Travel Distance). They need to decide which action would be most effective based on what the model shows.
+A scientist studies a meadow. She notices that dandelion plants are spread out all across the meadow, but an oak tree has dozens of small oak seedlings crowded right under it. The crowded seedlings are thin and pale because they do not get enough sunlight.
 
-How do seeds get to new places if plants cannot walk?
+Why are the dandelions spread out but the oak seedlings are crowded?
 
-A. Seeds can only grow right under the parent plant
-B. People must plant every seed by hand
-C. Wind, water, and animals can carry seeds to new places
-D. Seeds walk to new places when nobody is watching
+A. Dandelion seeds have fluffy tops that catch the wind and travel far, but heavy acorns fall right under the parent tree
+B. Oak trees want their babies nearby so they can protect them
+C. Dandelions are smarter than oak trees and choose better places to grow
+D. Someone planted the dandelions in a pattern
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: That is right! Wind, water, and animals are all ways seeds travel to new places, even though the parent plant cannot move. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Dandelion seeds have adaptations (fluffy tops) that let them travel far in the wind, so they spread out across the meadow. Acorns are heavy and round, so they fall near the parent tree and get crowded. Seed shape determines how far seeds disperse. If you chose C, plants do not make choices. Their seed shape determines where they end up. If you chose D, nobody planted the dandelions. The wind carried their fluffy seeds to spots all across the meadow. If you chose B, trees do not protect seedlings. The crowded seedlings are actually struggling because they are competing for sunlight.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.2, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.2, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.2, CCC4)
+Question 1: D (Cognitive Level: Predict — SEP 2.1, DCI LS2.A, CCC4)
+Question 2: C (Cognitive Level: Identify — SEP 2.2, DCI LS2.A, CCC6)
+Question 3: B (Cognitive Level: Reason + Evidence — SEP 4.1, DCI LS2.A, CCC6)
+Question 4: D (Cognitive Level: Predict — SEP 2.3, DCI LS2.A, CCC4)
+Question 5: A (Cognitive Level: Reason + Explain — SEP 6.1, DCI LS2.A, CCC4)
 
-
+---
 ## Resources
 
 | Resource | Link |

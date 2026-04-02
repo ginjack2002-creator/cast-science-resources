@@ -31,6 +31,100 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* ===== MULTIPLE CHOICE QUESTIONS ===== */
+.mc-section-intro {
+  background: var(--purple-bg);
+  border-left: 4px solid var(--purple-brand);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 16px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+}
+.mc-question-block {
+  margin-bottom: 14px;
+  page-break-inside: avoid;
+}
+.mc-question-text {
+  font-weight: 700;
+  font-size: 10pt;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.mc-q-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  background: var(--purple-brand);
+  color: white;
+  border-radius: 50%;
+  font-size: 9pt;
+  font-weight: 800;
+  font-family: 'Quicksand', sans-serif;
+}
+.mc-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  margin-left: 30px;
+}
+.mc-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  padding: 4px 8px;
+  border: 1.5px solid var(--purple-light);
+  border-radius: 6px;
+  background: white;
+}
+.mc-choice-letter {
+  font-weight: 800;
+  color: var(--purple-brand);
+  font-family: 'Quicksand', sans-serif;
+  min-width: 14px;
+}
+.mc-post-header {
+  background: linear-gradient(135deg, var(--teal-brand), var(--purple-brand));
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 11pt;
+  margin-bottom: 12px;
+}
+/* Answer key MC styles */
+.mc-answer-block {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: var(--purple-bg);
+  border-radius: 8px;
+  font-size: 9pt;
+  page-break-inside: avoid;
+}
+.mc-answer-q {
+  font-weight: 700;
+  font-size: 9.5pt;
+  margin-bottom: 4px;
+}
+.mc-answer-correct {
+  color: var(--green-pos);
+  font-weight: 700;
+}
+.mc-answer-feedback {
+  font-size: 8.5pt;
+  color: var(--gray-text);
+  margin-top: 3px;
+  font-style: italic;
+}
+
 @page { size: letter; margin: 0.5in; }
 
 @media print {
@@ -622,6 +716,39 @@ h3.sub-heading { font-family: 'Quicksand', sans-serif; font-size: 11pt; font-wei
       <h4>Key Discoveries</h4>
       <ul><li>Gravity pulls everything down toward the ground</li><li>When you drop something from higher up, it falls faster</li><li>Gravity never stops — it is always pulling things down</li></ul>
     </div>
+    <h4 style="margin-top:12px;">Multiple Choice Pre-Assessment Answer Key</h4><div class="mc-answer-block">
+        <div class="mc-answer-q">1. What happens when you let go of a ball?</div>
+        <div class="mc-answer-correct">Correct: A) It falls down</div>
+        <div class="mc-answer-feedback">Yes! When you let go of a ball, it always falls down to the ground.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">2. If you drop a rock, which way does it go?</div>
+        <div class="mc-answer-correct">Correct: C) It goes down</div>
+        <div class="mc-answer-feedback">That is right! A rock always falls down when you drop it.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">3. What do you think makes things fall to the ground?</div>
+        <div class="mc-answer-correct">Correct: B) Something invisible pulls them down</div>
+        <div class="mc-answer-feedback">Good thinking! Something invisible called gravity pulls everything down toward the ground.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">4. If you hold a toy up high and let go, what will happen?</div>
+        <div class="mc-answer-correct">Correct: B) It will fall down</div>
+        <div class="mc-answer-feedback">Yes! The toy will fall down because gravity pulls it toward the ground.</div>
+      </div><h4 style="margin-top:12px;">Multiple Choice Post-Assessment Answer Key</h4><div class="mc-answer-block">
+        <div class="mc-answer-q">1. What is gravity?</div>
+        <div class="mc-answer-correct">Correct: B) A pull that makes things fall down</div>
+        <div class="mc-answer-feedback">That is right! Gravity is a pull that makes things fall down toward the ground.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">2. When you drop a ball from HIGH up, what happens?</div>
+        <div class="mc-answer-correct">Correct: B) It falls faster</div>
+        <div class="mc-answer-feedback">Yes! Dropping from higher up makes the ball fall faster because gravity has more time to pull on it.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">3. In our model, which part do WE get to decide?</div>
+        <div class="mc-answer-correct">Correct: B) Drop Height</div>
+        <div class="mc-answer-feedback">Yes! WE choose how high to hold the ball. That is the Drop Height, and it is the outside part of our model.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">4. Does gravity ever stop pulling on things?</div>
+        <div class="mc-answer-correct">Correct: C) No, it never stops</div>
+        <div class="mc-answer-feedback">That is right! Gravity never stops. It is always pulling on everything, even when things are sitting on a table.</div>
+      </div>
   </div>
   <div class="page-footer">
     <span class="footer-logo">ModelIt!</span>

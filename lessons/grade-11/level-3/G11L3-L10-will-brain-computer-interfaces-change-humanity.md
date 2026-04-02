@@ -367,6 +367,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Electrode Count and Density → Signal-to-Noise Ratio relationship as
+unconditional. However, this relationship is scientifically
+contingent on Interface Invasiveness being active. Without this condition,
+the simulation produces inaccurate results: Electrode Count and Density drives Signal-to-Noise Ratio
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Electrode Count and Density → Signal-to-Noise Ratio
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Interface Invasiveness is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Interface Invasiveness active and observe
+     how Electrode Count and Density's effect on Signal-to-Noise Ratio is now gated
+   • Toggle Interface Invasiveness ON/OFF while Electrode Count and Density remains constant
+   • Verify that Signal-to-Noise Ratio only responds to Electrode Count and Density when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Interface Invasiveness → Signal-to-Noise Ratio
+   • Set condition: IF Electrode Count and Density is ON
+   • This ensures Interface Invasiveness's effect on Signal-to-Noise Ratio
+     is contingent on Electrode Count and Density being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -934,107 +970,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI LS1.A (Structure and function of organisms) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Electrode Count and Density, Signal-to-Noise Ratio, Decoding Algorithm Accuracy, Tissue Response, Interface Invasiveness, Brain Adaptation Rate, Information Transfer Rate. Some components are external (Electrode Count and Density, Interface Invasiveness) and some are internal (Signal-to-Noise Ratio, Decoding Algorithm Accuracy, Tissue Response, Brain Adaptation Rate, Information Transfer Rate). The student needs to understand what each component represents and how they are organized.
+A neuroscience team implants a 1,024-electrode brain-computer interface (BCI) array into the motor cortex of a patient with complete spinal cord injury. The electrodes record electrical signals from approximately 200 individual neurons simultaneously. Signal processing algorithms decode the patient's intended hand movements from neural firing patterns, allowing control of a robotic arm with 7 degrees of freedom. The system achieves 95% accuracy for simple grasp-and-release tasks but only 72% accuracy for complex multi-finger manipulation, with a 50-millisecond delay between neural intent and robotic movement.
 
 A student's BCI model shows that doubling electrode count from 96 to 192 improves decoding accuracy from 78% to 89% but increases the tissue response severity index by 60%. What is the most scientifically rigorous evaluation of this trade-off?
 
-A. More electrodes are always better because accuracy is the primary goal
-B. The accuracy improvement exhibits diminishing returns (11 percentage points from doubling), while the tissue response increases substantially (60%), suggesting that at some electrode density the chronic immune damage will degrade signals faster than additional electrodes improve them, creating a practical ceiling on electrode count
-C. Tissue response is irrelevant because it only affects the first month after implantation
-D. The solution is to use 1,000 electrodes to overcome any tissue response
+A. The accuracy improvement exhibits diminishing returns (11 percentage points from doubling), while the tissue response increases substantially (60%), suggesting that at some electrode density the chronic immune damage will degrade signals faster than additional electrodes improve them, creating a practical ceiling on electrode count
+B. The solution is to use 1,000 electrodes to overcome any tissue response
+C. More electrodes are always better because accuracy is the primary goal
+D. Tissue response is irrelevant because it only affects the first month after implantation
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The diminishing accuracy returns versus accelerating tissue damage predicts a crossover point where more electrodes actually harm long-term performance. The optimal count balances acute decoding improvement against chronic signal degradation from immune response. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The diminishing accuracy returns versus accelerating tissue damage predicts a crossover point where more electrodes actually harm long-term performance. The optimal count balances acute decoding improvement against chronic signal degradation from immune response. If you chose C, this response overgeneralizes without considering the specific mechanisms and evidence presented. The key insight is the asymmetry: accuracy gains diminish while tissue damage accelerates. At some density, the chronic glial scarring from additional electrodes will degrade signals faster than the extra channels improve decoding, creating a practical ceiling determined by the immune response. If you chose D, this answer dismisses relevant factors that the evidence directly addresses. The key insight is the asymmetry: accuracy gains diminish while tissue damage accelerates. At some density, the chronic glial scarring from additional electrodes will degrade signals faster than the extra channels improve decoding, creating a practical ceiling determined by the immune response. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. The key insight is the asymmetry: accuracy gains diminish while tissue damage accelerates. At some density, the chronic glial scarring from additional electrodes will degrade signals faster than the extra channels improve decoding, creating a practical ceiling determined by the immune response.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI LS1.A (Structure and function of organisms) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Noise Ratio increases, Decoding Algorithm Accuracy increases; when Brain Adaptation Rate increases, Decoding Algorithm Accuracy increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of neural signal decoding reveals the fundamental challenge of BCI: the motor cortex contains approximately 6 million neurons controlling hand movement, but current implants can only record from 200-1,000 neurons (0.003-0.017% of the total). The model shows that decoding accuracy increases logarithmically with electrode count: doubling electrodes from 500 to 1,000 improves accuracy by only 8%. This suggests that simply adding more electrodes faces diminishing returns, and that fundamentally different signal processing approaches (such as recording from neural population dynamics rather than individual neurons) may be necessary.
 
 The model demonstrates that brain adaptation rate (neuroplasticity) initially improves BCI performance rapidly, then plateaus after 2-3 months. A student claims that performance will continue to improve indefinitely with training. What does the model data suggest?
 
-A. The student is correct; brain adaptation has no limits
-B. The plateau suggests that neuroplasticity has finite capacity for BCI-related adaptation: the brain can only reorganize neural patterns so much before it reaches the limits of cortical reorganization for the given electrode configuration, setting a performance ceiling for each hardware design
-C. The plateau is caused by the user losing motivation, not biological limits
-D. Performance will eventually decrease because the brain forgets how to use the BCI
+A. The plateau suggests that neuroplasticity has finite capacity for BCI-related adaptation: the brain can only reorganize neural patterns so much before it reaches the limits of cortical reorganization for the given electrode configuration, setting a performance ceiling for each hardware design
+B. Performance will eventually decrease because the brain forgets how to use the BCI
+C. The student is correct; brain adaptation has no limits
+D. The plateau is caused by the user losing motivation, not biological limits
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Neuroplasticity is powerful but bounded. The brain can optimize its patterns for a given electrode configuration, but the information capacity is ultimately limited by the number and placement of electrodes. Higher performance requires better hardware, not just more training. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Neuroplasticity is powerful but bounded. The brain can optimize its patterns for a given electrode configuration, but the information capacity is ultimately limited by the number and placement of electrodes. Higher performance requires better hardware, not just more training. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. The plateau reflects biological limits of cortical reorganization. While the brain can learn to produce more BCI-compatible patterns, this adaptation is constrained by the electrode array's spatial sampling. To exceed the plateau requires hardware improvements, not additional training time. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. The plateau reflects biological limits of cortical reorganization. While the brain can learn to produce more BCI-compatible patterns, this adaptation is constrained by the electrode array's spatial sampling. To exceed the plateau requires hardware improvements, not additional training time. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The plateau reflects biological limits of cortical reorganization. While the brain can learn to produce more BCI-compatible patterns, this adaptation is constrained by the electrode array's spatial sampling. To exceed the plateau requires hardware improvements, not additional training time.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.A (Define and delimit engineering problems) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Noise Ratio increases, Decoding Algorithm Accuracy increases and when Brain Adaptation Rate increases, Decoding Algorithm Accuracy increases. The student changes one variable to see how the whole system responds.
+Researchers document the long-term performance of implanted BCIs over 5 years. In the first year, signal quality is excellent with clear single-neuron recordings. By year 2, the body's immune response encapsulates the electrode array in scar tissue (gliosis), reducing signal amplitude by 40%. By year 3, only 45% of electrodes still record usable signals. The computational model identifies this as a foreign body response: the brain treats the implant as an invader, surrounding it with non-conductive scar tissue that progressively insulates the electrodes from nearby neurons. Current solutions include anti-inflammatory coatings that delay but do not prevent gliosis.
 
 In the model, a student compares the signal-to-noise ratio (SNR) of noninvasive EEG, surface electrocorticography (ECoG), and penetrating intracortical arrays. The SNR values are 3:1, 30:1, and 300:1 respectively. What does this 100x range in SNR predict about the types of neural commands each system can decode?
 
 A. All three systems can decode the same neural commands with equal accuracy
-B. Higher SNR enables decoding of finer-grained neural commands: EEG can decode gross states (attention, relaxation), ECoG can decode individual finger movements, and intracortical arrays can potentially decode individual finger forces and fine motor sequences, because more precise neural patterns require higher signal fidelity to distinguish
-C. SNR only affects the speed of decoding, not the types of commands
-D. Lower SNR systems are preferable because they detect broader brain activity
+B. SNR only affects the speed of decoding, not the types of commands
+C. Lower SNR systems are preferable because they detect broader brain activity
+D. Higher SNR enables decoding of finer-grained neural commands: EEG can decode gross states (attention, relaxation), ECoG can decode individual finger movements, and intracortical arrays can potentially decode individual finger forces and fine motor sequences, because more precise neural patterns require higher signal fidelity to distinguish
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. SNR directly determines decoding granularity. Coarse mental states produce large, distinguishable signals detectable even at low SNR. Fine motor commands like individual finger movements produce subtle, similar signals that require high SNR to differentiate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: SNR directly determines decoding granularity. Coarse mental states produce large, distinguishable signals detectable even at low SNR. Fine motor commands like individual finger movements produce subtle, similar signals that require high SNR to differentiate. If you chose A, this response overgeneralizes without considering the specific mechanisms and evidence presented. The 100x SNR range maps directly to decoding resolution. Low SNR can only distinguish large-scale brain states; medium SNR resolves individual body parts; high SNR can potentially distinguish individual finger movements. Signal fidelity determines how fine-grained the decoded commands can be. If you chose B, this answer oversimplifies a multi-factor system by focusing on a single variable. The 100x SNR range maps directly to decoding resolution. Low SNR can only distinguish large-scale brain states; medium SNR resolves individual body parts; high SNR can potentially distinguish individual finger movements. Signal fidelity determines how fine-grained the decoded commands can be. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. The 100x SNR range maps directly to decoding resolution. Low SNR can only distinguish large-scale brain states; medium SNR resolves individual body parts; high SNR can potentially distinguish individual finger movements. Signal fidelity determines how fine-grained the decoded commands can be.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.A (Structure and function of organisms) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A non-invasive BCI company develops an EEG-based system that reads brain signals through the skull using 256 scalp electrodes. Unlike implanted BCIs, this system records the combined activity of millions of neurons, not individual cells, producing a blurry average signal. The system can reliably decode binary choices (left/right, yes/no) at 90% accuracy and allows users to type at 8 words per minute using a visual keyboard interface. For comparison, the implanted BCI enables 40 words per minute. The model evaluates the tradeoff between surgical risk and performance: implanted BCIs are 5x more capable but require brain surgery with associated infection and complication risks.
 
 The model shows that information transfer rate (ITR) is the product of decoding accuracy and decoding speed. A system with 95% accuracy at 5 decisions/second achieves higher ITR than a system with 70% accuracy at 10 decisions/second. What design principle does this illustrate?
 
 A. Speed is always more important than accuracy in BCI design
 B. Accuracy and speed jointly determine information throughput, and a system that is fast but inaccurate wastes bandwidth on errors and corrections. Optimal BCI design must maximize the accuracy-speed product, not either factor alone
-C. Accuracy above 80% has no additional benefit
-D. The two systems are equivalent because they use different decoding algorithms
+C. The two systems are equivalent because they use different decoding algorithms
+D. Accuracy above 80% has no additional benefit
 
 Correct Answer: B
 
-Feedback: Correct. ITR = accuracy x speed. The 95%/5Hz system achieves 4.75 effective decisions/second, while the 70%/10Hz system achieves only 7 effective decisions/second but requires significant error correction overhead. The accuracy-speed product is the true performance metric. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: ITR = accuracy x speed. The 95%/5Hz system achieves 4.75 effective decisions/second, while the 70%/10Hz system achieves only 7 effective decisions/second but requires significant error correction overhead. The accuracy-speed product is the true performance metric. If you chose A, this response overgeneralizes without considering the specific mechanisms and evidence presented. Information transfer rate is the product of accuracy and speed. Fast but inaccurate decisions require corrections that consume bandwidth. The optimal design point maximizes this product, and typically moderate speed with high accuracy outperforms high speed with poor accuracy. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. Information transfer rate is the product of accuracy and speed. Fast but inaccurate decisions require corrections that consume bandwidth. The optimal design point maximizes this product, and typically moderate speed with high accuracy outperforms high speed with poor accuracy. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Information transfer rate is the product of accuracy and speed. Fast but inaccurate decisions require corrections that consume bandwidth. The optimal design point maximizes this product, and typically moderate speed with high accuracy outperforms high speed with poor accuracy.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.A (Define and delimit engineering problems) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Electrode Count and Density, Interface Invasiveness), but they can take action on internal components (Signal-to-Noise Ratio, Decoding Algorithm Accuracy, Tissue Response, Brain Adaptation Rate, Information Transfer Rate). They need to decide which action would be most effective based on what the model shows.
+An interdisciplinary committee reviews the ethical implications of advanced BCIs that could eventually read not just motor intentions but cognitive states, emotional responses, and memories. Current technology cannot decode thoughts, but the trajectory suggests that within 20-30 years, BCIs with millions of electrodes could access higher-order cognitive information. The systems analysis considers four dimensions: medical benefit (restoring communication and mobility for paralyzed patients), enhancement potential (augmenting healthy humans' cognitive capabilities), privacy risk (involuntary thought surveillance), and equity concerns (if BCIs enhance cognition, will access be limited to those who can afford them, creating a new dimension of inequality?). The model must balance accelerating medical benefits with establishing safeguards against misuse before the technology matures.
 
 Based on the BCI model, which conclusion about the long-term future of brain-computer interfaces is best supported by the simulation data?
 
-A. BCIs will replace all conventional computer interfaces within a decade
-B. The model reveals three interdependent bottlenecks: the tissue response limits implant longevity, the SNR ceiling limits decoding complexity, and neuroplasticity limits set performance plateaus for each hardware configuration. Meaningful advances require simultaneous progress across all three constraints, and each improvement enables but does not guarantee progress on the others
-C. BCIs will never advance beyond current capabilities because the brain is too complex
+A. BCIs will never advance beyond current capabilities because the brain is too complex
+B. BCIs will replace all conventional computer interfaces within a decade
+C. The model reveals three interdependent bottlenecks: the tissue response limits implant longevity, the SNR ceiling limits decoding complexity, and neuroplasticity limits set performance plateaus for each hardware configuration. Meaningful advances require simultaneous progress across all three constraints, and each improvement enables but does not guarantee progress on the others
 D. Only noninvasive BCIs have a viable future because invasive systems cause too much tissue damage
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model identifies three coupled bottlenecks that must be addressed together. Better electrodes (reduced tissue response) enable higher SNR, which enables finer decoding, which benefits from neuroplasticity. But each constraint limits the others, requiring coordinated advancement. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model identifies three coupled bottlenecks that must be addressed together. Better electrodes (reduced tissue response) enable higher SNR, which enables finer decoding, which benefits from neuroplasticity. But each constraint limits the others, requiring coordinated advancement. If you chose B, this response overgeneralizes without considering the specific mechanisms and evidence presented. The model reveals three interdependent constraints: tissue biocompatibility limits how long implants function, SNR limits what can be decoded, and neuroplasticity limits how well the brain adapts. Progress requires addressing all three simultaneously because they constrain each other. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. The model reveals three interdependent constraints: tissue biocompatibility limits how long implants function, SNR limits what can be decoded, and neuroplasticity limits how well the brain adapts. Progress requires addressing all three simultaneously because they constrain each other. If you chose D, this choice oversimplifies a multi-factor system by focusing on a single variable. The model reveals three interdependent constraints: tissue biocompatibility limits how long implants function, SNR limits what can be decoded, and neuroplasticity limits how well the brain adapts. Progress requires addressing all three simultaneously because they constrain each other.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
+Question 1: A (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-LS1-2, CCC4)
+Question 2: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS1-2, CCC2)
+Question 3: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS1-2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-1, CCC7)
+Question 5: C (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-1, CCC4)
 
+---
 
 ## Resources
 

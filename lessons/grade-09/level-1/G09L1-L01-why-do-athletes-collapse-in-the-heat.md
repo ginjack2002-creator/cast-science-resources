@@ -900,15 +900,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In a computational model of thermoregulation, a student sets Physical Exertion to maximum and Hydration Level to low. The model shows Core Temperature rising sharply while Sweat Rate initially increases then drops to near zero. Which explanation best interprets this model behavior?
 
-A. The model is malfunctioning because sweat rate should continue to increase with temperature
-B. The negative feedback loop has broken down because the body cannot produce sweat without adequate water, causing an uncontrolled temperature increase
-C. The body has switched from negative feedback to a more efficient cooling mechanism
+A. The body has switched from negative feedback to a more efficient cooling mechanism
+B. The model is malfunctioning because sweat rate should continue to increase with temperature
+C. The negative feedback loop has broken down because the body cannot produce sweat without adequate water, causing an uncontrolled temperature increase
 D. Sweat rate decreases because the body has successfully cooled itself and no longer needs evaporative cooling
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This model output demonstrates the critical failure point in thermoregulation. Sweat production requires water. When hydration is depleted, the negative feedback loop breaks because the effector (sweat glands) can no longer function, converting the system to a dangerous positive feedback scenario. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This model output demonstrates the critical failure point in thermoregulation. Sweat production requires water. When hydration is depleted, the negative feedback loop breaks because the effector (sweat glands) can no longer function, converting the system to a dangerous positive feedback scenario. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -920,14 +919,13 @@ In the computational model for this lesson, a student draws arrows between compo
 A student's model shows that during the 'Gradual Dehydration' scenario, core temperature remains stable for the first 45 minutes, then begins rising rapidly. Which concept best explains this pattern?
 
 A. The system has a tipping point where the feedback loop transitions from maintaining homeostasis to failing catastrophically
-B. The body's thermostat resets to a higher temperature after 45 minutes of exercise
+B. Core temperature always rises linearly during exercise regardless of hydration
 C. The model has a built-in delay that prevents temperature changes for the first 45 minutes
-D. Core temperature always rises linearly during exercise regardless of hydration
+D. The body's thermostat resets to a higher temperature after 45 minutes of exercise
 
 Correct Answer: A
 
-Feedback: Correct. The model reveals a critical tipping point. Initially, the body has enough hydration to maintain the negative feedback loop. As water depletes, the system reaches a threshold where cooling capacity can no longer match heat production, and the system shifts from stable homeostasis to runaway heating. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals a critical tipping point. Initially, the body has enough hydration to maintain the negative feedback loop. As water depletes, the system reaches a threshold where cooling capacity can no longer match heat production, and the system shifts from stable homeostasis to runaway heating. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -938,15 +936,14 @@ A student runs a simulation of the model. The model shows that when Physical Exe
 
 Two students build models of thermoregulation. Student A's model includes only Core Temperature and Sweat Rate. Student B's model adds Hydration Level and Physical Exertion. Which statement best evaluates the difference between these models?
 
-A. Student A's model is superior because simpler models are always more accurate
-B. Student B's model can predict system failure conditions that Student A's model cannot, because it includes the external inputs that drive and constrain the feedback loop
-C. Both models are equally valid because they contain the same core feedback mechanism
-D. Neither model is useful because thermoregulation requires at least ten components to model accurately
+A. Neither model is useful because thermoregulation requires at least ten components to model accurately
+B. Both models are equally valid because they contain the same core feedback mechanism
+C. Student A's model is superior because simpler models are always more accurate
+D. Student B's model can predict system failure conditions that Student A's model cannot, because it includes the external inputs that drive and constrain the feedback loop
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Student B's model includes the external variables (hydration and exertion) that determine whether the feedback loop functions or breaks down. Without these inputs, Student A's model cannot predict the conditions under which homeostasis fails. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Student B's model includes the external variables (hydration and exertion) that determine whether the feedback loop functions or breaks down. Without these inputs, Student A's model cannot predict the conditions under which homeostasis fails. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 4
@@ -957,15 +954,14 @@ Scientists are studying data related to this system. They collected observations
 
 Based on model evidence, which intervention would be most effective at preventing heat-related illness during a high-intensity outdoor practice in 90°F weather?
 
-A. Moving practice to a shaded area, because shade eliminates the risk of overheating
-B. Implementing mandatory hydration breaks every 15 minutes, because maintaining hydration preserves the integrity of the negative feedback loop
-C. Reducing practice duration to 30 minutes, because heat illness cannot occur in short time periods
-D. Having athletes wear lighter-colored clothing, because clothing color is the primary determinant of core temperature
+A. Having athletes wear lighter-colored clothing, because clothing color is the primary determinant of core temperature
+B. Reducing practice duration to 30 minutes, because heat illness cannot occur in short time periods
+C. Implementing mandatory hydration breaks every 15 minutes, because maintaining hydration preserves the integrity of the negative feedback loop
+D. Moving practice to a shaded area, because shade eliminates the risk of overheating
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates that hydration is the critical variable that determines whether the thermoregulatory feedback loop continues to function. Mandatory hydration breaks maintain the body's ability to produce sweat and sustain evaporative cooling. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that hydration is the critical variable that determines whether the thermoregulatory feedback loop continues to function. Mandatory hydration breaks maintain the body's ability to produce sweat and sustain evaporative cooling. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -978,21 +974,20 @@ A student extends their thermoregulation model by adding an Acclimatization Leve
 
 A. Acclimatized athletes do not produce body heat during exercise
 B. Acclimatization improves sweating efficiency and plasma volume, allowing the cooling system to operate effectively at higher core temperatures and lower hydration levels
-C. Acclimatization eliminates the body's need for water during exercise
-D. Acclimatized athletes have a lower resting core temperature, so they can tolerate unlimited heat exposure
+C. Acclimatized athletes have a lower resting core temperature, so they can tolerate unlimited heat exposure
+D. Acclimatization eliminates the body's need for water during exercise
 
 Correct Answer: B
 
-Feedback: Correct. Heat acclimatization produces physiological adaptations including earlier onset of sweating, increased sweat volume, expanded plasma volume, and improved cardiovascular efficiency. These changes extend the functional range of the feedback loop before it reaches its tipping point. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Heat acclimatization produces physiological adaptations including earlier onset of sweating, increased sweat volume, expanded plasma volume, and improved cardiovascular efficiency. These changes extend the functional range of the feedback loop before it reaches its tipping point. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.3, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.3, CCC4)
 Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.3, CCC1)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.3, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.3, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.3, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.3, CCC4)
 
 

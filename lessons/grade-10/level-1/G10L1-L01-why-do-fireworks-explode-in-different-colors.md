@@ -904,14 +904,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 A firework shell contains both strontium chloride (red) and copper chloride (blue). When detonated, the firework produces a purple color. Which explanation best accounts for this observation using the computational model?
 
 A. The two metals chemically react to form a new compound that emits purple photons.
-B. Both metals independently emit their characteristic photons, and the mixture of red and blue light is perceived as purple by the human eye.
-C. The copper lowers the combustion temperature, shifting the strontium emission from red to purple.
+B. The copper lowers the combustion temperature, shifting the strontium emission from red to purple.
+C. Both metals independently emit their characteristic photons, and the mixture of red and blue light is perceived as purple by the human eye.
 D. The combined electron clouds of both metals create a new set of energy levels that correspond to purple light.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Each metal retains its unique emission spectrum. The strontium emits red photons and the copper emits blue photons independently. The combination is perceived as purple through additive color mixing. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Each metal retains its unique emission spectrum. The strontium emits red photons and the copper emits blue photons independently. The combination is perceived as purple through additive color mixing. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -922,15 +921,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the computational model, increasing the Oxidizer Strength to its maximum value causes the firework color to wash out toward white. Which of the following best explains this result?
 
-A. Excessive oxidizer causes the metal salts to decompose before they can emit light.
-B. At extremely high temperatures, blackbody radiation from the heated material overwhelms the characteristic emission lines of the metal.
+A. Maximum oxidizer causes all electrons to be stripped from the atoms, preventing any photon emission.
+B. Excessive oxidizer causes the metal salts to decompose before they can emit light.
 C. The oxidizer itself emits white light that covers up the metal's color.
-D. Maximum oxidizer causes all electrons to be stripped from the atoms, preventing any photon emission.
+D. At extremely high temperatures, blackbody radiation from the heated material overwhelms the characteristic emission lines of the metal.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. At very high combustion temperatures, the intense thermal (blackbody) radiation across all visible wavelengths overwhelms the discrete emission lines of the metal, producing white light. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. At very high combustion temperatures, the intense thermal (blackbody) radiation across all visible wavelengths overwhelms the discrete emission lines of the metal, producing white light. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -941,15 +939,14 @@ A student runs a simulation of the model. The model shows that when Element Type
 
 A student claims that the color of a firework is determined by the type of gunpowder used, not the metal salt. Based on the model, which evidence best refutes this claim?
 
-A. Changing only the metal salt while keeping the same gunpowder produces different colors.
-B. Gunpowder produces smoke that filters out certain colors of light.
-C. Different gunpowder mixtures burn at different rates but all produce white light.
-D. The model shows that gunpowder does not contain any electrons capable of emitting visible light.
+A. The model shows that gunpowder does not contain any electrons capable of emitting visible light.
+B. Changing only the metal salt while keeping the same gunpowder produces different colors.
+C. Gunpowder produces smoke that filters out certain colors of light.
+D. Different gunpowder mixtures burn at different rates but all produce white light.
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. The model demonstrates that changing only the Element Type component (metal salt) while holding gunpowder constant produces different colors. This proves the color originates from the metal's electron transitions, not the explosive. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates that changing only the Element Type component (metal salt) while holding gunpowder constant produces different colors. This proves the color originates from the metal's electron transitions, not the explosive. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -960,15 +957,14 @@ Scientists are studying data related to this system. They collected observations
 
 Astronomers use the same principles as firework chemistry to determine the composition of distant stars. Which model component most directly enables this astronomical application?
 
-A. Oxidizer Strength, because stars burn fuel similar to firework oxidizers.
-B. Combustion Temperature, because stellar temperatures determine which elements are present.
-C. Element Type, because each element's unique emission spectrum serves as a fingerprint identifiable across any distance.
-D. Color Wavelength, because all stars emit the same wavelengths regardless of composition.
+A. Element Type, because each element's unique emission spectrum serves as a fingerprint identifiable across any distance.
+B. Oxidizer Strength, because stars burn fuel similar to firework oxidizers.
+C. Color Wavelength, because all stars emit the same wavelengths regardless of composition.
+D. Combustion Temperature, because stellar temperatures determine which elements are present.
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Correct. Each element produces a unique emission spectrum regardless of distance. Astronomers analyze starlight for these characteristic spectral lines to identify which elements are present in the star's atmosphere. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Each element produces a unique emission spectrum regardless of distance. Astronomers analyze starlight for these characteristic spectral lines to identify which elements are present in the star's atmosphere. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -979,24 +975,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, a pyrotechnician wants to produce the purest possible green firework. Which combination of component settings would the model predict will yield the best result?
 
-A. Barium chloride with maximum Oxidizer Strength to ensure all electrons are excited.
-B. Barium chloride with moderate Oxidizer Strength to achieve sufficient electron excitation without excessive blackbody radiation.
-C. A mixture of strontium and copper chloride with high Oxidizer Strength.
-D. Any metal salt with maximum Combustion Temperature, since higher temperatures produce brighter and purer colors.
+A. Barium chloride with moderate Oxidizer Strength to achieve sufficient electron excitation without excessive blackbody radiation.
+B. Any metal salt with maximum Combustion Temperature, since higher temperatures produce brighter and purer colors.
+C. Barium chloride with maximum Oxidizer Strength to ensure all electrons are excited.
+D. A mixture of strontium and copper chloride with high Oxidizer Strength.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Barium produces green emission (~525 nm). Moderate oxidizer provides enough energy to excite electrons without generating excessive blackbody radiation that would wash out the color purity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Barium produces green emission (~525 nm). Moderate oxidizer provides enough energy to excite electrons without generating excessive blackbody radiation that would wash out the color purity. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.1, CCC2)
-Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.1, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.1, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.1, CCC2)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.1, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.1, CCC4)
 
 
 ## Resources

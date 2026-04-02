@@ -412,6 +412,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Grid Demand → Battery Storage relationship as
+unconditional. However, this relationship is scientifically
+contingent on Solar Output being active. Without this condition,
+the simulation produces inaccurate results: Grid Demand drives Battery Storage
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Grid Demand → Battery Storage
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Solar Output is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Solar Output active and observe
+     how Grid Demand's effect on Battery Storage is now gated
+   • Toggle Solar Output ON/OFF while Grid Demand remains constant
+   • Verify that Battery Storage only responds to Grid Demand when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Solar Output → Battery Storage
+   • Set condition: IF Wind Output is ON
+   • This ensures Solar Output's effect on Battery Storage
+     is contingent on Wind Output being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -982,15 +1018,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that during a sunny, windy day, renewable output exceeds demand by 40%. What happens to this excess energy in a grid with adequate battery storage versus one without?
 
-A. Excess energy is the same problem in both scenarios
+A. The grid shuts down when supply exceeds demand regardless of storage
 B. With adequate storage, excess energy charges batteries for later use during low-production periods; without storage, the excess is curtailed (wasted) because the grid cannot absorb more power than demand requires
 C. Excess renewable energy automatically increases demand to match supply
-D. The grid shuts down when supply exceeds demand regardless of storage
+D. Excess energy is the same problem in both scenarios
 
 Correct Answer: B
 
-Feedback: Correct. Storage converts a waste problem into an asset. Without batteries, excess renewable generation must be curtailed (dumped) because the grid requires constant supply-demand balance. With storage, that energy is captured for later use. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Storage converts a waste problem into an asset. Without batteries, excess renewable generation must be curtailed (dumped) because the grid requires constant supply-demand balance. With storage, that energy is captured for later use. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1001,15 +1036,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A simulation of a calm winter night shows battery storage depleting in 6 hours, after which fossil fuel backup activates to meet demand. What does this reveal about the current limitations of battery storage?
 
-A. Batteries are useless for renewable energy systems
-B. Current battery capacity can bridge short intermittency gaps (hours) but cannot economically cover extended periods of low renewable production, making some backup generation necessary
-C. The simulation proves that 100% renewable energy is impossible
-D. Battery technology has no room for improvement
+A. Current battery capacity can bridge short intermittency gaps (hours) but cannot economically cover extended periods of low renewable production, making some backup generation necessary
+B. The simulation proves that 100% renewable energy is impossible
+C. Battery technology has no room for improvement
+D. Batteries are useless for renewable energy systems
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Current battery technology effectively handles short gaps (hours) but the cost of storing enough energy for multi-day events (calm cloudy periods) is prohibitive. This is why backup generation remains necessary at high renewable penetration levels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Current battery technology effectively handles short gaps (hours) but the cost of storing enough energy for multi-day events (calm cloudy periods) is prohibitive. This is why backup generation remains necessary at high renewable penetration levels. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -1020,15 +1054,14 @@ A student runs a simulation of the model. The model shows that when Solar Output
 
 The model allows students to optimize energy mix across three competing objectives: minimize cost, minimize emissions, and maximize reliability. What does the optimization reveal?
 
-A. There is a single optimal solution that simultaneously minimizes cost, emissions, and maximizes reliability
-B. The three objectives create trade-offs where improving one metric often worsens another, requiring stakeholders to decide which priorities matter most
-C. Cost and emissions always improve together with no trade-off
-D. Reliability is independent of the energy mix chosen
+A. Reliability is independent of the energy mix chosen
+B. Cost and emissions always improve together with no trade-off
+C. There is a single optimal solution that simultaneously minimizes cost, emissions, and maximizes reliability
+D. The three objectives create trade-offs where improving one metric often worsens another, requiring stakeholders to decide which priorities matter most
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This is a multi-objective optimization problem with inherent trade-offs. Maximum renewable (lowest emissions) costs more and may reduce reliability. Maximum reliability requires backup fossil fuel (higher emissions). There is no single solution that maximizes all three. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This is a multi-objective optimization problem with inherent trade-offs. Maximum renewable (lowest emissions) costs more and may reduce reliability. Maximum reliability requires backup fossil fuel (higher emissions). There is no single solution that maximizes all three. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1040,14 +1073,13 @@ Scientists are studying data related to this system. They collected observations
 A student's model shows that connecting two geographically distant regions (one solar-rich, one wind-rich) reduces the probability of system-wide intermittency by 60%. What principle does this demonstrate?
 
 A. Geographic diversity has no effect on grid reliability
-B. Geographic diversity reduces correlated intermittency because weather patterns affecting solar and wind in one region are often independent of patterns in another, making simultaneous low production less likely
-C. Connecting distant regions doubles the total energy production
-D. Long-distance transmission has no energy losses
+B. Long-distance transmission has no energy losses
+C. Geographic diversity reduces correlated intermittency because weather patterns affecting solar and wind in one region are often independent of patterns in another, making simultaneous low production less likely
+D. Connecting distant regions doubles the total energy production
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Geographic diversity exploits the fact that weather is a local phenomenon. When one region has clouds (low solar), another may have sun. When one area is calm (low wind), another may be windy. Connecting diverse regions reduces the probability that all sources fail simultaneously. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Geographic diversity exploits the fact that weather is a local phenomenon. When one region has clouds (low solar), another may have sun. When one area is calm (low wind), another may be windy. Connecting diverse regions reduces the probability that all sources fail simultaneously. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1058,24 +1090,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the complete model analysis, why does the transition to 100% clean energy require systems thinking rather than simply building more solar panels and wind turbines?
 
-A. Because solar panels and wind turbines are inherently unreliable technologies
-B. Because the grid is an interconnected system where generation, storage, transmission, demand, and backup must be balanced simultaneously, and optimizing one component without considering the others creates new problems
-C. Because renewable energy is more expensive than fossil fuels in all scenarios
-D. Because building more renewable capacity always solves the intermittency problem
+A. Because the grid is an interconnected system where generation, storage, transmission, demand, and backup must be balanced simultaneously, and optimizing one component without considering the others creates new problems
+B. Because solar panels and wind turbines are inherently unreliable technologies
+C. Because building more renewable capacity always solves the intermittency problem
+D. Because renewable energy is more expensive than fossil fuels in all scenarios
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The grid is a coupled system. Adding solar without storage creates curtailment waste. Adding storage without grid interconnection limits geographic diversity benefits. Removing backup without adequate storage risks blackouts. Every component interacts, requiring integrated systems thinking. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The grid is a coupled system. Adding solar without storage creates curtailment waste. Adding storage without grid interconnection limits geographic diversity benefits. Removing backup without adequate storage risks blackouts. Every component interacts, requiring integrated systems thinking. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.3, CCC5)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.3, CCC5)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.3, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.3, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.3, CCC5)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.3, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.3, CCC4)
 
 
 ## Resources

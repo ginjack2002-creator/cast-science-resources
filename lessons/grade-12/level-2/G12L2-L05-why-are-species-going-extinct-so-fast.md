@@ -381,6 +381,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Climate Velocity → Population Viability relationship as
+unconditional. However, this relationship is scientifically
+contingent on Habitat Connectivity being active. Without this condition,
+the simulation produces inaccurate results: Climate Velocity drives Population Viability
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Climate Velocity → Population Viability
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Habitat Connectivity is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Habitat Connectivity active and observe
+     how Climate Velocity's effect on Population Viability is now gated
+   • Toggle Habitat Connectivity ON/OFF while Climate Velocity remains constant
+   • Verify that Population Viability only responds to Climate Velocity when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Habitat Connectivity → Population Viability
+   • Set condition: IF Ecosystem Function Index is ON
+   • This ensures Habitat Connectivity's effect on Population Viability
+     is contingent on Ecosystem Function Index being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -954,15 +990,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A model shows that extinction rates increase slowly with the first 30% of habitat loss but accelerate dramatically after 70% loss. What ecological principle explains this non-linear pattern?
 
-A. Species are equally distributed across all habitat, so loss is proportional
-B. Below 70% loss, remaining patches are large enough to support viable populations and maintain connectivity, but beyond that threshold, populations become too small and isolated to persist
-C. The first 30% of habitat lost contains no species
-D. After 70% loss, invasive species immediately colonize all remaining habitat
+A. After 70% loss, invasive species immediately colonize all remaining habitat
+B. Species are equally distributed across all habitat, so loss is proportional
+C. Below 70% loss, remaining patches are large enough to support viable populations and maintain connectivity, but beyond that threshold, populations become too small and isolated to persist
+D. The first 30% of habitat lost contains no species
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The non-linearity reflects population viability thresholds. Early habitat loss still leaves patches large and connected enough for viable populations. Beyond approximately 70% loss, remaining patches are too small for minimum viable populations and too isolated for recolonization, triggering rapid extinction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The non-linearity reflects population viability thresholds. Early habitat loss still leaves patches large and connected enough for viable populations. Beyond approximately 70% loss, remaining patches are too small for minimum viable populations and too isolated for recolonization, triggering rapid extinction. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -973,15 +1008,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model compares two landscapes with identical total protected area: one has a single large connected reserve, and the other has multiple small isolated fragments. The connected reserve supports significantly more species. Which concept does this demonstrate?
 
-A. Larger individual areas have lower per-hectare species diversity
+A. Small fragments are always more species-rich due to edge effects
 B. Connectivity is a force multiplier that makes protected areas more effective than equal area in isolated fragments, due to gene flow, migration, and viable population sizes
-C. Small fragments are always more species-rich due to edge effects
-D. Protected area size has no relationship to species conservation outcomes
+C. Protected area size has no relationship to species conservation outcomes
+D. Larger individual areas have lower per-hectare species diversity
 
 Correct Answer: B
 
-Feedback: Correct. This demonstrates the SLOSS principle (Single Large Or Several Small). Connected habitat supports larger, genetically healthier populations, enables migration and recolonization, and allows species to track climate change. The same total area in isolated fragments loses these connectivity benefits. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This demonstrates the SLOSS principle (Single Large Or Several Small). Connected habitat supports larger, genetically healthier populations, enables migration and recolonization, and allows species to track climate change. The same total area in isolated fragments loses these connectivity benefits. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -992,15 +1026,14 @@ A student runs a simulation of the model. The model shows that when Land Use Cha
 
 The model shows that wildlife corridors connecting fragmented habitats significantly reduce extinction rates even without stopping habitat loss. What mechanism best explains this finding?
 
-A. Corridors increase total habitat area enough to offset ongoing losses
-B. Corridors enable gene flow between isolated populations, allow recolonization of patches after local extinction, and permit species to shift ranges in response to climate change
-C. Corridors prevent all human access to protected areas
+A. Corridors enable gene flow between isolated populations, allow recolonization of patches after local extinction, and permit species to shift ranges in response to climate change
+B. Corridors prevent all human access to protected areas
+C. Corridors increase total habitat area enough to offset ongoing losses
 D. Corridors only benefit large mammal species and have no effect on overall extinction rates
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Corridors do not add significant habitat area but provide critical connectivity functions: gene flow prevents inbreeding in small populations, recolonization rescues patches from local extinction, and range-shifting enables climate adaptation. These functions reduce extinction risk disproportionately to the area corridors occupy. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Corridors do not add significant habitat area but provide critical connectivity functions: gene flow prevents inbreeding in small populations, recolonization rescues patches from local extinction, and range-shifting enables climate adaptation. These functions reduce extinction risk disproportionately to the area corridors occupy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1011,15 +1044,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student models the removal of a keystone pollinator species and observes that 12 plant species decline, followed by 8 herbivore species, 3 predator species, and 2 decomposer species. Which systems concept does this cascade demonstrate?
 
-A. Simple linear cause and effect
-B. Network propagation, where disruption at one node cascades through interdependent connections, amplifying the impact far beyond the directly affected species
-C. Random species loss unrelated to the initial removal
-D. Ecosystem resilience preventing any cascading effects
+A. Ecosystem resilience preventing any cascading effects
+B. Random species loss unrelated to the initial removal
+C. Simple linear cause and effect
+D. Network propagation, where disruption at one node cascades through interdependent connections, amplifying the impact far beyond the directly affected species
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The cascade demonstrates network propagation through species interaction networks. The pollinator's removal affects its plant partners, which affects their herbivores, which affects their predators, creating an amplifying chain reaction where one species loss triggers 25 additional declines. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The cascade demonstrates network propagation through species interaction networks. The pollinator's removal affects its plant partners, which affects their herbivores, which affects their predators, creating an amplifying chain reaction where one species loss triggers 25 additional declines. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1030,24 +1062,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on model evidence, a conservation planner has a budget to either protect 5% more habitat or create wildlife corridors connecting existing protected areas. Which strategy would the model predict is more effective for reducing extinction rates, and why?
 
-A. Protecting 5% more habitat, because total area is always more important than connectivity
-B. Creating corridors, because connectivity transforms isolated habitat islands into a functional network, producing biodiversity benefits disproportionate to the land area used
-C. Neither strategy has any measurable effect on extinction rates
+A. Creating corridors, because connectivity transforms isolated habitat islands into a functional network, producing biodiversity benefits disproportionate to the land area used
+B. Neither strategy has any measurable effect on extinction rates
+C. Protecting 5% more habitat, because total area is always more important than connectivity
 D. The strategies are exactly equivalent in their conservation outcomes
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that connectivity is a force multiplier. Wildlife corridors transform isolated protected areas into a functional network where gene flow, recolonization, and climate migration can occur. This connectivity benefit exceeds the marginal value of adding small amounts of unconnected area. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that connectivity is a force multiplier. Wildlife corridors transform isolated protected areas into a functional network where gene flow, recolonization, and climate migration can occur. This connectivity benefit exceeds the marginal value of adding small amounts of unconnected area. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.7, CCC1)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.7, CCC1)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.7, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.7, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.7, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.7, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.7, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.7, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.7, CCC4)
 
 
 ## Resources

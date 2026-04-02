@@ -399,6 +399,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Contact Rate → Infected Population relationship as
+unconditional. However, this relationship is scientifically
+contingent on Susceptible Population being active. Without this condition,
+the simulation produces inaccurate results: Contact Rate drives Infected Population
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Contact Rate → Infected Population
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Susceptible Population is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Susceptible Population active and observe
+     how Contact Rate's effect on Infected Population is now gated
+   • Toggle Susceptible Population ON/OFF while Contact Rate remains constant
+   • Verify that Infected Population only responds to Contact Rate when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Susceptible Population → Infected Population
+   • Set condition: IF Transmission Rate is ON
+   • This ensures Susceptible Population's effect on Infected Population
+     is contingent on Transmission Rate being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -981,15 +1017,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's SIR model shows that implementing quarantine at 1% infection rate versus 10% infection rate results in 60% fewer total infections despite identical quarantine strength. What principle does this demonstrate?
 
-A. Quarantine only works during the early stages of an epidemic
-B. The timing of intervention is critically important because exponential growth makes early action disproportionately effective
-C. The 10% scenario used a weaker quarantine measure
-D. The 1% scenario had a smaller initial population
+A. The 10% scenario used a weaker quarantine measure
+B. Quarantine only works during the early stages of an epidemic
+C. The 1% scenario had a smaller initial population
+D. The timing of intervention is critically important because exponential growth makes early action disproportionately effective
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. During exponential growth, the number of infected people doubles rapidly. Intervening early (at 1%) stops the doubling chain much sooner, preventing vastly more infections than the same intervention applied after significant spread. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. During exponential growth, the number of infected people doubles rapidly. Intervening early (at 1%) stops the doubling chain much sooner, preventing vastly more infections than the same intervention applied after significant spread. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1000,15 +1035,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the SIR model, the Susceptible, Infected, and Recovered compartments are described as 'coupled.' What does this mean in systems thinking terms?
 
-A. Each compartment operates independently with fixed populations
+A. The compartments are grouped together for mathematical convenience but do not interact
 B. Changes in one compartment directly affect the flows into and out of the other compartments
-C. The compartments are grouped together for mathematical convenience but do not interact
+C. Each compartment operates independently with fixed populations
 D. Coupling means the model requires three separate simulations to run
 
 Correct Answer: B
 
-Feedback: Correct. Coupled compartments means the state of each compartment influences the others. New infections depend on BOTH the number of Susceptible AND Infected people simultaneously, creating interdependent dynamics. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Coupled compartments means the state of each compartment influences the others. New infections depend on BOTH the number of Susceptible AND Infected people simultaneously, creating interdependent dynamics. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1019,15 +1053,14 @@ A student runs a simulation of the model. The model shows that when Contact Rate
 
 The model shows that vaccination moves people directly from Susceptible to Recovered without passing through Infected. Why is this pathway so valuable compared to natural immunity?
 
-A. Vaccinated people develop stronger immunity than naturally infected people
-B. Vaccination achieves the same epidemic-slowing effect (reducing the Susceptible pool) without the disease burden, hospital strain, and deaths of the Infected stage
-C. Vaccination completely eliminates the pathogen from the environment
+A. Vaccination achieves the same epidemic-slowing effect (reducing the Susceptible pool) without the disease burden, hospital strain, and deaths of the Infected stage
+B. Vaccination completely eliminates the pathogen from the environment
+C. Vaccinated people develop stronger immunity than naturally infected people
 D. Vaccination works faster than natural infection
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. In the SIR model, both infection and vaccination reduce the Susceptible pool. But vaccination achieves this without the suffering, healthcare burden, and mortality of passing through the Infected compartment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. In the SIR model, both infection and vaccination reduce the Susceptible pool. But vaccination achieves this without the suffering, healthcare burden, and mortality of passing through the Infected compartment. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1039,14 +1072,13 @@ Scientists are studying data related to this system. They collected observations
 A simulation compares an uncontrolled epidemic to one with moderate intervention. Both ultimately infect similar percentages of the population, but the intervention scenario has far fewer deaths. What explains this?
 
 A. The intervened epidemic used a less deadly strain
-B. Flattening the curve spread infections over more time, keeping hospital capacity from being overwhelmed
+B. The intervention eliminated the most dangerous variant
 C. Fewer people were actually infected in the intervention scenario
-D. The intervention eliminated the most dangerous variant
+D. Flattening the curve spread infections over more time, keeping hospital capacity from being overwhelmed
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Flattening the curve does not necessarily reduce total infections, but it spreads them over a longer period. This prevents hospitals from being overwhelmed, ensuring patients receive adequate care, which reduces mortality. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Flattening the curve does not necessarily reduce total infections, but it spreads them over a longer period. This prevents hospitals from being overwhelmed, ensuring patients receive adequate care, which reduces mortality. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1057,23 +1089,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, what happens to the effective reproduction number as more people are vaccinated, and what is the significance of this change?
 
-A. The effective R stays constant because vaccination does not affect viral transmission
-B. The effective R increases because vaccinated people create new evolutionary pressure on the virus
+A. The effective R increases because vaccinated people create new evolutionary pressure on the virus
+B. The effective R stays constant because vaccination does not affect viral transmission
 C. The effective R decreases proportionally as the Susceptible pool shrinks, and the epidemic can no longer sustain itself when R drops below 1
 D. The effective R drops to exactly zero once any vaccination program begins
 
 Correct Answer: C
 
-Feedback: Correct. The effective R equals R0 multiplied by the fraction of the population still susceptible. Vaccination reduces this fraction, lowering the effective R. When it drops below 1, each infection generates less than one new case, and the epidemic declines. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The effective R equals R0 multiplied by the fraction of the population still susceptible. Vaccination reduces this fraction, lowering the effective R. When it drops below 1, each infection generates less than one new case, and the epidemic declines. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
 Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
 
 

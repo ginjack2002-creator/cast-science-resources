@@ -350,6 +350,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Groundwater Extraction Rate → Aquifer Water Level relationship as
+unconditional. However, this relationship is scientifically
+contingent on Natural Recharge Rate being active. Without this condition,
+the simulation produces inaccurate results: Groundwater Extraction Rate drives Aquifer Water Level
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Groundwater Extraction Rate → Aquifer Water Level
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Natural Recharge Rate is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Natural Recharge Rate active and observe
+     how Groundwater Extraction Rate's effect on Aquifer Water Level is now gated
+   • Toggle Natural Recharge Rate ON/OFF while Groundwater Extraction Rate remains constant
+   • Verify that Aquifer Water Level only responds to Groundwater Extraction Rate when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -916,107 +946,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.5 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ESS2.C (Water cycle and distribution) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Population and Agricultural Demand, Groundwater Extraction Rate, Aquifer Water Level, Natural Recharge Rate, Surface Water Availability, Regional Food Production Capacity. Some components are external (Population and Agricultural Demand, Groundwater Extraction Rate) and some are internal (Aquifer Water Level, Natural Recharge Rate, Surface Water Availability, Regional Food Production Capacity). The student needs to understand what each component represents and how they are organized.
+A water resources team analyzes California's freshwater budget. The state receives 200 million acre-feet of precipitation annually, but 65% evaporates, 20% flows to the ocean as runoff, and only 15% recharges groundwater aquifers. Meanwhile, total water demand (agricultural, urban, industrial, environmental) has exceeded renewable supply by 15% for the past two decades, with the deficit extracted from groundwater reserves that accumulated over thousands of years. Satellite gravity measurements show that Central Valley aquifers have lost 48 cubic kilometers of water since 2003.
 
 The model shows that the Ogallala Aquifer has lost 30% of its volume in 60 years while natural recharge replaces less than 1% of annual withdrawals. A farmer proposes 'just pumping less.' At what extraction rate does the model show the aquifer stabilizes?
 
-A. Extraction must be reduced to 50% of current levels
-B. Extraction must equal the natural recharge rate, which would require reducing current withdrawals by approximately 99%
-C. Any reduction in pumping will stabilize the aquifer within 10 years
-D. The aquifer cannot stabilize because climate change is increasing recharge
+A. Any reduction in pumping will stabilize the aquifer within 10 years
+B. The aquifer cannot stabilize because climate change is increasing recharge
+C. Extraction must be reduced to 50% of current levels
+D. Extraction must equal the natural recharge rate, which would require reducing current withdrawals by approximately 99%
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. For the aquifer to stabilize, extraction cannot exceed recharge. Since recharge is less than 1% of current withdrawal, extraction would need to drop by roughly 99%, which is practically impossible without completely transforming regional agriculture. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: For the aquifer to stabilize, extraction cannot exceed recharge. Since recharge is less than 1% of current withdrawal, extraction would need to drop by roughly 99%, which is practically impossible without completely transforming regional agriculture. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. The model shows sustainability requires withdrawal equals recharge. Since natural recharge is less than 1% of current extraction, stabilization requires a near-complete halt to pumping. This reveals the magnitude of the problem: current agriculture depends on mining a non-renewable resource. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. The model shows sustainability requires withdrawal equals recharge. Since natural recharge is less than 1% of current extraction, stabilization requires a near-complete halt to pumping. This reveals the magnitude of the problem: current agriculture depends on mining a non-renewable resource. If you chose B, this choice dismisses relevant factors that the evidence directly addresses. The model shows sustainability requires withdrawal equals recharge. Since natural recharge is less than 1% of current extraction, stabilization requires a near-complete halt to pumping. This reveals the magnitude of the problem: current agriculture depends on mining a non-renewable resource.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.5 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ESS2.C (Water cycle and distribution) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Population and Agricultural Demand increases, Groundwater Extraction Rate increases; when Groundwater Extraction Rate increases, Aquifer Water Level decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of the global water cycle reveals an accelerating imbalance. As temperatures rise, evaporation from oceans increases (adding more moisture to the atmosphere), but this additional moisture is redistributed unevenly: wet regions receive more rainfall while dry regions receive less, a phenomenon called 'wet-get-wetter, dry-get-drier.' The model shows that regions currently home to 2 billion people will transition from water-adequate to water-scarce by 2050, with the most severe impacts in regions dependent on snowmelt-fed rivers where warming reduces snowpack.
 
 The model demonstrates a cascading failure: aquifer depletion reduces food production, food shortages drive migration, and migration concentrates populations in cities facing their own water stress. What systems concept does this cascade illustrate?
 
-A. Negative feedback that stabilizes the system through migration
-B. A positive feedback loop where each system failure worsens conditions for the connected systems, compounding the crisis
-C. An isolated local problem with no broader systemic effects
-D. A self-correcting market response to resource scarcity
+A. A self-correcting market response to resource scarcity
+B. Negative feedback that stabilizes the system through migration
+C. A positive feedback loop where each system failure worsens conditions for the connected systems, compounding the crisis
+D. An isolated local problem with no broader systemic effects
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This cascade is a positive feedback loop across coupled systems: water depletion drives food loss, which drives migration, which intensifies urban water stress, worsening conditions across all connected systems. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: This cascade is a positive feedback loop across coupled systems: water depletion drives food loss, which drives migration, which intensifies urban water stress, worsening conditions across all connected systems. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The cascade demonstrates how interconnected systems amplify failures: aquifer depletion is not just a water problem but triggers food insecurity, migration, and urban stress in a compounding positive feedback loop that affects multiple sectors simultaneously. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. The cascade demonstrates how interconnected systems amplify failures: aquifer depletion is not just a water problem but triggers food insecurity, migration, and urban stress in a compounding positive feedback loop that affects multiple sectors simultaneously. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. The cascade demonstrates how interconnected systems amplify failures: aquifer depletion is not just a water problem but triggers food insecurity, migration, and urban stress in a compounding positive feedback loop that affects multiple sectors simultaneously.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.5 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.A (Natural resource management) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Population and Agricultural Demand increases, Groundwater Extraction Rate increases and when Groundwater Extraction Rate increases, Aquifer Water Level decreases and when Aquifer Water Level increases, Regional Food Production Capacity increases. The student changes one variable to see how the whole system responds.
+Researchers studying the Ogallala Aquifer, the largest freshwater aquifer in North America, model its depletion trajectory. The aquifer took approximately 10,000 years to fill during the last ice age but is being drained at a rate that will exhaust economically recoverable water within 50-80 years in its southern reaches. Agricultural pumping extracts 3% of the aquifer's volume annually while natural recharge replaces only 0.1%. The model identifies this as a stock-and-flow problem where the extraction rate exceeds the replenishment rate by a factor of 30.
 
 A student proposes desalination as the solution to global water scarcity. Based on the model, which limitation most significantly constrains this approach?
 
-A. Desalination technology does not yet exist at commercial scale
-B. Desalination is energy-intensive and expensive ($0.50-$2.00/m3), currently supplies less than 1% of global freshwater, and generates concentrated brine waste that harms marine ecosystems
-C. Desalinated water is unsafe for irrigation
+A. Desalinated water is unsafe for irrigation
+B. Desalination technology does not yet exist at commercial scale
+C. Desalination is energy-intensive and expensive ($0.50-$2.00/m3), currently supplies less than 1% of global freshwater, and generates concentrated brine waste that harms marine ecosystems
 D. Only coastal cities can benefit, and most water stress occurs inland
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Desalination faces scalability challenges: high energy costs, limited current contribution (<1% of global supply), and environmental impacts from brine disposal make it a supplementary solution, not a replacement for sustainable groundwater management. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Desalination faces scalability challenges: high energy costs, limited current contribution (<1% of global supply), and environmental impacts from brine disposal make it a supplementary solution, not a replacement for sustainable groundwater management. If you chose B, this response dismisses relevant factors that the evidence directly addresses. While desalination works technically, it currently provides less than 1% of global freshwater and faces major scalability constraints: high energy requirements, significant cost per unit volume, and environmental damage from concentrated brine waste discharged into marine environments. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. While desalination works technically, it currently provides less than 1% of global freshwater and faces major scalability constraints: high energy requirements, significant cost per unit volume, and environmental damage from concentrated brine waste discharged into marine environments. If you chose D, this choice oversimplifies a multi-factor system by focusing on a single variable. While desalination works technically, it currently provides less than 1% of global freshwater and faces major scalability constraints: high energy requirements, significant cost per unit volume, and environmental damage from concentrated brine waste discharged into marine environments.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.5 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.C (Water cycle and distribution) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+An urban water district compares per-capita water consumption across three neighborhoods with different infrastructure ages and pricing structures. Neighborhood A (1950s infrastructure, flat-rate pricing) uses 180 gallons per person per day with 35% lost to pipe leaks. Neighborhood B (1990s infrastructure, tiered pricing) uses 110 gallons with 12% leak losses. Neighborhood C (2020 infrastructure with smart meters, progressive pricing) uses 65 gallons with 4% leak losses. The district's model shows that infrastructure modernization and pricing reform together could reduce total consumption by 55% without requiring behavioral changes beyond those induced by price signals.
 
 The model's 'virtual water' concept reveals that a kilogram of beef requires approximately 15,000 liters of water. How does this inform a systems-level approach to water scarcity?
 
-A. Virtual water is theoretical and has no practical policy implications
-B. Shifting dietary patterns and agricultural choices can dramatically reduce water demand because food production accounts for 70% of withdrawals, and water intensity varies enormously between crop and livestock types
-C. Consumers should only eat locally grown food to reduce virtual water
-D. Beef production should be banned in all water-stressed regions
+A. Shifting dietary patterns and agricultural choices can dramatically reduce water demand because food production accounts for 70% of withdrawals, and water intensity varies enormously between crop and livestock types
+B. Consumers should only eat locally grown food to reduce virtual water
+C. Beef production should be banned in all water-stressed regions
+D. Virtual water is theoretical and has no practical policy implications
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Virtual water analysis reveals that demand-side changes (dietary shifts, crop choice, agricultural efficiency) can achieve far greater water savings than supply-side engineering because agriculture dominates consumption. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Virtual water analysis reveals that demand-side changes (dietary shifts, crop choice, agricultural efficiency) can achieve far greater water savings than supply-side engineering because agriculture dominates consumption. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Understanding virtual water shows that water scarcity is partly a demand problem. Since agriculture uses 70% of freshwater and water intensity varies widely (15,000 L/kg beef vs. 1,800 L/kg grain), dietary and crop shifts can yield massive water savings. If you chose B, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Understanding virtual water shows that water scarcity is partly a demand problem. Since agriculture uses 70% of freshwater and water intensity varies widely (15,000 L/kg beef vs. 1,800 L/kg grain), dietary and crop shifts can yield massive water savings. If you chose C, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Understanding virtual water shows that water scarcity is partly a demand problem. Since agriculture uses 70% of freshwater and water intensity varies widely (15,000 L/kg beef vs. 1,800 L/kg grain), dietary and crop shifts can yield massive water savings.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.5 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ESS3.A (Natural resource management) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Population and Agricultural Demand, Groundwater Extraction Rate), but they can take action on internal components (Aquifer Water Level, Natural Recharge Rate, Surface Water Availability, Regional Food Production Capacity). They need to decide which action would be most effective based on what the model shows.
+A regional water planning agency must allocate diminishing water supplies among four competing users: agriculture (currently 80% of consumption), urban residential (12%), industrial (5%), and environmental flows to maintain river ecosystems (3%). Their systems model shows that reducing agricultural allocation by 25% through efficiency improvements (drip irrigation, deficit irrigation scheduling) would free enough water to fully meet projected urban growth through 2060 while doubling environmental flows. However, the transition requires $4.5 billion in irrigation infrastructure investment and retraining for farming communities.
 
 The model shows that increasing Population and Agricultural Demand by 50% while decreasing Natural Recharge Rate by 20% (due to climate change) causes Aquifer Water Level to crash decades sooner than either factor alone. What does this reveal about compounding stressors in water systems?
 
-A. Population growth and climate change affect water systems independently
+A. Climate change is the only significant factor in water scarcity
 B. The interaction between rising demand and declining supply creates a nonlinear acceleration of depletion because both forces simultaneously widen the gap between extraction and recharge
-C. Climate change is the only significant factor in water scarcity
+C. Population growth and climate change affect water systems independently
 D. Population growth can always be offset by more efficient irrigation technology
 
 Correct Answer: B
 
-Feedback: Correct. When demand rises while supply falls simultaneously, the depletion gap widens from both sides, creating a multiplicative effect that accelerates collapse far beyond what either stressor would cause independently. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: When demand rises while supply falls simultaneously, the depletion gap widens from both sides, creating a multiplicative effect that accelerates collapse far beyond what either stressor would cause independently. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. Compounding stressors are worse than additive: rising demand and declining recharge simultaneously widen the extraction-recharge gap, causing nonlinear acceleration. The aquifer depletes much faster under compound stress than under either factor alone. If you chose A, this answer oversimplifies a multi-factor system by focusing on a single variable. Compounding stressors are worse than additive: rising demand and declining recharge simultaneously widen the extraction-recharge gap, causing nonlinear acceleration. The aquifer depletes much faster under compound stress than under either factor alone. If you chose D, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Compounding stressors are worse than additive: rising demand and declining recharge simultaneously widen the extraction-recharge gap, causing nonlinear acceleration. The aquifer depletes much faster under compound stress than under either factor alone.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.5, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.5, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.5, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.5, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.5, CCC2)
+Question 1: D (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ESS2-5, CCC4)
+Question 2: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS2-5, CCC2)
+Question 3: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS2-5, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ESS3-1, CCC7)
+Question 5: B (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ESS3-1, CCC4)
 
+---
 
 ## Resources
 

@@ -390,6 +390,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Nutrient Medium Concentration → Cell Growth Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Oxygen Supply being active. Without this condition,
+the simulation produces inaccurate results: Nutrient Medium Concentration drives Cell Growth Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Nutrient Medium Concentration → Cell Growth Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Oxygen Supply is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Oxygen Supply active and observe
+     how Nutrient Medium Concentration's effect on Cell Growth Rate is now gated
+   • Toggle Oxygen Supply ON/OFF while Nutrient Medium Concentration remains constant
+   • Verify that Cell Growth Rate only responds to Nutrient Medium Concentration when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Oxygen Supply → Cell Growth Rate
+   • Set condition: IF Nutrient Medium Concentration is ON
+   • This ensures Oxygen Supply's effect on Cell Growth Rate
+     is contingent on Nutrient Medium Concentration being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -963,15 +999,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In a bioreactor optimization model, a student maximizes Nutrient Medium Concentration and Oxygen Supply simultaneously. Cell Growth Rate increases initially but then crashes. Which model component BEST explains this crash?
 
-A. Waste Product Accumulation increases proportionally with rapid cell growth, and the toxic byproducts (ammonia, lactate) inhibit further cell division when they exceed tolerable concentrations
+A. The bioreactor physically breaks from the increased cell mass
 B. Cells have a maximum lifespan regardless of nutrient availability
 C. Oxygen is toxic to mammalian cells at high concentrations
-D. The bioreactor physically breaks from the increased cell mass
+D. Waste Product Accumulation increases proportionally with rapid cell growth, and the toxic byproducts (ammonia, lactate) inhibit further cell division when they exceed tolerable concentrations
 
-Correct Answer: A
+Correct Answer: D
 
-Feedback: Correct. Faster cell growth means faster metabolism, which produces waste products (ammonia, lactate, CO2) at higher rates. When these toxic byproducts accumulate beyond threshold concentrations, they inhibit cell division and can cause cell death. This is a negative feedback loop in the system. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Faster cell growth means faster metabolism, which produces waste products (ammonia, lactate, CO2) at higher rates. When these toxic byproducts accumulate beyond threshold concentrations, they inhibit cell division and can cause cell death. This is a negative feedback loop in the system. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -982,15 +1017,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A cultured meat company scales their bioreactor from 1 liter to 10,000 liters. The per-kilogram cost decreases by 80% for some components but Oxygen Supply becomes a critical bottleneck. Which physical principle BEST explains why oxygen delivery fails at large scale?
 
-A. Oxygen molecules are too large to penetrate dense cell cultures
-B. Oxygen diffusion is limited to approximately 200 micrometers from the source, and larger bioreactors have more cells located far from oxygen delivery surfaces
-C. Large bioreactors generate too much heat for oxygen to remain dissolved
+A. Large bioreactors generate too much heat for oxygen to remain dissolved
+B. Oxygen molecules are too large to penetrate dense cell cultures
+C. Oxygen diffusion is limited to approximately 200 micrometers from the source, and larger bioreactors have more cells located far from oxygen delivery surfaces
 D. Oxygen is consumed by chemical reactions with the nutrient medium before reaching cells
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Oxygen diffusion in liquid is limited to approximately 200 micrometers before concentration drops below what cells need. In a small bioreactor, most cells are within this distance of a gas-liquid interface. At large scale, cells deep in the culture become hypoxic, limiting tissue thickness and cell viability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Oxygen diffusion in liquid is limited to approximately 200 micrometers before concentration drops below what cells need. In a small bioreactor, most cells are within this distance of a gas-liquid interface. At large scale, cells deep in the culture become hypoxic, limiting tissue thickness and cell viability. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1003,13 +1037,12 @@ A model shows that improving Scaffold Structure increases Texture Quality but al
 
 A. An optimization trade-off analysis that considers market value alongside production cost to determine overall economic viability
 B. A scientific error because cost and quality should never be compared
-C. An irrelevant business consideration with no connection to the biological model
-D. A misunderstanding of how scaffolds work in cell culture
+C. A misunderstanding of how scaffolds work in cell culture
+D. An irrelevant business consideration with no connection to the biological model
 
 Correct Answer: A
 
-Feedback: Correct. Engineering optimization often requires evaluating trade-offs in terms of overall value, not just minimizing a single variable. If improved texture commands a higher market price, the increased scaffold cost may be justified by increased revenue per kilogram. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Engineering optimization often requires evaluating trade-offs in terms of overall value, not just minimizing a single variable. If improved texture commands a higher market price, the increased scaffold cost may be justified by increased revenue per kilogram. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1021,14 +1054,13 @@ Scientists are studying data related to this system. They collected observations
 Two bioreactor designs produce cultured meat at the same cost. Design A uses 40% less energy but produces meat with lower Texture Quality. Design B uses more energy but achieves steak-like texture. From an environmental sustainability perspective, which analysis is MOST complete?
 
 A. Design A is always more sustainable because it uses less energy
-B. Design B is always more sustainable because higher quality means less food waste
-C. The comparison requires life-cycle analysis including energy source (renewable vs. fossil fuel), consumer acceptance (which affects adoption rate and displacement of conventional meat), and waste stream differences
-D. Environmental sustainability is irrelevant to cultured meat design
+B. The comparison requires life-cycle analysis including energy source (renewable vs. fossil fuel), consumer acceptance (which affects adoption rate and displacement of conventional meat), and waste stream differences
+C. Environmental sustainability is irrelevant to cultured meat design
+D. Design B is always more sustainable because higher quality means less food waste
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct. Sustainability assessment requires life-cycle analysis. Design A's lower energy use matters less if powered by fossil fuels than Design B powered by renewables. Consumer acceptance affects total market displacement of conventional meat. A thorough analysis considers the entire system, not just one variable. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Sustainability assessment requires life-cycle analysis. Design A's lower energy use matters less if powered by fossil fuels than Design B powered by renewables. Consumer acceptance affects total market displacement of conventional meat. A thorough analysis considers the entire system, not just one variable. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1039,24 +1071,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student's model reveals that increasing Scale Factor from lab to commercial production reduces per-kilogram Production Cost but introduces new challenges not present at lab scale. Which challenge is MOST directly a consequence of the scale-up?
 
-A. The chemistry of cell growth changes at larger volumes
-B. Maintaining uniform temperature, oxygen, and nutrient distribution throughout a large bioreactor volume becomes exponentially more difficult, creating zones of cell death
-C. Larger bioreactors require different cell types
-D. Commercial bioreactors cannot be sterilized
+A. Larger bioreactors require different cell types
+B. Commercial bioreactors cannot be sterilized
+C. Maintaining uniform temperature, oxygen, and nutrient distribution throughout a large bioreactor volume becomes exponentially more difficult, creating zones of cell death
+D. The chemistry of cell growth changes at larger volumes
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. In a small bioreactor, mixing ensures relatively uniform conditions throughout. At commercial scale (10,000+ liters), maintaining homogeneous temperature, oxygen, nutrient concentration, and waste removal across the entire volume is a fundamental engineering challenge. Heterogeneity creates dead zones where conditions are suboptimal. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. In a small bioreactor, mixing ensures relatively uniform conditions throughout. At commercial scale (10,000+ liters), maintaining homogeneous temperature, oxygen, nutrient concentration, and waste removal across the entire volume is a fundamental engineering challenge. Heterogeneity creates dead zones where conditions are suboptimal. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC3)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC3)
 Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC2)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC5)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC3)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC5)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC3)
 
 
 ## Resources

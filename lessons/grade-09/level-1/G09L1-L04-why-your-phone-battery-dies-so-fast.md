@@ -333,6 +333,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Screen Brightness → Battery Life relationship as
+unconditional. However, this relationship is scientifically
+contingent on Heat Generation being active. Without this condition,
+the simulation produces inaccurate results: Screen Brightness drives Battery Life
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Screen Brightness → Battery Life
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Heat Generation is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Heat Generation active and observe
+     how Screen Brightness's effect on Battery Life is now gated
+   • Toggle Heat Generation ON/OFF while Screen Brightness remains constant
+   • Verify that Battery Life only responds to Screen Brightness when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -905,15 +935,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In a phone energy model, a student observes that increasing Processing Load from LOW to HIGH increases both Battery Drain and Heat Generation. However, Heat Generation increases at a faster rate than useful computation output. What principle explains this observation?
 
-A. The processor deliberately generates extra heat to improve performance
-B. At higher processing loads, energy conversion efficiency decreases because more transistor switching events produce proportionally more waste heat through electrical resistance
-C. The phone heats up only because of the screen, not the processor
-D. Heat generation is unrelated to processing load and is caused by battery chemistry
+A. The phone heats up only because of the screen, not the processor
+B. Heat generation is unrelated to processing load and is caused by battery chemistry
+C. At higher processing loads, energy conversion efficiency decreases because more transistor switching events produce proportionally more waste heat through electrical resistance
+D. The processor deliberately generates extra heat to improve performance
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. At higher processing loads, the CPU/GPU performs billions of additional transistor switching events per second. Each switching event generates a small amount of waste heat through Joule heating (electrical resistance). The cumulative effect means heat generation scales disproportionately with processing intensity, reducing overall efficiency. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. At higher processing loads, the CPU/GPU performs billions of additional transistor switching events per second. Each switching event generates a small amount of waste heat through Joule heating (electrical resistance). The cumulative effect means heat generation scales disproportionately with processing intensity, reducing overall efficiency. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -924,15 +953,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student runs the 'Brightness Test' scenario, keeping Processing Load at MEDIUM while increasing Screen Brightness from LOW to HIGH. The model shows that the screen alone accounts for the largest single battery drain. What design trade-off does this reveal?
 
-A. Phone screens should always be at minimum brightness to maximize battery life
+A. Screen brightness has no impact on battery life in modern phones
 B. Screen brightness represents a direct trade-off between user experience (visibility) and energy consumption, requiring adaptive management to balance both
-C. Screen brightness has no impact on battery life in modern phones
-D. Processing load is always more important than screen brightness for battery life
+C. Processing load is always more important than screen brightness for battery life
+D. Phone screens should always be at minimum brightness to maximize battery life
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that screen brightness is often the single largest energy consumer, but visibility is essential for user experience. This creates a design trade-off that engineers address through adaptive brightness systems that adjust output based on ambient light, maximizing visibility while minimizing unnecessary energy waste. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model reveals that screen brightness is often the single largest energy consumer, but visibility is essential for user experience. This creates a design trade-off that engineers address through adaptive brightness systems that adjust output based on ambient light, maximizing visibility while minimizing unnecessary energy waste. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 3
@@ -943,15 +971,14 @@ A student runs a simulation of the model. The model shows that when Screen Brigh
 
 A phone battery stores 15.4 Wh of energy. During gaming, the screen draws 2.5 W, the processor draws 3.0 W, and 0.8 W is dissipated as heat. What is the total power draw and approximately how long will the battery last?
 
-A. Total: 5.5 W; battery life: approximately 2.8 hours
-B. Total: 6.3 W; battery life: approximately 2.4 hours
+A. Total: 6.3 W; battery life: approximately 2.4 hours
+B. Total: 5.5 W; battery life: approximately 2.8 hours
 C. Total: 3.3 W; battery life: approximately 4.7 hours
 D. Total: 0.8 W; battery life: approximately 19.3 hours
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Total power draw = 2.5 W + 3.0 W + 0.8 W = 6.3 W. Battery life = 15.4 Wh / 6.3 W = approximately 2.4 hours. Note that the 0.8 W heat is NOT separate from the battery drain. It IS battery energy being wasted, reducing both efficiency and battery life. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Total power draw = 2.5 W + 3.0 W + 0.8 W = 6.3 W. Battery life = 15.4 Wh / 6.3 W = approximately 2.4 hours. Note that the 0.8 W heat is NOT separate from the battery drain. It IS battery energy being wasted, reducing both efficiency and battery life. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -963,14 +990,13 @@ Scientists are studying data related to this system. They collected observations
 A student extends their model by adding a Battery Age component. They discover that after 500 charge cycles, the same gaming session that lasted 2.4 hours on a new battery now lasts only 1.9 hours. What does this reveal about the relationship between battery chemistry and user experience?
 
 A. The phone is using more power because it has become less efficient with age
-B. The battery's chemical degradation reduces stored energy capacity while power consumption remains constant, meaning identical usage produces shorter battery life over the device's lifespan
+B. Battery age only affects standby time, not active usage time
 C. Older phones automatically increase screen brightness, causing faster drain
-D. Battery age only affects standby time, not active usage time
+D. The battery's chemical degradation reduces stored energy capacity while power consumption remains constant, meaning identical usage produces shorter battery life over the device's lifespan
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Battery degradation reduces the numerator (stored energy) while the denominator (power draw) remains unchanged. A battery retaining 80% capacity after 500 cycles stores 12.3 Wh instead of 15.4 Wh, but the phone still draws 6.3 W during gaming, resulting in proportionally shorter battery life (12.3 / 6.3 = 1.95 hours). If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Battery degradation reduces the numerator (stored energy) while the denominator (power draw) remains unchanged. A battery retaining 80% capacity after 500 cycles stores 12.3 Wh instead of 15.4 Wh, but the phone still draws 6.3 W during gaming, resulting in proportionally shorter battery life (12.3 / 6.3 = 1.95 hours). If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -981,24 +1007,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on their model, a student designs a power management plan for an 8-hour school day. Which strategy best applies the energy conversion principles from the model?
 
-A. Close all background apps every hour, since they are the primary battery drain
-B. Schedule high-power activities (video, gaming) during specific windows and maintain low brightness and minimal processing during class time, budgeting total energy expenditure across the day
-C. Keep the phone plugged into a charger at all times to maintain 100% battery
-D. Turn the phone completely off except during lunch break
+A. Keep the phone plugged into a charger at all times to maintain 100% battery
+B. Close all background apps every hour, since they are the primary battery drain
+C. Turn the phone completely off except during lunch break
+D. Schedule high-power activities (video, gaming) during specific windows and maintain low brightness and minimal processing during class time, budgeting total energy expenditure across the day
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. This strategy applies the model's key finding: power draw varies enormously between use cases (0.2 W standby to 6+ W gaming). By scheduling high-power activities into specific windows and maintaining low-power settings otherwise, total energy expenditure can be budgeted to match available battery capacity across the full day. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This strategy applies the model's key finding: power draw varies enormously between use cases (0.2 W standby to 6+ W gaming). By scheduling high-power activities into specific windows and maintaining low-power settings otherwise, total energy expenditure can be budgeted to match available battery capacity across the full day. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.1, CCC5)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.1, CCC5)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.1, CCC5)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.1, CCC5)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.1, CCC5)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.1, CCC5)
 
 
 ## Resources

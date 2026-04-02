@@ -738,103 +738,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.B.2 (Objects in the path of light cast shadows) + CCC2 (Cause and effect: identify events)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Light Position, Shadow Size. Some components are external (Light Position) and some are internal (Shadow Size). The student needs to understand what each component represents and how they are organized.
+A student goes outside on a sunny day and sees a dark shape on the ground next to her. When she moves, the dark shape moves too. She wonders what this dark shape is and how it was made.
 
-What is a light source?
+What do you need to make a shadow?
 
-A. A dark room
-B. The thing that makes light, like the sun or a flashlight
-C. A shadow on the wall
+A. Light and something to block it
+B. Darkness and a blanket
+C. Paint and paper
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! A light source is something that makes light, like the sun, a flashlight, or a lamp. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: You need a light source and something that blocks the light to make a shadow. The shadow appears where the light cannot reach. If you chose B, darkness does not make shadows. You actually need light to make a shadow. The shadow is the area where light is blocked. If you chose C, paint and paper do not make shadows. Shadows are made when an object blocks light.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.B.2 (Objects in the path of a beam of light) + CCC2 (Cause and effect: simple tests)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Light Position increases, Shadow Size increases. The student is trying to understand why these relationships are positive or negative.
+A student shines a flashlight at a toy standing on a table. She sees a dark shape appear on the wall behind the toy. She walks to the other side and shines the flashlight from there. The dark shape moves to the opposite side.
 
-When the light is CLOSER to an object, what happens to the shadow?
+Where does a shadow appear?
 
-A. The shadow gets smaller
-B. The shadow disappears
-C. The shadow gets bigger
+A. Behind the object, away from the light
+B. In front of the light
+C. On the same side as the light
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: That is right! When the light moves closer to the object, the shadow gets bigger. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: A shadow appears behind the object, on the side away from the light, because that is where the light cannot reach. If you chose B, the shadow does not appear in front of the light. It appears on the opposite side of the object from the light. If you chose C, the shadow does not appear on the same side as the light. It appears on the far side of the object where the light is blocked.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation to produce data) + DCI PS4.B.2 (Effect of placing objects in the path of light) + CCC2 (Cause and effect: simple tests show cause)
 
-A student runs a simulation of the model. The model shows that when Light Position increases, Shadow Size increases. The student changes one variable to see how the whole system responds.
+A student shines a flashlight at different objects. When she shines it at a wooden block, a dark shadow appears behind the block. When she shines it at a clear glass cup, almost no shadow appears. She wonders why.
 
-When the light is FAR from an object, what happens to the shadow?
+Can you make a shadow with a clear glass cup?
 
-A. The shadow gets bigger
-B. The shadow gets smaller
-C. The shadow turns colors
+A. Yes, everything makes a shadow
+B. Only if the cup is full of water
+C. No, because light goes through clear glass
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! When the light is farther away, the shadow gets smaller. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Clear glass lets light pass through it, so it does not block the light and does not make a shadow. If you chose A, not everything makes a shadow. Clear and transparent objects let light through, so they do not block it and do not create shadows. If you chose B, whether the cup has water or not, clear glass lets light pass through. Shadows are made by things that block light.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.B.2 (Objects placed in the path of light) + CCC2 (Cause and effect: identify cause and effect)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student learns that a light source is anything that makes light, like the sun, a flashlight, or a lamp. Her teacher asks her to name the light source that makes shadows outside during the day.
 
-You want to make a GIANT shadow puppet on the wall. What should you do?
+What is a light source?
 
-A. Move the flashlight far away from the puppet
-B. Use a smaller puppet
-C. Move the flashlight close to the puppet
+A. A shadow on the wall
+B. The thing that makes light, like the sun or a flashlight
+C. A dark room
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Yes! Moving the light closer to the puppet makes the shadow much bigger. That is the trick shadow puppeteers use! If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A light source is anything that produces light, such as the sun, a flashlight, or a lamp. Light sources create the light that objects can block to make shadows. If you chose C, a dark room is not a light source. A dark room has no light. A light source is something that makes light. If you chose A, a shadow is not a light source. A shadow is the dark area created when something blocks light from a light source.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation to produce data) + DCI PS4.B.2 (Effect of placing objects in the path of light) + CCC2 (Cause and effect: design simple tests)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Light Position), but they can take action on internal components (Shadow Size). They need to decide which action would be most effective based on what the model shows.
+A student is doing a shadow experiment. She holds a flashlight close to a stuffed animal and sees a big shadow on the wall. Then she moves the flashlight far away from the stuffed animal and the shadow gets smaller. She wants to make the biggest shadow possible.
 
-What do you need to make a shadow?
+You want to make a GIANT shadow puppet on the wall. What should you do?
 
-A. Darkness and a blanket
-B. Light and something to block it
-C. Paint and paper
+A. Move the flashlight close to the puppet
+B. Move the flashlight far away from the puppet
+C. Use a smaller puppet
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! You need a light and something that blocks it to make a shadow. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Moving the light closer to the puppet makes the shadow much bigger. The closer the light, the bigger the shadow on the wall. If you chose B, moving the flashlight far away makes the shadow smaller, not bigger. To make a giant shadow, bring the light closer. If you chose C, using a smaller puppet would make a smaller shadow, not a bigger one. The trick is to move the light closer to make the shadow bigger.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.3, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.3, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.3, CCC4)
+Question 1: A (Cognitive Level: Identify)
+Question 2: A (Cognitive Level: Identify)
+Question 3: C (Cognitive Level: Reason)
+Question 4: B (Cognitive Level: Reason)
+Question 5: A (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

@@ -387,6 +387,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Drug Dosage → Blood Concentration relationship as
+unconditional. However, this relationship is scientifically
+contingent on Metabolism Rate being active. Without this condition,
+the simulation produces inaccurate results: Drug Dosage drives Blood Concentration
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Drug Dosage → Blood Concentration
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Metabolism Rate is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Metabolism Rate active and observe
+     how Drug Dosage's effect on Blood Concentration is now gated
+   • Toggle Metabolism Rate ON/OFF while Drug Dosage remains constant
+   • Verify that Blood Concentration only responds to Drug Dosage when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Metabolism Rate → Blood Concentration
+   • Set condition: IF Kidney Clearance is ON
+   • This ensures Metabolism Rate's effect on Blood Concentration
+     is contingent on Kidney Clearance being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -956,15 +992,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In a multi-scale pharmacokinetic model, Drug Dosage is increased by 50%. Blood Concentration rises proportionally, but Tumor Uptake only increases by 10%. Which explanation BEST accounts for this discrepancy?
 
-A. The tumor has limited blood supply and receptor binding capacity, so additional circulating drug cannot all be absorbed by the tumor
-B. The kidneys immediately excrete the additional drug before it reaches the tumor
+A. Blood concentration and tumor uptake are independent variables in pharmacokinetic models
+B. The tumor has limited blood supply and receptor binding capacity, so additional circulating drug cannot all be absorbed by the tumor
 C. Higher doses always decrease tumor uptake due to receptor saturation
-D. Blood concentration and tumor uptake are independent variables in pharmacokinetic models
+D. The kidneys immediately excrete the additional drug before it reaches the tumor
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. Tumor uptake depends on the tumor's blood vessel density, permeability, and available receptor binding sites. Once these are saturated, additional circulating drug provides diminishing returns at the tumor while increasing systemic toxicity. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Tumor uptake depends on the tumor's blood vessel density, permeability, and available receptor binding sites. Once these are saturated, additional circulating drug provides diminishing returns at the tumor while increasing systemic toxicity. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -975,15 +1010,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A pharmacokineticist compares two dosing strategies: (1) a single high dose every 3 weeks and (2) lower doses given 3 times per week. Both deliver the same total drug amount. Which outcome does the metronomic (frequent low-dose) strategy MOST LIKELY produce?
 
-A. Higher peak toxicity but longer time within the therapeutic window
-B. More consistent blood concentration within the therapeutic window with reduced peak side effects
-C. Lower overall drug effectiveness because each individual dose is too small
-D. Identical outcomes because the total drug amount is the same
+A. More consistent blood concentration within the therapeutic window with reduced peak side effects
+B. Higher peak toxicity but longer time within the therapeutic window
+C. Identical outcomes because the total drug amount is the same
+D. Lower overall drug effectiveness because each individual dose is too small
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Metronomic dosing maintains more consistent drug levels by avoiding the extreme peaks (which cause toxicity) and deep troughs (which allow tumor regrowth) of single high-dose protocols. The total amount matters less than the time spent within the therapeutic window. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Metronomic dosing maintains more consistent drug levels by avoiding the extreme peaks (which cause toxicity) and deep troughs (which allow tumor regrowth) of single high-dose protocols. The total amount matters less than the time spent within the therapeutic window. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -994,15 +1028,14 @@ A student runs a simulation of the model. The model shows that when Drug Dosage 
 
 Two patients receive identical chemotherapy doses, but Patient A experiences severe toxicity while Patient B shows minimal side effects. Based on pharmacokinetic modeling, which variable MOST LIKELY differs between them?
 
-A. The type of cancer they have
+A. The time of day the drug was administered
 B. Their liver metabolism rate, which determines how quickly the drug is broken down
 C. The hospital where they received treatment
-D. The time of day the drug was administered
+D. The type of cancer they have
 
 Correct Answer: B
 
-Feedback: Correct. Liver enzyme activity (metabolism rate) varies significantly between individuals due to genetic polymorphisms. A patient with slow metabolism will maintain higher blood drug concentrations for longer, potentially exceeding the toxic threshold, while a fast metabolizer may clear the drug before it reaches effective levels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Liver enzyme activity (metabolism rate) varies significantly between individuals due to genetic polymorphisms. A patient with slow metabolism will maintain higher blood drug concentrations for longer, potentially exceeding the toxic threshold, while a fast metabolizer may clear the drug before it reaches effective levels. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1013,15 +1046,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student's pharmacokinetic model shows that increasing Kidney Clearance rate while holding all other variables constant results in DECREASED Side Effect Severity but ALSO decreased Tumor Uptake. Which analysis BEST explains this trade-off?
 
-A. Faster kidney clearance removes the drug from the blood more quickly, reducing both the time for tumor absorption and the duration of healthy cell exposure
-B. The kidneys selectively filter drug molecules headed toward healthy tissues but not those headed toward the tumor
-C. Kidney clearance and tumor uptake are unrelated variables that happen to change simultaneously
-D. Increased kidney function strengthens the immune system, which independently reduces side effects
+A. Kidney clearance and tumor uptake are unrelated variables that happen to change simultaneously
+B. Increased kidney function strengthens the immune system, which independently reduces side effects
+C. Faster kidney clearance removes the drug from the blood more quickly, reducing both the time for tumor absorption and the duration of healthy cell exposure
+D. The kidneys selectively filter drug molecules headed toward healthy tissues but not those headed toward the tumor
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Correct. Kidney clearance reduces overall blood concentration over time. This shorter exposure window means less time for healthy cells to absorb the drug (reducing side effects) but also less time for the tumor to accumulate sufficient drug (reducing efficacy). This is a systems-level trade-off. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Kidney clearance reduces overall blood concentration over time. This shorter exposure window means less time for healthy cells to absorb the drug (reducing side effects) but also less time for the tumor to accumulate sufficient drug (reducing efficacy). This is a systems-level trade-off. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1032,24 +1064,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 An adaptive dosing algorithm monitors a cancer patient's blood biomarkers in real time and automatically adjusts the next dose. Which design principle is MOST critical for patient safety in this system?
 
-A. The algorithm should always increase the dose to maximize tumor kill rate
-B. The algorithm must include safety thresholds that trigger automatic dose reduction or treatment pause when blood concentration approaches the toxic limit
-C. The algorithm should prioritize cost reduction over treatment effectiveness
-D. The algorithm should use a fixed dosing schedule regardless of biomarker readings to ensure consistency
+A. The algorithm should use a fixed dosing schedule regardless of biomarker readings to ensure consistency
+B. The algorithm should prioritize cost reduction over treatment effectiveness
+C. The algorithm should always increase the dose to maximize tumor kill rate
+D. The algorithm must include safety thresholds that trigger automatic dose reduction or treatment pause when blood concentration approaches the toxic limit
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Safety thresholds are non-negotiable in adaptive dosing. The algorithm must continuously monitor blood concentration against the upper bound of the therapeutic window and automatically reduce or pause dosing before toxicity occurs, even if this temporarily reduces tumor kill rate. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Safety thresholds are non-negotiable in adaptive dosing. The algorithm must continuously monitor blood concentration against the upper bound of the therapeutic window and automatically reduce or pause dosing before toxicity occurs, even if this temporarily reduces tumor kill rate. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC3)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.4, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC3)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.4, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
-Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
 
 
 ## Resources

@@ -367,6 +367,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Renewable Generation Capacity → Carbon Emission Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Fossil Fuel Generation being active. Without this condition,
+the simulation produces inaccurate results: Renewable Generation Capacity drives Carbon Emission Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Renewable Generation Capacity → Carbon Emission Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Fossil Fuel Generation is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Fossil Fuel Generation active and observe
+     how Renewable Generation Capacity's effect on Carbon Emission Rate is now gated
+   • Toggle Fossil Fuel Generation ON/OFF while Renewable Generation Capacity remains constant
+   • Verify that Carbon Emission Rate only responds to Renewable Generation Capacity when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -940,15 +970,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's model shows that doubling renewable capacity without increasing storage causes grid instability above 40% renewable penetration. What system-level insight does this reveal?
 
-A. Renewable energy is fundamentally incapable of providing reliable power
-B. The energy system has interdependent components; generation capacity alone is insufficient without proportional investment in storage and grid infrastructure to manage intermittency
-C. 40% renewable penetration is the absolute physical maximum for any grid
-D. Storage technology cannot improve beyond current capabilities
+A. Storage technology cannot improve beyond current capabilities
+B. 40% renewable penetration is the absolute physical maximum for any grid
+C. Renewable energy is fundamentally incapable of providing reliable power
+D. The energy system has interdependent components; generation capacity alone is insufficient without proportional investment in storage and grid infrastructure to manage intermittency
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model reveals that the energy system functions as an integrated whole. Adding generation without storage creates excess power during sunny/windy periods and deficits during others. Reliable high-renewable operation requires coordinated investment across generation, storage, and grid management. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals that the energy system functions as an integrated whole. Adding generation without storage creates excess power during sunny/windy periods and deficits during others. Reliable high-renewable operation requires coordinated investment across generation, storage, and grid management. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -959,15 +988,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that tripling storage capacity has a larger positive impact on grid reliability and carbon reduction than doubling renewable generation alone. What does this reveal about leverage points in the energy transition?
 
-A. Renewable generation is unnecessary if sufficient storage exists
+A. Storage is always more important than generation in all energy systems
 B. Storage is the current bottleneck, and investing in the most constrained component produces the greatest system-wide improvement
-C. Storage is always more important than generation in all energy systems
-D. Carbon reduction is unrelated to grid reliability
+C. Carbon reduction is unrelated to grid reliability
+D. Renewable generation is unnecessary if sufficient storage exists
 
 Correct Answer: B
 
-Feedback: Correct. In systems thinking, the bottleneck constrains overall performance. Currently, storage is the binding constraint. Relieving this bottleneck unlocks the full potential of existing renewable capacity, producing outsized improvements in both reliability and carbon reduction compared to adding more generation alone. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. In systems thinking, the bottleneck constrains overall performance. Currently, storage is the binding constraint. Relieving this bottleneck unlocks the full potential of existing renewable capacity, producing outsized improvements in both reliability and carbon reduction compared to adding more generation alone. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -980,13 +1008,12 @@ A model's integrated transition scenario achieves 80% renewable operation with m
 
 A. Increased generation capacity alone without any other changes
 B. Coordinated investment in renewable generation, energy storage, grid modernization, and demand flexibility working together as an integrated system
-C. Maintaining fossil fuel backup for 80% of total capacity
-D. Reducing total energy demand by 80% so that existing renewables are sufficient
+C. Reducing total energy demand by 80% so that existing renewables are sufficient
+D. Maintaining fossil fuel backup for 80% of total capacity
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that reliable high-renewable operation requires coordinated investment in all system components. Generation provides the energy, storage bridges intermittency, modernized grids handle variable flows, and demand flexibility matches consumption to supply. No single component suffices alone. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that reliable high-renewable operation requires coordinated investment in all system components. Generation provides the energy, storage bridges intermittency, modernized grids handle variable flows, and demand flexibility matches consumption to supply. No single component suffices alone. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -997,15 +1024,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student analyzes why fossil fuels still provide 80% of global energy despite renewables being cheaper. Based on model evidence, which explanation best accounts for this paradox?
 
-A. Renewables are actually more expensive when all costs are included
-B. Entrenched infrastructure, $5.9 trillion in annual subsidies, incumbent industry opposition, permitting delays, and the massive capital needed for grid transformation create barriers that override pure cost advantages
-C. Consumers prefer fossil fuel electricity because it is higher quality
+A. Consumers prefer fossil fuel electricity because it is higher quality
+B. Renewables are actually more expensive when all costs are included
+C. Entrenched infrastructure, $5.9 trillion in annual subsidies, incumbent industry opposition, permitting delays, and the massive capital needed for grid transformation create barriers that override pure cost advantages
 D. Renewable technology was only invented within the last 5 years
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals that economic efficiency alone does not determine energy system composition. Entrenched infrastructure represents sunk costs, subsidies distort markets, incumbent industries resist change, and the enormous capital needed for grid transformation creates financing barriers despite favorable long-term economics. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that economic efficiency alone does not determine energy system composition. Entrenched infrastructure represents sunk costs, subsidies distort markets, incumbent industries resist change, and the enormous capital needed for grid transformation creates financing barriers despite favorable long-term economics. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1016,24 +1042,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on model evidence about the energy transition, a policy advisor must recommend the most effective single investment priority. Which recommendation is most strongly supported by the model?
 
-A. Invest exclusively in new renewable generation and let market forces handle the rest
-B. Prioritize energy storage deployment because it is the current bottleneck that limits the effectiveness of all other clean energy investments
+A. Prioritize energy storage deployment because it is the current bottleneck that limits the effectiveness of all other clean energy investments
+B. Invest exclusively in new renewable generation and let market forces handle the rest
 C. Invest exclusively in nuclear power as the only reliable low-carbon source
 D. Focus solely on reducing energy demand rather than changing how energy is generated
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model consistently identifies storage as the bottleneck. Without sufficient storage, additional renewable capacity is curtailed during excess generation and cannot fill gaps during low generation. Storage investment unlocks the value of both existing and future renewable generation capacity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model consistently identifies storage as the bottleneck. Without sufficient storage, additional renewable capacity is curtailed during excess generation and cannot fill gaps during low generation. Storage investment unlocks the value of both existing and future renewable generation capacity. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.2, CCC2)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.2, CCC2)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.2, CCC5)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.2, CCC5)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.2, CCC5)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.2, CCC5)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.2, CCC5)
 
 
 ## Resources

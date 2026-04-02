@@ -736,103 +736,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.1 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.A.1 (Vibrating materials make sound) + CCC2 (Cause and effect: simple tests)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Vibration Strength, Sound Volume. Some components are external (Vibration Strength) and some are internal (Sound Volume). The student needs to understand what each component represents and how they are organized.
+A first grader is learning about sound. Her teacher gives her a drum and asks her to find out what happens when she hits it. She taps the drum gently and then hits it hard. She notices the drum shakes each time she hits it.
 
-What causes sound?
+What happens when you hit a drum?
 
-A. Light shining on something
-B. Vibrations from something shaking
-C. Wind blowing
+A. It gets smaller
+B. It makes a sound
+C. It changes color
 
 Correct Answer: B
 
-Feedback: Yes! All sounds are made by vibrations. Something must shake to make a sound. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When you hit a drum, it shakes (vibrates) and that shaking creates a sound you can hear. If you chose C, hitting a drum does not change its color. The drum shakes and makes a sound. If you chose A, the drum does not get smaller when you hit it. It vibrates and produces a sound.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.A.1 (Sound travels through air) + CCC2 (Cause and effect: identify events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Vibration Strength increases, Sound Volume increases. The student is trying to understand why these relationships are positive or negative.
+A boy rings a bell in the classroom. A girl sitting across the room can hear the bell ringing even though she is far away from the boy. She wonders how the sound got all the way to her ears.
 
-When vibration strength goes UP, what happens to the sound?
+How does sound get to your ears?
 
-A. The sound gets louder
-B. The sound goes away
-C. The sound stays the same
+A. It flies like a bird
+B. It walks on the ground
+C. It travels through the air
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: That is right! Bigger vibrations make louder sounds. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Sound moves through the air in waves until it reaches your ears. You cannot see it, but it travels through the air. If you chose A, sound does not fly like a bird. Sound is not an animal. It travels as invisible waves through the air. If you chose B, sound does not walk on the ground. It moves through the air as vibrations.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation to produce data) + DCI PS4.A.1 (Vibrating materials make sound) + CCC2 (Cause and effect: simple tests show cause)
 
-A student runs a simulation of the model. The model shows that when Vibration Strength increases, Sound Volume increases. The student changes one variable to see how the whole system responds.
+A student is testing a drum. First, she taps it very softly and hears a quiet sound. Then she hits the drum very hard and hears a loud sound. She wants to know what makes a louder sound.
 
-If you pluck a guitar string gently, what kind of sound does it make?
+What makes a louder sound?
 
-A. A very loud sound
-B. No sound at all
-C. A soft, quiet sound
+A. Hitting a drum very hard
+B. Looking at a drum
+C. Tapping a drum softly
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Yes! A gentle pluck makes a small vibration and a soft sound. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Hitting a drum harder makes it shake more, which produces a louder sound. Stronger vibrations make louder sounds. If you chose C, tapping softly makes a small vibration and a quiet sound, not a loud one. If you chose B, looking at a drum does not make any sound at all. You need to hit it to make it vibrate.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation) + DCI PS4.A.1 (Sound can make materials vibrate) + CCC2 (Cause and effect: identify events)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student puts her hand on a speaker that is playing music. She feels the speaker moving back and forth very quickly. Her teacher tells her that this fast movement has a special name in science.
 
-You put your hand on a speaker that is playing music. What do you feel?
+What is shaking back and forth very fast called?
 
-A. Nothing
-B. Vibrations
-C. Cold air
+A. A rainbow
+B. A shadow
+C. A vibration
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! You can feel the vibrations because sound is made by things shaking. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Shaking back and forth very fast is called a vibration. Vibrations are what create sound. If you chose B, a shadow is a dark area made when light is blocked. It has nothing to do with shaking. If you chose A, a rainbow is made of colors in the sky. It is not related to shaking or sound.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Plan an investigation to produce data) + DCI PS4.A.1 (Vibrating materials make sound and sound makes materials vibrate) + CCC2 (Cause and effect: design simple tests)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Vibration Strength), but they can take action on internal components (Sound Volume). They need to decide which action would be most effective based on what the model shows.
+A student plucks a guitar string gently. She watches the string and sees it barely moving back and forth. She listens to the sound and notices it is very quiet. Her friend says that if you pluck it harder, the sound would be different.
 
-What happens when you hit a drum?
+If you pluck a guitar string gently, what kind of sound does it make?
 
-A. It makes a sound
-B. It changes color
-C. It gets smaller
+A. A soft, quiet sound
+B. No sound at all
+C. A very loud sound
 
 Correct Answer: A
 
-Feedback: Yes! When you hit a drum, it shakes and makes a sound. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A gentle pluck makes a small vibration, which produces a soft, quiet sound. If you chose C, a gentle pluck creates only a small vibration. A very loud sound would need a much harder pluck. If you chose B, even a gentle pluck makes the string vibrate a little, so it does produce a soft sound.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.1, CCC2)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.1, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.1, CCC4)
-Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.1, CCC4)
+Question 1: B (Cognitive Level: Identify)
+Question 2: C (Cognitive Level: Identify)
+Question 3: A (Cognitive Level: Reason)
+Question 4: C (Cognitive Level: Reason)
+Question 5: A (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

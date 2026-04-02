@@ -734,102 +734,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Push Strength, Distance Traveled. Some components are external (Push Strength) and some are internal (Distance Traveled). The student needs to understand what each component represents and how they are organized.
+A class is playing with toy cars on the floor. One student gives a car a tiny push. The car rolls a little bit and stops. Another student gives the same car a big push. The car rolls all the way across the room.
 
-What is a force?
+Why did the car go farther with the big push?
 
-A. A color
-B. A push or a pull
-C. A kind of sound
+A. A bigger push gives the car more energy to keep rolling
+B. The car got smaller so it could roll more
+C. The floor got smoother the second time
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! A force is a push or a pull. Forces make things move, stop, or change direction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A bigger push gives the car more energy, and more energy means the car rolls farther before it stops. If you chose B, the car did not change size. The same car was used both times. The push is what changed. If you chose C, the floor stayed the same both times. The only thing that changed was how hard the student pushed.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.A (Forces and Motion) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Push Strength increases, Distance Traveled increases. The student is trying to understand why these relationships are positive or negative.
+Students are building a model about pushing a toy car. The model has two parts: Push Strength and Distance Traveled. Push Strength is how hard you push. Distance Traveled is how far the car rolls. The teacher asks which part is the outside part that WE decide.
 
-When Push Strength goes UP, what happens to Distance Traveled?
+Which part of the model is the outside part?
 
-A. It goes up too
-B. It goes down
-C. It stays the same
+A. Neither part, because the car decides both
+B. Push Strength, because we choose how hard to push
+C. Distance Traveled, because we measure how far it goes
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: That is right! When you push harder, the car goes farther. That is a positive connection. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Push Strength is the outside part because WE choose how hard to push the car. We control that part. Distance Traveled is the inside part because it changes based on the push. If you chose C, we do measure distance, but we do not choose it. It happens because of how hard we pushed. If you chose A, the car does not decide anything. We decide the push, and the push decides the distance.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Push Strength increases, Distance Traveled increases. The student changes one variable to see how the whole system responds.
+A student pushes a toy car three times. The first push is gentle, and the car goes to the edge of the rug. The second push is medium, and the car goes past the rug. The third push is very hard, and the car goes all the way to the wall.
 
-Why did the car go farther with a big push?
+What pattern do you notice?
 
-A. The car got lighter
-B. The strong force gave it more energy
-C. The floor got smoother
+A. The push does not change how far the car goes
+B. A harder push makes the car go farther
+C. A harder push makes the car stop sooner
 
 Correct Answer: B
 
-Feedback: Yes! A strong push gives the car more energy, so it rolls farther before stopping. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Each time the student pushed harder, the car went farther. A harder push gives the car more force, which makes it travel a longer distance. If you chose C, the car actually went farther with harder pushes, not shorter. More force means more distance. If you chose A, the push definitely changed how far the car went. The gentle push made it go a short way, and the hard push made it go far.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.A (Forces and Motion) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The class model shows an arrow from Push Strength to Distance Traveled with a plus sign. The teacher explains that a plus sign means when one part goes up, the other part goes up too.
 
-Push Strength is which part of our model?
+According to the model, what happens when Push Strength goes DOWN?
 
-A. The inside part
-B. The outside part
-C. It is not in our model
+A. Distance Traveled goes down too
+B. Distance Traveled stays the same
+C. Distance Traveled goes up
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Push Strength is the outside part because WE decide how hard to push. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The plus sign means both parts go in the same direction. If Push Strength goes down, Distance Traveled also goes down. A weaker push means the car does not go as far. If you chose C, that would be the opposite pattern. With a plus sign, both parts go the same way, not opposite ways. If you chose B, the model shows they are connected. When one changes, the other changes too.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.2 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Push Strength), but they can take action on internal components (Distance Traveled). They need to decide which action would be most effective based on what the model shows.
+A student pushes a toy truck with a gentle push, and it rolls 2 feet. She wants the truck to reach a toy barn that is 6 feet away. She knows that a harder push makes things go farther.
 
-What makes a toy car start moving?
+What should the student do to make the truck reach the barn?
 
-A. It moves by itself
-B. Someone pushes or pulls it
-C. It wants to move
+A. Push the truck even more gently than before
+B. Wait for the truck to roll on its own
+C. Push the truck much harder than before
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! A toy car moves when someone pushes or pulls it. It cannot move by itself. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The barn is farther away, so the student needs a stronger push. A harder push gives the truck more energy to roll a longer distance. If you chose A, a gentler push would make the truck go even less than 2 feet. That would be farther from the barn, not closer. If you chose B, the truck will not move on its own. It needs a push to start moving. Things need a force to go.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.2, CCC4)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.2, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.A, CCC2)
+Question 2: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.A, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.A, CCC2)
+Question 4: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.A, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI PS2.A, CCC2)
 
+---
 
 ## Resources
 

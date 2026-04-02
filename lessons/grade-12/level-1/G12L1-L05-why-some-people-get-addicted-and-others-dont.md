@@ -347,6 +347,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Genetic Vulnerability → Dopamine Surge relationship as
+unconditional. However, this relationship is scientifically
+contingent on Substance Exposure being active. Without this condition,
+the simulation produces inaccurate results: Genetic Vulnerability drives Dopamine Surge
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Genetic Vulnerability → Dopamine Surge
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Substance Exposure is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Substance Exposure active and observe
+     how Genetic Vulnerability's effect on Dopamine Surge is now gated
+   • Toggle Substance Exposure ON/OFF while Genetic Vulnerability remains constant
+   • Verify that Dopamine Surge only responds to Genetic Vulnerability when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Substance Exposure → Dopamine Surge
+   • Set condition: IF Genetic Vulnerability is ON
+   • This ensures Substance Exposure's effect on Dopamine Surge
+     is contingent on Genetic Vulnerability being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -919,15 +955,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the addiction model, Individual A has high Genetic Vulnerability and first Substance Exposure at age 14. Individual B has low Genetic Vulnerability and first exposure at age 25. What does the model predict about their relative Addiction Severity trajectories?
 
-A. Both individuals will have identical trajectories because the substance is the same
-B. Individual A will show amplified Dopamine Surge, faster Receptor Downregulation, and higher Addiction Severity because high genetic vulnerability combined with adolescent brain development creates compounding risk
-C. Individual B will develop greater Addiction Severity because adult brains are more susceptible to addiction
-D. Neither individual will develop addiction because genetics alone do not determine outcomes
+A. Individual B will develop greater Addiction Severity because adult brains are more susceptible to addiction
+B. Both individuals will have identical trajectories because the substance is the same
+C. Neither individual will develop addiction because genetics alone do not determine outcomes
+D. Individual A will show amplified Dopamine Surge, faster Receptor Downregulation, and higher Addiction Severity because high genetic vulnerability combined with adolescent brain development creates compounding risk
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model predicts compounding risk for Individual A: high genetic vulnerability means stronger initial dopamine response, and adolescent brain exposure means the still-developing prefrontal cortex cannot effectively moderate compulsive behavior. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model predicts compounding risk for Individual A: high genetic vulnerability means stronger initial dopamine response, and adolescent brain exposure means the still-developing prefrontal cortex cannot effectively moderate compulsive behavior. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -946,7 +981,6 @@ D. Stress increases tolerance, which paradoxically protects against addiction
 Correct Answer: B
 
 Feedback: Correct. The model shows a dual mechanism: stress hormones sensitize the reward system (amplifying dopamine response to substances) AND impair prefrontal cortex function (weakening impulse control). These effects multiply, not add. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
 ---
 
 ### Question 3
@@ -957,15 +991,14 @@ A student runs a simulation of the model. The model shows that when Genetic Vuln
 
 Based on the model, why have fear-based prevention programs like 'Just Say No' consistently failed to reduce substance use initiation?
 
-A. They are too expensive to implement effectively
-B. They target conscious choice (prefrontal cortex) but addiction operates through subcortical reward circuits that bypass rational decision-making, and fear can actually increase curiosity
+A. They are too successful, leading schools to become overconfident and reduce other prevention efforts
+B. They are too expensive to implement effectively
 C. They only work for adults, not teenagers
-D. They are too successful, leading schools to become overconfident and reduce other prevention efforts
+D. They target conscious choice (prefrontal cortex) but addiction operates through subcortical reward circuits that bypass rational decision-making, and fear can actually increase curiosity
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that addiction hijacks subcortical reward circuits that operate below conscious decision-making. Fear-based programs address the wrong neural system and research shows they can paradoxically increase curiosity about substances. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that addiction hijacks subcortical reward circuits that operate below conscious decision-making. Fear-based programs address the wrong neural system and research shows they can paradoxically increase curiosity about substances. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -976,15 +1009,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student adds Epigenetic Modification as a component to the model. How does epigenetics expand understanding of addiction beyond simple genetic inheritance?
 
-A. Epigenetics replaces genetics entirely as the cause of addiction
-B. Epigenetic changes from stress or substance exposure can activate or silence addiction-related genes without altering DNA sequence, potentially affecting future generations
-C. Epigenetics only affects hair color and eye color, not brain function
-D. Epigenetic modifications are identical to mutations and are always harmful
+A. Epigenetics only affects hair color and eye color, not brain function
+B. Epigenetic modifications are identical to mutations and are always harmful
+C. Epigenetic changes from stress or substance exposure can activate or silence addiction-related genes without altering DNA sequence, potentially affecting future generations
+D. Epigenetics replaces genetics entirely as the cause of addiction
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Epigenetic modifications change gene expression without altering DNA sequence. Environmental factors like chronic stress or substance exposure can activate addiction-related genes, and some of these changes may be inherited across generations. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Epigenetic modifications change gene expression without altering DNA sequence. Environmental factors like chronic stress or substance exposure can activate addiction-related genes, and some of these changes may be inherited across generations. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -995,24 +1027,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model predicts that understanding addiction as a brain disease should fundamentally change societal responses. Which policy change is most directly supported by the model's evidence?
 
-A. Increasing criminal penalties for substance use to deter people through fear
-B. Replacing punitive approaches with evidence-based treatment that targets the neurobiological mechanisms of reward circuit hijacking and receptor downregulation
-C. Eliminating all prevention programs since addiction is purely biological
-D. Making all substances legal since prohibition does not address brain chemistry
+A. Replacing punitive approaches with evidence-based treatment that targets the neurobiological mechanisms of reward circuit hijacking and receptor downregulation
+B. Increasing criminal penalties for substance use to deter people through fear
+C. Making all substances legal since prohibition does not address brain chemistry
+D. Eliminating all prevention programs since addiction is purely biological
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that addiction involves physical brain changes (receptor downregulation, reward circuit rewiring) that require medical/therapeutic intervention, not punishment. Treatment must target the biological mechanisms the model reveals. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that addiction involves physical brain changes (receptor downregulation, reward circuit rewiring) that require medical/therapeutic intervention, not punishment. Treatment must target the biological mechanisms the model reveals. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
 
 ## Resources

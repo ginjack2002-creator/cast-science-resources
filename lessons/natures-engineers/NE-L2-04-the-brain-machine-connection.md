@@ -190,113 +190,109 @@ Neuroengineers design brain-computer interfaces that help paralyzed patients con
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-8, HS-LS1-2, HS-ETS1-2, HS-ETS1-4.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.A.1 (Describe how the nervous system receives and processes information) + CCC4 (Describe a system in terms of its components)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Stimulus Intensity, Electrode Count, Noise Level, Signal Strength, Encoding Accuracy, Response Time, Motor Output Precision, Adaptation Level. Some components are external (Stimulus Intensity, Electrode Count, Noise Level) and some are internal (Signal Strength, Encoding Accuracy, Response Time, Motor Output Precision, Adaptation Level). The student needs to understand what each component represents and how they are organized.
+Neuroscientists building a brain-computer interface (BCI) create an 8-component model. It includes three external inputs: stimulus intensity (how strong the sensory input is), electrode count (how many sensors read the brain), and noise level (how much random neural activity interferes). The internal components are: signal strength, encoding accuracy, response time, motor output precision, and adaptation level.
 
-In the 8-component model, what is the chain from stimulus to motor output?
+A patient wants to control a robotic hand. Trace the processing chain from the patient's intention to the hand movement. Which chain is correct?
 
-A. Stimulus goes directly to motor output with no steps in between
-B. Stimulus Intensity determines Signal Strength, Electrodes capture it for Encoding Accuracy, which determines Response Time and Motor Output Precision
-C. Electrode Count is the only factor that matters
-D. Motor output happens randomly regardless of input
+A. Motor Output Precision determines Encoding Accuracy, which then controls Signal Strength.
+B. The patient thinks, and the hand moves immediately with no steps in between.
+C. Stimulus Intensity creates Signal Strength, Electrodes capture it for Encoding Accuracy, which determines Response Time and Motor Output Precision.
+D. Electrode Count is the only component that matters for hand movement.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! The model traces the chain: Stimulus Intensity affects Signal Strength, Electrode Count and Noise Level affect Encoding Accuracy, and Encoding Accuracy determines both Response Time and Motor Output Precision. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
-
+Feedback: The model traces a clear processing chain. The patient's intention creates neural activity (stimulus intensity determines signal strength). Electrodes capture this brain activity, and the computer encodes it (electrode count and noise level affect encoding accuracy). The encoded commands then determine how fast (response time) and how accurately (motor output precision) the robotic hand moves. If you chose B, there are multiple processing steps between thought and movement. The signal must be detected, encoded, and translated into motor commands. If you chose D, while electrodes are critical, stimulus intensity and noise level also significantly affect the chain. If you chose A, the chain flows forward from stimulus to motor output, not backward.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.A.1 (Explain how information is processed in the nervous system) + CCC2 (Use cause and effect to explain events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Stimulus Intensity increases, Signal Strength increases; when Electrode Count increases, Encoding Accuracy increases. The student is trying to understand why these relationships are positive or negative.
+A BCI research team tests the effect of noise on their system. They run three trials with identical stimulus intensity and electrode count, but different noise levels. In Trial 1 (low noise), encoding accuracy is 92%. In Trial 2 (medium noise), encoding accuracy drops to 67%. In Trial 3 (high noise), encoding accuracy drops to 38%.
 
-What role does Adaptation Level play in the model?
+Why does encoding accuracy decrease so dramatically as noise increases?
 
-A. Adaptation has no effect on BCI performance
-B. Adaptation only helps when all other conditions are perfect
-C. Adaptation improves the entire system over time as the brain and computer learn to work together
-D. Adaptation makes the system worse over time because the brain gets tired
+A. Neural noise consists of millions of irrelevant neurons firing simultaneously, which buries the target signal, making it harder for the computer to identify and decode the intended command.
+B. Noise only affects the motor output, not the encoding step.
+C. High noise makes the electrodes physically vibrate, shaking the readings.
+D. Noise makes the patient unable to think clearly.
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Yes! The model showed that adaptation is a powerful factor. Over time, the brain produces cleaner signals and the computer gets better at decoding them, improving all downstream performance measures. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Neural noise is the random electrical activity of millions of neurons firing at once. The brain is always electrically active, and the target signal (the patient's intention) must be picked out from this ocean of background activity. Higher noise means more irrelevant signals drowning out the intended command, making accurate encoding much harder. If you chose C, noise in this context is not physical vibration. It is electrical interference from other neurons. If you chose D, the patient can still think and intend clearly. The problem is that the electrodes cannot distinguish the intended signal from background neural activity. If you chose B, the data shows noise directly affects encoding accuracy, which then cascades to affect motor output.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ETS1.B.1 (Evaluate competing design solutions) + CCC2 (Use cause and effect to predict outcomes)
 
-A student runs a simulation of the model. The model shows that when Stimulus Intensity increases, Signal Strength increases and when Electrode Count increases, Encoding Accuracy increases and when Noise Level increases, Encoding Accuracy decreases. The student changes one variable to see how the whole system responds.
+A BCI team tests adaptation over 10 practice sessions. In Session 1, motor output precision is 45%. By Session 5, it rises to 68%. By Session 10, it reaches 84%. The hardware (electrodes, stimulus) stays constant throughout. The only thing changing is the adaptation level as the brain and computer learn to work together.
 
-What did the 'Noise Flood' scenario reveal?
+Based on this data, what should the team predict about Session 15?
 
-A. That noise has no effect on a well-designed BCI
-B. That extreme noise degrades performance even with the best hardware, but adaptation can partially compensate
-C. That noise always completely destroys BCI performance with no way to recover
-D. That adding more noise actually improves signal quality
+A. Precision is random and cannot be predicted from past sessions.
+B. Precision will continue to improve, though gains may slow as the system approaches its maximum potential.
+C. Precision will stay exactly at 84% because adaptation stops after Session 10.
+D. Precision will drop back to 45% because the brain gets tired of adapting.
 
 Correct Answer: B
 
-Feedback: Correct! The Noise Flood scenario showed that extreme noise degrades even the best hardware, but adaptation can partially compensate by helping the brain produce cleaner, more distinguishable signals. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The data shows a pattern of improving precision over time: 45% to 68% to 84%. The rate of improvement slows (23 points in sessions 1-5, 16 points in sessions 5-10), suggesting the system is approaching its maximum but still improving. The team should predict continued improvement with diminishing returns. If you chose D, there is no evidence the brain "tires" of adapting. The data shows consistent improvement. If you chose C, there is no indication that adaptation stops at any specific session. The data shows ongoing improvement with slowing gains. If you chose A, the data shows a clear, predictable pattern of improvement over time.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI LS1.A.1 (Explain nervous system signal processing) + CCC4 (Describe interactions within a system)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student runs the "Noise Flood" scenario: extreme noise with the best available hardware (many electrodes, strong stimulus). Results show encoding accuracy drops from 92% (low noise) to 51% (extreme noise) even with optimal hardware. However, after 10 adaptation sessions at extreme noise, accuracy recovers to 72%.
 
-According to the model, what makes the best-case BCI scenario work so well?
+What does this scenario reveal about the interaction between hardware quality, noise, and adaptation?
 
-A. Only one factor needs to be optimal for peak performance
-B. All three inputs must align: strong stimulus, many electrodes, and low noise, with adaptation amplifying the results over time
-C. The best case only requires expensive equipment, nothing else
-D. The best case works because the brain does all the work and the computer is passive
+A. Adaptation completely overcomes extreme noise, so noise does not matter if you practice enough.
+B. The only solution to extreme noise is more electrodes.
+C. Extreme noise degrades performance even with the best hardware, but adaptation can partially compensate because the brain learns to produce cleaner signals and the computer learns better filtering strategies.
+D. Hardware quality is irrelevant when noise is extreme.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! Peak BCI performance requires strong stimulus (clear signals), many electrodes (accurate capture), low noise (clean environment), and adaptation (learned partnership between brain and computer). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The scenario shows three important findings. First, extreme noise drops performance even with optimal hardware (92% to 51%). Second, adaptation partially recovers performance (51% to 72%). Third, full original performance is not restored (72% vs 92%). This means hardware helps, noise hurts, and adaptation partially compensates, but all three factors interact simultaneously. If you chose D, the hardware still matters. Without good hardware, the starting point would be even worse. If you chose A, adaptation recovered accuracy to 72%, not to the original 92%. It helps but does not fully overcome extreme noise. If you chose B, the data shows adaptation also helps. More electrodes plus adaptation together would be better than either alone.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ETS1.B.1 (Evaluate design solutions systematically) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Stimulus Intensity, Electrode Count, Noise Level), but they can take action on internal components (Signal Strength, Encoding Accuracy, Response Time, Motor Output Precision, Adaptation Level). They need to decide which action would be most effective based on what the model shows.
+A hospital is choosing a BCI system for paralyzed patients. System A has 64 electrodes, moderate noise shielding, and no adaptation training program. System B has 32 electrodes, excellent noise shielding, and a 20-session adaptation training program. The model predicts System A starts with 71% motor output precision. System B starts with 58% precision but reaches 82% after the full training program.
 
-What is an electrode in the context of brain science?
+Based on the model, which system will provide better long-term outcomes for patients, and why?
 
-A. A type of battery
-B. A tiny sensor that detects electrical activity from the brain
-C. A medicine that helps the brain work better
-D. A screen that displays brain images
+A. System A, because it has more electrodes and higher starting precision.
+B. Neither system will work because BCI technology is not advanced enough.
+C. Both systems are identical because electrode count is the only factor that matters.
+D. System B, because although it starts lower, the combination of excellent noise shielding and adaptation training produces higher precision (82%) long-term than System A's static 71%.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! An electrode is a tiny sensor placed on or near the brain that can detect the electrical activity of nearby neurons. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model predicts long-term performance, and System B eventually reaches 82% compared to System A's static 71%. System B achieves this through excellent noise shielding (which protects encoding accuracy) and an adaptation program (which allows the brain and computer to improve together over time). Starting precision matters less than long-term potential. If you chose A, more electrodes help initially, but System A lacks noise shielding and adaptation, limiting its ceiling at 71%. If you chose C, the model shows electrode count, noise level, and adaptation all matter. No single factor determines performance. If you chose B, the model predicts functional precision levels for both systems. BCI technology is advancing rapidly.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.A.1, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.A.1, CCC2)
+Question 3: B (Cognitive Level: Predict — SEP 2.1.4, DCI ETS1.B.1, CCC2)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 6.1.1, DCI LS1.A.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ETS1.B.1, CCC4)
 
+---
 
 ## Lesson Metadata
 

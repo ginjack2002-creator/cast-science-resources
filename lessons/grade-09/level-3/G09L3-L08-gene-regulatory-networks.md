@@ -390,6 +390,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Transcription Factor Concentration → mRNA Transcription Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Epigenetic Modification being inactive. Without this condition,
+the simulation produces inaccurate results: Transcription Factor Concentration drives mRNA Transcription Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Transcription Factor Concentration → mRNA Transcription Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Epigenetic Modification is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Epigenetic Modification inactive and observe
+     how Transcription Factor Concentration's effect on mRNA Transcription Rate is now gated
+   • Toggle Epigenetic Modification ON/OFF while Transcription Factor Concentration remains constant
+   • Verify that mRNA Transcription Rate only responds to Transcription Factor Concentration when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Epigenetic Modification → mRNA Transcription Rate
+   • Set condition: IF Transcription Factor Concentration is ON
+   • This ensures Epigenetic Modification's effect on mRNA Transcription Rate
+     is contingent on Transcription Factor Concentration being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -960,15 +996,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's gene regulatory network model shows that doubling Transcription Factor Concentration doubles mRNA Transcription Rate but only increases final Protein Translation Rate by 30%. Which component MOST LIKELY creates this discrepancy?
 
-A. mRNA Degradation Rate, which destroys a significant fraction of the additional mRNA before it can be translated, and limited Ribosome Availability, which prevents all remaining mRNA from being simultaneously translated
-B. Protein Degradation Rate alone accounts for the entire discrepancy
-C. The DNA sequence limits how much protein can be produced
+A. The DNA sequence limits how much protein can be produced
+B. mRNA Degradation Rate, which destroys a significant fraction of the additional mRNA before it can be translated, and limited Ribosome Availability, which prevents all remaining mRNA from being simultaneously translated
+C. Protein Degradation Rate alone accounts for the entire discrepancy
 D. Transcription Factor Concentration has no effect on downstream protein levels
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. Two attenuation points operate between mRNA production and protein output. First, mRNA is constantly degraded, so more rapid transcription only modestly increases steady-state mRNA levels. Second, ribosomes are a shared, limited resource, so even higher mRNA levels cannot all be translated simultaneously. Together, these factors dampen the signal at each level. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Two attenuation points operate between mRNA production and protein output. First, mRNA is constantly degraded, so more rapid transcription only modestly increases steady-state mRNA levels. Second, ribosomes are a shared, limited resource, so even higher mRNA levels cannot all be translated simultaneously. Together, these factors dampen the signal at each level. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -979,15 +1014,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A model simulation demonstrates that switching Feedback Signal Strength from negative to positive converts a system with stable, graded gene expression into a bistable switch with only two possible states (high or low). Which property of positive feedback BEST explains this behavior?
 
-A. Positive feedback is inherently destructive and crashes the system
-B. When a protein activates its own gene, small increases in protein level trigger further increases, creating a self-reinforcing loop that drives the system to its maximum state; once at maximum, the loop maintains itself, making the high state self-sustaining and difficult to reverse
-C. Positive feedback has no effect on gene expression dynamics
-D. Positive feedback reduces protein levels by increasing degradation
+A. When a protein activates its own gene, small increases in protein level trigger further increases, creating a self-reinforcing loop that drives the system to its maximum state; once at maximum, the loop maintains itself, making the high state self-sustaining and difficult to reverse
+B. Positive feedback has no effect on gene expression dynamics
+C. Positive feedback reduces protein levels by increasing degradation
+D. Positive feedback is inherently destructive and crashes the system
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Positive autoregulation creates bistability. Above a threshold concentration, the protein activates its own gene sufficiently to maintain high expression indefinitely. Below the threshold, expression decays to the basal low state. The system 'locks in' to whichever state it reaches, creating a binary switch from a continuous input. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Positive autoregulation creates bistability. Above a threshold concentration, the protein activates its own gene sufficiently to maintain high expression indefinitely. Below the threshold, expression decays to the basal low state. The system 'locks in' to whichever state it reaches, creating a binary switch from a continuous input. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1000,13 +1034,12 @@ In the model, increasing Epigenetic Modification (closing chromatin) at a gene l
 
 A. Showing that the same transcription factor activates the gene normally when chromatin is open, demonstrating that the factor is functional and the silencing is specifically due to chromatin state, not transcription factor inactivity
 B. Showing that epigenetic modification affects all genes in the genome equally
-C. Demonstrating that transcription factors are destroyed by epigenetic modifications
-D. Proving that closed chromatin cannot be reopened under any conditions
+C. Proving that closed chromatin cannot be reopened under any conditions
+D. Demonstrating that transcription factors are destroyed by epigenetic modifications
 
 Correct Answer: A
 
-Feedback: Correct. This is a controlled comparison. By demonstrating that the same transcription factor successfully activates the gene when chromatin is open (control) but fails when chromatin is closed (experimental), the student isolates chromatin state as the variable responsible for silencing, ruling out transcription factor dysfunction as an alternative explanation. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This is a controlled comparison. By demonstrating that the same transcription factor successfully activates the gene when chromatin is open (control) but fails when chromatin is closed (experimental), the student isolates chromatin state as the variable responsible for silencing, ruling out transcription factor dysfunction as an alternative explanation. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1018,14 +1051,13 @@ Scientists are studying data related to this system. They collected observations
 A model of a gene regulatory network shows that Negative Feedback produces stable output despite random fluctuations (noise) in Transcription Factor Concentration. Which property of negative feedback MOST directly explains this noise reduction?
 
 A. Negative feedback eliminates all molecular noise at the DNA level
-B. When protein levels randomly rise above the set point, the feedback loop increases repression, pushing levels back down; when levels randomly drop below the set point, reduced repression allows levels to recover, creating a self-correcting homeostatic mechanism
+B. Negative feedback prevents transcription factors from binding to DNA
 C. Negative feedback slows all cellular processes equally
-D. Negative feedback prevents transcription factors from binding to DNA
+D. When protein levels randomly rise above the set point, the feedback loop increases repression, pushing levels back down; when levels randomly drop below the set point, reduced repression allows levels to recover, creating a self-correcting homeostatic mechanism
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Negative feedback acts as an error-correction mechanism. Any deviation from the steady-state protein level triggers a proportional opposing response. This self-correction dampens random fluctuations, maintaining consistent gene expression output despite the inherently noisy cellular environment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Negative feedback acts as an error-correction mechanism. Any deviation from the steady-state protein level triggers a proportional opposing response. This self-correction dampens random fluctuations, maintaining consistent gene expression output despite the inherently noisy cellular environment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1037,23 +1069,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 A student analyzes how a mutation in a transcription factor that regulates cell cycle genes could lead to cancer. The model shows that the mutant transcription factor has increased Promoter Binding Affinity for pro-growth genes AND decreased binding to anti-growth genes. Which consequence does the model predict?
 
 A. Cell division rate remains unchanged because the two effects cancel out
-B. Simultaneous overexpression of growth-promoting genes and underexpression of growth-inhibiting genes removes both the accelerator limit and the brakes on cell division, producing uncontrolled proliferation characteristic of cancer
-C. The cell immediately dies because it cannot sustain high transcription rates
+B. The cell immediately dies because it cannot sustain high transcription rates
+C. Simultaneous overexpression of growth-promoting genes and underexpression of growth-inhibiting genes removes both the accelerator limit and the brakes on cell division, producing uncontrolled proliferation characteristic of cancer
 D. The mutation only affects one gene at a time and cannot cause systemic effects
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This dual disruption represents a 'two-hit' regulatory failure. Increased activation of oncogenes (accelerator) combined with decreased activation of tumor suppressors (brakes) removes two independent layers of growth control simultaneously, producing the unregulated cell division that defines cancer. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This dual disruption represents a 'two-hit' regulatory failure. Increased activation of oncogenes (accelerator) combined with decreased activation of tumor suppressors (brakes) removes two independent layers of growth control simultaneously, producing the unregulated cell division that defines cancer. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
 Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
 
 ## Resources

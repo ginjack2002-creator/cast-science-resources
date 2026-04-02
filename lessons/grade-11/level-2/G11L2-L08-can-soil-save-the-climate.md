@@ -927,107 +927,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI LS2.B (Cycling of matter in ecosystems) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Agricultural Management Practice, Plant Carbon Fixation Rate, Soil Microbial Activity, Soil Organic Carbon Stock, Soil Respiration Rate, Net Soil Carbon Balance. Some components are external (Agricultural Management Practice) and some are internal (Plant Carbon Fixation Rate, Soil Microbial Activity, Soil Organic Carbon Stock, Soil Respiration Rate, Net Soil Carbon Balance). The student needs to understand what each component represents and how they are organized.
+A soil science team conducts a 20-year comparison of carbon storage in three agricultural management systems in California. Conventional tillage plots lost an average of 0.5 metric tons of soil carbon per hectare per year. No-till plots maintained stable carbon levels. Regenerative plots (no-till plus cover crops, compost application, and diverse crop rotation) gained 1.2 metric tons of carbon per hectare per year. Globally, agricultural soils have lost 50-70% of their original carbon stock, representing 133 billion tons of CO2 released to the atmosphere since the dawn of agriculture.
 
 The model shows that regenerative agriculture can sequester 0.5-3.0 tons of carbon per hectare per year, but gains slow after 20-30 years. What does this saturation effect imply for the role of soil carbon in climate strategy?
 
-A. Soil carbon sequestration is useless because it eventually stops
+A. The saturation effect means soils release all stored carbon after 30 years
 B. Soil carbon sequestration is a valuable time-buying strategy that can offset 5-10% of global emissions for 2-3 decades, but it is not a permanent substitute for eliminating fossil fuel emissions because soils reach a new equilibrium
-C. Soil can absorb unlimited carbon if regenerative practices are maintained forever
-D. The saturation effect means soils release all stored carbon after 30 years
+C. Soil carbon sequestration is useless because it eventually stops
+D. Soil can absorb unlimited carbon if regenerative practices are maintained forever
 
 Correct Answer: B
 
-Feedback: Correct. Soil carbon sequestration provides meaningful near-term benefits but plateaus as soils reach a new equilibrium. It buys time but cannot replace the need to eliminate fossil fuel emissions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Soil carbon sequestration provides meaningful near-term benefits but plateaus as soils reach a new equilibrium. It buys time but cannot replace the need to eliminate fossil fuel emissions. If you chose C, this response overgeneralizes without considering the specific mechanisms and evidence presented. The saturation effect means soils approach a new carbon equilibrium under regenerative management. The 20-30 year window provides meaningful mitigation (2-5 Gt CO2/year globally) but is finite. Soil carbon is a bridge strategy, not a permanent solution. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. The saturation effect means soils approach a new carbon equilibrium under regenerative management. The 20-30 year window provides meaningful mitigation (2-5 Gt CO2/year globally) but is finite. Soil carbon is a bridge strategy, not a permanent solution. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The saturation effect means soils approach a new carbon equilibrium under regenerative management. The 20-30 year window provides meaningful mitigation (2-5 Gt CO2/year globally) but is finite. Soil carbon is a bridge strategy, not a permanent solution.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.4 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI LS2.B (Cycling of matter in ecosystems) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Agricultural Management Practice increases, Plant Carbon Fixation Rate increases; when Plant Carbon Fixation Rate increases, Soil Microbial Activity increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of soil carbon dynamics identifies the key feedback loop: healthy soil microbiome breaks down organic matter, releasing nutrients that support plant growth, which returns carbon to the soil through root exudates and leaf litter, maintaining the microbiome. The model shows that conventional agriculture disrupts this cycle by killing soil microorganisms through tillage and chemical inputs, reducing organic matter input, and exposing stored carbon to oxidation. Once soil organic matter drops below 2%, the feedback loop weakens significantly and recovery becomes slow.
 
 The model reveals a dangerous climate feedback: warming accelerates soil respiration, releasing stored carbon, which causes more warming. With 2,500 Gt of carbon in soils (3x the atmosphere), what is the most alarming implication?
 
-A. Warming will have no effect on soil carbon because microbes become inactive in warm conditions
+A. This feedback loop would stop once atmospheric CO2 reaches a certain concentration
 B. If warming pushes soils from net carbon sinks to net sources globally, the resulting carbon release could dwarf any agricultural sequestration effort and create a self-reinforcing warming cycle
-C. Soil warming only affects desert soils, not agricultural or forest soils
-D. This feedback loop would stop once atmospheric CO2 reaches a certain concentration
+C. Warming will have no effect on soil carbon because microbes become inactive in warm conditions
+D. Soil warming only affects desert soils, not agricultural or forest soils
 
 Correct Answer: B
 
-Feedback: Correct. The soil-climate feedback is potentially catastrophic: if warming accelerates respiration enough to flip soils from sinks to sources, the 2,500 Gt carbon reservoir becomes a warming accelerant rather than a buffer. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The soil-climate feedback is potentially catastrophic: if warming accelerates respiration enough to flip soils from sinks to sources, the 2,500 Gt carbon reservoir becomes a warming accelerant rather than a buffer. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. The model shows that soils store 3x the atmospheric carbon. If warming-accelerated respiration exceeds plant carbon inputs globally, soils could release hundreds of gigatons of CO2, dwarfing both human emissions and any sequestration effort in a self-reinforcing cycle. If you chose D, this answer oversimplifies a multi-factor system by focusing on a single variable. The model shows that soils store 3x the atmospheric carbon. If warming-accelerated respiration exceeds plant carbon inputs globally, soils could release hundreds of gigatons of CO2, dwarfing both human emissions and any sequestration effort in a self-reinforcing cycle. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. The model shows that soils store 3x the atmospheric carbon. If warming-accelerated respiration exceeds plant carbon inputs globally, soils could release hundreds of gigatons of CO2, dwarfing both human emissions and any sequestration effort in a self-reinforcing cycle.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.C (Human impacts on Earth systems) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Agricultural Management Practice increases, Plant Carbon Fixation Rate increases and when Plant Carbon Fixation Rate increases, Soil Microbial Activity increases and when Soil Microbial Activity increases, Soil Organic Carbon Stock increases. The student changes one variable to see how the whole system responds.
+Researchers measure the water-holding capacity of soils with different organic matter content. For every 1% increase in soil organic matter, each acre of soil can hold an additional 20,000 gallons of water. Fields with 5% organic matter show 60% less runoff during heavy rain events compared to fields with 1% organic matter. The computational model reveals that soil carbon storage provides co-benefits that compound: more carbon means more water retention, which means more drought resilience, which means more plant growth, which means more carbon input, creating a positive feedback loop of soil improvement.
 
 A carbon credit company claims farmers can earn $50/ton for soil carbon sequestration. The model shows that carbon gains are reversible if practices revert to conventional tillage. What risk does this 'permanence problem' create?
 
-A. No risk, because carbon credits are permanent by definition
-B. Stored soil carbon can be re-released within a few years if farmers return to tillage-based practices, meaning credits were sold for carbon storage that did not actually persist, undermining the integrity of carbon markets
-C. Soil carbon is geologically permanent once stored, so reversibility is not a concern
-D. The permanence problem only affects tropical soils, not temperate agricultural soils
+A. The permanence problem only affects tropical soils, not temperate agricultural soils
+B. Soil carbon is geologically permanent once stored, so reversibility is not a concern
+C. Stored soil carbon can be re-released within a few years if farmers return to tillage-based practices, meaning credits were sold for carbon storage that did not actually persist, undermining the integrity of carbon markets
+D. No risk, because carbon credits are permanent by definition
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Unlike geological carbon storage, soil carbon gains are biologically reversible. If economic conditions change and farmers revert to conventional tillage, decades of stored carbon can be released in just a few years. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Unlike geological carbon storage, soil carbon gains are biologically reversible. If economic conditions change and farmers revert to conventional tillage, decades of stored carbon can be released in just a few years. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Soil carbon storage is biologically active and reversible. If a farmer who earned carbon credits for no-till practice returns to conventional plowing (due to economics, crop disease, or land sale), the stored carbon can be released rapidly, creating a 'phantom credit' problem in carbon markets. If you chose B, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Soil carbon storage is biologically active and reversible. If a farmer who earned carbon credits for no-till practice returns to conventional plowing (due to economics, crop disease, or land sale), the stored carbon can be released rapidly, creating a 'phantom credit' problem in carbon markets. If you chose A, this choice oversimplifies a multi-factor system by focusing on a single variable. Soil carbon storage is biologically active and reversible. If a farmer who earned carbon credits for no-till practice returns to conventional plowing (due to economics, crop disease, or land sale), the stored carbon can be released rapidly, creating a 'phantom credit' problem in carbon markets.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.B (Cycling of matter in ecosystems) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A national assessment of soil health across 5,000 farms reveals that farms practicing regenerative agriculture for more than 7 years show soil organic matter levels averaging 4.8%, compared to 1.9% for conventional farms in the same region. However, the transition period (years 1-3) shows temporarily decreased yields (average 15% reduction) as soil biology rebuilds. This creates an economic barrier: farmers must absorb short-term losses while investing in long-term soil health, and many cannot afford the transition without financial support.
 
 The model compares conventional tillage (bare fallow, synthetic inputs) to regenerative management (no-till, cover crops). After 50 years, the conventional scenario shows steadily declining Soil Organic Carbon Stock. Which mechanism drives this decline?
 
-A. Synthetic fertilizers chemically destroy soil organic matter
-B. Tillage physically disrupts soil structure, exposing buried organic matter to oxygen, which accelerates microbial decomposition and CO2 release while bare fallow periods provide no new carbon inputs to replace losses
-C. Conventional crops absorb carbon from the soil rather than the atmosphere
-D. Machinery compaction squeezes carbon gas out of the soil
+A. Tillage physically disrupts soil structure, exposing buried organic matter to oxygen, which accelerates microbial decomposition and CO2 release while bare fallow periods provide no new carbon inputs to replace losses
+B. Synthetic fertilizers chemically destroy soil organic matter
+C. Machinery compaction squeezes carbon gas out of the soil
+D. Conventional crops absorb carbon from the soil rather than the atmosphere
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Tillage is the primary driver: it breaks apart soil aggregates that protect organic matter, exposes carbon to aerobic decomposition, and the absence of cover crops during fallow periods means no new carbon inputs to offset losses. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Tillage is the primary driver: it breaks apart soil aggregates that protect organic matter, exposes carbon to aerobic decomposition, and the absence of cover crops during fallow periods means no new carbon inputs to offset losses. If you chose B, this response overgeneralizes without considering the specific mechanisms and evidence presented. Conventional tillage accelerates carbon loss through two mechanisms: plowing physically exposes buried organic matter to oxygen, accelerating microbial decomposition, and bare fallow periods between crops provide zero new carbon inputs. The soil steadily loses carbon because outputs exceed inputs. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. Conventional tillage accelerates carbon loss through two mechanisms: plowing physically exposes buried organic matter to oxygen, accelerating microbial decomposition, and bare fallow periods between crops provide zero new carbon inputs. The soil steadily loses carbon because outputs exceed inputs. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Conventional tillage accelerates carbon loss through two mechanisms: plowing physically exposes buried organic matter to oxygen, accelerating microbial decomposition, and bare fallow periods between crops provide zero new carbon inputs. The soil steadily loses carbon because outputs exceed inputs.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ESS3.C (Human impacts on Earth systems) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Agricultural Management Practice), but they can take action on internal components (Plant Carbon Fixation Rate, Soil Microbial Activity, Soil Organic Carbon Stock, Soil Respiration Rate, Net Soil Carbon Balance). They need to decide which action would be most effective based on what the model shows.
+A climate mitigation planning team models the potential of soil carbon sequestration to address global warming. Their analysis shows that restoring the world's agricultural soils to pre-agricultural carbon levels could sequester 100-150 gigatons of CO2 over 50 years, equivalent to 15-20 years of current global emissions. However, the model reveals a critical constraint: soil carbon storage has a saturation point. Each soil type has a maximum carbon carrying capacity determined by climate, clay content, and mineral composition. Once saturated, soils cannot store additional carbon regardless of management practices.
 
 A policymaker asks whether soil carbon sequestration alone could offset all global CO2 emissions (approximately 40 Gt/year). Using the model's data on sequestration rates (0.5-3.0 tons C/hectare/year) and global cropland (1.5 billion hectares), evaluate this claim.
 
-A. Yes, soil could easily offset all emissions with current farmland
-B. At maximum theoretical rates (3 t/ha/yr on all 1.5B hectares), soil could offset roughly 4.5 Gt C/year (about 16 Gt CO2/year), which is 5-10% of global emissions, significant but far short of full offset, and even this maximum would plateau within 20-30 years
-C. Soil sequestration could offset emissions if we doubled global farmland
-D. The calculation is irrelevant because soil carbon has no effect on atmospheric CO2
+A. The calculation is irrelevant because soil carbon has no effect on atmospheric CO2
+B. Soil sequestration could offset emissions if we doubled global farmland
+C. Yes, soil could easily offset all emissions with current farmland
+D. At maximum theoretical rates (3 t/ha/yr on all 1.5B hectares), soil could offset roughly 4.5 Gt C/year (about 16 Gt CO2/year), which is 5-10% of global emissions, significant but far short of full offset, and even this maximum would plateau within 20-30 years
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Even the maximum theoretical calculation (3 t C x 1.5B ha = 4.5 Gt C/year = ~16 Gt CO2/year) covers only about 40% of emissions. Realistic adoption rates and the 20-30 year plateau reduce this further to 5-10%. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Even the maximum theoretical calculation (3 t C x 1.5B ha = 4.5 Gt C/year = ~16 Gt CO2/year) covers only about 40% of emissions. Realistic adoption rates and the 20-30 year plateau reduce this further to 5-10%. If you chose C, this response overgeneralizes without considering the specific mechanisms and evidence presented. The math shows soil carbon sequestration's limits: even at maximum rates across all cropland, the theoretical offset is roughly 16 Gt CO2/year (40% of emissions). Realistically, partial adoption and lower average rates reduce this to 2-5 Gt CO2/year (5-12%), and gains plateau after 20-30 years. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. The math shows soil carbon sequestration's limits: even at maximum rates across all cropland, the theoretical offset is roughly 16 Gt CO2/year (40% of emissions). Realistically, partial adoption and lower average rates reduce this to 2-5 Gt CO2/year (5-12%), and gains plateau after 20-30 years. If you chose A, this choice dismisses relevant factors that the evidence directly addresses. The math shows soil carbon sequestration's limits: even at maximum rates across all cropland, the theoretical offset is roughly 16 Gt CO2/year (40% of emissions). Realistically, partial adoption and lower average rates reduce this to 2-5 Gt CO2/year (5-12%), and gains plateau after 20-30 years.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.4, CCC2)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.4, CCC4)
+Question 1: B (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-LS2-4, CCC4)
+Question 2: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS2-4, CCC2)
+Question 3: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS2-4, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ESS3-3, CCC7)
+Question 5: D (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ESS3-3, CCC4)
 
+---
 
 ## Resources
 

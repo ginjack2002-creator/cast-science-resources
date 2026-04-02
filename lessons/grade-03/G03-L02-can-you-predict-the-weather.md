@@ -837,106 +837,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.1 (Represent data in tables/displays) + DCI ESS2.D.1 (Weather conditions and patterns) + CCC1 (Identify patterns in data)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Temperature, Cloud Cover, Chance of Rain. Some components are external (Temperature) and some are internal (Cloud Cover, Chance of Rain). The student needs to understand what each component represents and how they are organized.
+A third-grade class recorded the high temperature every day for one year. They made a bar graph showing the average temperature for each month. The graph shows that June, July, and August had the highest temperatures, while December, January, and February had the lowest temperatures. This same pattern appeared when they looked at data from previous years.
 
-In the weather model, when Temperature increases, what happens to Cloud Cover?
+What does this data BEST represent?
 
-A. Cloud Cover always decreases to zero
-B. Cloud Cover can increase because warm air causes more water to evaporate and form clouds
-C. Cloud Cover is not connected to Temperature at all
-D. Clouds disappear when it is warm
+A. A seasonal climate pattern that repeats from year to year.
+B. A single weather event that happened one time.
+C. A mistake in the students' data collection.
+D. A random set of numbers with no pattern.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct! When temperature rises, more water evaporates into the air, which can build up into clouds, especially during summer afternoons. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: When the same months are hottest and coldest every year, that is a seasonal pattern. Climate is made up of these repeating weather patterns over many years. If you chose B, one weather event happens on a single day. This data covers a whole year and shows it repeats, so it is a pattern, not an event. If you chose D, the temperatures clearly follow a pattern with summer being hot and winter being cold. That is not random. If you chose C, when the same pattern shows up year after year, that confirms the data is correct, not a mistake.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.D.1 (Describe how weather components interact) + CCC2 (Cause and effect relationships)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Temperature increases, Cloud Cover increases; when Cloud Cover increases, Chance of Rain increases. The student is trying to understand why these relationships are positive or negative.
+In the classroom weather model, a student sees a positive arrow from Temperature to Cloud Cover. The student learns that when the temperature rises, more water evaporates from lakes and oceans into the air. This water vapor rises and forms clouds. The student wants to understand what this means.
 
-A student collected temperature data for a full year. She found that June, July, and August were always the hottest months. What did she discover?
+Based on the positive relationship in the model, what happens when Temperature increases?
 
-A. A weather event
-B. A seasonal pattern in climate data
-C. A random coincidence
-D. A mistake in her data
+A. Cloud Cover can increase because warm air causes more water to evaporate and form clouds.
+B. Cloud Cover decreases because heat burns away the clouds.
+C. Cloud Cover is not connected to Temperature in the model.
+D. All clouds disappear when it gets warm.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Exactly! She found a seasonal pattern. Climate is made of these repeating patterns. Summer months are typically the hottest year after year. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A positive relationship means both go up together. When temperature rises, more water evaporates into the air, which can build up and form more clouds. If you chose B, heat does not burn clouds. Warmer temperatures actually cause more evaporation, which adds more water vapor that can form clouds. If you chose C, the model clearly shows a positive arrow connecting Temperature to Cloud Cover. They are connected. If you chose D, clouds do not disappear in warm weather. Summer afternoons often have puffy clouds because the warm air evaporated lots of water.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1.1 (Represent data to describe weather) + DCI ESS2.D.1 (Distinguish weather from climate) + CCC1 (Identify patterns over time)
 
-A student runs a simulation of the model. The model shows that when Temperature increases, Cloud Cover increases and when Cloud Cover increases, Chance of Rain increases. The student changes one variable to see how the whole system responds.
+Marcus looks outside and sees gray clouds and rain. He tells his friend, "The climate today is rainy." His friend says, "I think you mean the weather is rainy, not the climate." Marcus is confused about the difference between weather and climate.
 
-What is the difference between weather and climate?
+Which statement BEST explains the difference between weather and climate?
 
-A. Weather and climate mean the same thing
-B. Weather is what is happening right now; climate is the pattern of weather over many years
-C. Climate is only about rain; weather is about everything else
-D. Weather lasts longer than climate
+A. Climate is only about rain. Weather is about everything else.
+B. Weather is what is happening in the sky right now. Climate is the pattern of weather over many years.
+C. Weather lasts longer than climate.
+D. Weather and climate mean the same thing.
 
 Correct Answer: B
 
-Feedback: You got it! Weather is what the sky and air are doing right now. Climate is the average weather pattern over 30 or more years. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Weather describes what the sky is doing right now (today's rain). Climate is the big-picture pattern of weather over 30 or more years. Marcus was describing today's weather, not the climate. If you chose D, they are different. Weather is short-term and changes daily. Climate is the long-term average pattern. If you chose A, climate includes all weather conditions (temperature, precipitation, wind) over many years, not just rain. If you chose C, it is the opposite. Weather changes daily. Climate is the longer pattern over many years.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.D.1 (Weather system components) + CCC4 (Describe a system in terms of its components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In the weather model, students learned about external and internal components. The model includes Temperature, Cloud Cover, Chance of Rain, and Wind Speed. The teacher explains that the external component is the one that drives the system but is set by outside conditions that we do not control.
 
-In the model, Temperature is the external component. Why is it considered external?
+Which component is EXTERNAL in the weather model?
 
-A. Because it changes every second
-B. Because it is set by the sun and seasons, and it drives the weather system
-C. Because it is not important to weather
-D. Because students can change the temperature outside
+A. Wind Speed, because wind comes from far away.
+B. Chance of Rain, because rain falls from outside.
+C. Temperature, because it is set by the sun and seasons and drives Cloud Cover and Chance of Rain.
+D. Cloud Cover, because clouds are high up in the sky.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Right! Temperature is external because it is determined by the sun and seasons. We do not control it, but it drives Cloud Cover and Chance of Rain inside the system. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
-
+Feedback: Temperature is external because it is determined by the sun and seasons. We do not control it, but it drives Cloud Cover and Chance of Rain inside the system. If you chose D, Cloud Cover is internal because it changes as a result of temperature. More heat means more evaporation, which means more clouds. If you chose B, Chance of Rain is internal because it depends on Cloud Cover, which depends on Temperature. It is a result, not a driver. If you chose A, Wind Speed may come from outside, but in this model Temperature is the main external driver that causes the other components to change.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.1 + CCC1 (Patterns)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS2.D.1 (Predict weather patterns) + CCC1 (Use patterns to make predictions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Temperature), but they can take action on internal components (Cloud Cover, Chance of Rain). They need to decide which action would be most effective based on what the model shows.
+A weather scientist studies data from the past 20 years. She finds that in her city, when the temperature stays above 85 degrees for three days in a row, there is almost always a thunderstorm on the fourth day. It is now the end of the third hot day, and the temperature has been above 85 degrees each day.
 
-If it is usually hot in July and cold in January, what is the word for this pattern over many years?
+Based on the 20-year pattern, what would the scientist MOST LIKELY predict for tomorrow?
 
-A. Weather
-B. Climate
-C. A storm
-D. Temperature
+A. Snow, because the hot weather needs to end.
+B. More hot and sunny weather, because hot days always continue.
+C. She cannot predict anything because weather is completely random.
+D. A thunderstorm, because the data shows this pattern has repeated many times over 20 years.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Nice thinking! Climate is the pattern of weather over a long time. Knowing that July is hot and January is cold is understanding climate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Scientists use long-term patterns in data to make predictions. The 20-year pattern shows thunderstorms after three hot days, so that is the best prediction. If you chose A, snow does not follow hot weather. The pattern in the data shows thunderstorms, not snow. If you chose B, the data shows that hot streaks of three days are usually followed by thunderstorms, not more hot weather. If you chose C, weather is not random. Scientists find patterns in weather data and use those patterns to make predictions.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC1)
+Question 1: A (Cognitive Level: Identify — SEP 4.1.1, DCI ESS2.D.1, CCC1)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.D.1, CCC2)
+Question 3: B (Cognitive Level: Reason — SEP 4.1.1, DCI ESS2.D.1, CCC1)
+Question 4: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.D.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS2.D.1, CCC1)
+
+---
 
 
 ## Resources

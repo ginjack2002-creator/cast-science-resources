@@ -903,15 +903,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that at maximum Data Compression Rate, audio quality degrades noticeably. At moderate compression, quality is virtually indistinguishable from the original. What concept from wave physics explains why moderate compression works without perceptible quality loss?
 
-A. Destructive interference cancels out the removed frequencies.
+A. The human ear processes all frequencies equally, so removing some has minimal impact.
 B. Psychoacoustic masking means louder sounds hide quieter sounds from perception, so removing the masked sounds is undetectable.
-C. The human ear processes all frequencies equally, so removing some has minimal impact.
-D. Compression algorithms add synthetic frequencies to replace removed data.
+C. Compression algorithms add synthetic frequencies to replace removed data.
+D. Destructive interference cancels out the removed frequencies.
 
 Correct Answer: B
 
-Feedback: Correct. Psychoacoustic masking is a property of human hearing where loud sounds render quieter nearby sounds imperceptible. Compression algorithms exploit this by removing masked data that the listener would never perceive. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Psychoacoustic masking is a property of human hearing where loud sounds render quieter nearby sounds imperceptible. Compression algorithms exploit this by removing masked data that the listener would never perceive. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -922,15 +921,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the model, a new user with no listening history receives recommendations with approximately 20-30% accuracy, while a veteran user with 1,000+ hours has 70-80% accuracy. What system behavior does this demonstrate?
 
-A. Linear growth, where accuracy improves at a constant rate with each hour of listening.
-B. A positive feedback loop, where engagement generates data that improves predictions, which increases engagement and generates more data.
-C. Random variation, where accuracy fluctuates unpredictably regardless of data quantity.
-D. Diminishing returns, where additional data beyond the first hour provides no benefit.
+A. Random variation, where accuracy fluctuates unpredictably regardless of data quantity.
+B. Diminishing returns, where additional data beyond the first hour provides no benefit.
+C. A positive feedback loop, where engagement generates data that improves predictions, which increases engagement and generates more data.
+D. Linear growth, where accuracy improves at a constant rate with each hour of listening.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals a positive feedback loop: more listening generates more behavioral data, which trains better algorithms, which provide better recommendations, which increases engagement and data generation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals a positive feedback loop: more listening generates more behavioral data, which trains better algorithms, which provide better recommendations, which increases engagement and data generation. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -941,15 +939,14 @@ A student runs a simulation of the model. The model shows that when Audio Signal
 
 A student examines the model and notices that a 64 GB device stores approximately 1,200 songs at maximum quality but 12,000 songs at standard compression. The student argues that maximum compression should always be used. Which model evidence challenges this argument?
 
-A. Maximum compression makes files too small for the device to read efficiently.
-B. Beyond a critical compression threshold, audio quality degrades enough that user engagement decreases, reducing the effectiveness of recommendation algorithms.
+A. Beyond a critical compression threshold, audio quality degrades enough that user engagement decreases, reducing the effectiveness of recommendation algorithms.
+B. Maximum compression makes files too small for the device to read efficiently.
 C. Maximum compression takes too long to process on mobile devices.
 D. The model shows that all compression levels produce identical listening experiences.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that excessive compression degrades quality, which reduces user engagement, which decreases the data feeding the recommendation algorithm. The system optimizes for a balance, not a single variable. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that excessive compression degrades quality, which reduces user engagement, which decreases the data feeding the recommendation algorithm. The system optimizes for a balance, not a single variable. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -960,15 +957,14 @@ Scientists are studying data related to this system. They collected observations
 
 Based on the model, which statement best explains why digital music storage became practical for portable devices?
 
-A. Storage devices became large enough to hold uncompressed audio files.
-B. Engineers discovered that the physics of human hearing perception could be exploited to reduce file sizes by 90% without perceptible quality loss.
-C. Music quality standards were lowered to accommodate smaller storage.
-D. Digital signals are inherently smaller than analog signals.
+A. Music quality standards were lowered to accommodate smaller storage.
+B. Digital signals are inherently smaller than analog signals.
+C. Storage devices became large enough to hold uncompressed audio files.
+D. Engineers discovered that the physics of human hearing perception could be exploited to reduce file sizes by 90% without perceptible quality loss.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that psychoacoustic compression, based on wave physics and human hearing limits, enables 90% data reduction while maintaining perceptually identical quality, making portable music libraries possible. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that psychoacoustic compression, based on wave physics and human hearing limits, enables 90% data reduction while maintaining perceptually identical quality, making portable music libraries possible. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -979,24 +975,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model demonstrates that algorithm accuracy improves from 20% to 80% as listening data increases. A privacy advocate argues that less data should be collected. Using the model, which design approach best addresses both accuracy and privacy concerns?
 
-A. Collect all possible data since accuracy is the only goal.
-B. Collect no data and rely on random recommendations.
-C. Identify the minimum data points needed to reach acceptable accuracy, and collect only those, transparently disclosing what is collected and why.
-D. The model proves privacy and accuracy are completely incompatible goals.
+A. Collect no data and rely on random recommendations.
+B. Identify the minimum data points needed to reach acceptable accuracy, and collect only those, transparently disclosing what is collected and why.
+C. The model proves privacy and accuracy are completely incompatible goals.
+D. Collect all possible data since accuracy is the only goal.
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct. The model shows diminishing returns in accuracy with additional data. Engineering solutions can identify the optimal data collection level that achieves acceptable accuracy while minimizing privacy intrusion. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows diminishing returns in accuracy with additional data. Engineering solutions can identify the optimal data collection level that achieves acceptable accuracy while minimizing privacy intrusion. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.5, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.5, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.5, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.5, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.5, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.5, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.5, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.5, CCC4)
 
 
 ## Resources

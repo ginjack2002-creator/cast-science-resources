@@ -164,113 +164,109 @@ Wildlife Biologists study how animals like beavers change their environments. Th
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS4-3, 3-LS4-4, 3-5-ETS1-1.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.C.1 (Identify how organisms change environments) + CCC2 (Identify cause and effect relationships)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Number of Beavers, Trees Available, Dam Size, Pond Size. Some components are external (Number of Beavers, Trees Available) and some are internal (Dam Size, Pond Size). The student needs to understand what each component represents and how they are organized.
+A class is learning about beavers. The teacher explains that beavers chew down trees, drag branches into a stream, and pack mud between the branches to build a wall across the water. The students make a list of things involved in dam building: number of beavers, trees available, dam size, and pond size. They want to sort these into inputs (things the beavers start with) and outputs (things that result from building).
 
-Why are beavers called 'ecosystem engineers'?
+Which list correctly sorts the components of the beaver dam system?
 
-A. They wear hard hats when they work
-B. They change their environment by building dams that create new habitats
-C. They are the biggest animals in the forest
-D. They only build things for themselves
+A. Inputs: Number of Beavers, Trees Available — Outputs: Dam Size, Pond Size
+B. Inputs: Number of Beavers, Dam Size — Outputs: Trees Available, Pond Size
+C. Inputs: Dam Size, Pond Size — Outputs: Number of Beavers, Trees Available
+D. Inputs: Pond Size, Trees Available — Outputs: Number of Beavers, Dam Size
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: That is right! Beavers are called ecosystem engineers because their dam-building changes the whole environment, creating habitats for many other species. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The number of beavers and the trees available are the starting inputs that the beavers work with. Dam size is the result of beavers using trees to build, and pond size is the result of the dam holding back water. Both dam size and pond size are outputs of the system. If you chose C, you reversed the inputs and outputs. Beavers and trees are what the system starts with, not what it produces. If you chose B, dam size is not an input. It is the result of beavers using trees to build. If you chose D, pond size is an output created by the dam, not something the beavers start with.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.D.1 (Describe how organisms affect their habitat) + CCC2 (Use cause and effect to explain events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Number of Beavers increases, Dam Size increases; when Trees Available increases, Dam Size increases. The student is trying to understand why these relationships are positive or negative.
+A student builds a model of how beavers create a pond. In the model, an arrow goes from Number of Beavers to Dam Size and is labeled positive. Another arrow goes from Trees Available to Dam Size and is also labeled positive. The student predicts that if both inputs increase, dam size will increase too.
 
-In the model, what TWO things do beavers need to build a successful dam?
+A classmate says that only the number of beavers matters and that trees do not affect dam size. Which evidence from the model best shows that trees DO matter?
 
-A. Sunshine and wind
-B. Enough beaver family members AND enough trees
-C. Rocks and concrete
-D. Only lots of water
+A. When both beavers and trees are low, the dam is medium sized.
+B. When both beavers and trees are high, the dam is big. This proves trees matter.
+C. When there are many beavers but no trees, the dam cannot grow because beavers have no building material.
+D. When there are many trees but no beavers, the dam is big because trees fall on their own.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! The model showed that beavers need both enough family members to do the work AND enough trees as building material. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The strongest evidence is a scenario where beavers are present but trees are not. If trees did not matter, the dam would still grow with just beavers. But the model shows that without trees, beavers have no building material and the dam cannot grow. This proves trees are a necessary input. If you chose B, this shows both inputs are present, but it does not prove trees are essential. You need to test what happens when trees are removed to show they matter independently. If you chose D, trees do not fall and arrange themselves into a dam. Without beavers, trees just stand in the forest. If you chose A, low inputs producing a low output does not isolate whether trees specifically matter.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS4.C.1 (Explain how organisms change environments) + CCC2 (Use cause and effect to predict outcomes)
 
-A student runs a simulation of the model. The model shows that when Number of Beavers increases, Dam Size increases and when Trees Available increases, Dam Size increases and when Dam Size increases, Pond Size increases. The student changes one variable to see how the whole system responds.
+A park ranger tracks a beaver family over three months. In Month 1, five beavers live near a stream with many trees. The dam is medium and the pond is medium. In Month 2, three more beavers arrive. Now eight beavers live near the stream. The trees are still plentiful. In Month 3, the ranger notices the dam has grown much larger.
 
-What happens in the model when there are many beavers but NO trees?
+Based on the beaver dam model, what should the ranger predict about the pond in Month 3?
 
-A. The dam grows very large anyway
-B. The beavers use rocks instead
-C. The dam cannot grow because beavers need trees as building material
-D. The pond gets bigger without a dam
+A. The pond will stay the same size because only rainfall changes pond size.
+B. The pond will get larger because the bigger dam holds back more water.
+C. The pond will get smaller because more beavers drink more water.
+D. The pond will disappear because the beavers used all the water for building.
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Yes! Even with many beavers, the dam cannot grow without trees. Both inputs are needed for the system to work. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: In the model, dam size has a positive relationship with pond size. A bigger dam holds back more water, which creates a larger pond. Since more beavers arrived and trees were available, the dam grew bigger, which means more water is held back and the pond grows. If you chose A, rainfall is not the only thing that affects pond size in this model. Dam size directly affects how much water collects behind the dam. If you chose C, beavers drinking water has a tiny effect compared to the dam holding back an entire stream. The dam is the main factor. If you chose D, beavers do not use water to build. They use trees, sticks, and mud. Water collects behind the dam.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI LS4.D.1 (Explain how organisms create habitat) + CCC4 (Describe a system in terms of its components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Two students are arguing about what would happen if loggers cut down all the trees near a beaver stream. Student A says the beavers will just find something else to build with. Student B says the beavers cannot build without trees and the dam will not grow.
 
-How does dam size affect pond size in the model?
+Which argument is best supported by the model?
 
-A. A bigger dam holds back more water, creating a bigger pond
-B. Dam size and pond size are not related
-C. A bigger dam makes the pond smaller
-D. Only rainfall affects pond size
+A. Student B is correct because the model shows trees are a required input for dam size, and without trees, dam size cannot increase.
+B. Student A is correct because beavers are smart enough to find other materials.
+C. Both students are correct because the model does not address what happens without trees.
+D. Neither student is correct because loggers would also remove the beavers.
 
 Correct Answer: A
 
-Feedback: Correct! In the model, a bigger dam holds back more water, which creates a bigger pond. This is a cause and effect relationship. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows a positive relationship between trees available and dam size. Trees are one of two required inputs. When trees are zero, dam size cannot increase regardless of how many beavers are present. Student B's argument matches the model's predictions. If you chose B, the model does not show beavers using other materials. The model only includes trees as building material. If you chose D, the question is specifically about removing trees, not beavers. The model can still predict what happens when one input is removed. If you chose C, the model does address this. Setting trees to zero shows that dam size cannot increase, which directly tests Student B's claim.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS4.C.1 (Describe how organisms change environments) + CCC2 (Use cause and effect to predict outcomes)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Number of Beavers, Trees Available), but they can take action on internal components (Dam Size, Pond Size). They need to decide which action would be most effective based on what the model shows.
+A wildlife scientist wants to create a large beaver pond in a new area. She has two options: Option 1 is to release ten beavers near a stream with very few trees. Option 2 is to release four beavers near a stream surrounded by a thick forest of trees.
 
-What is a dam?
+Based on the model, which option will most likely produce a larger pond, and why?
 
-A. A wall built across a stream that holds water back
-B. A type of boat that floats on water
-C. A hole dug into the ground to find water
-D. A bridge that lets animals cross a river
+A. Option 1, because more beavers always build a bigger dam regardless of other factors.
+B. Both options will produce the same size pond because the number of beavers is more important than trees.
+C. Neither option will work because you need exactly equal amounts of beavers and trees.
+D. Option 2, because both beavers AND trees must be available for the dam to grow, and Option 2 has both inputs at useful levels.
 
-Correct Answer: A
+Correct Answer: D
 
-Feedback: Correct! A dam is a wall built across a stream that holds water back and creates a pond. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that dam size depends on BOTH the number of beavers and the trees available. In Option 1, many beavers have very few trees, so they lack building material and the dam stays small. In Option 2, four beavers have abundant trees, so they can build a substantial dam. The system needs both inputs working together. If you chose A, the model clearly shows that beavers without trees cannot build. Ten beavers with no trees produce a smaller dam than four beavers with many trees. If you chose B, the model shows both inputs are equally important. Neither alone is sufficient. If you chose C, the model does not require exact equal amounts. It requires that both be present at useful levels.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.C.1, CCC2)
+Question 2: C (Cognitive Level: Reason + Evidence — SEP 2.1.2, DCI LS4.D.1, CCC2)
+Question 3: B (Cognitive Level: Predict — SEP 2.1.4, DCI LS4.C.1, CCC2)
+Question 4: A (Cognitive Level: Argue — SEP 6.1.1, DCI LS4.D.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS4.C.1, CCC2)
 
+---
 
 ## Lesson Metadata
 

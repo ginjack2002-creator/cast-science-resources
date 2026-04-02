@@ -901,15 +901,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In a student's ocean acidification model, the 'Zero Emissions' scenario shows that ocean pH continues to decrease for several decades even after CO2 emissions stop completely. Which mechanism best explains this model behavior?
 
-A. The model has an error because stopping emissions should immediately stop acidification
-B. Existing atmospheric CO2 (currently at 420+ ppm) continues dissolving into the ocean for decades, and deep ocean circulation operates on millennial timescales, preventing rapid recovery
-C. The ocean produces its own CO2 through volcanic activity on the seafloor
-D. Marine organisms release CO2 when they die, creating a separate acidification pathway
+A. Marine organisms release CO2 when they die, creating a separate acidification pathway
+B. The model has an error because stopping emissions should immediately stop acidification
+C. Existing atmospheric CO2 (currently at 420+ ppm) continues dissolving into the ocean for decades, and deep ocean circulation operates on millennial timescales, preventing rapid recovery
+D. The ocean produces its own CO2 through volcanic activity on the seafloor
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Even at zero emissions, the 420+ ppm of CO2 already in the atmosphere continues dissolving into ocean surface water. Additionally, the deep ocean, which contains 90% of ocean water, mixes with surface water through thermohaline circulation that takes 500-1,000 years per cycle. Full pH recovery would take tens of thousands of years. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Even at zero emissions, the 420+ ppm of CO2 already in the atmosphere continues dissolving into ocean surface water. Additionally, the deep ocean, which contains 90% of ocean water, mixes with surface water through thermohaline circulation that takes 500-1,000 years per cycle. Full pH recovery would take tens of thousands of years. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -921,14 +920,13 @@ In the computational model for this lesson, a student draws arrows between compo
 A student traces a carbon atom from a car's gasoline tank to a dissolved acid molecule in the ocean. Which sequence correctly represents the conservation of matter through this process?
 
 A. Carbon is destroyed during combustion and recreated in the ocean
-B. C in gasoline (C8H18) → CO2 from combustion → CO2 dissolves in seawater → H2CO3 (carbonic acid) → H+ ions that lower pH
-C. Carbon in gasoline converts to nitrogen in the atmosphere, then to acid in the ocean
-D. Carbon atoms change into hydrogen atoms when they enter the ocean
+B. Carbon atoms change into hydrogen atoms when they enter the ocean
+C. C in gasoline (C8H18) → CO2 from combustion → CO2 dissolves in seawater → H2CO3 (carbonic acid) → H+ ions that lower pH
+D. Carbon in gasoline converts to nitrogen in the atmosphere, then to acid in the ocean
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This sequence demonstrates conservation of mass: the carbon atom in the hydrocarbon fuel is oxidized to CO2 during combustion, the CO2 molecule dissolves into seawater intact, then reacts with water to form carbonic acid (H2CO3), which dissociates to release H+ ions. The carbon atom is conserved throughout every transformation. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This sequence demonstrates conservation of mass: the carbon atom in the hydrocarbon fuel is oxidized to CO2 during combustion, the CO2 molecule dissolves into seawater intact, then reacts with water to form carbonic acid (H2CO3), which dissociates to release H+ ions. The carbon atom is conserved throughout every transformation. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -939,15 +937,14 @@ A student runs a simulation of the model. The model shows that when CO2 Emission
 
 A policy advisor claims: 'The ocean is cleaning up our CO2 for free.' Using evidence from the model, which response best evaluates this statement?
 
-A. This statement is accurate because the ocean absorbs CO2 without any negative consequences
-B. This statement is dangerously misleading because the ocean's CO2 absorption service comes at the enormous cost of acidification, which is destroying marine ecosystems worth billions of dollars in ecological services
+A. This statement is dangerously misleading because the ocean's CO2 absorption service comes at the enormous cost of acidification, which is destroying marine ecosystems worth billions of dollars in ecological services
+B. This statement is correct but incomplete; the ocean charges a small fee through slightly warmer water
 C. This statement is incorrect because the ocean does not absorb any CO2
-D. This statement is correct but incomplete; the ocean charges a small fee through slightly warmer water
+D. This statement is accurate because the ocean absorbs CO2 without any negative consequences
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates that ocean CO2 absorption is not 'free.' The payment is a fundamental change in ocean chemistry that dissolves coral reefs (supporting 25% of marine species), damages shellfish populations, and threatens food chains. The economic value of these ecosystem services is estimated in the trillions of dollars. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that ocean CO2 absorption is not 'free.' The payment is a fundamental change in ocean chemistry that dissolves coral reefs (supporting 25% of marine species), damages shellfish populations, and threatens food chains. The economic value of these ecosystem services is estimated in the trillions of dollars. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -958,15 +955,14 @@ Scientists are studying data related to this system. They collected observations
 
 Comparing the 'Current Trajectory' and 'Paris Agreement' scenarios, a student finds that the Paris scenario still shows significant pH decline, just at a slower rate. What is the most important policy implication of this finding?
 
-A. The Paris Agreement targets are sufficient to protect marine ecosystems
-B. Emission reduction slows acidification but does not stop it, meaning even ambitious emission cuts must be combined with other interventions to protect vulnerable marine ecosystems in the near term
+A. Ocean acidification is not a real concern because it happens slowly
+B. The Paris Agreement targets are sufficient to protect marine ecosystems
 C. The Paris Agreement should be abandoned because it doesn't solve acidification
-D. Ocean acidification is not a real concern because it happens slowly
+D. Emission reduction slows acidification but does not stop it, meaning even ambitious emission cuts must be combined with other interventions to protect vulnerable marine ecosystems in the near term
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that emission reduction changes the rate of acidification but cannot stop it in the near term because of the lag effect from existing atmospheric CO2. This means marine ecosystem protection requires both emission reduction (addressing the cause) AND near-term interventions like marine protected areas (addressing the symptoms). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that emission reduction changes the rate of acidification but cannot stop it in the near term because of the lag effect from existing atmospheric CO2. This means marine ecosystem protection requires both emission reduction (addressing the cause) AND near-term interventions like marine protected areas (addressing the symptoms). If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -977,23 +973,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student adds a 'Biological Buffering' component to their model, representing how healthy marine ecosystems (seagrasses, kelp forests) can partially buffer pH changes through photosynthesis. The model shows that destroying these ecosystems accelerates acidification. What systems thinking principle does this demonstrate?
 
-A. Biological buffering is irrelevant to ocean chemistry
+A. Marine plants cause acidification by producing CO2 during respiration
 B. Removing a natural negative feedback mechanism (biological buffering) accelerates the system's shift away from stability, demonstrating how ecosystem destruction compounds the chemical problem
-C. Marine plants cause acidification by producing CO2 during respiration
-D. Adding components to models always produces the same results
+C. Adding components to models always produces the same results
+D. Biological buffering is irrelevant to ocean chemistry
 
 Correct Answer: B
 
-Feedback: Correct. Healthy marine vegetation absorbs CO2 during photosynthesis, providing a local buffering effect that partially counteracts acidification. Destroying these ecosystems removes this natural negative feedback, causing pH to drop faster. This demonstrates how interconnected systems can compound problems when multiple stressors act simultaneously. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Healthy marine vegetation absorbs CO2 during photosynthesis, providing a local buffering effect that partially counteracts acidification. Destroying these ecosystems removes this natural negative feedback, causing pH to drop faster. This demonstrates how interconnected systems can compound problems when multiple stressors act simultaneously. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.6, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.6, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.6, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.6, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.6, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.6, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.6, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.6, CCC4)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.6, CCC4)
 
 

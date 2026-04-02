@@ -920,13 +920,12 @@ The food model shows that Processing Level predicts health outcomes better than 
 
 A. The whole food meal has more vitamins, which is the only relevant nutritional difference
 B. The ultra-processed meal disrupts satiety signaling and is consumed faster, leading to weaker fullness responses and greater caloric overconsumption despite identical nutrient profiles
-C. The meals would produce identical health outcomes since the macronutrient profiles match
-D. The whole food meal causes faster digestion, which alone accounts for the difference
+C. The whole food meal causes faster digestion, which alone accounts for the difference
+D. The meals would produce identical health outcomes since the macronutrient profiles match
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that processing level affects the food matrix itself, not just nutrient content. Ultra-processed foods are consumed 20-30% faster and produce weaker satiety responses, causing overconsumption regardless of macronutrient matching. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that processing level affects the food matrix itself, not just nutrient content. Ultra-processed foods are consumed 20-30% faster and produce weaker satiety responses, causing overconsumption regardless of macronutrient matching. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -937,15 +936,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 According to the model, when a person shifts from an 80% ultra-processed diet to 50% whole foods, what pattern of Metabolic Health recovery does the model predict?
 
-A. No improvement until the diet is 100% whole foods
-B. Measurable improvements in blood sugar, inflammation, and gut microbiome diversity within 2-4 weeks, with continued improvement over time
-C. Immediate full recovery of all metabolic markers within 48 hours
-D. Metabolic damage from ultra-processed foods is permanent and irreversible
+A. Metabolic damage from ultra-processed foods is permanent and irreversible
+B. Immediate full recovery of all metabolic markers within 48 hours
+C. Measurable improvements in blood sugar, inflammation, and gut microbiome diversity within 2-4 weeks, with continued improvement over time
+D. No improvement until the diet is 100% whole foods
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows that metabolic damage is partially reversible. Shifting to more whole foods shows measurable improvements in blood sugar, inflammation markers, and gut microbiome diversity within 2-4 weeks. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that metabolic damage is partially reversible. Shifting to more whole foods shows measurable improvements in blood sugar, inflammation markers, and gut microbiome diversity within 2-4 weeks. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -956,15 +954,14 @@ A student runs a simulation of the model. The model shows that when Processing L
 
 The model includes Satiety Response as a component. What causal mechanism links ultra-processing to weakened satiety?
 
-A. Ultra-processed foods contain fewer calories, so the body signals for more food
-B. Ultra-processed foods are consumed 20-30% faster than whole foods, not allowing time for gut hormones to signal fullness to the brain before excess calories are consumed
-C. Ultra-processed foods strengthen satiety signals, which causes people to eat less
-D. Satiety is entirely determined by stomach volume, not food processing level
+A. Ultra-processed foods are consumed 20-30% faster than whole foods, not allowing time for gut hormones to signal fullness to the brain before excess calories are consumed
+B. Satiety is entirely determined by stomach volume, not food processing level
+C. Ultra-processed foods contain fewer calories, so the body signals for more food
+D. Ultra-processed foods strengthen satiety signals, which causes people to eat less
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The eating speed mechanism is critical. Ultra-processed foods are consumed faster because of their texture and palatability engineering. The gut hormones that signal fullness need 15-20 minutes to activate, but the food is already consumed. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The eating speed mechanism is critical. Ultra-processed foods are consumed faster because of their texture and palatability engineering. The gut hormones that signal fullness need 15-20 minutes to activate, but the food is already consumed. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -975,15 +972,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student adds Food Marketing Exposure as a component to the model. Children and teens see an average of 13 food ads per day, overwhelmingly for ultra-processed products. How does this component interact with Caloric Overconsumption?
 
-A. Marketing has no measurable effect on food choices or consumption patterns
-B. Marketing only affects adults, not children or teenagers
+A. Marketing only affects adults, not children or teenagers
+B. Marketing has no measurable effect on food choices or consumption patterns
 C. Marketing exposure increases preference for and consumption of ultra-processed foods, amplifying the satiety disruption pathway and increasing Caloric Overconsumption
 D. Marketing decreases consumption by making people more aware of what they are eating
 
 Correct Answer: C
 
-Feedback: Correct. Food marketing increases both preference for and availability-seeking of ultra-processed products, driving more frequent consumption of foods that disrupt satiety signaling and amplifying the overconsumption pathway in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Food marketing increases both preference for and availability-seeking of ultra-processed products, driving more frequent consumption of foods that disrupt satiety signaling and amplifying the overconsumption pathway in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -994,24 +990,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, which intervention would be MOST effective at reducing population-level metabolic disease from ultra-processed food consumption?
 
-A. Teaching individuals to count calories more carefully
-B. Reducing the Processing Level of available food through policy changes that make whole foods more affordable and accessible while regulating ultra-processing practices
+A. Removing all fat content from ultra-processed foods
+B. Teaching individuals to count calories more carefully
 C. Recommending that people exercise more to burn off extra calories from ultra-processed foods
-D. Removing all fat content from ultra-processed foods
+D. Reducing the Processing Level of available food through policy changes that make whole foods more affordable and accessible while regulating ultra-processing practices
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that Processing Level is the root driver of metabolic dysfunction. Addressing the upstream cause (reducing processing) through food policy is more effective than downstream interventions like calorie counting or exercise. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that Processing Level is the root driver of metabolic dysfunction. Addressing the upstream cause (reducing processing) through food policy is more effective than downstream interventions like calorie counting or exercise. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.7, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.7, CCC1)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.7, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.7, CCC1)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.7, CCC4)
 Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.7, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.7, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.7, CCC4)
 
 
 ## Resources

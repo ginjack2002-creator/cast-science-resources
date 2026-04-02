@@ -418,6 +418,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Population Density → Carbon Emissions Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Energy Mix Composition being active. Without this condition,
+the simulation produces inaccurate results: Population Density drives Carbon Emissions Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Population Density → Carbon Emissions Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Energy Mix Composition is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Energy Mix Composition active and observe
+     how Population Density's effect on Carbon Emissions Rate is now gated
+   • Toggle Energy Mix Composition ON/OFF while Population Density remains constant
+   • Verify that Carbon Emissions Rate only responds to Population Density when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -992,15 +1022,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that transitioning Energy Mix to 80% renewable while keeping Transportation Mode Share at 85% car reduces Carbon Emissions Rate by only 35%, far less than the 80% energy transition might suggest. Which system interaction explains this gap?
 
-A. Renewable energy produces hidden emissions that offset the benefit
-B. Transportation is a separate emissions source that burns liquid fuels directly, so cleaning the electricity grid does not reduce emissions from gasoline-powered vehicles
-C. The model is incorrectly calibrated because energy should account for all emissions
-D. Carbon emissions cannot be reduced below 50% regardless of interventions
+A. Carbon emissions cannot be reduced below 50% regardless of interventions
+B. The model is incorrectly calibrated because energy should account for all emissions
+C. Renewable energy produces hidden emissions that offset the benefit
+D. Transportation is a separate emissions source that burns liquid fuels directly, so cleaning the electricity grid does not reduce emissions from gasoline-powered vehicles
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Transportation produces emissions directly through fuel combustion, independent of the electricity grid. A city with 85% car mode share continues generating transportation emissions even with 100% renewable electricity. This demonstrates why systems thinking is essential: sustainability requires addressing each emission source in its own subsystem. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Transportation produces emissions directly through fuel combustion, independent of the electricity grid. A city with 85% car mode share continues generating transportation emissions even with 100% renewable electricity. This demonstrates why systems thinking is essential: sustainability requires addressing each emission source in its own subsystem. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -1011,15 +1040,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The 'Integrated Redesign' scenario simultaneously improves five urban systems and produces a Urban Sustainability Index far higher than the sum of individual improvements would predict. This demonstrates which systems concept?
 
-A. Synergistic interactions, where improvements in multiple interconnected systems produce multiplicative rather than additive benefits due to positive feedback loops between systems
-B. Linear scaling, where each improvement adds a fixed amount to the sustainability score
+A. Randomness, where sustainability outcomes are unpredictable regardless of interventions
+B. Synergistic interactions, where improvements in multiple interconnected systems produce multiplicative rather than additive benefits due to positive feedback loops between systems
 C. Diminishing returns, where each additional improvement produces less benefit
-D. Randomness, where sustainability outcomes are unpredictable regardless of interventions
+D. Linear scaling, where each improvement adds a fixed amount to the sustainability score
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. When multiple systems improve simultaneously, positive feedback loops amplify the benefits. Higher transit use reduces road congestion, which reduces emissions AND reclaims land for green space, which reduces heat island effect, which reduces cooling energy, which reduces emissions further. These synergistic interactions make comprehensive change far more effective than isolated improvements. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
-
+Feedback: Correct. When multiple systems improve simultaneously, positive feedback loops amplify the benefits. Higher transit use reduces road congestion, which reduces emissions AND reclaims land for green space, which reduces heat island effect, which reduces cooling energy, which reduces emissions further. These synergistic interactions make comprehensive change far more effective than isolated improvements. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 ---
 
 ### Question 3
@@ -1030,15 +1058,14 @@ A student runs a simulation of the model. The model shows that when Population D
 
 Adding a Social Equity Index to the model reveals that a sustainability plan concentrating green infrastructure in wealthy neighborhoods produces a high environmental score but a low equity score, reducing the overall Urban Sustainability Index. What does this reveal about the definition of sustainability?
 
-A. Environmental improvements are not truly sustainable unless they are equitably distributed, because sustainability encompasses social justice alongside ecological health
-B. Equity is irrelevant to sustainability, which is purely an environmental concept
-C. Green infrastructure should only be placed where property values are highest to maximize return on investment
-D. The equity index should be removed from the model because it complicates the sustainability calculation
+A. The equity index should be removed from the model because it complicates the sustainability calculation
+B. Green infrastructure should only be placed where property values are highest to maximize return on investment
+C. Equity is irrelevant to sustainability, which is purely an environmental concept
+D. Environmental improvements are not truly sustainable unless they are equitably distributed, because sustainability encompasses social justice alongside ecological health
 
-Correct Answer: A
+Correct Answer: D
 
-Feedback: Correct. True sustainability integrates environmental, social, and economic dimensions. A city where clean air, green space, and transit access correlate with wealth is not sustainable because it perpetuates inequity that undermines social cohesion and political support for environmental policies. Environmental improvements must benefit all communities to be truly sustainable. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. True sustainability integrates environmental, social, and economic dimensions. A city where clean air, green space, and transit access correlate with wealth is not sustainable because it perpetuates inequity that undermines social cohesion and political support for environmental policies. Environmental improvements must benefit all communities to be truly sustainable. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1049,15 +1076,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model shows that Green Infrastructure Coverage produces non-linear benefits: below 15% coverage, benefits are modest, but above 25% coverage, stormwater management, temperature regulation, and air purification compound significantly. Which ecological principle explains this threshold effect?
 
-A. The law of diminishing returns, where each unit of green space produces less benefit
-B. Ecological connectivity, where isolated green patches provide limited ecosystem services but a connected network of green infrastructure creates synergistic benefits as habitat corridors link parks, urban forests, and bioswales into a functioning ecosystem
-C. Green infrastructure is only effective in tropical climates where plants grow faster
-D. The threshold is an artifact of the model and does not reflect real-world ecology
+A. The threshold is an artifact of the model and does not reflect real-world ecology
+B. The law of diminishing returns, where each unit of green space produces less benefit
+C. Ecological connectivity, where isolated green patches provide limited ecosystem services but a connected network of green infrastructure creates synergistic benefits as habitat corridors link parks, urban forests, and bioswales into a functioning ecosystem
+D. Green infrastructure is only effective in tropical climates where plants grow faster
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Isolated patches of green space provide limited local benefits. But when green infrastructure reaches sufficient coverage and connectivity, the patches link into a functioning ecosystem network. Connected corridors support wildlife movement, linked bioswales manage stormwater across watersheds, and coordinated tree canopy reduces urban temperatures across neighborhoods rather than at individual sites. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Isolated patches of green space provide limited local benefits. But when green infrastructure reaches sufficient coverage and connectivity, the patches link into a functioning ecosystem network. Connected corridors support wildlife movement, linked bioswales manage stormwater across watersheds, and coordinated tree canopy reduces urban temperatures across neighborhoods rather than at individual sites. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1068,24 +1094,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student's model reveals that Food System Localization (growing food within 100 miles) reduces Carbon Emissions Rate by a surprisingly small amount compared to Transportation Mode Share changes. However, localization significantly improves the Urban Sustainability Index through other pathways. Which pathways explain this finding?
 
-A. Local food tastes better, which improves resident satisfaction scores
-B. Local food systems improve food security (reducing supply chain vulnerability), create urban agricultural jobs, connect residents to ecological processes, and reduce packaging waste, contributing to sustainability dimensions beyond carbon emissions
-C. Local food production eliminates all food-related carbon emissions
-D. The model is incorrect because food transportation is the largest source of carbon emissions
+A. Local food systems improve food security (reducing supply chain vulnerability), create urban agricultural jobs, connect residents to ecological processes, and reduce packaging waste, contributing to sustainability dimensions beyond carbon emissions
+B. The model is incorrect because food transportation is the largest source of carbon emissions
+C. Local food tastes better, which improves resident satisfaction scores
+D. Local food production eliminates all food-related carbon emissions
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Food transportation typically accounts for a small percentage of food's total carbon footprint (most emissions come from production, not transport). But local food systems contribute to sustainability through multiple non-carbon pathways: improved food security, urban employment, reduced packaging, community connection to ecology, and reduced vulnerability to supply chain disruption. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Food transportation typically accounts for a small percentage of food's total carbon footprint (most emissions come from production, not transport). But local food systems contribute to sustainability through multiple non-carbon pathways: improved food security, urban employment, reduced packaging, community connection to ecology, and reduced vulnerability to supply chain disruption. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.3, CCC4)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.3, CCC4)
-Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.3, CCC6)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.3, CCC6)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.3, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.3, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.3, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.3, CCC6)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.3, CCC6)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.3, CCC4)
 
 
 ## Resources

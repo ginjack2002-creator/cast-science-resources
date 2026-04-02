@@ -916,15 +916,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the computational model, a student increases Plasma Temperature to maximum while keeping Magnetic Containment at moderate levels. The model shows Energy Output initially rising but then Net Energy Gain declining. What best explains this result?
 
-A. The model has a calculation error at high temperatures
-B. Higher temperatures increase fusion reactions but also increase plasma instability, requiring more energy for containment and cooling — eventually the energy consumed exceeds the additional energy produced
-C. Plasma Temperature has no effect on Net Energy Gain in the model
-D. Net Energy Gain always increases with temperature because more fusion reactions always mean more net energy
+A. Higher temperatures increase fusion reactions but also increase plasma instability, requiring more energy for containment and cooling — eventually the energy consumed exceeds the additional energy produced
+B. Plasma Temperature has no effect on Net Energy Gain in the model
+C. Net Energy Gain always increases with temperature because more fusion reactions always mean more net energy
+D. The model has a calculation error at high temperatures
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This reveals the optimization challenge in fusion: pushing temperature higher increases fusion output but also increases the energy cost of containment, cooling, and managing instabilities. Net energy gain is maximized at a specific operating point, not at maximum temperature. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. This reveals the optimization challenge in fusion: pushing temperature higher increases fusion output but also increases the energy cost of containment, cooling, and managing instabilities. Net energy gain is maximized at a specific operating point, not at maximum temperature. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 2
@@ -935,15 +934,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows three relationships: Plasma Temperature positively affects Energy Output, Energy Output positively affects Neutron Damage, and Neutron Damage positively affects Materials Degradation. What type of systemic pattern does this represent?
 
-A. A negative feedback loop that stabilizes the system
-B. An independent chain with no systemic implications
-C. A feedforward cascade where the desired output (energy) inevitably drives the undesired output (degradation) through a linked chain
+A. An independent chain with no systemic implications
+B. A feedforward cascade where the desired output (energy) inevitably drives the undesired output (degradation) through a linked chain
+C. A negative feedback loop that stabilizes the system
 D. A random correlation with no causal mechanism
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct. This is a feedforward cascade — a causal chain where increasing the input to get more desired output automatically increases undesired consequences downstream. In fusion, you cannot increase energy production without increasing neutron-induced material damage. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This is a feedforward cascade — a causal chain where increasing the input to get more desired output automatically increases undesired consequences downstream. In fusion, you cannot increase energy production without increasing neutron-induced material damage. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -954,15 +952,14 @@ A student runs a simulation of the model. The model shows that when Plasma Tempe
 
 ITER is designed to achieve Q=10, meaning it produces 10 times more fusion energy than the heating energy input. Why is Q=10 a more meaningful milestone than Q=1?
 
-A. Q=1 was already achieved by NIF in 2022, so it is no longer important
+A. There is no practical difference between Q=1 and Q=10
 B. Q=10 provides enough surplus energy to power the reactor's own magnets, cooling, and support systems while still delivering net electricity — Q=1 produces only enough to equal its heating input with nothing left over
 C. Q=10 means the reactor runs 10 times longer than Q=1
-D. There is no practical difference between Q=1 and Q=10
+D. Q=1 was already achieved by NIF in 2022, so it is no longer important
 
 Correct Answer: B
 
-Feedback: Correct. Q measures only fusion energy output versus heating energy input. But a reactor also needs energy for magnets, cooling, tritium breeding, and facility operations. Q=1 means fusion output equals heating input — there is nothing left for everything else. Q=10 provides sufficient surplus to cover all auxiliary systems and deliver net electricity. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Q measures only fusion energy output versus heating energy input. But a reactor also needs energy for magnets, cooling, tritium breeding, and facility operations. Q=1 means fusion output equals heating input — there is nothing left for everything else. Q=10 provides sufficient surplus to cover all auxiliary systems and deliver net electricity. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -974,14 +971,13 @@ Scientists are studying data related to this system. They collected observations
 A student claims that discovering a material immune to neutron damage would solve all remaining fusion challenges. Using the model, which response best evaluates this claim?
 
 A. The claim is correct — material damage is the only barrier to commercial fusion
-B. The claim is partially correct — it would remove the materials degradation constraint but plasma confinement instability, tritium supply, and net energy optimization remain independent challenges
-C. The claim is incorrect — materials play no significant role in the fusion challenge
-D. The claim is correct because neutron damage is the only variable connected to all other variables in the model
+B. The claim is correct because neutron damage is the only variable connected to all other variables in the model
+C. The claim is partially correct — it would remove the materials degradation constraint but plasma confinement instability, tritium supply, and net energy optimization remain independent challenges
+D. The claim is incorrect — materials play no significant role in the fusion challenge
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model shows that materials degradation is ONE of several major constraints. Solving it would be transformative — allowing longer reactor lifetimes and higher operating parameters. But plasma instabilities, tritium breeding sufficiency, and the overall energy balance remain challenges that materials alone do not address. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that materials degradation is ONE of several major constraints. Solving it would be transformative — allowing longer reactor lifetimes and higher operating parameters. But plasma instabilities, tritium breeding sufficiency, and the overall energy balance remain challenges that materials alone do not address. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -992,24 +988,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model uses nine components to represent a fusion reactor system. A critic argues that a real tokamak has thousands of interacting subsystems. What is the most scientifically valid defense of the simplified model?
 
-A. Nine components are enough to capture every detail of a real fusion reactor
-B. The model captures the essential trade-offs and coupling dynamics (output-damage, temperature-confinement-time) that govern system behavior, even though individual subsystem interactions are abstracted
-C. More complex models always produce worse predictions
-D. The critic is wrong because fusion reactors are simple enough to model with nine variables
+A. More complex models always produce worse predictions
+B. The critic is wrong because fusion reactors are simple enough to model with nine variables
+C. Nine components are enough to capture every detail of a real fusion reactor
+D. The model captures the essential trade-offs and coupling dynamics (output-damage, temperature-confinement-time) that govern system behavior, even though individual subsystem interactions are abstracted
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Scientific models are deliberately simplified to reveal essential dynamics. The nine-component model captures the fundamental trade-offs — energy output coupled with material damage, temperature requirements versus confinement stability — that determine system behavior at the highest level, even though it cannot predict every subsystem interaction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Scientific models are deliberately simplified to reveal essential dynamics. The nine-component model captures the fundamental trade-offs — energy output coupled with material damage, temperature requirements versus confinement stability — that determine system behavior at the highest level, even though it cannot predict every subsystem interaction. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.1, CCC5)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.1, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.1, CCC5)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.1, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.1, CCC5)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.1, CCC4)
 
 
 ## Resources

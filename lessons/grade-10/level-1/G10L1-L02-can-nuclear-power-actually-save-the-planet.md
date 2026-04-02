@@ -902,15 +902,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the computational model, when Fission Rate is increased, both Energy Output and Radioactive Waste increase proportionally. What does this relationship reveal about nuclear power as an energy source?
 
-A. Energy and waste can be independently optimized by adjusting reactor design.
-B. Energy production and waste generation are inseparable outputs of the fission process.
-C. Waste production can be eliminated by increasing the fission rate beyond a critical threshold.
+A. Energy production and waste generation are inseparable outputs of the fission process.
+B. Waste production can be eliminated by increasing the fission rate beyond a critical threshold.
+C. Energy and waste can be independently optimized by adjusting reactor design.
 D. The relationship is coincidental and would not hold in a real reactor.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates that energy and waste are coupled outputs of fission. Every atom that splits produces both useful energy and radioactive fission products. You cannot have one without the other. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates that energy and waste are coupled outputs of fission. Every atom that splits produces both useful energy and radioactive fission products. You cannot have one without the other. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -921,15 +920,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student uses the model to compare nuclear and natural gas electricity generation. The nuclear plant avoids 4 million tons of CO2 annually but produces 20 metric tons of radioactive waste. Which analysis best evaluates this trade-off?
 
-A. The waste is a small volume but remains dangerous for millennia, while the CO2 avoidance provides an immediate, large-scale climate benefit.
-B. Since nuclear waste is more dangerous per kilogram than CO2, nuclear power is always worse for the environment.
-C. The CO2 avoidance is irrelevant because climate change is a less serious threat than nuclear waste.
-D. The trade-off cannot be evaluated because the risks operate on different timescales.
+A. The CO2 avoidance is irrelevant because climate change is a less serious threat than nuclear waste.
+B. The waste is a small volume but remains dangerous for millennia, while the CO2 avoidance provides an immediate, large-scale climate benefit.
+C. The trade-off cannot be evaluated because the risks operate on different timescales.
+D. Since nuclear waste is more dangerous per kilogram than CO2, nuclear power is always worse for the environment.
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. This captures the central trade-off: nuclear waste is small in volume but long-lived in hazard, while carbon avoidance is massive in scale and provides immediate climate benefits. Both factors must be weighed. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This captures the central trade-off: nuclear waste is small in volume but long-lived in hazard, while carbon avoidance is massive in scale and provides immediate climate benefits. Both factors must be weighed. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -941,14 +939,13 @@ A student runs a simulation of the model. The model shows that when Uranium Fuel
 The model shows that reducing the Fission Rate to 50% decreases Energy Output proportionally. A policy analyst argues this means nuclear plants should always run at full power. Which limitation of this argument does the model reveal?
 
 A. Running at full power is unsafe because reactors cannot be controlled at maximum fission rates.
-B. Running at full power also proportionally increases Radioactive Waste, so the cost-benefit ratio remains constant regardless of power level.
+B. Reduced power operation actually increases efficiency by allowing better neutron moderation.
 C. The model shows that full power operation depletes uranium fuel too rapidly to be economically viable.
-D. Reduced power operation actually increases efficiency by allowing better neutron moderation.
+D. Running at full power also proportionally increases Radioactive Waste, so the cost-benefit ratio remains constant regardless of power level.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that waste scales proportionally with energy output. Running at full power maximizes both energy and waste. The analyst's argument ignores the waste side of the trade-off. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model shows that waste scales proportionally with energy output. Running at full power maximizes both energy and waste. The analyst's argument ignores the waste side of the trade-off. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 4
@@ -959,15 +956,14 @@ Scientists are studying data related to this system. They collected observations
 
 Germany phased out nuclear power after Fukushima, and its carbon emissions subsequently increased because it burned more coal. Based on the model, which conclusion is best supported?
 
-A. Germany should have kept nuclear power because coal is always worse for the environment.
-B. Removing nuclear baseload power without sufficient replacement led to increased fossil fuel use, demonstrating the interconnected nature of energy portfolio decisions.
-C. The model proves that nuclear power is the only viable alternative to coal.
-D. Germany's decision was purely political and had no scientific basis.
+A. Germany's decision was purely political and had no scientific basis.
+B. Germany should have kept nuclear power because coal is always worse for the environment.
+C. Removing nuclear baseload power without sufficient replacement led to increased fossil fuel use, demonstrating the interconnected nature of energy portfolio decisions.
+D. The model proves that nuclear power is the only viable alternative to coal.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates that energy portfolio decisions are interconnected. Removing one source (nuclear) without adequate zero-carbon replacement forces increased reliance on fossil fuels, increasing emissions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates that energy portfolio decisions are interconnected. Removing one source (nuclear) without adequate zero-carbon replacement forces increased reliance on fossil fuels, increasing emissions. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -978,23 +974,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Using the model's Fuel Depletion scenario, a single reactor fuel load produces tens of billions of kWh while generating approximately 20 tons of spent fuel. Which statement best characterizes nuclear fuel's energy density based on this evidence?
 
-A. Nuclear fuel has moderate energy density, comparable to natural gas.
+A. The energy density depends entirely on reactor design rather than the properties of the fuel itself.
 B. Nuclear fuel has the highest energy density of any practical fuel source, producing enormous electricity from tiny quantities of material.
 C. Nuclear fuel is energy-dense but not significantly more so than solar panels per unit area.
-D. The energy density depends entirely on reactor design rather than the properties of the fuel itself.
+D. Nuclear fuel has moderate energy density, comparable to natural gas.
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates nuclear fuel's extraordinary energy density: a single fuel pellet the size of a pencil eraser produces as much energy as a ton of coal, making it roughly 2 million times more energy-dense than chemical fuels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
-
+Feedback: Correct. The model demonstrates nuclear fuel's extraordinary energy density: a single fuel pellet the size of a pencil eraser produces as much energy as a ton of coal, making it roughly 2 million times more energy-dense than chemical fuels. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.8, CCC5)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.8, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.8, CCC5)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.8, CCC2)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.8, CCC5)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.8, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.8, CCC5)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.8, CCC2)
 Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.8, CCC5)
 
 

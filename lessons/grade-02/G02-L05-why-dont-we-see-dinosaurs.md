@@ -833,108 +833,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Make observations to compare) + DCI LS4.D (Many types of living things have lived on Earth) + CCC1 (Identify patterns in observations)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Habitat Change, Animal Survival, Population Size. Some components are external (Habitat Change) and some are internal (Animal Survival, Population Size). The student needs to understand what each component represents and how they are organized.
+A scientist found a fossil of a giant fern leaf pressed into a rock in a place that is now a cold, dry desert. Today, giant ferns only grow in warm, wet rain forests.
 
-What happened when the dinosaurs' habitat changed a LOT?
+What does this fossil tell us about this place long ago?
 
-A. The dinosaurs grew bigger and stronger
-B. The dinosaurs could not find food or shelter and went extinct
-C. The dinosaurs built houses to stay safe
-D. Nothing happened to the dinosaurs
+A. The fossil is a fake because ferns cannot grow in deserts
+B. The desert was always a desert, even millions of years ago
+C. Someone carried the fern leaf to the desert and left it there
+D. Long ago, this place was warm and wet enough for giant ferns to grow there
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! When the habitat changed too much and too fast, dinosaurs could not find the food, water, and shelter they needed. They went extinct. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Fossils are evidence of what lived in a place long ago. Since giant ferns need warm, wet conditions, finding a fern fossil in a cold desert tells us the climate there used to be very different. Habitats change over long periods of time. If you chose B, the fossil proves the desert was NOT always a desert. The fern could only have grown there when conditions were warm and wet. If you chose C, fossils form naturally over millions of years. Nobody carried this leaf. It was preserved in rock where it originally fell. If you chose A, the fossil is real evidence. It shows ferns DID grow there when the climate was different.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Develop a model to represent relationships) + DCI LS4.D (Different habitats support different organisms) + CCC4 (Describe parts of a system and how they interact)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Habitat Change increases, Animal Survival decreases; when Animal Survival increases, Population Size increases. The student is trying to understand why these relationships are positive or negative.
+In a model of dinosaur extinction, Habitat Change is an external component and Animal Survival is an internal component. The model shows a negative relationship between them, meaning when habitat change goes up, animal survival goes down.
 
-Scientists found a fossil of a fish in the middle of a desert. What does this tell us?
+An asteroid hit Earth 66 million years ago and caused huge habitat changes: dust blocked the sun, temperatures dropped, and plants died. Based on the model, what happened to animal survival?
 
-A. Fish can live in sand
-B. Someone put the fish there
-C. That place was once covered by water long ago
-D. The fossil is fake
+A. Animal survival went up because there were fewer plants in the way
+B. Animal survival stayed the same because habitat changes do not affect animals
+C. Animal survival went way down because the massive habitat changes made it very hard for dinosaurs to find food and warmth
+D. Animal survival went up because dinosaurs liked cold weather
 
 Correct Answer: C
 
-Feedback: Yes! A fish fossil in a desert is evidence that the area was once covered by water. Habitats change over millions of years. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows a negative relationship: more habitat change means lower survival. The asteroid caused massive habitat changes. Dust blocked the sun so plants could not grow, and temperatures dropped. With no food and freezing cold, dinosaur survival went way down. If you chose D, dinosaurs were adapted to warm climates. The sudden cold after the asteroid was the opposite of what they needed. If you chose B, the model clearly shows habitat change DOES affect animal survival through a negative relationship. If you chose A, plants dying was terrible for dinosaurs. Plant-eating dinosaurs lost their food, and then meat-eating dinosaurs lost their prey.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.2 (Use observations to describe patterns) + DCI LS4.D (Diversity of life in different habitats) + CCC1 (Use patterns to predict)
 
-A student runs a simulation of the model. The model shows that when Habitat Change increases, Animal Survival decreases and when Animal Survival increases, Population Size increases. The student changes one variable to see how the whole system responds.
+Scientists compared animals from two time periods. During the warm, wet age (millions of years ago), there were huge dinosaurs, giant insects, and massive ferns. Today, in the same locations, there are small mammals, birds, and different kinds of plants.
 
-In our model, what is the relationship between Habitat Change and Animal Survival?
+What pattern does this comparison show?
 
-A. Positive: more habitat change means better survival
-B. Negative: more habitat change means lower survival
-C. No relationship: habitat change does not affect survival
-D. Positive: animals like when things change a lot
+A. Living things do not change, they just hide
+B. The animals alive today are exactly the same as the ones from long ago
+C. When habitats change over time, the types of living things that survive there also change
+D. Animals only get smaller over time, never bigger
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! The relationship is negative. When the habitat changes a lot, it becomes harder for animals to find what they need, so survival goes down. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The pattern shows that as habitats changed from warm and wet to today's conditions, the types of living things changed too. The giant dinosaurs and ferns of the past were replaced by different animals and plants that are suited to today's habitats. If you chose B, the animals are very different. Giant dinosaurs are nothing like today's small mammals and birds. If you chose D, this is not just about size. The types of animals completely changed because the habitat changed. Some animals today are large too. If you chose A, living things do change over time. The fossil record clearly shows different creatures lived in the past.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 8.1 (Obtain information from multiple sources) + DCI LS4.D (Some organisms that lived long ago are similar to existing organisms) + CCC1 (Identify patterns to make connections)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student looks at pictures of a Tyrannosaurus rex skeleton and a chicken skeleton. She notices that both have two legs, clawed feet, a wishbone, and hollow bones. The student says, "These skeletons look surprisingly alike."
 
-Which animals alive today are related to dinosaurs?
+What does the pattern of similar features suggest?
 
-A. Dogs and cats
-B. Fish and sharks
-C. Birds like chickens, robins, and eagles
-D. Snakes and lizards only
+A. Chickens and T. rex are exactly the same animal
+B. The similar features suggest that birds are related to dinosaurs and evolved from small feathered dinosaurs
+C. Someone built the T. rex skeleton to look like a chicken on purpose
+D. The features are similar by accident and mean nothing
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: That is right! Scientists discovered that birds are actually living dinosaurs. They evolved from small feathered dinosaurs millions of years ago. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When two animals share many similar features, it is evidence they are related. Scientists have discovered that birds evolved from small feathered dinosaurs. The shared features (two legs, clawed feet, wishbone, hollow bones) are clues to this family connection. If you chose C, fossils are real bones preserved in rock. Nobody built them. The similarities are natural. If you chose A, chickens and T. rex are NOT the same animal. They are related, but chickens are much smaller modern descendants of dinosaur ancestors. If you chose D, when many features match between two animals, it is a pattern that scientists use as evidence of a relationship, not an accident.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.2 (Use a model to predict outcomes) + DCI LS4.D (Organisms and habitats change over time) + CCC4 (Describe how system components interact)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Habitat Change), but they can take action on internal components (Animal Survival, Population Size). They need to decide which action would be most effective based on what the model shows.
+In the extinction model, Habitat Change has a negative relationship with Animal Survival, and Animal Survival has a positive relationship with Population Size. Right now, polar bears live in the Arctic where they hunt on sea ice. Scientists say that as Earth warms, the sea ice is melting and getting smaller every year.
 
-Did dinosaurs really live on Earth?
+Based on the model, what would happen to polar bears if the sea ice keeps shrinking?
 
-A. No, dinosaurs are only in movies
-B. Yes, dinosaurs lived on Earth millions of years ago
-C. Yes, dinosaurs still live on Earth today
-D. No, dinosaurs are just big lizards
+A. Polar bear survival would go down because their habitat is changing, and then their population would also go down
+B. Polar bear population would go up because there would be more water to swim in
+C. Polar bears would do better because they prefer warm weather
+D. Polar bears would stay the same because animals can always adapt instantly
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: That is right! Dinosaurs really lived on Earth millions of years ago. We know this because scientists have found their fossils. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that habitat change reduces animal survival (negative relationship), and lower survival reduces population size (positive relationship means they go in the same direction). If sea ice shrinks, polar bears lose their hunting ground, survival drops, and population drops. If you chose C, polar bears are adapted to cold and ice. Warmer temperatures destroy the habitat they need. If you chose D, animals cannot adapt instantly. When habitats change faster than animals can adjust, populations decline. If you chose B, polar bears hunt ON ice, not in water. More water and less ice means fewer places to hunt for food.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC4)
+Question 1: D (Cognitive Level: Reason + Evidence — SEP 4.1, DCI LS4.D, CCC1)
+Question 2: C (Cognitive Level: Predict — SEP 2.1, DCI LS4.D, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 4.2, DCI LS4.D, CCC1)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 8.1, DCI LS4.D, CCC1)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.2, DCI LS4.D, CCC4)
 
-
+---
 ## Resources
 
 | Resource | Link |

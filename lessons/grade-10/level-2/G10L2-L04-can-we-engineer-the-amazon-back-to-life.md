@@ -909,15 +909,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the Amazon restoration model, why does the Tipping Point Threshold approach even when Reforestation Effort matches Deforestation Rate?
 
-A. Because newly planted trees immediately provide the same ecological services as mature forest
+A. Because climate change has no effect on the Amazon water cycle
 B. Because Soil Nutrient Recovery and Water Cycle Restoration take decades, so replanted areas cannot compensate for mature forest functions during the recovery period
-C. Because the model does not account for Reforestation Effort at all
-D. Because climate change has no effect on the Amazon water cycle
+C. Because newly planted trees immediately provide the same ecological services as mature forest
+D. Because the model does not account for Reforestation Effort at all
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a critical time lag: newly planted trees cannot generate the evapotranspiration, soil networks, or ecological complexity of mature forest for 15-50+ years, so matching replanting to clearing still leads to net functional loss. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals a critical time lag: newly planted trees cannot generate the evapotranspiration, soil networks, or ecological complexity of mature forest for 15-50+ years, so matching replanting to clearing still leads to net functional loss. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 2
@@ -928,15 +927,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model demonstrates that the Amazon's water cycle is a self-reinforcing system. Which feedback loop does the model reveal as most critical to forest survival?
 
-A. More forest -> more evapotranspiration -> more rainfall -> more forest growth (positive feedback supporting the ecosystem)
+A. Less rainfall -> faster tree growth -> more water consumption -> less rainfall
 B. More forest -> more carbon emissions -> more global warming -> more forest growth
-C. Less rainfall -> faster tree growth -> more water consumption -> less rainfall
-D. More biodiversity -> less rainfall -> more deforestation -> less biodiversity
+C. More biodiversity -> less rainfall -> more deforestation -> less biodiversity
+D. More forest -> more evapotranspiration -> more rainfall -> more forest growth (positive feedback supporting the ecosystem)
 
-Correct Answer: A
+Correct Answer: D
 
-Feedback: Correct. The model shows that the Amazon's water cycle is a positive feedback loop where forest creates its own rain. This is also why deforestation is so dangerous: losing forest reduces rainfall, which kills more forest. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model shows that the Amazon's water cycle is a positive feedback loop where forest creates its own rain. This is also why deforestation is so dangerous: losing forest reduces rainfall, which kills more forest. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 3
@@ -947,15 +945,14 @@ A student runs a simulation of the model. The model shows that when Deforestatio
 
 A student runs the model with 'Aggressive Restoration' settings: zero Deforestation Rate and maximum Reforestation Effort. The model shows full Biodiversity Return requires 100-200+ years. What does this reveal about ecosystem complexity?
 
-A. That Biodiversity Return is unrelated to forest age and depends only on planting density
-B. That complex ecological relationships, specialist species colonization, and mature ecosystem functions require generations to re-establish, even under optimal conditions
-C. That the model is inaccurate because trees grow to full maturity in 10 years
+A. That the model is inaccurate because trees grow to full maturity in 10 years
+B. That Biodiversity Return is unrelated to forest age and depends only on planting density
+C. That complex ecological relationships, specialist species colonization, and mature ecosystem functions require generations to re-establish, even under optimal conditions
 D. That Biodiversity Return can be accelerated to 5 years by introducing more species simultaneously
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates that mature tropical forests are among the most complex ecosystems on Earth. Specialist species, intricate food webs, and symbiotic relationships cannot be manufactured quickly regardless of resources invested. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. The model demonstrates that mature tropical forests are among the most complex ecosystems on Earth. Specialist species, intricate food webs, and symbiotic relationships cannot be manufactured quickly regardless of resources invested. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 4
@@ -967,14 +964,13 @@ Scientists are studying data related to this system. They collected observations
 The model shows that approximately 17% of the Amazon has already been deforested, with the tipping point estimated at 20-25%. Based on the model's feedback dynamics, what makes the remaining margin so dangerous?
 
 A. The remaining forest is all in protected areas that cannot be deforested
-B. As the tipping point approaches, each additional percentage of deforestation reduces rainfall more severely, creating accelerating feedback that pushes the system toward collapse faster
+B. The remaining 3-8% margin represents only unproductive forest that has no economic value
 C. The 20-25% estimate is not supported by any scientific evidence
-D. The remaining 3-8% margin represents only unproductive forest that has no economic value
+D. As the tipping point approaches, each additional percentage of deforestation reduces rainfall more severely, creating accelerating feedback that pushes the system toward collapse faster
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model reveals non-linear dynamics near the tipping point: the water cycle feedback intensifies as forest cover decreases, meaning each additional loss has a proportionally greater impact than the previous one. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals non-linear dynamics near the tipping point: the water cycle feedback intensifies as forest cover decreases, meaning each additional loss has a proportionally greater impact than the previous one. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -985,24 +981,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model's evidence, which strategy is necessary to prevent the Amazon from crossing its tipping point?
 
-A. Reforestation alone is sufficient since trees can be planted faster than they are cut
-B. Simultaneously halting deforestation AND investing in long-term reforestation with soil and water cycle recovery, because the model shows replanting without stopping clearing cannot overcome the functional recovery lag
+A. Simultaneously halting deforestation AND investing in long-term reforestation with soil and water cycle recovery, because the model shows replanting without stopping clearing cannot overcome the functional recovery lag
+B. Allowing natural regeneration without any human intervention
 C. Replacing the Amazon with fast-growing plantation forests that produce more wood
-D. Allowing natural regeneration without any human intervention
+D. Reforestation alone is sufficient since trees can be planted faster than they are cut
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates that both actions are required: stopping the loss and actively restoring what was lost, with the understanding that functional recovery takes decades and cannot be rushed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that both actions are required: stopping the loss and actively restoring what was lost, with the understanding that functional recovery takes decades and cannot be rushed. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.7, CCC4)
-Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.7, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.7, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.7, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.7, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.7, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.7, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.7, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.7, CCC4)
 
 
 ## Resources

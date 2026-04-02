@@ -311,6 +311,37 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+TEACH YOUR MODEL A RULE!
+
+Look at your model. Right now, when Sunlight Amount is ON, Plant Growth
+goes way up — even when it shouldn't!
+
+In the real world, Sunlight Amount only changes Plant Growth when
+Water Availability is happening. Let's teach your model this rule!
+
+Task A: ADD THE RULE
+   • Click on the arrow from Sunlight Amount to Plant Growth
+   • Click "Conditions" in the toolbar
+   • Set: IF Water Availability is ON
+   • Click "Save Conditions"
+
+Task B: TEST IT
+   • Run your simulation again
+   • Does it make more sense now?
+   • Try turning Water Availability ON and OFF — see what changes!
+
+Task C: ADD ANOTHER RULE
+   • Click on the arrow from Water Availability to Plant Growth
+   • Click "Conditions"
+   • Set: IF Sunlight Amount is ON
+   • Click "Save Conditions"
+
+Now your model is SMARTER! It knows the rules of the real world.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -834,108 +865,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1 (Plan an investigation) + DCI LS2.A (Plants need water and light to grow) + CCC2 (Identify cause and effect relationships)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sunlight Amount, Water Availability, Plant Growth. Some components are external (Sunlight Amount, Water Availability) and some are internal (Plant Growth). The student needs to understand what each component represents and how they are organized.
+A class wants to find out if plants need sunlight to grow. They plan to grow two identical bean plants. Plant A will be placed next to a sunny window. Plant B will be placed in a dark closet. Both plants will get the same amount of water every day.
 
-A student grows one plant in sunlight with water and another plant in a dark closet with water. After two weeks, the dark plant is pale and droopy. What does this tell us?
+Why is it important that both plants get the same amount of water?
 
-A. Water is not important for plants
-B. Plants need sunlight to grow healthy
-C. Dark closets have too much soil
-D. The plant in the closet had too much water
+A. Because water makes the experiment take longer
+B. Because if one plant got more water, they would not know if the difference in growth was caused by sunlight or by water
+C. Because water does not matter for plant growth
+D. Because plants in dark closets need more water
 
 Correct Answer: B
 
-Feedback: Correct! Even though both plants had water, the one without sunlight could not make food and became pale and weak. Plants NEED sunlight. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: In a fair investigation, you only change one thing at a time. The class wants to test sunlight, so everything else (like water) must stay the same. If water were different too, they could not tell which one caused the growth difference. If you chose C, water does matter for plant growth. Plants need water to survive. But in this experiment, keeping water the same lets them focus on testing sunlight. If you chose D, plants in dark closets do not need more water. They need the SAME amount so the test is fair. If you chose A, water does not make experiments take longer. Keeping water the same is about making the test fair, not about time.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.2 (Make observations to collect data) + DCI LS2.A (Plants depend on water and light) + CCC2 (Describe cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sunlight Amount increases, Plant Growth increases; when Water Availability increases, Plant Growth increases. The student is trying to understand why these relationships are positive or negative.
+After two weeks, the class checks both plants. Plant A (sunny window) is tall with bright green leaves. Plant B (dark closet) is short, thin, and pale yellow. Both plants got the same water.
 
-What is hydroponics?
+What does this evidence tell us?
 
-A. Growing plants in sand
-B. Growing plants in water instead of soil
-C. Growing plants in the dark
-D. Growing plants with no water at all
+A. Plant B was a bad seed that would not have grown anywhere
+B. Plants need sunlight to grow healthy because the plant without sunlight grew poorly even with water
+C. Water is not important for plants because both plants got water
+D. Dark closets have bad soil that hurts plants
 
 Correct Answer: B
 
-Feedback: Yes! Hydroponics is growing plants in water instead of soil. The water has nutrients added so the plant gets everything it needs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Both plants had water, but only Plant A had sunlight. Since Plant A grew well and Plant B did not, the evidence shows that sunlight is necessary for healthy growth. Without sunlight, the plant could not make food. If you chose C, water IS important, but this experiment tested sunlight, not water. Both plants had water, and the sunny one grew better, proving sunlight matters too. If you chose D, neither plant was in soil issues. The dark closet simply had no light. If you chose A, both plants started the same. Plant B grew poorly because of no sunlight, not because of a bad seed.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Develop a model to represent relationships) + DCI LS2.A (Plants need sunlight and water to grow) + CCC2 (Use cause and effect to explain events)
 
-A student runs a simulation of the model. The model shows that when Sunlight Amount increases, Plant Growth increases and when Water Availability increases, Plant Growth increases. The student changes one variable to see how the whole system responds.
+In a model of plant growth, Sunlight Amount and Water Availability are both external components. Plant Growth is the internal component. The model shows that both sunlight and water have a positive relationship with plant growth, meaning more sunlight helps growth and more water helps growth.
 
-In our model, what happens to Plant Growth when both Sunlight Amount and Water Availability are high?
+What would the model predict for a plant with lots of sunlight but NO water?
 
-A. Plant Growth is very poor
-B. Plant Growth is strong and healthy
-C. The plant stops growing
-D. Nothing happens to the plant
+A. The plant would grow poorly because it needs BOTH sunlight and water to grow well
+B. The plant would grow tall and healthy because sunlight is all it needs
+C. The plant would grow faster without water because water slows plants down
+D. The plant would grow the same as a plant with sunlight and water
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: That is right! When a plant gets lots of sunlight AND lots of water, it has everything it needs to grow strong and healthy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Even though both components have a positive relationship with growth, a plant needs both working together. Lots of sunlight without water means the plant is missing something it needs, so it will grow poorly or not at all. If you chose B, sunlight alone is not enough. Plants need water too. Without water, the plant will wilt and die even in bright sun. If you chose D, a plant without water cannot grow the same as one with water. Water is essential. If you chose C, water helps plants grow, it does not slow them down. The positive relationship means more water helps growth.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1 (Construct an explanation from evidence) + DCI LS2.A (Plants can grow without soil if they get water and light) + CCC2 (Cause and effect can be used to predict)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A farmer grows lettuce in a greenhouse using hydroponics. The lettuce plants sit in water that has nutrients mixed in. There is no soil at all. The plants grow big, green, and healthy under bright lights.
 
-Why can plants grow without soil?
+What does this tell us about what plants really need?
 
-A. Because soil actually hurts plants
-B. Because plants only need air to survive
-C. Because plants need what is IN the soil (water and nutrients), not the soil itself
-D. Because plants do not have roots
+A. Plants do not need anything to grow, they just grow on their own
+B. Hydroponics only works for lettuce and no other plant
+C. Plants need soil or they cannot survive
+D. Plants need water, nutrients, and light to grow, but they do not actually need soil itself
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct! Soil is helpful because it holds water and nutrients near the roots, but if the plant gets water and nutrients another way, it does not need soil at all. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The hydroponic lettuce proves that soil is not required. Plants need what is IN the soil, which is water and nutrients. If you give plants water, nutrients, and light in another way, they grow fine without soil. If you chose A, plants do need things to grow. They need water, nutrients, and light. They just do not specifically need soil. If you chose C, the hydroponic lettuce disproves this. The plants are healthy with no soil at all. If you chose B, hydroponics works for many plants including tomatoes, herbs, and strawberries, not just lettuce.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Analyze data from tests) + DCI LS2.A (Plants need water and light) + CCC4 (Describe how parts of a system interact)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sunlight Amount, Water Availability), but they can take action on internal components (Plant Growth). They need to decide which action would be most effective based on what the model shows.
+A student tests four plants for two weeks. Plant 1 gets sunlight and water and grows 6 inches. Plant 2 gets sunlight but no water and grows 0 inches (it wilted). Plant 3 gets water but no sunlight and grows 1 inch (pale and weak). Plant 4 gets no sunlight and no water and grows 0 inches (it died).
 
-What do you think plants need to grow?
+Which conclusion does this data best support?
 
-A. Only soil
-B. Only water
-C. Sunlight, water, and nutrients
-D. Just a flowerpot
+A. Plants only need water to grow well
+B. Plants only need sunlight to grow well
+C. Plants need both sunlight and water to grow well
+D. Plants do not need sunlight or water
 
 Correct Answer: C
 
-Feedback: That is right! Plants need sunlight, water, and nutrients to grow. They use these to make their own food and stay healthy. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Only Plant 1, which had both sunlight AND water, grew well. The plants missing either sunlight or water grew poorly or died. This shows that plants need both together to grow strong and healthy. If you chose A, Plant 3 had water but no sunlight and only grew 1 inch of pale growth. Water alone is not enough. If you chose B, Plant 2 had sunlight but no water and grew 0 inches. Sunlight alone is not enough either. If you chose D, Plant 4 had neither and died. Plant 1 had both and thrived. The data clearly shows plants need both.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
+Question 1: B (Cognitive Level: Reason — SEP 3.1, DCI LS2.A, CCC2)
+Question 2: B (Cognitive Level: Reason + Evidence — SEP 3.2, DCI LS2.A, CCC2)
+Question 3: A (Cognitive Level: Predict — SEP 2.1, DCI LS2.A, CCC2)
+Question 4: D (Cognitive Level: Reason + Explain — SEP 6.1, DCI LS2.A, CCC2)
+Question 5: C (Cognitive Level: Reason + Evidence — SEP 4.1, DCI LS2.A, CCC4)
 
-
+---
 ## Resources
 
 | Resource | Link |

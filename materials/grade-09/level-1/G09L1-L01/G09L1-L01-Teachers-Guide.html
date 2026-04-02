@@ -31,6 +31,100 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* ===== MULTIPLE CHOICE QUESTIONS ===== */
+.mc-section-intro {
+  background: var(--purple-bg);
+  border-left: 4px solid var(--purple-brand);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 16px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+}
+.mc-question-block {
+  margin-bottom: 14px;
+  page-break-inside: avoid;
+}
+.mc-question-text {
+  font-weight: 700;
+  font-size: 10pt;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.mc-q-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  background: var(--purple-brand);
+  color: white;
+  border-radius: 50%;
+  font-size: 9pt;
+  font-weight: 800;
+  font-family: 'Quicksand', sans-serif;
+}
+.mc-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  margin-left: 30px;
+}
+.mc-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  padding: 4px 8px;
+  border: 1.5px solid var(--purple-light);
+  border-radius: 6px;
+  background: white;
+}
+.mc-choice-letter {
+  font-weight: 800;
+  color: var(--purple-brand);
+  font-family: 'Quicksand', sans-serif;
+  min-width: 14px;
+}
+.mc-post-header {
+  background: linear-gradient(135deg, var(--teal-brand), var(--purple-brand));
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 11pt;
+  margin-bottom: 12px;
+}
+/* Answer key MC styles */
+.mc-answer-block {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: var(--purple-bg);
+  border-radius: 8px;
+  font-size: 9pt;
+  page-break-inside: avoid;
+}
+.mc-answer-q {
+  font-weight: 700;
+  font-size: 9.5pt;
+  margin-bottom: 4px;
+}
+.mc-answer-correct {
+  color: var(--green-pos);
+  font-weight: 700;
+}
+.mc-answer-feedback {
+  font-size: 8.5pt;
+  color: var(--gray-text);
+  margin-top: 3px;
+  font-style: italic;
+}
+
 @page { size: letter; margin: 0.5in; }
 
 @media print {
@@ -634,6 +728,47 @@ h3.sub-heading { font-family: 'Quicksand', sans-serif; font-size: 11pt; font-wei
       <h4>Key Discoveries</h4>
       <ul><li>The body's thermoregulation is a negative feedback loop — rising temperature triggers sweating, which cools the body back down</li><li>Dehydration breaks the feedback loop because the body can't produce sweat without water, causing temperature to spike</li><li>There's a critical tipping point where the cooling system fails — core temperature rises uncontrollably, leading to heat stroke</li><li>Individual differences in fitness, acclimatization, and hydration habits explain why some athletes collapse while others don't</li></ul>
     </div>
+    <h4 style="margin-top:12px;">Multiple Choice Pre-Assessment Answer Key</h4><div class="mc-answer-block">
+        <div class="mc-answer-q">1. A student claims that sweating is a sign of being out of shape. Which of the following best explains why this claim is scientifically inaccurate?</div>
+        <div class="mc-answer-correct">Correct: A) Sweating is the body's primary mechanism for evaporative cooling and is more efficient in well-conditioned athletes</div>
+        <div class="mc-answer-feedback">Correct. Sweating is the body's primary thermoregulatory response, and trained athletes often sweat more efficiently because their cooling systems are better adapted to dissipate heat.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">2. During a football game on a hot day, two players of similar fitness levels are performing at the same intensity. Player A collapses from heat exhaustion while Player B continues playing. Which factor most likely explains this difference?</div>
+        <div class="mc-answer-correct">Correct: B) Player A consumed significantly less water before and during the game than Player B</div>
+        <div class="mc-answer-feedback">Correct. Hydration level is the most common variable that determines individual vulnerability to heat illness. Dehydration reduces the body's ability to produce sweat and maintain core temperature.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">3. Which of the following best describes the concept of homeostasis?</div>
+        <div class="mc-answer-correct">Correct: C) The body's ability to maintain stable internal conditions within a functional range despite changing external conditions</div>
+        <div class="mc-answer-feedback">Correct. Homeostasis is the maintenance of stable internal conditions within a functional range, even as external conditions change. It is dynamic, not static, and operates continuously.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">4. An athlete's core body temperature rises from 37°C to 39°C during a workout. The body responds by increasing sweat production, which eventually brings the temperature back toward 37°C. This process is an example of which type of biological mechanism?</div>
+        <div class="mc-answer-correct">Correct: B) Negative feedback, because the response counteracts the original change</div>
+        <div class="mc-answer-feedback">Correct. This is a negative feedback mechanism because the body's response (increased sweating) opposes the initial change (rising temperature), working to restore the original set point.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">5. A coach notices that heat-related illness incidents at their school have occurred at outdoor temperatures as low as 78°F (26°C). Which explanation best accounts for this observation?</div>
+        <div class="mc-answer-correct">Correct: B) Air temperature alone does not determine heat illness risk; humidity, exertion level, and hydration status interact to determine vulnerability</div>
+        <div class="mc-answer-feedback">Correct. Heat illness results from the interaction of multiple factors including humidity (which reduces evaporative cooling efficiency), exercise intensity (which generates metabolic heat), and hydration status. Air temperature is only one variable.</div>
+      </div><h4 style="margin-top:12px;">Multiple Choice Post-Assessment Answer Key</h4><div class="mc-answer-block">
+        <div class="mc-answer-q">1. In a computational model of thermoregulation, a student sets Physical Exertion to maximum and Hydration Level to low. The model shows Core Temperature rising sharply while Sweat Rate initially increases then drops to near zero. Which explanation best interprets this model behavior?</div>
+        <div class="mc-answer-correct">Correct: B) The negative feedback loop has broken down because the body cannot produce sweat without adequate water, causing an uncontrolled temperature increase</div>
+        <div class="mc-answer-feedback">Correct. This model output demonstrates the critical failure point in thermoregulation. Sweat production requires water. When hydration is depleted, the negative feedback loop breaks because the effector (sweat glands) can no longer function, converting the system to a dangerous positive feedback scenario.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">2. A student's model shows that during the 'Gradual Dehydration' scenario, core temperature remains stable for the first 45 minutes, then begins rising rapidly. Which concept best explains this pattern?</div>
+        <div class="mc-answer-correct">Correct: A) The system has a tipping point where the feedback loop transitions from maintaining homeostasis to failing catastrophically</div>
+        <div class="mc-answer-feedback">Correct. The model reveals a critical tipping point. Initially, the body has enough hydration to maintain the negative feedback loop. As water depletes, the system reaches a threshold where cooling capacity can no longer match heat production, and the system shifts from stable homeostasis to runaway heating.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">3. Two students build models of thermoregulation. Student A's model includes only Core Temperature and Sweat Rate. Student B's model adds Hydration Level and Physical Exertion. Which statement best evaluates the difference between these models?</div>
+        <div class="mc-answer-correct">Correct: B) Student B's model can predict system failure conditions that Student A's model cannot, because it includes the external inputs that drive and constrain the feedback loop</div>
+        <div class="mc-answer-feedback">Correct. Student B's model includes the external variables (hydration and exertion) that determine whether the feedback loop functions or breaks down. Without these inputs, Student A's model cannot predict the conditions under which homeostasis fails.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">4. Based on model evidence, which intervention would be most effective at preventing heat-related illness during a high-intensity outdoor practice in 90°F weather?</div>
+        <div class="mc-answer-correct">Correct: B) Implementing mandatory hydration breaks every 15 minutes, because maintaining hydration preserves the integrity of the negative feedback loop</div>
+        <div class="mc-answer-feedback">Correct. The model demonstrates that hydration is the critical variable that determines whether the thermoregulatory feedback loop continues to function. Mandatory hydration breaks maintain the body's ability to produce sweat and sustain evaporative cooling.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">5. A student extends their thermoregulation model by adding an Acclimatization Level component. They find that higher acclimatization shifts the tipping point, allowing athletes to exercise longer before the feedback loop fails. Which reasoning best explains this model prediction?</div>
+        <div class="mc-answer-correct">Correct: B) Acclimatization improves sweating efficiency and plasma volume, allowing the cooling system to operate effectively at higher core temperatures and lower hydration levels</div>
+        <div class="mc-answer-feedback">Correct. Heat acclimatization produces physiological adaptations including earlier onset of sweating, increased sweat volume, expanded plasma volume, and improved cardiovascular efficiency. These changes extend the functional range of the feedback loop before it reaches its tipping point.</div>
+      </div>
   </div>
   <div class="page-footer">
     <span class="footer-logo">ModelIt!</span>

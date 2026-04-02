@@ -734,102 +734,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.B (Conservation of Energy and Energy Transfer) + CCC2 (Cause and Effect)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Sunlight, Surface Temperature. Some components are external (Amount of Sunlight) and some are internal (Surface Temperature). The student needs to understand what each component represents and how they are organized.
+On a warm day, a class goes outside to two different spots in the playground. One spot is in the bright sunshine. The other spot is under a big tree in the shade. They touch the ground in both places.
 
-When there is MORE sunlight on a spot, what happens to the temperature?
+Which spot feels warmer and why?
 
-A. It goes down
-B. It stays the same
-C. It goes up
+A. The sunny spot feels warmer because sunlight heats the ground
+B. The shady spot feels warmer because the tree heats it up
+C. Both spots feel exactly the same
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Yes! More sunlight makes the temperature go up. The sun's energy heats things up. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The sunny spot feels warmer because sunlight carries energy that heats up the ground. When the sun shines directly on a spot, that spot gets hot. If you chose B, trees do not heat the ground. The shade from a tree actually blocks the sun, so it stays cooler. If you chose C, the two spots do not feel the same. The sun heats up the sunny spot, but the shade blocks the sunlight from heating the other spot.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.B (Conservation of Energy and Energy Transfer) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Sunlight increases, Surface Temperature increases. The student is trying to understand why these relationships are positive or negative.
+The class makes a model about sunshine and temperature. It has two parts: Amount of Sunlight and Surface Temperature. Amount of Sunlight is how much sun shines on a spot. Surface Temperature is how warm the ground feels. The teacher asks which part the students can change.
 
-What does shade do?
+Which part of the model can the students control?
 
-A. It makes things hotter
-B. It blocks sunlight and keeps things cooler
-C. It makes rain
+A. Neither part, because only the sun decides
+B. Amount of Sunlight, because they can move things into the sun or shade
+C. Surface Temperature, because they can touch the ground to make it warmer
 
 Correct Answer: B
 
-Feedback: That is right! Shade blocks sunlight, so the spot stays cooler than a sunny spot. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Students control the Amount of Sunlight because they can choose to place objects in the sun or move them to the shade. They cannot directly control how warm the ground gets. If you chose C, touching the ground does not really change its temperature. The sun is what heats it up. If you chose A, students can change how much sunlight hits something by putting it in the sun or the shade.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.B (Conservation of Energy and Energy Transfer) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Amount of Sunlight increases, Surface Temperature increases. The student changes one variable to see how the whole system responds.
+A student puts two cups of water outside. One cup is in full sunshine. The other cup is in full shade. After one hour, the student checks both cups with a thermometer.
 
-Amount of Sunlight and Surface Temperature have what kind of connection?
+Which cup of water will be warmer?
 
-A. Positive: both go up together
-B. Negative: one goes up, one goes down
-C. No connection
+A. The cup in the shade, because shade makes things hot
+B. Both cups will be the same temperature
+C. The cup in the sunshine, because the sun heats the water
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Yes! It is a positive connection. When sunlight goes up, temperature goes up too. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The cup in the sunshine will be warmer because the sun's energy heats the water. More sunlight means a higher temperature. If you chose A, shade does not make things hot. Shade blocks the sun, which keeps things cooler. If you chose B, the two cups will not be the same. The sun adds energy to the sunny cup, making it warmer than the shaded cup.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.B (Conservation of Energy and Energy Transfer) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In the class model, an arrow goes from Amount of Sunlight to Surface Temperature with a plus sign. This means when one goes up, the other goes up too. A student wonders what happens on a very cloudy day when there is very little sunlight.
 
-Which would feel hotter in the sun?
+On a very cloudy day with very little sunlight, what happens to Surface Temperature?
 
-A. A white piece of paper
-B. A black piece of paper
-C. They feel the same
+A. Surface Temperature stays the same as a sunny day
+B. Surface Temperature goes down because there is less sunlight
+C. Surface Temperature goes up because clouds trap heat
 
 Correct Answer: B
 
-Feedback: Yes! Dark colors soak up more sunlight and get hotter than light colors. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The plus sign means both parts go the same direction. When Amount of Sunlight goes down (cloudy day), Surface Temperature also goes down. Less sun means cooler ground. If you chose C, clouds do block some heat from leaving, but less sunlight reaching the ground means the surface is cooler, not warmer. If you chose A, the model shows they are connected. When sunlight changes, temperature changes too.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.B (Conservation of Energy and Energy Transfer) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Sunlight), but they can take action on internal components (Surface Temperature). They need to decide which action would be most effective based on what the model shows.
+A student notices that the black playground slide is very hot in the sun, but the light-colored bench nearby is only warm. Both are in the same sunshine. The student wonders why the slide is hotter.
 
-On a hot sunny day, which spot feels warmer?
+Why is the dark slide hotter than the light bench in the same sunshine?
 
-A. Under a big tree in the shade
-B. Out in the sunshine
-C. They feel the same
+A. Someone poured hot water on the slide
+B. The bench is bigger so it cannot get as hot
+C. The slide is made of metal and dark colors soak up more sunlight
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! The spot in the sunshine feels warmer because the sun heats it up. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Dark colors absorb more sunlight than light colors. The dark slide soaks up more of the sun's energy, so it gets hotter. If you chose B, size does not explain why one is hotter. Both are in the same sunlight. The color and material make the difference. If you chose A, no one poured water on the slide. The sun heated it up. Dark things get hotter in the sun than light things.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.1, CCC4)
-Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.1, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.B, CCC2)
+Question 2: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.B, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.B, CCC2)
+Question 4: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.B, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI PS3.B, CCC2)
 
+---
 
 ## Resources
 

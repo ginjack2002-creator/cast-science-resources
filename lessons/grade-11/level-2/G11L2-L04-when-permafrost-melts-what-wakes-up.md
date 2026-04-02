@@ -929,107 +929,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ESS2.A (Earth's systems and climate change) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Arctic Temperature Anomaly, Permafrost Thaw Depth, Carbon Release Rate, Atmospheric Greenhouse Gas Level, Global Warming Rate, Thermokarst Formation Rate. Some components are external (Arctic Temperature Anomaly) and some are internal (Permafrost Thaw Depth, Carbon Release Rate, Atmospheric Greenhouse Gas Level, Global Warming Rate, Thermokarst Formation Rate). The student needs to understand what each component represents and how they are organized.
+Scientists drilling permafrost cores in Arctic Alaska discover that permanently frozen soil contains approximately 1,500 gigatons of organic carbon, nearly twice the amount currently in Earth's atmosphere. As permafrost temperatures have risen from -8C to -2C over the past 40 years, the active layer (seasonally thawing surface) has deepened by 30%. Microbial decomposition in newly thawed soil produces both CO2 (under aerobic conditions) and methane (under anaerobic/waterlogged conditions), with methane being 80 times more potent as a greenhouse gas over a 20-year period.
 
 The model shows that at +4 degrees C Arctic warming, Carbon Release Rate accelerates nonlinearly due to thermokarst formation. Which systems-level explanation best accounts for this nonlinear acceleration?
 
-A. Higher temperatures make microbes less efficient at decomposing organic matter
-B. Thermokarst collapse exposes massive volumes of permafrost to warm lake water and air simultaneously, creating localized carbon release hotspots that accelerate thaw far beyond what gradual surface warming alone would produce
+A. Wind patterns shift at higher temperatures, cooling the Arctic surface
+B. Higher temperatures make microbes less efficient at decomposing organic matter
 C. At +4 degrees C, all permafrost has already thawed, so carbon release stops
-D. Wind patterns shift at higher temperatures, cooling the Arctic surface
+D. Thermokarst collapse exposes massive volumes of permafrost to warm lake water and air simultaneously, creating localized carbon release hotspots that accelerate thaw far beyond what gradual surface warming alone would produce
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Thermokarst is a threshold process: once ice-rich permafrost begins collapsing, it exposes far more frozen carbon to thawing conditions than gradual surface warming, creating a nonlinear acceleration. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Thermokarst is a threshold process: once ice-rich permafrost begins collapsing, it exposes far more frozen carbon to thawing conditions than gradual surface warming, creating a nonlinear acceleration. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. Thermokarst formation creates a step-change in thaw dynamics. Ground collapse forms lakes and sinkholes that expose permafrost to warm water on multiple surfaces simultaneously, dramatically accelerating carbon release beyond the rate predicted by surface warming alone. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Thermokarst formation creates a step-change in thaw dynamics. Ground collapse forms lakes and sinkholes that expose permafrost to warm water on multiple surfaces simultaneously, dramatically accelerating carbon release beyond the rate predicted by surface warming alone. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Thermokarst formation creates a step-change in thaw dynamics. Ground collapse forms lakes and sinkholes that expose permafrost to warm water on multiple surfaces simultaneously, dramatically accelerating carbon release beyond the rate predicted by surface warming alone.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.4 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ESS2.A (Earth's systems and climate change) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Arctic Temperature Anomaly increases, Permafrost Thaw Depth increases; when Permafrost Thaw Depth increases, Carbon Release Rate increases. The student is trying to understand why these relationships are positive or negative.
+A climate feedback model simulates the permafrost-carbon feedback loop: rising global temperatures thaw permafrost, releasing stored carbon as CO2 and methane, which increases atmospheric greenhouse gas concentrations, which further raises temperatures, which thaws more permafrost. The model identifies a critical threshold at 1.5C global warming above pre-industrial levels, beyond which permafrost carbon release becomes self-sustaining, meaning it would continue even if all human emissions stopped. Current warming has already reached 1.2C.
 
 A student argues that permafrost carbon feedback is not concerning because 'we can just stop emitting fossil fuels.' Which model finding most directly challenges this reasoning?
 
-A. Fossil fuel emissions are too difficult to reduce for political reasons
-B. Once permafrost thaw becomes self-sustaining, carbon release continues regardless of human emission decisions because the feedback loop operates independently of anthropogenic sources
+A. Once permafrost thaw becomes self-sustaining, carbon release continues regardless of human emission decisions because the feedback loop operates independently of anthropogenic sources
+B. Fossil fuel emissions are too difficult to reduce for political reasons
 C. Permafrost carbon is a different type of carbon than fossil fuel carbon
 D. Stopping fossil fuel emissions would cause immediate global cooling
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This is the critical distinction: unlike fossil fuel emissions, which humans can choose to stop, permafrost carbon feedback is a natural process that becomes self-sustaining once tipping points are crossed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: This is the critical distinction: unlike fossil fuel emissions, which humans can choose to stop, permafrost carbon feedback is a natural process that becomes self-sustaining once tipping points are crossed. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The model reveals that permafrost carbon feedback is fundamentally different from fossil fuel emissions because it is a natural, self-reinforcing process. Once thaw releases enough greenhouse gas to sustain further warming and thaw, it continues regardless of human policy. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. The model reveals that permafrost carbon feedback is fundamentally different from fossil fuel emissions because it is a natural, self-reinforcing process. Once thaw releases enough greenhouse gas to sustain further warming and thaw, it continues regardless of human policy. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. The model reveals that permafrost carbon feedback is fundamentally different from fossil fuel emissions because it is a natural, self-reinforcing process. Once thaw releases enough greenhouse gas to sustain further warming and thaw, it continues regardless of human policy.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.D (Climate change and feedback mechanisms) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Arctic Temperature Anomaly increases, Permafrost Thaw Depth increases and when Permafrost Thaw Depth increases, Carbon Release Rate increases and when Carbon Release Rate increases, Atmospheric Greenhouse Gas Level increases. The student changes one variable to see how the whole system responds.
+Researchers at a Siberian monitoring station document dramatic changes as thermokarst (ground collapse from melting permafrost ice) reshapes the landscape. Satellite imagery shows that thermokarst lakes have increased in surface area by 12% per decade since 1990. These lakes create anaerobic conditions in the thawing soil below, shifting carbon release from CO2 to methane. Field measurements show methane bubbling from thermokarst lakes at rates 5-10 times higher than predicted by models that assumed only aerobic decomposition.
 
 The model includes both CO2 and methane release from permafrost. Why is the methane pathway particularly concerning even though methane concentrations are much lower than CO2?
 
-A. Methane is approximately 80 times more potent as a greenhouse gas than CO2 over a 20-year period, meaning small releases have outsized warming effects
-B. Methane destroys the ozone layer, which is a more urgent problem than warming
-C. Methane is only released in dry conditions, which are becoming more common
-D. Methane release from permafrost has already exceeded fossil fuel methane emissions
+A. Methane release from permafrost has already exceeded fossil fuel methane emissions
+B. Methane is approximately 80 times more potent as a greenhouse gas than CO2 over a 20-year period, meaning small releases have outsized warming effects
+C. Methane destroys the ozone layer, which is a more urgent problem than warming
+D. Methane is only released in dry conditions, which are becoming more common
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. Methane's global warming potential is approximately 80x that of CO2 over 20 years, so even relatively small methane releases from waterlogged permafrost have significant warming impacts. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Methane's global warming potential is approximately 80x that of CO2 over 20 years, so even relatively small methane releases from waterlogged permafrost have significant warming impacts. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. Methane has a global warming potential roughly 80 times greater than CO2 over a 20-year timeframe. This means methane released from waterlogged thawing permafrost has an outsized impact on warming, even at much lower concentrations. If you chose D, this answer oversimplifies a multi-factor system by focusing on a single variable. Methane has a global warming potential roughly 80 times greater than CO2 over a 20-year timeframe. This means methane released from waterlogged thawing permafrost has an outsized impact on warming, even at much lower concentrations. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Methane has a global warming potential roughly 80 times greater than CO2 over a 20-year timeframe. This means methane released from waterlogged thawing permafrost has an outsized impact on warming, even at much lower concentrations.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.A (Earth's systems and climate change) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A paleoclimate team analyzes ice core records from the last deglaciation (18,000-11,000 years ago) and discovers that permafrost thaw released approximately 250 gigatons of carbon over 7,000 years as temperatures rose 4C. Current warming is occurring at 10 times that rate. Their computational model predicts that the rapid rate of current warming may release the same quantity of carbon in 200-500 years, because fast thawing prevents the gradual re-vegetation that partially offset carbon release during the slow natural warming.
 
 Comparing the +2 degrees C and +6 degrees C Arctic scenarios, the model shows that permafrost carbon release at +2 degrees C adds modest warming, while at +6 degrees C the feedback loop appears to become self-sustaining. What is the most important implication for climate policy?
 
-A. Climate policy is irrelevant because warming has already passed the tipping point
-B. Emission reductions must be aggressive enough to keep Arctic warming below the threshold where the permafrost feedback becomes self-reinforcing, because beyond that point, additional warming occurs regardless of human action
-C. All climate policy should focus exclusively on the Arctic region
-D. The difference between +2 and +6 degrees C is too small to matter
+A. All climate policy should focus exclusively on the Arctic region
+B. The difference between +2 and +6 degrees C is too small to matter
+C. Emission reductions must be aggressive enough to keep Arctic warming below the threshold where the permafrost feedback becomes self-reinforcing, because beyond that point, additional warming occurs regardless of human action
+D. Climate policy is irrelevant because warming has already passed the tipping point
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates that there is a critical threshold between manageable and self-sustaining permafrost feedback, making it imperative to reduce emissions fast enough to stay below that threshold. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model demonstrates that there is a critical threshold between manageable and self-sustaining permafrost feedback, making it imperative to reduce emissions fast enough to stay below that threshold. If you chose D, this response dismisses relevant factors that the evidence directly addresses. The model identifies a critical threshold between +2 and +6 degrees C Arctic warming where permafrost feedback transitions from manageable to self-sustaining. Policy must target staying below this threshold, because beyond it, the carbon release cannot be stopped by human action. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The model identifies a critical threshold between +2 and +6 degrees C Arctic warming where permafrost feedback transitions from manageable to self-sustaining. Policy must target staying below this threshold, because beyond it, the carbon release cannot be stopped by human action. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The model identifies a critical threshold between +2 and +6 degrees C Arctic warming where permafrost feedback transitions from manageable to self-sustaining. Policy must target staying below this threshold, because beyond it, the carbon release cannot be stopped by human action.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ESS2.D (Climate change and feedback mechanisms) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Arctic Temperature Anomaly), but they can take action on internal components (Permafrost Thaw Depth, Carbon Release Rate, Atmospheric Greenhouse Gas Level, Global Warming Rate, Thermokarst Formation Rate). They need to decide which action would be most effective based on what the model shows.
+An international climate policy team uses a systems model to evaluate whether limiting warming to 2C (the Paris Agreement target) is sufficient to prevent runaway permafrost feedback. The model shows three scenarios: at 1.5C warming, permafrost releases 50-100 Gt carbon over 100 years (manageable with emissions reductions); at 2C, release accelerates to 150-250 Gt (partially offsetting human emissions reductions); at 3C, the feedback becomes self-sustaining, releasing 400+ Gt regardless of human action, effectively adding 0.3-0.5C of additional warming that policy cannot control. The team must evaluate whether current emissions trajectories (heading toward 2.5-3C) create an irreversible tipping point.
 
 Most current climate models have historically underestimated permafrost carbon feedback. What does this suggest about the adequacy of current global emission reduction targets?
 
 A. Current targets are likely sufficient because models are always conservative
-B. Current targets may need to be more aggressive to account for the additional warming from permafrost carbon release that was not fully included in the models used to set those targets
-C. Emission targets should remain unchanged because permafrost is a minor carbon source
+B. Emission targets should remain unchanged because permafrost is a minor carbon source
+C. Current targets may need to be more aggressive to account for the additional warming from permafrost carbon release that was not fully included in the models used to set those targets
 D. Model underestimation means permafrost feedback is actually less severe than reported
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. If the models used to determine emission targets underestimated permafrost feedback, then those targets allow more warming than intended and may need to be tightened. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: If the models used to determine emission targets underestimated permafrost feedback, then those targets allow more warming than intended and may need to be tightened. If you chose A, this response overgeneralizes without considering the specific mechanisms and evidence presented. If the climate models that informed emission reduction targets did not fully account for permafrost carbon feedback, the actual warming produced by those targets will exceed projections. This means targets may need to be more aggressive to achieve the same temperature goals. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. If the climate models that informed emission reduction targets did not fully account for permafrost carbon feedback, the actual warming produced by those targets will exceed projections. This means targets may need to be more aggressive to achieve the same temperature goals. If you chose D, this choice overgeneralizes without considering the specific mechanisms and evidence presented. If the climate models that informed emission reduction targets did not fully account for permafrost carbon feedback, the actual warming produced by those targets will exceed projections. This means targets may need to be more aggressive to achieve the same temperature goals.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.4, CCC2)
-Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.4, CCC4)
+Question 1: D (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ESS2-4, CCC4)
+Question 2: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS2-4, CCC2)
+Question 3: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS2-4, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ESS2-6, CCC7)
+Question 5: C (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ESS2-6, CCC4)
 
+---
 
 ## Resources
 

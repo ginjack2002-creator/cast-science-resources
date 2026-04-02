@@ -903,107 +903,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI PS2.A (Newton's second law of motion) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Applied Load, Structural Design Type, Maintenance Interval, Force Distribution, Fatigue Damage, Structural Integrity. Some components are external (Applied Load, Structural Design Type, Maintenance Interval) and some are internal (Force Distribution, Fatigue Damage, Structural Integrity). The student needs to understand what each component represents and how they are organized.
+A structural engineering team investigates why a pedestrian bridge in a California city developed visible cracks after only 15 years of service, well before its designed 75-year lifespan. Analysis reveals that the bridge was designed to handle a static load of 85 pounds per square foot and dynamic loads from pedestrian traffic, but the actual usage pattern includes heavy delivery vehicles using the bridge as a shortcut, imposing forces 4 times the design specification. The team models the relationship between applied force, material stress, and structural failure.
 
 A student's 50-year simulation shows that Structural Integrity decreases linearly for the first 30 years but then drops exponentially in years 30-40 when maintenance is deferred. Which explanation best accounts for this nonlinear transition?
 
-A. The material suddenly becomes weaker at the 30-year mark due to age
-B. Without maintenance to repair small cracks, fatigue damage compounds: existing cracks accelerate the growth of new cracks through stress concentration, creating a self-reinforcing degradation cycle
+A. Without maintenance to repair small cracks, fatigue damage compounds: existing cracks accelerate the growth of new cracks through stress concentration, creating a self-reinforcing degradation cycle
+B. The simulation model switches to a different equation at year 30
 C. Traffic volume always increases exponentially after 30 years
-D. The simulation model switches to a different equation at year 30
+D. The material suddenly becomes weaker at the 30-year mark due to age
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Deferred maintenance allows fatigue cracks to grow past the point where they concentrate stress at their tips, accelerating further crack growth. Small cracks that could have been cheaply repaired become large cracks that create stress concentrations, which generate more cracks. The degradation becomes self-reinforcing. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Deferred maintenance allows fatigue cracks to grow past the point where they concentrate stress at their tips, accelerating further crack growth. Small cracks that could have been cheaply repaired become large cracks that create stress concentrations, which generate more cracks. The degradation becomes self-reinforcing. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Consider what happens when small fatigue cracks are not repaired. A crack concentrates stress at its tip, making that location more likely to crack further. This self-reinforcing process means crack growth accelerates over time, especially when maintenance that would have interrupted this cycle is skipped. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Consider what happens when small fatigue cracks are not repaired. A crack concentrates stress at its tip, making that location more likely to crack further. This self-reinforcing process means crack growth accelerates over time, especially when maintenance that would have interrupted this cycle is skipped. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. Consider what happens when small fatigue cracks are not repaired. A crack concentrates stress at its tip, making that location more likely to crack further. This self-reinforcing process means crack growth accelerates over time, especially when maintenance that would have interrupted this cycle is skipped.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI PS2.A (Newton's second law of motion) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Applied Load increases, Force Distribution increases; when Force Distribution increases, Fatigue Damage increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of structural forces in a suspension bridge identifies four key variables: cable tension (supporting force), gravitational load (weight of the bridge and traffic), wind force (lateral stress), and material fatigue (cumulative damage from repeated stress cycles). The model shows that under normal conditions, the forces balance. However, when wind speed exceeds a critical threshold while the bridge carries maximum traffic load, the combined forces exceed the material's yield strength, causing progressive failure.
 
 The model compares three bridge designs under identical loading: beam, truss, and arch. The truss bridge shows the most even force distribution across its members, while the beam bridge shows high stress concentration at midspan. What structural principle explains this difference?
 
-A. Truss bridges are always made of stronger materials than beam bridges
-B. The truss geometry converts bending forces into axial tension and compression distributed across many triangular members, while the beam concentrates bending stress at a single cross-section
-C. Beam bridges receive more traffic than truss bridges
-D. Truss bridges weigh less than beam bridges, so they experience less force
+A. Truss bridges weigh less than beam bridges, so they experience less force
+B. Beam bridges receive more traffic than truss bridges
+C. The truss geometry converts bending forces into axial tension and compression distributed across many triangular members, while the beam concentrates bending stress at a single cross-section
+D. Truss bridges are always made of stronger materials than beam bridges
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The fundamental advantage of a truss is geometric: triangular elements convert applied bending loads into axial forces (pure tension or compression) in individual members. This distributes stress across many members rather than concentrating it at the critical midspan section of a beam. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The fundamental advantage of a truss is geometric: triangular elements convert applied bending loads into axial forces (pure tension or compression) in individual members. This distributes stress across many members rather than concentrating it at the critical midspan section of a beam. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. Think about why triangles are structurally efficient. A single beam must resist bending at its weakest point (midspan). A truss breaks the same load into many smaller tension and compression forces in individual members. The same total load is shared across the structure. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Think about why triangles are structurally efficient. A single beam must resist bending at its weakest point (midspan). A truss breaks the same load into many smaller tension and compression forces in individual members. The same total load is shared across the structure. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Think about why triangles are structurally efficient. A single beam must resist bending at its weakest point (midspan). A truss breaks the same load into many smaller tension and compression forces in individual members. The same total load is shared across the structure.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.B (Develop solutions to engineering problems) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Applied Load increases, Force Distribution increases and when Force Distribution increases, Fatigue Damage increases and when Maintenance Interval increases, Structural Integrity increases. The student changes one variable to see how the whole system responds.
+Engineers analyze the 1940 Tacoma Narrows Bridge collapse using modern computational modeling. Their simulation demonstrates that wind at 42 mph created aerodynamic flutter, a positive feedback loop where wind-induced oscillations increased the bridge deck's surface area exposed to wind, which amplified the oscillations further. The model shows that the bridge entered resonance, where the frequency of wind-driven oscillations matched the bridge's natural frequency, exponentially increasing amplitude until structural failure occurred.
 
 A student's model predicts that doubling the maintenance inspection frequency extends bridge service life by 40%, while doubling the factor of safety at design only extends it by 15%. Which analysis best explains why maintenance has a larger effect than initial overdesign?
 
-A. Maintenance is always cheaper than building a stronger bridge
+A. Maintenance makes the bridge stronger than its original design
 B. A higher factor of safety delays the onset of critical damage but does not stop fatigue accumulation, while regular inspections catch and repair damage before it enters the exponential growth phase, resetting the degradation clock
 C. The factor of safety has no effect on bridge longevity
-D. Maintenance makes the bridge stronger than its original design
+D. Maintenance is always cheaper than building a stronger bridge
 
 Correct Answer: B
 
-Feedback: Correct. The factor of safety provides a larger initial margin before reaching critical levels, but fatigue still accumulates at the same rate. Maintenance actively interrupts the damage accumulation process by repairing cracks before they enter the self-reinforcing exponential growth phase, providing a much larger net benefit. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The factor of safety provides a larger initial margin before reaching critical levels, but fatigue still accumulates at the same rate. Maintenance actively interrupts the damage accumulation process by repairing cracks before they enter the self-reinforcing exponential growth phase, providing a much larger net benefit. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. Consider what each intervention actually does. Doubling the factor of safety means starting with more margin but still accumulating damage at the same rate. Maintenance catches and repairs damage, effectively restarting the clock. Which approach addresses the ongoing process rather than just the starting point? If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. Consider what each intervention actually does. Doubling the factor of safety means starting with more margin but still accumulating damage at the same rate. Maintenance catches and repairs damage, effectively restarting the clock. Which approach addresses the ongoing process rather than just the starting point? If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Consider what each intervention actually does. Doubling the factor of safety means starting with more margin but still accumulating damage at the same rate. Maintenance catches and repairs damage, effectively restarting the clock. Which approach addresses the ongoing process rather than just the starting point?
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.A (Newton's second law of motion) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A bridge inspection team uses sensor data to monitor stress levels in a 40-year-old highway overpass. Data from strain gauges shows that peak stress during rush hour has increased by 35% over the past decade due to heavier vehicles, while the steel's fatigue resistance has decreased by approximately 20% due to corrosion from road salt exposure. The team's model predicts that the bridge will reach its critical stress threshold within 3-7 years under current conditions, but this timeline could shorten dramatically if both trends continue simultaneously.
 
 The simulation reveals that a bridge designed for 20,000 vehicles per day is now carrying 35,000 per day. The model predicts failure 18 years earlier than the original design life. A student argues this is solely the result of increased load exceeding the factor of safety. Which model-based critique identifies the missing factor?
 
-A. The student's analysis is complete and correct
-B. The student ignores the fatigue acceleration: 75% more load cycles per day means fatigue damage accumulates 75% faster, and fatigue failure can occur even while the instantaneous load remains within the factor of safety margin
+A. Vehicle weight has not changed, so the total load is the same
+B. The student's analysis is complete and correct
 C. The bridge should be able to handle any amount of traffic because it was overdesigned
-D. Vehicle weight has not changed, so the total load is the same
+D. The student ignores the fatigue acceleration: 75% more load cycles per day means fatigue damage accumulates 75% faster, and fatigue failure can occur even while the instantaneous load remains within the factor of safety margin
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The student focused only on peak load versus capacity, missing the critical fatigue component. Even if each individual truck is within the load limit, 75% more cycles per day means 75% more fatigue damage accumulation. Fatigue failure depends on cumulative cycles, not just peak force. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The student focused only on peak load versus capacity, missing the critical fatigue component. Even if each individual truck is within the load limit, 75% more cycles per day means 75% more fatigue damage accumulation. Fatigue failure depends on cumulative cycles, not just peak force. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The student is thinking about static load (can the bridge hold the weight right now?) but missing the dynamic effect. Material fatigue depends on the NUMBER of loading cycles, not just the magnitude of each cycle. More vehicles means more cycles, which means faster fatigue accumulation. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. The student is thinking about static load (can the bridge hold the weight right now?) but missing the dynamic effect. Material fatigue depends on the NUMBER of loading cycles, not just the magnitude of each cycle. More vehicles means more cycles, which means faster fatigue accumulation. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. The student is thinking about static load (can the bridge hold the weight right now?) but missing the dynamic effect. Material fatigue depends on the NUMBER of loading cycles, not just the magnitude of each cycle. More vehicles means more cycles, which means faster fatigue accumulation.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.B (Develop solutions to engineering problems) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Applied Load, Structural Design Type, Maintenance Interval), but they can take action on internal components (Force Distribution, Fatigue Damage, Structural Integrity). They need to decide which action would be most effective based on what the model shows.
+An engineering firm must recommend one of three reinforcement strategies for an aging bridge that connects two communities across a river. Strategy 1 adds steel cable supports (addressing tension capacity), Strategy 2 replaces corroded structural members (addressing material fatigue), and Strategy 3 reduces the maximum vehicle weight allowed on the bridge (reducing applied force). Their computational model shows that the bridge's primary vulnerability is the interaction between corrosion and increased loading, not either factor alone.
 
 Based on the complete model analysis, which policy recommendation is best supported by the evidence for preventing bridge failures?
 
-A. Build all bridges with a factor of safety of 10.0 to ensure they never fail
-B. Reduce traffic on all bridges to 50% of design capacity
-C. Implement risk-based inspection schedules that increase inspection frequency as bridges age and approach their fatigue damage thresholds, with mandatory repair protocols for detected damage
-D. Replace all bridges every 20 years regardless of condition
+A. Reduce traffic on all bridges to 50% of design capacity
+B. Replace all bridges every 20 years regardless of condition
+C. Build all bridges with a factor of safety of 10.0 to ensure they never fail
+D. Implement risk-based inspection schedules that increase inspection frequency as bridges age and approach their fatigue damage thresholds, with mandatory repair protocols for detected damage
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model shows that fatigue damage accelerates nonlinearly with age. Risk-based inspection schedules that intensify as bridges age match the inspection frequency to the increasing risk, catching damage during the early growth phase when repairs are effective and affordable. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that fatigue damage accelerates nonlinearly with age. Risk-based inspection schedules that intensify as bridges age match the inspection frequency to the increasing risk, catching damage during the early growth phase when repairs are effective and affordable. If you chose C, this response overgeneralizes without considering the specific mechanisms and evidence presented. The model showed that fatigue accumulation accelerates over time and that early detection through inspection is the most effective intervention. Consider which policy matches inspection effort to risk level throughout the bridge's life. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The model showed that fatigue accumulation accelerates over time and that early detection through inspection is the most effective intervention. Consider which policy matches inspection effort to risk level throughout the bridge's life. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The model showed that fatigue accumulation accelerates over time and that early detection through inspection is the most effective intervention. Consider which policy matches inspection effort to risk level throughout the bridge's life.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.1, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.1, CCC4)
+Question 1: A (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-PS2-1, CCC4)
+Question 2: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS2-1, CCC2)
+Question 3: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS2-1, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-2, CCC7)
+Question 5: D (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-2, CCC4)
 
+---
 
 ## Resources
 

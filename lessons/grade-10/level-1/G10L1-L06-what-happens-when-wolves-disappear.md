@@ -902,15 +902,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the computational model, setting Predator Pressure to zero causes elk Population Size to increase by 300%, Food Availability to crash, and Extinction Risk for other species to spike. This sequence is best described as a:
 
-A. Negative feedback loop that stabilizes the ecosystem.
-B. Trophic cascade, where changes at one trophic level ripple through the entire ecosystem.
-C. Random fluctuation in population that will self-correct over time.
-D. Linear cause-and-effect where only the direct prey species is impacted.
+A. Trophic cascade, where changes at one trophic level ripple through the entire ecosystem.
+B. Random fluctuation in population that will self-correct over time.
+C. Linear cause-and-effect where only the direct prey species is impacted.
+D. Negative feedback loop that stabilizes the ecosystem.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This is a trophic cascade: removing the top predator causes a chain reaction through multiple trophic levels, from herbivore boom to vegetation collapse to habitat degradation to biodiversity loss. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is a trophic cascade: removing the top predator causes a chain reaction through multiple trophic levels, from herbivore boom to vegetation collapse to habitat degradation to biodiversity loss. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -921,15 +920,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that after wolf reintroduction, ecosystem recovery takes significantly longer than the degradation that occurred during wolf absence. Which explanation best accounts for this asymmetry?
 
-A. Wolves are less effective at controlling elk populations than expected.
-B. Destruction (overgrazing, erosion, species loss) happens quickly, but rebuilding (vegetation regrowth, soil accumulation, species recolonization) requires much more time.
-C. The model overestimates the speed of degradation.
-D. Recovery is slow because elk populations resist predation through learned behavior.
+A. Recovery is slow because elk populations resist predation through learned behavior.
+B. Wolves are less effective at controlling elk populations than expected.
+C. Destruction (overgrazing, erosion, species loss) happens quickly, but rebuilding (vegetation regrowth, soil accumulation, species recolonization) requires much more time.
+D. The model overestimates the speed of degradation.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals a fundamental asymmetry: destroying ecological structures (killing vegetation, eroding soil) is fast, but rebuilding them (growing trees, rebuilding soil, recolonizing species) requires years to decades. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals a fundamental asymmetry: destroying ecological structures (killing vegetation, eroding soil) is fast, but rebuilding them (growing trees, rebuilding soil, recolonizing species) requires years to decades. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -948,7 +946,6 @@ D. Fear-based responses last only a few days before elk resume normal behavior.
 Correct Answer: B
 
 Feedback: Correct. The ecology of fear changes the SPATIAL distribution of grazing, not just the number of elk. Even modest wolf populations can cause elk to avoid riverbanks and valleys, allowing vegetation recovery in these critical areas. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 4
@@ -959,15 +956,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student proposes simply reducing elk numbers through hunting instead of reintroducing wolves. Based on the model, which limitation of this approach does the trophic cascade evidence reveal?
 
-A. Hunting reduces elk numbers but does not create the behavioral changes (ecology of fear) that redistribute grazing pressure across the landscape.
-B. Hunting is more effective than wolf predation at controlling elk populations.
-C. The model shows that hunting and wolf predation produce identical ecological outcomes.
-D. Hunting would reduce elk populations below the level needed for the ecosystem to function.
+A. Hunting would reduce elk populations below the level needed for the ecosystem to function.
+B. Hunting reduces elk numbers but does not create the behavioral changes (ecology of fear) that redistribute grazing pressure across the landscape.
+C. Hunting is more effective than wolf predation at controlling elk populations.
+D. The model shows that hunting and wolf predation produce identical ecological outcomes.
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. The model distinguishes between population control (reducing numbers) and behavioral control (changing WHERE elk graze). Wolves provide both; hunting primarily provides only population reduction without the fear-driven spatial redistribution. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model distinguishes between population control (reducing numbers) and behavioral control (changing WHERE elk graze). Wolves provide both; hunting primarily provides only population reduction without the fear-driven spatial redistribution. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -978,24 +974,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model demonstrates that Population Size, Food Availability, Habitat Area, and Extinction Risk are all interconnected through feedback loops. What does this complexity imply for wildlife management decisions?
 
-A. Wildlife management is straightforward because changing one variable predictably controls all others.
-B. Ecosystems are too complex to manage, so intervention should be avoided.
-C. Management decisions must consider the entire system because intervening at one trophic level produces cascading effects at all levels, some of which may be unexpected.
-D. Only the top predator matters; managing any other species is unnecessary.
+A. Only the top predator matters; managing any other species is unnecessary.
+B. Wildlife management is straightforward because changing one variable predictably controls all others.
+C. Ecosystems are too complex to manage, so intervention should be avoided.
+D. Management decisions must consider the entire system because intervening at one trophic level produces cascading effects at all levels, some of which may be unexpected.
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates that ecosystems are interconnected systems where single-variable interventions produce cascading effects throughout multiple trophic levels. Effective management requires systems-level thinking. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that ecosystems are interconnected systems where single-variable interventions produce cascading effects throughout multiple trophic levels. Effective management requires systems-level thinking. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC2)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC2)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
-Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
 
 
 ## Resources

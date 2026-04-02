@@ -333,6 +333,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Training Data Composition → Disparate Impact Ratio relationship as
+unconditional. However, this relationship is scientifically
+contingent on Feature Selection being active. Without this condition,
+the simulation produces inaccurate results: Training Data Composition drives Disparate Impact Ratio
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Training Data Composition → Disparate Impact Ratio
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Feature Selection is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Feature Selection active and observe
+     how Training Data Composition's effect on Disparate Impact Ratio is now gated
+   • Toggle Feature Selection ON/OFF while Training Data Composition remains constant
+   • Verify that Disparate Impact Ratio only responds to Training Data Composition when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Feature Selection → Disparate Impact Ratio
+   • Set condition: IF Training Data Composition is ON
+   • This ensures Feature Selection's effect on Disparate Impact Ratio
+     is contingent on Training Data Composition being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -900,107 +936,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ETS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ETS1.A (Define and delimit engineering problems) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Training Data Composition, Feature Selection, Algorithm Fairness Constraint, Prediction Accuracy, Disparate Impact Ratio. Some components are external (Training Data Composition, Feature Selection, Algorithm Fairness Constraint) and some are internal (Prediction Accuracy, Disparate Impact Ratio). The student needs to understand what each component represents and how they are organized.
+A data science team audits a predictive policing algorithm deployed across a California city. The algorithm analyzes historical crime data to predict where future crimes will occur and recommends patrol allocation accordingly. Analysis reveals that neighborhoods with higher historical arrest rates receive disproportionately more patrol allocation, which in turn generates more arrests in those same neighborhoods, regardless of whether actual crime rates differ. The team maps this as a system with feedback dynamics.
 
 A student's model shows that retraining a hiring algorithm on demographically balanced data improves the Disparate Impact Ratio from 0.62 to 0.89, but overall Prediction Accuracy drops from 92% to 86%. A stakeholder argues the accuracy loss is unacceptable. Which response best applies systems thinking to evaluate this trade-off?
 
-A. The stakeholder is correct because accuracy should always be maximized
+A. The algorithm should be abandoned entirely because no level of accuracy justifies deployment
 B. The 6% accuracy drop reflects the removal of discriminatory patterns that inflated apparent accuracy by systematically disadvantaging one group; the 'lost' accuracy was built on bias, not genuine predictive power
 C. The model proves that fairness and accuracy are always in direct conflict
-D. The algorithm should be abandoned entirely because no level of accuracy justifies deployment
+D. The stakeholder is correct because accuracy should always be maximized
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that the original 92% accuracy was partly achieved by exploiting biased patterns in historical data. Those patterns predicted who was SELECTED in the past, not who was QUALIFIED. Removing bias exposes that some of the original accuracy was discriminatory signal, not genuine predictive power. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The model reveals that the original 92% accuracy was partly achieved by exploiting biased patterns in historical data. Those patterns predicted who was SELECTED in the past, not who was QUALIFIED. Removing bias exposes that some of the original accuracy was discriminatory signal, not genuine predictive power. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. Consider what the algorithm was actually predicting at 92% accuracy. If it was predicting who got hired in a biased system, it was predicting bias, not merit. The accuracy decrease when bias is removed suggests some of the original accuracy was built on discriminatory patterns. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Consider what the algorithm was actually predicting at 92% accuracy. If it was predicting who got hired in a biased system, it was predicting bias, not merit. The accuracy decrease when bias is removed suggests some of the original accuracy was built on discriminatory patterns. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Consider what the algorithm was actually predicting at 92% accuracy. If it was predicting who got hired in a biased system, it was predicting bias, not merit. The accuracy decrease when bias is removed suggests some of the original accuracy was built on discriminatory patterns.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ETS1.A (Define and delimit engineering problems) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Training Data Composition increases, Disparate Impact Ratio increases; when Feature Selection increases, Disparate Impact Ratio increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of algorithmic bias in hiring software reveals a reinforcement cycle. The algorithm is trained on 10 years of historical hiring data from a technology company that was 78% male. When the model scores new applicants, it assigns higher rankings to resumes with features correlated with male applicants (certain universities, specific extracurricular activities, aggressive language patterns). A student is analyzing how the training data creates a self-reinforcing bias loop.
 
 The model demonstrates that adding a fairness constraint (equal false positive rates across groups) reduces the Disparate Impact Ratio to 1.0 (perfect parity) but reveals a new problem: the algorithm now rejects qualified candidates from the majority group at a higher rate. Which concept best describes this outcome?
 
-A. Reverse discrimination, proving that fairness constraints are inherently unjust
+A. An error in the fairness constraint implementation
 B. A fairness-accuracy trade-off where constraining for equal false positive rates redistributes error across groups, revealing that multiple valid definitions of fairness can conflict with each other
-C. An error in the fairness constraint implementation
-D. Evidence that algorithms should never use fairness constraints
+C. Evidence that algorithms should never use fairness constraints
+D. Reverse discrimination, proving that fairness constraints are inherently unjust
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a fundamental insight in algorithmic fairness: there are multiple mathematically valid definitions of fairness (equal false positive rates, equal false negative rates, demographic parity), and satisfying one can violate another. This is the impossibility theorem in action. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model reveals a fundamental insight in algorithmic fairness: there are multiple mathematically valid definitions of fairness (equal false positive rates, equal false negative rates, demographic parity), and satisfying one can violate another. This is the impossibility theorem in action. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. The model shows something deeper than simple reverse discrimination. There are multiple valid ways to define fairness, and they can mathematically conflict. Equal false positive rates, equal false negative rates, and equal selection rates cannot all be satisfied simultaneously in most real-world data. If you chose A, this answer assumes the model or data is flawed rather than analyzing what the evidence actually shows. The model shows something deeper than simple reverse discrimination. There are multiple valid ways to define fairness, and they can mathematically conflict. Equal false positive rates, equal false negative rates, and equal selection rates cannot all be satisfied simultaneously in most real-world data. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. The model shows something deeper than simple reverse discrimination. There are multiple valid ways to define fairness, and they can mathematically conflict. Equal false positive rates, equal false negative rates, and equal selection rates cannot all be satisfied simultaneously in most real-world data.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ETS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.B (Use computer simulations to model solutions) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Training Data Composition increases, Disparate Impact Ratio increases and when Feature Selection increases, Disparate Impact Ratio increases and when Algorithm Fairness Constraint increases, Prediction Accuracy decreases. The student changes one variable to see how the whole system responds.
+Researchers compare outcomes from two lending algorithms used by different banks. Algorithm A uses zip code, education level, and employment history as primary factors, but these variables correlate strongly with race due to historical segregation and educational inequality. Algorithm B uses income, debt-to-income ratio, and payment history without location-based variables. Analysis shows that Algorithm A denies loans to qualified minority applicants at 2.4 times the rate of equally qualified white applicants, while Algorithm B shows no significant racial disparity in denial rates.
 
 A student discovers that their model's algorithm uses 'years of experience' as a top predictive feature. In a field where women were historically excluded before 1990, this feature correlates strongly with gender for workers over 35. Which model-based intervention would most effectively address this bias?
 
-A. Remove 'years of experience' entirely from the algorithm
-B. Cap the maximum value of 'years of experience' at a level that postdates the historical exclusion period, neutralizing its proxy effect while retaining its legitimate predictive value for recent cohorts
-C. Double the weight of 'years of experience' to reward long careers
-D. Replace 'years of experience' with age, which is more objective
+A. Cap the maximum value of 'years of experience' at a level that postdates the historical exclusion period, neutralizing its proxy effect while retaining its legitimate predictive value for recent cohorts
+B. Double the weight of 'years of experience' to reward long careers
+C. Replace 'years of experience' with age, which is more objective
+D. Remove 'years of experience' entirely from the algorithm
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Capping experience at a post-exclusion threshold (e.g., 15 years) preserves the feature's legitimate predictive value for recent career progression while neutralizing its role as a gender proxy for workers whose career length was artificially shortened by historical discrimination. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Capping experience at a post-exclusion threshold (e.g., 15 years) preserves the feature's legitimate predictive value for recent career progression while neutralizing its role as a gender proxy for workers whose career length was artificially shortened by historical discrimination. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. The challenge is that 'years of experience' has both legitimate predictive value AND serves as a proxy for historical gender discrimination. Simply removing it loses useful information. Consider an approach that retains its value while neutralizing its discriminatory correlation. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. The challenge is that 'years of experience' has both legitimate predictive value AND serves as a proxy for historical gender discrimination. Simply removing it loses useful information. Consider an approach that retains its value while neutralizing its discriminatory correlation. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. The challenge is that 'years of experience' has both legitimate predictive value AND serves as a proxy for historical gender discrimination. Simply removing it loses useful information. Consider an approach that retains its value while neutralizing its discriminatory correlation.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ETS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ETS1.A (Define and delimit engineering problems) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A school district implements an algorithm to identify students at risk of academic failure and allocate tutoring resources. After one year, an audit reveals that the algorithm disproportionately flags students from low-income neighborhoods, partially because it uses school attendance as a key predictor, and students in underfunded schools with fewer support services have higher absence rates. Meanwhile, struggling students in better-resourced schools are under-identified because their attendance is higher despite similar academic challenges.
 
 The model shows that an algorithm deployed in healthcare allocates fewer resources to Black patients despite them having more severe health conditions. Investigation reveals the algorithm uses healthcare spending history as a proxy for health needs. Why does this produce racially biased outcomes?
 
-A. Black patients have fewer health needs on average
-B. Historical barriers to healthcare access (insurance gaps, provider discrimination, geographic access) mean Black patients spent less on healthcare not because they were healthier, but because they faced systemic barriers to care
-C. The algorithm correctly identifies that lower spending indicates better health
+A. The algorithm correctly identifies that lower spending indicates better health
+B. Black patients have fewer health needs on average
+C. Historical barriers to healthcare access (insurance gaps, provider discrimination, geographic access) mean Black patients spent less on healthcare not because they were healthier, but because they faced systemic barriers to care
 D. Healthcare algorithms cannot produce biased outcomes because health data is objective
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The algorithm conflated spending with health need, but spending reflects ACCESS to care, not need for care. Systemic barriers (insurance inequities, provider bias, geographic access) suppressed healthcare spending for Black patients, causing the algorithm to underestimate their health needs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The algorithm conflated spending with health need, but spending reflects ACCESS to care, not need for care. Systemic barriers (insurance inequities, provider bias, geographic access) suppressed healthcare spending for Black patients, causing the algorithm to underestimate their health needs. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. Consider why spending might not equal need. If a person faces barriers to accessing healthcare (no insurance, no nearby providers, provider discrimination), they will spend less. Lower spending does not mean better health; it can mean less access to care. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. Consider why spending might not equal need. If a person faces barriers to accessing healthcare (no insurance, no nearby providers, provider discrimination), they will spend less. Lower spending does not mean better health; it can mean less access to care. If you chose D, this choice dismisses relevant factors that the evidence directly addresses. Consider why spending might not equal need. If a person faces barriers to accessing healthcare (no insurance, no nearby providers, provider discrimination), they will spend less. Lower spending does not mean better health; it can mean less access to care.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ETS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.B (Use computer simulations to model solutions) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Training Data Composition, Feature Selection, Algorithm Fairness Constraint), but they can take action on internal components (Prediction Accuracy, Disparate Impact Ratio). They need to decide which action would be most effective based on what the model shows.
+A city council debates whether to continue using an algorithmic risk assessment tool in criminal sentencing. Supporters present data showing the algorithm predicts recidivism with 72% accuracy overall. Critics present a systems analysis showing that the algorithm's accuracy is 78% for white defendants but only 64% for Black defendants, and that false-positive rates (predicting re-offense when none occurs) are 2.1 times higher for Black defendants. The computational model reveals that these disparities stem from training data that reflects decades of inequitable policing and sentencing practices.
 
 Based on the complete model analysis, which recommendation is best supported by the evidence for deploying algorithms in high-stakes decisions?
 
 A. Algorithms should replace human decision-making entirely because they are more consistent
-B. Algorithms should never be used in high-stakes decisions because bias cannot be eliminated
-C. Algorithms should be deployed with mandatory bias auditing, transparent feature disclosure, defined fairness metrics, and ongoing monitoring, because bias can be measured and mitigated even if it cannot be perfectly eliminated
-D. Algorithms should only be trained on data from the last 5 years to avoid historical bias
+B. Algorithms should only be trained on data from the last 5 years to avoid historical bias
+C. Algorithms should never be used in high-stakes decisions because bias cannot be eliminated
+D. Algorithms should be deployed with mandatory bias auditing, transparent feature disclosure, defined fairness metrics, and ongoing monitoring, because bias can be measured and mitigated even if it cannot be perfectly eliminated
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates that bias is measurable and reducible through deliberate interventions: balanced training data, proxy variable analysis, fairness constraints, and disparate impact auditing. Perfect fairness may be mathematically impossible, but accountability and transparency can ensure continuous improvement. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model demonstrates that bias is measurable and reducible through deliberate interventions: balanced training data, proxy variable analysis, fairness constraints, and disparate impact auditing. Perfect fairness may be mathematically impossible, but accountability and transparency can ensure continuous improvement. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. The model showed that bias is a quantifiable, measurable phenomenon in algorithms. This means it can be detected, measured, and reduced through systematic interventions. Consider whether the evidence supports complete rejection, unconditional acceptance, or an approach that requires accountability. If you chose C, this answer dismisses relevant factors that the evidence directly addresses. The model showed that bias is a quantifiable, measurable phenomenon in algorithms. This means it can be detected, measured, and reduced through systematic interventions. Consider whether the evidence supports complete rejection, unconditional acceptance, or an approach that requires accountability. If you chose B, this choice oversimplifies a multi-factor system by focusing on a single variable. The model showed that bias is a quantifiable, measurable phenomenon in algorithms. This means it can be detected, measured, and reduced through systematic interventions. Consider whether the evidence supports complete rejection, unconditional acceptance, or an approach that requires accountability.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ETS1.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ETS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ETS1.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ETS1.1, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ETS1.1, CCC4)
+Question 1: B (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ETS1-1, CCC4)
+Question 2: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ETS1-1, CCC2)
+Question 3: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ETS1-1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-4, CCC7)
+Question 5: D (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-4, CCC4)
 
+---
 
 ## Resources
 

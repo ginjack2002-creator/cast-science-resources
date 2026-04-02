@@ -740,103 +740,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (All organisms need food and water) + CCC1 (Patterns: observe and describe)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Resources Available, Animal Health. Some components are external (Resources Available) and some are internal (Animal Health). The student needs to understand what each component represents and how they are organized.
+A student watches animals at the zoo. She sees a lion eating meat, a monkey eating fruit, and an elephant drinking water from a big tub. All the animals look healthy and strong.
 
-What are the four basic things all animals need to survive?
+What do animals need to stay alive?
 
-A. Food, water, air, and shelter
-B. Food, toys, water, and a bed
-C. Water, friends, sun, and music
+A. Food and water
+B. Toys and games
+C. A TV and a phone
 
 Correct Answer: A
 
-Feedback: Yes! Food, water, air, and shelter are the four basic needs of all animals. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: All animals need food and water to survive. Food gives them energy and water keeps their bodies working. If you chose B, toys and games are fun, but animals need real things like food and water to stay alive. If you chose C, animals do not need electronics. They need food, water, air, and shelter to survive.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (Organisms have basic needs) + CCC2 (Cause and effect: identify events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Resources Available increases, Animal Health increases. The student is trying to understand why these relationships are positive or negative.
+A student is learning about animal needs. Her teacher tells a story about a rabbit that lives in a dry field. There has been no rain for many days, and the rabbit cannot find any water to drink.
 
-When resources available goes UP, what happens to animal health?
+What happens to an animal that has no water?
 
-A. Animal health goes down
-B. Animal health stays the same
-C. Animal health goes up
+A. It stays healthy
+B. It gets sick and weak
+C. Nothing happens
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: That is right! More resources means a healthier, stronger animal. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Without water, an animal's body cannot work properly and it gets very sick and weak. If you chose A, an animal cannot stay healthy without water. Water is one of the most important things an animal needs. If you chose C, something does happen. Without water, the animal gets sick because its body needs water to work.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS1.A.1 (All organisms have basic needs) + CCC1 (Patterns: observe and describe patterns)
 
-A student runs a simulation of the model. The model shows that when Resources Available increases, Animal Health increases. The student changes one variable to see how the whole system responds.
+A student is reading about different animals and where they live. A bird lives in a nest high in a tree. A rabbit lives in a hole in the ground called a burrow. A bear sleeps in a cave. The student wonders what these places have in common.
 
-What is a habitat?
+What is a shelter?
 
-A. An animal's favorite food
-B. The place where an animal lives that has what it needs
-C. A type of shelter made of wood
+A. A safe place to hide
+B. A kind of weather
+C. A type of food
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! A habitat is the place where an animal lives and finds everything it needs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A shelter is a safe place where an animal can hide from danger and bad weather, like a nest, burrow, or cave. If you chose C, a shelter is not food. It is a safe home or hiding place where animals stay protected. If you chose B, a shelter is not weather. It is a place that protects animals from bad weather.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an account) + DCI LS1.A.1 (All organisms need food, water, air) + CCC1 (Patterns: identify patterns)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student made a chart about animal needs. She listed four things every animal needs: food, water, air, and shelter. Her teacher asks if bigger animals need different things than smaller animals.
 
-A fish lives in a pond. Why is the pond a good habitat for the fish?
+Do all animals need the same things to survive?
 
-A. Because ponds are pretty
-B. Because the pond has water, food, and places to hide
-C. Because fish like the color blue
+A. No, every animal needs completely different things
+B. Yes, they all need food, water, air, and shelter
+C. Only big animals need food and water
 
 Correct Answer: B
 
-Feedback: Yes! The pond gives the fish water to swim in, food to eat, and places to hide. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Every animal, big and small, needs food, water, air, and shelter to survive. This is a pattern in nature. If you chose A, while animals eat different foods, they all share the same four basic needs: food, water, air, and shelter. If you chose C, all animals need food and water, not just big ones. Even tiny bugs need food and water.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Use observations to construct an evidence-based account) + DCI LS1.A.1 (Organisms have basic needs met by the environment) + CCC2 (Cause and effect: simple tests show cause)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Resources Available), but they can take action on internal components (Animal Health). They need to decide which action would be most effective based on what the model shows.
+A fish lives in a pond. The pond has water to swim in, tiny plants to eat, and rocks to hide under. A student says the pond is the fish's habitat because it has everything the fish needs.
 
-What do animals need to stay alive?
+A fish lives in a pond. Why is the pond a good habitat for the fish?
 
-A. Toys and games
-B. Food and water
-C. A TV and a phone
+A. Because fish like the color blue
+B. Because ponds are pretty
+C. Because the pond has water, food, and places to hide
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! All animals need food and water to survive. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A good habitat has all the things an animal needs: food, water, air, and shelter. The pond gives the fish all of these. If you chose B, a pond being pretty does not help the fish survive. What matters is that it provides food, water, and shelter. If you chose A, the color of the water does not matter. What makes it a good habitat is that it provides the fish with food, water, and safe places to hide.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
+Question 1: A (Cognitive Level: Identify)
+Question 2: B (Cognitive Level: Identify)
+Question 3: A (Cognitive Level: Reason)
+Question 4: B (Cognitive Level: Reason)
+Question 5: C (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

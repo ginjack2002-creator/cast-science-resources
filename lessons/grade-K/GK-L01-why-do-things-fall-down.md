@@ -732,102 +732,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Drop Height, Fall Speed. Some components are external (Drop Height) and some are internal (Fall Speed). The student needs to understand what each component represents and how they are organized.
+A kindergarten class is learning about gravity. The teacher asks the students to hold a ball up high and then let go. Every time they try, the ball falls down to the ground. The teacher says gravity is an invisible pull that brings things down.
 
 What is gravity?
 
-A. A push that makes things go up
-B. A pull that makes things fall down
-C. A sound you hear
+A. A push that sends things up into the sky
+B. A sound that things make when they move
+C. A pull that brings things down to the ground
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! Gravity is a pull that makes things fall down toward the ground. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Gravity is an invisible pull that always brings things down toward the ground. That is why the ball fell every time the students let go. If you chose A, gravity is a pull, not a push. Pushes send things away, but gravity pulls things down. If you chose B, gravity is not a sound. It is a force that you cannot see or hear, but it pulls everything downward.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.A (Forces and Motion) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Drop Height increases, Fall Speed increases. The student is trying to understand why these relationships are positive or negative.
+Students built a model about dropping a ball. Their model has two parts: Drop Height and Fall Speed. Drop Height is how high you hold the ball. Fall Speed is how fast the ball falls down. The teacher says one part is something WE control and the other part is something that CHANGES on its own.
 
-When you drop a ball from HIGH up, what happens?
+Which part of the model do the students control?
 
-A. It falls slowly
-B. It falls faster
-C. It does not fall at all
+A. Fall Speed, because they decide how fast it goes
+B. Drop Height, because they choose how high to hold the ball
+C. Both parts, because they control everything
 
 Correct Answer: B
 
-Feedback: Yes! Dropping from higher up makes the ball fall faster because gravity has more time to pull on it. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Drop Height is the part the students control because they choose how high to hold the ball before letting go. Fall Speed changes on its own based on how high the drop is. If you chose A, students do not control how fast the ball falls. Gravity decides that. If you chose C, students only control one part. Fall Speed is not something they can choose directly.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Drop Height increases, Fall Speed increases. The student changes one variable to see how the whole system responds.
+A student drops a ball from a low chair. It falls and hits the ground gently. Then the student drops the same ball from a tall table. This time, it hits the ground harder and faster.
 
-In our model, which part do WE get to decide?
+Why did the ball fall faster when it was dropped from the tall table?
 
-A. Fall Speed
-B. Drop Height
-C. Gravity
+A. Gravity had more time to pull on the ball, so it went faster
+B. The ball wanted to go faster the second time
+C. The ball got heavier when it was on the table
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! WE choose how high to hold the ball. That is the Drop Height, and it is the outside part of our model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When the ball is dropped from higher up, gravity pulls on it for a longer time before it hits the ground. More time falling means the ball speeds up more. If you chose C, the ball did not get heavier. It was the same ball both times. The height of the drop is what changed. If you chose B, balls do not want anything. Gravity is a force that pulls on the ball. A higher drop gives gravity more time to speed it up.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.A (Forces and Motion) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In the class model, when Drop Height goes UP, Fall Speed also goes UP. The teacher draws an arrow from Drop Height to Fall Speed and puts a plus sign on it. She says this means they go in the same direction.
 
-Does gravity ever stop pulling on things?
+What does the plus sign on the arrow mean?
 
-A. Yes, at night time
-B. Yes, when things are sitting still
-C. No, it never stops
+A. When Drop Height goes up, Fall Speed goes up too
+B. Drop Height and Fall Speed are not connected
+C. When Drop Height goes up, Fall Speed goes down
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: That is right! Gravity never stops. It is always pulling on everything, even when things are sitting on a table. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The plus sign means both parts go in the same direction. When Drop Height goes up, Fall Speed goes up too. That is called a positive connection. If you chose C, that would be a minus sign, not a plus sign. A plus means they go the same way. If you chose B, the arrow shows that they ARE connected. Drop Height changes Fall Speed.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Drop Height), but they can take action on internal components (Fall Speed). They need to decide which action would be most effective based on what the model shows.
+A student wants to test dropping a ball. She drops it from her knee, then from her waist, and then from above her head. Each time, the ball falls faster than the time before.
 
-What happens when you let go of a ball?
+If the student could drop the ball from the roof of the school, what would happen?
 
-A. It falls down
-B. It floats up
-C. It stays in the air
+A. The ball would float in the air because it is so high up
+B. The ball would fall slower because the roof is far from the ground
+C. The ball would fall even faster than when she dropped it from her head
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Yes! When you let go of a ball, it always falls down to the ground. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The pattern shows that higher drops make the ball fall faster. The roof is higher than the student's head, so the ball would fall even faster. Gravity has more time to speed it up. If you chose A, gravity always pulls things down. A ball never floats when you let go, no matter how high up it is. If you chose B, higher drops make the ball go faster, not slower. The pattern always shows the same thing: higher means faster.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.1, CCC4)
-Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.1, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.A, CCC2)
+Question 2: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.A, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.A, CCC2)
+Question 4: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.A, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI PS2.A, CCC2)
 
+---
 
 ## Resources
 

@@ -418,6 +418,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Chronological Age → Telomere Length relationship as
+unconditional. However, this relationship is scientifically
+contingent on Oxidative Stress Level being inactive. Without this condition,
+the simulation produces inaccurate results: Chronological Age drives Telomere Length
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Chronological Age → Telomere Length
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Oxidative Stress Level is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Oxidative Stress Level inactive and observe
+     how Chronological Age's effect on Telomere Length is now gated
+   • Toggle Oxidative Stress Level ON/OFF while Chronological Age remains constant
+   • Verify that Telomere Length only responds to Chronological Age when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Oxidative Stress Level → Telomere Length
+   • Set condition: IF Chronological Age is OFF
+   • This ensures Oxidative Stress Level's effect on Telomere Length
+     is contingent on Chronological Age being inactive
+
+Task D: ADDITIONAL CONDITION
+   • Select: Stem Cell Function → Healthspan Index
+   • Set condition: IF Mitochondrial Function is ON
+   • This ensures Stem Cell Function's effect on Healthspan Index
+     is contingent on Mitochondrial Function being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -993,14 +1035,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 The model shows that between ages 60-80, the rate of decline in the Healthspan Index accelerates dramatically compared to ages 40-60. Which model finding best explains this acceleration?
 
 A. The accumulation of senescent cells beyond a threshold activates a positive feedback loop where SASP from senescent cells pushes neighboring healthy cells into senescence faster than the body can clear them, creating exponential rather than linear decline
-B. Humans are genetically programmed to die at age 80, so decline is predetermined
-C. The model shows constant linear decline that only appears to accelerate due to graphing artifacts
+B. The model shows constant linear decline that only appears to accelerate due to graphing artifacts
+C. Humans are genetically programmed to die at age 80, so decline is predetermined
 D. After age 60, the immune system attacks healthy cells, causing rapid decline
 
 Correct Answer: A
 
-Feedback: Correct. The model reveals a critical positive feedback loop. When senescent cell burden exceeds approximately 15-20% of cells in a tissue, their collective SASP secretion creates enough inflammatory signaling to push neighboring healthy cells into senescence faster than immune clearance can remove them. This creates an accelerating cascade that explains why aging appears relatively gradual until a threshold is crossed, after which decline becomes rapid. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals a critical positive feedback loop. When senescent cell burden exceeds approximately 15-20% of cells in a tissue, their collective SASP secretion creates enough inflammatory signaling to push neighboring healthy cells into senescence faster than immune clearance can remove them. This creates an accelerating cascade that explains why aging appears relatively gradual until a threshold is crossed, after which decline becomes rapid. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1011,15 +1052,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the senolytic therapy scenario, clearing 50% of senescent cells at age 65 produces a rapid improvement in the Healthspan Index that exceeds what removing half the inflammatory source would linearly predict. What explains this disproportionate benefit?
 
-A. Senolytics also repair DNA damage in healthy cells
+A. The Healthspan Index is not a reliable measure of treatment effectiveness
 B. Reducing senescent cell burden below the feedback threshold breaks the self-reinforcing senescence-inflammation loop, allowing stem cells to reactivate, tissue repair to resume, and the remaining healthy cells to function without chronic inflammatory suppression
-C. The Healthspan Index is not a reliable measure of treatment effectiveness
+C. Senolytics also repair DNA damage in healthy cells
 D. Removing senescent cells causes the remaining cells to divide faster, which shortens telomeres and should worsen health
 
 Correct Answer: B
 
-Feedback: Correct. The disproportionate benefit occurs because senolytics break the positive feedback loop. By reducing senescent cell burden below the self-reinforcing threshold, the inflammatory cascade stops amplifying. This allows dormant stem cells to reactivate in the now-lower-inflammation environment, tissue repair to resume, and remaining healthy cells to return to normal function. The benefit is systemic because the feedback loop was systemic. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The disproportionate benefit occurs because senolytics break the positive feedback loop. By reducing senescent cell burden below the self-reinforcing threshold, the inflammatory cascade stops amplifying. This allows dormant stem cells to reactivate in the now-lower-inflammation environment, tissue repair to resume, and remaining healthy cells to return to normal function. The benefit is systemic because the feedback loop was systemic. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1030,15 +1070,14 @@ A student runs a simulation of the model. The model shows that when Chronologica
 
 The model predicts that 30% caloric restriction started at age 40 slows Epigenetic Age advancement by approximately 35-40% over 20 years. However, starting the same restriction at age 65 shows a much smaller effect. What does this difference reveal about the timing of anti-aging interventions?
 
-A. Caloric restriction only works for young people because older people need more calories
-B. Early intervention slows the accumulation of damage before the senescence-inflammation feedback loop reaches its critical threshold, while late intervention faces an already-established positive feedback cycle that caloric restriction alone cannot fully overcome
-C. The model is biased toward younger ages and produces inaccurate results for older adults
-D. Caloric restriction has no effect at any age according to the model
+A. Caloric restriction has no effect at any age according to the model
+B. The model is biased toward younger ages and produces inaccurate results for older adults
+C. Early intervention slows the accumulation of damage before the senescence-inflammation feedback loop reaches its critical threshold, while late intervention faces an already-established positive feedback cycle that caloric restriction alone cannot fully overcome
+D. Caloric restriction only works for young people because older people need more calories
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Early intervention prevents damage accumulation before the critical threshold is reached, keeping the system in its slower, linear-decline phase. Late intervention faces an already-established positive feedback loop with high senescent cell burden and chronic inflammation. While caloric restriction still provides benefit at 65, it cannot reverse the accumulated damage or fully counteract the self-reinforcing feedback cycle already in progress. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Early intervention prevents damage accumulation before the critical threshold is reached, keeping the system in its slower, linear-decline phase. Late intervention faces an already-established positive feedback loop with high senescent cell burden and chronic inflammation. While caloric restriction still provides benefit at 65, it cannot reverse the accumulated damage or fully counteract the self-reinforcing feedback cycle already in progress. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1049,15 +1088,14 @@ Scientists are studying data related to this system. They collected observations
 
 A student proposes adding an 'Autophagy Rate' component to the model. Autophagy is the cell's self-cleaning mechanism that digests damaged proteins and dysfunctional mitochondria. How would declining autophagy with age interact with the existing components?
 
-A. Reduced autophagy would have no effect because damaged proteins are not related to aging
-B. Declining autophagy would amplify aging by allowing damaged mitochondria (increased ROS production), misfolded proteins (cellular dysfunction), and other cellular debris to accumulate, accelerating the pathway toward senescence and feeding into the inflammation-senescence feedback loop
-C. Autophagy only affects brain cells and would not influence the overall Healthspan Index
-D. Increased autophagy would cause cells to self-destruct, worsening the aging process
+A. Declining autophagy would amplify aging by allowing damaged mitochondria (increased ROS production), misfolded proteins (cellular dysfunction), and other cellular debris to accumulate, accelerating the pathway toward senescence and feeding into the inflammation-senescence feedback loop
+B. Reduced autophagy would have no effect because damaged proteins are not related to aging
+C. Increased autophagy would cause cells to self-destruct, worsening the aging process
+D. Autophagy only affects brain cells and would not influence the overall Healthspan Index
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Autophagy is the cell's quality control system. When it declines with age, damaged mitochondria that produce excess ROS are not removed, misfolded proteins accumulate and impair cellular function, and the overall cellular damage burden increases. This feeds into multiple model components: increased oxidative stress, faster telomere shortening, more cells reaching the damage threshold for senescence, and accelerated inflammation through increased SASP. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Autophagy is the cell's quality control system. When it declines with age, damaged mitochondria that produce excess ROS are not removed, misfolded proteins accumulate and impair cellular function, and the overall cellular damage burden increases. This feeds into multiple model components: increased oxidative stress, faster telomere shortening, more cells reaching the damage threshold for senescence, and accelerated inflammation through increased SASP. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 5
@@ -1068,24 +1106,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 The model reveals that extending healthspan (years of good health) is a more meaningful goal than extending maximum lifespan (years alive). Which model evidence most directly supports this conclusion?
 
-A. The model shows that maximum lifespan cannot be extended under any intervention scenario
-B. Interventions that reduce senescent cell burden and inflammation can dramatically improve physical function, cognitive capacity, and disease resistance (compressing morbidity into a shorter end-of-life period) even if they only modestly extend total years of life
-C. Healthspan and lifespan are identical measures, so there is no meaningful distinction
-D. The model does not include any measure of quality of life
+A. Healthspan and lifespan are identical measures, so there is no meaningful distinction
+B. The model shows that maximum lifespan cannot be extended under any intervention scenario
+C. The model does not include any measure of quality of life
+D. Interventions that reduce senescent cell burden and inflammation can dramatically improve physical function, cognitive capacity, and disease resistance (compressing morbidity into a shorter end-of-life period) even if they only modestly extend total years of life
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates that anti-aging interventions like senolytics and caloric restriction primarily compress morbidity, improving function and quality of life across many years even if total lifespan extension is modest. A person who is healthy until 82 and declines rapidly until death at 85 has a better outcome than someone who begins declining at 65 and lives in poor health until 90. Healthspan captures this distinction; lifespan alone does not. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model demonstrates that anti-aging interventions like senolytics and caloric restriction primarily compress morbidity, improving function and quality of life across many years even if total lifespan extension is modest. A person who is healthy until 82 and declines rapidly until death at 85 has a better outcome than someone who begins declining at 65 and lives in poor health until 90. Healthspan captures this distinction; lifespan alone does not. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
 Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
 
 
 ## Resources

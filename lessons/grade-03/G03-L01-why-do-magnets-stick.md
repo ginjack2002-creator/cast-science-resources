@@ -831,106 +831,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Ask questions about cause and effect) + DCI PS2.B.1 (Magnetic forces between objects) + CCC2 (Cause and effect relationships)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Magnet Strength, Magnetic Force, Attraction. Some components are external (Magnet Strength) and some are internal (Magnetic Force, Attraction). The student needs to understand what each component represents and how they are organized.
+A third-grade student is exploring magnets in class. She holds a magnet near different objects on her desk: a steel paperclip, a wooden pencil, a plastic ruler, and a glass marble. She notices that the paperclip moves toward the magnet, but the other objects do not move at all. She wonders why the magnet only works on some objects.
 
-In the model, when Magnet Strength increases, what happens to Magnetic Force?
+Based on the student's observations, what is the BEST explanation for why the magnet only pulled the paperclip?
 
-A. Magnetic Force decreases
-B. Magnetic Force stays the same
-C. Magnetic Force increases
-D. Magnetic Force disappears
+A. The magnet was closest to the paperclip.
+B. The paperclip is made of steel, which contains iron, and magnets only attract certain metals like iron.
+C. The paperclip was the lightest object on the desk.
+D. The paperclip was the smallest object, so it was easier to move.
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct! Magnet Strength and Magnetic Force have a positive relationship. A stronger magnet creates a stronger invisible pulling force. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: Steel contains iron, which is a magnetic metal. Magnets attract metals that contain iron, nickel, or cobalt, but they do not attract wood, plastic, or glass. If you chose C, weight does not determine whether a magnet attracts an object. A heavy iron pan would still be attracted to a magnet. If you chose A, even if the magnet were held closer to the ruler or pencil, it would not attract them because they are not made of magnetic metal. If you chose D, size does not determine magnetic attraction. A large iron bolt would be attracted to a magnet, but a tiny plastic bead would not.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.B.1 (Describe magnetic interactions) + CCC2 (Cause and effect in a system)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Magnet Strength increases, Magnetic Force increases; when Magnetic Force increases, Attraction increases. The student is trying to understand why these relationships are positive or negative.
+In a classroom model of magnetic force, a student sees that Magnet Strength is connected to Magnetic Force by a positive arrow. The student increases the Magnet Strength slider from low to high and watches what happens in the model.
 
-Why does a magnet stick to a steel refrigerator but NOT to a wooden door?
+Based on the positive relationship shown in the model, what would MOST LIKELY happen to Magnetic Force when Magnet Strength increases?
 
-A. The refrigerator is colder
-B. Steel contains iron, which is attracted to magnets, but wood is not magnetic
-C. The refrigerator is bigger
-D. Wood is too heavy for magnets
+A. Magnetic Force would stay the same because force does not change.
+B. Magnetic Force would decrease because the magnet uses up its energy.
+C. Magnetic Force would increase because a stronger magnet creates a stronger pulling force.
+D. Magnetic Force would disappear because the magnet is too strong.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Exactly! Magnets only attract metals that contain iron, nickel, or cobalt. Steel has iron in it, so magnets stick to it. Wood has no magnetic metals. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A positive relationship means that when one component goes up, the other goes up too. A stronger magnet creates a bigger invisible magnetic field, so the pulling force increases. If you chose B, magnets do not use up energy like batteries. A stronger magnet simply has a stronger field. If you chose A, the model shows a positive relationship, which means force does change when strength changes. If you chose D, making a magnet stronger makes its force stronger, not weaker or gone.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.1 (Ask questions to determine cause and effect) + DCI PS2.B.1 (Magnetic force at a distance) + CCC2 (Cause and effect)
 
-A student runs a simulation of the model. The model shows that when Magnet Strength increases, Magnetic Force increases and when Magnetic Force increases, Attraction increases. The student changes one variable to see how the whole system responds.
+A student tested two magnets by holding each one near a steel paperclip. The strong magnet picked up the paperclip from 3 inches away. The weak magnet had to be moved to 1 inch away before the paperclip moved. Both tests used the same paperclip on the same table.
 
-A student tested a weak magnet and a strong magnet. The strong magnet picked up a paperclip from 3 inches away, but the weak magnet had to be 1 inch away. What does this tell us?
+What does this experiment BEST show about magnet strength and distance?
 
-A. Weak magnets do not work at all
-B. Stronger magnets have a bigger magnetic field that reaches farther
-C. The paperclip moved on its own
-D. Distance does not affect magnets
+A. The paperclip moved on its own toward the stronger magnet.
+B. Distance does not matter when using magnets.
+C. Weak magnets do not create any magnetic force at all.
+D. Stronger magnets have a larger magnetic field that can reach and pull objects from farther away.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: You got it! Stronger magnets create a bigger invisible magnetic field, so they can pull on objects from farther away. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The strong magnet pulled the paperclip from farther away because it has a larger magnetic field. Stronger magnets can reach farther with their invisible pulling force. If you chose C, the weak magnet did work, just from a shorter distance. It still created magnetic force. If you chose A, the paperclip did not move on its own. The magnetic force from the magnet pulled it. If you chose B, the experiment clearly shows that distance matters. The weak magnet only worked at 1 inch, while the strong one worked at 3 inches.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.B.1 (Magnetic interactions) + CCC4 (Describe a system in terms of its components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In the classroom magnet model, students learned that the system has external components (things you control) and internal components (things that change as a result). The model includes: Magnet Strength, Magnetic Force, Attraction, and Distance.
 
-In the magnet model, which component is the EXTERNAL component that you can control?
+Which component is the EXTERNAL component that a student controls at the start of the experiment?
 
-A. Magnetic Force
-B. Attraction
-C. Magnet Strength
-D. Distance
+A. Magnet Strength, because the student chooses which magnet to use before the experiment begins.
+B. Attraction, because it is what happens at the end.
+C. Magnetic Force, because it is the biggest force in the system.
+D. Distance, because the paperclip is far away.
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Right! Magnet Strength is the external component because YOU choose which magnet to use. Magnetic Force and Attraction are internal, meaning they change as a result. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Magnet Strength is external because the student sets it by choosing which magnet to use before the experiment. Magnetic Force and Attraction are internal because they change as a result of that choice. If you chose C, Magnetic Force is internal. It changes based on which magnet the student picks, so it is a result, not a starting input. If you chose B, Attraction is also internal. It happens as a result of the magnetic force, which comes from the magnet strength. If you chose D, Distance can be a factor, but in this model the external component the student controls is Magnet Strength.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI PS2.B.1 (Predict magnetic interactions) + CCC2 (Predict cause and effect outcomes)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Magnet Strength), but they can take action on internal components (Magnetic Force, Attraction). They need to decide which action would be most effective based on what the model shows.
+A teacher gives students three magnets labeled Weak, Medium, and Strong. She asks them to predict which magnet will pick up the most paperclips at once. The model from class shows that increasing Magnet Strength increases Magnetic Force (positive relationship), and increasing Magnetic Force increases Attraction (positive relationship).
 
-What do you think happens when you hold a magnet near a metal paperclip?
+Based on the model, which prediction is BEST supported?
 
-A. The paperclip moves toward the magnet
-B. The paperclip melts
-C. The paperclip gets bigger
-D. Nothing happens
+A. The Strong magnet will pick up the most paperclips because higher Magnet Strength leads to higher Magnetic Force, which leads to higher Attraction.
+B. All three magnets will pick up the same number of paperclips because all magnets are the same.
+C. The Weak magnet will pick up the most paperclips because smaller magnets are more focused.
+D. None of the magnets will pick up any paperclips because paperclips are too heavy.
 
 Correct Answer: A
 
-Feedback: That is right! A magnet pulls a metal paperclip toward it using an invisible force called magnetic force. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: The model shows two positive relationships in a chain: more Magnet Strength leads to more Magnetic Force, which leads to more Attraction. So the Strong magnet creates the most force and attracts the most paperclips. If you chose C, the model shows that weaker magnets create less force, not more. Being smaller does not make a magnet more focused. If you chose B, the three magnets have different strengths, which the model shows will produce different amounts of force and attraction. If you chose D, steel paperclips are light enough for magnets to pick up. The strong magnet will pick up the most.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.3, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.3, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.3, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.3, CCC4)
-Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.3, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 3.1.1, DCI PS2.B.1, CCC2)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.B.1, CCC2)
+Question 3: D (Cognitive Level: Reason + Evidence — SEP 3.1.1, DCI PS2.B.1, CCC2)
+Question 4: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.B.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI PS2.B.1, CCC2)
+
+---
 
 
 ## Resources

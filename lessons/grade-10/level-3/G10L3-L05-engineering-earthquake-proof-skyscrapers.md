@@ -345,6 +345,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Seismic Wave Intensity → Floor Acceleration relationship as
+unconditional. However, this relationship is scientifically
+contingent on Resonance Frequency being active. Without this condition,
+the simulation produces inaccurate results: Seismic Wave Intensity drives Floor Acceleration
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Seismic Wave Intensity → Floor Acceleration
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Resonance Frequency is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Resonance Frequency active and observe
+     how Seismic Wave Intensity's effect on Floor Acceleration is now gated
+   • Toggle Resonance Frequency ON/OFF while Seismic Wave Intensity remains constant
+   • Verify that Floor Acceleration only responds to Seismic Wave Intensity when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -915,15 +945,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows Building A (natural period 3.0 seconds) in an earthquake with a dominant period of 3.1 seconds. Building B (natural period 1.2 seconds) is in the same earthquake. The model predicts Building A's Damage Index is 5 times higher. What variable drives this difference?
 
-A. Building A is taller and therefore always more vulnerable
-B. Resonance Frequency — Building A's natural period nearly matches the earthquake's dominant period, causing resonance amplification of forces, while Building B is far from resonance
-C. Building B has stronger materials based on its shorter natural period
-D. The earthquake hits Building B with less intensity because it is shorter
+A. Building B has stronger materials based on its shorter natural period
+B. Building A is taller and therefore always more vulnerable
+C. The earthquake hits Building B with less intensity because it is shorter
+D. Resonance Frequency — Building A's natural period nearly matches the earthquake's dominant period, causing resonance amplification of forces, while Building B is far from resonance
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model demonstrates that resonance is the primary determinant of damage, not building height or material strength. Building A's 3.0-second period nearly matches the earthquake's 3.1-second period, causing amplification. Building B's 1.2-second period is far from resonance, so it experiences the earthquake at its actual intensity. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that resonance is the primary determinant of damage, not building height or material strength. Building A's 3.0-second period nearly matches the earthquake's 3.1-second period, causing amplification. Building B's 1.2-second period is far from resonance, so it experiences the earthquake at its actual intensity. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -935,14 +964,13 @@ In the computational model for this lesson, a student draws arrows between compo
 In the model, a student increases Material Strength by 50% while keeping all other variables the same, including resonance risk. The Damage Index decreases by only 10%. What does this disproportionate response reveal?
 
 A. Material Strength is incorrectly modeled and should have more impact
-B. The model is broken because stronger materials should always dramatically reduce damage
+B. Material Strength has no relationship to Damage Index in the model
 C. When resonance amplifies forces by 5-10 times, a 50% increase in material strength is overwhelmed — addressing resonance avoidance (through flexibility or isolation) is more effective than adding strength
-D. Material Strength has no relationship to Damage Index in the model
+D. The model is broken because stronger materials should always dramatically reduce damage
 
 Correct Answer: C
 
-Feedback: Correct. This is a key model insight: strength alone cannot overcome resonance amplification. If an earthquake at resonance multiplies forces by 5-10x, a 50% stronger structure still fails under those amplified forces. The model shows that avoiding resonance (through base isolation or period-shifting) reduces damage far more effectively than adding strength. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This is a key model insight: strength alone cannot overcome resonance amplification. If an earthquake at resonance multiplies forces by 5-10x, a 50% stronger structure still fails under those amplified forces. The model shows that avoiding resonance (through base isolation or period-shifting) reduces damage far more effectively than adding strength. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -953,15 +981,14 @@ A student runs a simulation of the model. The model shows that when Seismic Wave
 
 The model classifies Seismic Wave Intensity and Foundation Flexibility as external variables. A student argues that Building Mass should also be external because it is set during design. What is the best evaluation of this argument?
 
-A. The argument is correct — Building Mass is a design choice and should be external
-B. While Building Mass is determined during design, in the model's context it is treated as a system property that interacts with seismic forces through F=ma — it is a characteristic of the system being analyzed, not a condition imposed on it
-C. Building Mass cannot be classified as either external or internal
+A. Building Mass cannot be classified as either external or internal
+B. The argument is correct — Building Mass is a design choice and should be external
+C. While Building Mass is determined during design, in the model's context it is treated as a system property that interacts with seismic forces through F=ma — it is a characteristic of the system being analyzed, not a condition imposed on it
 D. The classification makes no difference to model behavior
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The distinction is nuanced: external variables represent conditions that the system encounters (earthquake intensity, foundation engineering choice). Building Mass, while determined during design, is a property of the system itself — it interacts with acceleration to produce force (F=ma) and with natural period to determine resonance risk. The model treats it as a system characteristic. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The distinction is nuanced: external variables represent conditions that the system encounters (earthquake intensity, foundation engineering choice). Building Mass, while determined during design, is a property of the system itself — it interacts with acceleration to produce force (F=ma) and with natural period to determine resonance risk. The model treats it as a system characteristic. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -980,7 +1007,6 @@ D. Damage Index is not a reliable metric for comparing seismic scenarios
 Correct Answer: B
 
 Feedback: Correct. This is the model's most powerful finding: the same earthquake produces radically different outcomes based solely on structural design. Base isolation prevents resonance and decouples the building from ground motion. Without it, resonance amplifies the same moderate earthquake to destructive levels. Design, not earthquake size, determines survival. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
 ---
 
 ### Question 5
@@ -991,24 +1017,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 After running all three scenarios, a student concludes that base isolation alone is sufficient seismic protection for any building. Using model evidence, what is the strongest limitation of this conclusion?
 
-A. Base isolation is too expensive to be practical
-B. The maximum credible earthquake scenario (1.5g near-fault) shows that even base-isolated buildings experience significant forces — a multi-layered defense (isolation + dampers + flexible design) is needed for extreme events because no single strategy handles all scenarios
-C. Base isolation only works for buildings under 10 stories
+A. The maximum credible earthquake scenario (1.5g near-fault) shows that even base-isolated buildings experience significant forces — a multi-layered defense (isolation + dampers + flexible design) is needed for extreme events because no single strategy handles all scenarios
+B. Base isolation only works for buildings under 10 stories
+C. Base isolation is too expensive to be practical
 D. The model does not include a base isolation variable
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model's three scenarios reveal that base isolation handles moderate earthquakes excellently but has limits under extreme near-fault ground motion. The maximum credible earthquake scenario demonstrates that combined strategies — isolation, structural flexibility, and energy-dissipating dampers — are needed for comprehensive protection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model's three scenarios reveal that base isolation handles moderate earthquakes excellently but has limits under extreme near-fault ground motion. The maximum credible earthquake scenario demonstrates that combined strategies — isolation, structural flexibility, and energy-dissipating dampers — are needed for comprehensive protection. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.2, CCC4)
 Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.2, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.2, CCC2)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.2, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.2, CCC4)
 
 
 ## Resources

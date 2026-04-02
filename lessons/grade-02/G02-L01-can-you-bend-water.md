@@ -837,108 +837,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1 (Plan an investigation) + DCI PS1.A (Different kinds of matter have different properties) + CCC1 (Identify patterns in what you observe)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Container Shape, Water Shape, Water Level. Some components are external (Container Shape) and some are internal (Water Shape, Water Level). The student needs to understand what each component represents and how they are organized.
+A second grader wants to find out what happens when water is poured into different containers. She has a tall skinny cup, a wide flat bowl, and a round jar. She plans to pour the same cup of water into each one and watch what happens.
 
-You pour the same water from a tall skinny cup into a wide flat bowl. What stays the same?
+What should she observe to learn about how water behaves?
 
-A. The shape of the water
-B. The height of the water
-C. The amount of water
-D. Nothing stays the same
+A. Whether the water gets heavier in each container
+B. Whether the water changes shape to match each container
+C. Whether the water disappears in each container
+D. Whether the water changes color in each container
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct! The shape and height change, but the amount of water stays the same. You still have the same water, just in a new shape. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: The investigation is about how water behaves in different containers. Water is a liquid, so it flows and takes the shape of whatever container it is poured into. Watching the shape change is the key observation. If you chose D, water does not change color when you pour it into a different container. Color is not what this investigation is about. If you chose A, the amount of water stays the same no matter which container you use, so it does not get heavier. If you chose C, water does not disappear when you pour it. It is still there, just in a new shape.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.2 (Make observations to collect data) + DCI PS1.A (Matter can be described by its properties) + CCC1 (Use observations to identify patterns)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Container Shape increases, Water Shape increases; when Container Shape increases, Water Level decreases. The student is trying to understand why these relationships are positive or negative.
+A student pours the same amount of water into three containers: a tall skinny bottle, a medium cup, and a wide flat plate. He notices a pattern. In the tall skinny bottle, the water level is high. In the medium cup, the water level is medium. In the wide flat plate, the water level is very low.
 
-In the model, Container Shape is an external component. What does that mean?
+Which pattern best describes what the student observed?
 
-A. It changes on its own
-B. It is something we choose or control
-C. It is always the same
-D. It only works with water
+A. The water level stays the same in every container
+B. The taller the container, the lower the water level goes
+C. The wider the container, the higher the water level goes
+D. The wider the container, the lower the water level goes
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Yes! An external component is something we choose or control. We pick which container to use before the experiment starts. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: This is a pattern about how container width affects water level. When the container is wider, the same amount of water spreads out more, so the water level goes down. This is a negative relationship: as width increases, water level decreases. If you chose C, this is the opposite of what happens. A wider container makes the water spread out and sit lower, not higher. If you chose A, the water level changes depending on the container shape. It is not the same in every container. If you chose B, the tallness of the container does not make the water level go down. It is the width that matters.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 4.1 (Analyze data from observations) + DCI PS1.A (Different properties are suited to different purposes) + CCC1 (Identify patterns in observations)
 
-A student runs a simulation of the model. The model shows that when Container Shape increases, Water Shape increases and when Container Shape increases, Water Level decreases. The student changes one variable to see how the whole system responds.
+A class sorts objects into two groups. Group 1 has a wooden block, a crayon, and a rock. Group 2 has water, juice, and milk. When the teacher puts each object into a new container, the items in Group 1 keep their shape, but the items in Group 2 change shape to match the container.
 
-What is a property of a liquid?
+What is the best way to describe the difference between the two groups?
 
-A. It keeps its own shape no matter where you put it
-B. It flows and takes the shape of its container
-C. It is always blue
-D. It is always cold
+A. Group 1 has things you can see and Group 2 has invisible things
+B. Group 1 has heavy things and Group 2 has light things
+C. Group 1 has solids that keep their shape and Group 2 has liquids that take the shape of their container
+D. Group 1 has big things and Group 2 has small things
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! A key property of liquids is that they flow and take the shape of whatever container they are in. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The key pattern is about shape. Solids like blocks and rocks keep their own shape no matter where you put them. Liquids like water and juice flow and take the shape of whatever container they are in. This is how scientists classify matter. If you chose D, the difference is not about size. A rock can be small and water can fill a big bucket. If you chose B, the difference is not about weight. A cup of water can be heavier than a crayon. If you chose A, all the items in both groups can be seen. Liquids are not invisible.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1 (Develop a model to represent relationships) + DCI PS1.A (Matter exists as different types with observable properties) + CCC4 (Identify parts of a system and how they work together)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+In a model of how water behaves, Container Shape is an external component because it is something we choose. Water Shape and Water Level are internal components because they change based on the container. The model shows that when the container changes shape, the water shape changes too (positive relationship), and when the container gets wider, the water level gets lower (negative relationship).
 
-When the container gets wider, what happens to the water level?
+Which statement correctly describes what happens in this system?
 
-A. The water level goes up higher
-B. The water level stays exactly the same
-C. The water level goes down lower
-D. The water level disappears
+A. When we pick a new container, the water shape changes to match it and the water level may change too
+B. The water shape is external because we can pick what shape the water is
+C. The water level goes up when the container gets wider
+D. The container shape is internal because it changes on its own
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Correct! When the container is wider, the same amount of water spreads out more, so the water level goes down. This is a negative relationship. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: In this system, the container shape is the external input that we control. When we change the container, the internal components respond: water shape matches the new container (positive relationship) and water level adjusts based on width (negative relationship). If you chose B, we do not pick the water shape. The water shape changes on its own based on the container, which makes it internal, not external. If you chose C, the water level goes down when the container gets wider because the water spreads out. This is a negative relationship. If you chose D, the container shape is external because we choose it. It does not change on its own.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1 (Use observations to construct an explanation) + DCI PS1.A (Properties of matter can be observed and measured) + CCC4 (Describe how parts of a system interact)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Container Shape), but they can take action on internal components (Water Shape, Water Level). They need to decide which action would be most effective based on what the model shows.
+A student fills a tall skinny cup all the way to the top with water. Then she pours all of the water into a wide flat bowl. The water only fills the bowl a little bit. Her friend says, "You lost some of the water because the bowl is not full."
 
-What happens to water when you pour it from a cup into a bowl?
+Why is her friend incorrect?
 
-A. The water changes shape to match the bowl
-B. The water stays the same shape as the cup
-C. The water disappears
-D. The water gets heavier
+A. Because the friend is right, some water did disappear
+B. Because water always fills every container to the top
+C. Because the wide bowl makes the same water spread out and sit lower, so it looks like less even though it is the same amount
+D. Because the bowl is bigger, so it made more water appear
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: That is right! Water is a liquid, so it flows and takes the shape of whatever container it is poured into. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The amount of water did not change. When you pour water from a tall skinny container into a wide flat one, the same water spreads out over a bigger area and sits lower. It looks like less, but it is the same amount. If you chose A, no water disappeared. The amount stays the same no matter what shape container it is in. If you chose B, water does not always fill a container to the top. It takes the shape of the container but the amount stays the same. If you chose D, the bowl did not create more water. The amount of water is always the same, it just looks different in different containers.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.1, CCC4)
-Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.1, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 3.1, DCI PS1.A, CCC1)
+Question 2: D (Cognitive Level: Reason — SEP 3.2, DCI PS1.A, CCC1)
+Question 3: C (Cognitive Level: Reason + Evidence — SEP 4.1, DCI PS1.A, CCC1)
+Question 4: A (Cognitive Level: Reason — SEP 2.1, DCI PS1.A, CCC4)
+Question 5: C (Cognitive Level: Reason + Explain — SEP 6.1, DCI PS1.A, CCC4)
 
-
+---
 ## Resources
 
 | Resource | Link |

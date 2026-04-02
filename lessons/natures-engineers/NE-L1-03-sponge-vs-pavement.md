@@ -169,113 +169,109 @@ Hydrologists study how water moves through the environment — where it flows, w
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-4, MS-ESS3-3.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.C.1 (Describe how water cycles through Earth's systems) + CCC4 (Describe a system in terms of its components)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Ground Type, Rainfall Amount, Water Absorbed, Runoff. Some components are external (Ground Type, Rainfall Amount) and some are internal (Water Absorbed, Runoff). The student needs to understand what each component represents and how they are organized.
+A class is studying what happens to rain in a neighborhood. They identify four factors: the type of ground surface, the amount of rainfall, the amount of water absorbed into the ground, and the amount of water that flows across the surface as runoff. They want to sort these into inputs (things that are already set) and outputs (results that depend on the inputs).
 
-What is the difference between a permeable and an impermeable surface?
+Which list correctly sorts the components of the rainfall system?
 
-A. Permeable surfaces are always wet and impermeable surfaces are always dry
-B. Permeable surfaces let water pass through, impermeable surfaces block water
-C. Permeable surfaces are natural and impermeable surfaces are always human-made
-D. There is no difference between them
+A. Inputs: Ground Type, Water Absorbed — Outputs: Rainfall Amount, Runoff
+B. Inputs: Rainfall Amount, Runoff — Outputs: Ground Type, Water Absorbed
+C. Inputs: Ground Type, Rainfall Amount — Outputs: Water Absorbed, Runoff
+D. Inputs: Water Absorbed, Runoff — Outputs: Ground Type, Rainfall Amount
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! Permeable surfaces like soil let water soak through, while impermeable surfaces like pavement block water from passing through. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Ground type and rainfall amount are the starting conditions that determine what happens. Water absorbed and runoff are the results of rain falling on a particular surface. These are the outputs that the system produces. If you chose D, you reversed the inputs and outputs. Absorption and runoff are results, not starting conditions. If you chose A, water absorbed is an output that depends on the ground type. It is a result, not a starting condition. If you chose B, runoff is an output of the system. It results from rainfall hitting a surface, not something set in advance.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.C.1 (Describe water movement through Earth's systems) + CCC2 (Use cause and effect to explain events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Ground Type increases, Water Absorbed decreases; when Ground Type increases, Runoff decreases. The student is trying to understand why these relationships are positive or negative.
+A student uses a model to test what happens when rain falls on different surfaces. On soil, 70% of the water is absorbed and 30% becomes runoff. On pavement, 5% of the water is absorbed and 95% becomes runoff. The student notices that whatever water is NOT absorbed becomes runoff.
 
-In the model, what happened to runoff when the ground type was changed from soil to pavement?
+Which explanation best describes why pavement produces so much more runoff than soil?
 
-A. Runoff decreased because pavement absorbs more water
-B. Runoff stayed the same regardless of ground type
-C. Runoff increased significantly because pavement cannot absorb water
-D. Runoff and absorption both increased equally
+A. Soil produces more runoff than pavement, but it is hidden underground.
+B. Pavement is colder than soil, so it pushes the water away.
+C. Pavement absorbs water faster than soil, so the extra water overflows as runoff.
+D. Pavement is impermeable, meaning water cannot pass through it, so nearly all the rain flows across the surface.
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct! The model showed that runoff increased dramatically on pavement because the impermeable surface cannot absorb water, forcing it all to flow across the surface. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Pavement is impermeable, which means water cannot soak through it. Since the water has nowhere to go below the surface, it flows across the top as runoff. Soil is permeable and lets water pass through, so much more is absorbed. If you chose B, temperature does not determine whether a surface absorbs water. Permeability does. Cold soil still absorbs water. If you chose C, pavement absorbs almost nothing. It blocks water instead of absorbing it. That is the opposite of what this choice says. If you chose A, soil absorbs much more water than pavement. The data shows soil has 70% absorption compared to pavement's 5%.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS3.C.1 (Describe human impacts on Earth's systems) + CCC2 (Use cause and effect to predict outcomes)
 
-A student runs a simulation of the model. The model shows that when Ground Type increases, Water Absorbed decreases and when Ground Type increases, Runoff decreases and when Rainfall Amount increases, Water Absorbed increases. The student changes one variable to see how the whole system responds.
+A city replaces a large park with a new parking lot. Before construction, the area had soil that absorbed most rainfall. After construction, the entire area is covered in pavement. The model shows that soil absorbs 70% of rainfall while pavement absorbs only 5%.
 
-According to the model, what is the main reason cities experience more flooding than natural areas?
+Based on the model, what should city planners predict will happen to flooding in the neighborhood after the parking lot is built?
 
-A. Cities get more rainfall than natural areas
-B. Cities have replaced natural soil with impermeable pavement, increasing runoff
-C. Cities are built in areas that naturally flood
-D. City buildings attract more rain clouds
+A. Flooding will decrease because pavement channels water to drains more efficiently.
+B. Flooding will stay the same because the total amount of rain has not changed.
+C. Flooding will decrease because pavement is smoother and water flows away faster.
+D. Flooding risk will increase significantly because the pavement cannot absorb water, so nearly all rain becomes runoff.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Yes! The model showed that replacing permeable soil with impermeable pavement is the main cause of urban flooding. Water that would normally soak into the ground instead becomes runoff. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The model shows that pavement absorbs only 5% of rainfall compared to soil's 70%. Converting a park to a parking lot means that 65% more of every rainstorm becomes runoff flowing across the surface. This dramatically increases the volume of water flowing into streets, drains, and low spots, raising flood risk. If you chose A, while pavement does channel water, the total volume of runoff increases enormously. Drains are designed for normal conditions and can be overwhelmed by the extra water. If you chose B, the amount of rain is the same, but the amount of RUNOFF changes dramatically. The surface determines how much rain becomes flooding. If you chose C, faster flow actually makes flooding worse because water arrives at low points more quickly and in greater volume.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI ESS3.C.1 (Apply principles to minimize human impacts) + CCC4 (Describe system interactions)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Scientists studied two neighborhoods during the same rainstorm. Neighborhood A has mostly houses with lawns, gardens, and unpaved paths (80% soil, 20% pavement). Neighborhood B has large shopping centers and parking lots (20% soil, 80% pavement). After the storm, Neighborhood B had three times as much street flooding as Neighborhood A.
 
-What does the model predict will happen if rainfall doubles on a soil surface?
+Which explanation best accounts for the difference in flooding between the two neighborhoods?
 
-A. All the extra water will be absorbed by the soil
-B. Both absorption and runoff increase, but the soil still absorbs more than pavement would
-C. The soil will turn into pavement
-D. Runoff will decrease because more rain makes soil absorb better
+A. Neighborhood B received more rain because shopping centers attract storms.
+B. Neighborhood B has much more impermeable pavement, so most rainfall became runoff instead of soaking into the ground, overwhelming the drainage system.
+C. Neighborhood A had better storm drains, which is the only factor that matters.
+D. Neighborhood A's houses blocked the rain from reaching the ground.
 
 Correct Answer: B
 
-Feedback: Correct! When rainfall doubles on soil, both absorption and runoff increase. The soil can only absorb so much, but it still handles heavy rain far better than pavement. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The key difference is ground surface composition. Neighborhood B has 80% pavement (impermeable), which means most rain cannot soak in and becomes runoff. Neighborhood A has 80% soil (permeable), which absorbs most rainfall. The model directly predicts that more pavement produces more runoff and more flooding. If you chose A, both neighborhoods experienced the same rainstorm. Shopping centers do not attract more rain. If you chose C, while drain quality matters, the fundamental difference is how much water reaches the drains. More pavement means dramatically more runoff volume. If you chose D, houses have roofs that shed water, but the lawns and gardens around them absorb rain. The 80% soil coverage is the key factor.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS3.C.1 (Design methods to minimize human impacts) + CCC4 (Describe components and interactions within a system)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Ground Type, Rainfall Amount), but they can take action on internal components (Water Absorbed, Runoff). They need to decide which action would be most effective based on what the model shows.
+A city wants to reduce flooding in a neighborhood that has too much pavement. An engineer proposes replacing some parking lots with rain gardens, which are patches of soil and plants designed to absorb water. The model shows that soil absorbs 70% of rainfall while pavement absorbs only 5%.
 
-What happens to rain when it falls on a grassy field?
+Based on the model, which approach would be most effective at reducing flooding, and why?
 
-A. It bounces back up into the sky
-B. It soaks into the ground
-C. It turns into ice immediately
-D. It disappears completely
+A. Replace a significant portion of pavement with permeable surfaces like rain gardens, so more water is absorbed instead of becoming runoff.
+B. Paint the pavement a lighter color so it reflects the rain back up.
+C. Build higher walls along the streets to contain the floodwater.
+D. Wait for the rainy season to end, since flooding only happens during storms.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! When rain falls on a grassy field, much of it soaks into the soil. The ground acts like a sponge and absorbs the water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: The model shows that the ground surface type determines how much rain is absorbed versus how much becomes runoff. Replacing impermeable pavement with permeable surfaces like rain gardens directly changes the system. More permeable surface means more absorption and less runoff, which reduces flooding. If you chose B, paint does not make pavement permeable. The surface still blocks water from soaking in, and rain does not bounce back up. If you chose C, containing floodwater treats the symptom but does not address the cause. The model shows you need to reduce runoff by increasing absorption. If you chose D, this does nothing to solve the structural problem. The next rainstorm will cause the same flooding.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.C.1, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.C.1, CCC2)
+Question 3: D (Cognitive Level: Predict — SEP 2.1.4, DCI ESS3.C.1, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 6.1.1, DCI ESS3.C.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS3.C.1, CCC4)
 
+---
 
 ## Lesson Metadata
 

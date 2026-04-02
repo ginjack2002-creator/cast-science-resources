@@ -911,13 +911,12 @@ In the migration model, what does the relationship between Climate Trigger and F
 
 A. That food availability has no relationship to migration timing
 B. That climate change is decoupling these two variables: Climate Trigger (photoperiod) remains constant while Food Availability shifts with temperature, creating a phenological mismatch that undermines the entire migration strategy
-C. That Climate Trigger and Food Availability always remain perfectly synchronized
-D. That animals can consciously adjust their departure date to match food availability
+C. That animals can consciously adjust their departure date to match food availability
+D. That Climate Trigger and Food Availability always remain perfectly synchronized
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that migration evolved when these two clocks were synchronized. Climate change is disrupting Food Availability timing while leaving the photoperiod trigger unchanged, creating a potentially fatal mismatch. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that migration evolved when these two clocks were synchronized. Climate change is disrupting Food Availability timing while leaving the photoperiod trigger unchanged, creating a potentially fatal mismatch. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -928,15 +927,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that Group Size provides compound benefits through the 'many wrongs' principle. What does this principle demonstrate about collective navigation?
 
-A. That all individuals in a group navigate perfectly, making no errors
-B. That individual navigation errors are random and tend to cancel out when averaged across a group, resulting in a more accurate collective trajectory than any single individual could achieve
-C. That only the lead animal navigates while all others follow blindly
-D. That groups always navigate worse than individuals because they argue about direction
+A. That only the lead animal navigates while all others follow blindly
+B. That groups always navigate worse than individuals because they argue about direction
+C. That individual navigation errors are random and tend to cancel out when averaged across a group, resulting in a more accurate collective trajectory than any single individual could achieve
+D. That all individuals in a group navigate perfectly, making no errors
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The 'many wrongs' principle shows that when individual navigation errors are independent and random, the group's average heading is more accurate than any single member's heading, improving collective navigation accuracy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The 'many wrongs' principle shows that when individual navigation errors are independent and random, the group's average heading is more accurate than any single member's heading, improving collective navigation accuracy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -947,15 +945,14 @@ A student runs a simulation of the model. The model shows that when Climate Trig
 
 A student runs the model with a scenario where one critical stopover site is removed from the migration route. What does the model predict?
 
-A. Animals easily skip the missing stopover and continue to the next one
-B. Energy Reserves become depleted before reaching the next refueling point, leading to increased mortality that can cause population-level collapse even when breeding and wintering grounds remain intact
+A. Energy Reserves become depleted before reaching the next refueling point, leading to increased mortality that can cause population-level collapse even when breeding and wintering grounds remain intact
+B. Animals easily skip the missing stopover and continue to the next one
 C. Animals permanently settle at the last available stopover site
 D. Only old or weak animals are affected; healthy animals complete the journey without stopping
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates that migration routes function as a chain of energy stations. Removing one link creates a gap too large for energy reserves to bridge, causing widespread mortality that cascades to population-level impacts. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that migration routes function as a chain of energy stations. Removing one link creates a gap too large for energy reserves to bridge, causing widespread mortality that cascades to population-level impacts. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -966,15 +963,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model demonstrates that migration is an evolutionary cost-benefit calculation. Which evidence from the model best explains why migration remains stable in a population?
 
-A. Migration is a learned behavior that parents teach to offspring each generation
-B. Reproductive Success at the destination consistently exceeds the mortality cost of the journey, making migratory individuals produce more surviving offspring than non-migratory competitors
-C. All animals migrate because it is an instinct that cannot be selected against
-D. Migration exists because habitats are always identical at both endpoints
+A. All animals migrate because it is an instinct that cannot be selected against
+B. Migration is a learned behavior that parents teach to offspring each generation
+C. Migration exists because habitats are always identical at both endpoints
+D. Reproductive Success at the destination consistently exceeds the mortality cost of the journey, making migratory individuals produce more surviving offspring than non-migratory competitors
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that migration is evolutionarily stable only when the reproductive payoff exceeds the journey's mortality cost. If conditions change to shift this balance, migration can be lost from a population. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that migration is evolutionarily stable only when the reproductive payoff exceeds the journey's mortality cost. If conditions change to shift this balance, migration can be lost from a population. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -985,24 +981,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model, which combination of human-caused changes poses the greatest threat to migratory species survival?
 
-A. Increased tourism at bird-watching sites along migration routes
-B. Climate change disrupting food timing (phenological mismatch) combined with habitat destruction eliminating critical stopover sites, simultaneously breaking both the navigation reliability and energy supply that migration depends on
-C. Construction of wind farms at the final destination only
-D. Artificial lighting in cities that attracts migrating birds at night
+A. Artificial lighting in cities that attracts migrating birds at night
+B. Construction of wind farms at the final destination only
+C. Increased tourism at bird-watching sites along migration routes
+D. Climate change disrupting food timing (phenological mismatch) combined with habitat destruction eliminating critical stopover sites, simultaneously breaking both the navigation reliability and energy supply that migration depends on
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that migration depends on two pillars: timing coordination (food must be available on arrival) and infrastructure (stopover sites must exist for refueling). Climate change attacks the first while habitat destruction attacks the second, creating a compound threat. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that migration depends on two pillars: timing coordination (food must be available on arrival) and infrastructure (stopover sites must exist for refueling). Climate change attacks the first while habitat destruction attacks the second, creating a compound threat. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.8, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.8, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.8, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.8, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.8, CCC2)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.8, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.8, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.8, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.8, CCC2)
 
 
 ## Resources

@@ -192,113 +192,111 @@ Ecohydrologists study how water and ecosystems interact. They work on wildfire m
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-4, MS-ESS3-3, MS-ESS3-4, MS-LS2-4.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.C.1 (Describe how water cycles through Earth's systems) + CCC4 (Describe a system in terms of its components)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Precipitation, Beaver Dam Count, Drought Severity, Groundwater Level, Soil Moisture, Vegetation Health, Surface Runoff, Fire Spread Rate. Some components are external (Precipitation, Beaver Dam Count, Drought Severity) and some are internal (Groundwater Level, Soil Moisture, Vegetation Health, Surface Runoff, Fire Spread Rate). The student needs to understand what each component represents and how they are organized.
+Scientists studying wildfire in California build an 8-component ecohydrology model. The model includes: precipitation, beaver dam count, and drought severity as inputs, and groundwater level, soil moisture, vegetation health, surface runoff, and fire spread rate as outputs. They want to trace how beaver dams connect to fire resistance.
 
-In the 8-component model, what is the chain from beaver dams to fire resistance?
+What is the correct cascade chain from beaver dams to fire resistance in this model?
 
-A. Beaver Dams put out fires directly with water
-B. Beaver Dams raise Groundwater Level, which increases Soil Moisture, which keeps Vegetation healthy, which reduces Fire Spread Rate
-C. Beaver Dams block fire from crossing rivers
-D. Beaver Dams have no connection to fire in the model
+A. Beaver Dams lower Groundwater Level, which dries vegetation, which increases fire risk.
+B. Beaver Dams increase Surface Runoff, which floods the fire out.
+C. Beaver Dams raise Groundwater Level, which increases Soil Moisture, which keeps Vegetation healthy and green, which reduces Fire Spread Rate.
+D. Beaver Dams put out fires directly by spraying water on them.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! The model shows the chain: Beaver Dams raise Groundwater, higher Groundwater increases Soil Moisture, moist soil keeps Vegetation healthy and green, and healthy vegetation resists Fire Spread. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The model traces a four-step chain. Beaver dams slow water and push it underground, raising the groundwater level. Higher groundwater keeps soil moist through capillary action. Moist soil sustains healthy, green vegetation. And green, well-watered vegetation resists fire because wet plants do not burn easily. If you chose D, beaver dams do not spray water on fires. They work indirectly by keeping the landscape hydrated, which prevents fire from spreading. If you chose B, beaver dams actually REDUCE surface runoff by trapping water and pushing it underground. Less runoff means more water stays in the landscape. If you chose A, the model shows beaver dams RAISE groundwater level (positive relationship), not lower it.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.A.1 (Describe how Earth's systems interact) + CCC2 (Use cause and effect to explain events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Beaver Dam Count increases, Groundwater Level increases; when Beaver Dam Count increases, Surface Runoff decreases. The student is trying to understand why these relationships are positive or negative.
+Research by Dr. Emily Fairfax shows that during a severe drought in California, areas near beaver dams stayed green while surrounding areas dried out and burned. Satellite images confirm green corridors along beaver-dammed streams surrounded by brown, fire-scarred landscapes.
 
-What happened in the model when drought was severe but beaver dams were present?
+Which explanation from the ecohydrology model best accounts for these observations?
 
-A. The area burned just as badly as areas without beaver dams
-B. The area near beaver dams stayed greener and more fire-resistant than areas without dams
-C. The beaver dams made the drought worse
-D. The model showed no difference between dammed and undammed areas during drought
+A. Beaver dams blocked the fire from crossing the stream.
+B. Beavers carried water from the stream to surrounding plants during the drought.
+C. The green areas were already fire-resistant before the beavers arrived.
+D. Beaver dams stored water and raised the groundwater table, keeping soil moisture high enough for vegetation to stay green even when surface conditions were dry, creating fire-resistant corridors.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Yes! The model showed that even during drought, beaver-dammed areas maintained higher groundwater, soil moisture, and vegetation health than undammed areas, reducing fire spread. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The model explains Dr. Fairfax's observations through the cascade chain. Beaver dams stored water and pushed it underground, raising the water table. Even during drought, this elevated groundwater kept soil moist and vegetation green. The green corridors resisted fire because well-watered plants do not burn easily. If you chose B, beavers do not carry water to plants. The mechanism is indirect: dams raise the water table, and plant roots access that underground water. If you chose C, the research specifically shows that beaver presence creates these green corridors. Areas without beaver dams dried out and burned. If you chose A, beaver dams keep vegetation green, which resists fire. They do not physically block flames like a firewall.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS3.C.1 (Describe human impacts on Earth's systems) + CCC4 (Describe system components and interactions)
 
-A student runs a simulation of the model. The model shows that when Beaver Dam Count increases, Groundwater Level increases and when Beaver Dam Count increases, Surface Runoff decreases and when Precipitation increases, Groundwater Level increases. The student changes one variable to see how the whole system responds.
+A scientist compares two watershed models during a drought. Watershed A has five beaver dams along the stream. Watershed B has no beaver dams. Both receive the same low rainfall and experience the same drought severity.
 
-What did the model show about the relationship between beaver dams and surface runoff?
+The model predicts that Watershed A has higher groundwater level, higher soil moisture, healthier vegetation, lower surface runoff, and lower fire spread rate than Watershed B.
 
-A. Beaver dams increase surface runoff
-B. Beaver dams have no effect on runoff
-C. Beaver dams reduce surface runoff by keeping more water in the landscape
-D. Surface runoff is not part of the ecohydrology model
+Based on these predictions, what is the most important difference the beaver dams create?
 
-Correct Answer: C
+A. Beaver dams keep more water IN the landscape by raising groundwater and reducing runoff, which sustains vegetation health and resists fire even during drought.
+B. Beaver dams increase total rainfall in their watershed.
+C. Beaver dams have no measurable effect during drought because there is not enough rain.
+D. Beaver dams only affect the stream itself, not the surrounding landscape.
 
-Feedback: Correct! The model showed that beaver dams reduce surface runoff by slowing water flow and spreading it across the floodplain, keeping more water stored in the landscape. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+Correct Answer: A
 
+Feedback: The key difference is water retention. Beaver dams slow water flow and push it underground, raising the water table and reducing surface runoff. This means more water stays in the landscape instead of rushing away. During drought, this stored water sustains soil moisture and vegetation health, creating fire-resistant conditions. If you chose B, beaver dams do not create rainfall. They work with whatever rain falls by keeping more of it in the landscape. If you chose C, the model data shows beaver dams DO have measurable effects during drought. Watershed A had better outcomes across all metrics. If you chose D, the model shows beaver dams affect groundwater, soil moisture, and vegetation across the surrounding landscape, not just the stream.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI ESS3.C.1 (Apply principles to minimize impacts) + CCC7 (Describe stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A student runs the extreme drought scenario in the model: zero rainfall for an extended period, with beaver dams present. The results show that groundwater levels slowly decline, soil moisture gradually drops, and vegetation health eventually degrades. Fire resistance holds for several months but eventually weakens as stored water is exhausted.
 
-According to the extreme drought scenario, what are the limits of beaver dams as fire protection?
+What does this scenario reveal about the limits of beaver dams as fire protection?
 
-A. Beaver dams have no limits and work perfectly in all conditions
-B. Beaver dams only work when there is no drought at all
-C. Beaver dams buffer against moderate drought but cannot maintain green corridors during extreme, prolonged drought with almost no precipitation
-D. Beaver dams make extreme drought worse
+A. The scenario is unrealistic because extreme drought never happens.
+B. Beaver dams buffer against moderate drought by storing water, but they cannot create water from nothing, so extreme, prolonged drought with zero rainfall eventually overwhelms even beaver-managed landscapes.
+C. Beaver dams make extreme drought worse by trapping water animals need.
+D. Beaver dams are useless because they cannot prevent all wildfires.
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Yes! The model showed that beaver dams are powerful but have limits. They can buffer moderate drought, but extreme, prolonged drought with almost no rain eventually overwhelms even beaver-managed landscapes. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The extreme drought scenario reveals an important limit. Beaver dams store and distribute water effectively, providing substantial buffering during moderate drought. But they cannot generate new water. When rainfall drops to zero for an extended period, the stored water is gradually depleted through evaporation and plant use, and eventually even beaver-managed areas lose their fire resistance. If you chose D, beaver dams provide significant protection during normal and moderate drought conditions. They are far from useless. If you chose C, beaver dams spread water across the landscape, benefiting all organisms. They do not trap water away from animals. If you chose A, extreme drought events are increasingly common in California and worldwide due to climate change.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ESS3.C.1 (Design methods to minimize human impacts) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Precipitation, Beaver Dam Count, Drought Severity), but they can take action on internal components (Groundwater Level, Soil Moisture, Vegetation Health, Surface Runoff, Fire Spread Rate). They need to decide which action would be most effective based on what the model shows.
+A California county faces increasing wildfire risk due to drought. County planners consider two strategies. Strategy A: Build concrete fire barriers along ridgelines at high cost. Strategy B: Reintroduce beavers to streams in fire-prone watersheds to create natural fire-resistant green corridors.
 
-What is ecohydrology?
+Based on the ecohydrology model, which strategy addresses the ROOT CAUSE of wildfire spread, and why?
 
-A. The study of how water is used in factories
-B. The study of how water movement through ecosystems affects living things, and how living things affect water movement
-C. The study of how to build hydroelectric dams
-D. The study of ocean currents
+A. Strategy B, because the model shows that beaver dams keep vegetation green and hydrated by maintaining groundwater and soil moisture, which addresses the root cause of wildfire spread: dry vegetation.
+B. Strategy A, because beavers cannot survive in fire-prone areas.
+C. Neither strategy works because wildfires cannot be reduced.
+D. Strategy A, because concrete barriers physically block flames.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct! Ecohydrology studies the two-way relationship between water movement and living organisms in ecosystems. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that fire spreads because dry vegetation acts as fuel. Strategy B addresses this root cause by keeping vegetation hydrated through the groundwater-soil moisture-vegetation health cascade. Green, well-watered plants resist fire. Strategy A blocks flames but does not address why the landscape is flammable in the first place. If you chose D, concrete barriers may deflect individual fires but do not address the underlying problem of dry, fire-prone landscapes. They are a symptom treatment, not a root cause solution. If you chose B, beavers thrive in many fire-prone watersheds. Research shows they create green corridors that survive fire events. If you chose C, research demonstrates that beaver-dammed watersheds have significantly reduced fire spread rates.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.C.1, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.A.1, CCC2)
+Question 3: A (Cognitive Level: Predict — SEP 2.1.4, DCI ESS3.C.1, CCC4)
+Question 4: B (Cognitive Level: Argue — SEP 6.1.1, DCI ESS3.C.1, CCC7)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS3.C.1, CCC4)
 
+---
 
 ## Lesson Metadata
 

@@ -395,6 +395,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Inheritance Bias → Gene Drive Frequency relationship as
+unconditional. However, this relationship is scientifically
+contingent on Fitness Cost being inactive. Without this condition,
+the simulation produces inaccurate results: Inheritance Bias drives Gene Drive Frequency
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Inheritance Bias → Gene Drive Frequency
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Fitness Cost is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Fitness Cost inactive and observe
+     how Inheritance Bias's effect on Gene Drive Frequency is now gated
+   • Toggle Fitness Cost ON/OFF while Inheritance Bias remains constant
+   • Verify that Gene Drive Frequency only responds to Inheritance Bias when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Fitness Cost → Gene Drive Frequency
+   • Set condition: IF Inheritance Bias is ON
+   • This ensures Fitness Cost's effect on Gene Drive Frequency
+     is contingent on Inheritance Bias being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -965,15 +1001,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The simulation shows that a gene drive with 99% inheritance bias and zero fitness cost reaches fixation (100% of population) in approximately 12 generations. When fitness cost is added at 10%, the drive still reaches fixation but takes 20 generations. What does this comparison reveal about the relative strength of inheritance bias versus natural selection?
 
-A. Natural selection completely overrides the gene drive
-B. The mathematical advantage of 99% inheritance is strong enough to overcome moderate natural selection against the drive, though fitness costs slow the process
-C. Fitness costs have no effect on gene drive dynamics
-D. The drive reaches fixation at the same speed regardless of fitness cost
+A. The mathematical advantage of 99% inheritance is strong enough to overcome moderate natural selection against the drive, though fitness costs slow the process
+B. Natural selection completely overrides the gene drive
+C. The drive reaches fixation at the same speed regardless of fitness cost
+D. Fitness costs have no effect on gene drive dynamics
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The 99% inheritance bias creates a powerful mathematical advantage over the normal 50%. Even with a 10% fitness cost (natural selection pushing back), the inheritance advantage dominates, reaching fixation at a slower but still inevitable pace. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The 99% inheritance bias creates a powerful mathematical advantage over the normal 50%. Even with a 10% fitness cost (natural selection pushing back), the inheritance advantage dominates, reaching fixation at a slower but still inevitable pace. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -984,15 +1019,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model reveals a critical race between gene drive spread and resistance evolution. Under what conditions does resistance 'win' against the drive?
 
-A. Resistance always wins because natural selection is all-powerful
-B. Resistance wins when the rate of resistance mutation emergence exceeds the drive's ability to spread faster than resistant individuals reproduce
-C. Resistance never wins against a properly designed gene drive
-D. Resistance only matters in laboratory settings, not in wild populations
+A. Resistance never wins against a properly designed gene drive
+B. Resistance only matters in laboratory settings, not in wild populations
+C. Resistance wins when the rate of resistance mutation emergence exceeds the drive's ability to spread faster than resistant individuals reproduce
+D. Resistance always wins because natural selection is all-powerful
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. It is a rate competition. If resistance mutations arise and spread through natural selection faster than the drive can reach fixation, resistance individuals outcompete drive carriers, and the drive stalls. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. It is a rate competition. If resistance mutations arise and spread through natural selection faster than the drive can reach fixation, resistance individuals outcompete drive carriers, and the drive stalls. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 3
@@ -1005,13 +1039,12 @@ A student's model shows that suppressing mosquito populations by 90% causes sign
 
 A. Mosquitoes are unimportant in ecosystems and can be safely removed
 B. Ecological cascading effects, where removing one species propagates disruptions through the food web to species that depend on it
-C. The model is flawed because mosquitoes have no ecological role
-D. Only the mosquito population is affected by gene drive deployment
+C. Only the mosquito population is affected by gene drive deployment
+D. The model is flawed because mosquitoes have no ecological role
 
 Correct Answer: B
 
-Feedback: Correct. Removing or suppressing a species creates ripple effects through the food web. Species that depend on mosquitoes as food (bats, birds, fish, other insects) lose a resource, which can cascade further up the food chain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Removing or suppressing a species creates ripple effects through the food web. Species that depend on mosquitoes as food (bats, birds, fish, other insects) lose a resource, which can cascade further up the food chain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1022,15 +1055,14 @@ Scientists are studying data related to this system. They collected observations
 
 The simulation demonstrates that once a gene drive is released into a wild population, it cannot be recalled. Why is this irreversibility fundamentally different from other biotechnologies?
 
-A. All biotechnologies are equally irreversible
-B. Unlike contained technologies, a self-propagating gene drive reproduces and spreads autonomously through the ecosystem, making it impossible to retrieve or control after release
+A. Irreversibility is only a theoretical concern with no practical implications
+B. All biotechnologies are equally irreversible
 C. Gene drives can be reversed by releasing a second gene drive
-D. Irreversibility is only a theoretical concern with no practical implications
+D. Unlike contained technologies, a self-propagating gene drive reproduces and spreads autonomously through the ecosystem, making it impossible to retrieve or control after release
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. A gene drive is self-propagating, meaning it reproduces and spreads through natural mating. Unlike a chemical spill (which can be cleaned) or a GMO crop (which can be contained), a gene drive becomes part of the wild gene pool permanently. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. A gene drive is self-propagating, meaning it reproduces and spreads through natural mating. Unlike a chemical spill (which can be cleaned) or a GMO crop (which can be contained), a gene drive becomes part of the wild gene pool permanently. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1041,24 +1073,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the model evidence, which deployment strategy best balances the humanitarian goal of malaria elimination with ecological safety?
 
-A. Immediate global release of the strongest possible gene drive to maximize speed
-B. A phased approach: contained testing, isolated island trials, staged regional deployment with continuous monitoring for resistance and ecological impacts, with predefined halt criteria
-C. Avoid gene drive technology entirely because the risks are too high
-D. Deploy the gene drive only in laboratories and never release it into the wild
+A. A phased approach: contained testing, isolated island trials, staged regional deployment with continuous monitoring for resistance and ecological impacts, with predefined halt criteria
+B. Deploy the gene drive only in laboratories and never release it into the wild
+C. Immediate global release of the strongest possible gene drive to maximize speed
+D. Avoid gene drive technology entirely because the risks are too high
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that outcomes depend on parameters (fitness cost, resistance rate, ecological connections) that vary across environments. A phased approach allows data collection at each stage, with the ability to halt before irreversible consequences occur. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that outcomes depend on parameters (fitness cost, resistance rate, ecological connections) that vary across environments. A phased approach allows data collection at each stage, with the ability to halt before irreversible consequences occur. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC2)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
 
 ## Resources

@@ -364,6 +364,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Deforestation Rate → Forest Carbon Stock relationship as
+unconditional. However, this relationship is scientifically
+contingent on Fire Susceptibility being active. Without this condition,
+the simulation produces inaccurate results: Deforestation Rate drives Forest Carbon Stock
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Deforestation Rate → Forest Carbon Stock
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Fire Susceptibility is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Fire Susceptibility active and observe
+     how Deforestation Rate's effect on Forest Carbon Stock is now gated
+   • Toggle Fire Susceptibility ON/OFF while Deforestation Rate remains constant
+   • Verify that Forest Carbon Stock only responds to Deforestation Rate when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -930,66 +960,63 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI LS2.B (Cycling of matter in ecosystems) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Deforestation Rate, Forest Carbon Stock, Evapotranspiration Rate, Regional Rainfall, Fire Susceptibility, Reforestation Rate. Some components are external (Deforestation Rate, Reforestation Rate) and some are internal (Forest Carbon Stock, Evapotranspiration Rate, Regional Rainfall, Fire Susceptibility). The student needs to understand what each component represents and how they are organized.
+Satellite analysis of the Amazon Basin reveals that deforestation rates have created a patchwork of forest fragments interspersed with agricultural land. A 30-year dataset shows that when forest cover in a region drops below 75%, local rainfall decreases measurably because the forest generates 25-50% of its own rainfall through evapotranspiration. Regions that crossed this threshold have experienced a 15% decline in annual precipitation, stressing the remaining forest and making it more vulnerable to fire and further deforestation.
 
 The model shows that at 25% Amazon deforestation, Regional Rainfall drops below a threshold and Fire Susceptibility spikes. Even when Reforestation Rate is set to match Deforestation Rate, the forest continues to decline. What best explains this result?
 
-A. Reforestation seedlings consume more water than mature trees
-B. Once the rainfall-fire feedback loop engages, the system is self-reinforcing: reduced forest lowers rainfall, which increases fire, which destroys more forest, regardless of replanting efforts
-C. Deforestation and reforestation rates cancel out perfectly, so the forest should stabilize
-D. The model is flawed because reforestation always restores forest function immediately
+A. Deforestation and reforestation rates cancel out perfectly, so the forest should stabilize
+B. The model is flawed because reforestation always restores forest function immediately
+C. Once the rainfall-fire feedback loop engages, the system is self-reinforcing: reduced forest lowers rainfall, which increases fire, which destroys more forest, regardless of replanting efforts
+D. Reforestation seedlings consume more water than mature trees
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The tipping point is where the positive feedback loop (less forest leads to less rain leads to more fire leads to less forest) becomes self-reinforcing and overpowers reforestation efforts. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The tipping point is where the positive feedback loop (less forest leads to less rain leads to more fire leads to less forest) becomes self-reinforcing and overpowers reforestation efforts. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. Beyond the tipping point, the deforestation-drought-fire feedback loop operates independently of human reforestation efforts. Reduced forest cover decreases evapotranspiration, lowering rainfall, which dries out remaining forest, increasing fire risk in a self-sustaining cycle. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. Beyond the tipping point, the deforestation-drought-fire feedback loop operates independently of human reforestation efforts. Reduced forest cover decreases evapotranspiration, lowering rainfall, which dries out remaining forest, increasing fire risk in a self-sustaining cycle. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Beyond the tipping point, the deforestation-drought-fire feedback loop operates independently of human reforestation efforts. Reduced forest cover decreases evapotranspiration, lowering rainfall, which dries out remaining forest, increasing fire risk in a self-sustaining cycle.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.4 + CCC3 (Scale, Proportion, and Quantity)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI LS2.B (Cycling of matter in ecosystems) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Deforestation Rate increases, Forest Carbon Stock decreases; when Forest Carbon Stock increases, Evapotranspiration Rate increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of the Amazon rainforest water cycle demonstrates a critical feedback loop: trees pump water from the soil into the atmosphere through transpiration, this moisture forms clouds that produce rain, and this rain sustains the forest. The model shows that the forest acts as a biological water pump that recycles moisture multiple times as air masses move from east to west. When deforestation removes too many trees, the water recycling breaks down, rainfall decreases, and the remaining forest dries out, making it more susceptible to fire, which removes more trees.
 
 A policy team proposes planting 10 million hectares of new forest per year to fully offset 10 million hectares of annual deforestation. The model shows this strategy fails over 30 years. Which timescale mismatch is responsible?
 
-A. Newly planted trees grow faster than expected, overshooting carbon targets
+A. Deforestation only affects carbon storage, not water cycles
 B. Deforestation releases stored carbon instantly, but replanted trees take 20-40 years to reach carbon sequestration maturity, creating a decades-long carbon debt
 C. Reforestation costs decrease over time, making the program unsustainable
-D. Deforestation only affects carbon storage, not water cycles
+D. Newly planted trees grow faster than expected, overshooting carbon targets
 
 Correct Answer: B
 
-Feedback: Correct. A chainsaw releases centuries of stored carbon in hours, while a seedling takes 20-40 years to reach maturity. This asymmetry creates an unavoidable carbon debt even with equal area replanting. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: A chainsaw releases centuries of stored carbon in hours, while a seedling takes 20-40 years to reach maturity. This asymmetry creates an unavoidable carbon debt even with equal area replanting. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. The fundamental timescale mismatch: deforestation releases stored carbon almost instantly, but a newly planted tree needs 20-40 years to reach the carbon sequestration capacity of the mature tree it replaced. Hectare-for-hectare replacement does not equal carbon-for-carbon replacement. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. The fundamental timescale mismatch: deforestation releases stored carbon almost instantly, but a newly planted tree needs 20-40 years to reach the carbon sequestration capacity of the mature tree it replaced. Hectare-for-hectare replacement does not equal carbon-for-carbon replacement. If you chose A, this choice oversimplifies a multi-factor system by focusing on a single variable. The fundamental timescale mismatch: deforestation releases stored carbon almost instantly, but a newly planted tree needs 20-40 years to reach the carbon sequestration capacity of the mature tree it replaced. Hectare-for-hectare replacement does not equal carbon-for-carbon replacement.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.C (Human impacts on Earth systems) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Deforestation Rate increases, Forest Carbon Stock decreases and when Forest Carbon Stock increases, Evapotranspiration Rate increases and when Evapotranspiration Rate increases, Regional Rainfall increases. The student changes one variable to see how the whole system responds.
+Researchers compare two adjacent 10,000-hectare regions in Southeast Asia: Region A was completely deforested and converted to palm oil plantation 15 years ago, while Region B maintained intact forest. Soil analysis shows Region A has lost 60% of its organic carbon, 75% of its water retention capacity, and supports 90% fewer species. Region A's agricultural productivity has declined by 20% over 15 years as soil degrades without forest root structures and organic matter inputs. Restoring forest on Region A would require 80-120 years to approach Region B's ecosystem function.
 
 The model reveals that forests generate up to 50% of their own rainfall. A student concludes that any amount of deforestation will proportionally reduce rainfall. Why is this linear interpretation incorrect?
 
-A. Rainfall is entirely controlled by ocean temperatures, not forests
-B. The system exhibits threshold behavior: below a critical forest cover level, the evapotranspiration-rainfall cycle cannot sustain itself, causing a rapid nonlinear collapse rather than a gradual proportional decline
+A. The system exhibits threshold behavior: below a critical forest cover level, the evapotranspiration-rainfall cycle cannot sustain itself, causing a rapid nonlinear collapse rather than a gradual proportional decline
+B. Forest rainfall recycling only matters in temperate, not tropical, forests
 C. Deforestation actually increases rainfall because bare ground reflects more heat
-D. Forest rainfall recycling only matters in temperate, not tropical, forests
+D. Rainfall is entirely controlled by ocean temperatures, not forests
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The forest-rainfall relationship has threshold dynamics. Above the threshold, the cycle is self-sustaining with gradual decline. Below it, the cycle collapses rapidly because the remaining forest cannot generate enough moisture. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The forest-rainfall relationship has threshold dynamics. Above the threshold, the cycle is self-sustaining with gradual decline. Below it, the cycle collapses rapidly because the remaining forest cannot generate enough moisture. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. The model shows nonlinear threshold behavior: the evapotranspiration-rainfall system is self-sustaining above a critical forest cover threshold but collapses below it. The transition from forest to savanna is abrupt, not proportional to deforestation area. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The model shows nonlinear threshold behavior: the evapotranspiration-rainfall system is self-sustaining above a critical forest cover threshold but collapses below it. The transition from forest to savanna is abrupt, not proportional to deforestation area. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The model shows nonlinear threshold behavior: the evapotranspiration-rainfall system is self-sustaining above a critical forest cover threshold but collapses below it. The transition from forest to savanna is abrupt, not proportional to deforestation area.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.4 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.B (Cycling of matter in ecosystems) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A reforestation project plants native trees on 5,000 hectares of degraded agricultural land in Central America. After 8 years, monitoring shows that 40% of the planted area has developed a functioning forest canopy, but the remaining 60% shows stunted growth due to degraded soil that lacks mycorrhizal fungi networks. The computational model reveals that successful reforestation requires not just planting trees but restoring soil microbiome connectivity, which serves as the underground communication and nutrient distribution network that mature forests depend on.
 
 An economist argues that converting forest to agriculture is rational because farmland generates immediate revenue. Using the model, which systems-level analysis best addresses this argument?
 
@@ -1000,37 +1027,36 @@ D. Deforestation has no economic consequences beyond the cleared area
 
 Correct Answer: B
 
-Feedback: Correct. This is a tragedy of the commons: individual economic incentives favor clearing, but the collective value of intact forest ecosystem services far exceeds agricultural revenue when properly accounted for. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: This is a tragedy of the commons: individual economic incentives favor clearing, but the collective value of intact forest ecosystem services far exceeds agricultural revenue when properly accounted for. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. The model demonstrates a classic externality problem: the farmer captures agricultural revenue but the costs of lost ecosystem services (rainfall, carbon storage, biodiversity) are borne by everyone. The total value of ecosystem services exceeds agricultural value, but markets fail to reflect this. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The model demonstrates a classic externality problem: the farmer captures agricultural revenue but the costs of lost ecosystem services (rainfall, carbon storage, biodiversity) are borne by everyone. The total value of ecosystem services exceeds agricultural value, but markets fail to reflect this. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. The model demonstrates a classic externality problem: the farmer captures agricultural revenue but the costs of lost ecosystem services (rainfall, carbon storage, biodiversity) are borne by everyone. The total value of ecosystem services exceeds agricultural value, but markets fail to reflect this.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ESS3.C (Human impacts on Earth systems) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Deforestation Rate, Reforestation Rate), but they can take action on internal components (Forest Carbon Stock, Evapotranspiration Rate, Regional Rainfall, Fire Susceptibility). They need to decide which action would be most effective based on what the model shows.
+A national government evaluates three approaches to halt deforestation while supporting economic development for forest-dependent communities. Approach 1 creates strict protected areas (no human activity), Approach 2 implements sustainable forestry with selective harvest, and Approach 3 develops payment-for-ecosystem-services programs that compensate communities for maintaining forest cover. The systems model projects outcomes over 50 years, revealing that Approach 1 often fails because it creates economic pressure that drives illegal deforestation outside protected boundaries, while Approach 3 shows the most durable results because it aligns community economic interests with forest preservation.
 
 Based on the model, which combination of strategies would be most effective at preventing the Amazon from crossing its savannification tipping point?
 
-A. Focus exclusively on reforestation of already-cleared areas
-B. Allow continued deforestation but plant twice as many trees elsewhere
-C. Halt deforestation of intact forest to prevent crossing the threshold, while simultaneously reforesting degraded areas and creating economic alternatives that make standing forest more valuable than cleared land
-D. Accept savannification as inevitable and adapt agricultural practices
+A. Accept savannification as inevitable and adapt agricultural practices
+B. Focus exclusively on reforestation of already-cleared areas
+C. Allow continued deforestation but plant twice as many trees elsewhere
+D. Halt deforestation of intact forest to prevent crossing the threshold, while simultaneously reforesting degraded areas and creating economic alternatives that make standing forest more valuable than cleared land
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model shows that preventing tipping point crossing requires stopping intact forest loss (the primary threat), restoring degraded areas, and changing the economic calculus that drives deforestation. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that preventing tipping point crossing requires stopping intact forest loss (the primary threat), restoring degraded areas, and changing the economic calculus that drives deforestation. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The model indicates that the most effective strategy addresses all three dimensions: stopping further loss of intact forest (to stay above the threshold), restoring degraded land (to rebuild the evapotranspiration cycle), and restructuring economic incentives (to make conservation economically viable). If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The model indicates that the most effective strategy addresses all three dimensions: stopping further loss of intact forest (to stay above the threshold), restoring degraded land (to rebuild the evapotranspiration cycle), and restructuring economic incentives (to make conservation economically viable). If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. The model indicates that the most effective strategy addresses all three dimensions: stopping further loss of intact forest (to stay above the threshold), restoring degraded land (to rebuild the evapotranspiration cycle), and restructuring economic incentives (to make conservation economically viable).
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.4, CCC3)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.4, CCC2)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.4, CCC4)
+Question 1: C (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-LS2-4, CCC4)
+Question 2: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS2-4, CCC2)
+Question 3: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-LS2-4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ESS3-3, CCC7)
+Question 5: D (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ESS3-3, CCC4)
 
+---
 
 ## Resources
 

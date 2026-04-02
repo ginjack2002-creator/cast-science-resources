@@ -333,6 +333,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Impervious Surface Coverage → Runoff Volume relationship as
+unconditional. However, this relationship is scientifically
+contingent on Green Infrastructure Area being inactive. Without this condition,
+the simulation produces inaccurate results: Impervious Surface Coverage drives Runoff Volume
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Impervious Surface Coverage → Runoff Volume
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Green Infrastructure Area is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Green Infrastructure Area inactive and observe
+     how Impervious Surface Coverage's effect on Runoff Volume is now gated
+   • Toggle Green Infrastructure Area ON/OFF while Impervious Surface Coverage remains constant
+   • Verify that Runoff Volume only responds to Impervious Surface Coverage when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Green Infrastructure Area → Runoff Volume
+   • Set condition: IF Impervious Surface Coverage is ON
+   • This ensures Green Infrastructure Area's effect on Runoff Volume
+     is contingent on Impervious Surface Coverage being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -898,66 +934,63 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.4 + CCC6 (Structure and Function)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ESS3.D (Sustainability and environmental solutions) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Impervious Surface Coverage, Storm Drain Capacity, Green Infrastructure Area, Runoff Volume, Flood Depth. Some components are external (Impervious Surface Coverage, Storm Drain Capacity, Green Infrastructure Area) and some are internal (Runoff Volume, Flood Depth). The student needs to understand what each component represents and how they are organized.
+An environmental engineering team conducts a flood risk analysis for three neighborhoods in a Southern California city. Neighborhood A (median income $125,000) has modern stormwater infrastructure, permeable surfaces covering 35% of the area, and maintained drainage systems. Neighborhood B (median income $42,000) has aging infrastructure from the 1960s, only 8% permeable surfaces, and drainage systems that have not been upgraded in 30 years. Neighborhood C (median income $67,000) sits at a lower elevation with moderate infrastructure quality.
 
 A student's model simulation shows that adding green infrastructure to a disinvested neighborhood reduces flood depth by 45%, but the neighborhood still floods more than the affluent comparison neighborhood. Which conclusion is best supported by this evidence?
 
-A. Green infrastructure is ineffective and should not be pursued
-B. Green infrastructure alone cannot overcome the compounding effects of outdated storm drains, high impervious coverage, and decades of underinvestment; a comprehensive multi-factor retrofit is needed
-C. The affluent neighborhood has a natural advantage that cannot be replicated
+A. The affluent neighborhood has a natural advantage that cannot be replicated
+B. Green infrastructure is ineffective and should not be pursued
+C. Green infrastructure alone cannot overcome the compounding effects of outdated storm drains, high impervious coverage, and decades of underinvestment; a comprehensive multi-factor retrofit is needed
 D. The model is inaccurate because green infrastructure should completely eliminate flooding
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals that flood inequity results from multiple compounding factors: impervious surfaces, drain capacity, and green space all interact. Addressing only one factor (green infrastructure) reduces but cannot eliminate the disparity created by the full set of infrastructure deficits. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model reveals that flood inequity results from multiple compounding factors: impervious surfaces, drain capacity, and green space all interact. Addressing only one factor (green infrastructure) reduces but cannot eliminate the disparity created by the full set of infrastructure deficits. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. The 45% reduction shows green infrastructure works, but the remaining gap shows it is not enough alone. Consider the other infrastructure differences between the neighborhoods that also contribute to flood risk. If you chose A, this answer dismisses relevant factors that the evidence directly addresses. The 45% reduction shows green infrastructure works, but the remaining gap shows it is not enough alone. Consider the other infrastructure differences between the neighborhoods that also contribute to flood risk. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. The 45% reduction shows green infrastructure works, but the remaining gap shows it is not enough alone. Consider the other infrastructure differences between the neighborhoods that also contribute to flood risk.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.4 + CCC1 (Patterns)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ESS3.D (Sustainability and environmental solutions) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Impervious Surface Coverage increases, Runoff Volume increases; when Storm Drain Capacity increases, Flood Depth decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of urban flood dynamics shows that four variables interact to determine flood severity: rainfall intensity (external input), impervious surface coverage (infrastructure variable), drainage system capacity (infrastructure variable), and elevation (geographic variable). The model reveals that impervious surface coverage and drainage capacity have a multiplicative relationship: when both are unfavorable, flood risk increases exponentially rather than additively.
 
 The model shows that impervious surface coverage has a nonlinear relationship with flood depth: increasing coverage from 60% to 70% adds 8 cm of flood depth, but increasing from 80% to 90% adds 22 cm. Which explanation best accounts for this nonlinear pattern?
 
-A. The model contains a calculation error at higher percentages
-B. At high impervious coverage, the remaining permeable surfaces are insufficient to absorb meaningful rainfall, so each additional percentage of pavement has a disproportionately large effect on runoff volume
+A. At high impervious coverage, the remaining permeable surfaces are insufficient to absorb meaningful rainfall, so each additional percentage of pavement has a disproportionately large effect on runoff volume
+B. The model contains a calculation error at higher percentages
 C. Higher impervious coverage causes more rainfall to fall on the neighborhood
 D. Storm drain capacity automatically increases at higher coverage levels, partially compensating
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This is a threshold effect: when almost all ground is paved, the few remaining permeable surfaces provide the last buffer against flooding. Removing that final buffer has outsized consequences because the system has no remaining capacity to absorb water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: This is a threshold effect: when almost all ground is paved, the few remaining permeable surfaces provide the last buffer against flooding. Removing that final buffer has outsized consequences because the system has no remaining capacity to absorb water. If you chose B, this response assumes the model or data is flawed rather than analyzing what the evidence actually shows. Think about what happens as you approach 100% pavement. At 60% coverage, 40% of land still absorbs rain. At 90%, only 10% absorbs rain. Losing half of that remaining 10% has a much bigger relative impact than losing the same amount at lower coverage. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Think about what happens as you approach 100% pavement. At 60% coverage, 40% of land still absorbs rain. At 90%, only 10% absorbs rain. Losing half of that remaining 10% has a much bigger relative impact than losing the same amount at lower coverage. If you chose D, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Think about what happens as you approach 100% pavement. At 60% coverage, 40% of land still absorbs rain. At 90%, only 10% absorbs rain. Losing half of that remaining 10% has a much bigger relative impact than losing the same amount at lower coverage.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.A (Define and delimit engineering problems) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Impervious Surface Coverage increases, Runoff Volume increases and when Storm Drain Capacity increases, Flood Depth decreases and when Green Infrastructure Area increases, Runoff Volume decreases. The student changes one variable to see how the whole system responds.
+After a major storm deposits 3 inches of rain over 6 hours, city engineers compare outcomes across three districts. District 1 experiences minimal flooding, with 92% of runoff managed by its green infrastructure and retention basins. District 2 experiences moderate flooding, with storm drains operating at 110% capacity and backup into streets. District 3 experiences severe flooding, with water levels reaching 18 inches in residential areas and requiring emergency evacuation. Historical investment data shows per-capita infrastructure spending of $340, $85, and $52 respectively over the past 20 years.
 
 A city council is debating two flood mitigation plans for a historically disinvested neighborhood. Plan A installs a new high-capacity storm drain system ($50M). Plan B adds green infrastructure throughout the neighborhood ($30M). Based on the model, which evaluation is most accurate?
 
 A. Plan A is always superior because engineered systems handle more water volume
 B. Plan B is always superior because it costs less
-C. The optimal approach combines both plans because storm drains handle peak flow while green infrastructure reduces total runoff volume, and together they address the problem at multiple points in the system
-D. Neither plan will work because flooding is determined by weather, not infrastructure
+C. Neither plan will work because flooding is determined by weather, not infrastructure
+D. The optimal approach combines both plans because storm drains handle peak flow while green infrastructure reduces total runoff volume, and together they address the problem at multiple points in the system
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model shows that storm drains and green infrastructure address different aspects of the flood system. Green infrastructure reduces the total volume of runoff entering the system, while storm drains increase the capacity to move water that does run off. Together they provide more protection than either alone. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The model shows that storm drains and green infrastructure address different aspects of the flood system. Green infrastructure reduces the total volume of runoff entering the system, while storm drains increase the capacity to move water that does run off. Together they provide more protection than either alone. If you chose A, this response overgeneralizes without considering the specific mechanisms and evidence presented. Consider what each intervention does in the water system. Green infrastructure reduces how much water becomes runoff. Storm drains increase how fast runoff is removed. These are complementary functions addressing different parts of the system. If you chose B, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Consider what each intervention does in the water system. Green infrastructure reduces how much water becomes runoff. Storm drains increase how fast runoff is removed. These are complementary functions addressing different parts of the system. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Consider what each intervention does in the water system. Green infrastructure reduces how much water becomes runoff. Storm drains increase how fast runoff is removed. These are complementary functions addressing different parts of the system.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.D (Sustainability and environmental solutions) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A city planner analyzes historical data showing that flood-related property damage claims follow a clear spatial pattern correlating with both neighborhood income level and infrastructure investment date. Neighborhoods with infrastructure built after 2000 show 78% lower damage rates than those with pre-1970 systems. The planner's model also reveals that climate change is increasing extreme rainfall events by 23% per decade, meaning that infrastructure considered adequate 30 years ago is now systematically under-capacity.
 
 A student uses the model to compare the same storm hitting the same neighborhood in 1960 versus 2020. The 2020 simulation shows 3x more flooding despite the same rainfall. Which combination of changes best explains the increase?
 
@@ -968,37 +1001,36 @@ D. Population growth in the neighborhood made flooding worse through more water 
 
 Correct Answer: B
 
-Feedback: Correct. Over 60 years, urban development increased impervious coverage, the storm drain system aged without upgrades, and green spaces were converted to buildings and pavement. These cumulative infrastructure changes dramatically increased flood vulnerability to the same storm. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Over 60 years, urban development increased impervious coverage, the storm drain system aged without upgrades, and green spaces were converted to buildings and pavement. These cumulative infrastructure changes dramatically increased flood vulnerability to the same storm. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. The question specifies the same rainfall amount in both periods. The difference must come from changes in the neighborhood's physical characteristics. Consider how 60 years of development altered the ground surface and drainage infrastructure. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. The question specifies the same rainfall amount in both periods. The difference must come from changes in the neighborhood's physical characteristics. Consider how 60 years of development altered the ground surface and drainage infrastructure. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. The question specifies the same rainfall amount in both periods. The difference must come from changes in the neighborhood's physical characteristics. Consider how 60 years of development altered the ground surface and drainage infrastructure.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.4 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.A (Define and delimit engineering problems) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Impervious Surface Coverage, Storm Drain Capacity, Green Infrastructure Area), but they can take action on internal components (Runoff Volume, Flood Depth). They need to decide which action would be most effective based on what the model shows.
+A regional planning commission must allocate $50 million in flood mitigation funding across 12 neighborhoods. Their computational model identifies three intervention types: green infrastructure retrofits (permeable pavements, bioswales, rain gardens) at $2M per neighborhood, drainage system upgrades at $8M per neighborhood, and elevation-based flood barriers at $5M per neighborhood. The model shows that green infrastructure is most effective in areas with moderate flood risk, drainage upgrades are essential in areas with failing systems, and flood barriers provide the most benefit in low-elevation areas regardless of other factors.
 
 Based on the model evidence, a student argues that flood risk disparities between neighborhoods constitute environmental racism because they result from racially motivated historical policies. An opponent argues the disparities are simply the result of economics, not race. Which model evidence is most relevant to evaluating these claims?
 
 A. The model cannot address social questions because it only simulates physical water flow
-B. The model shows that current infrastructure quality maps directly onto historical redlining boundaries, which were explicitly race-based policies, demonstrating that the physical infrastructure disparities have racial origins even if current maintenance decisions are economics-based
-C. The model proves that flooding affects wealthy and poor neighborhoods equally
-D. The model shows that all neighborhoods would flood equally if green infrastructure were removed
+B. The model shows that all neighborhoods would flood equally if green infrastructure were removed
+C. The model shows that current infrastructure quality maps directly onto historical redlining boundaries, which were explicitly race-based policies, demonstrating that the physical infrastructure disparities have racial origins even if current maintenance decisions are economics-based
+D. The model proves that flooding affects wealthy and poor neighborhoods equally
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. While the model simulates physical water flow, the input conditions (impervious coverage, drain capacity, green space) were shaped by explicitly race-based redlining policies. The model connects current physical disparities to their historical racial origins, showing that today's 'economic' patterns inherited their geography from racial policies. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: While the model simulates physical water flow, the input conditions (impervious coverage, drain capacity, green space) were shaped by explicitly race-based redlining policies. The model connects current physical disparities to their historical racial origins, showing that today's 'economic' patterns inherited their geography from racial policies. If you chose A, this response dismisses relevant factors that the evidence directly addresses. Consider the causal chain: redlining (explicitly racial) caused disinvestment, which caused infrastructure disparities, which cause unequal flooding. The model traces the physical consequences of historical racial policy, even though the model itself only simulates water. If you chose D, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Consider the causal chain: redlining (explicitly racial) caused disinvestment, which caused infrastructure disparities, which cause unequal flooding. The model traces the physical consequences of historical racial policy, even though the model itself only simulates water. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Consider the causal chain: redlining (explicitly racial) caused disinvestment, which caused infrastructure disparities, which cause unequal flooding. The model traces the physical consequences of historical racial policy, even though the model itself only simulates water.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC6)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC1)
-Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC2)
+Question 1: C (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ESS3-4, CCC4)
+Question 2: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS3-4, CCC2)
+Question 3: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS3-4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-1, CCC7)
+Question 5: C (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-1, CCC4)
 
+---
 
 ## Resources
 

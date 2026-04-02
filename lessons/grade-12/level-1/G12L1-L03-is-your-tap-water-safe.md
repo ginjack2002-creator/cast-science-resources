@@ -347,6 +347,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Source Water Quality → Corrosion Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Pipe Infrastructure Age being active. Without this condition,
+the simulation produces inaccurate results: Source Water Quality drives Corrosion Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Source Water Quality → Corrosion Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Pipe Infrastructure Age is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Pipe Infrastructure Age active and observe
+     how Source Water Quality's effect on Corrosion Rate is now gated
+   • Toggle Pipe Infrastructure Age ON/OFF while Source Water Quality remains constant
+   • Verify that Corrosion Rate only responds to Source Water Quality when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Pipe Infrastructure Age → Corrosion Rate
+   • Set condition: IF Source Water Quality is OFF
+   • This ensures Pipe Infrastructure Age's effect on Corrosion Rate
+     is contingent on Source Water Quality being inactive
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -919,15 +955,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the water safety model, a city has excellent Source Water Quality and high Treatment Effectiveness, but its Pipe Infrastructure is 80+ years old with lead service lines. What does the model predict about Tap Water Safety?
 
-A. Tap Water Safety will be high because good source and treatment compensate for old pipes
-B. Tap Water Safety is compromised because aging infrastructure can introduce contaminants after water leaves the treatment plant, regardless of upstream quality
-C. Tap Water Safety depends only on Treatment Effectiveness, so pipe age is irrelevant
-D. Tap Water Safety will be low only if the water temperature exceeds 70 degrees
+A. Tap Water Safety is compromised because aging infrastructure can introduce contaminants after water leaves the treatment plant, regardless of upstream quality
+B. Tap Water Safety will be high because good source and treatment compensate for old pipes
+C. Tap Water Safety will be low only if the water temperature exceeds 70 degrees
+D. Tap Water Safety depends only on Treatment Effectiveness, so pipe age is irrelevant
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that aging infrastructure is a ticking time bomb. Even with excellent source water and treatment, deteriorating lead pipes can leach contaminants into water after it leaves the plant, making Tap Water Safety a system property. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that aging infrastructure is a ticking time bomb. Even with excellent source water and treatment, deteriorating lead pipes can leach contaminants into water after it leaves the plant, making Tap Water Safety a system property. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -939,14 +974,13 @@ In the computational model for this lesson, a student draws arrows between compo
 Using the model, which sequence correctly describes the Flint water crisis as a cascading system failure?
 
 A. Pipe Infrastructure failed first, then Treatment Effectiveness dropped, then Source Water Quality declined
-B. Source Water Quality changed (more corrosive chemistry) -> Treatment Effectiveness was not adjusted (no corrosion control) -> Corrosion Rate spiked -> Tap Water Safety collapsed
+B. Tap Water Safety declined first, which caused Source Water Quality to deteriorate
 C. Testing Frequency was reduced first, causing all other components to fail simultaneously
-D. Tap Water Safety declined first, which caused Source Water Quality to deteriorate
+D. Source Water Quality changed (more corrosive chemistry) -> Treatment Effectiveness was not adjusted (no corrosion control) -> Corrosion Rate spiked -> Tap Water Safety collapsed
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The Flint crisis was a cascading failure: the new water source had different chemistry, treatment was not adjusted for the new chemistry, corrosion rates spiked in unprotected lead pipes, and lead leached into drinking water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The Flint crisis was a cascading failure: the new water source had different chemistry, treatment was not adjusted for the new chemistry, corrosion rates spiked in unprotected lead pipes, and lead leached into drinking water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -957,15 +991,14 @@ A student runs a simulation of the model. The model shows that when Source Water
 
 A student extends the model by adding Community Socioeconomic Status as a component. Based on environmental justice research, how would this component most likely interact with the other variables?
 
-A. Socioeconomic status has no connection to water infrastructure quality
-B. Lower-income communities tend to have older infrastructure, less political power to demand repairs, and fewer resources for alternatives, increasing vulnerability to contamination
-C. Wealthier communities always have worse water because they use more water
-D. Socioeconomic status only affects Source Water Quality, not distribution infrastructure
+A. Socioeconomic status only affects Source Water Quality, not distribution infrastructure
+B. Wealthier communities always have worse water because they use more water
+C. Lower-income communities tend to have older infrastructure, less political power to demand repairs, and fewer resources for alternatives, increasing vulnerability to contamination
+D. Socioeconomic status has no connection to water infrastructure quality
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model extension reveals that lower-income communities face compounding vulnerabilities: older pipes, less political influence for infrastructure investment, and fewer resources for bottled water when contamination occurs. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model extension reveals that lower-income communities face compounding vulnerabilities: older pipes, less political influence for infrastructure investment, and fewer resources for bottled water when contamination occurs. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -976,15 +1009,14 @@ Scientists are studying data related to this system. They collected observations
 
 Why is replacing lead pipes considered a more permanent solution than adjusting water chemistry, according to the water safety model?
 
-A. Replacing pipes is cheaper than maintaining corrosion control chemicals
-B. Chemical treatment eliminates the source of contamination, while pipe replacement only addresses symptoms
-C. Removing lead pipes eliminates the contamination source entirely, while chemical treatment must be continuously maintained and can fail if water chemistry changes again
-D. New pipes never corrode, making them maintenance-free forever
+A. Chemical treatment eliminates the source of contamination, while pipe replacement only addresses symptoms
+B. Removing lead pipes eliminates the contamination source entirely, while chemical treatment must be continuously maintained and can fail if water chemistry changes again
+C. New pipes never corrode, making them maintenance-free forever
+D. Replacing pipes is cheaper than maintaining corrosion control chemicals
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: Correct. The model shows that corrosion control is a continuous treatment that can fail if conditions change, while removing lead pipes permanently eliminates the source of lead contamination from the system. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that corrosion control is a continuous treatment that can fail if conditions change, while removing lead pipes permanently eliminates the source of lead contamination from the system. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -995,24 +1027,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on the systems model of water safety, which intervention strategy would be MOST effective at preventing a crisis similar to Flint?
 
-A. Testing water quality only at the treatment plant exit
-B. Replacing all lead pipes with modern materials and increasing testing frequency at multiple points throughout the distribution system
-C. Only increasing the amount of disinfectant added during treatment
-D. Relying solely on residents to report discolored water
+A. Replacing all lead pipes with modern materials and increasing testing frequency at multiple points throughout the distribution system
+B. Relying solely on residents to report discolored water
+C. Testing water quality only at the treatment plant exit
+D. Only increasing the amount of disinfectant added during treatment
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model shows that addressing both infrastructure (replacing lead pipes) and monitoring (testing at multiple distribution points) creates redundant protections that can detect problems before they reach crisis levels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that addressing both infrastructure (replacing lead pipes) and monitoring (testing at multiple distribution points) creates redundant protections that can detect problems before they reach crisis levels. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.2, CCC6)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.2, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.2, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.2, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.2, CCC6)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.2, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.2, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.2, CCC4)
 
 
 ## Resources

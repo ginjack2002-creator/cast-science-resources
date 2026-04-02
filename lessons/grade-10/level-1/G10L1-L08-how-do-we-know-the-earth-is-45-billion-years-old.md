@@ -902,15 +902,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 In the model's Multiple Methods scenario, three independent isotope systems (U-Pb, K-Ar, Rb-Sr) applied to the same rock all yield the same age within measurement uncertainty. Why is this convergence considered strong scientific evidence?
 
-A. Because all three methods use the same mathematical equation.
+A. Because the methods were calibrated against each other before being applied.
 B. Because the probability of three independent methods, using different elements and decay mechanisms, accidentally producing the same wrong answer is vanishingly small.
 C. Because averaging three measurements always produces a more accurate result.
-D. Because the methods were calibrated against each other before being applied.
+D. Because all three methods use the same mathematical equation.
 
 Correct Answer: B
 
-Feedback: Correct. Independent convergence is among the strongest forms of scientific evidence. Each system involves different elements, different decay physics, and different half-lives. Agreement among independent methods rules out systematic error. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Independent convergence is among the strongest forms of scientific evidence. Each system involves different elements, different decay physics, and different half-lives. Agreement among independent methods rules out systematic error. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -921,15 +920,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model shows that only 6.25% of a parent isotope remains in an ancient rock. A student calculates this represents 4 half-lives. Using uranium-238 (half-life 4.47 billion years), the calculated age would be 17.9 billion years. The student recognizes this exceeds the age of the universe. What does the model suggest went wrong?
 
-A. The half-life of uranium-238 is incorrect.
-B. The wrong isotope system was selected for this sample's age range, or the sample was contaminated with additional daughter product.
-C. The model cannot handle ages greater than 4.5 billion years.
-D. Four half-lives is the maximum measurable by any dating method.
+A. The model cannot handle ages greater than 4.5 billion years.
+B. Four half-lives is the maximum measurable by any dating method.
+C. The wrong isotope system was selected for this sample's age range, or the sample was contaminated with additional daughter product.
+D. The half-life of uranium-238 is incorrect.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates that selecting the appropriate isotope system for the expected age range is critical. An impossibly old result signals either wrong isotope system choice or open-system behavior (contamination). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that selecting the appropriate isotope system for the expected age range is critical. An impossibly old result signals either wrong isotope system choice or open-system behavior (contamination). If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -940,15 +938,14 @@ A student runs a simulation of the model. The model shows that when Decay Rate i
 
 Based on the model, a rock sample contains 50% parent and 50% daughter isotope using potassium-40 (half-life = 1.25 billion years). What is the calculated age of this rock?
 
-A. 625 million years
-B. 1.25 billion years
+A. 1.25 billion years
+B. 625 million years
 C. 2.5 billion years
 D. 4.5 billion years
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. A 50:50 parent:daughter ratio means exactly 1 half-life has elapsed. For K-40 with a half-life of 1.25 billion years, the rock is 1.25 billion years old. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. A 50:50 parent:daughter ratio means exactly 1 half-life has elapsed. For K-40 with a half-life of 1.25 billion years, the rock is 1.25 billion years old. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -959,15 +956,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model demonstrates that Earth's age (4.567 billion years) was determined using meteorites rather than Earth rocks. Which model concept best explains why Earth's oldest rocks (~4.0 billion years) do not directly record Earth's formation age?
 
-A. Earth's oldest rocks are too small to contain measurable radioactive isotopes.
-B. Earth's geological processes (plate tectonics, weathering, metamorphism) recycled the original crust, resetting the radiometric clocks of surface rocks.
-C. Radioactive decay did not begin until 500 million years after Earth formed.
-D. Earth rocks contain different isotopes than meteorites.
+A. Earth rocks contain different isotopes than meteorites.
+B. Radioactive decay did not begin until 500 million years after Earth formed.
+C. Earth's oldest rocks are too small to contain measurable radioactive isotopes.
+D. Earth's geological processes (plate tectonics, weathering, metamorphism) recycled the original crust, resetting the radiometric clocks of surface rocks.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Earth's dynamic geology continuously recycles crustal material through plate tectonics, metamorphism, and weathering. These processes reset radiometric clocks, erasing the record of Earth's original formation age from surface rocks. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Earth's dynamic geology continuously recycles crustal material through plate tectonics, metamorphism, and weathering. These processes reset radiometric clocks, erasing the record of Earth's original formation age from surface rocks. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -978,24 +974,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student argues that radiometric dating is unreliable because scientists cannot verify ages independently. The model provides multiple forms of counter-evidence. Which is the STRONGEST counter-argument?
 
-A. Scientists have carefully calibrated their instruments.
-B. Multiple independent isotope systems using different elements and decay mechanisms consistently produce the same ages for the same rocks, and the natural reactor at Oklo, Gabon confirms decay rates were identical 2 billion years ago.
-C. The ages match what geologists expected based on rock appearance.
+A. The ages match what geologists expected based on rock appearance.
+B. Scientists have carefully calibrated their instruments.
+C. Multiple independent isotope systems using different elements and decay mechanisms consistently produce the same ages for the same rocks, and the natural reactor at Oklo, Gabon confirms decay rates were identical 2 billion years ago.
 D. Only one isotope system is actually needed for reliable dating.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The strongest evidence combines multiple independent convergence (different isotope systems agreeing) with the Oklo natural reactor, which provides a direct physical verification that decay rates 2 billion years ago were identical to today. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The strongest evidence combines multiple independent convergence (different isotope systems agreeing) with the Oklo natural reactor, which provides a direct physical verification that decay rates 2 billion years ago were identical to today. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.5, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.5, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.5, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.5, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.5, CCC2)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.5, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.5, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.5, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.5, CCC2)
 
 
 ## Resources

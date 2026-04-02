@@ -311,6 +311,37 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+TEACH YOUR MODEL A RULE!
+
+Look at your model. Right now, when Protection Design is ON, Damage Reduction
+goes way up — even when it shouldn't!
+
+In the real world, Protection Design only changes Damage Reduction when
+Hazard Strength is happening. Let's teach your model this rule!
+
+Task A: ADD THE RULE
+   • Click on the arrow from Protection Design to Damage Reduction
+   • Click "Conditions" in the toolbar
+   • Set: IF Hazard Strength is ON
+   • Click "Save Conditions"
+
+Task B: TEST IT
+   • Run your simulation again
+   • Does it make more sense now?
+   • Try turning Hazard Strength ON and OFF — see what changes!
+
+Task C: ADD ANOTHER RULE
+   • Click on the arrow from Hazard Strength to Damage Reduction
+   • Click "Conditions"
+   • Set: IF Protection Design is ON
+   • Click "Save Conditions"
+
+Now your model is SMARTER! It knows the rules of the real world.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -832,106 +863,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Design solutions) + DCI ESS3.B.1 (Engineering solutions for hazards) + CCC2 (Cause and effect of protection)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Hazard Strength, Protection Design, Damage Reduction. Some components are external (Hazard Strength, Protection Design) and some are internal (Damage Reduction). The student needs to understand what each component represents and how they are organized.
+A coastal town floods every time a big storm hits. Town engineers study the flood patterns and discover that ocean water rushes into the town through a low area near the beach. They propose building a concrete wall (called a seawall) along the low area to block the ocean water from entering the town during storms.
 
-In the natural hazards model, when Protection Design gets stronger, what happens to Damage Reduction?
+Why would a seawall MOST LIKELY reduce flood damage in the town?
 
-A. Damage Reduction decreases
-B. Damage Reduction increases because stronger protection prevents more damage
-C. Damage Reduction stays the same no matter the design
-D. Protection Design is not connected to Damage Reduction
+A. The seawall would absorb all the ocean water like a sponge.
+B. The seawall would stop storms from happening.
+C. The seawall would block the ocean water from rushing through the low area, keeping it out of the town.
+D. The seawall would make the town invisible to the storm.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct! Protection Design and Damage Reduction have a positive relationship. Stronger, better-designed protection prevents more damage from natural hazards. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: A seawall acts as a barrier that blocks ocean water from entering the town during storms. It does not stop the storm, but it reduces the damage by keeping floodwater out. If you chose B, engineering solutions cannot stop natural hazards from happening. They can only reduce the damage. Storms will still occur. If you chose D, walls do not make things invisible. The seawall physically blocks water from entering the low area. If you chose A, concrete walls do not absorb water. They block and redirect it, keeping it from reaching buildings and streets.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.B.1 (Hazard mitigation systems) + CCC2 (Cause and effect in protection)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Protection Design increases, Damage Reduction increases; when Hazard Strength increases, Damage Reduction increases. The student is trying to understand why these relationships are positive or negative.
+In the natural hazards model, Protection Design has a positive arrow to Damage Reduction. A student runs two scenarios. In Scenario 1 (Strong Storm, Weak Protection), a powerful hurricane hits a town with only old, thin wooden barriers. In Scenario 2 (Strong Storm, Strong Protection), the same hurricane hits a town with thick concrete seawalls and reinforced buildings.
 
-In the 'Strong Storm, Weak Protection' scenario, what happened?
+Based on the model, which scenario would have HIGHER Damage Reduction, and why?
 
-A. The weak protection stopped all the damage
-B. The weak protection helped a little but could not stop most of the damage from the strong storm
-C. The weak protection made the storm worse
-D. The strong storm had no effect
+A. Neither scenario reduces any damage because storms cannot be stopped.
+B. Scenario 1, because weak barriers let the storm pass through without causing damage.
+C. Both scenarios have the same Damage Reduction because the storm is the same strength.
+D. Scenario 2, because stronger protection design leads to higher damage reduction, blocking more of the storm's force.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Exactly! Even weak protection helps some, but a strong storm requires strong engineering. Weak protection cannot stop most of the damage from a powerful natural hazard. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The positive relationship means stronger Protection Design leads to higher Damage Reduction. Thick concrete seawalls and reinforced buildings block and withstand much more storm force than thin wooden barriers. If you chose B, weak barriers provide very little protection. They can break apart in a strong storm, so damage is barely reduced. If you chose C, even though the storm is the same, different protection levels produce different amounts of damage reduction. That is the whole point of the model. If you chose A, while you cannot stop a storm, strong protection significantly reduces the damage it causes. That is what mitigation means.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Design solutions to natural hazards) + DCI ESS3.B.1 (Evaluate design solutions) + CCC2 (Cause and effect of engineering)
 
-A student runs a simulation of the model. The model shows that when Protection Design increases, Damage Reduction increases and when Hazard Strength increases, Damage Reduction increases. The student changes one variable to see how the whole system responds.
+A school is located in an area where tornadoes happen. The principal wants to protect students during tornadoes. Four ideas are proposed: (1) Build an underground storm shelter at the school, (2) Give every student an umbrella, (3) Paint the school a bright color so the tornado avoids it, and (4) Play loud music to scare the tornado away.
 
-What is mitigation?
+Which idea is the BEST engineering solution for protecting students from tornadoes?
 
-A. Making natural hazards happen more often
-B. Actions people take to reduce the damage caused by natural hazards
-C. Running away from all storms
-D. Predicting when hazards will happen
+A. Idea 2 (umbrellas), because they protect people from rain.
+B. Idea 4 (loud music), because sound waves can push tornadoes away.
+C. Idea 1 (underground storm shelter), because it provides a strong, protected space below ground where students are safe from the tornado's winds.
+D. Idea 3 (bright paint), because tornadoes avoid bright colors.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Right! Mitigation means taking actions to reduce damage from natural hazards. Building levees, storm shelters, and reinforced buildings are all examples of mitigation. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: An underground storm shelter is a real engineering solution. Being underground protects people from the tornado's dangerous winds and flying debris. If you chose A, umbrellas would be destroyed instantly by tornado winds, which can exceed 200 mph. They provide no protection from a tornado. If you chose D, tornadoes are weather events that do not see or avoid colors. Paint has no effect on a tornado's path. If you chose B, sound waves cannot push a tornado away. Tornadoes are massive weather systems that are not affected by music.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine system components) + DCI ESS3.B.1 (Natural hazard system) + CCC4 (System components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The natural hazards model includes Hazard Strength, Protection Design, Damage Reduction, and Community Safety. The teacher explains that the external components are the ones we either cannot control (the hazard) or set before the event (the protection), and the internal components change as a result.
 
-Why do engineers study past disasters when designing new protection?
+In this model, which components are INTERNAL (change as a result)?
 
-A. They like reading about old storms
-B. Past disasters teach them what failed and what worked, so they can design better protection for the future
-C. They want to build the same things that failed before
-D. Past disasters are not useful for future design
+A. Damage Reduction and Community Safety, because they change based on how strong the hazard is and how good the protection is.
+B. All four components are external because they all happen outside.
+C. Only Community Safety, because it is the only component that matters.
+D. Hazard Strength and Protection Design, because they are the two biggest components.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: You got it! Engineers study past disasters to learn what worked and what did not. This helps them design stronger, smarter protection that saves more lives in the future. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Damage Reduction and Community Safety are internal because they change as a result of the external inputs. Hazard Strength and Protection Design are set before the event, and then Damage Reduction and Community Safety respond. If you chose D, Hazard Strength and Protection Design are external inputs that drive the system. They are set before the hazard strikes. If you chose C, both Damage Reduction and Community Safety are internal. Damage Reduction depends on protection quality, and Community Safety depends on damage reduction. If you chose B, external means an input that is set before the event. Internal means a result that changes. Not all components are the same type.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Design solution using model) + DCI ESS3.B.1 (Predict engineering effectiveness) + CCC2 (Predict cause and effect of solutions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Hazard Strength, Protection Design), but they can take action on internal components (Damage Reduction). They need to decide which action would be most effective based on what the model shows.
+Two neighboring towns are both at risk of flooding from a nearby river. Town A spends money building a tall levee (flood wall) along the riverbank and installing drainage channels that carry water away from buildings. Town B does nothing to prepare. In the spring, heavy rain causes the river to rise 10 feet above normal. The model shows: Protection Design (+) -> Damage Reduction (+) -> Community Safety.
 
-What is a natural hazard?
+Based on the model, what would MOST LIKELY happen to both towns when the river floods?
 
-A. A game you play outside
-B. A dangerous natural event like a flood, tornado, or earthquake
-C. A type of animal
-D. A safe place to play
+A. Town B will have less damage because it did not waste money on protection.
+B. Town A will have less damage and higher community safety because its levee and drainage systems reduce the flood's impact, while Town B will suffer more damage.
+C. Neither town will be affected because rivers cannot flood that high.
+D. Both towns will have the same amount of damage because the flood is the same size.
 
 Correct Answer: B
 
-Feedback: That is right! A natural hazard is a dangerous event caused by nature, like floods, tornadoes, hurricanes, and earthquakes. They can harm people and damage buildings. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that stronger protection leads to more damage reduction, which leads to higher community safety. Town A's levee and drainage directly reduce the flood's impact. Town B has no protection, so it takes the full force of the flood. If you chose D, the flood is the same, but the protection is different. Town A's engineering solutions reduce damage, while Town B has no protection at all. If you chose A, doing nothing means Town B takes the full force of the flood. Protection costs money, but it saves lives and property. If you chose C, rivers regularly flood above normal levels during heavy rain. A 10-foot rise is a realistic flood scenario.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.1, CCC4)
+Question 1: C (Cognitive Level: Reason — SEP 6.1.1, DCI ESS3.B.1, CCC2)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.B.1, CCC2)
+Question 3: C (Cognitive Level: Reason + Evidence — SEP 6.1.1, DCI ESS3.B.1, CCC2)
+Question 4: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.B.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 6.1.1, DCI ESS3.B.1, CCC2)
+
+---
 
 
 ## Resources

@@ -199,113 +199,117 @@ AI Ethics Researchers and Conservation Technology Policy Analysts develop framew
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ETS1-1, HS-ETS1-3, HS-LS2-7, HS-LS4-6.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ETS1.A.1 (Analyze criteria and constraints for solutions) + CCC4 (Describe a system in terms of its components)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Technology Capability Level, Transparency Level, Ecological Crisis Severity, Regulation Strictness, Ecological Benefit, Unintended Consequences, Animal Autonomy Impact, Public Trust, Ethical Justification Score. Some components are external (Technology Capability Level, Transparency Level, Ecological Crisis Severity, Regulation Strictness) and some are internal (Ecological Benefit, Unintended Consequences, Animal Autonomy Impact, Public Trust, Ethical Justification Score). The student needs to understand what each component represents and how they are organized.
+Scientists deploy an AI-powered drone system to protect an endangered bird species from poachers. They build a model with four inputs: technology capability level, transparency level, ecological crisis severity, and regulation strictness. The model calculates five outputs: ecological benefit, unintended consequences, animal autonomy impact, public trust, and ethical justification score.
 
-In the model, what was the single strongest driver of public trust?
+According to the model, which single input has the strongest effect on public trust?
 
-A. Technology Capability Level
-B. Ecological Crisis Severity
-C. Transparency Level
-D. Regulation Strictness
+A. Technology Capability Level, because more powerful technology impresses people.
+B. Regulation Strictness, because laws force people to trust the technology.
+C. Ecological Crisis Severity, because people support action during emergencies.
+D. Transparency Level, because the public needs to understand how the technology works and makes decisions in order to trust it.
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct! The model showed that Transparency Level was the single strongest driver of Public Trust. Without transparency, even beneficial technology faces public opposition. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that transparency level is the single strongest driver of public trust. When people can see how the AI makes decisions, what data it collects, and how it operates, trust increases substantially. Without transparency, even beneficial technology faces public opposition because people fear what they cannot understand or evaluate. If you chose A, powerful technology may produce good results, but if people cannot understand how it works, they distrust it regardless of capability. If you chose C, crisis severity creates urgency but does not build sustained trust. People may accept technology during an emergency but still distrust it if they cannot see how it works. If you chose B, regulations do not force trust. Strict laws without transparency can actually increase suspicion.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.B.1 (Evaluate competing solutions using tradeoffs) + CCC2 (Use cause and effect to explain events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Technology Capability increases, Ecological Benefit increases; when Technology Capability increases, Unintended Consequences increases. The student is trying to understand why these relationships are positive or negative.
+A student increases the Technology Capability Level in the model from moderate to maximum. The results show that Ecological Benefit increases from medium to high, but Unintended Consequences also increases from low to medium, and Animal Autonomy Impact increases from low to high.
 
-What did the model reveal about the relationship between Technology Capability and Unintended Consequences?
+What does this result reveal about the relationship between technology capability and outcomes?
 
-A. More powerful technology has fewer unintended consequences
-B. More powerful technology produces greater ecological benefits AND greater unintended consequences simultaneously
-C. Technology capability has no relationship to unintended consequences
-D. Only low-capability technology creates unintended consequences
+A. Technology capability has no relationship to unintended consequences.
+B. More powerful technology has only positive effects with no downsides.
+C. Technology capability is a double-edged sword: higher capability increases ecological benefits AND simultaneously increases unintended consequences and disruption to animal behavior.
+D. Unintended consequences decrease as technology improves.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! The model showed that technology capability is a double-edged sword. More powerful systems create greater ecological benefits but also carry a higher risk of unintended consequences. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model reveals that technology capability creates both benefits and risks simultaneously. A more powerful AI system can monitor more area and respond faster (higher ecological benefit), but it also interacts with the ecosystem in more complex ways, creating more opportunities for unexpected negative outcomes and greater disruption to natural animal behavior. If you chose B, the data clearly shows downsides: both unintended consequences and animal autonomy impact increased. If you chose D, the data shows the opposite. Unintended consequences increased from low to medium as technology capability increased. If you chose A, the data directly shows that technology capability affects unintended consequences. They increased together.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS2.C.1 (Evaluate how changing conditions affect ecosystems) + CCC7 (Describe stability and change)
 
-A student runs a simulation of the model. The model shows that when Technology Capability increases, Ecological Benefit increases and when Technology Capability increases, Unintended Consequences increases and when Technology Capability increases, Animal Autonomy Impact increases. The student changes one variable to see how the whole system responds.
+A student models three scenarios for deploying conservation robots in a national park:
 
-How did crisis severity affect the ethical calculus in the model?
+Scenario 1 (Normal conditions): Moderate crisis, high transparency, moderate regulation. Ethical justification: HIGH.
+Scenario 2 (Emergency): Critical crisis (species near extinction), high transparency, reduced regulation. Ethical justification: VERY HIGH.
+Scenario 3 (Secretive): Critical crisis, LOW transparency, reduced regulation. Ethical justification: MODERATE.
 
-A. Crisis severity had no effect on ethical justification
-B. Higher crisis severity shifted the ethical balance, making actions that are unjustifiable in normal times potentially necessary during emergencies
-C. Crisis severity always made technology less justified
-D. Only low-severity crises justified technology use
+Why does Scenario 3 have a lower ethical justification than Scenario 2, despite the same crisis severity and regulation level?
+
+A. Regulation is the only factor that determines ethical justification.
+B. Low transparency in Scenario 3 reduces public trust, which lowers the overall ethical justification even though the crisis is critical and regulation is relaxed.
+C. Crisis severity and transparency have no effect on ethical justification.
+D. Scenario 3 has lower justification because the crisis is not severe enough.
 
 Correct Answer: B
 
-Feedback: Correct! The model showed that crisis severity shifts the ethical calculus. Actions and risks that would be unacceptable during normal conditions may become necessary when a species faces imminent extinction. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The only difference between Scenarios 2 and 3 is transparency level. In Scenario 2, high transparency maintains public trust, which contributes to high ethical justification. In Scenario 3, low transparency erodes public trust even though the crisis is equally severe. This demonstrates that transparency is essential for ethical deployment, and even during emergencies, secrecy undermines justification. If you chose D, both Scenarios 2 and 3 have the same critical crisis severity. The crisis level is not the difference. If you chose A, the model shows multiple factors affect justification. Regulation is the same in both scenarios, yet justification differs. If you chose C, the data directly shows that changing transparency from high to low reduced justification from very high to moderate.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Evaluate competing solutions to real-world problems) + DCI ETS1.B.1 (Use criteria and tradeoffs to evaluate solutions) + CCC7 (Describe stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A conservation organization debates whether to deploy fully autonomous predator-deterrence robots in a wildlife reserve. The robots would use AI to identify threats and scare away poachers without any human operator. Supporters argue the robots respond faster than humans. Opponents argue that removing human oversight is dangerous.
 
-According to the model, what combination of factors produces the highest Ethical Justification Score?
+The model shows that with maximum technology capability and zero regulation: ecological benefit is VERY HIGH, but unintended consequences are HIGH and public trust is VERY LOW. With moderate technology and moderate regulation: ecological benefit is MEDIUM, unintended consequences are LOW, and public trust is HIGH.
 
-A. Maximum technology with no regulation and no transparency
-B. High transparency combined with moderate regulation, where both are present
-C. Maximum regulation with no transparency
-D. No technology use at all, regardless of the crisis
+Which configuration produces the highest ethical justification score?
 
-Correct Answer: B
+A. Moderate technology with moderate regulation, because the combination of lower risk and higher public trust produces a stronger ethical foundation than maximum benefit with maximum risk.
+B. Maximum technology with zero regulation, because ecological benefit is the only metric that matters.
+C. Zero technology, because the only way to avoid risk is to do nothing.
+D. Maximum regulation with no technology, because regulation alone solves the problem.
 
-Feedback: That is right! The model showed that the highest ethical justification requires BOTH high transparency AND moderate regulation. Neither alone is sufficient. Too much regulation limits benefits; too little allows harm. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+Correct Answer: A
 
+Feedback: The model shows that ethical justification requires balancing multiple factors. Maximum technology with zero regulation produces high ecological benefit but also high risk and very low trust, undermining the ethical case. Moderate technology with moderate regulation achieves less raw benefit but with much lower risk and much higher trust, creating a stronger overall ethical justification. If you chose B, ecological benefit is one factor among several. High benefit with high risk and zero trust is ethically weaker than moderate benefit with low risk and high trust. If you chose C, doing nothing when an endangered species faces poaching also has ethical consequences. Inaction during a crisis can be ethically wrong. If you chose D, regulation without technology provides no ecological benefit. The goal is to protect wildlife, which requires action.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Evaluate solutions using evidence) + DCI ETS1.B.1 (Account for constraints and tradeoffs) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Technology Capability Level, Transparency Level, Ecological Crisis Severity, Regulation Strictness), but they can take action on internal components (Ecological Benefit, Unintended Consequences, Animal Autonomy Impact, Public Trust, Ethical Justification Score). They need to decide which action would be most effective based on what the model shows.
+After reviewing all model scenarios, a student writes: "The model shows that no single factor guarantees ethical deployment of conservation technology. The most ethically defensible outcomes require high transparency, moderate regulation, and careful attention to unintended consequences. Even during severe crises, transparency cannot be sacrificed."
 
-What does 'algorithmic transparency' mean?
+A classmate disagrees and says: "During a true extinction emergency, we should deploy maximum technology with no restrictions. The species matters more than public trust."
 
-A. Making a computer screen see-through
-B. How clearly a technology's decision-making process can be understood and explained
-C. Using clear glass to build robots
-D. Keeping all technology decisions secret
+Which student's position is better supported by the model?
 
-Correct Answer: B
+A. The first student's position, because the model consistently shows that the highest ethical justification scores require BOTH high transparency AND moderate regulation, and sacrificing transparency always reduces justification even during emergencies.
+B. Neither position is supported because the model cannot inform ethical decisions.
+C. Both positions are equally valid because ethics is purely subjective.
+D. The classmate's position, because crisis severity always overrides all other factors.
 
-Feedback: Correct! Algorithmic transparency means making a technology's decision-making process clear and understandable to the public so people can evaluate whether it is being used responsibly. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+Correct Answer: A
 
+Feedback: The model consistently shows that the highest ethical justification scores require high transparency combined with moderate regulation. Even in the emergency scenario (Scenario 2 vs. 3 above), reducing transparency lowered justification despite maximum crisis severity. The first student correctly identifies that transparency cannot be sacrificed, because without it, public trust collapses and the entire program faces backlash. If you chose D, the model shows crisis severity increases justification but cannot alone produce the highest scores. Transparency is also required. If you chose B, while models cannot make moral decisions for us, they provide structured evidence about how factors interact. The first student uses model evidence to support their position. If you chose C, while ethics involves values, the model provides empirical evidence about which combinations of factors produce the most defensible outcomes.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ETS1.A.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ETS1.B.1, CCC2)
+Question 3: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.C.1, CCC7)
+Question 4: A (Cognitive Level: Evaluate — SEP 7.1.1, DCI ETS1.B.1, CCC7)
+Question 5: A (Cognitive Level: Evaluate + Apply — SEP 7.1.1, DCI ETS1.B.1, CCC4)
 
+---
 
 ## Lesson Metadata
 

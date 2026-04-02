@@ -738,45 +738,60 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.2 (Design a solution to a problem) + DCI PS4.C.1 (People use devices to send and receive information) + CCC2 (Cause and effect: identify events)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Signal Brightness, Message Received. Some components are external (Signal Brightness) and some are internal (Message Received). The student needs to understand what each component represents and how they are organized.
+A student sees a traffic light at the corner of the street. The light turns red and all the cars stop. Then it turns green and the cars go. The student wonders how the traffic light tells the cars what to do.
 
-When signal brightness goes UP, what happens to the message being received?
+What does a traffic light use to tell cars when to stop?
 
-A. The message is harder to receive
-B. The message is easier to receive
-C. Nothing changes
+A. Words on a sign
+B. Light
+C. Sound
 
 Correct Answer: B
 
-Feedback: Yes! Brighter light signals are easier to see, so the message is more likely to be received. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: A traffic light uses colored light (red, yellow, green) to send messages to drivers about when to stop, slow down, or go. If you chose C, traffic lights do not use sound to communicate. They use colored lights that drivers can see. If you chose A, traffic lights do not have words. They use colored lights as signals.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.2 (Design a solution to a human problem) + DCI PS4.C.1 (Devices use light or sound to communicate) + CCC2 (Cause and effect: identify events and effects)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Signal Brightness increases, Message Received increases. The student is trying to understand why these relationships are positive or negative.
+A student is learning about different ways people send messages. Her teacher talks about waving a flag, honking a horn, and flashing a flashlight. All of these are ways to share a message without using words.
 
-What does communicate mean?
+What is a signal?
 
-A. To run very fast
-B. To share a message with another person
-C. To eat lunch
+A. A kind of food
+B. A message sent using light, sound, or movement
+C. A type of animal
 
 Correct Answer: B
 
-Feedback: That is right! Communicate means sharing a message or idea with someone else. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A signal is a way to share a message using light, sound, or movement. Flashing a light and waving a flag are both signals. If you chose A, a signal is not food. It is a way to send a message to someone, like flashing a light or waving. If you chose C, a signal is not an animal. It is a message sent through light, sound, or movement.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.2 (Design and build a device) + DCI PS4.C.1 (Use light to solve communication problem) + CCC2 (Cause and effect: simple tests)
 
-A student runs a simulation of the model. The model shows that when Signal Brightness increases, Message Received increases. The student changes one variable to see how the whole system responds.
+A student learns that a lighthouse is a tall tower near the ocean with a very bright light on top. Ships sailing at night can see the light from far away. The light warns them about dangerous rocks near the shore.
+
+A lighthouse shines a bright light at night. Why?
+
+A. To look pretty
+B. To scare fish away
+C. To help ships see where the rocks are
+
+Correct Answer: C
+
+Feedback: Lighthouses use a bright light signal to warn ships about dangerous rocks, helping them navigate safely at night. If you chose A, the lighthouse light has an important purpose. It is not just for decoration. It warns ships about danger. If you chose B, the lighthouse light is for ships, not fish. It sends a signal to sailors so they know where the rocks are.
+---
+
+### Question 4
+
+CAST Alignment: SEP 6.1.2 (Design a solution to a problem) + DCI PS4.C.1 (People use devices to send information over a distance) + CCC2 (Cause and effect: design simple tests)
+
+Two students want to send secret messages to each other from across the room using a flashlight. They decide to make a code: one flash means yes and two flashes mean no. Now they can communicate without talking.
 
 You and your friend make a light code: 1 flash means yes, 2 flashes mean no. Why do you need a code?
 
@@ -786,55 +801,35 @@ C. So the light lasts longer
 
 Correct Answer: B
 
-Feedback: Yes! A code helps both people understand the message. Without a code, flashing a light does not tell you anything. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
----
-
-### Question 4
-
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.4 + CCC4 (Systems and System Models)
-
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
-
-Why would a dim flashlight be hard to use to send a message across a big room?
-
-A. Dim lights are too heavy
-B. A dim light is hard to see from far away
-C. Dim lights change colors
-
-Correct Answer: B
-
-Feedback: That is right! A dim light is hard to see when you are far away, so the message might not get through. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A code gives meaning to the flashes. Without a code, you would see the light but not understand the message. If you chose A, making the light look cool is not the purpose of a code. The code tells both people what each flash means. If you chose C, a code does not make the light last longer. The code is needed so both people understand what the flashes mean.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.2 (Design and build a device to solve a problem) + DCI PS4.C.1 (Devices use light to communicate over a distance) + CCC2 (Cause and effect: identify cause and effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Signal Brightness), but they can take action on internal components (Message Received). They need to decide which action would be most effective based on what the model shows.
+A student tries to send a flashlight signal to her friend across a big gym. She uses a small, dim flashlight. Her friend says she cannot see the flashes from so far away. The student wonders why the message did not work.
 
-Can you use light to tell someone something?
+Why would a dim flashlight be hard to use to send a message across a big room?
 
-A. No, light cannot send messages
-B. Yes, you can flash a light to send a message
-C. Only if you also talk
+A. A dim light is hard to see from far away
+B. Dim lights change colors
+C. Dim lights are too heavy
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! You can flash a light on and off to send a message to someone. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A dim light is hard to see when you are far away, so the message might not get through. Brighter signals work better over long distances. If you chose C, being dim does not make a flashlight heavier. The problem is that the light is not bright enough to see from far away. If you chose B, dim lights do not change colors. The problem is that the light is too weak to be seen across a big room.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.4, CCC4)
+Question 1: B (Cognitive Level: Identify)
+Question 2: B (Cognitive Level: Identify)
+Question 3: C (Cognitive Level: Reason)
+Question 4: B (Cognitive Level: Reason)
+Question 5: A (Cognitive Level: Reason + Apply)
 
-
+---
 ## Resources
 
 | Resource | Link |

@@ -387,6 +387,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Antigen Selection → Immune Cell Activation relationship as
+unconditional. However, this relationship is scientifically
+contingent on Adjuvant Strength being active. Without this condition,
+the simulation produces inaccurate results: Antigen Selection drives Immune Cell Activation
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Antigen Selection → Immune Cell Activation
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Adjuvant Strength is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Adjuvant Strength active and observe
+     how Antigen Selection's effect on Immune Cell Activation is now gated
+   • Toggle Adjuvant Strength ON/OFF while Antigen Selection remains constant
+   • Verify that Immune Cell Activation only responds to Antigen Selection when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Adjuvant Strength → Immune Cell Activation
+   • Set condition: IF Antigen Selection is ON
+   • This ensures Adjuvant Strength's effect on Immune Cell Activation
+     is contingent on Antigen Selection being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Pathogen Mutation Rate → Duration of Immunity
+   • Set condition: IF Memory Cell Formation is ON
+   • This ensures Pathogen Mutation Rate's effect on Duration of Immunity
+     is contingent on Memory Cell Formation being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -959,14 +1001,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 A student's vaccine model shows that a strain-specific vaccine targeting the dominant viral variant produces high Antibody Production Rate initially, but Duration of Immunity drops to near zero after 12 months as the virus undergoes antigenic drift. Which design modification would MOST effectively extend Duration of Immunity?
 
 A. Increasing Adjuvant Strength to maximum to produce more antibodies against the same strain
-B. Switching Antigen Selection to target a conserved region that is shared across variants, accepting lower peak antibody levels in exchange for broader Cross-Reactivity that remains effective as the virus mutates
-C. Administering the same strain-specific vaccine more frequently
+B. Administering the same strain-specific vaccine more frequently
+C. Switching Antigen Selection to target a conserved region that is shared across variants, accepting lower peak antibody levels in exchange for broader Cross-Reactivity that remains effective as the virus mutates
 D. Removing the adjuvant to reduce immune overstimulation
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The root cause of declining immunity is antigenic drift changing the target. More antibodies against an outdated target do not solve this. Targeting a conserved region trades peak antibody levels for durability, because the conserved target changes slowly even as the rest of the virus mutates. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The root cause of declining immunity is antigenic drift changing the target. More antibodies against an outdated target do not solve this. Targeting a conserved region trades peak antibody levels for durability, because the conserved target changes slowly even as the rest of the virus mutates. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -978,14 +1019,13 @@ In the computational model for this lesson, a student draws arrows between compo
 In the model, increasing Adjuvant Strength from 0 to moderate produces a large increase in Immune Cell Activation and Antibody Production Rate. Increasing from moderate to maximum produces only a small additional increase in protection but a large increase in side effects. This pattern is BEST described as:
 
 A. A linear dose-response relationship
-B. Diminishing returns, where each additional unit of adjuvant produces progressively less additional benefit while side effects continue to increase proportionally, defining an optimal adjuvant level that maximizes the benefit-to-risk ratio
+B. A measurement error in the model
 C. Evidence that adjuvants are unnecessary
-D. A measurement error in the model
+D. Diminishing returns, where each additional unit of adjuvant produces progressively less additional benefit while side effects continue to increase proportionally, defining an optimal adjuvant level that maximizes the benefit-to-risk ratio
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Adjuvant dose-response follows a law of diminishing returns. The immune system has a finite capacity for activation, so beyond the saturation point, additional adjuvant stimulates marginal additional protection while continuing to increase inflammatory side effects. The optimal dose maximizes the ratio of benefit to adverse reactions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Adjuvant dose-response follows a law of diminishing returns. The immune system has a finite capacity for activation, so beyond the saturation point, additional adjuvant stimulates marginal additional protection while continuing to increase inflammatory side effects. The optimal dose maximizes the ratio of benefit to adverse reactions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -996,15 +1036,14 @@ A student runs a simulation of the model. The model shows that when Antigen Sele
 
 A model simulation shows that two vaccines with identical Antibody Production Rates produce very different long-term outcomes: Vaccine A provides protection for 6 months while Vaccine B provides protection for 10 years. Which component MOST LIKELY differs between them?
 
-A. Memory Cell Formation, where Vaccine B stimulates more robust differentiation of long-lived memory B cells and T cells that persist and rapidly reactivate upon pathogen re-exposure
+A. The color of the vaccine formulation
 B. The number of total antibodies produced during the initial response
-C. The size of the injection needle used for administration
-D. The color of the vaccine formulation
+C. Memory Cell Formation, where Vaccine B stimulates more robust differentiation of long-lived memory B cells and T cells that persist and rapidly reactivate upon pathogen re-exposure
+D. The size of the injection needle used for administration
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Correct. Antibody levels wane over months as short-lived plasma cells die. Long-term protection depends on memory cells, which persist for years or decades. Vaccine B likely triggers more effective memory cell differentiation, enabling rapid recall responses that re-establish protective antibody levels upon future pathogen encounter. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Antibody levels wane over months as short-lived plasma cells die. Long-term protection depends on memory cells, which persist for years or decades. Vaccine B likely triggers more effective memory cell differentiation, enabling rapid recall responses that re-establish protective antibody levels upon future pathogen encounter. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -1015,15 +1054,14 @@ Scientists are studying data related to this system. They collected observations
 
 A vaccine designer uses the model to evaluate Population Coverage across a genetically diverse population. The model shows that the vaccine protects 95% of individuals with one HLA type but only 40% of individuals with a different HLA type. What does this reveal about vaccine design?
 
-A. The vaccine is defective and should not be used
+A. HLA type has no effect on vaccine efficacy
 B. Human genetic diversity in immune response genes (HLA) means the same antigen is presented differently to immune cells in different individuals, making it impossible to achieve equal protection across all genetic backgrounds with a single antigen design
-C. HLA type has no effect on vaccine efficacy
+C. The vaccine is defective and should not be used
 D. Population coverage cannot be measured using computational models
 
 Correct Answer: B
 
-Feedback: Correct. HLA molecules determine which peptide fragments of the antigen are presented to T cells. Different HLA types present different fragments, meaning the same vaccine antigen triggers different immune responses in different people. This genetic diversity is a fundamental challenge for universal vaccine design and often requires multi-epitope vaccines. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. HLA molecules determine which peptide fragments of the antigen are presented to T cells. Different HLA types present different fragments, meaning the same vaccine antigen triggers different immune responses in different people. This genetic diversity is a fundamental challenge for universal vaccine design and often requires multi-epitope vaccines. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1034,24 +1072,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student runs two simulations with identical vaccine designs but different Pathogen Mutation Rates. At low mutation rate, Cross-Reactivity maintains protection for 15 years. At high mutation rate, protection degrades after 2 years. Based on this analysis, which vaccine development strategy is MOST appropriate for a rapidly mutating pathogen?
 
-A. Design one perfect vaccine and administer it once
-B. A platform technology (like mRNA) that can be rapidly updated to match new variants, combined with targeting of the most conserved epitopes to extend the effective period between updates
-C. Abandon vaccination entirely for rapidly mutating pathogens
+A. A platform technology (like mRNA) that can be rapidly updated to match new variants, combined with targeting of the most conserved epitopes to extend the effective period between updates
+B. Abandon vaccination entirely for rapidly mutating pathogens
+C. Design one perfect vaccine and administer it once
 D. Increase the dose of the original vaccine to compensate for mutations
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. For rapidly mutating pathogens, the strategy must combine two approaches: (1) target conserved regions to maximize the interval before updates are needed, and (2) use a platform technology that enables rapid redesign when updates become necessary. This is exactly the strategy used for COVID-19 variant-updated mRNA boosters. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. For rapidly mutating pathogens, the strategy must combine two approaches: (1) target conserved regions to maximize the interval before updates are needed, and (2) use a platform technology that enables rapid redesign when updates become necessary. This is exactly the strategy used for COVID-19 variant-updated mRNA boosters. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.4, CCC1)
-Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.4, CCC1)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
 
 
 ## Resources

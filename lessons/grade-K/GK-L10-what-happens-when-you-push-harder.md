@@ -734,102 +734,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Push Force, Ball Speed. Some components are external (Push Force) and some are internal (Ball Speed). The student needs to understand what each component represents and how they are organized.
+A class is rolling balls across the gym floor. One student gives the ball a soft, gentle tap. The ball rolls slowly. Then the student gives the same ball a really hard push. This time the ball zooms across the floor very fast.
 
-When Push Force goes UP, what happens to Ball Speed?
+Why did the ball go faster with the hard push?
 
-A. Ball Speed goes down
-B. Ball Speed stays the same
-C. Ball Speed goes up
+A. A harder push gives the ball more force, which makes it go faster
+B. The ball got lighter the second time
+C. The gym floor got smoother the second time
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Yes! A harder push makes the ball go faster. More force means more speed. That is a positive connection. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A harder push is a bigger force. More force gives the ball more energy to move, so it rolls faster. If you chose B, the ball did not change. It was the same ball both times. The push is what changed. If you chose C, the floor stayed the same. The only difference was how hard the student pushed the ball.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.A (Forces and Motion) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Push Force increases, Ball Speed increases. The student is trying to understand why these relationships are positive or negative.
+The class makes a model with two parts: Push Force and Ball Speed. Push Force is how hard you push the ball. Ball Speed is how fast the ball rolls. The teacher says one part is the outside part that WE decide.
 
-What is speed?
+Why is Push Force the outside part of the model?
 
-A. How heavy something is
-B. How fast something is moving
-C. How big something is
+A. Because the ball decides how hard it wants to be pushed
+B. Because speed is always the outside part in every model
+C. Because WE choose how hard to push the ball
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! Speed is how fast something is moving, like slow as a turtle or fast as a cheetah. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Push Force is the outside part because WE decide how hard to push. We control it. Ball Speed is the inside part because it changes based on how hard we push. If you chose A, the ball does not decide anything. We are the ones who push it gently or hard. If you chose B, speed is not always the outside part. In this model, speed is the inside part that changes when we change the push.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when Push Force increases, Ball Speed increases. The student changes one variable to see how the whole system responds.
+A student pushes a ball four times, each time a little harder. The first push is very gentle and the ball goes slow. The second push is a little harder and the ball goes a bit faster. The third push is strong and the ball goes fast. The fourth push is very strong and the ball goes very fast.
 
-Push Force is the OUTSIDE part of our model. Why?
+What pattern do you see in the student's experiment?
 
-A. Because WE choose how hard to push
-B. Because the ball decides the push
-C. Because force is invisible
+A. Harder pushes make the ball go slower
+B. Harder pushes make the ball go faster
+C. All pushes make the ball go the same speed
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Yes! WE decide how hard to push, so Push Force is the outside part. We control it. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Each time the student pushed harder, the ball went faster. This shows a clear pattern: more force means more speed. That is a positive connection. If you chose A, the opposite happened. Harder pushes made the ball faster, not slower. If you chose C, the ball went different speeds each time. The gentle push made it slow, and the strong push made it fast.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.A (Forces and Motion) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The class model shows an arrow from Push Force to Ball Speed with a plus sign. The teacher asks what happens if someone barely touches the ball with the smallest push possible.
 
-Why does the ball stop rolling after you push it?
+According to the model, what happens to Ball Speed when Push Force is very, very low?
 
-A. Gravity makes it stop
-B. The floor rubs against the ball and slows it down
-C. The ball gets tired
+A. Ball Speed will be medium because it does not matter
+B. Ball Speed will be very, very slow
+C. Ball Speed will be very, very fast
 
 Correct Answer: B
 
-Feedback: Yes! The floor rubs against the ball. That rubbing is called friction, and it slows the ball down until it stops. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The plus sign means both parts go in the same direction. When Push Force is very low, Ball Speed is also very low. A tiny push gives the ball very little energy, so it barely moves. If you chose C, the plus sign means they go the SAME way. Low push means low speed, not fast speed. If you chose A, the model shows they are connected. Push Force absolutely matters. A low push gives low speed.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.A (Forces and Motion) + CCC2 (Cause and Effect)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Push Force), but they can take action on internal components (Ball Speed). They need to decide which action would be most effective based on what the model shows.
+A student is playing a bowling game. She needs to knock down pins at the end of a long lane. She rolls the ball with a gentle push, but it stops before reaching the pins. She wants to try again and knock the pins down this time.
 
-If you push a ball gently, what happens?
+What should the student do differently to knock down the bowling pins?
 
-A. It rolls fast
-B. It rolls slowly
-C. It does not move at all
+A. Wait for the ball to start moving on its own
+B. Push the ball much harder so it has enough force to reach the pins
+C. Push the ball even more gently so it rolls in a straight line
 
 Correct Answer: B
 
-Feedback: Yes! A gentle push makes the ball roll slowly because it is a small force. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The ball stopped because the gentle push did not give it enough force to reach the pins. A much harder push will give the ball more speed and energy to roll all the way to the pins and knock them down. If you chose C, a gentler push would make the ball stop even sooner. It would be farther from the pins, not closer. If you chose A, the ball will not move on its own. It needs a push. Objects only move when a force acts on them.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.1, CCC4)
-Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.1, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.A, CCC2)
+Question 2: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.A, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.A, CCC2)
+Question 4: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.A, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI PS2.A, CCC2)
 
+---
 
 ## Resources
 

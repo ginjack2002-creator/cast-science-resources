@@ -180,113 +180,113 @@ Robotics Engineers specializing in biomimicry design robots inspired by nature f
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-4, MS-ETS1-1, MS-ETS1-2, MS-ETS1-3, MS-ETS1-4.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ETS1.A.1 (Define criteria and constraints of a design problem) + CCC6 (Identify structure and function relationships)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Animal Feature Selected, Material Choice, Power Source, Movement Accuracy, Energy Use, Durability, Detection Risk. Some components are external (Animal Feature Selected, Material Choice, Power Source) and some are internal (Movement Accuracy, Energy Use, Durability, Detection Risk). The student needs to understand what each component represents and how they are organized.
+An engineering team is building a wildlife monitoring robot disguised as a beaver. Their model has seven components: animal feature selected, material choice, and power source as inputs, and movement accuracy, energy use, durability, and detection risk as outputs. The team wants to know which input has the most impact on overall performance.
 
-In the model, which input had the GREATEST impact on overall performance?
+Which component represents the most fundamental design decision that cannot be compensated for by the other inputs?
 
-A. Power Source, because more power always fixes everything
-B. Material Choice, because expensive materials are always best
-C. Animal Feature Selected, because the fundamental design choice matters more than materials or power
-D. All three inputs have exactly equal impact
+A. Animal Feature Selected, because copying the wrong biological feature means the design is fundamentally flawed, and no material or power boost can fix it.
+B. Material Choice, because expensive materials are always superior.
+C. Power Source, because more power always fixes any design problem.
+D. All three inputs have exactly equal impact on every output.
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: Correct! The model showed that the fundamental design choice (which animal feature to copy) had the greatest impact. No material or power boost could fix a bad fundamental design. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The animal feature selected is the most fundamental decision. If the team copies a pointed tail for swimming (instead of a flat tail), the robot will swim poorly no matter what material it is made of or how much power it has. The fundamental design must be correct before materials and power can enhance it. If you chose C, more power helps but cannot fix a fundamental design flaw. A powerful robot with the wrong shape still moves incorrectly. If you chose B, material choice affects durability and detection risk, but it cannot fix a fundamentally wrong movement design. If you chose D, the model shows that animal feature selection has a greater impact than the other two because it determines whether the basic movement pattern is correct.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.C.1 (Explain how adaptations result from natural selection) + CCC6 (Explain how structure determines function)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Animal Feature increases, Movement Accuracy decreases; when Material Choice increases, Movement Accuracy increases. The student is trying to understand why these relationships are positive or negative.
+A student tests three material choices in the biomimicry model: hard plastic, flexible polymer, and lifelike silicone. The results show that lifelike silicone has the highest movement accuracy and lowest detection risk, but also the highest energy use and lowest durability. Hard plastic has the lowest movement accuracy and highest detection risk, but also the lowest energy use and highest durability.
 
-What tradeoff did the model reveal about using lifelike materials?
+What engineering principle does this data demonstrate?
 
-A. Lifelike materials had no tradeoffs and were best in every category
-B. Lifelike materials reduced detection risk but increased energy use and decreased durability
-C. Lifelike materials were the cheapest option available
-D. Lifelike materials only affected appearance, nothing else
+A. Material choice has no meaningful effect on robot performance.
+B. The most expensive material is always the best choice.
+C. Engineering design involves tradeoffs where improving one performance metric often worsens another.
+D. There is always one material that is best in every category.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! The model showed that lifelike materials (like silicone) made the robot harder to detect as artificial, but they also increased energy use and reduced durability. This is a classic engineering tradeoff. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: The data shows a clear tradeoff pattern. Lifelike silicone excels at looking and moving naturally (low detection risk, high movement accuracy) but fails at lasting long and conserving energy (low durability, high energy use). Hard plastic has the opposite strengths and weaknesses. No single material wins in every category. If you chose D, the data clearly shows no material is best in all categories. Each has strengths and weaknesses. If you chose B, cost is not mentioned in the model. The tradeoffs exist regardless of price. If you chose A, material choice dramatically affected all four outputs. It has a very meaningful effect.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ETS1.B.1 (Evaluate competing design solutions) + CCC2 (Use cause and effect to predict outcomes)
 
-A student runs a simulation of the model. The model shows that when Animal Feature increases, Movement Accuracy decreases and when Material Choice increases, Movement Accuracy increases and when Material Choice increases, Detection Risk decreases. The student changes one variable to see how the whole system responds.
+An engineer is designing a robot fish for marine research. She must choose between two configurations. Configuration A: correct fish body shape + flexible polymer + medium power. Configuration B: incorrect body shape (square body) + lifelike silicone + maximum power. The model predicts movement accuracy as the most important metric for swimming.
 
-What did the model show about whether more power can overcome material limitations?
+Based on the model, which configuration will produce better movement accuracy, and why?
 
-A. More power completely solves all material problems
-B. More power helps somewhat but creates its own problems, like heavier batteries and shorter lifespan
-C. Power and materials are completely unrelated in the model
-D. More power always makes performance worse
+A. Configuration B, because maximum power and lifelike material will overcome the wrong body shape.
+B. Configuration A, because the correct body shape is the most important factor, and no amount of material quality or power can compensate for a fundamentally wrong form.
+C. Both will have identical movement accuracy because power is the only factor that matters.
+D. Neither will work because robots cannot swim like fish.
 
 Correct Answer: B
 
-Feedback: Correct! More power improved some outputs but introduced new tradeoffs: heavier batteries, more heat, and shorter operational lifespan. There is no free lunch in engineering. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: The model shows that animal feature selected (body shape) has the greatest impact on movement accuracy. Configuration A starts with the correct fish body shape, which means the fundamental design is right. The flexible polymer and medium power can then enhance that correct foundation. Configuration B has a square body, which is fundamentally wrong for swimming. No material or power can make a square body swim like a fish. If you chose A, the model consistently shows that the wrong fundamental feature cannot be fixed by better materials or more power. If you chose C, power is one of three inputs, not the only one. And even among the three, animal feature selection has the greatest impact. If you chose D, biomimicry robots based on correct fish body shapes can swim effectively. The question is about which configuration is better.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 6.1.1 (Construct an argument using evidence) + DCI ETS1.C.1 (Use iterative testing to improve designs) + CCC6 (Explain how structure determines function)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+After three design iterations, an engineering team records the following results for their beaver monitoring robot:
 
-Why are nature's designs so efficient compared to human engineering?
+Iteration 1: Hard plastic, basic motor. Movement accuracy: 35%, Detection risk: 85%, Durability: 95%.
+Iteration 2: Flexible polymer, improved motor. Movement accuracy: 62%, Detection risk: 48%, Durability: 72%.
+Iteration 3: Lifelike silicone, advanced motor. Movement accuracy: 88%, Detection risk: 12%, Durability: 45%.
 
-A. Nature uses better computers than humans
-B. Nature's designs have been optimized through millions of years of evolution
-C. Nature does not follow the laws of physics
-D. Nature's designs are not actually efficient
+The team needs the robot to last at least one year in the field (durability above 60%). Which iteration best balances all performance needs?
 
-Correct Answer: B
+A. Iteration 3, because it has the best movement accuracy and lowest detection risk.
+B. Iteration 1, because it has the highest durability.
+C. None of the iterations work because no design can balance all metrics.
+D. Iteration 2, because it meets the durability requirement (72%) while achieving reasonable movement accuracy (62%) and moderate detection risk (48%).
 
-Feedback: That is right! Evolution has been testing and refining animal designs for millions of years. Only the most efficient designs survived, making them excellent models for human engineering. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+Correct Answer: D
 
+Feedback: Iteration 2 is the best balance. It meets the durability requirement (72% is above the 60% threshold) while achieving good movement accuracy and reasonable detection risk. Iteration 1 has great durability but terrible movement and detection. Iteration 3 has great movement and detection but fails the durability requirement (45% is below 60%). If you chose B, Iteration 1 has only 35% movement accuracy and 85% detection risk. A robot that barely moves and is easily spotted as fake is not useful. If you chose A, Iteration 3 fails the durability requirement. At 45%, the robot would not last a year. If you chose C, Iteration 2 successfully balances all metrics within acceptable ranges.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI LS4.C.1 (Explain how natural selection leads to efficient designs) + CCC6 (Use structure and function to predict behavior)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Animal Feature Selected, Material Choice, Power Source), but they can take action on internal components (Movement Accuracy, Energy Use, Durability, Detection Risk). They need to decide which action would be most effective based on what the model shows.
+A student compares the biomimicry model results to actual animal evolution. In the model, the best robot designs copy the exact body features of successful animals. In nature, animals that survive have body features that have been tested and refined by natural selection over millions of years.
 
-What does 'fidelity' mean in engineering design?
+Based on this comparison, why do engineers study animal designs instead of inventing shapes from scratch?
 
-A. How much a design costs to build
-B. How accurately an artificial design replicates the original natural feature
-C. How fast a machine can move
-D. How many people like the design
+A. Because animal shapes are always better than human designs in every application.
+B. Because engineers are not creative enough to invent their own designs.
+C. Because it is illegal to invent new shapes for robots.
+D. Because evolution has already tested billions of design variations over millions of years, and the animals alive today represent the most efficient solutions that survived natural selection.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! Fidelity refers to how accurately an artificial design copies or replicates the original natural feature it is based on. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Evolution is the ultimate design process. Over millions of years, billions of variations have been tested against the environment. Animals that survived have body features refined for efficiency through natural selection. Engineers study these time-tested designs because starting from a proven solution is more efficient than starting from zero. If you chose B, engineers are highly creative. They study animals because it is smart to learn from billions of years of testing, not because they lack creativity. If you chose C, there is no law against inventing new shapes. Engineers choose biomimicry because it is effective. If you chose A, animal shapes are not always better. They are optimized for their specific environment. But they provide excellent starting points that engineers can then adapt for human purposes.
 ---
 
 ### Answer Key
 
-Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ETS1.A.1, CCC6)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.C.1, CCC6)
+Question 3: B (Cognitive Level: Predict — SEP 2.1.4, DCI ETS1.B.1, CCC2)
+Question 4: D (Cognitive Level: Argue + Evidence — SEP 6.1.1, DCI ETS1.C.1, CCC6)
+Question 5: D (Cognitive Level: Reason + Apply — SEP 2.1.4, DCI LS4.C.1, CCC6)
 
+---
 
 ## Lesson Metadata
 

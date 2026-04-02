@@ -353,6 +353,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Plasma Temperature → Energy Output relationship as
+unconditional. However, this relationship is scientifically
+contingent on Magnetic Field Strength being active. Without this condition,
+the simulation produces inaccurate results: Plasma Temperature drives Energy Output
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Plasma Temperature → Energy Output
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Magnetic Field Strength is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Magnetic Field Strength active and observe
+     how Plasma Temperature's effect on Energy Output is now gated
+   • Toggle Magnetic Field Strength ON/OFF while Plasma Temperature remains constant
+   • Verify that Energy Output only responds to Plasma Temperature when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Magnetic Field Strength → Energy Output
+   • Set condition: IF Plasma Temperature is ON
+   • This ensures Magnetic Field Strength's effect on Energy Output
+     is contingent on Plasma Temperature being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -920,107 +956,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.8 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI PS1.C (Nuclear processes) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Plasma Temperature, Magnetic Field Strength, Fuel Density, Energy Output, Neutron Flux, Wall Material Degradation, Net Energy Gain. Some components are external (Plasma Temperature, Magnetic Field Strength, Fuel Density) and some are internal (Energy Output, Neutron Flux, Wall Material Degradation, Net Energy Gain). The student needs to understand what each component represents and how they are organized.
+Researchers at a fusion energy facility analyze data from their tokamak reactor's latest experiment. A deuterium-tritium plasma was heated to 150 million degrees Celsius (10 times the temperature of the sun's core) and confined by magnetic fields for 5.2 seconds, producing 59 megajoules of fusion energy. However, the heating systems, magnets, and cooling infrastructure consumed 300 megajoules to create and maintain these conditions. The ratio of energy output to input (Q-factor) was 0.2, far below the Q=1 breakeven threshold and the Q>10 needed for commercial power generation.
 
 A student's fusion model shows that increasing plasma temperature from 100M to 200M degrees Celsius doubles the fusion reaction rate but causes a 40% increase in plasma instabilities that degrade confinement time. What does this reveal about the system dynamics?
 
-A. Temperature should always be maximized because fusion rate is the only important variable
-B. The system exhibits a coupled feedback where improving one Lawson criterion parameter (temperature) degrades another (confinement time), demonstrating why fusion optimization requires balancing competing constraints
+A. The system exhibits a coupled feedback where improving one Lawson criterion parameter (temperature) degrades another (confinement time), demonstrating why fusion optimization requires balancing competing constraints
+B. The model indicates that lower temperatures are always preferable for fusion
 C. The instabilities can be eliminated by simply increasing magnetic field strength proportionally
-D. The model indicates that lower temperatures are always preferable for fusion
+D. Temperature should always be maximized because fusion rate is the only important variable
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This demonstrates the fundamental coupling in fusion systems: the Lawson criterion parameters are not independent. Optimizing temperature degrades confinement, illustrating why meeting all three conditions simultaneously has been so challenging. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: This demonstrates the fundamental coupling in fusion systems: the Lawson criterion parameters are not independent. Optimizing temperature degrades confinement, illustrating why meeting all three conditions simultaneously has been so challenging. If you chose D, this response overgeneralizes without considering the specific mechanisms and evidence presented. The key insight is parameter coupling. The Lawson criterion requires temperature, density, and confinement time to all exceed thresholds simultaneously, but increasing temperature drives instabilities that reduce confinement time. This coupling is why fusion optimization is a multi-dimensional balancing act. If you chose C, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The key insight is parameter coupling. The Lawson criterion requires temperature, density, and confinement time to all exceed thresholds simultaneously, but increasing temperature drives instabilities that reduce confinement time. This coupling is why fusion optimization is a multi-dimensional balancing act. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The key insight is parameter coupling. The Lawson criterion requires temperature, density, and confinement time to all exceed thresholds simultaneously, but increasing temperature drives instabilities that reduce confinement time. This coupling is why fusion optimization is a multi-dimensional balancing act.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.8 + CCC5 (Energy and Matter)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI PS1.C (Nuclear processes) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Plasma Temperature increases, Energy Output increases; when Energy Output increases, Neutron Flux increases. The student is trying to understand why these relationships are positive or negative.
+A computational model of plasma confinement in a tokamak identifies the primary instabilities that limit fusion performance. The model tracks three types of plasma instability: edge-localized modes (ELMs) that periodically eject hot plasma against the reactor wall, neoclassical tearing modes (NTMs) that create magnetic islands disrupting confinement, and disruptions where the entire plasma becomes unstable and deposits its full energy into the reactor wall within milliseconds. The model shows that increasing plasma pressure improves fusion rate but also increases instability risk, creating a fundamental design tension.
 
 In the fusion reactor model, doubling magnetic field strength from 5T to 10T improves plasma confinement but requires superconducting magnets that consume 3x more cooling energy. How should this trade-off be evaluated in terms of net energy gain (Q factor)?
 
-A. Stronger magnets always improve Q because confinement is the only factor in the energy balance
-B. The additional cooling energy must be subtracted from the fusion energy output; if the increased confinement does not produce enough additional fusion energy to offset the 3x cooling cost, the net Q factor may actually decrease
-C. Cooling energy is free because it comes from the fusion reactor itself
+A. Cooling energy is free because it comes from the fusion reactor itself
+B. Stronger magnets always improve Q because confinement is the only factor in the energy balance
+C. The additional cooling energy must be subtracted from the fusion energy output; if the increased confinement does not produce enough additional fusion energy to offset the 3x cooling cost, the net Q factor may actually decrease
 D. The Q factor only accounts for plasma heating energy, not magnet cooling
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The Q factor represents total energy balance. Any energy consumed by the system, including magnet cooling, must be subtracted from the fusion output. Stronger magnets that improve confinement may actually reduce net energy gain if their cooling costs are too high. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The Q factor represents total energy balance. Any energy consumed by the system, including magnet cooling, must be subtracted from the fusion output. Stronger magnets that improve confinement may actually reduce net energy gain if their cooling costs are too high. If you chose B, this response overgeneralizes without considering the specific mechanisms and evidence presented. Net energy gain (Q) accounts for ALL energy inputs, including magnet cooling. If doubling field strength triples cooling costs, the improved confinement must produce enough additional fusion energy to more than offset this parasitic load, or Q actually decreases. If you chose A, this answer does not account for the key mechanism or relationship the evidence demonstrates. Net energy gain (Q) accounts for ALL energy inputs, including magnet cooling. If doubling field strength triples cooling costs, the improved confinement must produce enough additional fusion energy to more than offset this parasitic load, or Q actually decreases. If you chose D, this choice oversimplifies a multi-factor system by focusing on a single variable. Net energy gain (Q) accounts for ALL energy inputs, including magnet cooling. If doubling field strength triples cooling costs, the improved confinement must produce enough additional fusion energy to more than offset this parasitic load, or Q actually decreases.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.8 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.B (Conservation of energy) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Plasma Temperature increases, Energy Output increases and when Energy Output increases, Neutron Flux increases and when Neutron Flux increases, Wall Material Degradation increases. The student changes one variable to see how the whole system responds.
+Engineers compare two magnetic confinement approaches for fusion reactors. The tokamak uses a toroidal (doughnut-shaped) magnetic field with a strong plasma current to maintain confinement. The stellarator uses a twisted, three-dimensional magnetic field geometry that requires no plasma current but demands extremely precise coil manufacturing (tolerances of 0.1 mm over 10-meter structures). Performance data shows tokamaks achieve higher plasma pressures but suffer disruptions, while stellarators are inherently stable but have historically achieved lower confinement quality.
 
 The model reveals that neutron flux causes first-wall material degradation that follows a nonlinear curve: damage increases slowly for the first 5 years, then accelerates. What engineering implication does this have for commercial reactor design?
 
-A. Reactors should be designed for unlimited operational lifetime since early degradation is slow
+A. Thicker walls will permanently solve the degradation problem
 B. The nonlinear degradation curve means that reactor first-wall components must be designed for periodic replacement on a schedule determined by the acceleration point, and the replacement cost and downtime must be factored into economic viability
-C. Thicker walls will permanently solve the degradation problem
-D. The accelerating damage indicates that fusion power becomes more efficient over time
+C. The accelerating damage indicates that fusion power becomes more efficient over time
+D. Reactors should be designed for unlimited operational lifetime since early degradation is slow
 
 Correct Answer: B
 
-Feedback: Correct. Nonlinear degradation with an acceleration point means components have a predictable but limited service life. Commercial reactor design must include engineered replacement schedules, and the associated costs and downtime directly affect economic viability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Nonlinear degradation with an acceleration point means components have a predictable but limited service life. Commercial reactor design must include engineered replacement schedules, and the associated costs and downtime directly affect economic viability. If you chose D, this response does not account for the key mechanism or relationship the evidence demonstrates. The accelerating degradation curve creates a maintenance engineering challenge. Components cannot last indefinitely, so commercial reactors must be designed with replaceable first-wall modules on predictable schedules, with replacement cost and reactor downtime factored into the economic model. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. The accelerating degradation curve creates a maintenance engineering challenge. Components cannot last indefinitely, so commercial reactors must be designed with replaceable first-wall modules on predictable schedules, with replacement cost and reactor downtime factored into the economic model. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. The accelerating degradation curve creates a maintenance engineering challenge. Components cannot last indefinitely, so commercial reactors must be designed with replaceable first-wall modules on predictable schedules, with replacement cost and reactor downtime factored into the economic model.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.8 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.C (Nuclear processes) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A fusion reactor design team models the materials challenge. The reactor's first wall, facing the plasma, must withstand neutron bombardment at energies of 14.1 MeV (fusion neutrons are far more energetic than fission neutrons). These neutrons damage the crystal structure of steel at a rate that would require wall replacement every 2-5 years. Tungsten alloys last longer but become brittle and radioactive. The model shows that developing a material that can withstand 20+ years of neutron damage while maintaining structural integrity is as critical as achieving plasma ignition.
 
 A student uses the model to compare two reactor designs: Design A achieves Q = 15 but has a tritium breeding ratio of 0.9, while Design B achieves Q = 8 but has a breeding ratio of 1.15. Which analysis correctly identifies the long-term viability issue?
 
-A. Design A is superior because higher Q always means better commercial performance
-B. Design B is more viable long-term because a breeding ratio below 1.0 means Design A consumes more tritium than it produces, eventually running out of fuel regardless of its energy output
-C. Both designs are equally viable because tritium can be purchased commercially
-D. Design A's higher Q compensates for its lower breeding ratio over time
+A. Both designs are equally viable because tritium can be purchased commercially
+B. Design A's higher Q compensates for its lower breeding ratio over time
+C. Design A is superior because higher Q always means better commercial performance
+D. Design B is more viable long-term because a breeding ratio below 1.0 means Design A consumes more tritium than it produces, eventually running out of fuel regardless of its energy output
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. A tritium breeding ratio below 1.0 means the reactor consumes more tritium than it creates. No matter how much energy it produces, Design A will eventually exhaust its fuel supply. Design B is self-sustaining in fuel production. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A tritium breeding ratio below 1.0 means the reactor consumes more tritium than it creates. No matter how much energy it produces, Design A will eventually exhaust its fuel supply. Design B is self-sustaining in fuel production. If you chose C, this response overgeneralizes without considering the specific mechanisms and evidence presented. A tritium breeding ratio below 1.0 is fatal to long-term operation. Tritium cannot be sourced naturally in useful quantities. Design A produces more energy per cycle but will run out of fuel, while Design B is fuel self-sufficient and can operate indefinitely. If you chose A, this answer overgeneralizes without considering the specific mechanisms and evidence presented. A tritium breeding ratio below 1.0 is fatal to long-term operation. Tritium cannot be sourced naturally in useful quantities. Design A produces more energy per cycle but will run out of fuel, while Design B is fuel self-sufficient and can operate indefinitely. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. A tritium breeding ratio below 1.0 is fatal to long-term operation. Tritium cannot be sourced naturally in useful quantities. Design A produces more energy per cycle but will run out of fuel, while Design B is fuel self-sufficient and can operate indefinitely.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.8 + CCC5 (Energy and Matter)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI PS3.B (Conservation of energy) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Plasma Temperature, Magnetic Field Strength, Fuel Density), but they can take action on internal components (Energy Output, Neutron Flux, Wall Material Degradation, Net Energy Gain). They need to decide which action would be most effective based on what the model shows.
+An energy economics model compares the projected cost of fusion electricity with other sources by 2050. The model inputs include: construction cost of $20-30 billion per gigawatt fusion plant (vs. $5-7 billion for fission, $1-2 billion for solar+storage), fuel cost near zero (deuterium from seawater, tritium bred in reactor blankets), zero carbon emissions, and a capacity factor of 85% (vs. 25% for solar, 90% for fission). The model reveals that fusion electricity would cost $80-120 per megawatt-hour at first deployment, declining to $40-60 with learning curve improvements, but only if the engineering challenges of sustained Q>10 operation and material durability are solved.
 
 Based on the fusion reactor model, which conclusion about the relationship between energy output and wall material degradation is best supported by the simulation?
 
-A. Energy output and wall degradation are independent variables that can be optimized separately
-B. Higher fusion energy output necessarily produces more neutrons, which cause more wall degradation, creating an inherent coupling where the energy source and the primary damage mechanism are products of the same nuclear reaction
-C. Wall degradation can be eliminated by using alternative fusion fuels that produce no neutrons
-D. Reducing energy output to zero is the only way to prevent wall degradation
+A. Reducing energy output to zero is the only way to prevent wall degradation
+B. Energy output and wall degradation are independent variables that can be optimized separately
+C. Higher fusion energy output necessarily produces more neutrons, which cause more wall degradation, creating an inherent coupling where the energy source and the primary damage mechanism are products of the same nuclear reaction
+D. Wall degradation can be eliminated by using alternative fusion fuels that produce no neutrons
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. In D-T fusion, 80% of the energy is carried by the neutron. The very reaction that produces energy also produces the particles that damage the reactor. This inherent coupling means more power necessarily means more damage. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: In D-T fusion, 80% of the energy is carried by the neutron. The very reaction that produces energy also produces the particles that damage the reactor. This inherent coupling means more power necessarily means more damage. If you chose B, this response overgeneralizes without considering the specific mechanisms and evidence presented. Energy output and wall degradation are coupled by the physics of the D-T reaction: fusion produces helium AND a 14.1 MeV neutron that carries 80% of the energy. You cannot have the energy without the neutrons that cause structural damage. If you chose D, this answer overgeneralizes without considering the specific mechanisms and evidence presented. Energy output and wall degradation are coupled by the physics of the D-T reaction: fusion produces helium AND a 14.1 MeV neutron that carries 80% of the energy. You cannot have the energy without the neutrons that cause structural damage. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Energy output and wall degradation are coupled by the physics of the D-T reaction: fusion produces helium AND a 14.1 MeV neutron that carries 80% of the energy. You cannot have the energy without the neutrons that cause structural damage.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.8, CCC2)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.8, CCC5)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.8, CCC2)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.8, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.8, CCC5)
+Question 1: A (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-PS1-8, CCC4)
+Question 2: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS1-8, CCC2)
+Question 3: B (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS1-8, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-PS3-2, CCC7)
+Question 5: C (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-PS3-2, CCC4)
 
+---
 
 ## Resources
 

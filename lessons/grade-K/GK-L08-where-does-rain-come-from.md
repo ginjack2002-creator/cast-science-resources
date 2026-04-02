@@ -732,102 +732,98 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.D (Weather and Climate) + CCC5 (Energy and Matter)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sun's Heat, Evaporation Speed. Some components are external (Sun's Heat) and some are internal (Evaporation Speed). The student needs to understand what each component represents and how they are organized.
+A class watches a puddle on the playground after it rains. On a hot sunny day, the puddle gets smaller and smaller until it is completely gone by the afternoon. The teacher asks where the water went.
 
-What is evaporation?
+Where did the puddle water go?
 
-A. When water freezes into ice
-B. When the sun heats water and it floats up into the sky
-C. When rain falls from clouds
+A. It turned into invisible gas and floated up into the sky
+B. Someone came and drank all the water
+C. It disappeared and is gone forever
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Evaporation is when the sun heats water and it turns into invisible gas that floats up into the sky. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The sun's heat turned the water into an invisible gas called water vapor. It floated up into the sky. This is called evaporation. The water is still there, just in a form we cannot see. If you chose C, water never disappears forever. It changes form. It turned into a gas and went into the sky, where it can become part of a cloud and fall as rain again. If you chose B, nobody drank the puddle. The sun heated the water and turned it into invisible gas that rose into the air.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.D (Weather and Climate) + CCC4 (Systems and System Models)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when s Heat increases, Evaporation Speed increases. The student is trying to understand why these relationships are positive or negative.
+The class builds a model about evaporation. It has two parts: Sun's Heat and Evaporation Speed. Sun's Heat is how warm the sun makes the water. Evaporation Speed is how fast water goes up into the sky.
 
-When the Sun's Heat goes UP, what happens to Evaporation Speed?
+What is the outside part of this model that we can observe changing?
 
-A. It slows down
-B. It speeds up
-C. It stops
+A. Both parts are the same thing
+B. Evaporation Speed, because we watch the puddle get smaller
+C. Sun's Heat, because the sun changes how warm it is
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Yes! More heat from the sun makes water evaporate faster. That is a positive connection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Sun's Heat is the outside part because it is what changes first and drives the system. We observe how hot the sun is on different days. Evaporation Speed is the inside part that responds to how much heat there is. If you chose B, Evaporation Speed is the result, not the cause. It is the inside part that changes because of the sun's heat. If you chose A, they are two different parts. The sun's heat causes the evaporation to happen faster or slower.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.D (Weather and Climate) + CCC2 (Cause and Effect)
 
-A student runs a simulation of the model. The model shows that when s Heat increases, Evaporation Speed increases. The student changes one variable to see how the whole system responds.
+A student puts two identical plates of water outside. One plate is in the hot sun. The other plate is in a cool, shady spot. After two hours, the student checks both plates. The plate in the sun has much less water. The plate in the shade still has most of its water.
 
-What is the water cycle?
+Why did the sunny plate lose more water?
 
-A. Water going from the ground to the sky and back as rain, over and over
-B. Water sitting in a glass
-C. Water coming from a faucet
+A. The sun's heat made the water evaporate faster on the sunny plate
+B. The shade added more water to the shady plate
+C. The wind only blew on the sunny plate
 
 Correct Answer: A
 
-Feedback: Yes! The water cycle is water's journey. It goes up to the sky, makes clouds, and falls back as rain, over and over. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The sun's heat gave the water energy to turn into invisible gas and float into the sky. More heat means faster evaporation. The shady plate had less heat, so the water evaporated slowly. If you chose B, shade does not add water. The shady plate just kept its water longer because it was cooler and evaporation was slower. If you chose C, wind was not the main difference. Both plates were outside. The big difference was sunlight versus shade.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.D (Weather and Climate) + CCC4 (Systems and System Models)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The model shows an arrow from Sun's Heat to Evaporation Speed with a plus sign. A student says that on a very cold, cloudy day there is almost no sun's heat at all.
 
-On a hot sunny day, a puddle dries up fast. Where did the water go?
+What happens to Evaporation Speed on a very cold, cloudy day?
 
-A. It soaked into the ground only
-B. It turned into invisible gas and floated into the sky
-C. It disappeared forever
+A. Evaporation Speed goes way up because cold helps water evaporate
+B. Evaporation Speed goes way down because there is little heat to warm the water
+C. Evaporation Speed stays the same no matter what the weather is
 
 Correct Answer: B
 
-Feedback: Yes! The sun heated the water and it turned into invisible gas that floated up into the sky. That is evaporation! If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
-
+Feedback: The plus sign means both parts go in the same direction. When Sun's Heat goes down on a cold day, Evaporation Speed also goes down. Less heat means water evaporates much more slowly. If you chose A, cold does not help evaporation. Heat is what makes water turn into gas. Less heat means slower evaporation. If you chose C, the model shows they are connected. When the sun's heat changes, evaporation speed changes too.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.D (Weather and Climate) + CCC5 (Energy and Matter)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sun's Heat), but they can take action on internal components (Evaporation Speed). They need to decide which action would be most effective based on what the model shows.
+A student learns that water goes from puddles to the sky (evaporation), forms clouds, and falls back as rain. Then it can evaporate again. This happens over and over. The teacher calls this the water cycle.
 
-Where does rain come from?
+What would happen if the sun stopped shining for a very long time?
 
-A. From the ground
-B. From the clouds
-C. From the ocean
+A. The water cycle would slow down because there is no heat to evaporate water
+B. Nothing would change because the sun does not affect rain
+C. More rain would fall because clouds need darkness to make rain
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Yes! Rain falls from clouds in the sky. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The sun's heat is what makes water evaporate and start the water cycle. Without the sun, very little water would evaporate, so fewer clouds would form, and less rain would fall. The whole cycle would slow way down. If you chose C, clouds do not need darkness. They need water vapor that evaporates from the ground, and that evaporation needs the sun's heat. If you chose B, the sun is the engine of the water cycle. Without it, water cannot evaporate fast enough to make clouds and rain.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC4)
-Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.D, CCC5)
+Question 2: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.D, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.D, CCC2)
+Question 4: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.D, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS2.D, CCC5)
 
+---
 
 ## Resources
 

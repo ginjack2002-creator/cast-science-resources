@@ -387,6 +387,36 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Substrate Concentration → Pathway Flux relationship as
+unconditional. However, this relationship is scientifically
+contingent on Enzyme Activity being active. Without this condition,
+the simulation produces inaccurate results: Substrate Concentration drives Pathway Flux
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Substrate Concentration → Pathway Flux
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Enzyme Activity is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Enzyme Activity active and observe
+     how Substrate Concentration's effect on Pathway Flux is now gated
+   • Toggle Enzyme Activity ON/OFF while Substrate Concentration remains constant
+   • Verify that Pathway Flux only responds to Substrate Concentration when the
+     condition is satisfied
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -956,15 +986,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's model shows that setting all pathway enzymes to maximum expression DECREASES total biofuel Fermentation Efficiency compared to a moderately expressed pathway. Which systems-level explanation BEST accounts for this paradox?
 
-A. Maximum enzyme expression creates extreme Metabolic Burden that crashes Cell Growth Rate, resulting in fewer total cells producing less total product despite each cell's pathway being theoretically more active
-B. The model contains a mathematical error
+A. Maximum expression always improves production in real biological systems
+B. Maximum enzyme expression creates extreme Metabolic Burden that crashes Cell Growth Rate, resulting in fewer total cells producing less total product despite each cell's pathway being theoretically more active
 C. Enzyme expression level has no effect on biofuel production
-D. Maximum expression always improves production in real biological systems
+D. The model contains a mathematical error
 
-Correct Answer: A
+Correct Answer: B
 
-Feedback: Correct. This is the central paradox of metabolic engineering. Total productivity = per-cell production x number of cells. Maximum enzyme expression may increase per-cell production capacity but simultaneously crashes cell growth through metabolic burden. The optimal expression level balances per-cell yield against population growth. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. This is the central paradox of metabolic engineering. Total productivity = per-cell production x number of cells. Maximum enzyme expression may increase per-cell production capacity but simultaneously crashes cell growth through metabolic burden. The optimal expression level balances per-cell yield against population growth. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -975,15 +1004,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A model simulation reveals that a pathway bottleneck at the third enzymatic step limits overall Pathway Flux to 30% of theoretical maximum, even though all other enzymes operate at near-maximum capacity. Which optimization strategy is MOST effective?
 
-A. Increase expression of ALL enzymes to compensate for the bottleneck
-B. Increase expression of only the bottleneck enzyme (step 3) while maintaining other enzyme levels, to relieve the specific rate-limiting step without adding unnecessary metabolic burden
-C. Remove the bottleneck enzyme entirely so flux bypasses it
-D. Decrease expression of the bottleneck enzyme to reduce competition
+A. Remove the bottleneck enzyme entirely so flux bypasses it
+B. Increase expression of ALL enzymes to compensate for the bottleneck
+C. Decrease expression of the bottleneck enzyme to reduce competition
+D. Increase expression of only the bottleneck enzyme (step 3) while maintaining other enzyme levels, to relieve the specific rate-limiting step without adding unnecessary metabolic burden
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. In a metabolic pathway, overall flux is limited by the slowest step (the bottleneck). Increasing non-bottleneck enzymes wastes resources without improving flux. Targeted overexpression of only the bottleneck enzyme relieves the rate-limiting step with minimal additional metabolic burden. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. In a metabolic pathway, overall flux is limited by the slowest step (the bottleneck). Increasing non-bottleneck enzymes wastes resources without improving flux. Targeted overexpression of only the bottleneck enzyme relieves the rate-limiting step with minimal additional metabolic burden. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -994,15 +1022,14 @@ A student runs a simulation of the model. The model shows that when Substrate Co
 
 A student observes that Byproduct Accumulation of acetate above 8 g/L inhibits further Cell Growth Rate in their model. Which intervention would MOST effectively address this problem?
 
-A. Increase Substrate Concentration to overwhelm the acetate production
-B. Engineer the organism to delete or downregulate the acetate-producing pathway while simultaneously using continuous fermentation with real-time acetate removal
-C. Accept acetate accumulation as an unavoidable consequence
-D. Increase bioreactor temperature to evaporate the acetate
+A. Accept acetate accumulation as an unavoidable consequence
+B. Increase bioreactor temperature to evaporate the acetate
+C. Increase Substrate Concentration to overwhelm the acetate production
+D. Engineer the organism to delete or downregulate the acetate-producing pathway while simultaneously using continuous fermentation with real-time acetate removal
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. A two-pronged approach is most effective: genetic engineering eliminates or reduces the metabolic branch that produces acetate (redirecting carbon toward the desired product), while process engineering (continuous fermentation with in-line removal) prevents any residual acetate from reaching inhibitory concentrations. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. A two-pronged approach is most effective: genetic engineering eliminates or reduces the metabolic branch that produces acetate (redirecting carbon toward the desired product), while process engineering (continuous fermentation with in-line removal) prevents any residual acetate from reaching inhibitory concentrations. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 4
@@ -1013,15 +1040,14 @@ Scientists are studying data related to this system. They collected observations
 
 An economic analysis within the model shows that achieving 85% of theoretical maximum Product Yield at titers above 50 g/L is required for commercial viability. Current laboratory strains achieve 45% yield at 15 g/L. Which assessment MOST accurately characterizes the engineering challenge?
 
-A. The gap is too large to ever close with current technology
-B. The gap requires simultaneous optimization of pathway flux, cofactor balance, byproduct elimination, metabolic burden management, and fermentation conditions, representing a multi-dimensional engineering challenge that must be solved as an integrated system
+A. The gap requires simultaneous optimization of pathway flux, cofactor balance, byproduct elimination, metabolic burden management, and fermentation conditions, representing a multi-dimensional engineering challenge that must be solved as an integrated system
+B. The economic targets are arbitrary and can be changed to match current performance
 C. Simply running the fermentation longer will achieve the required titer
-D. The economic targets are arbitrary and can be changed to match current performance
+D. The gap is too large to ever close with current technology
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The lab-to-commercial gap cannot be closed by optimizing any single variable. It requires integrated systems engineering: improving yield (pathway optimization), increasing titer (toxicity tolerance, continuous removal), reducing burden (balanced expression), and maintaining cofactor balance, all simultaneously within a viable cell. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The lab-to-commercial gap cannot be closed by optimizing any single variable. It requires integrated systems engineering: improving yield (pathway optimization), increasing titer (toxicity tolerance, continuous removal), reducing burden (balanced expression), and maintaining cofactor balance, all simultaneously within a viable cell. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -1032,24 +1058,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 A student's model demonstrates that reducing Enzyme Activity from maximum to 60% of maximum INCREASES total Fermentation Efficiency by 25%. The student claims this proves that 'less is more' in metabolic engineering. Which refinement makes this claim MORE scientifically precise?
 
-A. The claim is wrong because more enzyme activity should always be better
-B. The optimal enzyme expression level is the one that maximizes the product of per-cell yield and cell growth rate, which occurs at an intermediate expression level where metabolic burden does not significantly impair cell viability
-C. The improvement is due to random variation in the model
+A. The improvement is due to random variation in the model
+B. The claim is wrong because more enzyme activity should always be better
+C. The optimal enzyme expression level is the one that maximizes the product of per-cell yield and cell growth rate, which occurs at an intermediate expression level where metabolic burden does not significantly impair cell viability
 D. Reducing enzyme activity reduces product quality, making the comparison invalid
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Total productivity = (per-cell production rate) x (total cell number). Maximum enzyme expression maximizes the first term but minimizes the second through metabolic burden. The optimal expression level is where the product of both terms is maximized, which is always an intermediate value when burden is significant. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Total productivity = (per-cell production rate) x (total cell number). Maximum enzyme expression maximizes the first term but minimizes the second through metabolic burden. The optimal expression level is where the product of both terms is maximized, which is always an intermediate value when burden is significant. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.5, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.5, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.5, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.5, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.5, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.5, CCC4)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.5, CCC4)
+Question 3: D (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.5, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.5, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.5, CCC4)
 
 
 ## Resources

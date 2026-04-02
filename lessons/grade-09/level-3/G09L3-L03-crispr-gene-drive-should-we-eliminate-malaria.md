@@ -942,15 +942,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A student's gene drive model shows that at 95% Gene Drive Efficiency, Wild-Type Gene Frequency drops to near zero within 12 generations. When Gene Drive Efficiency is reduced to 85%, Wild-Type Gene Frequency stabilizes at approximately 40% even after 50 generations. Which factor BEST explains this difference?
 
-A. At 85% efficiency, resistance mutations accumulate faster than the drive can spread, creating an evolutionary equilibrium between drive-carrying and resistant wild-type mosquitoes
-B. 85% is below the minimum threshold for gene drives to function at all
-C. The model contains a mathematical error at lower efficiency values
-D. Wild-type mosquitoes reproduce faster than drive-carrying mosquitoes at any efficiency level
+A. 85% is below the minimum threshold for gene drives to function at all
+B. The model contains a mathematical error at lower efficiency values
+C. Wild-type mosquitoes reproduce faster than drive-carrying mosquitoes at any efficiency level
+D. At 85% efficiency, resistance mutations accumulate faster than the drive can spread, creating an evolutionary equilibrium between drive-carrying and resistant wild-type mosquitoes
 
-Correct Answer: A
+Correct Answer: D
 
-Feedback: Correct. At lower drive efficiency, there is more time per generation for resistance mutations to arise and be selected for. The population reaches an equilibrium where the rate of drive spread is balanced by the rate of resistance evolution, preventing complete population suppression. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. At lower drive efficiency, there is more time per generation for resistance mutations to arise and be selected for. The population reaches an equilibrium where the rate of drive spread is balanced by the rate of resistance evolution, preventing complete population suppression. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -961,15 +960,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A simulation of global gene drive release shows that Ecosystem Disruption Risk increases nonlinearly as Mosquito Population approaches zero. Which ecological principle BEST explains this nonlinear relationship?
 
-A. Ecosystems respond linearly to species removal until a critical threshold is crossed
-B. Redundant ecological roles mask the impact of mosquito decline until the population drops below the level where other species can compensate, triggering cascading food web collapse
-C. Ecosystems are unaffected by the removal of any single species
+A. Ecosystems are unaffected by the removal of any single species
+B. Ecosystems respond linearly to species removal until a critical threshold is crossed
+C. Redundant ecological roles mask the impact of mosquito decline until the population drops below the level where other species can compensate, triggering cascading food web collapse
 D. Mosquito population decline automatically increases all other insect populations
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Ecosystems exhibit functional redundancy, where other species can partially fill ecological roles. But below a critical threshold, predator species that depend on mosquitoes cannot switch to alternative prey fast enough, triggering cascading population declines through the food web. This is a nonlinear tipping point effect. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. Ecosystems exhibit functional redundancy, where other species can partially fill ecological roles. But below a critical threshold, predator species that depend on mosquitoes cannot switch to alternative prey fast enough, triggering cascading population declines through the food web. This is a nonlinear tipping point effect. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 3
@@ -988,7 +986,6 @@ D. Self-limiting drives eliminate the ecological risks entirely
 Correct Answer: A
 
 Feedback: Correct. A self-limiting drive trades long-term persistence for containability. It reduces the risk of irreversible global ecosystem disruption but may not sustain itself long enough to achieve the goal of malaria elimination. This is a fundamental trade-off between safety and efficacy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 4
@@ -999,15 +996,14 @@ Scientists are studying data related to this system. They collected observations
 
 In a gene drive governance debate, one argument is that communities most affected by malaria should have decision-making authority over gene drive deployment, even if the drive will cross national borders. Which ethical principle does this argument MOST DIRECTLY invoke?
 
-A. Economic efficiency, because affected communities bear the treatment costs
+A. National sovereignty, because each country controls its own borders
 B. Environmental justice and self-determination, because the communities bearing the greatest disease burden should have agency over interventions in their environment
 C. Scientific authority, because local scientists are more qualified than international ones
-D. National sovereignty, because each country controls its own borders
+D. Economic efficiency, because affected communities bear the treatment costs
 
 Correct Answer: B
 
-Feedback: Correct. This invokes the principle that communities most impacted by both the disease and the intervention should have meaningful input into the decision. Environmental justice recognizes that those who bear the risks and consequences of an action should have proportional voice in deciding whether to proceed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
-
+Feedback: Correct. This invokes the principle that communities most impacted by both the disease and the intervention should have meaningful input into the decision. Environmental justice recognizes that those who bear the risks and consequences of an action should have proportional voice in deciding whether to proceed. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 ---
 
 ### Question 5
@@ -1019,23 +1015,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 A coupled gene drive model shows that reducing Mosquito Population by 90% decreases Human Malaria Cases by only 60%. Which systems-level explanation BEST accounts for this result?
 
 A. The remaining 10% of mosquitoes are more efficient at transmitting malaria because they face less competition for blood meals
-B. Malaria transmission depends on contact frequency, bite rates, and parasite development time, not just mosquito numbers, and the remaining population may increase per-mosquito transmission efficiency
-C. The model does not accurately represent malaria biology
-D. Humans develop resistance to malaria when mosquito populations decrease
+B. Humans develop resistance to malaria when mosquito populations decrease
+C. Malaria transmission depends on contact frequency, bite rates, and parasite development time, not just mosquito numbers, and the remaining population may increase per-mosquito transmission efficiency
+D. The model does not accurately represent malaria biology
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Malaria transmission is a complex function of mosquito density, biting frequency, parasite development time, and human immune status. Reducing mosquito numbers shifts other parameters. Surviving mosquitoes may bite more frequently with less competition, and reduced exposure may decrease population-level immunity, partially offsetting the benefit of fewer vectors. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Malaria transmission is a complex function of mosquito density, biting frequency, parasite development time, and human immune status. Reducing mosquito numbers shifts other parameters. Surviving mosquitoes may bite more frequently with less competition, and reduced exposure may decrease population-level immunity, partially offsetting the benefit of fewer vectors. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.2, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.2, CCC4)
 Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.2, CCC2)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.2, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.2, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.2, CCC4)
 
 
 ## Resources

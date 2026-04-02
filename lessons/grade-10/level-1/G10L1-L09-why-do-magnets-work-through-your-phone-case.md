@@ -333,6 +333,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Magnetic Field Strength → Force of Attraction relationship as
+unconditional. However, this relationship is scientifically
+contingent on Distance from Magnet being inactive. Without this condition,
+the simulation produces inaccurate results: Magnetic Field Strength drives Force of Attraction
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Magnetic Field Strength → Force of Attraction
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Distance from Magnet is OFF
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Distance from Magnet inactive and observe
+     how Magnetic Field Strength's effect on Force of Attraction is now gated
+   • Toggle Distance from Magnet ON/OFF while Magnetic Field Strength remains constant
+   • Verify that Force of Attraction only responds to Magnetic Field Strength when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Distance from Magnet → Force of Attraction
+   • Set condition: IF Magnetic Field Strength is ON
+   • This ensures Distance from Magnet's effect on Force of Attraction
+     is contingent on Magnetic Field Strength being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -904,15 +940,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model shows that a 3 mm plastic phone case reduces magnetic force by only 15-25%, while a 3 mm iron plate reduces it dramatically. Which model principle explains this difference?
 
-A. Plastic is thinner than iron at the molecular level.
-B. The force reduction through plastic is due only to the additional 3 mm of distance, while iron actively interacts with and redirects the field, shielding the target.
-C. Iron is heavier than plastic, so it blocks more of the magnetic field through gravity.
-D. The model shows that all materials reduce magnetic force equally at the same thickness.
+A. The force reduction through plastic is due only to the additional 3 mm of distance, while iron actively interacts with and redirects the field, shielding the target.
+B. The model shows that all materials reduce magnetic force equally at the same thickness.
+C. Plastic is thinner than iron at the molecular level.
+D. Iron is heavier than plastic, so it blocks more of the magnetic field through gravity.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model distinguishes between 'transparent' materials (plastic adds only distance) and 'opaque' materials (iron's ferromagnetic domains interact with and redirect the field). The mechanism of force reduction is fundamentally different. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model distinguishes between 'transparent' materials (plastic adds only distance) and 'opaque' materials (iron's ferromagnetic domains interact with and redirect the field). The mechanism of force reduction is fundamentally different. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -924,14 +959,13 @@ In the computational model for this lesson, a student draws arrows between compo
 The Distance Falloff scenario shows that force drops from 5 N at 1 mm to 0.005 N at 10 mm. Which statement best interprets this model result?
 
 A. The magnet is defective because it loses its magnetism quickly.
-B. The inverse cube relationship means a 10x increase in distance produces approximately a 1,000x decrease in force, creating a sharp apparent boundary between 'magnetic' and 'non-magnetic' zones.
-C. Air resistance reduces the magnetic force at greater distances.
+B. Air resistance reduces the magnetic force at greater distances.
+C. The inverse cube relationship means a 10x increase in distance produces approximately a 1,000x decrease in force, creating a sharp apparent boundary between 'magnetic' and 'non-magnetic' zones.
 D. The model is unrealistic because real magnets maintain constant force.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The inverse cube law (F proportional to 1/r^3) produces the dramatic result: 10^3 = 1,000-fold decrease. This explains the common perception that magnets have a sharp 'range' when the falloff is actually continuous but extremely steep. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The inverse cube law (F proportional to 1/r^3) produces the dramatic result: 10^3 = 1,000-fold decrease. This explains the common perception that magnets have a sharp 'range' when the falloff is actually continuous but extremely steep. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -942,15 +976,14 @@ A student runs a simulation of the model. The model shows that when Magnetic Fie
 
 The model includes an Energy Stored in Field component. A student asks whether this energy is 'real' or just mathematical. Which model evidence best demonstrates that field energy is physically real?
 
-A. The field lines are visible when iron filings are sprinkled around a magnet.
+A. The magnet maintains its field for a very long time without external energy.
 B. When a paperclip accelerates toward a magnet, the kinetic energy it gains exactly equals the decrease in field energy, demonstrating energy conservation.
-C. The magnet maintains its field for a very long time without external energy.
-D. The field equation (B^2/2mu_0) produces a number with energy units.
+C. The field equation (B^2/2mu_0) produces a number with energy units.
+D. The field lines are visible when iron filings are sprinkled around a magnet.
 
 Correct Answer: B
 
-Feedback: Correct. Energy conservation provides the strongest evidence: the paperclip's kinetic energy gain exactly matches the field's energy decrease. This measurable, quantitative energy exchange proves the field energy is physically real, not just mathematical. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Energy conservation provides the strongest evidence: the paperclip's kinetic energy gain exactly matches the field's energy decrease. This measurable, quantitative energy exchange proves the field energy is physically real, not just mathematical. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -969,7 +1002,6 @@ D. This information is irrelevant to mount design.
 Correct Answer: B
 
 Feedback: Correct. The model reveals that shear and pull forces differ significantly for the same magnet. Engineering the removal direction (sliding rather than pulling) allows strong holding force while maintaining easy detachment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 5
@@ -981,23 +1013,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 Based on the model, a student claims that magnets will eventually 'run out' of energy because they keep attracting things. Which model concept directly refutes this claim?
 
 A. The model shows that magnets slowly weaken with each use.
-B. The magnetic field is a property of the material's electron spin structure, not a consumable energy source. After each attraction event, the system can be reset by separating the objects, which restores the field energy.
+B. The model does not address whether magnets run out of energy.
 C. Magnets absorb energy from sunlight to recharge their fields.
-D. The model does not address whether magnets run out of energy.
+D. The magnetic field is a property of the material's electron spin structure, not a consumable energy source. After each attraction event, the system can be reset by separating the objects, which restores the field energy.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that magnetic fields arise from the quantum mechanical spin of electrons, an intrinsic material property. When objects are separated, energy is put back into the field. The field is a property, not a fuel. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model shows that magnetic fields arise from the quantum mechanical spin of electrons, an intrinsic material property. When objects are separated, energy is put back into the field. The field is a property, not a fuel. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.3, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.3, CCC4)
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.3, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.3, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.3, CCC5)
 Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.3, CCC2)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.3, CCC2)
 
 
 ## Resources

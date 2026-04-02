@@ -909,7 +909,6 @@ D. Medium gene activity means the person is allergic to some dairy products but 
 Correct Answer: B
 
 Feedback: Correct. The model reveals a threshold effect: limited lactase enzyme can successfully break down small amounts of lactose before it reaches the colon. But when lactose intake exceeds the enzyme's processing capacity, the excess passes to the large intestine and causes symptoms. This explains why many intolerant people can eat aged cheese or yogurt but not drink a full glass of milk. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
 ---
 
 ### Question 2
@@ -920,15 +919,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model traces the causal chain: Lactase Gene Activity → Lactase Enzyme Production → Lactose Breakdown → Gut Bacteria Response. If two siblings eat identical ice cream sundaes but only one gets sick, which part of the chain most likely differs between them?
 
-A. They have different gut bacteria species, which is the primary variable
-B. Their Lactase Gene Activity levels differ due to inherited genetic variation in LCT gene regulation, causing different amounts of enzyme to be produced
-C. One sibling has a stronger stomach that destroys lactose before it reaches the intestine
-D. The ice cream affected them differently because of their blood types
+A. The ice cream affected them differently because of their blood types
+B. One sibling has a stronger stomach that destroys lactose before it reaches the intestine
+C. They have different gut bacteria species, which is the primary variable
+D. Their Lactase Gene Activity levels differ due to inherited genetic variation in LCT gene regulation, causing different amounts of enzyme to be produced
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model identifies Lactase Gene Activity as the primary driver of the entire causal chain. Siblings can inherit different regulatory variants of the LCT gene from their parents, resulting in different levels of lactase enzyme production and therefore different digestive outcomes from the same dairy intake. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model identifies Lactase Gene Activity as the primary driver of the entire causal chain. Siblings can inherit different regulatory variants of the LCT gene from their parents, resulting in different levels of lactase enzyme production and therefore different digestive outcomes from the same dairy intake. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -939,15 +937,14 @@ A student runs a simulation of the model. The model shows that when Lactase Gene
 
 About 90% of Northern Europeans are lactose tolerant while 90% of East Asian populations are intolerant. A student's model of gene expression and natural selection best explains this pattern through which mechanism?
 
-A. Northern Europeans evolved a completely different digestive system from East Asians
-B. A mutation that kept the LCT gene active into adulthood provided a strong survival advantage in dairy-farming populations, spreading rapidly through natural selection over approximately 7,500 years
-C. East Asian populations lost the ability to digest milk due to lack of exercise
-D. Northern Europeans drink more milk during childhood, which permanently activates the gene
+A. A mutation that kept the LCT gene active into adulthood provided a strong survival advantage in dairy-farming populations, spreading rapidly through natural selection over approximately 7,500 years
+B. East Asian populations lost the ability to digest milk due to lack of exercise
+C. Northern Europeans drink more milk during childhood, which permanently activates the gene
+D. Northern Europeans evolved a completely different digestive system from East Asians
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. This is gene-culture co-evolution: the cultural practice of dairy farming created strong selective pressure favoring a mutation that maintains lactase production into adulthood. Populations without dairy farming traditions had no selective advantage for this mutation. The geographic distribution of lactose tolerance maps almost perfectly onto the history of dairy cattle domestication. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Correct. This is gene-culture co-evolution: the cultural practice of dairy farming created strong selective pressure favoring a mutation that maintains lactase production into adulthood. Populations without dairy farming traditions had no selective advantage for this mutation. The geographic distribution of lactose tolerance maps almost perfectly onto the history of dairy cattle domestication. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 ---
 
 ### Question 4
@@ -959,14 +956,13 @@ Scientists are studying data related to this system. They collected observations
 A food scientist uses the model to design a lactose-free milk product. They add microbial lactase enzyme to milk during processing. Based on the model, why does this approach work?
 
 A. The added enzyme destroys the milk protein that causes allergic reactions
-B. The added enzyme changes the person's gene expression permanently
+B. The added enzyme kills the gut bacteria that cause symptoms
 C. The added enzyme performs the same lactose-to-glucose/galactose breakdown reaction externally that the body's own lactase would perform in the small intestine, eliminating the substrate before gut bacteria encounter it
-D. The added enzyme kills the gut bacteria that cause symptoms
+D. The added enzyme changes the person's gene expression permanently
 
 Correct Answer: C
 
-Feedback: Correct. The model shows that symptoms occur when undigested lactose reaches gut bacteria. Adding lactase to milk during processing breaks down lactose before the person ever drinks it, effectively performing the chemical reaction outside the body. The result is milk that contains glucose and galactose instead of lactose, which the body absorbs normally without any enzyme requirement. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that symptoms occur when undigested lactose reaches gut bacteria. Adding lactase to milk during processing breaks down lactose before the person ever drinks it, effectively performing the chemical reaction outside the body. The result is milk that contains glucose and galactose instead of lactose, which the body absorbs normally without any enzyme requirement. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -978,23 +974,22 @@ A team wants to use the model to solve a real-world problem related to this syst
 A student reflects on their model and states: 'This is one of the clearest examples of how a single gene directly controls a physical trait through a protein intermediary.' Which reasoning best supports this claim?
 
 A. Many genes contribute to lactose digestion, so a single-gene model is oversimplified
-B. The causal chain from DNA sequence (LCT gene) → mRNA → protein (lactase enzyme) → chemical reaction (lactose hydrolysis) → observable phenotype (digestion vs. symptoms) traces the central dogma of molecular biology through a single, verifiable example
-C. Gene expression does not actually control protein production
-D. The trait of lactose tolerance is controlled by environmental factors, not genetics
+B. The trait of lactose tolerance is controlled by environmental factors, not genetics
+C. The causal chain from DNA sequence (LCT gene) → mRNA → protein (lactase enzyme) → chemical reaction (lactose hydrolysis) → observable phenotype (digestion vs. symptoms) traces the central dogma of molecular biology through a single, verifiable example
+D. Gene expression does not actually control protein production
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Lactose tolerance/intolerance is an unusually clear example of the central dogma pathway from gene to phenotype. A single gene (LCT) is transcribed to mRNA, translated to a specific protein (lactase enzyme), which catalyzes a specific reaction (lactose hydrolysis), producing an observable physical outcome (comfortable digestion vs. gastrointestinal distress). Every link in the chain is well-characterized. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Lactose tolerance/intolerance is an unusually clear example of the central dogma pathway from gene to phenotype. A single gene (LCT) is transcribed to mRNA, translated to a specific protein (lactase enzyme), which catalyzes a specific reaction (lactose hydrolysis), producing an observable physical outcome (comfortable digestion vs. gastrointestinal distress). Every link in the chain is well-characterized. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Answer Key
 
 Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC2)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC1)
+Question 2: D (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC1)
 Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
 
 ## Resources

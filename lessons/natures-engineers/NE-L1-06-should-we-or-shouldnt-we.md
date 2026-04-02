@@ -163,113 +163,118 @@ Environmental Ethicists and Science Policy Advisors help governments and organiz
 
 These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ETS1-1, HS-ETS1-3.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ETS1.A.1 (Analyze a global challenge with criteria and constraints) + CCC4 (Describe a system in terms of its components)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Problem Severity, Solution Risk, Available Evidence, Intervention Justified. Some components are external (Problem Severity, Solution Risk, Available Evidence) and some are internal (Intervention Justified). The student needs to understand what each component represents and how they are organized.
+A team of conservation scientists is deciding whether to introduce robotic pollinators into a forest where the natural bee population has crashed. They build a model with three inputs: problem severity (how badly the ecosystem needs pollination), solution risk (the chance the robots could harm native insects), and available evidence (how much research supports the technology). The model produces one output: whether intervention is justified.
 
-In the model, what THREE factors determine whether an environmental intervention is justified?
+Which factor in this model would make scientists LESS likely to justify the intervention?
 
-A. Cost, speed, and popularity
-B. Problem severity, solution risk, and available evidence
-C. Location, season, and weather
-D. Number of scientists, amount of funding, and public opinion
+A. A combination of high severity and strong evidence
+B. Higher solution risk
+C. Stronger available evidence
+D. Higher problem severity
 
 Correct Answer: B
 
-Feedback: Correct! The model showed that problem severity, solution risk, and available evidence are the three key inputs that determine whether intervention makes sense. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that solution risk has a negative relationship with intervention justification. Higher risk means the solution could cause harm, making it harder to justify. The other factors (severity and evidence) both increase justification when they are higher. If you chose D, higher problem severity makes intervention MORE justified, not less. A severe problem demands more urgent action. If you chose C, stronger evidence supports the solution, making intervention MORE justified. If you chose A, high severity combined with strong evidence creates the strongest case FOR intervention.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.B.1 (Evaluate competing solutions using tradeoffs) + CCC2 (Use cause and effect to explain events)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Problem Severity increases, Intervention Justified increases; when Solution Risk increases, Intervention Justified decreases. The student is trying to understand why these relationships are positive or negative.
+A student uses the ethical decision model to test a scenario. The problem is moderately severe (an invasive species is slowly spreading). The proposed solution has HIGH risk (the treatment chemical might also kill native species). The scientific evidence is WEAK (only two small studies support the treatment). The model output shows: intervention NOT justified.
 
-What did the model show when problem severity was high, solution risk was high, and evidence was moderate?
+A classmate changes just ONE factor: she increases the available evidence from weak to strong (many large studies now support it). The model now shows: intervention is a HARD CALL.
 
-A. The answer was clearly 'yes, intervene'
-B. The answer was clearly 'no, do not intervene'
-C. It was a hard call because the factors conflicted with each other
-D. The model could not produce any result
+What does this change reveal about how the model works?
+
+A. The model is broken because strong evidence should always make intervention justified.
+B. Evidence is the only factor that matters. Risk and severity are irrelevant.
+C. Increasing one favorable factor (evidence) shifted the balance, but the high risk still prevents a clear "yes" because all three factors interact.
+D. Changing evidence had no real effect because the result is still not a clear "yes."
 
 Correct Answer: C
 
-Feedback: Yes! This was a 'hard call' scenario. The severe problem pushes toward action, but the high risk and only moderate evidence create genuine uncertainty. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: The model shows that all three factors interact. Strengthening evidence moved the result from "not justified" to "hard call," showing evidence matters. But the high risk prevents a full "yes" because risk still pulls against justification. The three factors balance against each other. If you chose B, the model clearly shows all three factors affect the output. If evidence were the only factor, the result would be a clear "yes" with strong evidence. If you chose A, the model correctly weighs all factors together. Strong evidence helps, but it cannot override high risk when severity is only moderate. If you chose D, the change had a real effect. It moved the output from "not justified" to "hard call," which is a meaningful shift toward justification.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict events) + DCI ETS1.A.1 (Specify constraints for solutions) + CCC4 (Describe system components and interactions)
 
-A student runs a simulation of the model. The model shows that when Problem Severity increases, Intervention Justified increases and when Solution Risk increases, Intervention Justified decreases and when Available Evidence increases, Intervention Justified increases. The student changes one variable to see how the whole system responds.
+Scientists test four different scenarios in the ethical decision model and record the results:
 
-According to the model, what is the main limitation of using computational models for ethical decisions?
+Scenario 1: High severity, low risk, strong evidence. Result: Clearly justified.
+Scenario 2: Low severity, high risk, weak evidence. Result: Clearly NOT justified.
+Scenario 3: High severity, high risk, moderate evidence. Result: Hard call.
+Scenario 4: Moderate severity, low risk, strong evidence. Result: Justified.
 
-A. Models are too slow to be useful
-B. Models can show all the factors clearly but cannot tell us what is morally right
-C. Models always give wrong answers about ethics
-D. Models can only work with environmental problems
+Based on these results, which pattern does the model reveal about ethical decisions?
 
-Correct Answer: B
+A. The model produces random results that cannot be predicted.
+B. Problem severity is the only factor that determines the outcome.
+C. Decisions are easy when all factors align in the same direction, and hard when factors pull in opposite directions.
+D. Ethical decisions are always clearly justified or clearly not justified, with no gray area.
 
-Feedback: Correct! Models are powerful tools for seeing all the factors clearly, but they cannot determine what is morally right. That judgment requires human reasoning and ethical values. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+Correct Answer: C
 
+Feedback: Scenarios 1 and 2 show clear outcomes because all factors align: in Scenario 1, everything favors intervention, and in Scenario 2, everything opposes it. Scenario 3 is a "hard call" because severity pushes for action while risk pushes against it. The pattern is clear: aligned factors produce clear decisions, and conflicting factors produce difficult ones. If you chose D, Scenario 3 shows a "hard call," which is clearly a gray area between yes and no. If you chose B, Scenario 4 shows moderate severity still produces a "justified" result when risk is low and evidence is strong. All three factors matter. If you chose A, the results follow a predictable pattern based on how the three inputs interact.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Evaluate competing solutions to real-world problems) + DCI ETS1.B.1 (Use criteria and constraints to evaluate solutions) + CCC7 (Describe stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A real conservation dilemma: An endangered species of frog is being wiped out by a fungal disease. Scientists propose introducing a genetically modified bacterium that kills the fungus. Early trials show the bacterium works, but there is a 15% chance it could also harm other soil organisms. Without treatment, the frog will likely go extinct within five years.
 
-What did the model reveal about when ethical decisions are easiest vs. hardest?
+Using the ethical decision model, a student classifies this scenario as: high severity, moderate risk, moderate evidence. The model output is: HARD CALL.
 
-A. Ethical decisions are always equally difficult
-B. Decisions are easy when all factors align (severe problem, safe fix, strong evidence) and hard when factors conflict
-C. Decisions are easy when you have a lot of money
-D. Decisions are hard only when you do not have a computer model
+Which reasoning best explains why this is a hard call rather than a clear answer?
 
-Correct Answer: B
+A. The severity is high (extinction is irreversible), which pushes toward action, but the moderate risk and moderate evidence create genuine uncertainty about whether the cure might cause new problems.
+B. The frog is not important enough to justify any risk at all.
+C. The model always produces "hard call" regardless of the inputs.
+D. Hard calls only happen when there is no scientific evidence at all.
 
-Feedback: That is right! Ethical decisions are straightforward when all factors point the same direction, but they become genuinely difficult when factors pull in opposing directions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+Correct Answer: A
 
+Feedback: This is a hard call because the factors conflict. The high severity (potential extinction) creates urgency to act. But the moderate risk (15% chance of harming soil organisms) and moderate evidence (early trials only) create genuine uncertainty. The model cannot give a clear answer because the factors pull in different directions. If you chose B, frogs play important roles in ecosystems, and the model accounts for species value through problem severity. If you chose D, the scenario has moderate evidence, not zero evidence. Hard calls happen when factors conflict, not only when evidence is absent. If you chose C, the model produced clear results in other scenarios (Scenarios 1 and 2 above). It only produces "hard call" when factors conflict.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+CAST Alignment: SEP 7.1.1 (Evaluate solutions using evidence) + DCI ETS1.B.1 (Account for tradeoffs and constraints) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Problem Severity, Solution Risk, Available Evidence), but they can take action on internal components (Intervention Justified). They need to decide which action would be most effective based on what the model shows.
+A city council must decide whether to use drones to remove invasive plants from a nature preserve. The model shows that with high severity, low risk, and strong evidence, the intervention is clearly justified. But a council member argues that even when the model says "justified," they should still consider whether the model captures everything important.
 
-When scientists discover a new technology that could help the environment, should they always use it right away?
+Which statement best describes the main limitation of using computational models for ethical decisions?
 
-A. Yes, if it could help, they should use it immediately
-B. No, they should first consider whether it might cause new problems
-C. It does not matter because technology always works perfectly
-D. Scientists should never use technology on the environment
+A. Models can only be used by scientists, not by community members or decision-makers.
+B. Models always give wrong answers about ethics, so they should never be consulted.
+C. Models are too slow to be useful for real decisions.
+D. Models can clearly show how factors interact and predict likely outcomes, but they cannot determine what is morally right because moral judgment requires human values and reasoning.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! Before using a new technology, scientists should carefully consider whether it might cause unintended negative consequences. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Computational models are powerful tools for seeing how factors interact and predicting outcomes. But ethics is about what SHOULD be done, not just what WILL happen. A model can show that intervention is likely to succeed, but it cannot weigh the moral value of a species, community rights, or intergenerational justice. Those require human values and reasoning. If you chose C, modern models compute results almost instantly. Speed is not the limitation. If you chose B, models are valuable for organizing information and showing tradeoffs. They are useful tools, just not complete replacements for moral reasoning. If you chose A, models can and should be used by all stakeholders. The limitation is not who uses them but what they can capture.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
-Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ETS1.A.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ETS1.B.1, CCC2)
+Question 3: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ETS1.A.1, CCC4)
+Question 4: A (Cognitive Level: Argue — SEP 7.1.1, DCI ETS1.B.1, CCC7)
+Question 5: D (Cognitive Level: Evaluate — SEP 7.1.1, DCI ETS1.B.1, CCC4)
 
+---
 
 ## Lesson Metadata
 

@@ -919,15 +919,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 The model's current materials scenario (1-2 GPa cable strength) shows the cable snapping under its own weight at approximately 100 km altitude. The carbon nanotube ideal scenario (100+ GPa) shows a viable system. What does this 50-100x gap tell us about the nature of the space elevator problem?
 
-A. The space elevator is physically impossible regardless of material advances
-B. The space elevator is a materials science problem, not a physics or engineering problem — the concept is sound, the design is feasible, and the sole blocking obstacle is manufacturing cable material with sufficient tensile strength-to-weight ratio
-C. Better engineering design can compensate for weaker materials
+A. Better engineering design can compensate for weaker materials
+B. The space elevator is physically impossible regardless of material advances
+C. The space elevator is a materials science problem, not a physics or engineering problem — the concept is sound, the design is feasible, and the sole blocking obstacle is manufacturing cable material with sufficient tensile strength-to-weight ratio
 D. The gap between scenarios is too small to be significant
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model cleanly separates physics (which works — forces balance, the concept is viable) from materials science (which is currently insufficient). When the model uses theoretical material properties, the system functions. When it uses current manufacturing capabilities, it fails catastrophically. This identifies the precise bottleneck. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model cleanly separates physics (which works — forces balance, the concept is viable) from materials science (which is currently insufficient). When the model uses theoretical material properties, the system functions. When it uses current manufacturing capabilities, it fails catastrophically. This identifies the precise bottleneck. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -938,15 +937,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 In the model, increasing Climber Mass from 5 tons to 20 tons increases Payload Capacity proportionally but requires a corresponding increase in Cable Tensile Strength. What engineering trade-off does this relationship represent?
 
-A. Heavier climbers always improve economic viability without any drawbacks
-B. Each additional ton of payload requires a stronger (and therefore heavier or thicker) cable, which itself requires more strength to support — a circular constraint where payload capacity is limited by the cable's strength-to-weight ratio margin above self-support requirements
-C. Climber Mass has no effect on cable requirements in the model
-D. Lighter climbers are always preferable because they reduce cable stress
+A. Lighter climbers are always preferable because they reduce cable stress
+B. Climber Mass has no effect on cable requirements in the model
+C. Each additional ton of payload requires a stronger (and therefore heavier or thicker) cable, which itself requires more strength to support — a circular constraint where payload capacity is limited by the cable's strength-to-weight ratio margin above self-support requirements
+D. Heavier climbers always improve economic viability without any drawbacks
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The cable must support its own weight plus climber loads. A heavier climber requires a thicker cable section where it climbs, which adds cable mass, which requires even more strength. This circular dependency means the cable material's strength-to-weight ratio determines the maximum payload, not just the maximum weight it can hold at one point. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The cable must support its own weight plus climber loads. A heavier climber requires a thicker cable section where it climbs, which adds cable mass, which requires even more strength. This circular dependency means the cable material's strength-to-weight ratio determines the maximum payload, not just the maximum weight it can hold at one point. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -957,15 +955,14 @@ A student runs a simulation of the model. The model shows that when Cable Tensil
 
 The model classifies Cable Tensile Strength, Centrifugal Counterweight, and Climber Mass as external variables. Why is Gravitational Force Gradient classified as internal despite being determined by well-known physics?
 
-A. Gravitational Force Gradient cannot be calculated accurately
+A. All force variables must be classified as internal by convention
 B. While the gravitational field is a known physical property, in the model it represents how gravitational loading is distributed along the cable — this distribution is an interaction between the cable's physical properties (length, mass distribution, taper) and the gravitational field, making it a system response rather than a design input
-C. All force variables must be classified as internal by convention
+C. Gravitational Force Gradient cannot be calculated accurately
 D. The classification is arbitrary
 
 Correct Answer: B
 
-Feedback: Correct. The gravitational force gradient describes how the cable experiences gravity along its length — this depends on the cable's mass distribution, taper profile, and material density interacting with the inverse-square law. Engineers do not set the gradient; they set the cable properties, and the gradient is the resulting load profile. It is a system response to the design choices. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The gravitational force gradient describes how the cable experiences gravity along its length — this depends on the cable's mass distribution, taper profile, and material density interacting with the inverse-square law. Engineers do not set the gradient; they set the cable properties, and the gradient is the resulting load profile. It is a system response to the design choices. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -976,15 +973,14 @@ Scientists are studying data related to this system. They collected observations
 
 The model includes Atmospheric Stress as a variable affecting only the lowest 100 km of cable, while Gravitational Force Gradient affects the entire 100,000+ km structure. A student argues that Atmospheric Stress is negligible because it affects only 0.1% of the cable length. What model evidence counters this argument?
 
-A. The student is correct — 100 km out of 100,000+ km is negligible
-B. The atmospheric section faces unique and severe threats (lightning, wind, ice, corrosion) that no other section encounters — a cable break anywhere, including in the atmosphere, is catastrophic for the entire structure regardless of how short that section is
-C. Atmospheric Stress is not included in the model
-D. The atmospheric section can be made from a different, cheaper material
+A. The atmospheric section faces unique and severe threats (lightning, wind, ice, corrosion) that no other section encounters — a cable break anywhere, including in the atmosphere, is catastrophic for the entire structure regardless of how short that section is
+B. Atmospheric Stress is not included in the model
+C. The atmospheric section can be made from a different, cheaper material
+D. The student is correct — 100 km out of 100,000+ km is negligible
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates the 'weakest link' principle: the cable is only as strong as its most vulnerable section. Lightning, wind loading, ice accumulation, and chemical corrosion in the atmospheric section can cause failure even though it represents a tiny fraction of total length. A break anywhere causes catastrophic collapse of the entire structure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates the 'weakest link' principle: the cable is only as strong as its most vulnerable section. Lightning, wind loading, ice accumulation, and chemical corrosion in the atmospheric section can cause failure even though it represents a tiny fraction of total length. A break anywhere causes catastrophic collapse of the entire structure. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -995,24 +991,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Based on all model scenarios, a student concludes that a space elevator will be built within 10 years because the physics is sound. Using model evidence across all ten variables, what is the most comprehensive evaluation of this prediction?
 
-A. The prediction is reasonable because the physics and engineering are well understood
-B. The prediction ignores the model's central finding: the materials science gap is 50-100x, no known manufacturing process can produce carbon nanotube fibers at the required strength and length, and even if materials were solved, atmospheric stress, orbital debris, energy transmission, and economic viability present additional unsolved challenges
-C. The model proves the space elevator will never be built
-D. 10 years is too conservative — it could be built in 5 years
+A. The model proves the space elevator will never be built
+B. 10 years is too conservative — it could be built in 5 years
+C. The prediction is reasonable because the physics and engineering are well understood
+D. The prediction ignores the model's central finding: the materials science gap is 50-100x, no known manufacturing process can produce carbon nanotube fibers at the required strength and length, and even if materials were solved, atmospheric stress, orbital debris, energy transmission, and economic viability present additional unsolved challenges
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that the physics is sound (the concept works) but the implementation faces multiple unsolved challenges across many variables. The materials gap alone is enormous, and it is compounded by atmospheric vulnerability, orbital debris risk, energy transmission challenges, and the need for economically competitive operations. Sound physics is necessary but far from sufficient for an engineering megaproject. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that the physics is sound (the concept works) but the implementation faces multiple unsolved challenges across many variables. The materials gap alone is enormous, and it is compounded by atmospheric vulnerability, orbital debris risk, energy transmission challenges, and the need for economically competitive operations. Sound physics is necessary but far from sufficient for an engineering megaproject. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.2, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.2, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.2, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.2, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.2, CCC2)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.2, CCC2)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.2, CCC2)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.2, CCC2)
 
 
 ## Resources

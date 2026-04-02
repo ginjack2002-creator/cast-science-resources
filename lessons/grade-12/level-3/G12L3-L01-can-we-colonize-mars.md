@@ -418,6 +418,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Solar Energy Input → Oxygen Production Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Atmospheric CO2 Availability being active. Without this condition,
+the simulation produces inaccurate results: Solar Energy Input drives Oxygen Production Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Solar Energy Input → Oxygen Production Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Atmospheric CO2 Availability is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Atmospheric CO2 Availability active and observe
+     how Solar Energy Input's effect on Oxygen Production Rate is now gated
+   • Toggle Atmospheric CO2 Availability ON/OFF while Solar Energy Input remains constant
+   • Verify that Oxygen Production Rate only responds to Solar Energy Input when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Atmospheric CO2 Availability → Oxygen Production Rate
+   • Set condition: IF Solar Energy Input is ON
+   • This ensures Atmospheric CO2 Availability's effect on Oxygen Production Rate
+     is contingent on Solar Energy Input being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -993,15 +1029,14 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 
 A computational model of a Mars colony shows that during a 90-day dust storm reducing solar energy by 90%, the Colony Viability Index drops below the survival threshold by day 45. Which modification to the model would most effectively extend the survivable duration?
 
-A. Adding a nuclear fission reactor as a secondary energy source independent of solar input
+A. Increasing the efficiency of solar panels from 20% to 25%
 B. Increasing the habitat size to store more atmospheric oxygen
-C. Reducing the number of colonists to lower oxygen demand
-D. Increasing the efficiency of solar panels from 20% to 25%
+C. Adding a nuclear fission reactor as a secondary energy source independent of solar input
+D. Reducing the number of colonists to lower oxygen demand
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Correct. The model demonstrates that energy is the master variable. A nuclear fission reactor provides energy independent of solar input, maintaining oxygen production, water recycling, and food production systems even during extended dust storms. This addresses the root cause of cascade failure rather than a single symptom. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates that energy is the master variable. A nuclear fission reactor provides energy independent of solar input, maintaining oxygen production, water recycling, and food production systems even during extended dust storms. This addresses the root cause of cascade failure rather than a single symptom. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1012,15 +1047,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 A student's model reveals that water recycling efficiency dropping from 98% to 93% causes the Colony Viability Index to decline more rapidly than a 50% reduction in food production capacity. Which systems-level explanation best accounts for this finding?
 
-A. Water has higher mass than food, so transporting replacement water from Earth costs more
+A. The model has a programming error because food production should always have a larger impact than water recycling
 B. Water recycling feeds into multiple subsystems (oxygen generation, food production, cooling, hygiene), so its inefficiency creates compounding deficits across the entire life support network
 C. Food can be rationed but water cannot, making water loss immediately lethal
-D. The model has a programming error because food production should always have a larger impact than water recycling
+D. Water has higher mass than food, so transporting replacement water from Earth costs more
 
 Correct Answer: B
 
-Feedback: Correct. Water is a nexus variable in the life support network. It is the feedstock for oxygen generation (electrolysis), the medium for hydroponic food production, essential for thermal regulation, and necessary for sanitation. A 5% drop in recycling efficiency compounds across all these interconnected systems, creating a larger net impact than reducing any single subsystem. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Water is a nexus variable in the life support network. It is the feedstock for oxygen generation (electrolysis), the medium for hydroponic food production, essential for thermal regulation, and necessary for sanitation. A 5% drop in recycling efficiency compounds across all these interconnected systems, creating a larger net impact than reducing any single subsystem. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1031,15 +1065,14 @@ A student runs a simulation of the model. The model shows that when Solar Energy
 
 The model shows that adding a 'Psychological Stress Index' component creates a new feedback loop where increasing stress reduces crew productivity, which reduces system maintenance, which degrades habitat integrity, which increases stress further. This is an example of:
 
-A. A negative feedback loop that will stabilize the system at a lower equilibrium
+A. An independent variable that does not interact with the physical life support components
 B. A positive feedback loop that amplifies the initial perturbation and could drive the system toward collapse
 C. A linear relationship where stress increases proportionally with habitat degradation
-D. An independent variable that does not interact with the physical life support components
+D. A negative feedback loop that will stabilize the system at a lower equilibrium
 
 Correct Answer: B
 
-Feedback: Correct. This is a positive (reinforcing) feedback loop: stress reduces productivity, reduced productivity degrades systems, degraded systems increase stress. Each cycle amplifies the initial perturbation rather than dampening it, potentially driving the system toward a tipping point and collapse. This is distinct from a negative (balancing) feedback loop that would stabilize the system. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. This is a positive (reinforcing) feedback loop: stress reduces productivity, reduced productivity degrades systems, degraded systems increase stress. Each cycle amplifies the initial perturbation rather than dampening it, potentially driving the system toward a tipping point and collapse. This is distinct from a negative (balancing) feedback loop that would stabilize the system. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 4
@@ -1050,15 +1083,14 @@ Scientists are studying data related to this system. They collected observations
 
 Two students build Mars colony models with identical components but different relationship structures. Student A connects Solar Energy Input directly to all five output variables. Student B creates a cascade where Solar Energy Input drives Oxygen Production, which affects Food Production, which affects Water Recycling. Which model better represents the actual system and why?
 
-A. Student A's model is better because solar energy does directly power all systems independently
-B. Student B's model is better because it captures the sequential dependencies where upstream failures propagate downstream through the life support chain
-C. Both models are equally valid because they produce the same Colony Viability Index
-D. Neither model is valid because Mars colony systems operate independently of each other
+A. Student B's model is better because it captures the sequential dependencies where upstream failures propagate downstream through the life support chain
+B. Both models are equally valid because they produce the same Colony Viability Index
+C. Neither model is valid because Mars colony systems operate independently of each other
+D. Student A's model is better because solar energy does directly power all systems independently
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. Student B's cascade model better represents the real system because life support subsystems have sequential dependencies. Oxygen production requires energy, food production requires both energy and oxygen-rich atmosphere, and water recycling requires energy and is affected by biological processes in food production. The cascade structure reveals how upstream failures propagate and amplify through the system. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. Student B's cascade model better represents the real system because life support subsystems have sequential dependencies. Oxygen production requires energy, food production requires both energy and oxygen-rich atmosphere, and water recycling requires energy and is affected by biological processes in food production. The cascade structure reveals how upstream failures propagate and amplify through the system. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1069,24 +1101,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Analysis of the model under the 'Aging Colony' scenario (10 years, no resupply) reveals that Habitat Structural Integrity degradation has a threshold effect: below 85% integrity, the decline in Colony Viability Index accelerates nonlinearly. Which concept from systems thinking best explains this threshold behavior?
 
-A. Carrying capacity, where the habitat can no longer support the population above a minimum structural requirement
-B. A tipping point where the rate of structural degradation from thermal cycling and micrometeorite impacts exceeds the colony's repair capacity, creating runaway decline
-C. Homeostasis, where the colony self-regulates to maintain a constant internal environment
-D. Equilibrium, where the colony reaches a stable but lower level of function indefinitely
+A. Equilibrium, where the colony reaches a stable but lower level of function indefinitely
+B. Homeostasis, where the colony self-regulates to maintain a constant internal environment
+C. Carrying capacity, where the habitat can no longer support the population above a minimum structural requirement
+D. A tipping point where the rate of structural degradation from thermal cycling and micrometeorite impacts exceeds the colony's repair capacity, creating runaway decline
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The threshold represents a tipping point where degradation rate exceeds repair capacity. Above 85% integrity, maintenance crews can repair damage faster than it accumulates. Below 85%, the repair backlog grows, meaning more systems fail, requiring more repair time, leaving other systems unattended. This creates runaway decline characteristic of a system that has crossed a critical threshold. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The threshold represents a tipping point where degradation rate exceeds repair capacity. Above 85% integrity, maintenance crews can repair damage faster than it accumulates. Below 85%, the repair backlog grows, meaning more systems fail, requiring more repair time, leaving other systems unattended. This creates runaway decline characteristic of a system that has crossed a critical threshold. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.4, CCC5)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.4, CCC5)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.4, CCC2)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.4, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.4, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.4, CCC4)
 
 
 ## Resources

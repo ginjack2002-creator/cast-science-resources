@@ -311,6 +311,31 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+TEACH YOUR MODEL A RULE!
+
+Look at your model. Right now, when Push Force is ON, Object Motion
+goes way up — even when it shouldn't!
+
+In the real world, Push Force only changes Object Motion when
+Friction is happening. Let's teach your model this rule!
+
+Task A: ADD THE RULE
+   • Click on the arrow from Push Force to Object Motion
+   • Click "Conditions" in the toolbar
+   • Set: IF Friction is ON
+   • Click "Save Conditions"
+
+Task B: TEST IT
+   • Run your simulation again
+   • Does it make more sense now?
+   • Try turning Friction ON and OFF — see what changes!
+
+Now your model is SMARTER! It knows the rules of the real world.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -833,106 +858,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.2 (Plan and conduct an investigation) + DCI PS2.A.1 (Forces and motion) + CCC2 (Cause and effect of forces)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Push Force, Friction, Object Motion. Some components are external (Push Force) and some are internal (Friction, Object Motion). The student needs to understand what each component represents and how they are organized.
+A student rolls a toy car on a smooth wooden floor with a medium push. The car rolls across the whole room. Then the student rolls the same car with the same medium push on thick carpet. This time, the car only rolls halfway across the room before stopping.
 
-In the forces model, when Push Force increases on a smooth surface, what happens to Object Motion?
+What BEST explains why the car traveled a shorter distance on the carpet?
 
-A. Object Motion decreases
-B. Object Motion increases because a stronger push creates a bigger unbalanced force
-C. Object Motion stays the same no matter how hard you push
-D. The object does not move at all
+A. The carpet made the car heavier, so it could not roll as far.
+B. The push was weaker on the carpet because carpet absorbs force.
+C. The car did not like rolling on carpet.
+D. The rough carpet created more friction, which slowed the car down and stopped it sooner.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct! A stronger push creates a bigger unbalanced force. The push easily overcomes friction on a smooth surface, so the object moves faster and farther. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Rough surfaces like carpet create more friction than smooth surfaces like wood. Friction is a force that opposes motion and slows objects down. More friction means the car loses speed faster and stops sooner. If you chose A, carpet does not change the car's weight. The car has the same mass on both surfaces. The difference is friction. If you chose B, the student used the same medium push both times. Carpet does not absorb the force of a push. The difference is that carpet creates more friction after the push. If you chose C, objects do not have preferences. The physical force of friction is what caused the difference.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.A.1 (Balanced and unbalanced forces) + CCC2 (Cause and effect of forces on motion)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Push Force increases, Object Motion increases; when Friction increases, Object Motion increases. The student is trying to understand why these relationships are positive or negative.
+In the forces model, Push Force has a positive arrow to Object Motion. The student also sees that Surface Friction has a negative arrow to Object Motion. The student increases Push Force on a smooth surface where friction is low.
 
-What is the difference between balanced and unbalanced forces?
+Based on the model, what would happen to Object Motion when Push Force increases on a smooth surface?
 
-A. There is no difference
-B. Balanced forces are equal and opposite so nothing changes; unbalanced forces are unequal so the object moves, speeds up, or slows down
-C. Balanced forces make things move; unbalanced forces make things stop
-D. Balanced forces are stronger than unbalanced forces
+A. Object Motion would stay the same no matter how hard you push.
+B. Object Motion would increase because the strong push easily overcomes the low friction on the smooth surface.
+C. The object would not move at all on a smooth surface.
+D. Object Motion would decrease because more push creates more friction.
 
 Correct Answer: B
 
-Feedback: Exactly! When forces are balanced (equal and opposite), nothing changes. When forces are unbalanced (one is stronger), the object starts moving, speeds up, slows down, or changes direction. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The positive relationship between Push Force and Object Motion means a harder push creates more motion. On a smooth surface, friction is low, so there is little resistance. The push easily overcomes friction and the object moves fast and far. If you chose D, a stronger push does not create more friction. Friction comes from the surface roughness, not from how hard you push. If you chose A, the model shows a positive relationship, meaning more push produces more motion. It does change. If you chose C, smooth surfaces have less friction, making it easier to move objects, not harder.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.2 (Conduct investigation with evidence) + DCI PS2.A.1 (Balanced forces) + CCC2 (Cause and effect of balanced forces)
 
-A student runs a simulation of the model. The model shows that when Push Force increases, Object Motion increases and when Friction increases, Object Motion increases. The student changes one variable to see how the whole system responds.
+A book is sitting perfectly still on a table. A student says, "There are no forces acting on the book because it is not moving." The teacher draws a diagram showing an arrow pointing down (gravity pulling the book toward the ground) and an arrow pointing up (the table pushing the book up). Both arrows are the same size.
 
-In the 'Hard Push on Rough Carpet' scenario, why did the object not travel as far as on the smooth floor?
+Why does the book stay still even though forces ARE acting on it?
 
-A. The push was weaker on the carpet
-B. The rough carpet created more friction, which opposed the push and slowed the object down sooner
-C. The carpet made the object heavier
-D. The object wanted to stop on the carpet
+A. The forces are balanced. Gravity pulls down with the same force that the table pushes up, so the forces cancel out and the book does not move.
+B. Friction is holding the book in the air above the table.
+C. There really are no forces on the book. The teacher's diagram is wrong.
+D. The book is too heavy to move, so the forces do not matter.
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: You got it! Rough carpet creates more friction than a smooth floor. Even with the same push, more friction means the object slows down faster and does not travel as far. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: When two forces are equal and opposite (balanced), they cancel each other out. Gravity pulls the book down, but the table pushes up with exactly the same force. Since the forces are balanced, the book stays still. If you chose C, forces are definitely acting on the book. Gravity is always pulling objects toward the ground, and the table pushes back up. If you chose D, weight is not the reason. Even a light feather on a table has balanced forces. The table always pushes up with a force equal to the object's weight. If you chose B, friction acts between sliding surfaces, not in holding objects up. The table's upward push (called a normal force) is what balances gravity.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Determine system components) + DCI PS2.A.1 (Force system components) + CCC4 (System components)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+The forces model includes Push Force, Surface Friction, Net Force, and Object Motion. The teacher explains that the external component is the one the student controls, and the internal components change as a result of the forces interacting.
 
-A book is sitting still on a table. Which statement correctly explains why it does not move?
+Which component is EXTERNAL in the forces model?
 
-A. There are no forces acting on the book
-B. Gravity pulls the book down and the table pushes it up with equal force, so the forces are balanced
-C. The book is too heavy to move
-D. Friction is holding the book in the air
+A. Object Motion, because the object is what moves.
+B. Surface Friction, because friction comes from the floor surface.
+C. Net Force, because it is the total of all forces combined.
+D. Push Force, because the student controls how hard they push the object.
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Right! Two forces act on the book: gravity pulls it down and the table pushes it up. These forces are equal and opposite (balanced), so the book stays perfectly still. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Push Force is external because the student decides how hard to push. Surface Friction, Net Force, and Object Motion are internal because they change based on the push and the surface conditions. If you chose A, Object Motion is the final result of the forces interacting. It is internal because it depends on push force and friction. If you chose B, Surface Friction depends on the surface type and is a property of the system, but Push Force is the input the student directly controls. If you chose C, Net Force is internal because it is calculated from Push Force minus Friction. It changes as a result of the inputs.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.1 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 3.1.2 (Plan investigation to predict outcomes) + DCI PS2.A.1 (Predict force effects) + CCC2 (Predict cause and effect of forces)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Push Force), but they can take action on internal components (Friction, Object Motion). They need to decide which action would be most effective based on what the model shows.
+A student wants to test how far a ball rolls on three different surfaces: smooth tile, short grass, and thick shag carpet. She will use the same ball and the same push each time. The model shows: Push Force (+) -> Object Motion, and Surface Friction (-) -> Object Motion. She knows that tile has the least friction, short grass has medium friction, and shag carpet has the most friction.
 
-What do you think makes a ball start moving?
+Based on the model, which prediction about the ball's distance is BEST supported?
 
-A. The ball decides to move on its own
-B. A push or a pull (a force) makes the ball move
-C. The ball moves because it is round
-D. Gravity makes all balls roll all the time
+A. The ball will roll farthest on shag carpet because carpet is soft and cushions the ball.
+B. The ball will roll farthest on grass because grass is slippery when wet.
+C. The ball will roll farthest on smooth tile, a medium distance on grass, and the shortest distance on shag carpet, because more friction means less motion.
+D. The ball will roll the same distance on all three surfaces because the push is the same.
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: That is right! A force is a push or pull. When you push a ball, you apply a force that makes it start moving. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows friction has a negative relationship with motion. More friction means less motion. Tile has the least friction so the ball goes farthest, grass has medium friction for medium distance, and carpet has the most friction so the ball stops soonest. If you chose A, shag carpet has the most friction, which slows the ball down the most. Softness does not help the ball roll farther. If you chose D, the same push is used, but different surfaces create different amounts of friction. More friction means less distance, so the ball will travel different distances. If you chose B, the scenario does not mention wet grass. Even if it were wet, shag carpet still has more friction than tile.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.1, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.1, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.1, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.1, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.1, CCC4)
+Question 1: D (Cognitive Level: Reason — SEP 3.1.2, DCI PS2.A.1, CCC2)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.A.1, CCC2)
+Question 3: A (Cognitive Level: Reason + Evidence — SEP 3.1.2, DCI PS2.A.1, CCC2)
+Question 4: D (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.A.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 3.1.2, DCI PS2.A.1, CCC2)
+
+---
 
 
 ## Resources

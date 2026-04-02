@@ -919,14 +919,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 In a student's fast fashion model, reducing Consumer Demand by 50% reduces ALL environmental outputs (textile waste, water consumption, and carbon emissions) roughly proportionally. Why does demand reduction have this comprehensive effect?
 
 A. Consumer demand is unrelated to environmental impact
-B. Consumer demand drives production rate, and since water consumption, carbon emissions, and textile waste are all outputs of the production process, reducing the input (demand) proportionally reduces all outputs simultaneously
-C. Reducing demand only affects textile waste, not water or carbon
+B. Reducing demand only affects textile waste, not water or carbon
+C. Consumer demand drives production rate, and since water consumption, carbon emissions, and textile waste are all outputs of the production process, reducing the input (demand) proportionally reduces all outputs simultaneously
 D. The model oversimplifies by linking all outputs to a single input
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals that consumer demand is the primary driver of the entire system. Production rate responds to demand, and all three environmental outputs (waste, water, carbon) are direct consequences of production. Reducing the input variable proportionally reduces all output variables because they are all products of the same production process. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that consumer demand is the primary driver of the entire system. Production rate responds to demand, and all three environmental outputs (waste, water, carbon) are direct consequences of production. Reducing the input variable proportionally reduces all output variables because they are all products of the same production process. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -945,7 +944,6 @@ D. Recycling actually increases carbon emissions
 Correct Answer: B
 
 Feedback: Correct. The model reveals that most environmental damage occurs during production (growing cotton, dyeing fabric, manufacturing, shipping), not during disposal. Recycling addresses only the waste output at the end of the lifecycle, while demand reduction prevents the production-stage impacts from occurring at all. Prevention is inherently more impactful than end-of-pipe treatment. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
 ---
 
 ### Question 3
@@ -956,15 +954,14 @@ A student runs a simulation of the model. The model shows that when Consumer Dem
 
 A clothing company claims to be 'carbon neutral' through purchasing carbon offsets. Using the model, which analysis best evaluates this claim?
 
-A. Carbon neutrality fully resolves the company's environmental impact
-B. Carbon offsets may address one of the model's outputs (carbon emissions) but ignore textile waste, water consumption, chemical pollution, and microplastic release, which the model shows are equally significant environmental impacts
+A. Carbon offsets may address one of the model's outputs (carbon emissions) but ignore textile waste, water consumption, chemical pollution, and microplastic release, which the model shows are equally significant environmental impacts
+B. The model shows that carbon is the only significant environmental output of the fashion industry
 C. Carbon offsets are better than reducing production because they don't affect profits
-D. The model shows that carbon is the only significant environmental output of the fashion industry
+D. Carbon neutrality fully resolves the company's environmental impact
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model identifies multiple environmental output pathways from production. Carbon offsets potentially address only one (carbon emissions), leaving textile waste (92 million tons/year), water consumption (79 trillion liters/year), chemical pollution, and microplastic release completely unaddressed. The carbon neutral claim creates a misleading impression of comprehensive environmental responsibility. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model identifies multiple environmental output pathways from production. Carbon offsets potentially address only one (carbon emissions), leaving textile waste (92 million tons/year), water consumption (79 trillion liters/year), chemical pollution, and microplastic release completely unaddressed. The carbon neutral claim creates a misleading impression of comprehensive environmental responsibility. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 4
@@ -976,14 +973,13 @@ Scientists are studying data related to this system. They collected observations
 A student calculates the 'cost per wearing' of two shirts: a $5 fast fashion shirt worn 5 times ($1.00/wear) versus a $50 quality shirt worn 100 times ($0.50/wear). What does this analysis reveal about the economics of sustainable fashion?
 
 A. Cheap clothing is always more economical regardless of how long it lasts
-B. When measured by cost per use rather than purchase price, higher-quality clothing can be more economical than fast fashion while generating far less environmental waste per wearing
-C. Quality and price are unrelated in the clothing industry
-D. Consumers should never consider price when making purchasing decisions
+B. Consumers should never consider price when making purchasing decisions
+C. When measured by cost per use rather than purchase price, higher-quality clothing can be more economical than fast fashion while generating far less environmental waste per wearing
+D. Quality and price are unrelated in the clothing industry
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Cost-per-wearing analysis reframes the economics of fashion. While the initial price of a quality garment is higher, dividing cost by the number of uses often reveals that durable clothing is cheaper per wearing than disposable fast fashion. Additionally, fewer garments purchased means proportionally less production-stage environmental damage per unit of wardrobe utility. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. Cost-per-wearing analysis reframes the economics of fashion. While the initial price of a quality garment is higher, dividing cost by the number of uses often reveals that durable clothing is cheaper per wearing than disposable fast fashion. Additionally, fewer garments purchased means proportionally less production-stage environmental damage per unit of wardrobe utility. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 5
@@ -994,24 +990,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 After analyzing all model scenarios, a student concludes that solving the fast fashion environmental crisis requires intervention at multiple levels. Which combination of interventions does the model evidence best support?
 
-A. Only consumer behavior change can solve this problem
-B. Only government regulation of the fashion industry can solve this problem
-C. A combination of reduced consumer demand (addresses the driver), sustainable production methods (reduces per-unit impact), and improved recycling systems (addresses disposal), with policy mechanisms to internalize environmental costs in pricing
-D. Only technological innovation in materials can solve this problem
+A. Only technological innovation in materials can solve this problem
+B. Only consumer behavior change can solve this problem
+C. Only government regulation of the fashion industry can solve this problem
+D. A combination of reduced consumer demand (addresses the driver), sustainable production methods (reduces per-unit impact), and improved recycling systems (addresses disposal), with policy mechanisms to internalize environmental costs in pricing
 
-Correct Answer: C
+Correct Answer: D
 
-Feedback: Correct. The model shows that consumer demand is the primary driver, but production methods determine the per-unit environmental cost, and disposal systems determine end-of-life impact. Effective solutions must address all three stages while policy mechanisms (taxes, regulations, extended producer responsibility) ensure that environmental costs are no longer externalized. No single intervention is sufficient. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model shows that consumer demand is the primary driver, but production methods determine the per-unit environmental cost, and disposal systems determine end-of-life impact. Effective solutions must address all three stages while policy mechanisms (taxes, regulations, extended producer responsibility) ensure that environmental costs are no longer externalized. No single intervention is sufficient. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
 Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
-Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
 
 
 ## Resources

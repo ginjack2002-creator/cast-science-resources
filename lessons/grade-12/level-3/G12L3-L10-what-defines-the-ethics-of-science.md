@@ -418,6 +418,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Research Funding Allocation → Innovation Rate relationship as
+unconditional. However, this relationship is scientifically
+contingent on Institutional Oversight Rigor being active. Without this condition,
+the simulation produces inaccurate results: Research Funding Allocation drives Innovation Rate
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Research Funding Allocation → Innovation Rate
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Institutional Oversight Rigor is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Institutional Oversight Rigor active and observe
+     how Research Funding Allocation's effect on Innovation Rate is now gated
+   • Toggle Institutional Oversight Rigor ON/OFF while Research Funding Allocation remains constant
+   • Verify that Innovation Rate only responds to Research Funding Allocation when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Benefit Distribution Equity → Societal Impact Score
+   • Set condition: IF Risk Distribution Equity is ON
+   • This ensures Benefit Distribution Equity's effect on Societal Impact Score
+     is contingent on Risk Distribution Equity being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Risk Distribution Equity → Societal Impact Score
+   • Set condition: IF Benefit Distribution Equity is ON
+   • This ensures Risk Distribution Equity's effect on Societal Impact Score
+     is contingent on Benefit Distribution Equity being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -993,14 +1035,13 @@ A student is using the ModelIt platform to study the system in this lesson. The 
 The model shows that maximizing Innovation Rate does not maximize Societal Impact Score. Instead, the highest Societal Impact Score occurs at a moderate Innovation Rate with robust oversight. What does this finding reveal about the relationship between scientific freedom and societal benefit?
 
 A. All scientific research should be stopped to maximize societal benefit
-B. Scientific freedom without ethical governance produces innovations that are inequitably distributed, generate dual-use risks, and erode public trust, creating net harm that partially offsets the gains from rapid innovation
+B. Societal Impact Score is a meaningless metric that should be removed from the model
 C. Innovation always produces net positive societal impact regardless of governance
-D. Societal Impact Score is a meaningless metric that should be removed from the model
+D. Scientific freedom without ethical governance produces innovations that are inequitably distributed, generate dual-use risks, and erode public trust, creating net harm that partially offsets the gains from rapid innovation
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model reveals that unrestricted innovation generates benefits but also produces dual-use risks (technologies that can harm), inequitable distribution (benefits concentrated among the wealthy), and trust erosion (public loses faith in science due to real or perceived irresponsibility). These negative effects partially offset innovation gains, meaning a moderate pace with ethical governance produces greater net societal benefit than unchecked speed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals that unrestricted innovation generates benefits but also produces dual-use risks (technologies that can harm), inequitable distribution (benefits concentrated among the wealthy), and trust erosion (public loses faith in science due to real or perceived irresponsibility). These negative effects partially offset innovation gains, meaning a moderate pace with ethical governance produces greater net societal benefit than unchecked speed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 2
@@ -1011,15 +1052,14 @@ In the computational model for this lesson, a student draws arrows between compo
 
 The model reveals a positive feedback loop between Publication Transparency, Public Trust in Science, and funding support. When this loop operates in reverse (eroded trust), what cascade does the model predict?
 
-A. Eroded trust has no effect on funding or research because they are independent
-B. Reduced trust leads to reduced public support for research funding, which leads to less research, which leads to fewer scientific solutions to public problems, which further erodes trust in science's value, creating a self-reinforcing downward spiral
-C. Eroded trust increases funding because politicians want to prove science is still valuable
-D. Trust can never be eroded because science is inherently trustworthy
+A. Trust can never be eroded because science is inherently trustworthy
+B. Eroded trust has no effect on funding or research because they are independent
+C. Reduced trust leads to reduced public support for research funding, which leads to less research, which leads to fewer scientific solutions to public problems, which further erodes trust in science's value, creating a self-reinforcing downward spiral
+D. Eroded trust increases funding because politicians want to prove science is still valuable
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. The model reveals a self-reinforcing trust spiral. When transparency decreases or misconduct occurs, public trust drops. Lower trust reduces political support for research funding. Less funding means fewer scientific breakthroughs and solutions. Fewer solutions mean the public perceives less value from science. This further erodes trust, continuing the cycle. Rebuilding trust once lost requires sustained transparency far beyond what was needed to maintain it. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model reveals a self-reinforcing trust spiral. When transparency decreases or misconduct occurs, public trust drops. Lower trust reduces political support for research funding. Less funding means fewer scientific breakthroughs and solutions. Fewer solutions mean the public perceives less value from science. This further erodes trust, continuing the cycle. Rebuilding trust once lost requires sustained transparency far beyond what was needed to maintain it. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Question 3
@@ -1038,7 +1078,6 @@ D. The model incorrectly penalizes high-benefit research
 Correct Answer: B
 
 Feedback: Correct. The model captures the insight that a scientific advance is not socially optimal just because total benefit is high. If benefits flow to those who need them least while risks burden those who are already disadvantaged, the advance perpetuates and amplifies inequity. Historical examples (Tuskegee experiments, environmental pollution in minority communities) demonstrate that inequitable research creates lasting social harm that reduces net societal value. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
 ---
 
 ### Question 4
@@ -1049,15 +1088,14 @@ Scientists are studying data related to this system. They collected observations
 
 In the 'Dual-Use Crisis' scenario, the model shows that restricting publication of extreme dual-use research reduces Innovation Rate by 15% but improves Societal Impact Score by 25% due to reduced misuse risk. A student argues this proves all research should be restricted. Why is this generalization incorrect?
 
-A. The student is correct; all research should be restricted
-B. The model shows that the optimal balance between restriction and openness depends on the specific dual-use potential of each research area. Low dual-use research benefits greatly from open publication, while extreme dual-use research warrants careful restriction. A blanket policy in either direction is suboptimal
-C. Restricting any research always reduces Societal Impact Score
-D. Dual-use potential does not vary between research areas
+A. The model shows that the optimal balance between restriction and openness depends on the specific dual-use potential of each research area. Low dual-use research benefits greatly from open publication, while extreme dual-use research warrants careful restriction. A blanket policy in either direction is suboptimal
+B. The student is correct; all research should be restricted
+C. Dual-use potential does not vary between research areas
+D. Restricting any research always reduces Societal Impact Score
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model reveals that the restriction-openness balance is case-dependent. For low dual-use research (most basic science), open publication maximizes societal benefit through knowledge sharing and reproducibility. For extreme dual-use research (gain-of-function pathogens, autonomous weapons AI), measured restriction protects against catastrophic misuse. Blanket restriction would stifle beneficial research, while blanket openness would enable dangerous misuse. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
-
+Feedback: Correct. The model reveals that the restriction-openness balance is case-dependent. For low dual-use research (most basic science), open publication maximizes societal benefit through knowledge sharing and reproducibility. For extreme dual-use research (gain-of-function pathogens, autonomous weapons AI), measured restriction protects against catastrophic misuse. Blanket restriction would stifle beneficial research, while blanket openness would enable dangerous misuse. If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 ---
 
 ### Question 5
@@ -1068,24 +1106,23 @@ A team wants to use the model to solve a real-world problem related to this syst
 
 Adding 'International Governance Coordination' to the model reveals that unilateral research restrictions by one country are largely ineffective. What mechanism does the model identify as the cause of this ineffectiveness?
 
-A. International laws automatically prevent any country from conducting dangerous research
-B. When one country restricts research, scientists and research programs migrate to countries with fewer restrictions, meaning the dangerous research still occurs but without the oversight and transparency that governance was designed to provide, producing worse outcomes than coordinated international regulation
-C. Unilateral restrictions are effective because each country can control its own researchers completely
-D. International coordination is unnecessary because all countries have identical ethical standards
+A. When one country restricts research, scientists and research programs migrate to countries with fewer restrictions, meaning the dangerous research still occurs but without the oversight and transparency that governance was designed to provide, producing worse outcomes than coordinated international regulation
+B. International laws automatically prevent any country from conducting dangerous research
+C. International coordination is unnecessary because all countries have identical ethical standards
+D. Unilateral restrictions are effective because each country can control its own researchers completely
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The model demonstrates regulatory arbitrage: when restrictions are unilateral, research moves to less-regulated jurisdictions. The dangerous research still occurs, but now without the oversight, safety protocols, and transparency that the restricting country would have provided. This produces worse outcomes than either universal regulation or universal openness, because it combines the innovation cost of restriction (in the restricting country) with the safety cost of unrestricted research (in the receiving country). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Correct. The model demonstrates regulatory arbitrage: when restrictions are unilateral, research moves to less-regulated jurisdictions. The dangerous research still occurs, but now without the oversight, safety protocols, and transparency that the restricting country would have provided. This produces worse outcomes than either universal regulation or universal openness, because it combines the innovation cost of restriction (in the restricting country) with the safety cost of unrestricted research (in the receiving country). If you chose B, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ETS1.3, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ETS1.3, CCC4)
+Question 1: D (Cognitive Level: Identify — SEP 2.1.1, DCI ETS1.3, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ETS1.3, CCC4)
 Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ETS1.3, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ETS1.3, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ETS1.3, CCC2)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ETS1.3, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ETS1.3, CCC2)
 
 
 ## Resources

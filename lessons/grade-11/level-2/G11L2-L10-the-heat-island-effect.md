@@ -364,6 +364,42 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Surface Heat Absorption Rate → Ambient Air Temperature relationship as
+unconditional. However, this relationship is scientifically
+contingent on Waste Heat Generation being active. Without this condition,
+the simulation produces inaccurate results: Surface Heat Absorption Rate drives Ambient Air Temperature
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Surface Heat Absorption Rate → Ambient Air Temperature
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Waste Heat Generation is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Waste Heat Generation active and observe
+     how Surface Heat Absorption Rate's effect on Ambient Air Temperature is now gated
+   • Toggle Waste Heat Generation ON/OFF while Surface Heat Absorption Rate remains constant
+   • Verify that Ambient Air Temperature only responds to Surface Heat Absorption Rate when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Waste Heat Generation → Ambient Air Temperature
+   • Set condition: IF Surface Heat Absorption Rate is ON
+   • This ensures Waste Heat Generation's effect on Ambient Air Temperature
+     is contingent on Surface Heat Absorption Rate being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -927,107 +963,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI ESS3.D (Sustainability and environmental solutions) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Urban Land Cover Composition, Surface Heat Absorption Rate, Waste Heat Generation, Evapotranspiration Cooling Rate, Ambient Air Temperature, Heat-Related Health Impact. Some components are external (Urban Land Cover Composition) and some are internal (Surface Heat Absorption Rate, Waste Heat Generation, Evapotranspiration Cooling Rate, Ambient Air Temperature, Heat-Related Health Impact). The student needs to understand what each component represents and how they are organized.
+Urban climate researchers compare temperature data from a downtown Los Angeles weather station with a rural station 40 km away. On a summer day when the rural station records 32C, the downtown station records 38C, a 6C urban heat island (UHI) differential. Infrared satellite imagery reveals that dark asphalt roads (surface temperature 65C) and tar rooftops (72C) absorb solar radiation that natural surfaces would reflect, while the absence of vegetation eliminates the cooling effect of evapotranspiration that would lower temperatures by 3-5C in a natural landscape.
 
 The model shows that within a single city, temperature differences of 10-15 degrees F exist between neighborhoods, and these differences map directly onto historic patterns of racial segregation. What systems-level explanation connects redlining to current heat vulnerability?
 
-A. Redlined neighborhoods happen to be located on higher ground where it is warmer
+A. All neighborhoods in a city experience identical temperatures regardless of tree cover
 B. Historically redlined neighborhoods received less investment in tree planting, parks, and green infrastructure, resulting in more impervious surface, less evapotranspiration cooling, and higher temperatures today, creating a physical legacy of structural racism
-C. Redlining affected only housing prices, not physical infrastructure or vegetation
-D. All neighborhoods in a city experience identical temperatures regardless of tree cover
+C. Redlined neighborhoods happen to be located on higher ground where it is warmer
+D. Redlining affected only housing prices, not physical infrastructure or vegetation
 
 Correct Answer: B
 
-Feedback: Correct. Redlining directed investment away from certain neighborhoods for decades, resulting in less tree cover, fewer parks, more impervious surface, and consequently higher temperatures. This is a direct physical legacy of discriminatory policy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Redlining directed investment away from certain neighborhoods for decades, resulting in less tree cover, fewer parks, more impervious surface, and consequently higher temperatures. This is a direct physical legacy of discriminatory policy. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. Historic redlining caused decades of disinvestment in certain neighborhoods: fewer trees were planted, parks were not built, and infrastructure prioritized pavement. Today, these neighborhoods have less vegetation, more impervious surface, and temperatures 10-15 degrees F higher than better-invested areas. If you chose D, this answer oversimplifies a multi-factor system by focusing on a single variable. Historic redlining caused decades of disinvestment in certain neighborhoods: fewer trees were planted, parks were not built, and infrastructure prioritized pavement. Today, these neighborhoods have less vegetation, more impervious surface, and temperatures 10-15 degrees F higher than better-invested areas. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. Historic redlining caused decades of disinvestment in certain neighborhoods: fewer trees were planted, parks were not built, and infrastructure prioritized pavement. Today, these neighborhoods have less vegetation, more impervious surface, and temperatures 10-15 degrees F higher than better-invested areas.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI ESS3.D (Sustainability and environmental solutions) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Urban Land Cover Composition increases, Surface Heat Absorption Rate increases; when Urban Land Cover Composition increases, Evapotranspiration Cooling Rate decreases. The student is trying to understand why these relationships are positive or negative.
+A computational model of urban heat dynamics identifies four interacting mechanisms: (1) solar absorption by dark surfaces stores heat during the day, (2) urban canyon geometry (tall buildings flanking narrow streets) traps reflected radiation through multiple bounces, (3) anthropogenic heat from vehicles, air conditioning, and industrial processes adds energy to the urban system, and (4) reduced vegetation eliminates evaporative cooling. The model shows that mechanism 1 is the largest contributor during daytime, but mechanism 2 dominates at night, preventing the urban area from cooling and creating persistent heat stress.
 
 The model reveals an air conditioning feedback loop: higher temperatures increase AC demand, but AC units expel waste heat outdoors, which raises ambient temperatures further. What type of system dynamic is this?
 
 A. Negative feedback that stabilizes temperatures through mechanical cooling
-B. A positive feedback loop where individual cooling responses collectively worsen the problem they are trying to solve
-C. A neutral loop with no net temperature effect
+B. A neutral loop with no net temperature effect
+C. A positive feedback loop where individual cooling responses collectively worsen the problem they are trying to solve
 D. A negative feedback loop that will eventually eliminate the heat island
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. This is a positive feedback loop: AC cools interiors but dumps waste heat outside, raising outdoor temperatures, which increases AC demand. Each individual's rational cooling decision collectively amplifies the heat island. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: This is a positive feedback loop: AC cools interiors but dumps waste heat outside, raising outdoor temperatures, which increases AC demand. Each individual's rational cooling decision collectively amplifies the heat island. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. The AC feedback loop is positive (self-reinforcing): cooling buildings dumps waste heat outside, raising outdoor temperatures, which increases AC demand. Dense urban cores can see 2-4 degrees F of additional warming from waste heat alone, creating a vicious cycle. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. The AC feedback loop is positive (self-reinforcing): cooling buildings dumps waste heat outside, raising outdoor temperatures, which increases AC demand. Dense urban cores can see 2-4 degrees F of additional warming from waste heat alone, creating a vicious cycle. If you chose D, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The AC feedback loop is positive (self-reinforcing): cooling buildings dumps waste heat outside, raising outdoor temperatures, which increases AC demand. Dense urban cores can see 2-4 degrees F of additional warming from waste heat alone, creating a vicious cycle.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.A (Define and delimit engineering problems) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Urban Land Cover Composition increases, Surface Heat Absorption Rate increases and when Urban Land Cover Composition increases, Evapotranspiration Cooling Rate decreases and when Surface Heat Absorption Rate increases, Ambient Air Temperature increases. The student changes one variable to see how the whole system responds.
+A public health study correlates heat island intensity with emergency room visits during a 2-week heatwave. Neighborhoods with the most intense heat island effects (low tree canopy, high impervious surface coverage) showed emergency room visit rates 3.4 times higher than cooler neighborhoods. The most affected populations were elderly residents, outdoor workers, and low-income communities whose homes lacked air conditioning. The data reveals that 78% of heat-related deaths occurred in neighborhoods where surface temperatures exceeded 40C and nighttime temperatures remained above 27C, preventing physiological recovery during sleep.
 
 A green infrastructure plan proposes increasing tree canopy from 10% to 30% in the hottest neighborhood. The model predicts 5-10 degrees F of cooling, but full canopy effect takes 15-20 years. A city council member argues this timeline is unacceptable. Which systems-informed response best addresses this concern?
 
-A. Abandon the tree planting plan entirely in favor of faster solutions
-B. Implement a phased strategy combining immediate interventions (cool roofs, shade structures, misting stations) for near-term relief with long-term tree planting for sustained cooling, acknowledging that no single solution addresses all timescales
-C. Plant only fast-growing tree species regardless of their suitability for the climate
+A. Implement a phased strategy combining immediate interventions (cool roofs, shade structures, misting stations) for near-term relief with long-term tree planting for sustained cooling, acknowledging that no single solution addresses all timescales
+B. Plant only fast-growing tree species regardless of their suitability for the climate
+C. Abandon the tree planting plan entirely in favor of faster solutions
 D. Wait until faster-growing tree varieties are developed before beginning
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. A systems approach layers short-term solutions (immediate cooling) with long-term investments (trees). This addresses the council member's urgency concern while still building toward the most effective permanent solution. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: A systems approach layers short-term solutions (immediate cooling) with long-term investments (trees). This addresses the council member's urgency concern while still building toward the most effective permanent solution. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. The systems-informed approach combines time horizons: immediate relief (cool roofs install in months, shade structures in weeks) provides near-term protection while trees grow toward their full 15-20 year cooling potential. A layered strategy addresses both urgency and long-term effectiveness. If you chose B, this answer oversimplifies a multi-factor system by focusing on a single variable. The systems-informed approach combines time horizons: immediate relief (cool roofs install in months, shade structures in weeks) provides near-term protection while trees grow toward their full 15-20 year cooling potential. A layered strategy addresses both urgency and long-term effectiveness. If you chose D, this choice does not account for the key mechanism or relationship the evidence demonstrates. The systems-informed approach combines time horizons: immediate relief (cool roofs install in months, shade structures in weeks) provides near-term protection while trees grow toward their full 15-20 year cooling potential. A layered strategy addresses both urgency and long-term effectiveness.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.D (Sustainability and environmental solutions) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+Engineers compare cooling effectiveness of four urban heat mitigation strategies in a computational model: (1) cool roofs (white reflective coating, reducing roof surface temperature by 25C), (2) urban tree planting (30% canopy coverage target, reducing air temperature by 3-5C through shade and evapotranspiration), (3) permeable pavements (reducing surface temperature by 15C through evaporative cooling), and (4) urban green spaces and parks (creating cool air that flows into surrounding streets). The model reveals that cool roofs provide the fastest and cheapest temperature reduction, but urban trees provide the greatest co-benefits including air quality improvement, stormwater management, and mental health benefits.
 
 Climate change is projected to add 3-5 degrees F of baseline warming to urban areas by 2050. The model shows this does not simply 'add' to the heat island but amplifies it. Which mechanism best explains this amplification?
 
-A. Climate change only affects rural areas, not cities
-B. Higher baseline temperatures increase AC waste heat, reduce remaining vegetation through heat stress, and push more days above dangerous thresholds, each of which further intensifies the heat island through positive feedback loops
-C. Cities are insulated from climate change by their concrete infrastructure
-D. Climate change reduces urban temperatures by increasing cloud cover over cities
+A. Climate change reduces urban temperatures by increasing cloud cover over cities
+B. Cities are insulated from climate change by their concrete infrastructure
+C. Higher baseline temperatures increase AC waste heat, reduce remaining vegetation through heat stress, and push more days above dangerous thresholds, each of which further intensifies the heat island through positive feedback loops
+D. Climate change only affects rural areas, not cities
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: Correct. Climate change amplifies the heat island through multiple reinforcing mechanisms: more AC waste heat, vegetation stress, and more frequent threshold exceedances, each feeding back to intensify warming. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Climate change amplifies the heat island through multiple reinforcing mechanisms: more AC waste heat, vegetation stress, and more frequent threshold exceedances, each feeding back to intensify warming. If you chose D, this response oversimplifies a multi-factor system by focusing on a single variable. Climate warming amplifies rather than simply adds to the heat island because it triggers feedback loops: higher baseline temperatures increase AC demand (more waste heat), stress urban vegetation (less evapotranspiration), and push more days above health thresholds, each of which further increases temperatures. If you chose B, this answer does not account for the key mechanism or relationship the evidence demonstrates. Climate warming amplifies rather than simply adds to the heat island because it triggers feedback loops: higher baseline temperatures increase AC demand (more waste heat), stress urban vegetation (less evapotranspiration), and push more days above health thresholds, each of which further increases temperatures. If you chose A, this choice does not account for the key mechanism or relationship the evidence demonstrates. Climate warming amplifies rather than simply adds to the heat island because it triggers feedback loops: higher baseline temperatures increase AC demand (more waste heat), stress urban vegetation (less evapotranspiration), and push more days above health thresholds, each of which further increases temperatures.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.4 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ETS1.A (Define and delimit engineering problems) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Urban Land Cover Composition), but they can take action on internal components (Surface Heat Absorption Rate, Waste Heat Generation, Evapotranspiration Cooling Rate, Ambient Air Temperature, Heat-Related Health Impact). They need to decide which action would be most effective based on what the model shows.
+A city planning department must allocate $200 million in climate adaptation funding across 15 neighborhoods. Their heat vulnerability model combines physical heat island intensity with social vulnerability factors (age demographics, income level, air conditioning access, housing quality, outdoor worker population). The model reveals that the neighborhoods with the highest physical temperatures are not always the most vulnerable: a moderate-heat neighborhood with elderly residents lacking air conditioning may face greater health risk than a hotter neighborhood with younger, wealthier residents. The department must decide whether to prioritize reducing temperatures in the hottest areas or reducing vulnerability in the most at-risk communities.
 
 A student claims that solving the urban heat island is purely an engineering problem (install cool roofs, plant trees). The model reveals a critical additional dimension. Which dimension does the model highlight?
 
-A. The problem is too expensive for any city to address
-B. Environmental justice: cooling investments must be directed to the most heat-vulnerable neighborhoods, and plans must include anti-displacement protections to prevent gentrification from displacing the residents the cooling was meant to protect
-C. Engineering solutions are the only dimension that matters
-D. The heat island will resolve itself as cities naturally expand
+A. Engineering solutions are the only dimension that matters
+B. The heat island will resolve itself as cities naturally expand
+C. The problem is too expensive for any city to address
+D. Environmental justice: cooling investments must be directed to the most heat-vulnerable neighborhoods, and plans must include anti-displacement protections to prevent gentrification from displacing the residents the cooling was meant to protect
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. The model shows that heat burden is not distributed equally. Engineering solutions must be paired with equity-centered policies to ensure cooling benefits reach the most vulnerable populations without causing gentrification and displacement. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The model shows that heat burden is not distributed equally. Engineering solutions must be paired with equity-centered policies to ensure cooling benefits reach the most vulnerable populations without causing gentrification and displacement. If you chose C, this response does not account for the key mechanism or relationship the evidence demonstrates. The model reveals that the heat island is both an engineering and an environmental justice problem. The hottest neighborhoods are the most socially vulnerable, and green infrastructure investments can trigger gentrification, displacing the very residents they were meant to protect. Solutions must include anti-displacement policies. If you chose A, this answer oversimplifies a multi-factor system by focusing on a single variable. The model reveals that the heat island is both an engineering and an environmental justice problem. The hottest neighborhoods are the most socially vulnerable, and green infrastructure investments can trigger gentrification, displacing the very residents they were meant to protect. Solutions must include anti-displacement policies. If you chose B, this choice overgeneralizes without considering the specific mechanisms and evidence presented. The model reveals that the heat island is both an engineering and an environmental justice problem. The hottest neighborhoods are the most socially vulnerable, and green infrastructure investments can trigger gentrification, displacing the very residents they were meant to protect. Solutions must include anti-displacement policies.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
-Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
+Question 1: B (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-ESS3-4, CCC4)
+Question 2: C (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS3-4, CCC2)
+Question 3: A (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-ESS3-4, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ETS1-1, CCC7)
+Question 5: D (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ETS1-1, CCC4)
 
+---
 
 ## Resources
 

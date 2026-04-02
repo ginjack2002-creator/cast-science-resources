@@ -31,6 +31,100 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* ===== MULTIPLE CHOICE QUESTIONS ===== */
+.mc-section-intro {
+  background: var(--purple-bg);
+  border-left: 4px solid var(--purple-brand);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 16px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+}
+.mc-question-block {
+  margin-bottom: 14px;
+  page-break-inside: avoid;
+}
+.mc-question-text {
+  font-weight: 700;
+  font-size: 10pt;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.mc-q-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  background: var(--purple-brand);
+  color: white;
+  border-radius: 50%;
+  font-size: 9pt;
+  font-weight: 800;
+  font-family: 'Quicksand', sans-serif;
+}
+.mc-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  margin-left: 30px;
+}
+.mc-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  padding: 4px 8px;
+  border: 1.5px solid var(--purple-light);
+  border-radius: 6px;
+  background: white;
+}
+.mc-choice-letter {
+  font-weight: 800;
+  color: var(--purple-brand);
+  font-family: 'Quicksand', sans-serif;
+  min-width: 14px;
+}
+.mc-post-header {
+  background: linear-gradient(135deg, var(--teal-brand), var(--purple-brand));
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 11pt;
+  margin-bottom: 12px;
+}
+/* Answer key MC styles */
+.mc-answer-block {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: var(--purple-bg);
+  border-radius: 8px;
+  font-size: 9pt;
+  page-break-inside: avoid;
+}
+.mc-answer-q {
+  font-weight: 700;
+  font-size: 9.5pt;
+  margin-bottom: 4px;
+}
+.mc-answer-correct {
+  color: var(--green-pos);
+  font-weight: 700;
+}
+.mc-answer-feedback {
+  font-size: 8.5pt;
+  color: var(--gray-text);
+  margin-top: 3px;
+  font-style: italic;
+}
+
 @page { size: letter; margin: 0.5in; }
 
 @media print {
@@ -384,6 +478,7 @@ h3.sub-heading { font-family: 'Quicksand', sans-serif; font-size: 11pt; font-wei
       <li><span>Research &amp; Extend</span><span class="toc-dots"></span><span class="toc-page">8</span></li>
       <li><span>Reflection Questions</span><span class="toc-dots"></span><span class="toc-page">9</span></li>
       <li><span>STEM Challenge</span><span class="toc-dots"></span><span class="toc-page">10</span></li>
+      <li><span>Post-Assessment</span><span class='toc-dots'></span><span class='toc-page'>11</span></li>
     </ul>
   </div>
   <div class="page-footer">
@@ -404,6 +499,67 @@ h3.sub-heading { font-family: 'Quicksand', sans-serif; font-size: 11pt; font-wei
   </div>
   <div class="page-content">
     <div class="section-intro"><strong>What Do You Know?</strong> Answer each question below to the best of your ability. There are no wrong answers &mdash; this helps your teacher understand what you already know!</div>
+    <div class='mc-section-intro'><strong>Multiple Choice:</strong> Circle the best answer for each question.</div><div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">1</span><span>What is a dam?</span></div>
+      <div class="mc-choices"><div class="mc-choice">
+            <span class="mc-choice-letter">A.</span>
+            <span>A wall built across a stream that holds water back</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">B.</span>
+            <span>A type of boat that floats on water</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">C.</span>
+            <span>A hole dug into the ground to find water</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">D.</span>
+            <span>A bridge that lets animals cross a river</span>
+          </div></div>
+    </div><div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">2</span><span>What do beavers use to build their dams?</span></div>
+      <div class="mc-choices"><div class="mc-choice">
+            <span class="mc-choice-letter">A.</span>
+            <span>Rocks and sand only</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">B.</span>
+            <span>Trees, sticks, and mud</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">C.</span>
+            <span>Leaves and grass</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">D.</span>
+            <span>They do not build anything</span>
+          </div></div>
+    </div><div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">3</span><span>What do you think happens to a stream when something blocks the water?</span></div>
+      <div class="mc-choices"><div class="mc-choice">
+            <span class="mc-choice-letter">A.</span>
+            <span>The water disappears completely</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">B.</span>
+            <span>The water flows faster downstream</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">C.</span>
+            <span>The water collects and forms a pond</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">D.</span>
+            <span>The water turns into ice</span>
+          </div></div>
+    </div><div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">4</span><span>Why might other animals care about a beaver dam?</span></div>
+      <div class="mc-choices"><div class="mc-choice">
+            <span class="mc-choice-letter">A.</span>
+            <span>Other animals are afraid of beaver dams</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">B.</span>
+            <span>The pond creates a new place for animals to live</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">C.</span>
+            <span>Other animals want to destroy the dam</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">D.</span>
+            <span>Other animals do not notice beaver dams at all</span>
+          </div></div>
+    </div>
     <div class="question-block">
       <div class="question-label"><span class="q-number">1</span><span>Have you ever seen a beaver or a beaver dam? Where?</span></div>
       <div class="response-lines"></div>
@@ -652,6 +808,87 @@ h3.sub-heading { font-family: 'Quicksand', sans-serif; font-size: 11pt; font-wei
     <span class="footer-logo">ModelIt!</span>
     <span>NE-L1-01 &bull; Student Activity Pack</span>
     <span>Page 10</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 9: POST-ASSESSMENT -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">9</div>
+    <div class="section-title">Post-Assessment</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="mc-post-header">Show What You Learned!</div>
+    <div class="mc-section-intro"><strong>Multiple Choice:</strong> Now that you have completed the lesson, circle the best answer for each question. Compare your answers to your pre-assessment &mdash; did your thinking change?</div>
+    <div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">1</span><span>Why are beavers called 'ecosystem engineers'?</span></div>
+      <div class="mc-choices"><div class="mc-choice">
+            <span class="mc-choice-letter">A.</span>
+            <span>They wear hard hats when they work</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">B.</span>
+            <span>They change their environment by building dams that create new habitats</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">C.</span>
+            <span>They are the biggest animals in the forest</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">D.</span>
+            <span>They only build things for themselves</span>
+          </div></div>
+    </div><div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">2</span><span>In the model, what TWO things do beavers need to build a successful dam?</span></div>
+      <div class="mc-choices"><div class="mc-choice">
+            <span class="mc-choice-letter">A.</span>
+            <span>Sunshine and wind</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">B.</span>
+            <span>Enough beaver family members AND enough trees</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">C.</span>
+            <span>Rocks and concrete</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">D.</span>
+            <span>Only lots of water</span>
+          </div></div>
+    </div><div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">3</span><span>What happens in the model when there are many beavers but NO trees?</span></div>
+      <div class="mc-choices"><div class="mc-choice">
+            <span class="mc-choice-letter">A.</span>
+            <span>The dam grows very large anyway</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">B.</span>
+            <span>The beavers use rocks instead</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">C.</span>
+            <span>The dam cannot grow because beavers need trees as building material</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">D.</span>
+            <span>The pond gets bigger without a dam</span>
+          </div></div>
+    </div><div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">4</span><span>How does dam size affect pond size in the model?</span></div>
+      <div class="mc-choices"><div class="mc-choice">
+            <span class="mc-choice-letter">A.</span>
+            <span>A bigger dam holds back more water, creating a bigger pond</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">B.</span>
+            <span>Dam size and pond size are not related</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">C.</span>
+            <span>A bigger dam makes the pond smaller</span>
+          </div><div class="mc-choice">
+            <span class="mc-choice-letter">D.</span>
+            <span>Only rainfall affects pond size</span>
+          </div></div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>NE-L1-01 &bull; Student Activity Pack</span>
+    <span>Page 11</span>
     <div class="footer-bar"></div>
   </div>
 </div>

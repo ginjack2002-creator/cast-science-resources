@@ -350,6 +350,48 @@ Now it's your turn to ModelIt!"
 ### Text Editor
 
 ```
+CONFIGURE CONNECTION CONDITIONS — MODEL REFINEMENT
+
+Your current model treats the Solar Generation Capacity → Supply-Demand Balance relationship as
+unconditional. However, this relationship is scientifically
+contingent on Wind Generation Capacity being active. Without this condition,
+the simulation produces inaccurate results: Solar Generation Capacity drives Supply-Demand Balance
+even when the prerequisite state is not met.
+
+Task A: CONFIGURE THE CONNECTION CONDITION
+   • Select the connection arrow: Solar Generation Capacity → Supply-Demand Balance
+   • Click "Conditions" in the connection toolbar
+   • Set the regulator condition: IF Wind Generation Capacity is ON
+   • Click "Save Conditions"
+
+Task B: VALIDATE THE CONDITIONAL MODEL
+   • Run the simulation with Wind Generation Capacity active and observe
+     how Solar Generation Capacity's effect on Supply-Demand Balance is now gated
+   • Toggle Wind Generation Capacity ON/OFF while Solar Generation Capacity remains constant
+   • Verify that Supply-Demand Balance only responds to Solar Generation Capacity when the
+     condition is satisfied
+
+Task C: ADDITIONAL CONDITION
+   • Select: Wind Generation Capacity → Supply-Demand Balance
+   • Set condition: IF Solar Generation Capacity is ON
+   • This ensures Wind Generation Capacity's effect on Supply-Demand Balance
+     is contingent on Solar Generation Capacity being active
+
+Task D: ADDITIONAL CONDITION
+   • Select: Energy Storage Capacity → Grid Reliability Index
+   • Set condition: IF Supply-Demand Balance is ON
+   • This ensures Energy Storage Capacity's effect on Grid Reliability Index
+     is contingent on Supply-Demand Balance being active
+
+These conditional relationships capture critical system behavior:
+not all connections operate continuously. Some are gated by the
+state of other components, creating the non-linear dynamics that
+characterize real-world complex systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW LET'S PLAY AND EXPLORE
+
 YOUR MODEL WORKS — BUT IT'S NOT COMPLETE
 
 You built a system model. It explains the basics. But real
@@ -917,107 +959,103 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ### Question 1
 
-CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.3 + CCC5 (Energy and Matter)
+CAST Alignment: SEP 2.1.1 (Develop and use a model to represent relationships) + DCI PS3.D (Energy in chemical processes) + CCC4 (Systems and system models)
 
-A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Solar Generation Capacity, Wind Generation Capacity, Energy Storage Capacity, Grid Demand Pattern, Supply-Demand Balance, Grid Reliability Index. Some components are external (Solar Generation Capacity, Wind Generation Capacity, Energy Storage Capacity) and some are internal (Grid Demand Pattern, Supply-Demand Balance, Grid Reliability Index). The student needs to understand what each component represents and how they are organized.
+A California city of 500,000 residents announces a plan to transition to 100% renewable electricity by 2035. Current energy sources are 42% natural gas, 28% solar, 15% wind, 10% hydroelectric, and 5% nuclear. The city's computational model shows that peak electricity demand occurs between 6-9 PM, after solar generation has dropped to near zero, creating a 4-hour gap where demand exceeds renewable supply by up to 2,400 megawatts. This gap, known as the 'duck curve,' represents the central engineering challenge of the transition.
 
 A model shows that moving from 50% to 80% renewable energy requires doubling storage capacity, but moving from 80% to 100% requires increasing storage capacity tenfold. Which concept best explains this nonlinear relationship?
 
-A. Renewable energy becomes less efficient at higher penetration levels
-B. At high renewable penetration, rare multi-day weather events with minimal sun and wind require enormous storage reserves to avoid blackouts
-C. Battery technology degrades faster when used more frequently
-D. Grid operators intentionally slow renewable adoption above 80%
+A. At high renewable penetration, rare multi-day weather events with minimal sun and wind require enormous storage reserves to avoid blackouts
+B. Renewable energy becomes less efficient at higher penetration levels
+C. Grid operators intentionally slow renewable adoption above 80%
+D. Battery technology degrades faster when used more frequently
 
-Correct Answer: B
+Correct Answer: A
 
-Feedback: Correct. The exponential storage increase is driven by worst-case scenarios: at 100% renewable, even rare events like a week of cloudy, windless winter weather must be covered entirely by storage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The exponential storage increase is driven by worst-case scenarios: at 100% renewable, even rare events like a week of cloudy, windless winter weather must be covered entirely by storage. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. At 50% renewable, fossil plants handle gaps. At 80%, daily cycling needs more storage. At 100%, multi-day and seasonal low-generation events must be covered entirely by storage, requiring exponentially more capacity. If you chose D, this answer does not account for the key mechanism or relationship the evidence demonstrates. At 50% renewable, fossil plants handle gaps. At 80%, daily cycling needs more storage. At 100%, multi-day and seasonal low-generation events must be covered entirely by storage, requiring exponentially more capacity. If you chose C, this choice overgeneralizes without considering the specific mechanisms and evidence presented. At 50% renewable, fossil plants handle gaps. At 80%, daily cycling needs more storage. At 100%, multi-day and seasonal low-generation events must be covered entirely by storage, requiring exponentially more capacity.
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.3 + CCC1 (Patterns)
+CAST Alignment: SEP 2.1.2 (Determine relationships among system components) + DCI PS3.D (Energy in chemical processes) + CCC2 (Cause and effect)
 
-In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Energy Storage Capacity increases, Grid Reliability Index increases; when Demand Balance increases, Grid Reliability Index increases. The student is trying to understand why these relationships are positive or negative.
+A grid engineering model simulates energy storage requirements for a 100% renewable system. The model compares three storage technologies: lithium-ion batteries (4-hour discharge, 85% round-trip efficiency), pumped hydro storage (12-hour discharge, 80% efficiency), and green hydrogen (multi-day storage, 35% round-trip efficiency). The simulation reveals that battery storage alone can handle daily fluctuations but cannot address multi-day periods of low wind and cloud cover. A combination of all three technologies achieves 99.97% reliability, but at 2.3 times the cost of battery-only systems.
 
 The 'duck curve' describes a pattern where net electricity demand dips at midday and spikes in the evening. A student proposes solving this by installing more solar panels. Why is this solution insufficient?
 
 A. Solar panels cannot be installed on residential rooftops
-B. More solar deepens the midday surplus (increasing curtailment) but does nothing for the evening peak when solar output is zero
-C. The duck curve only occurs in tropical climates
-D. Solar panels generate more electricity in the evening than at midday
+B. The duck curve only occurs in tropical climates
+C. Solar panels generate more electricity in the evening than at midday
+D. More solar deepens the midday surplus (increasing curtailment) but does nothing for the evening peak when solar output is zero
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Adding more solar worsens the midday oversupply while the evening demand peak remains unmet, making the duck curve problem worse, not better. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
-
+Feedback: Adding more solar worsens the midday oversupply while the evening demand peak remains unmet, making the duck curve problem worse, not better. If you chose A, this response dismisses relevant factors that the evidence directly addresses. More solar panels increase midday generation when supply already exceeds demand, leading to more curtailment. The evening peak occurs after sunset, so additional solar capacity cannot help. Storage or demand-shifting is needed. If you chose B, this answer oversimplifies a multi-factor system by focusing on a single variable. More solar panels increase midday generation when supply already exceeds demand, leading to more curtailment. The evening peak occurs after sunset, so additional solar capacity cannot help. Storage or demand-shifting is needed. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. More solar panels increase midday generation when supply already exceeds demand, leading to more curtailment. The evening peak occurs after sunset, so additional solar capacity cannot help. Storage or demand-shifting is needed.
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS3.3 + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.A (Energy and mineral resource impacts) + CCC4 (Describe components and interactions)
 
-A student runs a simulation of the model. The model shows that when Energy Storage Capacity increases, Grid Reliability Index increases and when Demand Balance increases, Grid Reliability Index increases. The student changes one variable to see how the whole system responds.
+Researchers analyze grid stability data from a region that reached 65% renewable penetration. On March 15, rapid cloud movement caused solar output to fluctuate between 10% and 90% of capacity within 20-minute intervals. These fluctuations created frequency instability in the grid (deviations from the required 60 Hz), triggering automatic shutdowns of sensitive industrial equipment. The computational model shows that without sufficient fast-response storage or demand flexibility, renewable penetrations above 70% risk cascading grid instability events.
 
 A city's grid model achieves 99.97% reliability at 90% renewable energy with 12 hours of battery storage. When pushed to 100% renewable, reliability drops to 98.5%. What systems-level intervention would most effectively close this gap?
 
 A. Replace all wind turbines with solar panels to increase consistency
-B. Combine expanded battery storage with pumped hydro for multi-day reserves, demand response programs, and geographic diversification of renewable sources
+B. Accept the lower reliability since 98.5% is close enough
 C. Reduce the city's population to lower demand
-D. Accept the lower reliability since 98.5% is close enough
+D. Combine expanded battery storage with pumped hydro for multi-day reserves, demand response programs, and geographic diversification of renewable sources
 
-Correct Answer: B
+Correct Answer: D
 
-Feedback: Correct. Closing the last reliability gap requires a systems approach: long-duration storage (pumped hydro), flexible demand, and geographically diverse generation to reduce the probability of system-wide low generation. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Closing the last reliability gap requires a systems approach: long-duration storage (pumped hydro), flexible demand, and geographically diverse generation to reduce the probability of system-wide low generation. If you chose A, this response overgeneralizes without considering the specific mechanisms and evidence presented. The 1.47% reliability gap represents ~129 hours of potential blackout per year. Closing it requires multiple complementary strategies: long-duration storage for multi-day events, demand flexibility, and geographic spread to ensure weather events don't affect all sources simultaneously. If you chose C, this answer does not account for the key mechanism or relationship the evidence demonstrates. The 1.47% reliability gap represents ~129 hours of potential blackout per year. Closing it requires multiple complementary strategies: long-duration storage for multi-day events, demand flexibility, and geographic spread to ensure weather events don't affect all sources simultaneously. If you chose B, this choice does not account for the key mechanism or relationship the evidence demonstrates. The 1.47% reliability gap represents ~129 hours of potential blackout per year. Closing it requires multiple complementary strategies: long-duration storage for multi-day events, demand flexibility, and geographic spread to ensure weather events don't affect all sources simultaneously.
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.3 + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.D (Energy in chemical processes) + CCC7 (Stability and change)
 
-Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
+A utility company's 20-year planning model compares two transition pathways. Pathway A invests heavily in solar and wind generation with moderate storage, reaching 85% renewable by 2040. Pathway B invests in a distributed microgrid architecture with local solar, storage at every substation, and demand-response systems, reaching 100% renewable by 2038 at 15% higher initial cost. The model reveals that Pathway B's distributed architecture provides superior resilience to extreme weather events and reduces transmission losses by 22%, making it more cost-effective over the full 20-year period.
 
 A student argues that seasonal variation in solar energy is a minor challenge because 'the sun shines every day.' Using model data, which evidence best counters this claim?
 
-A. A city at 45 degrees N latitude receives 4x more solar energy in June than December, creating a seasonal generation gap that daily batteries cannot bridge
+A. Wind energy perfectly compensates for all seasonal solar variation
 B. Solar panels stop working when temperatures drop below freezing
-C. Cloud cover only affects solar generation in the summer months
-D. Wind energy perfectly compensates for all seasonal solar variation
+C. A city at 45 degrees N latitude receives 4x more solar energy in June than December, creating a seasonal generation gap that daily batteries cannot bridge
+D. Cloud cover only affects solar generation in the summer months
 
-Correct Answer: A
+Correct Answer: C
 
-Feedback: Correct. Seasonal variation at mid-latitudes creates a generation gap lasting weeks to months. Daily battery cycling (4-12 hours) cannot bridge a months-long winter solar deficit. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: Seasonal variation at mid-latitudes creates a generation gap lasting weeks to months. Daily battery cycling (4-12 hours) cannot bridge a months-long winter solar deficit. If you chose B, this response does not account for the key mechanism or relationship the evidence demonstrates. At mid-latitudes, winter solar generation can be 25% of summer levels. This creates a seasonal deficit lasting months that cannot be addressed by daily battery cycling, requiring either long-duration storage or complementary wind and other sources. If you chose D, this answer oversimplifies a multi-factor system by focusing on a single variable. At mid-latitudes, winter solar generation can be 25% of summer levels. This creates a seasonal deficit lasting months that cannot be addressed by daily battery cycling, requiring either long-duration storage or complementary wind and other sources. If you chose A, this choice overgeneralizes without considering the specific mechanisms and evidence presented. At mid-latitudes, winter solar generation can be 25% of summer levels. This creates a seasonal deficit lasting months that cannot be addressed by daily battery cycling, requiring either long-duration storage or complementary wind and other sources.
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS3.3 + CCC5 (Energy and Matter)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ESS3.A (Energy and mineral resource impacts) + CCC4 (Describe system components and interactions)
 
-A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Solar Generation Capacity, Wind Generation Capacity, Energy Storage Capacity), but they can take action on internal components (Grid Demand Pattern, Supply-Demand Balance, Grid Reliability Index). They need to decide which action would be most effective based on what the model shows.
+A state energy commission must decide how to handle the final 5% of electricity demand that is hardest to decarbonize: industrial processes requiring constant high-temperature heat, winter heating demand during extended cloudy periods, and emergency backup power. Their model evaluates keeping 5% natural gas as backup, building excess renewable capacity (150% of peak demand) with long-duration storage, and developing green hydrogen infrastructure for industrial heat and seasonal storage. Each option has different cost, reliability, and emissions profiles.
 
 Evaluate this claim: 'Since wind and solar are now the cheapest forms of electricity generation, transitioning to 100% renewable energy is primarily an economic decision.' Which model finding most effectively challenges this claim?
 
 A. Renewable energy equipment is manufactured using fossil fuels
 B. While generation costs are low, the systems integration costs (storage, grid upgrades, backup capacity) for 100% renewable are the dominant expense and represent a physics and engineering challenge, not just an economic one
-C. Solar and wind are only cheaper in sunny and windy regions
-D. Fossil fuel companies will lobby against the transition
+C. Fossil fuel companies will lobby against the transition
+D. Solar and wind are only cheaper in sunny and windy regions
 
 Correct Answer: B
 
-Feedback: Correct. The cost of generating renewable electricity is low, but the systems engineering challenge of maintaining reliability through all weather conditions drives exponentially higher storage and infrastructure costs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
-
+Feedback: The cost of generating renewable electricity is low, but the systems engineering challenge of maintaining reliability through all weather conditions drives exponentially higher storage and infrastructure costs. If you chose A, this response does not account for the key mechanism or relationship the evidence demonstrates. Generation cost is only part of the equation. The fundamental challenge is physics: matching variable supply to constant demand requires storage, grid flexibility, and backup capacity that become exponentially more expensive as renewable penetration approaches 100%. If you chose D, this answer oversimplifies a multi-factor system by focusing on a single variable. Generation cost is only part of the equation. The fundamental challenge is physics: matching variable supply to constant demand requires storage, grid flexibility, and backup capacity that become exponentially more expensive as renewable penetration approaches 100%. If you chose C, this choice does not account for the key mechanism or relationship the evidence demonstrates. Generation cost is only part of the equation. The fundamental challenge is physics: matching variable supply to constant demand requires storage, grid flexibility, and backup capacity that become exponentially more expensive as renewable penetration approaches 100%.
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.3, CCC5)
-Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.3, CCC1)
-Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.3, CCC4)
-Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.3, CCC2)
-Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.3, CCC5)
+Question 1: A (Cognitive Level: Identify -- SEP 2.1.1, DCI HS-PS3-3, CCC4)
+Question 2: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS3-3, CCC2)
+Question 3: D (Cognitive Level: Reason -- SEP 2.1.2, DCI HS-PS3-3, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence -- SEP 2.1.4, DCI HS-ESS3-2, CCC7)
+Question 5: B (Cognitive Level: Predict + Apply -- SEP 2.1.4, DCI HS-ESS3-2, CCC4)
 
+---
 
 ## Resources
 
